@@ -19,6 +19,12 @@ demuestra almacenamiento volumétrico, no nuestro procesador.
 - `scripts/audit_glass004.py`: auditoría Codex independiente del modelo Claude.
 - `resultados/codex/`: informes JSON con parámetros/hashes/gates y fallos.
 
+Primer hito: 13 tests CPU, auditoría del modelo CMT de Claude y 28 casos
+BPM/refinamientos. [V1 y auditoría](Docs/GLASS-003-004-PRIMER-HITO.md),
+[V2](Docs/GLASS-003-V2-RESULTS.md). V1 y gate general V2 fallan convergencia:
+son resultados científicos retenidos, no una red ya validada.
+Los refinamientos separados del perfil -0.003 pasan; falta segundo solver.
+
 No confundir un anillo ideal de índice reducido con una receta medida de
 escritura. El modelo actual omite polarización, reflexión, curvas y trazos
 discretos. Una malla pasiva es lineal en campo: detectar intensidad y aplicar
@@ -33,12 +39,16 @@ SciPy existente; ningún script instala dependencias ni inicializa CUDA.
 cd D:\PROJECTS\Silice-Neuro3D-Cube
 python -B scripts/check.py
 python -B scripts/run_glass003.py --out resultados/codex/glass003_replicacion.json
+python -B scripts/run_glass003_v2.py --out resultados/codex/glass003_v2_replicacion.json
 python -B scripts/audit_glass004.py --out resultados/codex/glass004_replicacion.json
 ```
 
 Un resultado fallido sigue guardándose y produce salida no exitosa.
 Los nombres nuevos evitan sobrescribir evidencia previa. CPU un hilo,
 presupuesto por script40s. No iniciar Blender/GPU por reproducir este README.
+Los módulos y artefactos de Claude y los tableros compartidos siguen locales
+sin versionar: la auditoría peer requiere esa carpeta, no basta clonar los
+archivos propios. Su incorporación se revisará conjuntamente antes de publicar.
 
 ## Método y colaboración
 
