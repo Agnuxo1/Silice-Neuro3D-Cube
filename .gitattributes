@@ -2,3 +2,5 @@
 *.md text eol=lf
 *.json text eol=lf
 *.toml text eol=lf
+# Evidence is hashed byte-for-byte; never normalize JSON line endings.
+resultados/codex/*.json -text whitespace=cr-at-eol

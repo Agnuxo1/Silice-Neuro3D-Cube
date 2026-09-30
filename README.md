@@ -24,10 +24,15 @@ BPM/refinamientos. [V1 y auditoría](Docs/GLASS-003-004-PRIMER-HITO.md),
 [V2](Docs/GLASS-003-V2-RESULTS.md). V1 y gate general V2 fallan convergencia:
 son resultados científicos retenidos, no una red ya validada.
 Los refinamientos separados del perfil -0.003 pasan; falta segundo solver.
+Nueva [camisa por trazos discretos](Docs/GLASS-007-RESULTS.md): diez casos
+con núcleo intacto y controles de densidad/huecos/integral de índice;
+22tests CPU en la suite actual. Convergencia parcial del perfil96trazos pasa, no fabricación.
+Claude aportó revisión005 con solver radial independiente para el anillo
+continuo; no certifica la sección angular de los trazos discretos.
 
 No confundir un anillo ideal de índice reducido con una receta medida de
-escritura. El modelo actual omite polarización, reflexión, curvas y trazos
-discretos. Una malla pasiva es lineal en campo: detectar intensidad y aplicar
+escritura. El modelo actual incluye perfiles de trazos discretos ideales,
+pero omite polarización, reflexión y curvas. Una malla pasiva es lineal en campo: detectar intensidad y aplicar
 activaciones/electrónica requiere un alcance adicional explícito.
 
 ## Reproducir
@@ -58,7 +63,11 @@ y revisan evidencia mutuamente; JEV no cuenta como consultado sin provenance=jev
 Su canal sigue bloqueado por seguridad: fallback local explícito.
 El proyecto anterior `D:\PROJECTS\9_NEBULA_NEW` queda intacto.
 
-Próximos pasos: convergencia/fronteras y segundo solver, camisa discreta,
+Nueva [revisión de los modos de Claude](Docs/GLASS-006a-CODEX-REVIEW.md):
+7/18 pasan convergencia; el muestreo cambia el radio efectivo de10um
+entre configuraciones. Los fallos se conservan, no se relaja el umbral.
+
+Próximos pasos: convergencia/fronteras y segundo solver 2D para camisa discreta,
 acoplador físico vs modos acoplados, tolerancias correlacionadas/calibración,
 red 3D pequeña y posterior fabricación. La publicación remota es un hito
 separado; no hay todavía un repositorio GitHub conectado a esta línea.
