@@ -1,0 +1,91 @@
+{
+  "experiment": "GLASS-004-v1",
+  "time_utc": "2026-09-30T08:34:49.834283+00:00",
+  "backend": "independent_closed_couplers_cpu",
+  "gpu_used": false,
+  "elapsed_s": 0.5130439999993541,
+  "source_hashes_before": {
+    "sim_cmt.py": "e8fb09db80fb47da01c30736806a53e6959f95e19deb4e0c7df7cd453e37dc8c",
+    "oracle.py": "5c7a172368dbde265065e9eac4e3ef2c9f5f0488d74679d9f12e6f2dab1273f6",
+    "montecarlo.py": "3d7dedb1f70c51fcb819c1ed0423641d9f36a46c5f16a542ffbc90fe555436bf",
+    "phases.npy": "1ff1e933af07c380235c20f348dad0084120878be1adf484a184823e705c9ff2",
+    "resultados.txt": "96a780baf5b607184d23cf43ba82c7268e70364ad483566e9a5e876756a5f8aa"
+  },
+  "source_hashes_after": {
+    "sim_cmt.py": "e8fb09db80fb47da01c30736806a53e6959f95e19deb4e0c7df7cd453e37dc8c",
+    "oracle.py": "5c7a172368dbde265065e9eac4e3ef2c9f5f0488d74679d9f12e6f2dab1273f6",
+    "montecarlo.py": "3d7dedb1f70c51fcb819c1ed0423641d9f36a46c5f16a542ffbc90fe555436bf",
+    "phases.npy": "1ff1e933af07c380235c20f348dad0084120878be1adf484a184823e705c9ff2",
+    "resultados.txt": "96a780baf5b607184d23cf43ba82c7268e70364ad483566e9a5e876756a5f8aa"
+  },
+  "peer_unchanged": true,
+  "port_order": [
+    0,
+    2,
+    1,
+    3
+  ],
+  "nominal_bright_relative": 2.8254797701635894e-05,
+  "nominal_dark_absolute": 7.380971265846803e-06,
+  "independent_vs_cmt_max_field": 2.0014830212433607e-16,
+  "raw_dft_field_error": 0.622998048806125,
+  "row_phase_rad": [
+    1.3451182901165228,
+    -0.2256780366783738,
+    0.5766403247087358,
+    -0.9941560020861607
+  ],
+  "row_phase_aligned_field_error": 1.9455023832851317e-05,
+  "noise": [
+    {
+      "kind": "phase",
+      "sigma_rad": 0.05,
+      "pieces": 400,
+      "mean": 0.05578533240247643,
+      "p95": 0.0958204934394205,
+      "fraction_over_10pct": 0.035,
+      "p95_dark_absolute": 0.040991504552230495
+    },
+    {
+      "kind": "phase",
+      "sigma_rad": 0.1,
+      "pieces": 400,
+      "mean": 0.11104685295779074,
+      "p95": 0.18966310763797958,
+      "fraction_over_10pct": 0.5625,
+      "p95_dark_absolute": 0.09465109328462099
+    },
+    {
+      "kind": "coupling",
+      "sigma_rad": 0.03,
+      "pieces": 400,
+      "mean": 0.05486546049282648,
+      "p95": 0.09267504956251374,
+      "fraction_over_10pct": 0.0325,
+      "p95_dark_absolute": 0.022760382052516775
+    },
+    {
+      "kind": "coupling",
+      "sigma_rad": 0.05,
+      "pieces": 400,
+      "mean": 0.09128967602189045,
+      "p95": 0.15350827849191323,
+      "fraction_over_10pct": 0.3675,
+      "p95_dark_absolute": 0.04028099295194341
+    }
+  ],
+  "controls": {
+    "phase_pi": 0.6778491632546902,
+    "coupler_off": 0.5910960511804035
+  },
+  "loss_power": 0.794328234724282,
+  "loss_expected": 0.7943282347242815,
+  "gate_nominal": true,
+  "gate_controls": true,
+  "caveats": [
+    "noise is hypothetical, not manufactured sample yield",
+    "bright metric excludes dark ports; both recorded",
+    "row phase alignment diagnostic only, not physical calibration"
+  ],
+  "audit_sha256": "abaa3bb5e36ad1aaa2889793ef4123e1a3f32388377f23db72484d20f6583b5b"
+}
