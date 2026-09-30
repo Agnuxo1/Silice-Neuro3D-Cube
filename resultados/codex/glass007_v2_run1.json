@@ -1,0 +1,352 @@
+{
+  "experiment": "GLASS-007-v2",
+  "gpu_used": false,
+  "hashes_before": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "scripts/run_glass007_v2.py": "f0abb77b02ed054f65e4f46ec9ad4efa973236eae220487ad11cefc414de1880",
+    "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+    "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+    "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+    "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+    "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+    "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+    "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+    "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+    "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+    "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+    "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+  },
+  "cases": [
+    {
+      "name": "continuous",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "bee9c14963063a7dd2d228704dcd6bfd3308e2cc986a7953e063621b342c0a6f",
+      "report_path": "resultados/codex/glass007_v2_run1__continuous.json"
+    },
+    {
+      "name": "tracks16",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "490cb0b9d2ac690fda8603a879bd0ccb4e7da838eedb5b354dfcf98a1879bb2b",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks16.json"
+    },
+    {
+      "name": "tracks32",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "c5008a9c44cec54289bfd270f0a150e49431aff483a024718419a6cb68d15bc7",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks32.json"
+    },
+    {
+      "name": "tracks64",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "0a6253b2e4bf5b4567e28431778ed01f45c6506ebca63e64754645fd23fe870d",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks64.json"
+    },
+    {
+      "name": "tracks32_equal_integral",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "049c56168197c3f8f9a6bc523324caa43c981312f538c1e67ddb4fefaecffb52",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks32_equal_integral.json"
+    },
+    {
+      "name": "tracks32_missing",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "f80cb17f962329ec94e7ed235142478461d2c2ccbeda80085bfd6950531e2bcf",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks32_missing.json"
+    },
+    {
+      "name": "tracks32_coarse",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "7beeb1820790f5525919107f20548c09e8d4d4a9af5ff31e4b11d8d572449360",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks32_coarse.json"
+    },
+    {
+      "name": "tracks32_wide_coarse",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "ac2a8dacd972f9a205d47f7e1659ad4f4350efd07b9692ad1bfda8560d57b295",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks32_wide_coarse.json"
+    },
+    {
+      "name": "tracks32_dz2",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "4f48baed5832dcb70e1dee56b864094f5517ced8aa0292c9e11c6f81c41e1d34",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks32_dz2.json"
+    },
+    {
+      "name": "continuous_dz2",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "7b0a32703c13587343026e4d87012c43528468a7ba96a7d98907a59494c7f1cf",
+      "report_path": "resultados/codex/glass007_v2_run1__continuous_dz2.json"
+    },
+    {
+      "name": "vacuum",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "049669043f1e05c831e9e96f0474175533275ff30ee2dfc800370761fef1a076",
+      "report_path": "resultados/codex/glass007_v2_run1__vacuum.json"
+    },
+    {
+      "name": "continuous_dx4",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "f4bc8c071444f405c50d3f6dcdbe97328313d5c0de212c48d2d8827a6a2c748f",
+      "report_path": "resultados/codex/glass007_v2_run1__continuous_dx4.json"
+    },
+    {
+      "name": "tracks32_dx4",
+      "status": "failure_retained",
+      "error_type": "TypeError",
+      "error": "dict() got multiple values for keyword argument 'backend'",
+      "gpu_used": false,
+      "report_sha256": "c85696aa8df99f81c2242d1e9f5f2a7b3ca7c870d9961eab6209ee20f5ffc75e",
+      "report_path": "resultados/codex/glass007_v2_run1__tracks32_dx4.json"
+    }
+  ],
+  "children": [
+    {
+      "name": "continuous",
+      "rc": 2,
+      "elapsed_s": 7.198127399999066,
+      "stdout": "{\"name\": \"continuous\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks16",
+      "rc": 2,
+      "elapsed_s": 5.624744499997178,
+      "stdout": "{\"name\": \"tracks16\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32",
+      "rc": 2,
+      "elapsed_s": 6.233563499998127,
+      "stdout": "{\"name\": \"tracks32\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks64",
+      "rc": 2,
+      "elapsed_s": 7.6083398999981,
+      "stdout": "{\"name\": \"tracks64\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_equal_integral",
+      "rc": 2,
+      "elapsed_s": 7.593335099998512,
+      "stdout": "{\"name\": \"tracks32_equal_integral\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_missing",
+      "rc": 2,
+      "elapsed_s": 6.384905699997034,
+      "stdout": "{\"name\": \"tracks32_missing\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_coarse",
+      "rc": 2,
+      "elapsed_s": 2.834750300004089,
+      "stdout": "{\"name\": \"tracks32_coarse\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_wide_coarse",
+      "rc": 2,
+      "elapsed_s": 7.330913700003293,
+      "stdout": "{\"name\": \"tracks32_wide_coarse\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_dz2",
+      "rc": 2,
+      "elapsed_s": 8.892257299994526,
+      "stdout": "{\"name\": \"tracks32_dz2\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "continuous_dz2",
+      "rc": 2,
+      "elapsed_s": 8.698949699995865,
+      "stdout": "{\"name\": \"continuous_dz2\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "vacuum",
+      "rc": 2,
+      "elapsed_s": 2.0796203999998397,
+      "stdout": "{\"name\": \"vacuum\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "continuous_dx4",
+      "rc": 2,
+      "elapsed_s": 11.26663009999902,
+      "stdout": "{\"name\": \"continuous_dx4\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_dx4",
+      "rc": 2,
+      "elapsed_s": 11.738050600004499,
+      "stdout": "{\"name\": \"tracks32_dx4\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    }
+  ],
+  "failures": [
+    {
+      "name": "continuous",
+      "rc": 2,
+      "elapsed_s": 7.198127399999066,
+      "stdout": "{\"name\": \"continuous\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks16",
+      "rc": 2,
+      "elapsed_s": 5.624744499997178,
+      "stdout": "{\"name\": \"tracks16\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32",
+      "rc": 2,
+      "elapsed_s": 6.233563499998127,
+      "stdout": "{\"name\": \"tracks32\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks64",
+      "rc": 2,
+      "elapsed_s": 7.6083398999981,
+      "stdout": "{\"name\": \"tracks64\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_equal_integral",
+      "rc": 2,
+      "elapsed_s": 7.593335099998512,
+      "stdout": "{\"name\": \"tracks32_equal_integral\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_missing",
+      "rc": 2,
+      "elapsed_s": 6.384905699997034,
+      "stdout": "{\"name\": \"tracks32_missing\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_coarse",
+      "rc": 2,
+      "elapsed_s": 2.834750300004089,
+      "stdout": "{\"name\": \"tracks32_coarse\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_wide_coarse",
+      "rc": 2,
+      "elapsed_s": 7.330913700003293,
+      "stdout": "{\"name\": \"tracks32_wide_coarse\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_dz2",
+      "rc": 2,
+      "elapsed_s": 8.892257299994526,
+      "stdout": "{\"name\": \"tracks32_dz2\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "continuous_dz2",
+      "rc": 2,
+      "elapsed_s": 8.698949699995865,
+      "stdout": "{\"name\": \"continuous_dz2\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "vacuum",
+      "rc": 2,
+      "elapsed_s": 2.0796203999998397,
+      "stdout": "{\"name\": \"vacuum\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "continuous_dx4",
+      "rc": 2,
+      "elapsed_s": 11.26663009999902,
+      "stdout": "{\"name\": \"continuous_dx4\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_dx4",
+      "rc": 2,
+      "elapsed_s": 11.738050600004499,
+      "stdout": "{\"name\": \"tracks32_dx4\", \"status\": \"failure_retained\"}\n",
+      "stderr": ""
+    }
+  ],
+  "gates": [],
+  "peer_Q4_tracks_pass": false,
+  "boundary_validated": false,
+  "combined_convergence_certified": false,
+  "status": "incomplete_failures_retained",
+  "hashes_after": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "scripts/run_glass007_v2.py": "f0abb77b02ed054f65e4f46ec9ad4efa973236eae220487ad11cefc414de1880",
+    "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+    "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+    "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+    "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+    "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+    "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+    "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+    "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+    "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+    "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+    "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+  },
+  "sources_unchanged": true,
+  "elapsed_s": 93.63721780000196,
+  "sum_children_s": 93.48418819998915,
+  "own_gates_pass": false
+}

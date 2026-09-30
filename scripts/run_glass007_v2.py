@@ -94,7 +94,7 @@ def run_case(name):
                     and meta["coverage_area_relative_error"] < 1e-3
                     and meta["fully_core_cells_untouched"] and meta["fully_outside_cells_untouched"]
                     and (not equal or meta["integral_match_relative_error"] < 1e-12))
-    result = dict(name=name, status="completed", backend="scalar_paraxial_cpu_ssfm_cell_average",
+    result = dict(name=name, status="completed",
                   gpu_used=False, time_utc=datetime.now(timezone.utc).isoformat(),
                   points=points, width_m=width, length_m=length,
                   weighted_core_fraction_input=weighted, old_detector_same_field=old,
@@ -105,6 +105,7 @@ def run_case(name):
                   detector_sha256=hashlib.sha256(weights.tobytes()).hexdigest(),
                   hashes_before=before, hashes_after=after, sources_unchanged=before == after,
                   profile_gate=profile_gate, balance_gate=budget["balance_relative"] < 1e-10)
+    result["backend"] = "scalar_paraxial_cpu_ssfm_cell_average"
     if name == "vacuum":
         zr = math.pi*1.444*(6e-6)**2/1550e-9
         expected = 1-math.exp(-2/(1+(length/zr)**2))
@@ -125,6 +126,7 @@ def run_all(target):
                    combined_convergence_certified=False)
     for name, output in paths.items():
         child_start = time.monotonic()
+        result = None
         command = [sys.executable, "-B", str(Path(__file__).resolve()),
                    "--case", name, "--out", str(output)]
         try:
@@ -146,6 +148,10 @@ def run_all(target):
         print(json.dumps(dict(name=name, rc=child["rc"], elapsed_s=child["elapsed_s"])), flush=True)
         if hashes() != inputs:
             summary["failures"].append(dict(name=name, reason="concurrent_input_mutation"))
+            break
+        if result is None or result.get("status") != "completed":
+            # Stop operationally broken batches; numerical FAIL gates remain
+            # reportable across all completed cases without retuning thresholds.
             break
     good = {c["name"]: c for c in summary["cases"] if c["status"] == "completed"}
     peer = json.loads((ROOT / PEER_INPUTS[0]).read_text(encoding="utf-8"))
