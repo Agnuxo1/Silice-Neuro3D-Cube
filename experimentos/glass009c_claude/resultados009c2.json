@@ -1,0 +1,89 @@
+{
+ "contract2_sha256": "220735bc6aab21c5bf3d52b402f13dbf21c690c9c1c1167e498c5a5c10364b41",
+ "configs": [
+  {
+   "z_arr_mm": 0.5,
+   "C1_max_E_before_arrival": 0.007066795925241434,
+   "C1_PASS": true,
+   "window_mm": 1.3999999999999997,
+   "C3_power_err_in_window": 0.002365282828952287,
+   "C3_PASS": true,
+   "Emax": 0.10001776280174977,
+   "E_at_2mm": 0.10001776280174977,
+   "E_le_0p4mm": 0.007066795925241434,
+   "theta": 0.0,
+   "domain_um": 128.0,
+   "dz_um": 1.25
+  },
+  {
+   "z_arr_mm": 0.9,
+   "C1_max_E_before_arrival": 0.007253202819054317,
+   "C1_PASS": true,
+   "window_mm": 2.0,
+   "C3_power_err_in_window": 0.002288424736143863,
+   "C3_PASS": true,
+   "Emax": 0.007253202819054317,
+   "E_at_2mm": 0.000740648062032465,
+   "E_le_0p4mm": 0.007253202819054317,
+   "theta": 0.0,
+   "domain_um": 256.0,
+   "dz_um": 2.5
+  },
+  {
+   "z_arr_mm": 0.39999999999999997,
+   "C1_max_E_before_arrival": 0.009424075974467863,
+   "C1_PASS": true,
+   "window_mm": 1.0999999999999999,
+   "C3_power_err_in_window": 0.0030133422305063224,
+   "C3_PASS": true,
+   "Emax": 0.11099599812815764,
+   "E_at_2mm": 0.11099599812815764,
+   "E_le_0p4mm": 0.00985276821742708,
+   "theta": 0.02,
+   "domain_um": 128.0,
+   "dz_um": 2.5
+  },
+  {
+   "z_arr_mm": 0.39999999999999997,
+   "C1_max_E_before_arrival": 0.026351235181580165,
+   "C1_PASS": false,
+   "window_mm": 0.19999999999999998,
+   "C3_power_err_in_window": 2.030445297777213e-06,
+   "C3_PASS": true,
+   "Emax": 0.1976116396968997,
+   "E_at_2mm": 0.1976116396968997,
+   "E_le_0p4mm": 0.026351235181580165,
+   "theta": 0.05,
+   "domain_um": 128.0,
+   "dz_um": 2.5
+  },
+  {
+   "z_arr_mm": 0.6999999999999998,
+   "C1_max_E_before_arrival": 0.026351235182209155,
+   "C1_PASS": false,
+   "window_mm": 0.19999999999999998,
+   "C3_power_err_in_window": 2.030445297777213e-06,
+   "C3_PASS": true,
+   "Emax": 0.026351235182209155,
+   "E_at_2mm": 0.013183389961672553,
+   "E_le_0p4mm": 0.026351235182209155,
+   "theta": 0.05,
+   "domain_um": 256.0,
+   "dz_um": 2.5
+  },
+  {
+   "z_arr_mm": 0.3,
+   "C1_max_E_before_arrival": 0.056096521932873615,
+   "C1_PASS": false,
+   "window_mm": 0.0,
+   "C3_power_err_in_window": 0.0,
+   "C3_PASS": true,
+   "Emax": 0.5280825955990021,
+   "E_at_2mm": 0.4424595565983064,
+   "E_le_0p4mm": 0.06077896377550861,
+   "theta": 0.08,
+   "domain_um": 128.0,
+   "dz_um": 2.5
+  }
+ ]
+}
