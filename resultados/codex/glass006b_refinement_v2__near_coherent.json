@@ -1,0 +1,117 @@
+{
+  "name": "near_coherent",
+  "status": "completed",
+  "time_utc": "2026-09-30T19:07:26.524609+00:00",
+  "gpu_used": false,
+  "points": 320,
+  "width_m": 0.000128,
+  "length_m": 0.001,
+  "input_power": 0.9999999999999999,
+  "output_power": 0.9930471437063583,
+  "material_removed": 0.0,
+  "boundary_removed": 0.006952856293739318,
+  "balance_relative": 9.769962616701379e-14,
+  "backend": "scalar_paraxial_cpu_ssfm",
+  "steps": 400,
+  "dx_m": 4e-07,
+  "dz_m": 2.5e-06,
+  "geometry": {
+    "separation_m": 1.4e-05,
+    "radius_m": 6e-06,
+    "thickness_m": 6e-06,
+    "delta_n": -0.005,
+    "samples": 16,
+    "topology": "union_outer_disks_minus_both_intact_cores",
+    "modified_area_m2": 5.420049999999999e-10,
+    "detector_area_errors": [
+      4.440892098500626e-16,
+      6.661338147750939e-16
+    ],
+    "fully_core_untouched": true,
+    "no_double_index": true
+  },
+  "basis": {
+    "raw_overlap_abs": 0.06572852861653057,
+    "orthogonality_error": 2.220446049250313e-16,
+    "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+  },
+  "reduction": {
+    "hermiticity_error_per_m": 8.529245589788006e-13,
+    "out_of_basis_generator_norm_per_m": [
+      4147.444609912442,
+      4147.444609912442
+    ],
+    "reduction": "two_Gaussian_Galerkin_no_sponge_no_fit_NOT_modal_CMT"
+  },
+  "coverage16_vs32_relative": 5.8805962232733044e-05,
+  "input_amplitudes": [
+    [
+      0.7071067811865475,
+      0.0
+    ],
+    [
+      0.0,
+      0.7071067811865475
+    ]
+  ],
+  "gaussian_port_amplitudes": [
+    [
+      0.15763552740023998,
+      -0.25228798828735954
+    ],
+    [
+      0.7745528181213257,
+      0.48807942112164165
+    ]
+  ],
+  "reduced_prediction": [
+    [
+      0.12209447673150149,
+      -0.30521025527115225
+    ],
+    [
+      0.8768668405741765,
+      0.3507765424460998
+    ]
+  ],
+  "reduction_max_complex_error": 0.1712315382255063,
+  "reduction_pass": false,
+  "core_powers_input": [
+    0.08565200281649663,
+    0.7421518908871161
+  ],
+  "projected_power_input": 0.9266517779149589,
+  "unprojected_power_input": 0.06639536579136968,
+  "projection_budget_error": 2.964295475749168e-14,
+  "preparation_s": 2.984025700003258,
+  "propagation_s": 4.155075500006205,
+  "elapsed_s": 7.4002146999991965,
+  "ram_free_before_gib": 3.5171279907226562,
+  "rss_after_mib": 44.18359375,
+  "arrays_path": "resultados/codex/glass006b_refinement_v2__near_coherent.npz",
+  "arrays_sha256": "7f72eb1626c7d7b27f47cc9f7ce6165e72bdc64d80029afb582f662300da84d5",
+  "hashes_before": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coupler.py": "0d4414e28189d5c8f3054d3a294e8c74dcae1afe37c29c64af21313e627c1576",
+    "scripts/run_glass006b_pilot.py": "c14a820acc8bcac3c3c3451f82bff71d359d7b3df497614c3344b579c1cd050c",
+    "Docs/GLASS-006B-PILOT-CONTRACT.md": "5be9ad3c884dd107a7cfeed78ae5f03b25dee418d0737dba8afe38af3d5cd236",
+    "scripts/run_glass006b_refinement.py": "625808369e4675586850ec59c3b3945756134598ecb307e5d26489b7b35f8aaf",
+    "Docs/GLASS-006B-REFINEMENT-CONTRACT.md": "0e6d8b8a5cfe64370528cec2cd08123e2695919cc53dad51010093c75abe379c",
+    "resultados/codex/glass006b_pilot_v1.json": "0b45ae75f812c51b1bb615633ef614aa782f285d940005cf39b8921727f82ae6"
+  },
+  "hashes_after": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coupler.py": "0d4414e28189d5c8f3054d3a294e8c74dcae1afe37c29c64af21313e627c1576",
+    "scripts/run_glass006b_pilot.py": "c14a820acc8bcac3c3c3451f82bff71d359d7b3df497614c3344b579c1cd050c",
+    "Docs/GLASS-006B-PILOT-CONTRACT.md": "5be9ad3c884dd107a7cfeed78ae5f03b25dee418d0737dba8afe38af3d5cd236",
+    "scripts/run_glass006b_refinement.py": "625808369e4675586850ec59c3b3945756134598ecb307e5d26489b7b35f8aaf",
+    "Docs/GLASS-006B-REFINEMENT-CONTRACT.md": "0e6d8b8a5cfe64370528cec2cd08123e2695919cc53dad51010093c75abe379c",
+    "resultados/codex/glass006b_pilot_v1.json": "0b45ae75f812c51b1bb615633ef614aa782f285d940005cf39b8921727f82ae6"
+  },
+  "sources_unchanged": true,
+  "numeric_pass": true
+}
