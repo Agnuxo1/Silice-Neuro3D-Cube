@@ -1,0 +1,3 @@
+# Fe de erratas 009d (Claude)
+Primera pasada: los 4 hijos de T96d excedieron 30 s (FAIL/TIMEOUT, retenidos en out/failures_run1_retenido.txt). Causa: el cálculo Q1 del área exacta (trama 4096² × 96 discos, bucle sobre pantalla completa) dentro del propio hijo, no la propagación. Cd (continuo) sí terminó (4 hijos OK).
+Corrección (no cambia contrato, gates ni umbrales; no amplía el límite): la preparación del área exacta se separa en `prep_exact.py` (trama con cajas acotadas por disco, resultado en out/exact_T96d.json) y `run009d.py` la lee. Ninguna medida de T96d se completó en la primera pasada, así que no se repite ningún caso medido.

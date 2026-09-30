@@ -1,0 +1,13 @@
+{
+ "kind": "Cd",
+ "dx_um": 0.625,
+ "N": 205,
+ "domain_um": 128.12499999999997,
+ "chunk": 0,
+ "steps_done": 800,
+ "final": true,
+ "Q1_integral_rel_err": 0.00019458667067961954,
+ "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+ "weighted": 0.36341858760421314,
+ "elapsed_s": 7.706
+}

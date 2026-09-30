@@ -1,0 +1,7 @@
+per_ring=16 wedge= 0.0: angulo total con canal radial abierto=  0.00 deg; contiguo cerca de +x: 0 deg
+per_ring=32 wedge= 0.0: angulo total con canal radial abierto=  0.00 deg; contiguo cerca de +x: 0 deg
+per_ring=64 wedge= 0.0: angulo total con canal radial abierto=  0.00 deg; contiguo cerca de +x: 0 deg
+per_ring=32 wedge=30.0: angulo total con canal radial abierto= 17.75 deg; contiguo cerca de +x: 17.70 deg
+per_ring=16: relleno del anillo = 68.7 %  (recorte por r<6/r>=12: 0.0 % del area de los discos cae fuera)
+per_ring=32: relleno del anillo = 95.2 %  (recorte por r<6/r>=12: 0.0 % del area de los discos cae fuera)
+per_ring=64: relleno del anillo = 98.9 %  (recorte por r<6/r>=12: 0.0 % del area de los discos cae fuera)

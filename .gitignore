@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 .pytest_cache/
 *.log
+
+experimentos/**/out/state_*.npy
+tools/_preview/

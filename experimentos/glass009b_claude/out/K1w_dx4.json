@@ -1,0 +1,13 @@
+{
+ "weighted": 0.0815564959909068,
+ "unweighted": 0.08135351553778274,
+ "analytic": 0.08151966547277134,
+ "err_weighted": 3.6830518135452794e-05,
+ "err_unweighted": 0.00016614993498860475,
+ "case": "K1w",
+ "dx_um": 0.39999999999999997,
+ "N": 320,
+ "elapsed_s": 6.345,
+ "area_weighted_over_exact": 1.0000235590940754,
+ "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb"
+}
