@@ -1,0 +1,13 @@
+th020_dom128_dx5_dz250 chunk 0 fin True 19.89 s
+th050_dom128_dx5_dz250 chunk 0 fin True 20.28 s
+th080_dom128_dx5_dz250 chunk 0 fin True 19.12 s
+th000_dom128_dx5_dz125 chunk 0 fin False 20.5 s
+th000_dom128_dx5_dz125 chunk 1 fin True 19.04 s
+th000_dom256_dx5_dz250 chunk 0 fin False 23.06 s
+th000_dom256_dx5_dz250 chunk 1 fin False 22.43 s
+th000_dom256_dx5_dz250 chunk 2 fin False 20.8 s
+th000_dom256_dx5_dz250 chunk 3 fin True 22.72 s
+th050_dom256_dx5_dz250 chunk 0 fin False 24.03 s
+th050_dom256_dx5_dz250 chunk 1 fin False 21.6 s
+th050_dom256_dx5_dz250 chunk 2 fin False 21.45 s
+th050_dom256_dx5_dz250 chunk 3 fin True 22.89 s

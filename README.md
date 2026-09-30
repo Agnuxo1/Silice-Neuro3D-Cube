@@ -88,6 +88,7 @@ Cada ensayo se congela **antes** de medir. Los fallos no se ocultan ni se relaja
 | GLASS-007 | Camisa de trazos discretos | 96 trazos ≈ continuo; hueco de 30° pierde potencia |
 | GLASS-007 V2 | Réplica con área parcial y cobertura: continuo36.18%, 96trazos33.11% | 13casos; refinamientos y contrasteADI pasan, frontera pendiente |
 | GLASS-008/009 | Revisión geométrica; solver ADI 2D | coincide ≤ 0,0024; **K1, K2, K4-dx, K5 fallan (retenidos)** |
+| GLASS-009c/010 | Frontera absorbente y descomposición modal | ventana de confianza 1,4–2 mm; la caída a 2 mm es pérdida modal (18 dB/cm en 6 µm / δn −0,003); todos los gates de convergencia pasan con geometría exacta |
 | GLASS-009b/d | Observable con área parcial + índice por cobertura | mejora de dx; continuo0.3631 provisional; **Q4 de96trazos falla**, timeouts retenidos |
 
 Detalle en [`Docs/`](Docs/), [`coordinacion/respuestas/`](coordinacion/respuestas/) y [`resultados/`](resultados/).

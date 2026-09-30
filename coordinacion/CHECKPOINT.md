@@ -1,7 +1,8 @@
 # Checkpoint factual Silice-Neuro3D-Cube
 
-2026-09-30 10:35 UTC / 12:35 Europe/Madrid. Proyecto independiente en
-`D:\PROJECTS\Silice-Neuro3D-Cube`; no fork externo, sin remoto todavía.
+2026-09-30 13:24 UTC / 15:24 Europe/Madrid. Proyecto independiente en
+`D:\PROJECTS\Silice-Neuro3D-Cube`; no fork externo. Claude añadió remoto y
+presentación en dc62015/4c2be4e; no publicar esta nueva entrega incidentalmente.
 
 Claude creó informes001/002 y experimento CMT. Archivos leídos, no editados.
 Codex creó contrato/BPM/tests/runner y auditor independiente. 11CPUtestsPASS.
@@ -34,6 +35,25 @@ Se corrigió normalizaciónGitJSON: seisHEADblobs idénticos a bytesdisco,
 parent007 SHA3e838d5b... ahora reproducible enclone. Historiafallos intacta.
 Auditor007 verifica10casos/4gates/lineageSHA, no segundo solverondas.
 Tableros/checkpoint yarchivosClaude locales sinstage; propios limpios.
-Ninguna GPU/Blender/instalación/publicación en esta línea.
+Hito007V2: contrato2439bf4; dosfallospropios escritura retenidos(run1
+backend duplicado13FAIL/93.6372s;run2NumPybool/JSONtruncado). Reparaciones
+d7e5e95/d9fa4f7 antes de continuación. Run3 COMPLETO13casos:4reusadosSHA,
+9nuevoshijos56.2399s/max10.6394s. No repetir cuatro completos. FuenteBPM
+ycoverage inmutables; todascomparacionesprefijadas pasan, NOgeneralización.
+Continuo0.36177143/48trazos0.14292180/96trazos0.33109153/192trazos0.35494282/
+igualintegral0.36601101/cuñacentros0.21388473.96/continuo0.915195.
+Nuevohallazgo: separarperfil+0.00850268 ydetector+0.00447865 encontinuo,
+no factoruniversalárea. dx0.5→0.4 cambia96=0.00044398/continuo0.00035519.
+ErrorADI009d max0.00131811/radial0.00193536; vacíoerror8.78e-6.
+29testsPASS1.173s;auditor13casos/lineageSHA/Q4ClaudeFAILretenido.
+ReportSHAff8ce69b8ef991cf2a4df0ac8f2248f527b8d2aa5fe9d9df10baa701526a8fec.
+Hito local2da7d40: README/13resultados/auditor.29inputs/casos verifican
+HEADbytes=disco; tresinputspeer reindexados sin modificarbytes en disco.
+No push deestaentrega; tableros/checkpoint quedan cambios locales compartidos.
+009cClaude asignado: contrato de retorno/transito/colas antesmedir;006bCodex
+acoplador dosguías siguiente. No certificarfrontera/convergencia global.
+Tresinputspeer revisados condiscoCRLF/blobLF: preservarbytes mediante
+atributos exactos/reindexación, no cambiarSHAdeinformes; diskpeerintacto.
+Esta ejecución terminó todos sus hijosCPU; sinGPU/Blender/instalaciones.
 JEVsecurityblocked heredado, no reintentar/eludir, fallbacklocal sin aval.
 No modificar antiguo Neuro3D ni su automatización; preservar trabajo ajeno.
