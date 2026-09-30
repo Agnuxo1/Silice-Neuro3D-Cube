@@ -4,3 +4,7 @@
 *.toml text eol=lf
 # Evidence is hashed byte-for-byte; never normalize JSON line endings.
 resultados/codex/*.json -text whitespace=cr-at-eol
+# Reviewed peer inputs referenced byte-for-byte by the retained V2 reports.
+experimentos/glass009d_claude/resultados009d.json -text whitespace=cr-at-eol
+experimentos/glass009d_claude/run009d.py -text whitespace=cr-at-eol
+experimentos/glass006a_claude/resultados.json -text whitespace=cr-at-eol

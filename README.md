@@ -7,7 +7,7 @@
 ![estado](https://img.shields.io/badge/estado-investigaci%C3%B3n_CPU-0ea5e9)
 ![dispositivo](https://img.shields.io/badge/dispositivo_fabricado-no-f87171)
 ![gpu](https://img.shields.io/badge/GPU-no_usada-34d399)
-![tests](https://img.shields.io/badge/tests_CPU-22_pasan-34d399)
+![tests](https://img.shields.io/badge/tests_CPU-29_pasan-34d399)
 ![evidencia](https://img.shields.io/badge/fallos-retenidos-fbbf24)
 
 [Idea](#la-idea) · [Cómo funciona](#cómo-funciona-en-8-gifs) · [Resultados](#resultados-hasta-hoy) · [Reproducir](#reproducir) · [Método](#método-y-colaboración) · [Hoja de ruta](#hoja-de-ruta)
@@ -86,10 +86,18 @@ Cada ensayo se congela **antes** de medir. Los fallos no se ocultan ni se relaja
 | GLASS-005 | Solver radial FD+ECS, criterio V ≥ ~2,4 | dz ≤ 2,5 µm; SK1310 (fuente) sigue inaccesible |
 | GLASS-006a | Fuga frente a grosor/radio/δn | G3 túnel 4/4, G4 OK; **convergencia por modo 7/18** |
 | GLASS-007 | Camisa de trazos discretos | 96 trazos ≈ continuo; hueco de 30° pierde potencia |
+| GLASS-007 V2 | Réplica con área parcial y cobertura: continuo36.18%, 96trazos33.11% | 13casos; refinamientos y contrasteADI pasan, frontera pendiente |
 | GLASS-008/009 | Revisión geométrica; solver ADI 2D | coincide ≤ 0,0024; **K1, K2, K4-dx, K5 fallan (retenidos)** |
-| GLASS-009b/d | Observable con área parcial + índice por cobertura | cambio con dx: 0,0072 → 9e-5; continuo 0,3631 ≈ radial 0,3637; T96d con timeout retenido |
+| GLASS-009b/d | Observable con área parcial + índice por cobertura | mejora de dx; continuo0.3631 provisional; **Q4 de96trazos falla**, timeouts retenidos |
 
 Detalle en [`Docs/`](Docs/), [`coordinacion/respuestas/`](coordinacion/respuestas/) y [`resultados/`](resultados/).
+
+La [réplica independiente V2](Docs/GLASS-007-V2-RESULTS.md) confirma que
+96trazos retienen un8.5% menos potencia en núcleo que el continuo y separa
+el efecto de promediar el índice del efecto del detector. Los GIF anteriores
+conservan datosV1: no son figuras deV2. No se han certificado frontera,
+convergencia global ni fabricación. Ambos fallos de escritura propios se
+conservan junto a la continuación por hashes, sin repetir cuatro casos válidos.
 
 ### Qué **no** demuestra el repositorio
 
@@ -105,7 +113,7 @@ Silice-Neuro3D-Cube/
 ├── assets/                 GIF del README (generados por tools/)
 ├── tools/                  scripts que generan los GIF a partir de los datos
 ├── src/silice/             BPM escalar paraxial (bpm.py) y trazos discretos (tracks.py)   [Codex]
-├── scripts/  tests/        ensayos, auditorías y 22 pruebas CPU                              [Codex]
+├── scripts/  tests/        ensayos, auditorías y 29 pruebas CPU                              [Codex]
 ├── experimentos/
 │   ├── glass_min1/         DFT4 por modos acoplados y Monte Carlo                            [Claude]
 │   ├── glass005_claude/    solver radial FD + escalado complejo exterior                     [Claude]
@@ -122,7 +130,7 @@ Solo Python, NumPy y SciPy (ya instalados); ningún script instala dependencias 
 
 ```powershell
 cd D:\PROJECTS\Silice-Neuro3D-Cube
-python -B scripts/check.py                                   # 22 pruebas CPU
+python -B scripts/check.py                                   # 29 pruebas CPU
 python -B scripts/run_glass003_v2.py --out resultados/codex/glass003_v2_replicacion.json
 python -B scripts/audit_glass004.py --out resultados/codex/glass004_replicacion.json
 python experimentos/glass_min1/montecarlo.py                 # tolerancias DFT4
@@ -132,6 +140,12 @@ python tools/gif_header.py                                   # regenera los GIF 
 ```
 
 Un resultado fallido sigue guardándose y produce salida no exitosa. Los nombres nuevos evitan sobrescribir evidencia previa. No iniciar Blender ni GPU por reproducir este README.
+
+Verificación ligera de informes V2, sin repetir propagaciones:
+
+```powershell
+python -B scripts/audit_glass007_v2.py resultados/codex/glass007_v2_run3.json
+```
 
 ## Método y colaboración
 
@@ -143,7 +157,8 @@ Reglas: contrato antes de medir · umbrales no se relajan después · fallos ret
 
 - [x] BPM escalar paraxial + segundo solver radial + solver 2D independiente
 - [x] Camisa continua y de trazos discretos (modelo ideal)
-- [ ] Observable con área parcial de píxel (009b) y validación del absorbente (009c)
+- [x] Observable con área parcial y perfil por cobertura (009b/d, réplica007V2)
+- [ ] Validación del absorbente/frontera radiativa (009c), sin relajar gates fallidos
 - [ ] Perfiles/trazos medidos de SK1310 (necesita el PDF completo) y modos reales
 - [ ] Acoplador de dos guías: BPM frente a modos acoplados (GLASS-006b)
 - [ ] Curvas, registro entre caras, tolerancias correlacionadas y calibración
