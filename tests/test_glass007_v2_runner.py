@@ -19,14 +19,15 @@ class RunnerReportTests(unittest.TestCase):
                                balance_relative=0.0, backend="scalar_paraxial_cpu_ssfm",
                                steps=kwargs["steps"], dx_m=grid.dx_m,
                                dz_m=kwargs["length_m"]/kwargs["steps"])
-        with patch.object(RUNNER, "hashes", return_value={}), \
-             patch.object(RUNNER.psutil, "virtual_memory", return_value=SimpleNamespace(available=2*1024**3)), \
-             patch.object(RUNNER, "propagate", side_effect=fake_propagate):
-            result = RUNNER.run_case("vacuum")
-        self.assertEqual(result["status"], "completed")
-        self.assertEqual(result["backend"], "scalar_paraxial_cpu_ssfm_cell_average")
-        self.assertEqual(result["peak_delta_n"], 0)
-        json.dumps(result, allow_nan=False)
+        for name in ("vacuum", "tracks32_equal_integral"):
+            with self.subTest(name=name), patch.object(RUNNER, "hashes", return_value={}), \
+                 patch.object(RUNNER.psutil, "virtual_memory", return_value=SimpleNamespace(available=2*1024**3)), \
+                 patch.object(RUNNER, "propagate", side_effect=fake_propagate):
+                result = RUNNER.run_case(name)
+            self.assertEqual(result["status"], "completed")
+            self.assertEqual(result["backend"], "scalar_paraxial_cpu_ssfm_cell_average")
+            self.assertIsInstance(result["profile_gate"], bool)
+            json.dumps(result, allow_nan=False)
 
 
 if __name__ == "__main__":

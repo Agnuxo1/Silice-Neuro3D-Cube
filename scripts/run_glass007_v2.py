@@ -53,9 +53,9 @@ def hashes():
 
 
 def write_new(path, data):
+    encoded = json.dumps(data, indent=2, allow_nan=False) + "\n"
     with path.open("x", encoding="utf-8", newline="\n") as handle:
-        json.dump(data, handle, indent=2, allow_nan=False)
-        handle.write("\n")
+        handle.write(encoded)
 
 
 def comparison(reference, candidate):
@@ -90,7 +90,7 @@ def run_case(name):
     old = metrics(b, g, 6e-6)["core_fraction_remaining"]*budget["output_power"]/budget["input_power"]
     weighted = weighted_core_power(b, weights, g, budget["input_power"])
     after = hashes()
-    profile_gate = (meta["detector_area_relative_error"] < 1e-10
+    profile_gate = bool(meta["detector_area_relative_error"] < 1e-10
                     and meta["coverage_area_relative_error"] < 1e-3
                     and meta["fully_core_cells_untouched"] and meta["fully_outside_cells_untouched"]
                     and (not equal or meta["integral_match_relative_error"] < 1e-12))
@@ -114,7 +114,27 @@ def run_case(name):
     return result
 
 
-def run_all(target):
+def load_reusable(path, name, current):
+    case = json.loads(path.read_text(encoding="utf-8"))
+    if case.get("status") != "completed" or case.get("name") != name or not case.get("sources_unchanged"):
+        raise ValueError("reuse requires an unchanged completed case")
+    if case["hashes_before"] != case["hashes_after"]:
+        raise ValueError("parent source drift")
+    # Metadata/supervisor repair only; scientific coverage/BPM/contract/peer
+    # inputs must match EVERY hash from the earlier successful computation.
+    for relative, sha in case["hashes_before"].items():
+        if relative != "scripts/run_glass007_v2.py" and current.get(relative) != sha:
+            raise ValueError("scientific input changed: " + relative)
+    legacy = subprocess.check_output(["git", "show", "d7e5e95:scripts/run_glass007_v2.py"], cwd=ROOT)
+    if hashlib.sha256(legacy).hexdigest() != case["hashes_before"]["scripts/run_glass007_v2.py"]:
+        raise ValueError("unrecognized prior runner version")
+    case["report_sha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+    case["report_path"] = path.relative_to(ROOT).as_posix()
+    case["reused_without_recomputation"] = True
+    return case
+
+
+def run_all(target, resume_prefix=None):
     start = time.monotonic()
     inputs = hashes()
     paths = {name: target.with_name(target.stem + "__" + name + ".json") for name in CASES}
@@ -122,9 +142,27 @@ def run_all(target):
         raise FileExistsError("fresh report prefix required; never repeat completed cases silently")
     summary = dict(experiment="GLASS-007-v2", gpu_used=False, hashes_before=inputs,
                    cases=[], children=[], failures=[], gates=[],
+                   prior_invalid_artifacts=[], historical_operational_pass=False,
                    peer_Q4_tracks_pass=False, boundary_validated=False,
                    combined_convergence_certified=False)
+    if resume_prefix is not None:
+        prefix = resume_prefix.resolve()
+        if not prefix.is_relative_to(ROOT / "resultados/codex"):
+            raise ValueError("resume prefix outside own results")
+        for name in CASES:
+            old = prefix.with_name(prefix.name + "__" + name + ".json")
+            if not old.exists():
+                continue
+            try:
+                case = load_reusable(old, name, inputs)
+                summary["cases"].append(case)
+            except json.JSONDecodeError:
+                summary["prior_invalid_artifacts"].append(dict(path=old.relative_to(ROOT).as_posix(),
+                    sha256=hashlib.sha256(old.read_bytes()).hexdigest(), reason="invalid_json_retained"))
+    reused = {c["name"] for c in summary["cases"]}
     for name, output in paths.items():
+        if name in reused:
+            continue
         child_start = time.monotonic()
         result = None
         command = [sys.executable, "-B", str(Path(__file__).resolve()),
@@ -134,10 +172,13 @@ def run_all(target):
             child = dict(name=name, rc=run.returncode, elapsed_s=time.monotonic()-child_start,
                          stdout=run.stdout[-1000:], stderr=run.stderr[-1600:])
             if output.exists():
-                result = json.loads(output.read_text(encoding="utf-8"))
-                result["report_sha256"] = hashlib.sha256(output.read_bytes()).hexdigest()
-                result["report_path"] = output.relative_to(ROOT).as_posix()
-                summary["cases"].append(result)
+                try:
+                    result = json.loads(output.read_text(encoding="utf-8"))
+                    result["report_sha256"] = hashlib.sha256(output.read_bytes()).hexdigest()
+                    result["report_path"] = output.relative_to(ROOT).as_posix()
+                    summary["cases"].append(result)
+                except json.JSONDecodeError:
+                    child["artifact_error"] = "invalid_json_retained"
             if run.returncode != 0:
                 summary["failures"].append(child)
         except subprocess.TimeoutExpired:
@@ -177,6 +218,9 @@ def run_all(target):
     summary["sources_unchanged"] = inputs == summary["hashes_after"]
     summary["elapsed_s"] = time.monotonic()-start
     summary["sum_children_s"] = sum(c["elapsed_s"] for c in summary["children"])
+    summary["reused_case_count"] = len(reused)
+    summary["reused_compute_s"] = sum(c["elapsed_s"] for c in summary["cases"] if c.get("reused_without_recomputation"))
+    summary["wall_time_scope"] = "current supervisor only; run1 cost retained separately; run2 aborted before wall-time manifest"
     summary["own_gates_pass"] = (summary["status"] == "completed" and summary["sources_unchanged"]
         and all(c["profile_gate"] and c["balance_gate"] and c.get("analytic_gate", True) for c in good.values())
         and all(g["pass_"] for g in summary["gates"]))
@@ -190,12 +234,13 @@ def main():
     selection.add_argument("--case", choices=CASES)
     selection.add_argument("--all", action="store_true")
     parser.add_argument("--out", required=True, type=Path)
+    parser.add_argument("--resume-prefix", type=Path)
     args = parser.parse_args()
     target = args.out.resolve()
     if not target.is_relative_to(ROOT / "resultados/codex") or target.exists():
         parser.error("new own output path required")
     if args.all:
-        return run_all(target)
+        return run_all(target, args.resume_prefix)
     try:
         result = run_case(args.case)
     except Exception as error:
