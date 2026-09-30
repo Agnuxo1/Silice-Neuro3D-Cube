@@ -1,0 +1,11 @@
+{
+ "chunk": 0,
+ "steps_done": 400,
+ "final": false,
+ "case": "T96w",
+ "dx_um": 0.39999999999999997,
+ "N": 320,
+ "elapsed_s": 13.463,
+ "area_weighted_over_exact": 1.0000235590940754,
+ "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb"
+}

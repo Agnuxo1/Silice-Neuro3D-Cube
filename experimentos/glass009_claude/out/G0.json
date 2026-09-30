@@ -1,0 +1,12 @@
+{
+ "pixels_different": {
+  "t48": 0,
+  "t96": 0,
+  "t192": 0,
+  "t88": 0,
+  "cont": 0
+ },
+ "PASS": true,
+ "elapsed_s": 1.038,
+ "case": "G0"
+}

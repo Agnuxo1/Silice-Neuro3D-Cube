@@ -1,0 +1,13 @@
+{
+ "kind": "T96d",
+ "dx_um": 0.39999999999999997,
+ "N": 320,
+ "domain_um": 128.0,
+ "chunk": 1,
+ "steps_done": 800,
+ "final": true,
+ "Q1_integral_rel_err": 8.990011497056472e-05,
+ "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+ "weighted": 0.33267434735736884,
+ "elapsed_s": 13.037
+}

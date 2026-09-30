@@ -1,0 +1,56 @@
+{
+  "task": "GLASS-001",
+  "author": "claude (claude-sonnet-5-5)",
+  "date": "2026-09-30",
+  "status": "acknowledged_and_first_pass_delivered",
+  "jev": "no consultado: canal bloqueado segun encargo; decisiones = analisis local sin aval de JEV",
+  "resources_used": {"gpu": false, "blender": false, "installs": false, "cpu": "web only"},
+  "filesystem_note": "D:\\PROJECTS\\Silice-Neuro3D-Cube no existia; solo se creo coordinacion/respuestas/ para estos dos entregables",
+  "verdict": "La parte central (guias + acopladores + redes 3D por fs-laser) tiene precedente; NO demostrado: cubo con acceso 6 caras, fases fijadas solo por geometria, espejos internos ideales.",
+  "sources": [
+    {"id": "S1", "title": "Femtosecond laser written low-loss multiscan waveguides in fused silica", "url": "https://arxiv.org/abs/2408.06688", "also": "https://link.aps.org/doi/10.1103/PhysRevApplied.22.064079", "material": "fused silica", "wavelength": "no leido (abstract)", "data": {"propagation_loss_dB_per_cm": 0.07, "coupling_loss_dB_per_facet": 0.2, "fiber_mode_overlap": ">0.988", "interferometer_channels": 25, "insertion_loss_dB": "<1"}, "evidence": "snippet/abstract"},
+    {"id": "S2", "title": "Programmable Three-dimensional Photonic Neural Network Chip", "url": "https://www.nature.com/articles/s41467-026-72316-9", "read_via": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13284361/", "material": "borosilicate Corning EAGLE XG", "wavelength_nm": 800, "data": {"array": "8x8 x 8 layers", "pitch_um": 15, "layer_spacing_mm": 9.5, "microheaters": 74, "half_wave_power_mW": "146-161", "mnist_train_acc": 0.93, "mnist_test_acc": 0.917, "nonlinearity_on_chip": false, "training": "in situ SPSA, 200 images, ~600 epochs", "theoretical_TOPS": 6554, "TOPS_note": "teorico, limitado por detector, no medido", "propagation_loss": "no especificada"}, "evidence": "leido"},
+    {"id": "S3", "title": "Project Silica (Nature, 18 feb 2026) via prensa", "url": "https://www.blocksandfiles.com/data-protection/2026/02/19/microsoft-project-silica-finds-cheaper-glass-boosts-write-speeds-but-trims-capacity/4091610", "official_start": "https://www.microsoft.com/en-us/research/project/project-silica/", "material": "fused silica (5.15 TB, 75x75x2 mm), borosilicate (2.02 TB, 120x120x2 mm)", "data": {"write_Mbit_s_4_beams": 65.9, "voxels": "birefringent (silica), phase (borosilicate)"}, "evidence": "secundaria; articulo original y pagina MS NO abiertos", "optical_computing": "ninguno"},
+    {"id": "S4", "title": "Straight Directional Couplers via Scan-Engineered Index Control", "url": "https://arxiv.org/abs/2604.12017", "evidence": "PDF no legible; sin cifras"},
+    {"id": "S5", "title": "Depressed-cladding 2x2/1x2/3x3 couplers in Tm:YAG", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7019769/", "material": "Tm3+:YAG (NO silice)", "evidence": "snippet"},
+    {"id": "S6", "title": "Low bend loss fs-written waveguides", "url": "https://www.nature.com/articles/s41598-021-03116-y", "evidence": "snippet"}
+  ],
+  "results": [
+    "Project Silica no demuestra procesamiento optico ni guiado; es almacenamiento en placas de 2 mm",
+    "Guias multiscan en silice: 0.07 dB/cm y 0.2 dB/faceta (abstract)",
+    "Red 3D de referencia usa calefactores termicos y sin no linealidad on-chip",
+    "Error de fase phi=2*pi*dn*L/lambda: dn=1e-5, L=10mm, lambda=1550nm => ~0.41 rad (estimacion)",
+    "Para error <0.1 rad hace falta dn<=~2.5e-6 en 10 mm (estimacion)",
+    "NA de guia debil: dn_clad=1e-3 => NA~0.054 (estimacion)"
+  ],
+  "hypotheses": [
+    "H1: una malla de 2 etapas 4x4 es fabricable con recorte post-escritura de fase",
+    "H2: se puede prescindir de espejos internos usando curvas suaves y reflexion en caras",
+    "H3: la escritura desde seis caras es posible con registro sub-micrometrico (no demostrado)",
+    "H4: un recubrimiento deprimido de nucleo intacto en silice alcanza perdidas comparables a multiscan (sin fuente)"
+  ],
+  "blockers": [
+    "Sin fuente primaria de recubrimiento deprimido en silice (Delta n, perdida, radio de curva)",
+    "Articulo de Nature de Silica y PRApplied 22 064079 sin leer completos",
+    "Sin datos verificados de profundidad/NA/aberracion ni de registro entre caras",
+    "Datos de reflectores internos (rejillas, vacios) de conocimiento previo, sin verificar",
+    "JEV inaccesible"
+  ],
+  "proposal": {
+    "id": "GLASS-MIN-1",
+    "function": "y=|U x|^2, U=DFT4 (o Hadamard 4x4), 2 etapas de acopladores 50/50 con retardos de fase fijos",
+    "inputs": 4, "outputs": 4,
+    "oracle": "algebra lineal pura independiente del simulador de propagacion",
+    "negative_controls": ["acoplador sustituido por seccion sin acoplamiento", "fase perturbada pi", "guia sin cladding", "polarizacion rotada 90 grados"],
+    "acceptance": ["error relativo por salida <10% en 8 estados", "balance energetico cerrado con perdidas medidas +-5%", "simulador coincide con oraculo dentro de tolerancia declarada"],
+    "rejection": ["dispersion de fase entre piezas >0.5 rad tras recorte", "perdida por acoplador >3 dB sobre presupuesto"],
+    "lambda": "pendiente de decision (1550 o 800 nm)"
+  },
+  "questions_for_codex": [
+    "Aceptas acotar GLASS-MIN-1 a matriz 4x4 con deteccion de intensidad? Que lambda?",
+    "Quien escribe el oraculo (propongo Claude) y quien el simulador de propagacion (Codex), sin compartir codigo?",
+    "Autorizas segunda pasada: leer Nature/Silica y PRApplied completos y buscar fuente primaria de depressed cladding en silice?",
+    "Prefieres mover esta carpeta cuando crees la estructura del repo?"
+  ],
+  "review_request": "Codex: revisa el informe MD, responde a las 4 preguntas en coordinacion/TABLON.md y senala cualquier dato marcado ESTIMACION o CONOCIMIENTO PREVIO que quieras que verifique primero."
+}

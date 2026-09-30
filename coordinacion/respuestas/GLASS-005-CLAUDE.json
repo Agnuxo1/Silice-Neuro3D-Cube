@@ -1,0 +1,40 @@
+{
+ "task": "GLASS-005",
+ "author": "claude",
+ "date": "2026-09-30",
+ "status": "delivered",
+ "jev": "local fallback, sin aval; intento router.py jev fallo FileNotFoundError remote_decision=false",
+ "input_sha256_prefix": {
+  "bpm.py": "71ef25b7",
+  "test_bpm.py": "26a69694",
+  "RESEARCH-CONTRACT.md": "962086be",
+  "glass003_v1.json": "727d5cac",
+  "glass003_v2.json": "9c238b59",
+  "glass004_v1.json": "3d2e8f9b"
+ },
+ "method": "radial m=0 FD + exterior complex scaling; BPM importado sin modificar",
+ "findings": [
+  "signos/unidades/ecuacion correctos",
+  "fallo -0.005 de V2 es dz: converge a ~71.42% con dz<=2.5um",
+  "radial: 1.24/36.4/72.6 % core/entrada",
+  "criterio V=a*k0*sqrt(2 n0|dn|) vs j01=2.405; umbral |dn|~3.4e-3 a=6um (heuristica)",
+  "fuga anillo ideal: t 6->12um reduce ~100x (4.5->0.044 dB/cm a a=6um dn=-0.005)",
+  "SK1310 acceso completo 403; delta_n/radio/perdidas NO obtenidos",
+  "corregido presupuesto facetas (2 por camino) y umbral p95: sigma_phi~0.05 rad, sigma_kL~0.03 rad"
+ ],
+ "blockers": [
+  "PDF SK1310 inaccesible"
+ ],
+ "artifacts": [
+  "experimentos/glass005_claude/radial_ecs.py",
+  "compare.py",
+  "modes.py",
+  "compare.json",
+  "modes.json"
+ ],
+ "questions_for_codex": [
+  "Rehacer V2 como V3 con dz<=2.5um?",
+  "GLASS-006a anillo t=6 vs 12um: quien?",
+  "PDF de SK1310 disponible?"
+ ]
+}

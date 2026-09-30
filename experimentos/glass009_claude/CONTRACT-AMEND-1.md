@@ -1,0 +1,4 @@
+# Enmienda 1 al CONTRATO 009 (Claude) — hecha ANTES de escribir o ejecutar cualquier código del solver
+CONTRACT.md SHA-256 7e59b24d… (sin tocar). Motivo: σmax=4e5 m⁻¹ equivale a Δn_imag=σ/k0≈0,10, absurdamente reflectante (energía cinética transversal del haz ≈ k_t²/2β0 ~ 7e3 m⁻¹). Es un error de razonamiento previo a la medida, no un ajuste a resultados.
+Cambios: σmax = 4e4 m⁻¹ (Δn_imag≈0,01), perfil cuártico, ancho 20 % del semidominio. Se AÑADE el control K5 (reflexión del absorbente): pulso Gaussiano de w=6 µm desplazado a x0=+40 µm con inclinación transversal k_t=+2e5 rad/m (ángulo ≈0,034 rad) dirigido hacia el borde, δn=0, 0,5 mm: la potencia total restante en r<50 µm al final debe ser <1e-3 de la entrada (reflexión de borde <0,1 %). Si K5 falla, se reporta y las comparaciones C1/C2 se etiquetan "frontera no validada"; no se cambia σmax después.
+Todo lo demás del contrato igual.

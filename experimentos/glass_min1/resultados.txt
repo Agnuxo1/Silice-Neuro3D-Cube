@@ -1,0 +1,26 @@
+sanity nominal relerr 2.825479770160884e-05
+--- (a) error de fase sigma (rad), acoplo perfecto
+sigma_phi= 0.02 rad  relerr mean=0.022 p95=0.038
+sigma_phi= 0.05 rad  relerr mean=0.057 p95=0.095
+sigma_phi= 0.10 rad  relerr mean=0.109 p95=0.186
+sigma_phi= 0.20 rad  relerr mean=0.225 p95=0.369
+sigma_phi= 0.40 rad  relerr mean=0.404 p95=0.637
+--- (b) error de acoplo kappa*L (sigma en rad; pi/4 nominal), fase perfecta
+sigma_kL= 0.01 rad  relerr mean=0.018 p95=0.030
+sigma_kL= 0.03 rad  relerr mean=0.055 p95=0.089
+sigma_kL= 0.05 rad  relerr mean=0.092 p95=0.148
+sigma_kL= 0.10 rad  relerr mean=0.177 p95=0.296
+sigma_kL= 0.20 rad  relerr mean=0.363 p95=0.590
+--- (c) control negativo: fase mid[1] += pi ; acoplador (0,2) anulado
+phase+pi: 0.67784916325469
+coupler off: 0.5910960511804034
+--- (d) conservacion de energia (perdida 1 dB): norma^2 de salida/entrada
+0.7943282347242816 esperado 0.7943282347242815
+--- (e) mapeo a indice: dphi=2*pi*dn*L/lam, L=10mm, lam=1550nm
+sigma_phi=0.05 rad => dn_rms=1.23e-06
+sigma_phi=0.1 rad => dn_rms=2.47e-06
+sigma_phi=0.2 rad => dn_rms=4.93e-06
+--- (f) mapeo a gap: kL ~ exp(-g/g0); dkL=kL*dg/g0, kL=pi/4, g0 SUPUESTO 1.5um
+sigma_kL=0.03 => sigma_gap=57 nm
+sigma_kL=0.05 => sigma_gap=95 nm
+sigma_kL=0.1 => sigma_gap=191 nm
