@@ -1,0 +1,4886 @@
+{
+  "experiment": "GLASS-007-v2",
+  "gpu_used": false,
+  "hashes_before": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+    "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+    "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+    "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+    "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+    "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+    "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+    "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+    "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+    "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+    "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+    "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+  },
+  "cases": [
+    {
+      "name": "continuous",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:06:51.754317+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.3617714304347164,
+      "old_detector_same_field": 0.3572927837258258,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.7606490303580924,
+      "material_removed": 0.0,
+      "boundary_removed": 0.2393509696420303,
+      "balance_relative": 1.2245759961615474e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 5e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": null,
+      "centres_m": [],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.3929200658769777e-10,
+      "reference_area_m2": 3.392920065876976e-10,
+      "reference_area_method": "analytic_ring",
+      "coverage_area_relative_error": 4.440892098500626e-16,
+      "ring_fill_fraction": 1.0000000000000004,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 1.0178760197630933e-12,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.07402979999460513,
+      "propagation_s": 6.153894200004288,
+      "elapsed_s": 6.254152100002102,
+      "ram_free_before_gib": 2.585742950439453,
+      "rss_mib": 35.4921875,
+      "profile_sha256": "7df3bafb0298c82f4cead33b2b668fe7a1228f50caf6482e1e79dbe27ab4bd2c",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "1f9af13e54a8477e8f9178a0a065db83c9cfe112d0cf8f48007a6abf50aaef48",
+      "report_path": "resultados/codex/glass007_v2_run2__continuous.json",
+      "reused_without_recomputation": true
+    },
+    {
+      "name": "tracks16",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:06:58.869429+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.14292179734684252,
+      "old_detector_same_field": 0.14089820268476003,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.6279142638538192,
+      "material_removed": 0.0,
+      "boundary_removed": 0.37208573614630747,
+      "balance_relative": 1.264544025048053e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 5e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 48,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          8.827067523629073e-06,
+          1.7558128981451543e-06
+        ],
+        [
+          7.4832265107229075e-06,
+          5.00013209717642e-06
+        ],
+        [
+          5.0001320971764205e-06,
+          7.4832265107229075e-06
+        ],
+        [
+          1.755812898145155e-06,
+          8.827067523629073e-06
+        ],
+        [
+          -1.7558128981451537e-06,
+          8.827067523629073e-06
+        ],
+        [
+          -5.000132097176418e-06,
+          7.483226510722908e-06
+        ],
+        [
+          -7.483226510722908e-06,
+          5.00013209717642e-06
+        ],
+        [
+          -8.827067523629073e-06,
+          1.7558128981451575e-06
+        ],
+        [
+          -8.827067523629073e-06,
+          -1.7558128981451554e-06
+        ],
+        [
+          -7.483226510722909e-06,
+          -5.000132097176418e-06
+        ],
+        [
+          -5.00013209717642e-06,
+          -7.4832265107229075e-06
+        ],
+        [
+          -1.7558128981451581e-06,
+          -8.827067523629073e-06
+        ],
+        [
+          1.7558128981451547e-06,
+          -8.827067523629073e-06
+        ],
+        [
+          5.000132097176424e-06,
+          -7.483226510722905e-06
+        ],
+        [
+          7.4832265107229075e-06,
+          -5.00013209717642e-06
+        ],
+        [
+          8.827067523629073e-06,
+          -1.7558128981451586e-06
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 2.3310546875e-10,
+      "reference_area_m2": 2.3316943359375e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 0.0002743277399792632,
+      "ring_fill_fraction": 0.6870349558021452,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 6.993164062499999e-13,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.20301349999499507,
+      "propagation_s": 6.379840800000238,
+      "elapsed_s": 6.609442599998147,
+      "ram_free_before_gib": 2.994903564453125,
+      "rss_mib": 34.89453125,
+      "profile_sha256": "7a4049eef1cab58719370f8bea953364843457205f2ebe091927c91202d97c88",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "17f80931fa96fd6c3b865e01c1e3290a42ae7661ca157976e10a77bc8a16b2be",
+      "report_path": "resultados/codex/glass007_v2_run2__tracks16.json",
+      "reused_without_recomputation": true
+    },
+    {
+      "name": "tracks32",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:07:05.749544+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.3310915333711738,
+      "old_detector_same_field": 0.32693830367522175,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.7446444794584264,
+      "material_removed": 0.0,
+      "boundary_removed": 0.25535552054170185,
+      "balance_relative": 1.2800871473928052e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 5e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 96,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          7.1106932829234204e-06,
+          1.4144048346169298e-06
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          7.11069328292342e-06,
+          -1.4144048346169332e-06
+        ],
+        [
+          8.956662540049772e-06,
+          8.821542629660454e-07
+        ],
+        [
+          8.61246302158988e-06,
+          2.612562095290161e-06
+        ],
+        [
+          7.937291379135196e-06,
+          4.242570631433979e-06
+        ],
+        [
+          6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          5.70953955747281e-06,
+          6.957094080264632e-06
+        ],
+        [
+          4.2425706314339804e-06,
+          7.937291379135194e-06
+        ],
+        [
+          2.612562095290161e-06,
+          8.61246302158988e-06
+        ],
+        [
+          8.82154262966047e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -8.821542629660458e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -2.6125620952901596e-06,
+          8.61246302158988e-06
+        ],
+        [
+          -4.24257063143398e-06,
+          7.937291379135196e-06
+        ],
+        [
+          -5.709539557472808e-06,
+          6.957094080264634e-06
+        ],
+        [
+          -6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          4.242570631433977e-06
+        ],
+        [
+          -8.61246302158988e-06,
+          2.6125620952901617e-06
+        ],
+        [
+          -8.956662540049772e-06,
+          8.821542629660474e-07
+        ],
+        [
+          -8.956662540049772e-06,
+          -8.821542629660453e-07
+        ],
+        [
+          -8.61246302158988e-06,
+          -2.612562095290163e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          -4.242570631433979e-06
+        ],
+        [
+          -6.957094080264634e-06,
+          -5.709539557472807e-06
+        ],
+        [
+          -5.709539557472813e-06,
+          -6.9570940802646304e-06
+        ],
+        [
+          -4.242570631433981e-06,
+          -7.937291379135194e-06
+        ],
+        [
+          -2.6125620952901694e-06,
+          -8.612463021589877e-06
+        ],
+        [
+          -8.821542629660521e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          8.821542629660409e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          2.6125620952901584e-06,
+          -8.61246302158988e-06
+        ],
+        [
+          4.242570631433979e-06,
+          -7.937291379135196e-06
+        ],
+        [
+          5.709539557472805e-06,
+          -6.957094080264637e-06
+        ],
+        [
+          6.957094080264629e-06,
+          -5.709539557472813e-06
+        ],
+        [
+          7.937291379135194e-06,
+          -4.242570631433981e-06
+        ],
+        [
+          8.612463021589877e-06,
+          -2.6125620952901702e-06
+        ],
+        [
+          8.956662540049772e-06,
+          -8.821542629660526e-07
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          1.0543441764334727e-05,
+          2.0972209616733786e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          -2.0972209616733837e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.230546875e-10,
+      "reference_area_m2": 3.23082763671875e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 8.690086575935396e-05,
+      "ring_fill_fraction": 0.9521435260117136,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 9.691640625e-13,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.24531930000375723,
+      "propagation_s": 6.289952899998752,
+      "elapsed_s": 6.56128549999994,
+      "ram_free_before_gib": 3.1843490600585938,
+      "rss_mib": 36.015625,
+      "profile_sha256": "ad8e7848f728ee0eb33de26ad27b28dfcbac007a6229c628b3884ab9e5a6fe0b",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "ca127a169d3115a8be62a7df95304f233ae60bae65662aa22e73492e43f31f38",
+      "report_path": "resultados/codex/glass007_v2_run2__tracks32.json",
+      "reused_without_recomputation": true
+    },
+    {
+      "name": "tracks64",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:07:12.781589+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.35494282152253975,
+      "old_detector_same_field": 0.3505356288261747,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.7571885772042999,
+      "material_removed": 0.0,
+      "boundary_removed": 0.2428114227958299,
+      "balance_relative": 1.2956302697375574e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 5e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 192,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          7.215089268373427e-06,
+          7.106242673893144e-07
+        ],
+        [
+          7.1106932829234204e-06,
+          1.4144048346169298e-06
+        ],
+        [
+          6.937817434058514e-06,
+          2.104563910094852e-06
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.393929166525574e-06,
+          3.417626341988483e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.604325786879844e-06,
+          4.5993513101864296e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.5993513101864296e-06,
+          5.604325786879843e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          3.4176263419884843e-06,
+          6.393929166525573e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          2.104563910094852e-06,
+          6.937817434058515e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          7.106242673893156e-07,
+          7.215089268373427e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -7.106242673893147e-07,
+          7.215089268373427e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.1045639100948506e-06,
+          6.937817434058515e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -3.4176263419884835e-06,
+          6.393929166525574e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -4.599351310186429e-06,
+          5.604325786879844e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -5.604325786879844e-06,
+          4.5993513101864296e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.393929166525573e-06,
+          3.4176263419884843e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -6.937817434058514e-06,
+          2.1045639100948523e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.215089268373427e-06,
+          7.10624267389316e-07
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.215089268373427e-06,
+          -7.106242673893143e-07
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.937817434058515e-06,
+          -2.10456391009485e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.393929166525574e-06,
+          -3.417626341988483e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.604325786879844e-06,
+          -4.599351310186428e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.599351310186433e-06,
+          -5.604325786879841e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -3.4176263419884843e-06,
+          -6.393929166525573e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -2.1045639100948528e-06,
+          -6.937817434058514e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -7.106242673893132e-07,
+          -7.215089268373427e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          7.106242673893107e-07,
+          -7.215089268373427e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.1045639100948498e-06,
+          -6.937817434058515e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          3.4176263419884826e-06,
+          -6.393929166525574e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          4.59935131018643e-06,
+          -5.604325786879843e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          5.60432578687984e-06,
+          -4.599351310186433e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.393929166525573e-06,
+          -3.4176263419884847e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          6.937817434058514e-06,
+          -2.104563910094853e-06
+        ],
+        [
+          7.11069328292342e-06,
+          -1.4144048346169332e-06
+        ],
+        [
+          7.215089268373427e-06,
+          -7.106242673893137e-07
+        ],
+        [
+          8.989159105846551e-06,
+          4.4160906894676213e-07
+        ],
+        [
+          8.902588589683029e-06,
+          1.3205742700982558e-06
+        ],
+        [
+          8.730281278750896e-06,
+          2.1868216191293747e-06
+        ],
+        [
+          8.473896586647187e-06,
+          3.0320086805299806e-06
+        ],
+        [
+          8.13590363811099e-06,
+          3.847995840872539e-06
+        ],
+        [
+          7.71955749000245e-06,
+          4.626924697738995e-06
+        ],
+        [
+          7.2288677833258045e-06,
+          5.3612937404319e-06
+        ],
+        [
+          6.668560128194633e-06,
+          6.044030593623165e-06
+        ],
+        [
+          6.044030593623165e-06,
+          6.668560128194632e-06
+        ],
+        [
+          5.361293740431902e-06,
+          7.228867783325804e-06
+        ],
+        [
+          4.626924697738995e-06,
+          7.71955749000245e-06
+        ],
+        [
+          3.84799584087254e-06,
+          8.13590363811099e-06
+        ],
+        [
+          3.0320086805299806e-06,
+          8.473896586647187e-06
+        ],
+        [
+          2.1868216191293743e-06,
+          8.730281278750896e-06
+        ],
+        [
+          1.3205742700982558e-06,
+          8.902588589683029e-06
+        ],
+        [
+          4.4160906894676314e-07,
+          8.989159105846551e-06
+        ],
+        [
+          -4.416090689467621e-07,
+          8.989159105846551e-06
+        ],
+        [
+          -1.3205742700982568e-06,
+          8.902588589683029e-06
+        ],
+        [
+          -2.1868216191293747e-06,
+          8.730281278750896e-06
+        ],
+        [
+          -3.0320086805299797e-06,
+          8.473896586647187e-06
+        ],
+        [
+          -3.847995840872537e-06,
+          8.135903638110991e-06
+        ],
+        [
+          -4.626924697738994e-06,
+          7.71955749000245e-06
+        ],
+        [
+          -5.3612937404318966e-06,
+          7.228867783325807e-06
+        ],
+        [
+          -6.044030593623163e-06,
+          6.668560128194634e-06
+        ],
+        [
+          -6.66856012819463e-06,
+          6.044030593623167e-06
+        ],
+        [
+          -7.228867783325804e-06,
+          5.361293740431902e-06
+        ],
+        [
+          -7.719557490002448e-06,
+          4.626924697738996e-06
+        ],
+        [
+          -8.135903638110988e-06,
+          3.847995840872542e-06
+        ],
+        [
+          -8.473896586647187e-06,
+          3.032008680529983e-06
+        ],
+        [
+          -8.730281278750896e-06,
+          2.186821619129377e-06
+        ],
+        [
+          -8.902588589683029e-06,
+          1.3205742700982602e-06
+        ],
+        [
+          -8.989159105846551e-06,
+          4.416090689467657e-07
+        ],
+        [
+          -8.989159105846551e-06,
+          -4.4160906894675954e-07
+        ],
+        [
+          -8.902588589683029e-06,
+          -1.3205742700982543e-06
+        ],
+        [
+          -8.730281278750896e-06,
+          -2.1868216191293743e-06
+        ],
+        [
+          -8.473896586647189e-06,
+          -3.032008680529977e-06
+        ],
+        [
+          -8.135903638110991e-06,
+          -3.847995840872537e-06
+        ],
+        [
+          -7.71955749000245e-06,
+          -4.626924697738994e-06
+        ],
+        [
+          -7.228867783325807e-06,
+          -5.3612937404318966e-06
+        ],
+        [
+          -6.668560128194634e-06,
+          -6.044030593623163e-06
+        ],
+        [
+          -6.0440305936231685e-06,
+          -6.66856012819463e-06
+        ],
+        [
+          -5.361293740431905e-06,
+          -7.2288677833258e-06
+        ],
+        [
+          -4.626924697738996e-06,
+          -7.719557490002448e-06
+        ],
+        [
+          -3.847995840872543e-06,
+          -8.135903638110988e-06
+        ],
+        [
+          -3.032008680529987e-06,
+          -8.473896586647185e-06
+        ],
+        [
+          -2.1868216191293772e-06,
+          -8.730281278750896e-06
+        ],
+        [
+          -1.3205742700982609e-06,
+          -8.902588589683029e-06
+        ],
+        [
+          -4.416090689467623e-07,
+          -8.989159105846551e-06
+        ],
+        [
+          4.4160906894675896e-07,
+          -8.989159105846551e-06
+        ],
+        [
+          1.3205742700982498e-06,
+          -8.90258858968303e-06
+        ],
+        [
+          2.186821619129374e-06,
+          -8.730281278750896e-06
+        ],
+        [
+          3.0320086805299767e-06,
+          -8.473896586647189e-06
+        ],
+        [
+          3.847995840872539e-06,
+          -8.13590363811099e-06
+        ],
+        [
+          4.626924697738994e-06,
+          -7.71955749000245e-06
+        ],
+        [
+          5.361293740431896e-06,
+          -7.228867783325808e-06
+        ],
+        [
+          6.044030593623165e-06,
+          -6.668560128194632e-06
+        ],
+        [
+          6.66856012819463e-06,
+          -6.0440305936231685e-06
+        ],
+        [
+          7.2288677833258e-06,
+          -5.361293740431905e-06
+        ],
+        [
+          7.719557490002448e-06,
+          -4.626924697738997e-06
+        ],
+        [
+          8.135903638110988e-06,
+          -3.847995840872543e-06
+        ],
+        [
+          8.473896586647185e-06,
+          -3.0320086805299873e-06
+        ],
+        [
+          8.730281278750896e-06,
+          -2.1868216191293777e-06
+        ],
+        [
+          8.902588589683029e-06,
+          -1.3205742700982615e-06
+        ],
+        [
+          8.989159105846551e-06,
+          -4.416090689467628e-07
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          1.0698235811726118e-05,
+          1.0536842585427766e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          2.0972209616733786e-06
+        ],
+        [
+          1.0287108609121246e-05,
+          3.1205602804854703e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          9.480653591744817e-06,
+          5.067514920879475e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          8.309862373649422e-06,
+          6.8197278047591895e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          6.8197278047591895e-06,
+          8.309862373649422e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          5.067514920879477e-06,
+          9.480653591744815e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          3.1205602804854703e-06,
+          1.0287108609121247e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          1.0536842585427783e-06,
+          1.0698235811726116e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -1.053684258542777e-06,
+          1.0698235811726118e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -3.120560280485468e-06,
+          1.0287108609121247e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.067514920879475e-06,
+          9.480653591744817e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -6.819727804759188e-06,
+          8.309862373649424e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.309862373649422e-06,
+          6.8197278047591895e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.480653591744815e-06,
+          5.067514920879477e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0287108609121246e-05,
+          3.1205602804854707e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.0698235811726116e-05,
+          1.053684258542779e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0698235811726118e-05,
+          -1.0536842585427764e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -1.0287108609121247e-05,
+          -3.1205602804854678e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -9.480653591744817e-06,
+          -5.067514920879475e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -8.309862373649424e-06,
+          -6.819727804759187e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -6.819727804759194e-06,
+          -8.309862373649419e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -5.067514920879477e-06,
+          -9.480653591744815e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -3.1205602804854716e-06,
+          -1.0287108609121246e-05
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.053684258542775e-06,
+          -1.0698235811726118e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          1.053684258542771e-06,
+          -1.0698235811726118e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          3.1205602804854673e-06,
+          -1.0287108609121247e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.067514920879474e-06,
+          -9.480653591744817e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          6.81972780475919e-06,
+          -8.309862373649422e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.309862373649419e-06,
+          -6.819727804759194e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.480653591744815e-06,
+          -5.067514920879478e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ],
+        [
+          1.0287108609121246e-05,
+          -3.120560280485472e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          -2.0972209616733837e-06
+        ],
+        [
+          1.0698235811726118e-05,
+          -1.0536842585427756e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.355546875e-10,
+      "reference_area_m2": 3.35558837890625e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 1.2368592796074829e-05,
+      "ring_fill_fraction": 0.9889849480237265,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 1.0066640625e-12,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.3074871999997413,
+      "propagation_s": 6.398144700004195,
+      "elapsed_s": 6.730850299994927,
+      "ram_free_before_gib": 3.235950469970703,
+      "rss_mib": 34.58984375,
+      "profile_sha256": "46114aeec55f1c0c653f9b3799ec93187d9ddc7823d8bfe62f4b4d675db49115",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "3a9952453ebc5ea7e780d836b9a11289fb7d5253087d5a9fe6f5abb77460ebbb",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "98724f231e4d1d88f9063602d21b5e97f09b31b50acef05edd8193ab67d41b01",
+      "report_path": "resultados/codex/glass007_v2_run2__tracks64.json",
+      "reused_without_recomputation": true
+    },
+    {
+      "name": "tracks32_equal_integral",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:12:27.438487+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.3660110054945607,
+      "old_detector_same_field": 0.36154330058450307,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.7622145654574665,
+      "material_removed": 0.0,
+      "boundary_removed": 0.23778543454266254,
+      "balance_relative": 1.2878587085651813e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 5e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 96,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          7.1106932829234204e-06,
+          1.4144048346169298e-06
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          7.11069328292342e-06,
+          -1.4144048346169332e-06
+        ],
+        [
+          8.956662540049772e-06,
+          8.821542629660454e-07
+        ],
+        [
+          8.61246302158988e-06,
+          2.612562095290161e-06
+        ],
+        [
+          7.937291379135196e-06,
+          4.242570631433979e-06
+        ],
+        [
+          6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          5.70953955747281e-06,
+          6.957094080264632e-06
+        ],
+        [
+          4.2425706314339804e-06,
+          7.937291379135194e-06
+        ],
+        [
+          2.612562095290161e-06,
+          8.61246302158988e-06
+        ],
+        [
+          8.82154262966047e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -8.821542629660458e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -2.6125620952901596e-06,
+          8.61246302158988e-06
+        ],
+        [
+          -4.24257063143398e-06,
+          7.937291379135196e-06
+        ],
+        [
+          -5.709539557472808e-06,
+          6.957094080264634e-06
+        ],
+        [
+          -6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          4.242570631433977e-06
+        ],
+        [
+          -8.61246302158988e-06,
+          2.6125620952901617e-06
+        ],
+        [
+          -8.956662540049772e-06,
+          8.821542629660474e-07
+        ],
+        [
+          -8.956662540049772e-06,
+          -8.821542629660453e-07
+        ],
+        [
+          -8.61246302158988e-06,
+          -2.612562095290163e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          -4.242570631433979e-06
+        ],
+        [
+          -6.957094080264634e-06,
+          -5.709539557472807e-06
+        ],
+        [
+          -5.709539557472813e-06,
+          -6.9570940802646304e-06
+        ],
+        [
+          -4.242570631433981e-06,
+          -7.937291379135194e-06
+        ],
+        [
+          -2.6125620952901694e-06,
+          -8.612463021589877e-06
+        ],
+        [
+          -8.821542629660521e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          8.821542629660409e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          2.6125620952901584e-06,
+          -8.61246302158988e-06
+        ],
+        [
+          4.242570631433979e-06,
+          -7.937291379135196e-06
+        ],
+        [
+          5.709539557472805e-06,
+          -6.957094080264637e-06
+        ],
+        [
+          6.957094080264629e-06,
+          -5.709539557472813e-06
+        ],
+        [
+          7.937291379135194e-06,
+          -4.242570631433981e-06
+        ],
+        [
+          8.612463021589877e-06,
+          -2.6125620952901702e-06
+        ],
+        [
+          8.956662540049772e-06,
+          -8.821542629660526e-07
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          1.0543441764334727e-05,
+          2.0972209616733786e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          -2.0972209616733837e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0502618278451625,
+      "modified_area_m2": 3.230546875e-10,
+      "reference_area_m2": 3.23082763671875e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 8.690086575935396e-05,
+      "ring_fill_fraction": 0.9521435260117136,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 1.0178760197630933e-12,
+      "integral_match_relative_error": 2.220446049250313e-16,
+      "peak_delta_n": -0.003150785483535488,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.22672459999739658,
+      "propagation_s": 5.05603130000236,
+      "elapsed_s": 5.308607500002836,
+      "ram_free_before_gib": 2.999237060546875,
+      "rss_mib": 35.5859375,
+      "profile_sha256": "ee0e50361eee4b51505d22714683792646e1a957b66acc4041c01557096ed5c8",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "eeb07c48ff5ceb808a9815447992cba72c0189470e5ce897123ac25452dacfe1",
+      "report_path": "resultados/codex/glass007_v2_run3__tracks32_equal_integral.json"
+    },
+    {
+      "name": "tracks32_missing",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:12:33.130384+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.21388473310931122,
+      "old_detector_same_field": 0.21096742839343013,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.675054441243623,
+      "material_removed": 0.0,
+      "boundary_removed": 0.3249455587565041,
+      "balance_relative": 1.2689849171465537e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 5e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 88,
+      "centres_m": [
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          8.61246302158988e-06,
+          2.612562095290161e-06
+        ],
+        [
+          7.937291379135196e-06,
+          4.242570631433979e-06
+        ],
+        [
+          6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          5.70953955747281e-06,
+          6.957094080264632e-06
+        ],
+        [
+          4.2425706314339804e-06,
+          7.937291379135194e-06
+        ],
+        [
+          2.612562095290161e-06,
+          8.61246302158988e-06
+        ],
+        [
+          8.82154262966047e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -8.821542629660458e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -2.6125620952901596e-06,
+          8.61246302158988e-06
+        ],
+        [
+          -4.24257063143398e-06,
+          7.937291379135196e-06
+        ],
+        [
+          -5.709539557472808e-06,
+          6.957094080264634e-06
+        ],
+        [
+          -6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          4.242570631433977e-06
+        ],
+        [
+          -8.61246302158988e-06,
+          2.6125620952901617e-06
+        ],
+        [
+          -8.956662540049772e-06,
+          8.821542629660474e-07
+        ],
+        [
+          -8.956662540049772e-06,
+          -8.821542629660453e-07
+        ],
+        [
+          -8.61246302158988e-06,
+          -2.612562095290163e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          -4.242570631433979e-06
+        ],
+        [
+          -6.957094080264634e-06,
+          -5.709539557472807e-06
+        ],
+        [
+          -5.709539557472813e-06,
+          -6.9570940802646304e-06
+        ],
+        [
+          -4.242570631433981e-06,
+          -7.937291379135194e-06
+        ],
+        [
+          -2.6125620952901694e-06,
+          -8.612463021589877e-06
+        ],
+        [
+          -8.821542629660521e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          8.821542629660409e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          2.6125620952901584e-06,
+          -8.61246302158988e-06
+        ],
+        [
+          4.242570631433979e-06,
+          -7.937291379135196e-06
+        ],
+        [
+          5.709539557472805e-06,
+          -6.957094080264637e-06
+        ],
+        [
+          6.957094080264629e-06,
+          -5.709539557472813e-06
+        ],
+        [
+          7.937291379135194e-06,
+          -4.242570631433981e-06
+        ],
+        [
+          8.612463021589877e-06,
+          -2.6125620952901702e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 2.993515625e-10,
+      "reference_area_m2": 2.9936315917968747e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 3.873783173335976e-05,
+      "ring_fill_fraction": 0.8822829795214343,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 8.980546875e-13,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.20749269999942044,
+      "propagation_s": 5.157122700002219,
+      "elapsed_s": 5.390445000004547,
+      "ram_free_before_gib": 2.9283370971679688,
+      "rss_mib": 35.65625,
+      "profile_sha256": "e08f105acf3d03c6fef3ba771fb51810db138ba22bb340f4580f980202ca546b",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "4f8eba25c5d4a0a3150d558820e907667266af6dbebf50968ad5ffbe2817508b",
+      "report_path": "resultados/codex/glass007_v2_run3__tracks32_missing.json"
+    },
+    {
+      "name": "tracks32_coarse",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:12:35.960799+00:00",
+      "points": 192,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.32982936963380005,
+      "old_detector_same_field": 0.3295744351966363,
+      "input_power": 1.0,
+      "output_power": 0.7437789633549845,
+      "material_removed": 0.0,
+      "boundary_removed": 0.256221036644941,
+      "balance_relative": 7.4495964952348e-14,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 6.666666666666666e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 96,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          7.1106932829234204e-06,
+          1.4144048346169298e-06
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          7.11069328292342e-06,
+          -1.4144048346169332e-06
+        ],
+        [
+          8.956662540049772e-06,
+          8.821542629660454e-07
+        ],
+        [
+          8.61246302158988e-06,
+          2.612562095290161e-06
+        ],
+        [
+          7.937291379135196e-06,
+          4.242570631433979e-06
+        ],
+        [
+          6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          5.70953955747281e-06,
+          6.957094080264632e-06
+        ],
+        [
+          4.2425706314339804e-06,
+          7.937291379135194e-06
+        ],
+        [
+          2.612562095290161e-06,
+          8.61246302158988e-06
+        ],
+        [
+          8.82154262966047e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -8.821542629660458e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -2.6125620952901596e-06,
+          8.61246302158988e-06
+        ],
+        [
+          -4.24257063143398e-06,
+          7.937291379135196e-06
+        ],
+        [
+          -5.709539557472808e-06,
+          6.957094080264634e-06
+        ],
+        [
+          -6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          4.242570631433977e-06
+        ],
+        [
+          -8.61246302158988e-06,
+          2.6125620952901617e-06
+        ],
+        [
+          -8.956662540049772e-06,
+          8.821542629660474e-07
+        ],
+        [
+          -8.956662540049772e-06,
+          -8.821542629660453e-07
+        ],
+        [
+          -8.61246302158988e-06,
+          -2.612562095290163e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          -4.242570631433979e-06
+        ],
+        [
+          -6.957094080264634e-06,
+          -5.709539557472807e-06
+        ],
+        [
+          -5.709539557472813e-06,
+          -6.9570940802646304e-06
+        ],
+        [
+          -4.242570631433981e-06,
+          -7.937291379135194e-06
+        ],
+        [
+          -2.6125620952901694e-06,
+          -8.612463021589877e-06
+        ],
+        [
+          -8.821542629660521e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          8.821542629660409e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          2.6125620952901584e-06,
+          -8.61246302158988e-06
+        ],
+        [
+          4.242570631433979e-06,
+          -7.937291379135196e-06
+        ],
+        [
+          5.709539557472805e-06,
+          -6.957094080264637e-06
+        ],
+        [
+          6.957094080264629e-06,
+          -5.709539557472813e-06
+        ],
+        [
+          7.937291379135194e-06,
+          -4.242570631433981e-06
+        ],
+        [
+          8.612463021589877e-06,
+          -2.6125620952901702e-06
+        ],
+        [
+          8.956662540049772e-06,
+          -8.821542629660526e-07
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          1.0543441764334727e-05,
+          2.0972209616733786e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          -2.0972209616733837e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.2298611111111106e-10,
+      "reference_area_m2": 3.230789930555555e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 0.00028748989083438037,
+      "ring_fill_fraction": 0.9519414098770643,
+      "detector_area_relative_error": 7.771561172376096e-16,
+      "integral_abs_delta_n_m2": 9.689583333333331e-13,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.08617170000070473,
+      "propagation_s": 2.407017599995015,
+      "elapsed_s": 2.51598599999852,
+      "ram_free_before_gib": 2.991077423095703,
+      "rss_mib": 34.13671875,
+      "profile_sha256": "04b9ed6618909abc13370898bbbde62cd3504747d69e32c792d6b2e01045e655",
+      "detector_sha256": "f28a5ba8da8a3377151cc09328bdd1e4ef9e13621f9e5ac09e9038d18d6ae4c3",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "622e08df14c08f8417ca32abddca0bdd46ee47eef85d25698d3d7f1dba58d5f6",
+      "report_path": "resultados/codex/glass007_v2_run3__tracks32_coarse.json"
+    },
+    {
+      "name": "tracks32_wide_coarse",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:12:41.425454+00:00",
+      "points": 256,
+      "width_m": 0.00017066666666666665,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.33001612966874544,
+      "old_detector_same_field": 0.32976248955505627,
+      "input_power": 0.9999999999999996,
+      "output_power": 0.8852150011335295,
+      "material_removed": 0.0,
+      "boundary_removed": 0.1147849988666031,
+      "balance_relative": 1.330047183500938e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 6.666666666666666e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 96,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          7.1106932829234204e-06,
+          1.4144048346169298e-06
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          7.11069328292342e-06,
+          -1.4144048346169332e-06
+        ],
+        [
+          8.956662540049772e-06,
+          8.821542629660454e-07
+        ],
+        [
+          8.61246302158988e-06,
+          2.612562095290161e-06
+        ],
+        [
+          7.937291379135196e-06,
+          4.242570631433979e-06
+        ],
+        [
+          6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          5.70953955747281e-06,
+          6.957094080264632e-06
+        ],
+        [
+          4.2425706314339804e-06,
+          7.937291379135194e-06
+        ],
+        [
+          2.612562095290161e-06,
+          8.61246302158988e-06
+        ],
+        [
+          8.82154262966047e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -8.821542629660458e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -2.6125620952901596e-06,
+          8.61246302158988e-06
+        ],
+        [
+          -4.24257063143398e-06,
+          7.937291379135196e-06
+        ],
+        [
+          -5.709539557472808e-06,
+          6.957094080264634e-06
+        ],
+        [
+          -6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          4.242570631433977e-06
+        ],
+        [
+          -8.61246302158988e-06,
+          2.6125620952901617e-06
+        ],
+        [
+          -8.956662540049772e-06,
+          8.821542629660474e-07
+        ],
+        [
+          -8.956662540049772e-06,
+          -8.821542629660453e-07
+        ],
+        [
+          -8.61246302158988e-06,
+          -2.612562095290163e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          -4.242570631433979e-06
+        ],
+        [
+          -6.957094080264634e-06,
+          -5.709539557472807e-06
+        ],
+        [
+          -5.709539557472813e-06,
+          -6.9570940802646304e-06
+        ],
+        [
+          -4.242570631433981e-06,
+          -7.937291379135194e-06
+        ],
+        [
+          -2.6125620952901694e-06,
+          -8.612463021589877e-06
+        ],
+        [
+          -8.821542629660521e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          8.821542629660409e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          2.6125620952901584e-06,
+          -8.61246302158988e-06
+        ],
+        [
+          4.242570631433979e-06,
+          -7.937291379135196e-06
+        ],
+        [
+          5.709539557472805e-06,
+          -6.957094080264637e-06
+        ],
+        [
+          6.957094080264629e-06,
+          -5.709539557472813e-06
+        ],
+        [
+          7.937291379135194e-06,
+          -4.242570631433981e-06
+        ],
+        [
+          8.612463021589877e-06,
+          -2.6125620952901702e-06
+        ],
+        [
+          8.956662540049772e-06,
+          -8.821542629660526e-07
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          1.0543441764334727e-05,
+          2.0972209616733786e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          -2.0972209616733837e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.2298611111111106e-10,
+      "reference_area_m2": 3.230789930555555e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 0.00028748989083438037,
+      "ring_fill_fraction": 0.9519414098770643,
+      "detector_area_relative_error": 7.771561172376096e-16,
+      "integral_abs_delta_n_m2": 9.68958333333333e-13,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.12414669999998296,
+      "propagation_s": 5.018975399994815,
+      "elapsed_s": 5.167699500001618,
+      "ram_free_before_gib": 3.0030364990234375,
+      "rss_mib": 35.59765625,
+      "profile_sha256": "5e595264949dd811d6f3ecbdeb9af3c6cbbaaf457ccd6d0aa8c14e6f8a7502fa",
+      "detector_sha256": "53feb0a1b1b12567888850e0b5261816e386341058b886b04ac6ee9f3b975ccf",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "52dde1e7330d2893762006ef45163131bfb1209a2c24722425d90132766b5855",
+      "report_path": "resultados/codex/glass007_v2_run3__tracks32_wide_coarse.json"
+    },
+    {
+      "name": "tracks32_dz2",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:12:48.605121+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.33082747067666807,
+      "old_detector_same_field": 0.3266839815163289,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.7442638914418641,
+      "material_removed": 0.0,
+      "boundary_removed": 0.25573610855829876,
+      "balance_relative": 1.626476731075854e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 1000,
+      "dx_m": 5e-07,
+      "dz_m": 2e-06,
+      "tracks_count": 96,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          7.1106932829234204e-06,
+          1.4144048346169298e-06
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          7.11069328292342e-06,
+          -1.4144048346169332e-06
+        ],
+        [
+          8.956662540049772e-06,
+          8.821542629660454e-07
+        ],
+        [
+          8.61246302158988e-06,
+          2.612562095290161e-06
+        ],
+        [
+          7.937291379135196e-06,
+          4.242570631433979e-06
+        ],
+        [
+          6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          5.70953955747281e-06,
+          6.957094080264632e-06
+        ],
+        [
+          4.2425706314339804e-06,
+          7.937291379135194e-06
+        ],
+        [
+          2.612562095290161e-06,
+          8.61246302158988e-06
+        ],
+        [
+          8.82154262966047e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -8.821542629660458e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -2.6125620952901596e-06,
+          8.61246302158988e-06
+        ],
+        [
+          -4.24257063143398e-06,
+          7.937291379135196e-06
+        ],
+        [
+          -5.709539557472808e-06,
+          6.957094080264634e-06
+        ],
+        [
+          -6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          4.242570631433977e-06
+        ],
+        [
+          -8.61246302158988e-06,
+          2.6125620952901617e-06
+        ],
+        [
+          -8.956662540049772e-06,
+          8.821542629660474e-07
+        ],
+        [
+          -8.956662540049772e-06,
+          -8.821542629660453e-07
+        ],
+        [
+          -8.61246302158988e-06,
+          -2.612562095290163e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          -4.242570631433979e-06
+        ],
+        [
+          -6.957094080264634e-06,
+          -5.709539557472807e-06
+        ],
+        [
+          -5.709539557472813e-06,
+          -6.9570940802646304e-06
+        ],
+        [
+          -4.242570631433981e-06,
+          -7.937291379135194e-06
+        ],
+        [
+          -2.6125620952901694e-06,
+          -8.612463021589877e-06
+        ],
+        [
+          -8.821542629660521e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          8.821542629660409e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          2.6125620952901584e-06,
+          -8.61246302158988e-06
+        ],
+        [
+          4.242570631433979e-06,
+          -7.937291379135196e-06
+        ],
+        [
+          5.709539557472805e-06,
+          -6.957094080264637e-06
+        ],
+        [
+          6.957094080264629e-06,
+          -5.709539557472813e-06
+        ],
+        [
+          7.937291379135194e-06,
+          -4.242570631433981e-06
+        ],
+        [
+          8.612463021589877e-06,
+          -2.6125620952901702e-06
+        ],
+        [
+          8.956662540049772e-06,
+          -8.821542629660526e-07
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          1.0543441764334727e-05,
+          2.0972209616733786e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          -2.0972209616733837e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.230546875e-10,
+      "reference_area_m2": 3.23082763671875e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 8.690086575935396e-05,
+      "ring_fill_fraction": 0.9521435260117136,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 9.691640625e-13,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.21478420000494225,
+      "propagation_s": 6.626819400000386,
+      "elapsed_s": 6.874669800003176,
+      "ram_free_before_gib": 2.9527435302734375,
+      "rss_mib": 34.6640625,
+      "profile_sha256": "ad8e7848f728ee0eb33de26ad27b28dfcbac007a6229c628b3884ab9e5a6fe0b",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "ed661cefca4d616f19795d9692c5ada1ae1eee0e259cfcb049cd59f6405511fa",
+      "report_path": "resultados/codex/glass007_v2_run3__tracks32_dz2.json"
+    },
+    {
+      "name": "continuous_dz2",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:12:56.406376+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.361566529604118,
+      "old_detector_same_field": 0.35711543056516293,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.7603168614471784,
+      "material_removed": 0.0,
+      "boundary_removed": 0.23968313855299017,
+      "balance_relative": 1.683098105331737e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 1000,
+      "dx_m": 5e-07,
+      "dz_m": 2e-06,
+      "tracks_count": null,
+      "centres_m": [],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.3929200658769777e-10,
+      "reference_area_m2": 3.392920065876976e-10,
+      "reference_area_method": "analytic_ring",
+      "coverage_area_relative_error": 4.440892098500626e-16,
+      "ring_fill_fraction": 1.0000000000000004,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 1.0178760197630933e-12,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.0719052999993437,
+      "propagation_s": 7.394405599996389,
+      "elapsed_s": 7.492622999998275,
+      "ram_free_before_gib": 2.841655731201172,
+      "rss_mib": 35.49609375,
+      "profile_sha256": "7df3bafb0298c82f4cead33b2b668fe7a1228f50caf6482e1e79dbe27ab4bd2c",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "b153ef092727756a8fe403f7416f32f9568609cb7a82b6bcfc357c69b22b822c",
+      "report_path": "resultados/codex/glass007_v2_run3__continuous_dz2.json"
+    },
+    {
+      "name": "vacuum",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:12:58.188236+00:00",
+      "points": 256,
+      "width_m": 0.000128,
+      "length_m": 0.0005,
+      "weighted_core_fraction_input": 0.08151088994323213,
+      "old_detector_same_field": 0.0788607324351715,
+      "input_power": 1.0000000000000002,
+      "output_power": 0.9999034391511729,
+      "material_removed": 0.0,
+      "boundary_removed": 9.656084886555671e-05,
+      "balance_relative": 3.819167204710538e-14,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 200,
+      "dx_m": 5e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": null,
+      "centres_m": [],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.3929200658769777e-10,
+      "reference_area_m2": 3.392920065876976e-10,
+      "reference_area_method": "analytic_ring",
+      "coverage_area_relative_error": 4.440892098500626e-16,
+      "ring_fill_fraction": 1.0000000000000004,
+      "detector_area_relative_error": 4.440892098500626e-16,
+      "integral_abs_delta_n_m2": 0.0,
+      "integral_match_relative_error": null,
+      "peak_delta_n": 0.0,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "control_index": "uniform_zero; detector retained",
+      "profile_s": 0.07368839999980992,
+      "propagation_s": 1.3869078999996418,
+      "elapsed_s": 1.4893708000017796,
+      "ram_free_before_gib": 2.937255859375,
+      "rss_mib": 35.44921875,
+      "profile_sha256": "07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541",
+      "detector_sha256": "be44bc86febe733d9f03bc0d82e54428a90301ef6532ebcdab1dd439f7f85906",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "analytic_core_fraction": 0.08151966547277134,
+      "analytic_absolute_error": 8.775529539206683e-06,
+      "analytic_gate": true,
+      "report_sha256": "b6992aff070c161ee2e74324dbbb00a99525b88c2b13bd1f8084c9e1ca4ccf3c",
+      "report_path": "resultados/codex/glass007_v2_run3__vacuum.json"
+    },
+    {
+      "name": "continuous_dx4",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:13:07.291990+00:00",
+      "points": 320,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.36212662088255587,
+      "old_detector_same_field": 0.3619390237929194,
+      "input_power": 1.0,
+      "output_power": 0.7607959256485772,
+      "material_removed": 0.0,
+      "boundary_removed": 0.2392040743516317,
+      "balance_relative": 2.0894397323445446e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 4e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": null,
+      "centres_m": [],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.392920065876974e-10,
+      "reference_area_m2": 3.392920065876976e-10,
+      "reference_area_method": "analytic_ring",
+      "coverage_area_relative_error": 5.551115123125783e-16,
+      "ring_fill_fraction": 0.9999999999999994,
+      "detector_area_relative_error": 5.551115123125783e-16,
+      "integral_abs_delta_n_m2": 1.0178760197630925e-12,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.11727450000034878,
+      "propagation_s": 8.65751679999812,
+      "elapsed_s": 8.807762199998251,
+      "ram_free_before_gib": 2.9316864013671875,
+      "rss_mib": 36.15234375,
+      "profile_sha256": "9e4bb445643c0e94713e1ea388f04e16ce353199c8d628ac3906f8c1d601d054",
+      "detector_sha256": "2eea9b9987155b79c67dfe05cdbc40d9da3edc00859710ec595f9d9355cebbd0",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "7625fac982d8b1a5ff7ede0d171418379058697a8b938a08453358d02826897a",
+      "report_path": "resultados/codex/glass007_v2_run3__continuous_dx4.json"
+    },
+    {
+      "name": "tracks32_dx4",
+      "status": "completed",
+      "gpu_used": false,
+      "time_utc": "2026-09-30T13:13:17.945613+00:00",
+      "points": 320,
+      "width_m": 0.000128,
+      "length_m": 0.002,
+      "weighted_core_fraction_input": 0.3315355131454813,
+      "old_detector_same_field": 0.3313598165457598,
+      "input_power": 1.0,
+      "output_power": 0.7447058425138345,
+      "material_removed": 0.0,
+      "boundary_removed": 0.2552941574863664,
+      "balance_relative": 2.0095036745715333e-13,
+      "backend": "scalar_paraxial_cpu_ssfm_cell_average",
+      "steps": 800,
+      "dx_m": 4e-07,
+      "dz_m": 2.5e-06,
+      "tracks_count": 96,
+      "centres_m": [
+        [
+          7.25e-06,
+          0.0
+        ],
+        [
+          7.1106932829234204e-06,
+          1.4144048346169298e-06
+        ],
+        [
+          6.698126610706829e-06,
+          2.7744548846469008e-06
+        ],
+        [
+          6.028154689193453e-06,
+          4.027884189392115e-06
+        ],
+        [
+          5.12652416360247e-06,
+          5.12652416360247e-06
+        ],
+        [
+          4.027884189392116e-06,
+          6.028154689193453e-06
+        ],
+        [
+          2.774454884646901e-06,
+          6.698126610706829e-06
+        ],
+        [
+          1.4144048346169304e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          4.439344646909155e-22,
+          7.25e-06
+        ],
+        [
+          -1.4144048346169294e-06,
+          7.1106932829234204e-06
+        ],
+        [
+          -2.7744548846469003e-06,
+          6.698126610706829e-06
+        ],
+        [
+          -4.0278841893921146e-06,
+          6.0281546891934534e-06
+        ],
+        [
+          -5.126524163602469e-06,
+          5.12652416360247e-06
+        ],
+        [
+          -6.0281546891934534e-06,
+          4.027884189392115e-06
+        ],
+        [
+          -6.698126610706829e-06,
+          2.7744548846469016e-06
+        ],
+        [
+          -7.1106932829234204e-06,
+          1.4144048346169323e-06
+        ],
+        [
+          -7.25e-06,
+          8.87868929381831e-22
+        ],
+        [
+          -7.1106932829234204e-06,
+          -1.4144048346169306e-06
+        ],
+        [
+          -6.6981266107068296e-06,
+          -2.7744548846469e-06
+        ],
+        [
+          -6.028154689193454e-06,
+          -4.0278841893921146e-06
+        ],
+        [
+          -5.1265241636024704e-06,
+          -5.126524163602469e-06
+        ],
+        [
+          -4.027884189392115e-06,
+          -6.028154689193453e-06
+        ],
+        [
+          -2.774454884646905e-06,
+          -6.698126610706827e-06
+        ],
+        [
+          -1.4144048346169328e-06,
+          -7.11069328292342e-06
+        ],
+        [
+          -1.3318033940727466e-21,
+          -7.25e-06
+        ],
+        [
+          1.4144048346169302e-06,
+          -7.1106932829234204e-06
+        ],
+        [
+          2.7744548846469025e-06,
+          -6.698126610706828e-06
+        ],
+        [
+          4.027884189392114e-06,
+          -6.028154689193454e-06
+        ],
+        [
+          5.126524163602468e-06,
+          -5.1265241636024704e-06
+        ],
+        [
+          6.028154689193453e-06,
+          -4.027884189392115e-06
+        ],
+        [
+          6.698126610706827e-06,
+          -2.7744548846469054e-06
+        ],
+        [
+          7.11069328292342e-06,
+          -1.4144048346169332e-06
+        ],
+        [
+          8.956662540049772e-06,
+          8.821542629660454e-07
+        ],
+        [
+          8.61246302158988e-06,
+          2.612562095290161e-06
+        ],
+        [
+          7.937291379135196e-06,
+          4.242570631433979e-06
+        ],
+        [
+          6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          5.70953955747281e-06,
+          6.957094080264632e-06
+        ],
+        [
+          4.2425706314339804e-06,
+          7.937291379135194e-06
+        ],
+        [
+          2.612562095290161e-06,
+          8.61246302158988e-06
+        ],
+        [
+          8.82154262966047e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -8.821542629660458e-07,
+          8.956662540049772e-06
+        ],
+        [
+          -2.6125620952901596e-06,
+          8.61246302158988e-06
+        ],
+        [
+          -4.24257063143398e-06,
+          7.937291379135196e-06
+        ],
+        [
+          -5.709539557472808e-06,
+          6.957094080264634e-06
+        ],
+        [
+          -6.957094080264633e-06,
+          5.70953955747281e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          4.242570631433977e-06
+        ],
+        [
+          -8.61246302158988e-06,
+          2.6125620952901617e-06
+        ],
+        [
+          -8.956662540049772e-06,
+          8.821542629660474e-07
+        ],
+        [
+          -8.956662540049772e-06,
+          -8.821542629660453e-07
+        ],
+        [
+          -8.61246302158988e-06,
+          -2.612562095290163e-06
+        ],
+        [
+          -7.937291379135196e-06,
+          -4.242570631433979e-06
+        ],
+        [
+          -6.957094080264634e-06,
+          -5.709539557472807e-06
+        ],
+        [
+          -5.709539557472813e-06,
+          -6.9570940802646304e-06
+        ],
+        [
+          -4.242570631433981e-06,
+          -7.937291379135194e-06
+        ],
+        [
+          -2.6125620952901694e-06,
+          -8.612463021589877e-06
+        ],
+        [
+          -8.821542629660521e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          8.821542629660409e-07,
+          -8.956662540049772e-06
+        ],
+        [
+          2.6125620952901584e-06,
+          -8.61246302158988e-06
+        ],
+        [
+          4.242570631433979e-06,
+          -7.937291379135196e-06
+        ],
+        [
+          5.709539557472805e-06,
+          -6.957094080264637e-06
+        ],
+        [
+          6.957094080264629e-06,
+          -5.709539557472813e-06
+        ],
+        [
+          7.937291379135194e-06,
+          -4.242570631433981e-06
+        ],
+        [
+          8.612463021589877e-06,
+          -2.6125620952901702e-06
+        ],
+        [
+          8.956662540049772e-06,
+          -8.821542629660526e-07
+        ],
+        [
+          1.075e-05,
+          0.0
+        ],
+        [
+          1.0543441764334727e-05,
+          2.0972209616733786e-06
+        ],
+        [
+          9.931704974496333e-06,
+          4.113846897924716e-06
+        ],
+        [
+          8.938298332252362e-06,
+          5.972380004960724e-06
+        ],
+        [
+          7.601397897755387e-06,
+          7.601397897755387e-06
+        ],
+        [
+          5.972380004960725e-06,
+          8.938298332252362e-06
+        ],
+        [
+          4.113846897924716e-06,
+          9.931704974496333e-06
+        ],
+        [
+          2.0972209616733795e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          6.582476545417024e-22,
+          1.075e-05
+        ],
+        [
+          -2.097220961673378e-06,
+          1.0543441764334727e-05
+        ],
+        [
+          -4.113846897924715e-06,
+          9.931704974496333e-06
+        ],
+        [
+          -5.972380004960721e-06,
+          8.938298332252363e-06
+        ],
+        [
+          -7.601397897755386e-06,
+          7.601397897755387e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          5.972380004960724e-06
+        ],
+        [
+          -9.931704974496333e-06,
+          4.1138468979247165e-06
+        ],
+        [
+          -1.0543441764334727e-05,
+          2.0972209616733824e-06
+        ],
+        [
+          -1.075e-05,
+          1.3164953090834048e-21
+        ],
+        [
+          -1.0543441764334727e-05,
+          -2.09722096167338e-06
+        ],
+        [
+          -9.931704974496335e-06,
+          -4.113846897924714e-06
+        ],
+        [
+          -8.938298332252363e-06,
+          -5.972380004960721e-06
+        ],
+        [
+          -7.601397897755388e-06,
+          -7.601397897755386e-06
+        ],
+        [
+          -5.972380004960724e-06,
+          -8.938298332252362e-06
+        ],
+        [
+          -4.113846897924722e-06,
+          -9.93170497449633e-06
+        ],
+        [
+          -2.0972209616733833e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          -1.974742963625107e-21,
+          -1.075e-05
+        ],
+        [
+          2.0972209616733795e-06,
+          -1.0543441764334727e-05
+        ],
+        [
+          4.113846897924717e-06,
+          -9.931704974496331e-06
+        ],
+        [
+          5.97238000496072e-06,
+          -8.938298332252363e-06
+        ],
+        [
+          7.601397897755384e-06,
+          -7.601397897755388e-06
+        ],
+        [
+          8.938298332252362e-06,
+          -5.972380004960724e-06
+        ],
+        [
+          9.93170497449633e-06,
+          -4.113846897924722e-06
+        ],
+        [
+          1.0543441764334727e-05,
+          -2.0972209616733837e-06
+        ]
+      ],
+      "samples": 16,
+      "integral_scale": 1.0,
+      "modified_area_m2": 3.2310749999999996e-10,
+      "reference_area_m2": 3.2308765624999994e-10,
+      "reference_area_method": "midpoint64_not_exact_area",
+      "coverage_area_relative_error": 6.141909050416672e-05,
+      "ring_fill_fraction": 0.9522991810197143,
+      "detector_area_relative_error": 5.551115123125783e-16,
+      "integral_abs_delta_n_m2": 9.693224999999998e-13,
+      "integral_match_relative_error": null,
+      "peak_delta_n": -0.003,
+      "fully_core_cells_untouched": true,
+      "fully_outside_cells_untouched": true,
+      "profile_s": 0.3158017000023392,
+      "propagation_s": 10.000115399998322,
+      "elapsed_s": 10.346179100000882,
+      "ram_free_before_gib": 2.901996612548828,
+      "rss_mib": 36.2421875,
+      "profile_sha256": "5968bec84831ec909c0634fc0f2edcc82021de7c28e54976bab25ee38ff90e61",
+      "detector_sha256": "2eea9b9987155b79c67dfe05cdbc40d9da3edc00859710ec595f9d9355cebbd0",
+      "hashes_before": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "hashes_after": {
+        "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+        "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+        "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+        "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+        "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+        "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+        "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+        "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+        "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+        "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+        "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+        "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+        "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+        "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+        "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+      },
+      "sources_unchanged": true,
+      "profile_gate": true,
+      "balance_gate": true,
+      "report_sha256": "ae197af22881f96980e9c6e51311bfeb844ee04df368409f682164c494b68395",
+      "report_path": "resultados/codex/glass007_v2_run3__tracks32_dx4.json"
+    }
+  ],
+  "children": [
+    {
+      "name": "tracks32_equal_integral",
+      "rc": 0,
+      "elapsed_s": 5.587401500000851,
+      "stdout": "{\"name\": \"tracks32_equal_integral\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_missing",
+      "rc": 0,
+      "elapsed_s": 5.681949199999508,
+      "stdout": "{\"name\": \"tracks32_missing\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_coarse",
+      "rc": 0,
+      "elapsed_s": 2.8142262999972445,
+      "stdout": "{\"name\": \"tracks32_coarse\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_wide_coarse",
+      "rc": 0,
+      "elapsed_s": 5.450557600001048,
+      "stdout": "{\"name\": \"tracks32_wide_coarse\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_dz2",
+      "rc": 0,
+      "elapsed_s": 7.174468599994725,
+      "stdout": "{\"name\": \"tracks32_dz2\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "continuous_dz2",
+      "rc": 0,
+      "elapsed_s": 7.783710300005623,
+      "stdout": "{\"name\": \"continuous_dz2\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "vacuum",
+      "rc": 0,
+      "elapsed_s": 1.7743055000028107,
+      "stdout": "{\"name\": \"vacuum\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "continuous_dx4",
+      "rc": 0,
+      "elapsed_s": 9.092145299997355,
+      "stdout": "{\"name\": \"continuous_dx4\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    },
+    {
+      "name": "tracks32_dx4",
+      "rc": 0,
+      "elapsed_s": 10.639362099995196,
+      "stdout": "{\"name\": \"tracks32_dx4\", \"status\": \"completed\"}\n",
+      "stderr": ""
+    }
+  ],
+  "failures": [],
+  "gates": [
+    {
+      "name": "dx_coarse",
+      "reference": "tracks32_coarse",
+      "candidate": "tracks32",
+      "absolute": 0.001262163737373756,
+      "relative": 0.0038267172470877885,
+      "pass_": true
+    },
+    {
+      "name": "domain_equal_dx",
+      "reference": "tracks32_coarse",
+      "candidate": "tracks32_wide_coarse",
+      "absolute": 0.00018676003494538795,
+      "relative": 0.0005662322768671031,
+      "pass_": true
+    },
+    {
+      "name": "dz_tracks",
+      "reference": "tracks32",
+      "candidate": "tracks32_dz2",
+      "absolute": 0.00026406269450574005,
+      "relative": 0.0007975519392388378,
+      "pass_": true
+    },
+    {
+      "name": "dz_continuous",
+      "reference": "continuous",
+      "candidate": "continuous_dz2",
+      "absolute": 0.00020490083059837572,
+      "relative": 0.0005663820118469835,
+      "pass_": true
+    },
+    {
+      "name": "dx_tracks_05_04",
+      "reference": "tracks32",
+      "candidate": "tracks32_dx4",
+      "absolute": 0.00044397977430749025,
+      "relative": 0.0013409578003607898,
+      "pass_": true
+    },
+    {
+      "name": "dx_continuous_05_04",
+      "reference": "continuous",
+      "candidate": "continuous_dx4",
+      "absolute": 0.00035519044783949294,
+      "relative": 0.000981809004134695,
+      "pass_": true
+    },
+    {
+      "name": "peer_adi_continuous",
+      "absolute": 0.0013181135802222688,
+      "pass_": true
+    },
+    {
+      "name": "peer_adi_tracks32",
+      "absolute": 0.0011452224491462215,
+      "pass_": true
+    },
+    {
+      "name": "peer_adi_continuous_dx4",
+      "absolute": 0.0010555333720334015,
+      "pass_": true
+    },
+    {
+      "name": "peer_adi_tracks32_dx4",
+      "absolute": 0.0011388342118875405,
+      "pass_": true
+    },
+    {
+      "name": "radial_continuous",
+      "absolute": 0.0019353625921624262,
+      "pass_": true
+    }
+  ],
+  "prior_invalid_artifacts": [
+    {
+      "path": "resultados/codex/glass007_v2_run2__tracks32_equal_integral.json",
+      "sha256": "c20127e48d30ca11c5da22fde4922e48af4da7a7dffd5512ca24418122688764",
+      "reason": "invalid_json_retained"
+    }
+  ],
+  "historical_operational_pass": false,
+  "peer_Q4_tracks_pass": false,
+  "boundary_validated": false,
+  "combined_convergence_certified": false,
+  "status": "completed",
+  "hashes_after": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "scripts/run_glass007_v2.py": "b0fdb335a719ecc4193d4f2b730a549c77017e3cf967b1dcb2e9f7f11200f574",
+    "Docs/GLASS-007-V2-CONTRACT.md": "231d442ae20aea10f58eb519fe84d81383fa57f9a11e2de8c8bb0ad0a72df7b0",
+    "resultados/codex/glass007_complete_v1.json": "b2937dcb57516b91965b9b14bdd88a0c394018a76bb37c63a4e7274f5951da27",
+    "experimentos/glass009d_claude/resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+    "experimentos/glass009d_claude/CONTRACT.md": "245114be879e9f93913bae340a6905317c92c3aed44d6ca26fe460b555985fea",
+    "experimentos/glass009d_claude/ERRATA.md": "4fcdea7d86eab85dd1b00f42b1208bef170f4e63c220b427b2704ef4c21b3d64",
+    "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+    "experimentos/glass009d_claude/run009d.py": "7de62e58879eb6586e8d59e427577c6adf07b6bf442e39fffd114c7065950831",
+    "experimentos/glass009d_claude/prep_exact.py": "a2ac7c34febbdc6d5109a58c633e057fca0996d738043abf95c0504fec15b110",
+    "experimentos/glass009d_claude/out/exact_T96d.json": "beb1f44996d3ffd18d27b43a62bffb3e62c20edbce467261d5cae35c54a2970c",
+    "experimentos/glass006a_claude/resultados.json": "744435627e96c9c721fa3571eee3f3bb57dda9e45153108ea9ac952c89674938",
+    "experimentos/glass006a_claude/g4_radial.py": "0666ad376bf94d14a8f6334ad6b72f2c496460b4f84046317202db5a347554d1"
+  },
+  "sources_unchanged": true,
+  "elapsed_s": 56.239852599996084,
+  "sum_children_s": 55.99812639999436,
+  "reused_case_count": 4,
+  "reused_compute_s": 26.155730499995116,
+  "wall_time_scope": "current supervisor only; run1 cost retained separately; run2 aborted before wall-time manifest",
+  "own_gates_pass": true
+}
