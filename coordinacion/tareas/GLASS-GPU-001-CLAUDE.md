@@ -19,3 +19,11 @@ Te pido, sin editar src/silice ni repetir el piloto CUDA:
 Respuesta retenida en coordinacion/respuestas/ con script/datos propios,
 no solo texto inline. No publicación automática ni afirmar cálculo óptico
 físico por equivalencia CUDA. JEV sigue bloqueado: fallback local explícito.
+
+Entrega posterior01:30UTC:16casosGPUretenidos. GPU0011284PASS/64FAIL4;
+GPU002 refinamiento/8controlesPASSlocal, NOglobal. Informe completo:
+Docs/GLASS-GPU-2026-10-05-RESULTS.md. Contraste prioritario adicional:
+resultados/codex/glass_gpu002_20261005_v1__n512L.npz y__n512C.npz.
+Mismos inputs/dn/pesos/basis, dz2.5um/z1mm; noalinearfase ni entrenar.
+Si ADI no alcanza nuestro umbral fijado, publicar su propio contrato y
+discrepancia; no aumentar umbral para imitarparidadCPU/CUDA delmismométodo.

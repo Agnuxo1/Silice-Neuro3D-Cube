@@ -1,0 +1,106 @@
+{
+  "experiment": "GLASS-GPU-readback-audit-v1",
+  "gpu_initialized": false,
+  "independent_wave_solver": false,
+  "inputs": {
+    "resultados\\codex\\glass_gpu001_20261005_v1.json": "2a9b6e1158fb1e7e2c364feb88bb5458ff086d2f0887ffc061a0b4baded1410c",
+    "resultados\\codex\\glass_gpu002_20261005_v1.json": "7996a996cafa3aa5f213f8d7990d5e3d2d5fbb8094fe53614500aa5d71998dbd"
+  },
+  "checks": [
+    {
+      "name": "glass_gpu001_20261005_v1_guard_hash_and_exit",
+      "pass_": true
+    },
+    {
+      "name": "glass_gpu001_20261005_v1_sources",
+      "pass_": true
+    },
+    {
+      "name": "glass_gpu002_20261005_v1_guard_hash_and_exit",
+      "pass_": true
+    },
+    {
+      "name": "glass_gpu002_20261005_v1_sources",
+      "pass_": true
+    },
+    {
+      "name": "pilot_v1__near_left__complex128",
+      "pass_": true,
+      "numeric_pass": true
+    },
+    {
+      "name": "pilot_v1__near_right__complex128",
+      "pass_": true,
+      "numeric_pass": true
+    },
+    {
+      "name": "pilot_v1__near_coherent__complex128",
+      "pass_": true,
+      "numeric_pass": true
+    },
+    {
+      "name": "refinement_v2__near_left__complex128",
+      "pass_": true,
+      "numeric_pass": true
+    },
+    {
+      "name": "pilot_v1__near_left__complex64",
+      "pass_": true,
+      "numeric_pass": false
+    },
+    {
+      "name": "pilot_v1__near_right__complex64",
+      "pass_": true,
+      "numeric_pass": false
+    },
+    {
+      "name": "pilot_v1__near_coherent__complex64",
+      "pass_": true,
+      "numeric_pass": false
+    },
+    {
+      "name": "refinement_v2__near_left__complex64",
+      "pass_": true,
+      "numeric_pass": false
+    },
+    {
+      "name": "n384L_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "n512L_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "n640L_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "n512R_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "n512C_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "n512Lcoverage32_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "n512Ldz_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "n640Ldz_arrays_metrics",
+      "pass_": true
+    },
+    {
+      "name": "local_stability_flag_not_global",
+      "pass_": true
+    }
+  ],
+  "consistent": true,
+  "elapsed_s": 1.6250158000038937,
+  "precision64_failed_preserved": true
+}
