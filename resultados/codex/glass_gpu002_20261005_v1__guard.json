@@ -1,0 +1,929 @@
+{
+  "status": "completed",
+  "rc": 0,
+  "reason": null,
+  "samples": [
+    {
+      "ram_gib": 7.569774627685547,
+      "vram_gib": 1.8525390625,
+      "temperature_c": 29.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.559810638427734,
+      "vram_gib": 1.8525390625,
+      "temperature_c": 29.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.322010040283203,
+      "vram_gib": 1.8525390625,
+      "temperature_c": 30.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.261653900146484,
+      "vram_gib": 1.8505859375,
+      "temperature_c": 29.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.203426361083984,
+      "vram_gib": 1.8466796875,
+      "temperature_c": 29.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.152763366699219,
+      "vram_gib": 1.8466796875,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 6.106941223144531,
+      "vram_gib": 1.8388671875,
+      "temperature_c": 29.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 6.077960968017578,
+      "vram_gib": 1.8388671875,
+      "temperature_c": 29.0,
+      "utilization_pct": 20.0
+    },
+    {
+      "ram_gib": 6.052867889404297,
+      "vram_gib": 1.8505859375,
+      "temperature_c": 29.0,
+      "utilization_pct": 20.0
+    },
+    {
+      "ram_gib": 6.054649353027344,
+      "vram_gib": 1.84765625,
+      "temperature_c": 29.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 6.397453308105469,
+      "vram_gib": 1.8466796875,
+      "temperature_c": 29.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 6.041633605957031,
+      "vram_gib": 1.8505859375,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 6.032405853271484,
+      "vram_gib": 1.845703125,
+      "temperature_c": 29.0,
+      "utilization_pct": 20.0
+    },
+    {
+      "ram_gib": 7.1404876708984375,
+      "vram_gib": 2.1201171875,
+      "temperature_c": 29.0,
+      "utilization_pct": 20.0
+    },
+    {
+      "ram_gib": 7.134395599365234,
+      "vram_gib": 2.1328125,
+      "temperature_c": 31.0,
+      "utilization_pct": 9.0
+    },
+    {
+      "ram_gib": 7.302898406982422,
+      "vram_gib": 2.1455078125,
+      "temperature_c": 33.0,
+      "utilization_pct": 3.0
+    },
+    {
+      "ram_gib": 7.279632568359375,
+      "vram_gib": 2.1337890625,
+      "temperature_c": 34.0,
+      "utilization_pct": 3.0
+    },
+    {
+      "ram_gib": 7.245819091796875,
+      "vram_gib": 2.1298828125,
+      "temperature_c": 34.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.305793762207031,
+      "vram_gib": 2.1220703125,
+      "temperature_c": 34.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.2804412841796875,
+      "vram_gib": 2.091796875,
+      "temperature_c": 34.0,
+      "utilization_pct": 3.0
+    },
+    {
+      "ram_gib": 7.3238677978515625,
+      "vram_gib": 2.1064453125,
+      "temperature_c": 34.0,
+      "utilization_pct": 3.0
+    },
+    {
+      "ram_gib": 7.0594024658203125,
+      "vram_gib": 2.12109375,
+      "temperature_c": 34.0,
+      "utilization_pct": 3.0
+    },
+    {
+      "ram_gib": 7.297309875488281,
+      "vram_gib": 2.1767578125,
+      "temperature_c": 34.0,
+      "utilization_pct": 3.0
+    },
+    {
+      "ram_gib": 7.239665985107422,
+      "vram_gib": 2.20703125,
+      "temperature_c": 35.0,
+      "utilization_pct": 3.0
+    },
+    {
+      "ram_gib": 7.263824462890625,
+      "vram_gib": 2.205078125,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.211585998535156,
+      "vram_gib": 2.1982421875,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.1765594482421875,
+      "vram_gib": 2.193359375,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.187477111816406,
+      "vram_gib": 2.193359375,
+      "temperature_c": 33.0,
+      "utilization_pct": 9.0
+    },
+    {
+      "ram_gib": 7.174964904785156,
+      "vram_gib": 2.197265625,
+      "temperature_c": 32.0,
+      "utilization_pct": 9.0
+    },
+    {
+      "ram_gib": 7.191810607910156,
+      "vram_gib": 2.197265625,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.202793121337891,
+      "vram_gib": 2.197265625,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.198978424072266,
+      "vram_gib": 2.197265625,
+      "temperature_c": 31.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.263526916503906,
+      "vram_gib": 2.1982421875,
+      "temperature_c": 31.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.249111175537109,
+      "vram_gib": 2.1826171875,
+      "temperature_c": 31.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.247371673583984,
+      "vram_gib": 2.1826171875,
+      "temperature_c": 31.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.242855072021484,
+      "vram_gib": 2.1982421875,
+      "temperature_c": 31.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.254421234130859,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.253776550292969,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.219600677490234,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.252052307128906,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.272891998291016,
+      "vram_gib": 2.1884765625,
+      "temperature_c": 30.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.269706726074219,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 30.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.2712860107421875,
+      "vram_gib": 2.1689453125,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.265666961669922,
+      "vram_gib": 2.1689453125,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.26031494140625,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.279212951660156,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.2924957275390625,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 19.0
+    },
+    {
+      "ram_gib": 7.265892028808594,
+      "vram_gib": 2.189453125,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.2750701904296875,
+      "vram_gib": 2.18359375,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.271263122558594,
+      "vram_gib": 2.16796875,
+      "temperature_c": 30.0,
+      "utilization_pct": 17.0
+    },
+    {
+      "ram_gib": 7.275047302246094,
+      "vram_gib": 2.16796875,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.266227722167969,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.2710418701171875,
+      "vram_gib": 2.2001953125,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.272251129150391,
+      "vram_gib": 2.19921875,
+      "temperature_c": 30.0,
+      "utilization_pct": 18.0
+    },
+    {
+      "ram_gib": 7.268611907958984,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 17.0
+    },
+    {
+      "ram_gib": 7.2990875244140625,
+      "vram_gib": 2.173828125,
+      "temperature_c": 30.0,
+      "utilization_pct": 17.0
+    },
+    {
+      "ram_gib": 7.3256072998046875,
+      "vram_gib": 2.1748046875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.319953918457031,
+      "vram_gib": 2.1748046875,
+      "temperature_c": 36.0,
+      "utilization_pct": 70.0
+    },
+    {
+      "ram_gib": 7.323554992675781,
+      "vram_gib": 2.2001953125,
+      "temperature_c": 35.0,
+      "utilization_pct": 70.0
+    },
+    {
+      "ram_gib": 7.336280822753906,
+      "vram_gib": 2.2001953125,
+      "temperature_c": 35.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.336151123046875,
+      "vram_gib": 2.1953125,
+      "temperature_c": 35.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.341976165771484,
+      "vram_gib": 2.1953125,
+      "temperature_c": 33.0,
+      "utilization_pct": 4.0
+    },
+    {
+      "ram_gib": 7.338512420654297,
+      "vram_gib": 2.189453125,
+      "temperature_c": 33.0,
+      "utilization_pct": 4.0
+    },
+    {
+      "ram_gib": 7.335350036621094,
+      "vram_gib": 2.1748046875,
+      "temperature_c": 33.0,
+      "utilization_pct": 6.0
+    },
+    {
+      "ram_gib": 7.334835052490234,
+      "vram_gib": 2.1748046875,
+      "temperature_c": 33.0,
+      "utilization_pct": 6.0
+    },
+    {
+      "ram_gib": 7.333198547363281,
+      "vram_gib": 2.201171875,
+      "temperature_c": 33.0,
+      "utilization_pct": 8.0
+    },
+    {
+      "ram_gib": 7.378971099853516,
+      "vram_gib": 2.2001953125,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.382896423339844,
+      "vram_gib": 2.1943359375,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.386981964111328,
+      "vram_gib": 2.1943359375,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.394367218017578,
+      "vram_gib": 2.1875,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.388679504394531,
+      "vram_gib": 2.1708984375,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.40020751953125,
+      "vram_gib": 2.171875,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.390098571777344,
+      "vram_gib": 2.19921875,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.406887054443359,
+      "vram_gib": 2.19921875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.405738830566406,
+      "vram_gib": 2.2001953125,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.402935028076172,
+      "vram_gib": 2.2001953125,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.395671844482422,
+      "vram_gib": 2.1875,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.394721984863281,
+      "vram_gib": 2.1865234375,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.390544891357422,
+      "vram_gib": 2.1708984375,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.399494171142578,
+      "vram_gib": 2.1943359375,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.399738311767578,
+      "vram_gib": 2.1943359375,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.393505096435547,
+      "vram_gib": 2.1943359375,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.395587921142578,
+      "vram_gib": 2.2001953125,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.382102966308594,
+      "vram_gib": 2.1875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.3802490234375,
+      "vram_gib": 2.1875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.379486083984375,
+      "vram_gib": 2.1708984375,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.367179870605469,
+      "vram_gib": 2.197265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.379032135009766,
+      "vram_gib": 2.185546875,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.387691497802734,
+      "vram_gib": 2.185546875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.391960144042969,
+      "vram_gib": 2.185546875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.392482757568359,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.393909454345703,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.395481109619141,
+      "vram_gib": 2.1572265625,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.401317596435547,
+      "vram_gib": 2.185546875,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.4300994873046875,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.419773101806641,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.416015625,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.402111053466797,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.418975830078125,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.417015075683594,
+      "vram_gib": 2.15234375,
+      "temperature_c": 30.0,
+      "utilization_pct": 13.0
+    },
+    {
+      "ram_gib": 7.413646697998047,
+      "vram_gib": 2.185546875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.44573974609375,
+      "vram_gib": 2.185546875,
+      "temperature_c": 30.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.437946319580078,
+      "vram_gib": 2.185546875,
+      "temperature_c": 30.0,
+      "utilization_pct": 74.0
+    },
+    {
+      "ram_gib": 7.4161224365234375,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 35.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.421253204345703,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 35.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.428234100341797,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 35.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.428134918212891,
+      "vram_gib": 2.1572265625,
+      "temperature_c": 33.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.428272247314453,
+      "vram_gib": 2.1865234375,
+      "temperature_c": 33.0,
+      "utilization_pct": 6.0
+    },
+    {
+      "ram_gib": 7.431621551513672,
+      "vram_gib": 2.185546875,
+      "temperature_c": 33.0,
+      "utilization_pct": 6.0
+    },
+    {
+      "ram_gib": 7.447944641113281,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 33.0,
+      "utilization_pct": 8.0
+    },
+    {
+      "ram_gib": 7.439369201660156,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 35.0,
+      "utilization_pct": 8.0
+    },
+    {
+      "ram_gib": 7.4254608154296875,
+      "vram_gib": 2.16796875,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.447113037109375,
+      "vram_gib": 2.16796875,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.444690704345703,
+      "vram_gib": 2.15234375,
+      "temperature_c": 34.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.440067291259766,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 34.0,
+      "utilization_pct": 6.0
+    },
+    {
+      "ram_gib": 7.444976806640625,
+      "vram_gib": 2.185546875,
+      "temperature_c": 33.0,
+      "utilization_pct": 6.0
+    },
+    {
+      "ram_gib": 7.443599700927734,
+      "vram_gib": 2.185546875,
+      "temperature_c": 33.0,
+      "utilization_pct": 7.0
+    },
+    {
+      "ram_gib": 7.448051452636719,
+      "vram_gib": 2.185546875,
+      "temperature_c": 32.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.445827484130859,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.454063415527344,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.455707550048828,
+      "vram_gib": 2.16015625,
+      "temperature_c": 31.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.456645965576172,
+      "vram_gib": 2.1884765625,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.455665588378906,
+      "vram_gib": 2.1884765625,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.458824157714844,
+      "vram_gib": 2.1884765625,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.460052490234375,
+      "vram_gib": 2.1884765625,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.416820526123047,
+      "vram_gib": 2.173828125,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.3899993896484375,
+      "vram_gib": 2.1748046875,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.386528015136719,
+      "vram_gib": 2.15625,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.394138336181641,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.447471618652344,
+      "vram_gib": 2.185546875,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.471210479736328,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 31.0,
+      "utilization_pct": 15.0
+    },
+    {
+      "ram_gib": 7.460243225097656,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 33.0,
+      "utilization_pct": 15.0
+    },
+    {
+      "ram_gib": 7.446544647216797,
+      "vram_gib": 2.16796875,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.435638427734375,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.435832977294922,
+      "vram_gib": 2.1572265625,
+      "temperature_c": 35.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.435619354248047,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 34.0,
+      "utilization_pct": 5.0
+    },
+    {
+      "ram_gib": 7.4386749267578125,
+      "vram_gib": 2.185546875,
+      "temperature_c": 33.0,
+      "utilization_pct": 5.0
+    },
+    {
+      "ram_gib": 7.4369354248046875,
+      "vram_gib": 2.185546875,
+      "temperature_c": 32.0,
+      "utilization_pct": 9.0
+    },
+    {
+      "ram_gib": 7.450828552246094,
+      "vram_gib": 2.185546875,
+      "temperature_c": 32.0,
+      "utilization_pct": 9.0
+    },
+    {
+      "ram_gib": 7.448734283447266,
+      "vram_gib": 2.171875,
+      "temperature_c": 36.0,
+      "utilization_pct": 94.0
+    },
+    {
+      "ram_gib": 7.429328918457031,
+      "vram_gib": 2.171875,
+      "temperature_c": 36.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.431892395019531,
+      "vram_gib": 2.15234375,
+      "temperature_c": 37.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.432704925537109,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 35.0,
+      "utilization_pct": 5.0
+    },
+    {
+      "ram_gib": 7.431465148925781,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 34.0,
+      "utilization_pct": 5.0
+    },
+    {
+      "ram_gib": 7.4329376220703125,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 33.0,
+      "utilization_pct": 9.0
+    },
+    {
+      "ram_gib": 7.439968109130859,
+      "vram_gib": 2.1806640625,
+      "temperature_c": 32.0,
+      "utilization_pct": 9.0
+    },
+    {
+      "ram_gib": 7.442512512207031,
+      "vram_gib": 2.181640625,
+      "temperature_c": 32.0,
+      "utilization_pct": 10.0
+    },
+    {
+      "ram_gib": 7.428730010986328,
+      "vram_gib": 2.1728515625,
+      "temperature_c": 32.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.451992034912109,
+      "vram_gib": 2.1572265625,
+      "temperature_c": 31.0,
+      "utilization_pct": 14.0
+    },
+    {
+      "ram_gib": 7.451751708984375,
+      "vram_gib": 2.1845703125,
+      "temperature_c": 36.0,
+      "utilization_pct": 97.0
+    },
+    {
+      "ram_gib": 7.4318695068359375,
+      "vram_gib": 2.185546875,
+      "temperature_c": 37.0,
+      "utilization_pct": 97.0
+    },
+    {
+      "ram_gib": 7.427906036376953,
+      "vram_gib": 2.1875,
+      "temperature_c": 37.0,
+      "utilization_pct": 2.0
+    },
+    {
+      "ram_gib": 7.911079406738281,
+      "vram_gib": 1.83203125,
+      "temperature_c": 37.0,
+      "utilization_pct": 2.0
+    }
+  ],
+  "elapsed_s": 86.81626479999977,
+  "child_pid": 38744,
+  "child_finished": true,
+  "result_sha256": "7996a996cafa3aa5f213f8d7990d5e3d2d5fbb8094fe53614500aa5d71998dbd"
+}
