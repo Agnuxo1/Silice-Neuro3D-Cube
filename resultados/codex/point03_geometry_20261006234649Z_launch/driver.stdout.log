@@ -1,0 +1,15 @@
+{"progress": "synthetic_completed", "N": null, "batch": null, "children": 1}
+{"progress": "grid_completed", "N": 256, "batch": null, "children": 2}
+{"progress": "grid_completed", "N": 320, "batch": null, "children": 3}
+{"progress": "grid_completed", "N": 400, "batch": null, "children": 4}
+{"progress": "grid_completed", "N": 500, "batch": null, "children": 5}
+{"progress": "reference_completed", "N": 256, "batch": 0, "children": 6}
+{"progress": "reference_completed", "N": 256, "batch": 1, "children": 7}
+{"progress": "reference_completed", "N": 320, "batch": 0, "children": 8}
+{"progress": "reference_completed", "N": 320, "batch": 1, "children": 9}
+{"progress": "reference_completed", "N": 400, "batch": 0, "children": 10}
+{"progress": "reference_completed", "N": 400, "batch": 1, "children": 11}
+{"progress": "reference_completed", "N": 500, "batch": 0, "children": 12}
+{"progress": "reference_completed", "N": 500, "batch": 1, "children": 13}
+{"progress": "global_completed", "N": null, "batch": null, "children": 14}
+{"status": "completed", "report": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\execution.json"}
