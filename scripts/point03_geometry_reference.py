@@ -349,21 +349,46 @@ class _CrossSection:
         self.circles = list(unique.values())
         self.float_calls = 0
         self.decimal_calls = 0
+        self.affine_gap_fallbacks = 0
         self.active: list[_Circle] = self.circles
         self.track_keys = {circle.key for circle in tracks}
+        self.xa_q = rect.x0q
+        self.delta_x_q = rect.wq
+        self.gaps: dict[tuple[float, float, float], tuple[float, float, float, float]] = {}
+        self.exact_gap_required: set[tuple[float, float, float]] = set()
 
     def set_interval(self, a: float, b: float) -> None:
         # Every circle x-extremum is already a partition boundary; selecting
         # by overlap (rather than a rounded midpoint) preserves tiny slivers.
         xlo = self.rect.x0q + Fraction(a) * self.rect.wq
         xhi = self.rect.x0q + Fraction(b) * self.rect.wq
+        self.xa_q, self.delta_x_q = xlo, xhi - xlo
         self.active = [circle for circle in self.circles
                        if circle.xq + circle.rq >= xlo and circle.xq - circle.rq <= xhi]
+        self.gaps = {}
+        self.exact_gap_required = set()
+        for circle in self.active:
+            # Form each small distance before conversion to binary64.  Forming
+            # a displacement near +/-radius and then subtracting the radius
+            # would discard precisely the lens depth needed on tiny intervals.
+            left, right = circle.xq - circle.rq, circle.xq + circle.rq
+            exact = (xlo - left, xhi - left, right - xlo, right - xhi)
+            try:
+                converted = tuple(float(value) for value in exact)
+            except OverflowError:
+                self.exact_gap_required.add(circle.key)
+                continue
+            if any(not math.isfinite(value) or (value == 0 and original != 0)
+                   for value, original in zip(converted, exact)):
+                self.exact_gap_required.add(circle.key)
+            self.gaps[circle.key] = converted
 
-    def _decimal(self, u: float) -> float:
+    def _decimal(self, t: float) -> float:
         self.decimal_calls += 1
         rect = self.rect
-        xq = rect.x0q + Fraction(u) * rect.wq
+        # Preserve the local affine position through the exact discriminant;
+        # Decimal(Fraction(a + (b-a)*t)) would be too late to recover lost bits.
+        xq = self.xa_q + Fraction(t) * self.delta_x_q
         with localcontext() as context:
             context.prec = DECIMAL_PRECISION
             height = _dec(rect.hq)
@@ -384,43 +409,56 @@ class _CrossSection:
                 raise ArithmeticError("Decimal cross section is outside [0,1]")
             return float(value)
 
-    def __call__(self, u: float) -> float:
+    def __call__(self, t: float) -> float:
         self.clock.check()
         self.float_calls += 1
+        if not math.isfinite(t) or not 0 <= t <= 1:
+            raise ArithmeticError("Local quadrature coordinate is outside [0,1]")
         rect = self.rect
+        one_minus_t = 1.0 - t
         intervals: dict[tuple[float, float, float], tuple[float, float]] = {}
         endpoint_values: list[tuple[float, tuple[float, float, float]]] = []
         for circle in self.active:
-            displacement = math.fsum([rect.xmin, -circle.cx, u * rect.width])
-            distance = abs(displacement)
-            radicand = (circle.r - distance) * (circle.r + distance)
-            guard = 64 * _EPS * max(circle.r * circle.r, distance * distance,
-                                    (circle.r + distance) * rect.width, 1.0)
-            if abs(radicand) <= guard:
-                return self._decimal(u)
-            if radicand < 0:
+            if circle.key in self.exact_gap_required:
+                self.affine_gap_fallbacks += 1
+                return self._decimal(t)
+            left_a, left_b, right_a, right_b = self.gaps[circle.key]
+            left_terms = (one_minus_t * left_a, t * left_b)
+            right_terms = (one_minus_t * right_a, t * right_b)
+            left_gap, right_gap = math.fsum(left_terms), math.fsum(right_terms)
+            left_guard = 64 * _EPS * math.fsum(abs(value) for value in left_terms)
+            right_guard = 64 * _EPS * math.fsum(abs(value) for value in right_terms)
+            if (not all(math.isfinite(value) for value in (left_gap, right_gap, left_guard, right_guard))
+                    or abs(left_gap) <= left_guard or abs(right_gap) <= right_guard):
+                self.affine_gap_fallbacks += 1
+                return self._decimal(t)
+            if left_gap < 0 or right_gap < 0:
                 continue
+            radicand = left_gap * right_gap
+            if not math.isfinite(radicand) or radicand <= 0:
+                self.affine_gap_fallbacks += 1
+                return self._decimal(t)
             root = math.sqrt(radicand)
             low = math.fsum([circle.cy, -rect.ymin, -root]) / rect.height
             high = math.fsum([circle.cy, -rect.ymin, root]) / rect.height
             if not math.isfinite(low) or not math.isfinite(high):
-                return self._decimal(u)
+                return self._decimal(t)
             if any(abs(endpoint - wall) <= 64 * _EPS * max(1.0, abs(endpoint))
                    for endpoint in (low, high) for wall in (0.0, 1.0)):
-                return self._decimal(u)
+                return self._decimal(t)
             intervals[circle.key] = (low, high)
             endpoint_values.extend((endpoint, circle.key) for endpoint in (low, high)
                                    if 0 < endpoint < 1)
         endpoint_values.sort()
         for (left, left_key), (right, right_key) in zip(endpoint_values[:-1], endpoint_values[1:]):
             if left_key != right_key and right - left <= 64 * _EPS:
-                return self._decimal(u)
+                return self._decimal(t)
         track_intervals = [intervals[key] for key in self.track_keys if key in intervals]
         outer = intervals.get(self.outer.key) if self.outer is not None else None
         inner = intervals.get(self.inner.key) if self.inner is not None else None
         value = _measure(track_intervals, outer, inner, self.outer is not None, 0.0, 1.0)
         if not math.isfinite(value) or not 0 <= value <= 1:
-            return self._decimal(u)
+            return self._decimal(t)
         return value
 
 
@@ -440,31 +478,41 @@ def _integrate(quad: Callable[..., Any], section: _CrossSection,
                report: dict[str, Any], clock: _Clock) -> tuple[float, float, list[str]]:
     messages: list[str] = []
     values, errors = [], []
-    report.update({"tau": tau, "quad_limit": QUAD_LIMIT, "intervals": [], "completed": False})
+    report.update({"tau": tau, "quad_limit": QUAD_LIMIT, "intervals": [], "completed": False,
+                   "quadrature_coordinate": "local t in [0,1] for each retained u interval",
+                   "normalization": "I_u=delta_u*I_t; error_u=delta_u*error_t"})
     for index, (a, b) in enumerate(intervals):
         clock.check()
         section.set_interval(a, b)
-        epsabs = tau * (b - a)
+        delta_u = float(Fraction(b) - Fraction(a))
+        epsabs = tau * delta_u
         with warnings.catch_warnings(record=True) as caught:
             warnings.simplefilter("always")
-            returned = quad(section, a, b, epsabs=epsabs, epsrel=tau,
+            returned = quad(section, 0.0, 1.0, epsabs=tau, epsrel=tau,
                             limit=QUAD_LIMIT, full_output=1)
-        value, error, info = float(returned[0]), float(returned[1]), returned[2]
+        value_local, error_local, info = float(returned[0]), float(returned[1]), returned[2]
+        value, error = delta_u * value_local, delta_u * error_local
         diagnostic_messages = [str(item) for item in returned[3:] if item]
         diagnostic_messages.extend(f"{item.category.__name__}: {item.message}" for item in caught)
         record = {"index": index, "u_lower": a, "u_upper": b,
+                  "delta_u": delta_u, "quad_lower_t": 0.0, "quad_upper_t": 1.0,
+                  "quad_epsabs_t": tau, "quad_epsrel_t": tau,
+                  "value_local_t": value_local, "estimated_error_local_t": error_local,
+                  "affine_x_exact_um": {"left_fraction": str(section.xa_q),
+                                        "span_fraction": str(section.delta_x_q)},
                   "epsabs": epsabs, "epsrel": tau, "value": value,
                   "estimated_error": error, "messages": diagnostic_messages,
-                  "quadpack": _quad_information(info)}
+                  "quadpack_t": _quad_information(info)}
         report["intervals"].append(record)
-        if not math.isfinite(value) or not math.isfinite(error) or error < 0:
+        if (not all(math.isfinite(number) for number in (delta_u, value_local, error_local, value, error))
+                or delta_u <= 0 or error_local < 0 or error < 0):
             raise ArithmeticError("QUADPACK returned a nonfinite value or invalid error estimate")
         values.append(value)
         errors.append(error)
         messages.extend(f"tau={tau:g}, interval={index}: {message}" for message in diagnostic_messages)
     total, total_error = math.fsum(values), math.fsum(errors)
     report.update({"completed": True, "fraction": total, "estimated_error": total_error,
-                   "evaluation_count": sum(item["quadpack"]["neval"] for item in report["intervals"])})
+                   "evaluation_count": sum(item["quadpack_t"]["neval"] for item in report["intervals"])})
     return total, total_error, messages
 
 
@@ -488,7 +536,8 @@ def cell_reference(spec: Any, rect: Any, deadline: float | None = None) -> dict[
         "normalization": "integral L(xmin+u*width)/height du, u in [0,1]",
         "predicate_arithmetic": "Fraction of the serialized binary floats",
         "intersection_construction": f"Decimal precision {DECIMAL_PRECISION}",
-        "cross_section_arithmetic": "filtered float with independent Decimal fallback",
+        "cross_section_arithmetic": "exact endpoint gaps, local affine interpolation, filtered float with independent Decimal fallback",
+        "affine_gap_filter": "64*eps*sum(abs(weighted endpoint gaps)); exact fallback for uncertain signs",
         "input_disk_count": len(original), "bbox_filtered_unique_disk_count": len(tracks),
         "critical_circle_count": len(unique), "coarse": {}, "fine": {},
         "error_estimates_are_certified_bounds": False,
@@ -522,6 +571,7 @@ def cell_reference(spec: Any, rect: Any, deadline: float | None = None) -> dict[
             messages.append("An integrated fraction is outside the prospective fractional range tolerance")
         diagnostics.update({"float_cross_section_calls": section.float_calls,
                             "decimal_cross_section_calls": section.decimal_calls,
+                            "affine_gap_fallback_calls": section.affine_gap_fallbacks,
                             "elapsed_seconds": time.monotonic() - clock.started})
         clock.check()
         return {"schema": "silice.point03-geometry.reference.v1",
