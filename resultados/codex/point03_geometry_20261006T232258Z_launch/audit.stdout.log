@@ -1,0 +1,19 @@
+FAIL | driver=failed | children=2/14 | elapsed=10.393704999994952 s | max_child=3.6151344000245444 s
+Evidence counts: {"grids": 0, "reference_rows": 0, "resolved_references": 0, "synthetic_rows": 22, "invariance_suites": 22, "global_comparisons": 0}
+Driver error: Bounded child failed; its evidence and logs are retained
+integrity: 0 findings
+completion: 18 findings
+  Original execution did not pass completely
+  grid_n256 worker incomplete
+  N256 grid incomplete
+  grid 320: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\grid_n320.json
+  grid 400: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\grid_n400.json
+  grid 500: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\grid_n500.json
+  reference 256/0: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\reference_n256_batch0.json
+  reference 256/1: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\reference_n256_batch1.json
+  reference 320/0: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\reference_n320_batch0.json
+  reference 320/1: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\reference_n320_batch1.json
+  reference 400/0: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\reference_n400_batch0.json
+  reference 400/1: ValueError: Missing/symlink file: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z\reference_n400_batch1.json
+science: 0 findings
+Fresh summary: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006T232258Z_launch\independent_audit.json | SHA256 f27b708a7b3d1a77952af32e408a19bd18ff56fe075f0441ce8f2ff190a859db
