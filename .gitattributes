@@ -13,3 +13,4 @@ resultados/codex/env_*/** -text whitespace=cr-at-eol
 resultados/codex/point01_preflight_*/** -text whitespace=cr-at-eol
 requirements/cpu-win-py313.wheels.json -text whitespace=cr-at-eol
 resultados/codex/point02_boards_*/** -text whitespace=cr-at-eol
+resultados/codex/point03_*/** -text whitespace=cr-at-eol
