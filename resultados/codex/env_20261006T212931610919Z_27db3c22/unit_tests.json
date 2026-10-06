@@ -1,0 +1,14 @@
+{
+  "schema": "silice.cpu-tests.v1",
+  "tests_run": 51,
+  "tests_expected": 51,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "successful": true,
+  "elapsed_s": 1.4191217999905348,
+  "gpu_initialized": false,
+  "torch_imported": false,
+  "source_root": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006",
+  "scope": "CPU software tests; no physical-device or global-convergence certification"
+}

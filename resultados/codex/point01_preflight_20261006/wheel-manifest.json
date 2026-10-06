@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "numpy-2.2.6-cp313-cp313-win_amd64.whl",
+    "sha256": "b0544343a702fa80c95ad5d3d608ea3599dd54d4632df855e4c8d24eb6ecfa1c",
+    "size_bytes": 12610885
+  },
+  {
+    "filename": "pip-25.3-py3-none-any.whl",
+    "sha256": "9655943313a94722b7774661c21049070f6bbb0a1516bf02f7c8d5d9201514cd",
+    "size_bytes": 1778622
+  },
+  {
+    "filename": "psutil-6.1.1-cp37-abi3-win_amd64.whl",
+    "sha256": "f35cfccb065fff93529d2afb4a2e89e363fe63ca1e4a5da22b603a85833c2649",
+    "size_bytes": 254444
+  },
+  {
+    "filename": "scipy-1.15.1-cp313-cp313-win_amd64.whl",
+    "sha256": "c352c1b6d7cac452534517e022f8f7b8d139cd9f27e6fbd9f3cbd0bfd39f5bef",
+    "size_bytes": 43640439
+  },
+  {
+    "filename": "setuptools-82.0.1-py3-none-any.whl",
+    "sha256": "a59e362652f08dcd477c78bb6e7bd9d80a7995bc73ce773050228a348ce2e5bb",
+    "size_bytes": 1006223
+  },
+  {
+    "filename": "wheel-0.45.1-py3-none-any.whl",
+    "sha256": "708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248",
+    "size_bytes": 72494
+  }
+]

@@ -1,0 +1,14 @@
+Looking in links: d:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\.audit_tmp\wheels
+Processing d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\numpy-2.2.6-cp313-cp313-win_amd64.whl (from -r D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\requirements\cpu-win-py313.lock (line 3))
+Processing d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\pip-25.3-py3-none-any.whl (from -r D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\requirements\cpu-win-py313.lock (line 4))
+Processing d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\psutil-6.1.1-cp37-abi3-win_amd64.whl (from -r D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\requirements\cpu-win-py313.lock (line 5))
+Processing d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\scipy-1.15.1-cp313-cp313-win_amd64.whl (from -r D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\requirements\cpu-win-py313.lock (line 6))
+Processing d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\setuptools-82.0.1-py3-none-any.whl (from -r D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\requirements\cpu-win-py313.lock (line 7))
+Processing d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\wheel-0.45.1-py3-none-any.whl (from -r D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\requirements\cpu-win-py313.lock (line 8))
+Installing collected packages: wheel, setuptools, scipy, psutil, pip, numpy
+  Attempting uninstall: pip
+    Found existing installation: pip 25.2
+    Uninstalling pip-25.2:
+      Successfully uninstalled pip-25.2
+
+Successfully installed numpy-2.2.6 pip-25.3 psutil-6.1.1 scipy-1.15.1 setuptools-82.0.1 wheel-0.45.1
