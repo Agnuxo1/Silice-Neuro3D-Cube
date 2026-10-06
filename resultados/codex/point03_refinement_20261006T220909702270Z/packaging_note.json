@@ -1,0 +1,7 @@
+{
+  "scope": "Display-artifact whitespace normalization only; all scientific outputs unchanged.",
+  "reason": "Generated SVG trailing spaces were reported by git diff --cached --check.",
+  "svg_sha256_before": "ca1cf4dafde644adf1d2723873024d6ec07de0b7bdb523c56ded5c1baaac7b95",
+  "svg_sha256_after": "28380a9e9f19679addb48202fe65c647458892495c52b29e247202bbd94af224",
+  "plot_script_updated_to_repeat_normalization": true
+}

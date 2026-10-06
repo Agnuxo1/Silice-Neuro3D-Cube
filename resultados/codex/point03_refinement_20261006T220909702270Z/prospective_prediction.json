@@ -1,0 +1,30 @@
+{
+  "schema": "silice.point03-prospective-prediction.v1",
+  "created_utc": "2026-10-06T22:14:09.598855+00:00",
+  "sources": [
+    {
+      "N": 256,
+      "case_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\case.json",
+      "sha256": "2a07e21e02c3175e20190b3627fb803b666a7ba38bac5841b3b696182b51343a",
+      "P_core": 0.33228164377549263
+    },
+    {
+      "N": 320,
+      "case_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\case.json",
+      "sha256": "e64ed7d62183ca4f5cb019310ecb0e400344724fd84cab8bb712326874cd27fa",
+      "P_core": 0.33264174033747024
+    },
+    {
+      "N": 400,
+      "case_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\case.json",
+      "sha256": "e35c2725c9d2f6d2c352af4110e7e55b41df936bc271406d304b9275c2fbb2e1",
+      "P_core": 0.3328103520352122
+    }
+  ],
+  "first_observed_order": 3.4003841650113404,
+  "predicted_N500_core_power": 0.3328893028156898,
+  "fourth_case_report_present_at_start": false,
+  "formula": "P2+D1/(1.25**p0), p0=log(abs(D0/D1))/log(1.25)",
+  "contract_sha256": "1cadbf948074434363376a5e4f059c686121d3146fa07831cda8ed8ac3de9036",
+  "scope": "Frozen contract formula evaluated before fourth final case report existed; internal timestamp, not external attestation."
+}

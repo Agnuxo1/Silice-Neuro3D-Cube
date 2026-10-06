@@ -1,0 +1,116 @@
+{
+  "schema": "silice.point03-refinement.self-check.v1",
+  "status": "passed",
+  "self_check_pass": true,
+  "checks_count": 6,
+  "checks": [
+    {
+      "name": "known_second_order_and_error_target",
+      "passed": true,
+      "details": {
+        "observed_orders": [
+          1.9999999999997846,
+          2.0000000000010982
+        ],
+        "accepted_gci": {
+          "observed_order": 2.0000000000010982,
+          "extrapolated_core_power": 0.30000000000000016,
+          "u_space": 0.0002621439999997795,
+          "S500": 0.0,
+          "u_total": 0.0002621439999997795,
+          "relative_u_total": 0.0008732029202490629,
+          "interpretation": "Conditional Richardson/GCI-style numerical indicator; not a rigorous bound or confidence interval."
+        },
+        "oversized_error_target_rejected": true
+      }
+    },
+    {
+      "name": "oscillatory_differences_rejected",
+      "passed": true,
+      "details": {
+        "nonzero_differences": true,
+        "same_signed_differences": false,
+        "positive_finite_observed_orders": true,
+        "observed_order_stability": false,
+        "withheld_finest_grid_prediction": false,
+        "individual_auxiliary_components": true,
+        "auxiliary_difference_budget": true,
+        "auxiliary_corner_robustness": false,
+        "absolute_total_indicator": false,
+        "relative_total_indicator": false
+      }
+    },
+    {
+      "name": "nonpositive_order_rejected",
+      "passed": true,
+      "details": {
+        "observed_orders": [
+          -3.1062837195053903,
+          -1.8170594925112842
+        ],
+        "constant_sequence_diagnostic_Q4_true_but_asymptotic_claim_rejected": true
+      }
+    },
+    {
+      "name": "withheld_grid_failure_rejected",
+      "passed": true,
+      "details": {
+        "fit_grids": [
+          256,
+          320,
+          400
+        ],
+        "withheld_grid": 500,
+        "predicted_core_power": 0.30020971519999995,
+        "absolute_residual": 1.1000000000038757e-05,
+        "maximum_residual": 1.0696479999999787e-05
+      }
+    },
+    {
+      "name": "auxiliary_contamination_rejected",
+      "passed": true,
+      "details": {
+        "sum": 0.00039999999999995595,
+        "limit": 1.1796479999998111e-05,
+        "within_budget_but_corner_sensitive_rejected": true
+      }
+    },
+    {
+      "name": "nonfinite_or_incomplete_evidence_rejected",
+      "passed": true,
+      "details": {
+        "rejected_inputs": [
+          "nan",
+          "positive_infinity",
+          "negative_infinity",
+          "missing_case",
+          "duplicate_case",
+          "json_overflow",
+          "json_nan",
+          "json_duplicate_key",
+          "missing_required_sha256"
+        ]
+      }
+    }
+  ],
+  "thresholds": {
+    "minimum_absolute_difference_exclusive": 1e-12,
+    "maximum_relative_order_disagreement": 0.2,
+    "holdout_fraction_of_last_difference": 0.1,
+    "auxiliary_fraction_of_last_difference": 0.1,
+    "maximum_individual_auxiliary_component": 0.00025,
+    "gci_safety_factor": 1.25,
+    "maximum_total_indicator_absolute": 0.001,
+    "maximum_total_indicator_relative": 0.01,
+    "metric_recomputation_absolute_tolerance": 1e-12,
+    "initial_power_absolute_tolerance": 1e-12,
+    "detector_area_relative_tolerance": 1e-12,
+    "maximum_final_total_power": 1.001
+  },
+  "physical_propagations": 0,
+  "scope": "Synthetic assessment logic checks only; not scientific evidence for convergence.",
+  "created_utc": "2026-10-06T22:09:10.523268+00:00",
+  "elapsed_s": 0.0013210999895818532,
+  "assessor_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\assess_point03_refinement.py",
+  "assessor_sha256": "6af62709ed61523e5aa6080b4790db8778f72a8bf54e7bd793bc03f26d654afc"
+}

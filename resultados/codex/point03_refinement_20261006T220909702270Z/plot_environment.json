@@ -1,0 +1,7 @@
+{
+  "python": "3.12.14",
+  "matplotlib": "3.10.8",
+  "host_scope": "Scratch visualization only; no optical propagation",
+  "source": "compact_result.json",
+  "figure": "refinement_stageB.svg"
+}

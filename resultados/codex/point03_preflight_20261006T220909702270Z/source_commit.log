@@ -1,0 +1,4 @@
+[codex/scientific-closure-20261006 552a93a] Implement bounded Point 03 refinement and independent acceptance checks
+ 3 files changed, 1063 insertions(+), 2 deletions(-)
+ create mode 100644 scripts/assess_point03_refinement.py
+ create mode 100644 scripts/run_point03_refinement.py
