@@ -127,26 +127,22 @@ Silice-Neuro3D-Cube/
 
 ## Reproducir
 
-Solo Python, NumPy y SciPy (ya instalados); ningún script instala dependencias ni inicializa CUDA. CPU un hilo, presupuesto por script de 30–40 s.
+La instalación reproducible de CPU utiliza Windows 10 x64 y CPython 3.13.7. Desde la raíz del repositorio:
 
 ```powershell
-cd D:\PROJECTS\Silice-Neuro3D-Cube
-python -B scripts/check.py                                   # 29 pruebas CPU
-python -B scripts/run_glass003_v2.py --out resultados/codex/glass003_v2_replicacion.json
-python -B scripts/audit_glass004.py --out resultados/codex/glass004_replicacion.json
-python experimentos/glass_min1/montecarlo.py                 # tolerancias DFT4
-python experimentos/glass006a_claude/run006a.py              # fuga vs grosor (~1 min)
-bash experimentos/glass009_claude/run_all009.sh              # solver ADI, un caso por hijo < 30 s
-python tools/gif_header.py                                   # regenera los GIF (ver tools/)
+& 'C:\Python313\python.exe' scripts/bootstrap_cpu.py
 ```
 
-Un resultado fallido sigue guardándose y produce salida no exitosa. Los nombres nuevos evitan sobrescribir evidencia previa. No iniciar Blender ni GPU por reproducir este README.
+El comando instala seis dependencias con versiones y hashes fijados dentro de `.venv`, instala el paquete y ejecuta la verificación completa del entorno. Las instrucciones y la opción de instalación sin conexión están en [CPU-REPRODUCTION](Docs/CPU-REPRODUCTION.md).
 
-Verificación ligera de informes V2, sin repetir propagaciones:
+Para repetir la verificación sin reinstalar, o ejecutar solo las 51 pruebas CPU actuales:
 
 ```powershell
-python -B scripts/audit_glass007_v2.py resultados/codex/glass007_v2_run3.json
+& '.\.venv\Scripts\python.exe' scripts/verify_environment.py
+& '.\.venv\Scripts\python.exe' -B scripts/check.py
 ```
+
+La verificación genera informes nuevos, comprueba los hashes de la evidencia histórica y limita cada proceso numérico a un hilo y 40 segundos. Incluye las pruebas, la auditoría CMT, la auditoría de GLASS-007 V2 y los 15 casos de GLASS-003 V2. El fallo científico de convergencia de GLASS-003 V2 debe reproducirse con resultados completos y balances correctos; no se convierte en una convergencia aprobada. Las instrucciones históricas de cada ensayo conservan su propio alcance y sus límites. Esta instalación no ejecuta GPU ni Blender.
 
 ## Método y colaboración
 

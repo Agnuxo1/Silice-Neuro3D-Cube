@@ -6,3 +6,6 @@ __pycache__/
 
 experimentos/**/out/state_*.npy
 tools/_preview/
+.audit_tmp/
+build/
+*.egg-info/

@@ -9,5 +9,11 @@ description = "Reproducible research models for laser-written optical silica net
 requires-python = ">=3.10"
 dependencies = ["numpy>=2.0"]
 
+[project.optional-dependencies]
+research = ["scipy", "psutil"]
+test = ["psutil"]
+visualization = ["matplotlib", "Pillow"]
+gpu = ["torch"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
