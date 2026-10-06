@@ -1,0 +1,244 @@
+{
+  "schema": "silice.point03-sparse.worker.v1",
+  "status": "small_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "c11722129bc5b1e4f90e0afff1429cce9655d5c2f69841a943a0f02e620db13b",
+  "checks": [
+    {
+      "relative_l2": 1.433617797011144e-16,
+      "relative_linf": 2.196566618228852e-16,
+      "N": 8,
+      "axis": "x",
+      "rhs": "random",
+      "residual_infinity_normalized": 6.052824407566273e-17,
+      "cross_block_leakage": 0.0
+    },
+    {
+      "relative_l2": 1.4804816324122127e-16,
+      "relative_linf": 1.4610110725618427e-16,
+      "N": 8,
+      "axis": "x",
+      "rhs": "impulse_before_cut",
+      "residual_infinity_normalized": 2.0036353757288663e-17,
+      "cross_block_leakage": 0.0
+    },
+    {
+      "relative_l2": 1.4846364901335116e-16,
+      "relative_linf": 1.4641263005350532e-16,
+      "N": 8,
+      "axis": "x",
+      "rhs": "impulse_after_cut",
+      "residual_infinity_normalized": 5.05484793887753e-17,
+      "cross_block_leakage": 0.0
+    },
+    {
+      "relative_l2": 1.5261917278110736e-16,
+      "relative_linf": 1.6771672923873405e-16,
+      "N": 8,
+      "axis": "y",
+      "rhs": "random",
+      "residual_infinity_normalized": 8.693890920191565e-17,
+      "cross_block_leakage": 0.0
+    },
+    {
+      "relative_l2": 1.7080168735891286e-17,
+      "relative_linf": 1.639860905631735e-17,
+      "N": 8,
+      "axis": "y",
+      "rhs": "impulse_before_cut",
+      "residual_infinity_normalized": 6.369097607523567e-17,
+      "cross_block_leakage": 0.0
+    },
+    {
+      "relative_l2": 8.839823074389571e-17,
+      "relative_linf": 6.564435065179974e-17,
+      "N": 8,
+      "axis": "y",
+      "rhs": "impulse_after_cut",
+      "residual_infinity_normalized": 3.3999002452306676e-17,
+      "cross_block_leakage": 0.0
+    },
+    {
+      "relative_l2": 2.6268519225540043e-16,
+      "relative_linf": 3.4532542009271484e-16,
+      "N": 8,
+      "steps": 1,
+      "absolute_power_difference": 1.1102230246251565e-16
+    },
+    {
+      "relative_l2": 1.3540875689110037e-15,
+      "relative_linf": 1.3388465419896384e-15,
+      "N": 8,
+      "steps": 16,
+      "absolute_power_difference": 5.551115123125783e-16
+    },
+    {
+      "relative_l2": 2.8063440030307387e-15,
+      "relative_linf": 4.523744146003237e-15,
+      "N": 8,
+      "steps": 64,
+      "absolute_power_difference": 1.942890293094024e-16
+    }
+  ],
+  "matrix_checks": [
+    {
+      "N": 8,
+      "axis": "x",
+      "exact_dense_match": true,
+      "matrix_nnz": 176,
+      "line_cuts": 7,
+      "cross_block_connections": 0
+    },
+    {
+      "N": 8,
+      "axis": "y",
+      "exact_dense_match": true,
+      "matrix_nnz": 176,
+      "line_cuts": 7,
+      "cross_block_connections": 0
+    }
+  ],
+  "array_artifacts": [
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_inputs.npz",
+      "sha256": "66c16ee5a3784ac2a289ee553cbdc53f6f59d8fd282977f5859fdc659d688575"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_dense.npz",
+      "sha256": "dbdb9584ff08907b55de8d1a62bbc44cd037ab58bcec1ddb5525c188fa01104f"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_x_random.npz",
+      "sha256": "0f269a0866c8632971b6a21f77ca18958d0979064b6a9ff18ccd4194d38d24d4"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_x_impulse_before_cut.npz",
+      "sha256": "c21417a1c72688c7cdaf84d0346251d22a76dde5a6d692541e1e4c738e2444ff"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_x_impulse_after_cut.npz",
+      "sha256": "e406df5836f2681a64e2db70165644341d3483f938f83a07d2258c8017cbe44b"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_y_random.npz",
+      "sha256": "1137ea93f727ba37a116c1d4e0c44a4e89b749ebbf0f813af3ba11ed4f07e6ac"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_y_impulse_before_cut.npz",
+      "sha256": "da32473a9e21e611b77da90d8db9bc88a98c65a2b9a29eb9bb49db4ba00fd83f"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_y_impulse_after_cut.npz",
+      "sha256": "619a1d0107202a235392b5f5217251b24ebab44894c123154954af9c12089ef9"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_steps1.npz",
+      "sha256": "52dc8b8465218e48911fc4d7e01c9710752c2679b2fc45e9b58db9067684d013"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_steps16.npz",
+      "sha256": "fd69df04d76e3f86c36cd08f53fbc1e4921f605dc081edafc716aa09f3714b67"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\small_n8_steps64.npz",
+      "sha256": "f2ad3aeeb20220e1cf270621b1c3f6cb5d52959563bee4646d3fe2f9860d08b4"
+    }
+  ],
+  "small_profile": {
+    "N": 8,
+    "dx_m": 5e-07,
+    "dz_m": 1.25e-06,
+    "seed": 20261006,
+    "input_power": 1.0000000000000002
+  },
+  "factor_metadata": [
+    {
+      "N": 8,
+      "metadata": {
+        "backend": "scipy.sparse.linalg.splu",
+        "scipy_version": "1.15.1",
+        "numpy_version": "2.2.6",
+        "original_class": "point03_sparse_original_adi.Stepper",
+        "options": {
+          "permc_spec": "NATURAL",
+          "diag_pivot_thresh": 0.0,
+          "Equil": false
+        },
+        "factors": [
+          {
+            "factor_index": 0,
+            "line_count": 8,
+            "line_size": 8,
+            "matrix_order": 64,
+            "matrix_nnz": 176,
+            "expected_matrix_nnz": 176,
+            "L_nnz": 120,
+            "U_nnz": 120,
+            "matrix_csc_bytes": 3780,
+            "factor_export_csc_bytes": 5320,
+            "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+            "perm_r": {
+              "length": 64,
+              "dtype": "int32",
+              "identity": true,
+              "nonidentity_entries": 0,
+              "sha256": "fea7b32778ecbdd7adee1941e98c89cf96bbc762f5f1beb0be24e36a456fbbc5"
+            },
+            "perm_c": {
+              "length": 64,
+              "dtype": "int32",
+              "identity": true,
+              "nonidentity_entries": 0,
+              "sha256": "fea7b32778ecbdd7adee1941e98c89cf96bbc762f5f1beb0be24e36a456fbbc5"
+            },
+            "assembly_s": 0.08250319998478517,
+            "factorization_s": 0.030247600050643086,
+            "solve_calls": 67,
+            "solve_elapsed_s": 0.02371729997685179,
+            "setup_elapsed_s": 0.11313720000907779
+          },
+          {
+            "factor_index": 1,
+            "line_count": 8,
+            "line_size": 8,
+            "matrix_order": 64,
+            "matrix_nnz": 176,
+            "expected_matrix_nnz": 176,
+            "L_nnz": 120,
+            "U_nnz": 120,
+            "matrix_csc_bytes": 3780,
+            "factor_export_csc_bytes": 5320,
+            "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+            "perm_r": {
+              "length": 64,
+              "dtype": "int32",
+              "identity": true,
+              "nonidentity_entries": 0,
+              "sha256": "fea7b32778ecbdd7adee1941e98c89cf96bbc762f5f1beb0be24e36a456fbbc5"
+            },
+            "perm_c": {
+              "length": 64,
+              "dtype": "int32",
+              "identity": true,
+              "nonidentity_entries": 0,
+              "sha256": "fea7b32778ecbdd7adee1941e98c89cf96bbc762f5f1beb0be24e36a456fbbc5"
+            },
+            "assembly_s": 0.00034689996391534805,
+            "factorization_s": 0.0001105000264942646,
+            "solve_calls": 67,
+            "solve_elapsed_s": 0.0015543996705673635,
+            "setup_elapsed_s": 0.000616899982560426
+          }
+        ],
+        "validation_status": "requires_paired_audit_result"
+      }
+    }
+  ],
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 58912768,
+    "peak_wset_bytes": 62730240,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 1.6638399999937974
+}

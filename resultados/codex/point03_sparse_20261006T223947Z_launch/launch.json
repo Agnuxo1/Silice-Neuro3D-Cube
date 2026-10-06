@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-06T22:39:48.923665+00:00",
+  "command": [
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_sparse_adi.py",
+    "--study",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\manifest.json",
+    "--out-dir",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z"
+  ],
+  "source_commit": "005dae057df0a264ad8372be905d24644715373a",
+  "driver_sha256": "96e5251f2ac3ef16dd83e7dc1b08f3bb3c2e5256c63732972c6b1cbed7690da5",
+  "out_dir": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z",
+  "outer_safeguard_s": 640,
+  "scope": "Driver enforces its own 600 s study limit and 40 s numerical children."
+}

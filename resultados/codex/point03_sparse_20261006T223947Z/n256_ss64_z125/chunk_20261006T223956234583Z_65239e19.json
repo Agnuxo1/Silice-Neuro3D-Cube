@@ -1,0 +1,104 @@
+{
+  "schema": "silice.point03-sparse.worker.v1",
+  "status": "checkpoint_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "c11722129bc5b1e4f90e0afff1429cce9655d5c2f69841a943a0f02e620db13b",
+  "case_id": "n256_ss64_z125",
+  "steps_start": 0,
+  "steps_done": 200,
+  "previous_checkpoint_path": null,
+  "previous_checkpoint_sha256": null,
+  "input_npz_sha256": "6c52097cf13dfd30d29c01e6c6d9ed94f07439d10032cf9e84d01730b20969c4",
+  "propagation_s": 5.70123429998057,
+  "factor_metadata": {
+    "backend": "scipy.sparse.linalg.splu",
+    "scipy_version": "1.15.1",
+    "numpy_version": "2.2.6",
+    "original_class": "point03_sparse_original_adi.Stepper",
+    "options": {
+      "permc_spec": "NATURAL",
+      "diag_pivot_thresh": 0.0,
+      "Equil": false
+    },
+    "factors": [
+      {
+        "factor_index": 0,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.013685000012628734,
+        "factorization_s": 0.03520929999649525,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.7274210995528847,
+        "setup_elapsed_s": 0.05281060002744198
+      },
+      {
+        "factor_index": 1,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.009946199948899448,
+        "factorization_s": 0.03461290005361661,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.7398287003743462,
+        "setup_elapsed_s": 0.04870869999285787
+      }
+    ],
+    "validation_status": "requires_paired_audit_result"
+  },
+  "npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n256_ss64_z125\\chunk_20261006T223956234583Z_65239e19.npz",
+  "npz_sha256": "1fc6c2d6a5613b0f6574ab2f43d1a02f75b445555b2b20540a5a04b0e3c8256b",
+  "input_power": 1.0000000000000002,
+  "output_power": 0.9999940433992156,
+  "core_power_analytic_input": 0.7362589524334695,
+  "core_area_m2": 1.130973355292326e-10,
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 58355712,
+    "peak_wset_bytes": 128638976,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 6.454443099966738
+}
