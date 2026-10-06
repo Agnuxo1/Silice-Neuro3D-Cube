@@ -183,7 +183,7 @@ def main() -> int:
         install = capture([str(python), "-B", "-m", "pip", "--isolated", "install",
                            *source_arguments, "--require-hashes",
                            "--only-binary=:all:", "--no-deps", "-r", str(lock)],
-                          ROOT, "locked_dependencies", report_dir, environment)
+                          ROOT, "locked_dependencies", report_dir, environment, timeout=180)
         report["steps"].append(install)
         checked(install, "Locked dependency installation")
         if digest(lock) != report["lock_sha256"]:

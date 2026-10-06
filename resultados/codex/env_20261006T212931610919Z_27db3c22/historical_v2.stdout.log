@@ -1,0 +1,1 @@
+{"cases": 13, "reused": 4, "new_children": 9, "summary_sha256": "ff8ce69b8ef991cf2a4df0ac8f2248f527b8d2aa5fe9d9df10baa701526a8fec", "peer_Q4": {"Cd": true, "T96d": false}, "own_gates_pass": true, "scope": "saved gates/lineage only; no full-boundary or physical-fabrication validation"}
