@@ -1,0 +1,115 @@
+{
+  "schema": "silice.point03-sparse.worker.v1",
+  "status": "checkpoint_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "c11722129bc5b1e4f90e0afff1429cce9655d5c2f69841a943a0f02e620db13b",
+  "case_id": "n256_ss64_z125",
+  "steps_start": 1400,
+  "steps_done": 1600,
+  "previous_checkpoint_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n256_ss64_z125\\chunk_20261006T224035093839Z_40aee2f6.json",
+  "previous_checkpoint_sha256": "edf4283bde2cfbf0d217cc266bce151c130ba2d5a030cb7633395e25033a353b",
+  "input_npz_sha256": "6c52097cf13dfd30d29c01e6c6d9ed94f07439d10032cf9e84d01730b20969c4",
+  "propagation_s": 5.968546200019773,
+  "factor_metadata": {
+    "backend": "scipy.sparse.linalg.splu",
+    "scipy_version": "1.15.1",
+    "numpy_version": "2.2.6",
+    "original_class": "point03_sparse_original_adi.Stepper",
+    "options": {
+      "permc_spec": "NATURAL",
+      "diag_pivot_thresh": 0.0,
+      "Equil": false
+    },
+    "factors": [
+      {
+        "factor_index": 0,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.01103639998473227,
+        "factorization_s": 0.03518180001992732,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.7694020002963953,
+        "setup_elapsed_s": 0.051954699971247464
+      },
+      {
+        "factor_index": 1,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.010667400027159601,
+        "factorization_s": 0.03760329994838685,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.777617999818176,
+        "setup_elapsed_s": 0.05223390000173822
+      }
+    ],
+    "validation_status": "requires_paired_audit_result"
+  },
+  "npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n256_ss64_z125\\chunk_20261006T224042048691Z_d996cdbf.npz",
+  "npz_sha256": "b521cf72011fd2bc5b7fb52ead95ea8b925142d314ca7c63b7487b94e06f1320",
+  "input_power": 1.0000000000000002,
+  "output_power": 0.7678346646583163,
+  "core_power_analytic_input": 0.3322816437754952,
+  "core_area_m2": 1.130973355292326e-10,
+  "comparison": {
+    "relative_l2": 4.8607362063250983e-14,
+    "relative_linf": 4.842118448264815e-14,
+    "input_power": 1.0000000000000002,
+    "sparse_total": 0.7678346646583163,
+    "reference_total": 0.7678346646583394,
+    "sparse_core": 0.3322816437754952,
+    "reference_core": 0.33228164377549263,
+    "absolute_total_difference": 2.3092638912203256e-14,
+    "absolute_core_difference": 2.55351295663786e-15
+  },
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 58179584,
+    "peak_wset_bytes": 128610304,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 6.74279089999618
+}

@@ -1,0 +1,104 @@
+{
+  "schema": "silice.point03-sparse.worker.v1",
+  "status": "checkpoint_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "c11722129bc5b1e4f90e0afff1429cce9655d5c2f69841a943a0f02e620db13b",
+  "case_id": "n256_ss64_z125",
+  "steps_start": 800,
+  "steps_done": 1000,
+  "previous_checkpoint_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n256_ss64_z125\\chunk_20261006T224015929053Z_644795c9.json",
+  "previous_checkpoint_sha256": "927bec5829f47d027b90e2b940703ed895d4371eb39719da978ff9c7d0266a7c",
+  "input_npz_sha256": "6c52097cf13dfd30d29c01e6c6d9ed94f07439d10032cf9e84d01730b20969c4",
+  "propagation_s": 5.453975400014315,
+  "factor_metadata": {
+    "backend": "scipy.sparse.linalg.splu",
+    "scipy_version": "1.15.1",
+    "numpy_version": "2.2.6",
+    "original_class": "point03_sparse_original_adi.Stepper",
+    "options": {
+      "permc_spec": "NATURAL",
+      "diag_pivot_thresh": 0.0,
+      "Equil": false
+    },
+    "factors": [
+      {
+        "factor_index": 0,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.008830699953250587,
+        "factorization_s": 0.03136730002006516,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.6983770002261735,
+        "setup_elapsed_s": 0.04386849998263642
+      },
+      {
+        "factor_index": 1,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.00857549998909235,
+        "factorization_s": 0.03150960005586967,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.7036114999791607,
+        "setup_elapsed_s": 0.04408700001658872
+      }
+    ],
+    "validation_status": "requires_paired_audit_result"
+  },
+  "npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n256_ss64_z125\\chunk_20261006T224022465688Z_d4a43973.npz",
+  "npz_sha256": "6f644df8ea25fd1a54233eada7db6939745c401f6fd3bbcb407f5df53ff9066f",
+  "input_power": 1.0000000000000002,
+  "output_power": 0.958706473462804,
+  "core_power_analytic_input": 0.470049745745707,
+  "core_area_m2": 1.130973355292326e-10,
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 58347520,
+    "peak_wset_bytes": 128806912,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 6.162050699989777
+}
