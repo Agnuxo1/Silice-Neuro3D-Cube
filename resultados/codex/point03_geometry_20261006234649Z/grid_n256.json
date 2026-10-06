@@ -1,0 +1,123 @@
+{
+  "schema": "silice.point03-geometry.worker.v1",
+  "status": "grid_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "16b64deee8b53b5ed81e3aa15ed01fa533d11032e228b3b20d8b66ce13863512",
+  "array_artifacts": [
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\grid_n256.npz",
+      "sha256": "06223d91e242847e811dfb47b07c6e824096e60d46af606f76504bdc817257be"
+    }
+  ],
+  "N": 256,
+  "dx_um": 0.5,
+  "active_cell": null,
+  "cells_completed": 65536,
+  "raw_endpoint_corrections": [
+    {
+      "iy": 130,
+      "ix": 104,
+      "raw_fraction": -4.1710370822819566e-17,
+      "fraction": 0.0,
+      "correction": 4.1710370822819566e-17
+    },
+    {
+      "iy": 152,
+      "ix": 130,
+      "raw_fraction": -2.0855185411410473e-17,
+      "fraction": 0.0,
+      "correction": 2.0855185411410473e-17
+    }
+  ],
+  "numeric_valid": true,
+  "resource_check_schedule": {
+    "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+    "grid_wall_time": "Before every row and every candidate-evaluated cell",
+    "retention_reserve_s": 4,
+    "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"
+  },
+  "cell_status_legend": {
+    "0": "unprocessed",
+    "1": "support-disjoint exact zero",
+    "2": "candidate evaluated"
+  },
+  "support_bounds_um": [
+    -12.0,
+    12.0,
+    -12.0,
+    12.0
+  ],
+  "support_scope": "Driver-derived conservative disk bounding box intersected with outer-annulus box; helper bounds independently matched. Inner hole does not justify a skip.",
+  "candidate_evaluated_cells": 2401,
+  "support_disjoint_cells": 63135,
+  "raw_min": -4.1710370822819566e-17,
+  "raw_max": 1.0,
+  "fraction_min": 0.0,
+  "fraction_max": 1.0,
+  "min_cancel_ratio": 0.013827966145370884,
+  "max_boundary_closure_um": 2.42861286636753e-16,
+  "endpoint_correction_count": 2,
+  "max_absolute_endpoint_correction": 4.1710370822819566e-17,
+  "raw_grid_area_um2": 323.0818752214959,
+  "grid_area_um2": 323.0818752214959,
+  "nominal_raw_fraction_grid_area_um2": 323.0818752214959,
+  "nominal_fraction_grid_area_um2": 323.0818752214959,
+  "diagnostics": {
+    "schema": "silice.point03-union.predicates.v1",
+    "input_disk_count": 96,
+    "unique_circle_count": 98,
+    "coincident_roles": [],
+    "float_predicates": 1978,
+    "decimal_predicates": 90,
+    "exact_zero_predicates": 7,
+    "unrepresentable_events": 0,
+    "classification_boundary_hits": 0,
+    "line_cache_hits": 21826,
+    "predicate_categories": {
+      "circle_intersection": 392,
+      "circle_containment": 88,
+      "circle_line": 1498
+    },
+    "angular_membership_queries": 16518,
+    "halfplane_cache_hits": 18116,
+    "angular_merging": "Exact Decimal equality only; no angular epsilon.",
+    "angular_representation": {
+      "decimal_digits": 128,
+      "working_digits": 144,
+      "atan": "Half-angle reduction to abs(z)<=1/8, then alternating series.",
+      "pi": "Cached Machin formula; constants and events share precision.",
+      "integration": "Convert only the preserved Decimal span and trig angles to float."
+    },
+    "cancel_ratio_definition": "abs(raw area)/sum(abs(contributions)); 1 for empty sum.",
+    "validation_status": "requires_independent_geometry_audit",
+    "cached_exposed_arc_count": 178
+  },
+  "cancellation_scope": "abs(raw area)/sum(abs(boundary contributions)); smaller means stronger cancellation",
+  "profile_diagnostics": [
+    {
+      "N": 256,
+      "profile_samples": 64,
+      "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n256_ss64.npz",
+      "input_npz_sha256": "6c52097cf13dfd30d29c01e6c6d9ed94f07439d10032cf9e84d01730b20969c4",
+      "l1_fraction_sum": 0.09982079444971792,
+      "l1_area_um2": 0.02495519861242948,
+      "linf_fraction": 0.0017490021199200179,
+      "signed_area_difference_um2": -0.0008884503790332647,
+      "original_profile_area_um2": 323.082763671875,
+      "candidate_profile_area_um2": 323.0818752214959,
+      "candidate_raw_profile_area_um2": 323.0818752214959,
+      "raw_l1_area_um2": 0.024955198612429494,
+      "raw_linf_fraction": 0.0017490021199200179,
+      "changed_cells": 297,
+      "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+    }
+  ],
+  "partial_arrays_retained": true,
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 39264256,
+    "peak_wset_bytes": 46657536,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 4.970379900012631
+}

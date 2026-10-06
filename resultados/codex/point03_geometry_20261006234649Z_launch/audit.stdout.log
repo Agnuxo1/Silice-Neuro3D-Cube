@@ -1,0 +1,7 @@
+PASS | driver=completed | children=14/14 | elapsed=146.18630770000163 s | max_child=22.829702899965923 s
+Evidence counts: {"grids": 4, "reference_rows": 192, "resolved_references": 192, "synthetic_rows": 22, "invariance_suites": 54, "global_comparisons": 18}
+Driver error: None
+integrity: 0 findings
+completion: 0 findings
+science: 0 findings
+Fresh summary: D:\PROJECTS\Silice-Neuro3D-Cube-work-20261006\resultados\codex\point03_geometry_20261006234649Z_launch\independent_audit.json | SHA256 94fb4234b68c0b49f9cc5c6d9c8fd1d8cc31d293818514b9b13ede66eb85a922
