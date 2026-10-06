@@ -1,30 +1,3 @@
-# Current checkpoint — 2026-10-06
-
-Current scientific status: [PROJECT-STATUS](../Docs/PROJECT-STATUS.md).
-Sequential work is on branch `codex/scientific-closure-20261006`.
-
-Point 01 is closed on Windows 10 x64 / CPython 3.13.7: fresh offline .venv,
-six pinned dependencies, installed-package isolation, 51 CPU tests and the
-representative CMT/BPM/history pipeline. Expected scientific failures remain.
-339 tracked inputs were unchanged; 31 original/staged output hashes were
-checked after protecting nested evidence from line-ending normalization.
-See [Point 01](../Docs/POINT-01-RESULTS.md).
-
-Point 02 is closed by the reconciled inventory and internal document reviews.
-GLASS-009c is executed/partial; GLASS-006b has 12 pilot cases; GPU-001/002 have
-16 retained runs, including four complex64 FAILs; MEGA-001 is CPU analysis.
-The original 009d Q4 track failure, earlier modal failures, boundary limits
-and missing fabrication evidence remain open.
-
-Next: Point 03 only, prospective track-convergence investigation. No new GPU
-window is implied. Main-worktree shared changes remain untouched; no push,
-remote publication or merge is part of this closure.
-
-## Retained earlier main-worktree checkpoint
-
-The following text was read from the original main worktree on 2026-10-06.
-It is historical context; the inventory above governs current status.
-
 # Checkpoint factual Silice-Neuro3D-Cube
 
 Hito2026-10-05 16:40UTC: investigación AMDtet-cages vs NVIDIA MegaGeometry,

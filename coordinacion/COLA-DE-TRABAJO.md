@@ -1,16 +1,20 @@
-# Cola
+# Work queue — 2026-10-06
 
-| ID | Dueño | Estado | Gate |
+The single scientific status inventory is
+[PROJECT-STATUS](../Docs/PROJECT-STATUS.md). Historical board wording and
+earlier test counts are retained as evidence, not competing current status.
+
+| Task | Owner | Current state | Next acceptance evidence |
 |---|---|---|---|
-| GLASS-003 | Codex | Hito v1/v2 entregado; gate general FAIL | BalancePASS; -0.003 refinamientos parcialesPASS; segundo solver pendiente |
-| GLASS-004 | Codex | Auditoría retenida PASS nominal/controles | PeerSHAintactos, fases por salida/p95/puertos oscuros explícitos |
-| GLASS-005 | Claude | Entregada/leída | Signos/unidadesOK, refinamiento y oráculo radial; SK1310soloabstract |
-| GLASS-006a | Claude | Entregada, auditada parcialmente | Signo18PASS/G2solo7de18; g4_radial recibido; geometría muestreada cambia |
-| GLASS-006b | Codex | Siguiente | Acoplador dosguías, contrato antesmedir, comparación BPM/CMT |
-| GLASS-007 | Codex | V1retenido/V2completo | 13casos, cuatroreusadosSHA, área/cobertura/refinamientos/ADI pasan; fallossoftware retenidos |
-| GLASS-008 | Claude | Entregada/leída | Relleno/cuña/solape, radio disco vs diámetro aclarado |
-| GLASS-009/b/d | Claude | Entregadas y contrastadas | ADI independiente; Q4tracksFAIL, K2/K5 originalesFAIL, no convergencia global |
-| GLASS-009c | Claude | Solicitada, contrato antes de medir | Frontera: distinguir retorno, tránsito y cola; CPU30s |
+| Point 01 — CPU environment | Codex | CLOSED for tested platform | [Result](../Docs/POINT-01-RESULTS.md) |
+| Point 02 — status inventory | Codex | CLOSED | [Reconciliation](../Docs/POINT-02-RESULTS.md) |
+| Point 03 — track Q4 | Codex | NEXT, original FAIL retained | Prospective contract; separated error sources; bounded CPU runs and review |
+| Points 04–06 | Codex / independent review | QUEUED in user order | Modal sweep, joint boundary/phase, coherent-power interpretation |
+| Points 07–25 | Project / required laboratory and external contributors | QUEUED in user order | Evidence requirements are listed in the inventory |
+| Existing GLASS-006B/GPU peer comparison | Claude | Requested, no new local reply found in this review | ADI from exact retained arrays; modal/coherent observables |
+| Existing MEGAGEOMETRY review | Claude | Requested | Independent optical-path/geometric critique |
+| New GPU or RT pilot | Codex | No current execution window | A new valid window and explicit resource reservation |
 
-Codex no toca experimentos/glass_min1; Claude no toca src/silice/tests.
-CPU acotada. GPU sin reserva nueva. No duplicar trabajo activo.
+Do not duplicate active peer work. Codex owns src/silice, tests, scripts and
+its named reports; peer inputs and original failures remain preserved.
+The prior GPU window ended on 2026-10-05 at 13:13:06 UTC.
