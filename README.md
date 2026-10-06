@@ -4,10 +4,10 @@
 
 **Investigación abierta sobre una red neuronal óptica 3D escrita con láser de femtosegundo en un cubo de sílice.**
 
-![estado](https://img.shields.io/badge/estado-investigaci%C3%B3n_CPU-0ea5e9)
+![estado](https://img.shields.io/badge/estado-investigaci%C3%B3n_num%C3%A9rica-0ea5e9)
 ![dispositivo](https://img.shields.io/badge/dispositivo_fabricado-no-f87171)
-![gpu](https://img.shields.io/badge/GPU-no_usada-34d399)
-![tests](https://img.shields.io/badge/tests_CPU-29_pasan-34d399)
+![gpu](https://img.shields.io/badge/GPU-ensayos_CUDA-34d399)
+![tests](https://img.shields.io/badge/tests_CPU-51_pasan-34d399)
 ![evidencia](https://img.shields.io/badge/fallos-retenidos-fbbf24)
 
 [Idea](#la-idea) · [Cómo funciona](#cómo-funciona-en-8-gifs) · [Resultados](#resultados-hasta-hoy) · [Reproducir](#reproducir) · [Método](#método-y-colaboración) · [Hoja de ruta](#hoja-de-ruta)
@@ -22,7 +22,7 @@ Escribir, dentro de un bloque de sílice fundida, **guías de onda, acopladores 
 
 Este repositorio **no** presenta un procesador ya construido: conecta geometría y propiedades del material con cálculos verificables, primero en simulación y después, si la evidencia lo permite, en un diseño fabricable.
 
-> **Estado honesto.** Investigación inicial en CPU. No hay dispositivo fabricado, red completa validada ni ventaja de velocidad o eficiencia demostrada. Project Silica de Microsoft ([página oficial](https://www.microsoft.com/en-us/research/project/project-silica/)) demuestra **almacenamiento** volumétrico, no procesamiento óptico: no es una réplica ni una evidencia a favor de esta idea.
+> **Estado actualizado (6 de octubre de 2026).** Investigación numérica en CPU y ensayos CUDA acotados. No hay dispositivo fabricado, red completa validada ni ventaja de velocidad o eficiencia demostrada. Project Silica de Microsoft ([página oficial](https://www.microsoft.com/en-us/research/project/project-silica/)) demuestra **almacenamiento** volumétrico, no procesamiento óptico: no es una réplica ni una evidencia a favor de esta idea.
 
 ## Cómo funciona en 8 GIFs
 
@@ -78,18 +78,25 @@ Cada ensayo se congela **antes** de medir. Los fallos no se ocultan ni se relaja
 
 ## Resultados hasta hoy
 
-| Hito | Resultado | Estado |
+El [inventario actual](Docs/PROJECT-STATUS.md) distingue ejecución, criterios aprobados, fallos y límites. Los informes y GIF anteriores conservan su fecha y su versión; no se reinterpretan como mediciones de un dispositivo.
+
+| Hito | Resultado documentado | Estado y límite |
 |---|---|---|
-| GLASS-001/002 | Viabilidad, DFT4 en 2 etapas, Monte Carlo de tolerancias | media ≠ p95: umbral corregido en GLASS-005 |
-| GLASS-003 V1/V2 | Confinamiento por BPM; V1 y gate V2 fallan convergencia | retenidos; −0,005 falla por dz (resuelto en 005) |
-| GLASS-004 | Auditoría independiente del modelo CMT | coincide 2e-16; p95 15 %, 37 % de piezas > 10 % |
-| GLASS-005 | Solver radial FD+ECS, criterio V ≥ ~2,4 | dz ≤ 2,5 µm; SK1310 (fuente) sigue inaccesible |
-| GLASS-006a | Fuga frente a grosor/radio/δn | G3 túnel 4/4, G4 OK; **convergencia por modo 7/18** |
-| GLASS-007 | Camisa de trazos discretos | 96 trazos ≈ continuo; hueco de 30° pierde potencia |
-| GLASS-007 V2 | Réplica con área parcial y cobertura: continuo36.18%, 96trazos33.11% | 13casos; refinamientos y contrasteADI pasan, frontera pendiente |
-| GLASS-008/009 | Revisión geométrica; solver ADI 2D | coincide ≤ 0,0024; **K1, K2, K4-dx, K5 fallan (retenidos)** |
-| GLASS-009c/010 | Frontera absorbente y descomposición modal | ventana de confianza 1,4–2 mm; la caída a 2 mm es pérdida modal (18 dB/cm en 6 µm / δn −0,003); todos los gates de convergencia pasan con geometría exacta |
-| GLASS-009b/d | Observable con área parcial + índice por cobertura | mejora de dx; continuo0.3631 provisional; **Q4 de96trazos falla**, timeouts retenidos |
+| Entorno CPU | Instalación aislada, seis versiones fijadas, 51 pruebas ejecutadas | PASS en Windows 10 / Python 3.13.7; [informe](Docs/POINT-01-RESULTS.md) |
+| GLASS-001/002 | Viabilidad e implementación ideal de intensidad DFT4 | Modelo CMT; fases de salida y diferencia media/p95 explícitas |
+| GLASS-003 V1/V2 | Balance y propagación escalar; V2 tiene 15 casos | Fallos originales conservados; −0,005 falla dominio y dz |
+| GLASS-004 | CMT frente a acopladores analíticos | Nominal/controles PASS; error de campo ≈2e-16; ruido hipotético |
+| GLASS-005 | Referencia radial m=0 y diagnóstico de paso longitudinal | Casos seleccionados; receta SK1310 y mediciones pendientes |
+| GLASS-006a | 20 geometrías, 18 modos seleccionados | G2: 7 PASS / 11 FAIL; dos casos sin modo seleccionado |
+| GLASS-006b | Piloto de acoplador ejecutado: 12 casos CPU | Linealidad/simetría y controles parciales PASS; dx y reducción gaussiana FAIL |
+| GLASS-007 V1/V2 | Trazos discretos; V2 con cobertura y detector parcial | V2: 13 casos y criterios propios PASS; frontera/global pendientes |
+| GLASS-008/009 | Geometría y segundo propagador ADI | Acuerdos parciales; K1/K2/K4-dx/K5 históricos conservados |
+| GLASS-009b/d | Corrección del observable y perfil por cobertura | P3 de 009b y Q4 de 96 trazos de 009d siguen FAIL |
+| GLASS-009c | Ejecutado: campo complejo en vacío, incluida fase | Validación parcial por ángulo, dominio y distancia; reflexión aislada pendiente |
+| GLASS-010 | Seis casos y 24 comparaciones M4 aprobadas | No resuelve todo el barrido 006a; interferencia modo/resto requiere corrección |
+| GLASS-GPU-001 | Ocho salidas CUDA, comparadas con CPU | Cuatro complex128 PASS y cuatro complex64 FAIL |
+| GLASS-GPU-002 | Ocho casos adicionales complex128 | Criterios locales PASS; sin convergencia global ni contraste ADI independiente |
+| MEGA-001 | 24 impactos afines y cuatro criterios analíticos CPU | PASS del diagnóstico; metadatos Vulkan no equivalen a ejecución RT |
 
 Detalle en [`Docs/`](Docs/), [`coordinacion/respuestas/`](coordinacion/respuestas/) y [`resultados/`](resultados/).
 
@@ -114,7 +121,7 @@ Silice-Neuro3D-Cube/
 ├── assets/                 GIF del README (generados por tools/)
 ├── tools/                  scripts que generan los GIF a partir de los datos
 ├── src/silice/             BPM escalar paraxial (bpm.py) y trazos discretos (tracks.py)   [Codex]
-├── scripts/  tests/        ensayos, auditorías y 29 pruebas CPU                              [Codex]
+├── scripts/  tests/        ensayos, auditorías y 51 pruebas CPU                              [Codex]
 ├── experimentos/
 │   ├── glass_min1/         DFT4 por modos acoplados y Monte Carlo                            [Claude]
 │   ├── glass005_claude/    solver radial FD + escalado complejo exterior                     [Claude]
@@ -155,9 +162,9 @@ Reglas: contrato antes de medir · umbrales no se relajan después · fallos ret
 - [x] BPM escalar paraxial + segundo solver radial + solver 2D independiente
 - [x] Camisa continua y de trazos discretos (modelo ideal)
 - [x] Observable con área parcial y perfil por cobertura (009b/d, réplica007V2)
-- [ ] Validación del absorbente/frontera radiativa (009c), sin relajar gates fallidos
+- [ ] Completar frontera y fase en guías: 009c ejecutado con validación parcial en vacío
 - [ ] Perfiles/trazos medidos de SK1310 (necesita el PDF completo) y modos reales
-- [ ] Acoplador de dos guías: BPM frente a modos acoplados (GLASS-006b)
+- [ ] Cerrar el acoplador: piloto GLASS-006b ejecutado; base modal y contraste independiente pendientes
 - [ ] Curvas, registro entre caras, tolerancias correlacionadas y calibración
 - [ ] Red 3D pequeña con tarea congelada, separando detección y no linealidad
 - [ ] Fabricación: fuera del alcance actual

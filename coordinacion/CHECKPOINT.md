@@ -1,6 +1,85 @@
+# Current checkpoint — 2026-10-06
+
+Current scientific status: [PROJECT-STATUS](../Docs/PROJECT-STATUS.md).
+Sequential work is on branch `codex/scientific-closure-20261006`.
+
+Point 01 is closed on Windows 10 x64 / CPython 3.13.7: fresh offline .venv,
+six pinned dependencies, installed-package isolation, 51 CPU tests and the
+representative CMT/BPM/history pipeline. Expected scientific failures remain.
+339 tracked inputs were unchanged; 31 original/staged output hashes were
+checked after protecting nested evidence from line-ending normalization.
+See [Point 01](../Docs/POINT-01-RESULTS.md).
+
+Point 02 is closed by the reconciled inventory and internal document reviews.
+GLASS-009c is executed/partial; GLASS-006b has 12 pilot cases; GPU-001/002 have
+16 retained runs, including four complex64 FAILs; MEGA-001 is CPU analysis.
+The original 009d Q4 track failure, earlier modal failures, boundary limits
+and missing fabrication evidence remain open.
+
+Next: Point 03 only, prospective track-convergence investigation. No new GPU
+window is implied. Main-worktree shared changes remain untouched; no push,
+remote publication or merge is part of this closure.
+
+## Retained earlier main-worktree checkpoint
+
+The following text was read from the original main worktree on 2026-10-06.
+It is historical context; the inventory above governs current status.
+
 # Checkpoint factual Silice-Neuro3D-Cube
 
-2026-09-30 13:24 UTC / 15:24 Europe/Madrid. Proyecto independiente en
+Hito2026-10-05 16:40UTC: investigación AMDtet-cages vs NVIDIA MegaGeometry,
+Docs/MEGAGEOMETRY-OPTICAL-RESEARCH-2026-10-05.md. RTX3090driver581.29
+enumera VK_NV_cluster_acceleration_structure rev2/PTLASrev1; SOLOmetadatos,
+NO pipeline/featuresactivadas/rendimientoRT. MEGA001contratof4e9dcd antes
+ejecuciónCPU0.374s:24impactosafines/4gatesPASS, seisnuevos/51testsCPU
+PASS1.195s. Primera invocaciónsuite sinPYTHONPATH falló3imports, retenida
+enDocsinmodificarsolver. JSONSHA7dd0fa2ad5f84065e5a39bf50da232bcf0d5c66c1d6e873fa2e5a075aa75ca3f.
+Escala1.001 revelaerrorfase.023414 alreusarcaminoenreferencia;200nm->
+30.525%puertooscuroideal. Sonadversariosanalíticos,noredRTniMaxwell.
+500MtriángulosNO500Mneuronas;nohaybaseline80Mcertificada. Candidato
+instanciasexactas/BVHresidente antesCLAS/cages;nogeometríaLODporcámara.
+EncargoClaudeMEGAGEOMETRY-CLAUDE:dosjaulas/OPL+validezgeométrica vsADI.
+PróximoCodex contrato002/003 ypilotoRTmínimo SOLOconventananueva.
+Ventana13:13:06UTCvencida;sinGPU/Blender/SDKs/push, JEVblockrespetado.
+PreservadosGLASS001/002/fallos/peer;boardslocalesSINstage.
+
+Últimohito2026-10-05 01:31UTC:16casosGPU realesretendidos. GPU0028casos
+PASSlocal (NOglobal): dx512->640 .00066214;dz512/640 .0015137/.0015370;
+coverage512 .00045987;linealidad5.58e-15/simetría3.01e-14. Paridadcampo
+CPU512/6403.19e-14/4.32e-14. GPU0011284PASS/64FAIL4sinrenormalizar.
+Guard002rc0/child85.415s, RAMmín6.032GiB/VRAMtotal2.207GiB/37C;
+gpuqjobliberado03:28:57Madrid, trabajadorpropioacabado. Auditararrays21
+comprobacionesPASSconsistencia/45testsCPU. Contratoscommits a8b4b5b/64cd7ea
+ANTESGPU; JSON001SHA2a9b6e11.../002SHA7996a996.../fuentesintactas.
+NoGEMM/RT/ópticafísica/redcompleta; dominiomodalgeneralpendiente.
+PedidoClaudeADI512L/coherentedeNPZexacto+revisiónkernel ybase modal;
+sinrespuesta nueva local aún. JEVsecurityblocked/no reintentar.
+Ventana disponible hasta13:13:06UTC, sin carga ni reserva sostenida.
+
+Cierreunidad: auditorV2recomputa los8gates002 ademásdemétricas/rawSHA:
+29checksconsistentes, auditV1retenido.16NPZ nuevos94.404MiB;12NPZhistóricos
+SHAintactos, GPU001/002PIDs35100/38744gone, holdergpuq ausente.
+Entrega propia73fdb01 local:resultados/docs/auditor/tests/encargoClaude;
+tableroscompartidosSINstage y sinpush, no cambios de licencia/remoto.
+
+Actualización2026-10-05: usuario autoriza12hGPU; inicio conservador
+01:13:06UTC/corte13:13:06UTC. GPU-001 preparado con contrato y38testsCPU
+PASS; pendienteejecución. Fuentes/fixturesantiguos preservados, no
+novedadesClaude locales desde30/09. PyTorch2.6.0+cu124 instalado;
+GPU3090/24GiB, RAMinicial7.96GiB/VRAM1.74GiB/29C; revisarporjob.
+gpuqexclusivo yguard120s failclosed; noGPU sinreserva/noinstalaciones.
+RevisiónClaude pedida GPU-001+ADI006b; JEVblock vigente/fallbacklocal.
+
+Hito01:23UTC: GPU001ejecutado jobgpuq liberado/workerfinalizado.
+CUDA1284casosPASScampo<=7.81e-14,linealidad5.45e-15. CUDA64FAIL4/4:
+balance1.10e-4..2.22e-4, campofino1.14e-4. Rc2 científicoretenido,
+NOcrash ni guardtimeout. RAMmín6.92GiB/VRAMmáx2.18GiB/36C,
+allocatorpeak11.16MiB. NearLcaliente3muestrasGPU~.10-.11s vsCPU2.43-2.47s:
+descriptivo/casoúnico/residente, NOspeedupgeneral/ópticafísica/RT.
+GPU002nuevaextensión640²128preparada con41tests/contratoantesmedir,
+gatesdx/dz/cobertura yparidadCPU512/640; GPU002todavíaNOejecutada.
+
+2026-09-30 19:12 UTC / 21:12 Europe/Madrid. Proyecto independiente en
 `D:\PROJECTS\Silice-Neuro3D-Cube`; no fork externo. Claude añadió remoto y
 presentación en dc62015/4c2be4e; no publicar esta nueva entrega incidentalmente.
 
@@ -57,3 +136,29 @@ atributos exactos/reindexación, no cambiarSHAdeinformes; diskpeerintacto.
 Esta ejecución terminó todos sus hijosCPU; sinGPU/Blender/instalaciones.
 JEVsecurityblocked heredado, no reintentar/eludir, fallbacklocal sin aval.
 No modificar antiguo Neuro3D ni su automatización; preservar trabajo ajeno.
+
+006bCodex piloto real: contratoa86141b antes9casos/refinado59f9049 antes3.
+12hijosCPUrc0/max8.04s, sinGPU. NearD14/farD32/a6/t6/dn-.005, camisaunion
+excluyeambosnúcleos (regiónacoplamientoexplícita). PuertosGaussianosGram,
+NOeigenmodos; campos/dn/inputs/detectores/basisNPZretenidos porcaso.
+NearinputL a1mm:coreL.654773/coreR.173623; coherente(L+iR)/sqrt2 cambia
+a.085662/.742734. FarR.0000973/vacíoR.018263. Linealidad5.62e-15,
+simetría1.96e-14/dz.000911/domain.0000633PASS;dxcoarse.006545FAIL.
+Finerdx.4:12datosconsistentes pero3paresFAIL.006372/.006977>.005.
+ReducciónGalerkinGaussianFAIL.16283>.05/finer.16428; sinfitni normalizar.
+NOacopladorcoherentecertificado/CMTmodal/redcompleta.34testsPASS1.226s;
+auditorarrays9+3PASS evidencia/flagsFAILretenidos.9casos41.2617s+3casos
+23.1644s;RSSafter<=45.27MiBNOpeak. ReportV1SHA0b45ae75.../V2SHA23d110a4...
+Todospropioshijosfinalizados. No repetircasesnuevos sincontrato/delta.
+Claude009c/010leídos:009cADIvacíoNOFFT/reflexiónaisladapendiente;010aritmética
+loss/M4flags reproduce, NOeigsolverrepetido. Términocruzadomodo/resto
+-.01724865(10,12,-.003)/+.04411195(15,10,-.003) faltaeninterpretaciónde
+potenciasexclusivas; pedidoClaude. Cambiostencil/nodos impideatribución
+causalradiosolo sincontrolpareado. Nuevoencargo006B-PILOT-CLAUDE contraste
+ADInearL/coherente conNPZexactos y amplitudescomplejas; no duplicarsubúsqueda.
+SiguienteCodex:aislarfase/perfil y basecuasimodal trascontraste; no aprobar
+solo porpotenciacasiestable. BoardslocalesSINstage; propiosseversionan,
+no push remoto/merge niJEVbloqueado.
+Hito propio0837e21:30archivos evidencia/auditor/encargo versionados,
+sharedboards preservadosSINstage. Verificación byteaHEAD yfinprocesos
+propios antescierre; ningún push propio ni cambio de visibilidad/licencia.

@@ -12,3 +12,4 @@ experimentos/glass006a_claude/resultados.json -text whitespace=cr-at-eol
 resultados/codex/env_*/** -text whitespace=cr-at-eol
 resultados/codex/point01_preflight_*/** -text whitespace=cr-at-eol
 requirements/cpu-win-py313.wheels.json -text whitespace=cr-at-eol
+resultados/codex/point02_boards_*/** -text whitespace=cr-at-eol
