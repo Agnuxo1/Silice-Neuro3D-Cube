@@ -8,3 +8,7 @@ resultados/codex/*.json -text whitespace=cr-at-eol
 experimentos/glass009d_claude/resultados009d.json -text whitespace=cr-at-eol
 experimentos/glass009d_claude/run009d.py -text whitespace=cr-at-eol
 experimentos/glass006a_claude/resultados.json -text whitespace=cr-at-eol
+# Point 01 nested evidence and wheel metadata retain their measured bytes.
+resultados/codex/env_*/** -text whitespace=cr-at-eol
+resultados/codex/point01_preflight_*/** -text whitespace=cr-at-eol
+requirements/cpu-win-py313.wheels.json -text whitespace=cr-at-eol
