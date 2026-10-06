@@ -101,8 +101,13 @@ abs(P_i,dz0.625-P_i,primary). Require S_400 + S_500 <= 0.10*abs(D2),
 and each of the four individual auxiliary components <= 2.5e-4.
 This is an error-separation screen, not a certified uncertainty in p.
 At r=1.25 even modest perturbations can strongly affect inferred order.
-If plausible auxiliary sensitivity can alter ordering or the prediction
-claim, the asymptotic interpretation remains unresolved.
+As a prospective robustness screen, keep P0 and P1 fixed and evaluate all
+four combinations (P2 +/- S_400, P3 +/- S_500). Every corner must still
+pass the signed-difference, positive-order, order-stability and prediction
+gates B4-B5. This tests the estimated fine-grid sensitivities only; it is
+not a rigorous bound and does not establish auxiliary accuracy on the
+coarser two grids. If any corner changes that conclusion, the asymptotic
+interpretation remains unresolved.
 
 B7. Only if B1-B6 pass, calculate an accepted conditional spatial indicator
 u_space = 1.25*abs(D2)/(r**p1-1), and u_total = u_space + S_500.
