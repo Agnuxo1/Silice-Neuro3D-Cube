@@ -7,8 +7,87 @@ separate, prospectively frozen audit and its independent reference.
 from __future__ import annotations
 
 from decimal import Decimal, localcontext
+from functools import lru_cache, wraps
 import math
 import sys
+
+
+_ANGLE_PRECISION = 128
+_ANGLE_WORK_PRECISION = _ANGLE_PRECISION+16
+
+
+def _topology_context(function):
+    @wraps(function)
+    def contextual(*args, **kwargs):
+        with localcontext() as context:
+            context.prec = _ANGLE_PRECISION
+            return function(*args, **kwargs)
+    return contextual
+
+
+def _atan_unit(value):
+    """atan for 0<=value<=1, with half-angle reduction and a local series."""
+    multiplier = 1
+    while value > Decimal(1)/8:
+        value /= 1+(1+value*value).sqrt()
+        multiplier *= 2
+    square = value*value
+    power, total, denominator = value, value, 1
+    while power:
+        power *= -square
+        denominator += 2
+        updated = total+power/denominator
+        if updated == total:
+            break
+        total = updated
+    return multiplier*total
+
+
+@lru_cache(maxsize=1)
+def _angle_constants():
+    # Lazy: importing the module evaluates no geometry or angular series.
+    with localcontext() as context:
+        context.prec = _ANGLE_WORK_PRECISION
+        pi = 16*_atan_unit(Decimal(1)/5)-4*_atan_unit(Decimal(1)/239)
+        context.prec = _ANGLE_PRECISION
+        pi = +pi
+        return pi, 2*pi
+
+
+def _decimal_angle(x, y):
+    """atan2 without rounding an event vector or its angle to binary64."""
+    x = x if isinstance(x,Decimal) else Decimal.from_float(float(x))
+    y = y if isinstance(y,Decimal) else Decimal.from_float(float(y))
+    if not x and not y:
+        raise ArithmeticError("An angular event has a zero direction vector.")
+    pi,_ = _angle_constants()
+    with localcontext() as context:
+        context.prec = _ANGLE_WORK_PRECISION
+        ax,ay = abs(x),abs(y)
+        if not ay:
+            angle = pi if x < 0 else Decimal(0)
+        elif not ax:
+            angle = pi/2
+        elif ay <= ax:
+            angle = _atan_unit(ay/ax)
+        else:
+            angle = pi/2-_atan_unit(ax/ay)
+        if x < 0 and ay:
+            angle = pi-angle
+        if y < 0:
+            angle = -angle
+        context.prec = _ANGLE_PRECISION
+        return +angle
+
+
+def _json_diagnostic(value):
+    if isinstance(value,Decimal):
+        return str(value)
+    if isinstance(value,dict):
+        return {key:_json_diagnostic(item) for key,item in value.items()}
+    if isinstance(value,(list,tuple)):
+        return [_json_diagnostic(item) for item in value]
+    return value
 
 
 class GeometryResolutionError(ArithmeticError):
@@ -115,6 +194,7 @@ class UnionRegion:
         self._memberships = None
         self._exposed_arcs = None
         self._line_cache = {}
+        self._halfplane_cache = {}
         self.diagnostics = {"schema":"silice.point03-union.predicates.v1",
                             "input_disk_count":len(spec["disks"]),"unique_circle_count":len(keys),
                             "coincident_roles":[{"circle":[c.cx,c.cy,c.r],"roles":sorted(c.roles)}
@@ -123,7 +203,13 @@ class UnionRegion:
                             "unrepresentable_events":0,"classification_boundary_hits":0,
                             "line_cache_hits":0,"predicate_categories":{},
                             "angular_membership_queries":0,
-                            "angular_merging":"Exact float equality only; no angular epsilon.",
+                            "halfplane_cache_hits":0,
+                            "angular_merging":"Exact Decimal equality only; no angular epsilon.",
+                            "angular_representation":{"decimal_digits":_ANGLE_PRECISION,
+                                "working_digits":_ANGLE_WORK_PRECISION,
+                                "atan":"Half-angle reduction to abs(z)<=1/8, then alternating series.",
+                                "pi":"Cached Machin formula; constants and events share precision.",
+                                "integration":"Convert only the preserved Decimal span and trig angles to float."},
                             "cancel_ratio_definition":"abs(raw area)/sum(abs(contributions)); 1 for empty sum.",
                             "validation_status":"requires_independent_geometry_audit"}
 
@@ -144,7 +230,7 @@ class UnionRegion:
 
     def _unresolved(self, label, detail):
         self.diagnostics["unrepresentable_events"] += 1
-        self.diagnostics["last_unrepresentable_event"] = {"label":label,**detail}
+        self.diagnostics["last_unrepresentable_event"] = _json_diagnostic({"label":label,**detail})
         raise GeometryResolutionError("Distinct geometry event or interval is not representable: "+label,
                                       dict(self.diagnostics["last_unrepresentable_event"]))
 
@@ -193,35 +279,31 @@ class UnionRegion:
         if sign < 0:
             return []
         converted,precision = _decimal_values(values)
-        # Compute near tangencies in Decimal; no rounded negative square root
-        # or angular tolerance is allowed to remove a narrow lens.
-        if abs(discriminant) <= 64*sys.float_info.epsilon*(abs(4*d2*first.r*first.r)+abs(k*k)):
-            with localcontext() as context:
-                context.prec = precision
-                x1,y1,r1,x2,y2,r2 = converted
-                ddx,ddy = x2-x1,y2-y1
-                dd2 = ddx*ddx+ddy*ddy
-                kk = dd2+r1*r1-r2*r2
-                q = polynomial(*converted)
-                hh = q.sqrt()/(2*dd2) if sign else Decimal(0)
-                foot = kk/(2*dd2)
-                vectors = [(float(foot*ddx-s*hh*ddy),float(foot*ddy+s*hh*ddx),
-                            float((foot-1)*ddx-s*hh*ddy),float((foot-1)*ddy+s*hh*ddx))
-                           for s in ((-1,1) if sign else (1,))]
-        else:
-            foot = k/(2*d2)
-            height = math.sqrt(discriminant)/(2*d2)
-            vectors = [(foot*dx-s*height*dy,foot*dy+s*height*dx,
-                        (foot-1)*dx-s*height*dy,(foot-1)*dy+s*height*dx)
+        # Preserve vectors until angular construction, including separations
+        # smaller than one binary64 ULP around a nonzero global angle.
+        with localcontext() as context:
+            context.prec = max(precision,_ANGLE_WORK_PRECISION)
+            x1,y1,r1,x2,y2,r2 = converted
+            ddx,ddy = x2-x1,y2-y1
+            dd2 = ddx*ddx+ddy*ddy
+            kk = dd2+r1*r1-r2*r2
+            q = polynomial(*converted)
+            if (q > 0)-(q < 0) != sign:
+                self._unresolved("circle_pair_predicate_mismatch",{"circles":[[first.cx,first.cy,first.r],[second.cx,second.cy,second.r]]})
+            hh = q.sqrt()/(2*dd2) if sign else Decimal(0)
+            foot = kk/(2*dd2)
+            vectors = [(foot*ddx-s*hh*ddy,foot*ddy+s*hh*ddx,
+                        (foot-1)*ddx-s*hh*ddy,(foot-1)*ddy+s*hh*ddx)
                        for s in ((-1,1) if sign else (1,))]
-        result = [(math.atan2(vy,vx),math.atan2(wy,wx)) for vx,vy,wx,wy in vectors]
+            result = [(_decimal_angle(vx,vy),_decimal_angle(wx,wy)) for vx,vy,wx,wy in vectors]
         if sign and (result[0][0] == result[1][0] or result[0][1] == result[1][1]):
             self._unresolved("circle_pair_angles",{"circles":[[first.cx,first.cy,first.r],[second.cx,second.cy,second.r]]})
         return result
 
     def _base_events(self):
         if self._events is None:
-            events = [[-math.pi,math.pi] for _ in self._circles]
+            pi,_ = _angle_constants()
+            events = [[-pi,pi] for _ in self._circles]
             memberships = [[False for _ in self._circles] for _ in self._circles]
             for i,first in enumerate(self._circles):
                 for j in range(i+1,len(self._circles)):
@@ -256,9 +338,10 @@ class UnionRegion:
             # Isolated tangency points have zero measure and are event cuts.
             return sign <= 0
         low,high = sorted(crossings)
-        if low == high or high-low == math.tau:
+        if low == high or high-low == _angle_constants()[1]:
             self._unresolved("angular_membership_endpoints",{"angles":[low,high]})
-        center_direction = math.atan2(dy,dx)
+        center_direction = _decimal_angle(Decimal.from_float(other.cx)-Decimal.from_float(circle.cx),
+                                          Decimal.from_float(other.cy)-Decimal.from_float(circle.cy))
         if center_direction == low or center_direction == high:
             self._unresolved("angular_membership_center",{"angles":[low,high],"center_direction":center_direction})
         middle_inside = low < center_direction < high
@@ -298,22 +381,36 @@ class UnionRegion:
         return self._region_from_flags(flags)
 
     def _halfplane_relation(self, circle, coordinate, axis, greater):
+        key = (circle.cx,circle.cy,circle.r,coordinate,axis,greater)
+        if key in self._halfplane_cache:
+            self.diagnostics["halfplane_cache_hits"] += 1
+            return self._halfplane_cache[key]
         crossing = self._line_height(circle,coordinate,axis)
         center = circle.cx if axis == "x" else circle.cy
         if crossing is None or crossing[1] == 0:
             # Tangency leaves either all or none of the open circumference in
             # the halfplane. The single point of contact has zero area.
-            return (coordinate < center) if greater else (coordinate > center)
-        offset,height = crossing
+            result = (coordinate < center) if greater else (coordinate > center)
+            self._halfplane_cache[key] = result
+            return result
+        converted,precision = _decimal_values((circle.r,coordinate,center))
+        with localcontext() as context:
+            context.prec = max(precision,_ANGLE_WORK_PRECISION)
+            radius,value,center_decimal = converted
+            offset = value-center_decimal
+            height = (radius*radius-offset*offset).sqrt()
         vectors = ((offset,height),(offset,-height)) if axis == "x" else ((height,offset),(-height,offset))
-        low,high = sorted(math.atan2(y,x) for x,y in vectors)
-        if low == high or high-low == math.tau:
+        low,high = sorted(_decimal_angle(x,y) for x,y in vectors)
+        pi,tau = _angle_constants()
+        if low == high or high-low == tau:
             self._unresolved("halfplane_events",{"circle":[circle.cx,circle.cy,circle.r],
                                                   "coordinate":coordinate,"axis":axis,"angles":[low,high]})
-        direction = (0.0 if greater else math.pi) if axis == "x" else (math.pi/2 if greater else -math.pi/2)
+        direction = (Decimal(0) if greater else pi) if axis == "x" else (pi/2 if greater else -pi/2)
         if direction == low or direction == high:
             self._unresolved("halfplane_sector_direction",{"angles":[low,high],"direction":direction})
-        return (low,high,low < direction < high)
+        result = (low,high,low < direction < high)
+        self._halfplane_cache[key] = result
+        return result
 
     def _line_height(self, circle, coordinate, axis):
         key = (circle.cx,circle.cy,circle.r,coordinate,axis)
@@ -353,18 +450,35 @@ class UnionRegion:
         return bounds if bounds[0] < bounds[1] and bounds[2] < bounds[3] else None
 
     def _arc(self, circle, start, end, direction, origin, contributions, closure):
-        delta = end-start
-        if delta == math.tau:
+        decimal_span = end-start
+        delta = float(decimal_span)
+        if decimal_span > 0 and not delta:
+            self._unresolved("integration_arc_span",{"angles":[start,end],"span":decimal_span})
+        pi,tau = _angle_constants()
+        if decimal_span == tau:
             chord,dx,dy = 0.0,0.0,0.0
+            segment_terms = [float(pi)*circle.r*circle.r]
         else:
-            cos0,sin0 = _trig(start)
-            cosm,sinm = _trig(start+delta/2)
-            sine = math.sin(delta/2)
+            cos0,sin0 = _trig(float(start))
+            cosm,sinm = _trig(float(start+decimal_span/2))
+            if decimal_span > pi:
+                complement = float(tau-decimal_span)
+                if not complement:
+                    self._unresolved("integration_arc_complement",{"angles":[start,end],"span":decimal_span})
+                sine = math.sin(complement/2)
+                # Keep the full-disk and tiny complementary-segment terms
+                # separate rather than rounding a nearly full turn to TAU.
+                segment_terms = [float(pi)*circle.r*circle.r,
+                                 -.5*circle.r*circle.r*_segment_angle(complement)]
+            else:
+                sine = math.sin(delta/2)
+                segment_terms = [.5*circle.r*circle.r*_segment_angle(delta)]
             dx,dy = -2*circle.r*sinm*sine,2*circle.r*cosm*sine
             x = math.fsum((circle.cx,-origin[0],circle.r*cos0))
             y = math.fsum((circle.cy,-origin[1],circle.r*sin0))
             chord = .5*math.fsum((x*dy,-y*dx))
-        contributions.extend((direction*chord,direction*.5*circle.r*circle.r*_segment_angle(delta)))
+        contributions.append(direction*chord)
+        contributions.extend(direction*term for term in segment_terms)
         closure.append((direction*dx,direction*dy))
 
     def _boundary_arcs(self):
@@ -469,6 +583,7 @@ class UnionRegion:
         return {"area_raw_um2":area,"boundary_closure_um":closed,"absolute_contribution_sum_um2":absolute,
                 "cancel_ratio":abs(area)/absolute if absolute else 1.0,"arc_count":arcs,"segment_count":segments}
 
+    @_topology_context
     def cell(self, rect, origin=None):
         rect = tuple(_finite(v) for v in rect)
         if len(rect) != 4 or not rect[0] < rect[1] or not rect[2] < rect[3]:
@@ -490,6 +605,7 @@ class UnionRegion:
                       boundary_closed=max(abs(v) for v in result["boundary_closure_um"]) <= 1e-11*min(rect[1]-rect[0],rect[3]-rect[2]))
         return result
 
+    @_topology_context
     def global_area(self):
         bounds = self.support_bounds()
         origin = ((bounds[0]+(bounds[1]-bounds[0])/2,bounds[2]+(bounds[3]-bounds[2])/2)
