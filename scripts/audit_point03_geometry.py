@@ -556,6 +556,11 @@ def grid_worker(args, manifest, np, psutil, deadline, report):
     cell_status = np.zeros((n, n), dtype=np.uint8)
     report.update(N=n, dx_um=dx, active_cell=None, cells_completed=0,
                   raw_endpoint_corrections=[], numeric_valid=False,
+                  resource_check_schedule={
+                      "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+                      "grid_wall_time": "Before every row and every candidate-evaluated cell",
+                      "retention_reserve_s": 4,
+                      "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"},
                   cell_status_legend={"0": "unprocessed", "1": "support-disjoint exact zero", "2": "candidate evaluated"})
     minimum_ratio, maximum_closure, evaluated = 1.0, 0.0, 0
     try:
@@ -583,7 +588,7 @@ def grid_worker(args, manifest, np, psutil, deadline, report):
                     closure_array[iy, ix] = 0.0
                     cell_status[iy, ix] = 1
                 else:
-                    guard(psutil, args.out_dir, deadline - 4)
+                    require(time.monotonic() < deadline - 4, "Geometry audit wall budget exhausted")
                     value = region.cell(rect)
                     # Retain the returned numerical state BEFORE any guard may fail.
                     raw_fraction[iy, ix] = float(value["raw_fraction"])

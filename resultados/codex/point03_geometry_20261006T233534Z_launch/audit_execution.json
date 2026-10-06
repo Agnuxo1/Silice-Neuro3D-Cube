@@ -1,0 +1,16 @@
+{
+  "command": [
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.audit_tmp\\summarize_point03_geometry.py",
+    "--out",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T233534Z",
+    "--output",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T233534Z_launch\\independent_audit.json"
+  ],
+  "status": "completed",
+  "timeout_s": 40,
+  "returncode": 1,
+  "elapsed_s": 4.830679300008342
+}
