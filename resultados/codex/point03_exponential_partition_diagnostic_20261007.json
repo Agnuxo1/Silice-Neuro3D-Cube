@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-10-07T10:10:25.923215+00:00",
+  "manifest_sha256": "8bbd88d0321a761d87b4d943c18db60eb68dbd40d824c3594b17a71b5150bde6",
+  "scipy_version": "1.15.1",
+  "selection_source_sha256": "5bf779d490fded7981fef1be5ae2d74b712a716db9fef07ab849c9fcf311901b",
+  "rows": [
+    {
+      "N": 500,
+      "input_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_analytic_20261007T004526617696Z\\inputs\\n500_geom.npz",
+      "input_sha256": "cc68eceb61d6722406268856039119aa344f273f96101298b8c647d3322d3b02",
+      "selections": [
+        {
+          "segments": 4,
+          "m_star": 55,
+          "s": 264,
+          "nominal_internal_length_m": 1.893939393939394e-06,
+          "scaled_1_norm": 2623.6820366417205
+        },
+        {
+          "segments": 8,
+          "m_star": 55,
+          "s": 132,
+          "nominal_internal_length_m": 1.893939393939394e-06,
+          "scaled_1_norm": 1311.8410183208603
+        }
+      ],
+      "exact_same_increment": true,
+      "relative_increment_difference": 0.0
+    },
+    {
+      "N": 640,
+      "input_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_reconstructed_20261007_G1\\n640_input.npz",
+      "input_sha256": "a9c01e56f3db2be430f396238cbf8ae39c40483b5d3edcd84040cc2d314205aa",
+      "selections": [
+        {
+          "segments": 11,
+          "m_star": 55,
+          "s": 158,
+          "nominal_internal_length_m": 1.1507479861910242e-06,
+          "scaled_1_norm": 1559.3395138968413
+        },
+        {
+          "segments": 17,
+          "m_star": 55,
+          "s": 102,
+          "nominal_internal_length_m": 1.1534025374855824e-06,
+          "scaled_1_norm": 1008.9843913450148
+        }
+      ],
+      "exact_same_increment": false,
+      "relative_increment_difference": 0.0023014959723819833
+    }
+  ],
+  "elapsed_s": 19.704777799954172,
+  "no_exponential_action_performed": true,
+  "scope": "Reconstructed maximum degree/scales, not instrumented term counts or independent algorithms; no new acceptance gate."
+}
