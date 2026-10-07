@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-07T13:31:24.942844+00:00",
+  "source_adapter_pass": true,
+  "numeric_changes": 3,
+  "no_T96_propagation": true,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_fdst_accuracy.py": "5e7f554912e97d229c3ccea45c280bba764738d151b6c1a8acb463dd2a29c0ad",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_fdst_pilot.py": "6ec8713d3ea23b94010b643ac2bfd150afcf99bd0ad36d60f53d7abd42962c1b",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FDST-ACCURACY-CONTRACT.md": "a580c812ca929a6240052eeb698098ca2ca60d351da9d4dbc7de934337160dfe"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-07T13:21:21.448029+00:00",
+  "manufactured_only": true,
+  "no_T96_propagation": true,
+  "pass_": true,
+  "N": 400,
+  "steps": 100,
+  "dz_m": 3.125e-07,
+  "elapsed_s": 22.611795599979814,
+  "seconds_per_step": 0.22611795599979814,
+  "field_relative_error": 2.965436475810287e-13,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\time_point03_fdst400.py": "9d08d7aa92d59d889df74ab1de45ff0fb3b125c10057ffebc447f801f268e9e4",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fdst.py": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_exponential.py": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FDST-400-TIMING-CONTRACT.md": "6650fff63d00e33ddcf4ac8e242b6842573ff72873fabb55de534c3e76e9031f"
+  }
+}
