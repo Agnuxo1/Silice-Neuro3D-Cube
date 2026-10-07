@@ -109,6 +109,10 @@ def export(out,visible,probe=None,pilot=None,accuracy=None):
         writer=csv.DictWriter(f,fieldnames=list(records[0]));writer.writeheader();writer.writerows(records)
     files=[epath/'assessment.json',gpath/'assessment.json',gpath/'execution.json',gpath/'integrity_audit.json',hpath/'assessment.json',hpath/'execution.json',hpath/'integrity_audit.json',hpath/'manifest.json',ROOT/'resultados/codex/point03_exponential_20261007_H1/execution.json',ROOT/'resultados/codex/point03_exponential_20261007_H1/prediction.json',kpredpath]
     files += [p for p in (kpath,jpath) if p.exists()]
+    files += [epath/name for name in ('execution.json','propagation_execution.json','manifest.json','prediction.json')]
+    files += sorted((epath/'cases').glob('*/case.json'))
+    files += sorted((epath/'cases').glob('*/chunk_*.json'))
+    files += [ROOT/'resultados/codex/point03_recovery_20261007_run2/audit.json',ROOT/'scripts/recover_point03_e.py']
     files += [ROOT/'resultados/codex/point03_exponential_partition_diagnostic_20261007.json']
     if pa:files += [probe/name for name in ('execution.json','assessment.json','integrity_audit.json','manifest.json','geometry_report.json','geometry_selection.json','geometry_generator_source.txt')]
     files += [ROOT/'scripts'/name for name in ('run_point03_exponential.py','recover_point03_h.py','assess_point03_h_recovered.py','point03_linear_detector.py','predict_point03_linear.py','assess_point03_linear.py','run_point03_k626.py','point03_scatter_uncertainty.py','diagnose_point03_scatter.py')]
@@ -131,6 +135,13 @@ def export(out,visible,probe=None,pilot=None,accuracy=None):
         files += [ROOT/'scripts'/name for name in ('run_point03_fdst_accuracy.py','audit_point03_fdst_accuracy.py','verify_point03_detector_bound.py')]
         files += [ROOT/'Docs'/name for name in ('POINT-03-FDST-ACCURACY-CONTRACT.md','POINT-03-FDST-ACCURACY-AUDIT-CONTRACT.md','POINT-03-FDST-ACCURACY-RESULTS.md','POINT-03-DETECTOR-BOUND-CONTRACT.md','POINT-03-DETECTOR-BOUND-RESULTS.md')]
         files += [ROOT/'resultados/codex'/name for name in ('point03_detector_bound_20261007.json','point03_detector_bound_provenance_note_20261007.json','point03_fdst400_timing_20261007.json','point03_fdst640_timing_20261007.json')]
+        files += [ROOT/'Docs'/name for name in ('POINT-03-FINER-PREDICTION-CONTRACT.md','POINT-03-FINER-PREDICTION-RESULTS.md','POINT-03-FDST-FINER-COST-CONTRACT.md','POINT-03-ADI-FINER-COST-CONTRACT.md')]
+        files += [ROOT/'scripts'/name for name in ('predict_point03_finer.py','time_point03_fdst_finer.py','time_point03_adi_finer.py')]
+        files += [ROOT/'resultados/codex/point03_finer_prediction_20261007_M0.json']
+        if (ROOT/'resultados/codex/point03_fdst_finer_cost_20261007/execution.json').exists():
+            files += sorted((ROOT/'resultados/codex/point03_fdst_finer_cost_20261007').glob('*.json'))
+        if (ROOT/'resultados/codex/point03_adi_finer_cost_20261007.json').exists():
+            files += [ROOT/'resultados/codex/point03_adi_finer_cost_20261007.json']
     manifest={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in files};(out/'SHA256.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     archive=out/'evidencias_T96_Q4.zip'
     with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED) as z:
