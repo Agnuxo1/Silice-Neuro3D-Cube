@@ -16,6 +16,7 @@ def main():
     parser=argparse.ArgumentParser(__doc__)
     parser.add_argument('--out',type=Path,required=True)
     parser.add_argument('--g',type=Path)
+    parser.add_argument('--h',type=Path)
     args=parser.parse_args()
     e=json.loads((ROOT/'resultados/codex/point03_analytic_20261007T004526617696Z/assessment.json').read_text())
     f=json.loads((ROOT/'resultados/codex/point03_reconstruction_20261007_run2/diagnostic.json').read_text())
@@ -34,6 +35,12 @@ def main():
                    [100*r['methods']['field']['P_core'] for r in g['rows'][:4]]+[100*g['rows'][-1]['methods']['field']['P_core']],
                    's-',label='G: dz menor y nueva malla N640',color='#694694')
         subtitle='E: FAIL conservado | G: '+('PASS local' if g['scientific_pass'] else 'FAIL')
+    if args.h:
+        h=json.loads(args.h.read_text())
+        ax[0].plot([128/r['N'] for r in h['rows']],
+                   [100*r['methods']['8']['field']['P_core'] for r in h['rows']],
+                   '+--',label='H: referencia temporal sin separación',color='#ca8a20')
+        subtitle+=' | H: '+('PASS local de potencia' if h['scientific_pass'] else 'FAIL')
     fig.text(.08,.84,subtitle,fontsize=11)
     ax[0].set(xlim=(.52,.18 if args.g else .24),xlabel='Paso transversal dx (µm)',ylabel='Potencia del núcleo (% de la entrada)')
     ax[0].legend(fontsize=8,frameon=False)
@@ -43,7 +50,9 @@ def main():
     ratios += [f['spatial'][m]['residual']/f['spatial'][m]['limit'] for m in ('field','intensity')]
     if args.g:
         names+=['G N640'];ratios+=[g['holdout']['field']['residual']/g['holdout']['field']['limit']]
-    ax[1].bar(names,ratios,color=['#a64636','#236f8c','#328754','#694694'][:len(names)],width=.55)
+    if args.h:
+        names+=['H N640'];ratios+=[h['holdout']['field']['residual']/h['holdout']['field']['limit']]
+    ax[1].bar(names,ratios,color=['#a64636','#236f8c','#328754','#694694','#ca8a20'][:len(names)],width=.55)
     ax[1].axhline(1,color='#555555',linestyle='--',lw=1.3)
     ax[1].set(ylabel='Residual de predicción / límite previo',ylim=(0,max(6.3,max(ratios)*1.08)))
     ax[1].set_title('Un valor mayor que 1 incumple el criterio',loc='left',fontsize=11)
@@ -51,7 +60,9 @@ def main():
     for a in ax:
         a.spines[['top','right']].set_visible(False)
         a.grid(axis='y',alpha=.18);a.set_axisbelow(True)
-    fig.text(.08,.105,'Los resultados pertenecen a un modelo escalar ideal a z = 2 mm. F reutiliza campos conocidos; G añade un holdout nuevo.',fontsize=9)
+    note='Modelo escalar ideal a z = 2 mm. F reutiliza campos; G añade una malla nueva.'
+    if args.h:note+=' H predice su nueva referencia N640 con G640 ya conocido.'
+    fig.text(.08,.105,note,fontsize=8 if args.h else 9)
     fig.text(.08,.06,'No son medidas de una guía fabricada ni cotas certificadas del error de campo, fase o frontera.',fontsize=9,color='#555555')
     args.out.parent.mkdir(parents=True,exist_ok=True)
     fig.savefig(args.out,dpi=170)

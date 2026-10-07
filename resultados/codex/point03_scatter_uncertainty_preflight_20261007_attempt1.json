@@ -1,0 +1,104 @@
+{
+  "pass_": false,
+  "scope": "Manufactured preflight failed before optical use",
+  "cases": [
+    {
+      "p": 0.25,
+      "covered": false,
+      "interval": {
+        "h_normalized": 1.0,
+        "value": 0.3331,
+        "estimate_discretization_error": 2.6985215305530552e-05,
+        "fit_scatter": 7.52461143394001e-08,
+        "uncertainty": 8.122029226901251e-05,
+        "low": 0.33301877970773097,
+        "high": 0.33318122029226904
+      },
+      "observed_p": 0.24999999960852373
+    },
+    {
+      "p": 0.5,
+      "covered": true,
+      "interval": {
+        "h_normalized": 1.0,
+        "value": 0.3331,
+        "estimate_discretization_error": 5.346645166587338e-05,
+        "fit_scatter": 9.592926436541305e-08,
+        "uncertainty": 0.00016073761495589587,
+        "low": 0.3329392623850441,
+        "high": 0.3332607376149559
+      },
+      "observed_p": 0.49999999997977024
+    },
+    {
+      "p": 1.0,
+      "covered": true,
+      "interval": {
+        "h_normalized": 1.0,
+        "value": 0.3331,
+        "estimate_discretization_error": 0.00010000000013921095,
+        "fit_scatter": 5.88418203051333e-15,
+        "uncertainty": 0.00030000000043351344,
+        "low": 0.3327999999995665,
+        "high": 0.3334000000004335
+      },
+      "observed_p": 0.9999999990711603
+    },
+    {
+      "p": 2.0,
+      "covered": true,
+      "interval": {
+        "h_normalized": 1.0,
+        "value": 0.3331,
+        "estimate_discretization_error": 9.999999999998899e-05,
+        "fit_scatter": 5.551115123125783e-17,
+        "uncertainty": 0.00030000000000011615,
+        "low": 0.3327999999999999,
+        "high": 0.33340000000000014
+      },
+      "observed_p": 2.000000000441133
+    },
+    {
+      "p": 3.0,
+      "covered": true,
+      "interval": {
+        "h_normalized": 1.0,
+        "value": 0.3331,
+        "estimate_discretization_error": 0.0002729623653082158,
+        "fit_scatter": 5.1637898217771205e-05,
+        "uncertainty": 0.0009425631281089092,
+        "low": 0.3321574368718911,
+        "high": 0.3340425631281089
+      },
+      "observed_p": 3.000000005734804
+    },
+    {
+      "p": 4.0,
+      "covered": true,
+      "interval": {
+        "h_normalized": 1.0,
+        "value": 0.3331,
+        "estimate_discretization_error": 0.0006939309300646457,
+        "fit_scatter": 0.0002327839263261411,
+        "uncertainty": 0.0026575243953300787,
+        "low": 0.33044247560466994,
+        "high": 0.3357575243953301
+      },
+      "observed_p": 4.000000005210785
+    },
+    {
+      "p": 6.0,
+      "covered": true,
+      "interval": {
+        "h_normalized": 1.0,
+        "value": 0.3331,
+        "estimate_discretization_error": 0.004232274646981948,
+        "fit_scatter": 0.0022219523951440556,
+        "uncertainty": 0.01854113044376309,
+        "low": 0.3145588695562369,
+        "high": 0.3516411304437631
+      },
+      "observed_p": 5.9999999969877615
+    }
+  ]
+}
