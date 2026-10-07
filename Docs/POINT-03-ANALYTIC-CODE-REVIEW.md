@@ -165,7 +165,8 @@ The corrected assessor has 900 lines and SHA256
 A second reviewer read the entire earlier version and the correction; the
 root reviewer also read all sections and the correction. No further
 blocking finding was identified by static review. The 18 scalar and
-parser self-checks remain to be executed after this source freeze.
+parser self-checks subsequently passed under the committed assessor version,
+as recorded below.
 
 The earlier 664-line runner at `174ad56c...` could not be recovered byte
 for byte from the unavailable temporary execution service. A dedicated
@@ -175,10 +176,28 @@ and the reviewed assessor interface. It requires a new full review and
 source freeze before any optical propagation. The earlier static review
 does not automatically certify the replacement source.
 
-The assessor's scalar self-checks may be completed independently while
-the replacement runner is prepared. They generate no optical trajectory.
-Final runner hashes and the bounded self-check outcome will be recorded
-here before Stage E propagation.
+## Bounded scalar preflight — PASS
+
+The assessor and this review record were first committed at
+`f0d10e1ddef0ab79f571e574eb06cd86e9deffff`. The preflight attempt is
+[`point03_analytic_preflight_20261007T003231277093Z`](../resultados/codex/point03_analytic_preflight_20261007T003231277093Z/).
+All 18 controls passed: the positive analytic order-two case; negative
+spatial sign/order/stability/prediction cases; three longitudinal-order
+failures; auxiliary sum and corner failures; both final indicator targets;
+missing/duplicate cases; nonfinite measurements; and invalid JSON numbers
+or duplicate keys. The prescribed negative cases were rejected, with no
+accepted GCI indicator.
+
+The bounded child took 0.13628249999601394 s; the complete wrapper,
+including both tracked-file hash inventories, took 10.052632200007793 s.
+The assessor's internal reported work time was 0.0013584999833256006 s.
+Its two RAM/disk samples passed the frozen limits. The full tracked
+inventory was unchanged. The assessor source, pre-correction review
+draft, wrapper, JSON reports and both raw child logs are retained.
+
+This preflight performed zero optical propagations and does not verify
+the replacement runner's end-to-end evidence interface. Final runner
+hashes and its review will be recorded before Stage E propagation.
 
 ## Method references
 
