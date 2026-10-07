@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-07T21:51:35.352309+00:00",
+  "pass_": true,
+  "N": 799,
+  "dx_m": 1.6e-07,
+  "dz_m": 7.8125e-08,
+  "steps": 100,
+  "field_error": 2.1477054141966615e-13,
+  "advance_elapsed_s": 27.179745799978264,
+  "forecast_full_FDST_s": 6958.014924794435,
+  "no_T96_geometry_or_propagation": true,
+  "source_sha256": "c5ded7251cf5c6c3da25d9875c3ece7fc50c2214ffc9bc038b805b3f6edf3587"
+}
