@@ -1,0 +1,146 @@
+{
+  "created_utc": "2026-10-07T10:45:16.321321+00:00",
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_reconstructed_20261007_G2\\assessment.json": "ea9817b7ba5358a1b816dc297bc26fd40169971bdf1160cf28b0fa54fd3c5b96",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H2\\assessment.json": "83fdb429468a232f59c9385329fad2d95dd1916781fadb44ae7f380567cefe0e",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\diagnose_point03_temporal_errors.py": "d4e8ea0fe43ba40f8396fdb40a1bac2a91bb3e2a42dbcaa14fcb00db404802f5"
+  },
+  "rows": [
+    {
+      "N": 400,
+      "method": "field",
+      "reference": 0.3329176086236941,
+      "dz_um": [
+        0.625,
+        0.3125,
+        0.15625
+      ],
+      "powers": [
+        0.3329181269615246,
+        0.3329177019789733,
+        0.33291763892294823
+      ],
+      "signed_reference_errors": [
+        5.183378305462227e-07,
+        9.335527922926801e-08,
+        3.029925416120349e-08
+      ],
+      "absolute_reference_errors": [
+        5.183378305462227e-07,
+        9.335527922926801e-08,
+        3.029925416120349e-08
+      ],
+      "error_ratios_observed_orders": [
+        2.4730891776218753,
+        1.62344932786284
+      ],
+      "successive_differences_order": 2.752697475896043,
+      "original_order_gate_pass": false,
+      "fine_direct_error_pass": true,
+      "mid_direct_error_pass": true
+    },
+    {
+      "N": 400,
+      "method": "intensity",
+      "reference": 0.33291761389474206,
+      "dz_um": [
+        0.625,
+        0.3125,
+        0.15625
+      ],
+      "powers": [
+        0.3329181322199135,
+        0.3329177072462096,
+        0.3329176441980393
+      ],
+      "signed_reference_errors": [
+        5.18325171450229e-07,
+        9.335146755606871e-08,
+        3.030329726039227e-08
+      ],
+      "absolute_reference_errors": [
+        5.18325171450229e-07,
+        9.335146755606871e-08,
+        3.030329726039227e-08
+      ],
+      "error_ratios_observed_orders": [
+        2.473112849086845,
+        1.623197922976701
+      ],
+      "successive_differences_order": 2.7528471661426983,
+      "original_order_gate_pass": false,
+      "fine_direct_error_pass": true,
+      "mid_direct_error_pass": true
+    },
+    {
+      "N": 500,
+      "method": "field",
+      "reference": 0.33294704029849814,
+      "dz_um": [
+        0.625,
+        0.3125,
+        0.15625
+      ],
+      "powers": [
+        0.33294772474441603,
+        0.33294724003806647,
+        0.33294708191106664
+      ],
+      "signed_reference_errors": [
+        6.844459178867446e-07,
+        1.9973956832952666e-07,
+        4.161256850210293e-08
+      ],
+      "absolute_reference_errors": [
+        6.844459178867446e-07,
+        1.9973956832952666e-07,
+        4.161256850210293e-08
+      ],
+      "error_ratios_observed_orders": [
+        1.7768163917220872,
+        2.2630289129839603
+      ],
+      "successive_differences_order": 1.616027256004281,
+      "original_order_gate_pass": false,
+      "fine_direct_error_pass": true,
+      "mid_direct_error_pass": true
+    },
+    {
+      "N": 500,
+      "method": "intensity",
+      "reference": 0.33294702415200544,
+      "dz_um": [
+        0.625,
+        0.3125,
+        0.15625
+      ],
+      "powers": [
+        0.3329477087399498,
+        0.33294722416003314,
+        0.33294706592818346
+      ],
+      "signed_reference_errors": [
+        6.845879443329039e-07,
+        2.000080276953753e-07,
+        4.17761780169279e-08
+      ],
+      "absolute_reference_errors": [
+        6.845879443329039e-07,
+        2.000080276953753e-07,
+        4.17761780169279e-08
+      ],
+      "error_ratios_observed_orders": [
+        1.775177980137696,
+        2.259305490908567
+      ],
+      "successive_differences_order": 1.614694591952889,
+      "original_order_gate_pass": false,
+      "fine_direct_error_pass": true,
+      "mid_direct_error_pass": true
+    }
+  ],
+  "diagnostic_only": true,
+  "post_hoc_known_results": true,
+  "point03_closed": false,
+  "scope": "Dimensionless core power error at fixed N, relative to the H semidiscrete reference. Not a continuum error bound, causal attribution, phase validation or replacement of old gates."
+}
