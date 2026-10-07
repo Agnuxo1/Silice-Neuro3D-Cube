@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-07T21:53:33.576392+00:00",
+  "integrity_pass": true,
+  "controls_eligible": true,
+  "hypothesis_pass": false,
+  "point03_closed": false,
+  "checkpoints_checked": 12,
+  "source_files_checked": 6,
+  "rows": {
+    "field": {
+      "actual": 0.33244502353291094,
+      "baseline": 0.33251736439672624,
+      "change": 7.234086381530114e-05,
+      "reference_change": 1.0564216168518215e-11,
+      "hypothesis_pass": false,
+      "reference_pass": true
+    },
+    "intensity": {
+      "actual": 0.3326024212970766,
+      "baseline": 0.33267476750503766,
+      "change": 7.234620796103819e-05,
+      "reference_change": 1.0569545239036415e-11,
+      "hypothesis_pass": false,
+      "reference_pass": true
+    }
+  },
+  "max_raw_power_residual": 2.7755575615628914e-15,
+  "reference_bound": 2.8320524951142606e-10,
+  "reference_field_difference": 1.846262887193515e-10,
+  "quadrature_change": 5.551115123125783e-17,
+  "auditor_source_sha256": "cef4ffebf7d2a31857a2f44919334ed5a369281633ad8f9d65de866d87efca08",
+  "scope": "N400 boundary-placement diagnosis only; neither general boundary validation nor T96 convergence."
+}
