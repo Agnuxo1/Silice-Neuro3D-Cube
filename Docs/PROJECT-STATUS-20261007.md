@@ -34,6 +34,12 @@ sus geometrías, con ajustes de cinco mallas y sensibilidad incluyendo
 N626 negativo. Las bandas no bastan para un cierre. Los costes sintéticos
 se registraron antes de ejecutar; no constituyen trayectorias T96.
 
+M1 N767 está en ejecución desde el lanzamiento original, con predicción
+estricta congelada antes de preparar geometría. Contrato `bbc891d`,
+predicciones `60684a5`, auditor separado `4fbde6e`;90tramos previstos.
+La geometría pasó48contrastes y área global. No hay dictamen final M1
+y el punto3 sigue abierto; no iniciar el barrido modal antes de su cierre.
+
 J: diagnóstico de dispersión aplicado a cinco referencias consistentes,
 sin cierre ni cobertura probabilística. Fallo de un control sintético
 del indicador seleccionado retenido, envolvente distinta identificada.
