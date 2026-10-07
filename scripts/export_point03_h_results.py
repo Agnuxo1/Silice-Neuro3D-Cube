@@ -37,6 +37,22 @@ def export(out,visible):
         lines += ['', f"Resultado K640: {k['K640_pass']}. Una aceptación por K requiere además el nuevo ensayo prospectivo N626; este informe no atribuye ese resultado si no existe evidencia separada."]
     lines += ['', '## Alcance y continuidad', '', 'Modelo escalar paraxial ideal: longitud 2 mm, dominio 128 µm, núcleo de radio 6 µm, longitud de onda 1550 nm. Se comparó potencia fraccional del núcleo, sin renormalizar salidas ni alinear fases. La referencia exponencial resuelve el operador espacial discretizado, no el continuo exacto ni Maxwell.', '', 'Las particiones de un mismo algoritmo exponencial son controles de consistencia. Particiones relacionadas pueden compartir incrementos internos; no se presentan como dos algoritmos independientes. Campo complejo, fase, frontera, perfiles medidos y fabricación quedan sujetos a los puntos posteriores.', '', 'El checkout principal se preservó. La copia aislada retiene fuentes, contratos, predicciones, arrays completos y fallos. El paquete adjunto contiene informes y hashes, no todos los arrays. JEV: fallback local identificado; el bloqueo de seguridad remoto heredado se conservó, sin recomendación remota válida.', '', '## Fuentes primarias consultadas', '', '- [NASA: convergencia espacial](https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html).', '- [SciPy 1.15.1: acción de la exponencial](https://docs.scipy.org/doc/scipy-1.15.1/reference/generated/scipy.sparse.linalg.expm_multiply.html).', '- [Eça–Hoekstra 2014: estimación con dispersión](https://doi.org/10.1016/j.jcp.2014.01.006). Adaptación diagnóstica explícita, sin importar una garantía de cobertura.', '- [Vassallo 1997: interfaces y discretización óptica](https://opg.optica.org/josaa/abstract.cfm?uri=josaa-14-12-3273). Sólo resumen del editor.', '- [Henning–Peterseim 2017: potenciales abruptos](https://arxiv.org/html/1608.02267). Formulación e hipótesis examinadas; método distinto, sin transferencia automática del teorema.', '']
     report=out/'evaluacion_T96_Q4.md';report.write_text('\n'.join(lines),encoding='utf-8')
+    records=[]
+    for r in e['independent_measurements']:
+        records.append(dict(estudio='E',N=r['N'],dx_um=128/r['N'],dz_adi_um=r['dz_m']*1e6,segmentos_exponencial='',detector='celda_constante',P_nucleo_entrada=r['P_core'],P_total_entrada=r['P_total'],campo_sha256=r['final_npz_sha256']))
+    for r in g['rows']:
+        for m,v in r['methods'].items():records.append(dict(estudio='G2',N=r['N'],dx_um=128/r['N'],dz_adi_um=r['dz_m']*1e6,segmentos_exponencial='',detector='cubico_'+m,P_nucleo_entrada=v['P_core'],P_total_entrada=r['P_total'],campo_sha256=r['field_sha256']))
+    for r in h['rows']:
+        for part,vals in r['methods'].items():
+            sol=r['solutions'][part];cp=read(sol['checkpoints'][-1]['path'])
+            for m,v in vals.items():records.append(dict(estudio='H2',N=r['N'],dx_um=128/r['N'],dz_adi_um='',segmentos_exponencial=part,detector='cubico_'+m,P_nucleo_entrada=v['P_core'],P_total_entrada=cp['raw_total']/r['P_in'],campo_sha256=sol['field_sha256']))
+    krows=kp['rows']+([k['rows'][0]] if k else [])
+    for r in krows:
+        n=r['N'];hr=next(v for v in h['rows'] if v['N']==n);part=str(hr['fine_segments']);vals=r['methods'][part] if n==640 else r['methods']
+        for m,v in vals.items():records.append(dict(estudio='K',N=n,dx_um=128/n,dz_adi_um='',segmentos_exponencial=part,detector='bilineal_'+m,P_nucleo_entrada=v['P_core'],P_total_entrada=hr['P_total'],campo_sha256=hr['solutions'][part]['field_sha256']))
+    csvpath=out/'potencias_T96_Q4.csv'
+    with csvpath.open('x',encoding='utf-8-sig',newline='') as f:
+        writer=csv.DictWriter(f,fieldnames=list(records[0]));writer.writeheader();writer.writerows(records)
     files=[epath/'assessment.json',gpath/'assessment.json',gpath/'execution.json',gpath/'integrity_audit.json',hpath/'assessment.json',hpath/'execution.json',hpath/'integrity_audit.json',hpath/'manifest.json',ROOT/'resultados/codex/point03_exponential_20261007_H1/execution.json',ROOT/'resultados/codex/point03_exponential_20261007_H1/prediction.json',kpredpath]
     files += [p for p in (kpath,jpath) if p.exists()]
     files += [ROOT/'resultados/codex/point03_exponential_partition_diagnostic_20261007.json']
@@ -50,9 +66,9 @@ def export(out,visible):
         assert z.testzip() is None
         for name,d in manifest.items():assert hashlib.sha256(z.read(name)).hexdigest()==d
     visible.mkdir(parents=True,exist_ok=True)
-    for p in (report,archive):
+    for p in (report,archive,csvpath):
         target=visible/p.name;assert not target.exists();shutil.copyfile(p,target);assert sha(target)==sha(p)
-    result=dict(created_utc=datetime.now(timezone.utc).isoformat(),point03_closed=h['point03_closed'],files={str(visible/p.name):sha(p) for p in (report,archive)},archive_reports=len(files),zip_crc_and_sha_verified=True)
+    result=dict(created_utc=datetime.now(timezone.utc).isoformat(),point03_closed=h['point03_closed'],files={str(visible/p.name):sha(p) for p in (report,archive,csvpath)},csv_rows=len(records),archive_reports=len(files),zip_crc_and_sha_verified=True)
     (out/'export.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8');print(json.dumps(result));return result
 
 def main():
