@@ -1,0 +1,114 @@
+{
+  "created_utc": "2026-10-07T14:32:36.826416+00:00",
+  "manufactured_only": true,
+  "no_T96_propagation": true,
+  "N": 767,
+  "dz_m": 6.25e-08,
+  "steps": 100,
+  "setup_s": 1.1162515000323765,
+  "advance_s": 17.094407600001432,
+  "total_s": 18.21352820005268,
+  "seconds_per_step": 0.17094407600001432,
+  "field_relative_error": 5.94247544820149e-15,
+  "pass_": true,
+  "forecasts_s": {
+    "32000": 5471.326683500491,
+    "64000": 10941.537115500949
+  },
+  "resources": [
+    {
+      "utc": "2026-10-07T14:32:18.576473+00:00",
+      "available_ram_bytes": 6271397888,
+      "free_disk_bytes": 529543331840
+    },
+    {
+      "utc": "2026-10-07T14:32:36.821452+00:00",
+      "available_ram_bytes": 6036844544,
+      "free_disk_bytes": 529543299072
+    }
+  ],
+  "factor_metadata": {
+    "backend": "scipy.sparse.linalg.splu",
+    "scipy_version": "1.15.1",
+    "numpy_version": "2.2.6",
+    "original_class": "finer_cost_adi.Stepper",
+    "options": {
+      "permc_spec": "NATURAL",
+      "diag_pivot_thresh": 0.0,
+      "Equil": false
+    },
+    "factors": [
+      {
+        "factor_index": 0,
+        "line_count": 767,
+        "line_size": 767,
+        "matrix_order": 588289,
+        "matrix_nnz": 1763333,
+        "expected_matrix_nnz": 1763333,
+        "L_nnz": 1175811,
+        "U_nnz": 1175811,
+        "matrix_csc_bytes": 37619820,
+        "factor_export_csc_bytes": 51738760,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 588289,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "8a9ac861f93a409a9bfe296a97e5a75aa44a64515c1ed40440cde8f99b344316"
+        },
+        "perm_c": {
+          "length": 588289,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "8a9ac861f93a409a9bfe296a97e5a75aa44a64515c1ed40440cde8f99b344316"
+        },
+        "assembly_s": 0.19443480001064017,
+        "factorization_s": 0.3730086000286974,
+        "solve_calls": 100,
+        "solve_elapsed_s": 3.254763799835928,
+        "setup_elapsed_s": 0.6093874000362121
+      },
+      {
+        "factor_index": 1,
+        "line_count": 767,
+        "line_size": 767,
+        "matrix_order": 588289,
+        "matrix_nnz": 1763333,
+        "expected_matrix_nnz": 1763333,
+        "L_nnz": 1175811,
+        "U_nnz": 1175811,
+        "matrix_csc_bytes": 37619820,
+        "factor_export_csc_bytes": 51738760,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 588289,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "8a9ac861f93a409a9bfe296a97e5a75aa44a64515c1ed40440cde8f99b344316"
+        },
+        "perm_c": {
+          "length": 588289,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "8a9ac861f93a409a9bfe296a97e5a75aa44a64515c1ed40440cde8f99b344316"
+        },
+        "assembly_s": 0.10367949999636039,
+        "factorization_s": 0.31154560000868514,
+        "solve_calls": 100,
+        "solve_elapsed_s": 3.243282899260521,
+        "setup_elapsed_s": 0.4535602999967523
+      }
+    ],
+    "validation_status": "requires_paired_audit_result"
+  },
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\time_point03_adi_finer.py": "e0f9986d67bd0bac5efc3f99023f3856e4185289c04f818051367f892ce551a2",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\experimentos\\glass009_claude\\adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_sparse_adi.py": "362d4d0fbb56663f0e05fc211cd0c4db031fe20394367c090fea634134ab48bd",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-ADI-FINER-COST-CONTRACT.md": "45b91c3efef8bae7ff0c77b888986fdc732f816ab40b7a9dcbea395cf93b3a20"
+  }
+}

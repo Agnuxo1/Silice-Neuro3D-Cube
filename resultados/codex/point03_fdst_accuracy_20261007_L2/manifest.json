@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-07T13:33:04.679574+00:00",
+  "N": 400,
+  "input_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_analytic_20261007T004526617696Z\\inputs\\n400_geom.npz",
+  "input_sha256": "fb88d8f864745a439ad19191bc6dab1dc90b8139e5fe6e19040edfc13f548108",
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_fdst_accuracy.py": "5e7f554912e97d229c3ccea45c280bba764738d151b6c1a8acb463dd2a29c0ad",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_fdst_pilot.py": "6ec8713d3ea23b94010b643ac2bfd150afcf99bd0ad36d60f53d7abd42962c1b",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fdst.py": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_exponential.py": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_linear_detector.py": "494081be1ce4c8235ae2dcc390d9f5c5fdb4d0700abe377908bbf37002b937c9",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FDST-ACCURACY-CONTRACT.md": "a580c812ca929a6240052eeb698098ca2ca60d351da9d4dbc7de934337160dfe",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst400_timing_20261007.json": "1e7363fdc1d41874a6459c3bd600163f67dc91b447bb45282d1aa999983143cd",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_pilot_20261007_L1\\assessment.json": "4d6c98c45b38cb58603b7b09e699998ea1027eb538ee726a9566a38f296141eb",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_pilot_20261007_L1\\execution.json": "57c6eb0f70ce865a553d11bafd6ba69680893197672ca7bd067ea5dce08a7721",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_pilot_20261007_L1\\integrity_audit.json": "453b30a39452ae97f16f7612207997ba09a291677408cb4f8cfa3de862c2084e",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H2\\manifest.json": "8bbd88d0321a761d87b4d943c18db60eb68dbd40d824c3594b17a71b5150bde6",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H2\\execution.json": "c161bd32ffa6ac17cd15b9c3b6a3d40f8d65d1c0188da7e4aca05a2cba92e927",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H2\\integrity_audit.json": "6e7139bc0ae3773e01c43837399a88ac8f62768a02b618a42d0dedf81100dbd5",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_linear_probe_20261007_K626\\execution.json": "e042f3ca1df093798f1765d49589b8befacc0eb7d2229bd6cc9a2ad55efb71a6",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_accuracy_20261007_L2\\worker_source.txt": "be3d11b30bf4bcc1b37976603a531106430c0b37101cdbc07bca33eee34fc906",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n400_segments4\\segment_04.npz": "c960e8436af2c5ee84544584c4d1e41d4b32d6979fbf470168f04fbf3c36bc5b",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n400_segments8\\segment_08.npz": "c960e8436af2c5ee84544584c4d1e41d4b32d6979fbf470168f04fbf3c36bc5b",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_pilot_20261007_L1\\steps12800\\chunk32.npz": "7b9f682076d18ee1f84b4bbe68fb5bdfbab425be728d8456ad4789049691d24a"
+  },
+  "reference_fields": [
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n400_segments4\\segment_04.npz",
+      "sha256": "c960e8436af2c5ee84544584c4d1e41d4b32d6979fbf470168f04fbf3c36bc5b"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n400_segments8\\segment_08.npz",
+      "sha256": "c960e8436af2c5ee84544584c4d1e41d4b32d6979fbf470168f04fbf3c36bc5b"
+    }
+  ],
+  "L1_execution_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_pilot_20261007_L1\\execution.json",
+  "L1_assessment_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_pilot_20261007_L1\\assessment.json",
+  "K626_execution_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_linear_probe_20261007_K626\\execution.json",
+  "worker_numeric_changes": 3,
+  "numerical_threads": 1,
+  "steps_total": 12800
+}

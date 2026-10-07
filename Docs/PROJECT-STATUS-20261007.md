@@ -7,7 +7,7 @@ sin cambios. Trabajos en copia aislada, checkout principal preservado.
 |---|---|---|
 | 1. Entorno reproducible | Cerrado para la plataforma comprobada | Sin cambiar el alcance de las 51 pruebas históricas |
 | 2. Inventario | Cerrado por reconciliación, con esta actualización | Se distinguen resultados, controles y trabajos pendientes |
-| 3. T96/Q4 | **Abierto** | E recuperado completo; G2/H2 negativos; K640 favorable; K626 completo y negativo; contraste FDST registrado |
+| 3. T96/Q4 | **Abierto** | E recuperado completo; G2/H2/K626 negativos; K640 favorable; L1 negativo de orden; L2 positivo para precisión longitudinal práctica |
 | Barrido modal y siguientes | Pendientes | Se mantiene el orden; no iniciados durante el punto 3 |
 
 E: ocho simulaciones y controles longitudinales recuperados sin relanzar;
@@ -23,7 +23,16 @@ observables; predicciones640/626 congeladas. K640 pasa ambos métodos;
 la intensidad queda próxima a su límite. K626 terminó con integridad
 PASS y resultados negativos en ambas predicciones y ambas concordancias
 de potencia. Punto3 abierto. El nuevo kernelFDST pasa controles conocidos;
-su piloto temporal está registrado y no permite cerrar convergencia espacial.
+su piloto L1 terminó y conserva el fallo del orden observado. El estudio
+L2 terminó en3225,980s y pasó todos los criterios de precisión práctica
+en N400/N626;32campos nuevos y18fuentes se auditaron por separado.
+Errores máximos de potencia6,36e-8 y4,22e-7 respectivamente, ambos<=1e-6.
+No demuestra orden4 ni convergencia espacial; punto3 continúa abierto.
+
+Se congelaron pronósticos diagnósticos N767/959/1199 antes de preparar
+sus geometrías, con ajustes de cinco mallas y sensibilidad incluyendo
+N626 negativo. Las bandas no bastan para un cierre. Los costes sintéticos
+se registraron antes de ejecutar; no constituyen trayectorias T96.
 
 J: diagnóstico de dispersión aplicado a cinco referencias consistentes,
 sin cierre ni cobertura probabilística. Fallo de un control sintético
@@ -35,6 +44,8 @@ Maxwell, perfiles medidos y fabricación necesitan sus pruebas propias.
 
 Informes: [E](POINT-03-ANALYTIC-PROPAGATION-RESULTS.md),
 [G](POINT-03-G-RESULTS.md), [H2/K640](POINT-03-H2-K640-RESULTS.md),
-[particiones internas](POINT-03-EXPONENTIAL-PARTITION-RESULTS.md).
+[particiones internas](POINT-03-EXPONENTIAL-PARTITION-RESULTS.md),
+[L1](POINT-03-FDST-PILOT-RESULTS.md),
+[L2](POINT-03-FDST-ACCURACY-RESULTS.md).
 Arrays, fuentes congeladas, predicciones y fallos se retienen en D:.
 JEVfallbacklocal identificado; bloqueo remoto heredado conservado.
