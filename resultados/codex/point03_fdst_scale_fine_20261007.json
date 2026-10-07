@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-10-07T12:39:24.181955+00:00",
+  "manufactured_only": true,
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "extension_pass": true,
+  "gates": {
+    "norm": true,
+    "fine_accuracy": true,
+    "order": true,
+    "budget": true
+  },
+  "rows": [
+    {
+      "steps": 51200,
+      "dz_m": 3.90625e-08,
+      "dz_rho": 0.6384555461353356,
+      "field_relative_error": 2.3000156390464008e-05,
+      "norm_relative_error": 3.331135367545812e-11
+    },
+    {
+      "steps": 102400,
+      "dz_m": 1.953125e-08,
+      "dz_rho": 0.3192277730676678,
+      "field_relative_error": 1.4998737837267948e-06,
+      "norm_relative_error": 6.658962270478241e-11
+    },
+    {
+      "steps": 204800,
+      "dz_m": 9.765625e-09,
+      "dz_rho": 0.1596138865338339,
+      "field_relative_error": 9.47364079818352e-08,
+      "norm_relative_error": 1.743247768359879e-10
+    }
+  ],
+  "observed_orders": [
+    3.9387306645325215,
+    3.984778319148946
+  ],
+  "dense_semigroup_error": 5.11557492539252e-16,
+  "dense_norm_error": 7.793765632868599e-14,
+  "prior_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_scale_diagnostic_20261007.json",
+  "prior_sha256": "b0765ed7ad2aa8a94035e9e75dd4d49f40ada0b4a00901a5fa877004dafd1cd6",
+  "elapsed_s": 49.84910210000817,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\diagnose_point03_fdst_scale_fine.py": "3d8fa63f9d1f24833904e4b23d07d3ffb784f9409d42baaccd9fbf94048d0a6f",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fdst.py": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_exponential.py": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FDST-SCALE-FINE-CONTRACT.md": "7b9f58c7d19bc0cdc65176fa9448eb8fbe1c86b0bd85bfe3408fbc57fa767870"
+  }
+}
