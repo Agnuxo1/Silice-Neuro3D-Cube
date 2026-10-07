@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-07T18:10:57.631558+00:00",
+  "point03_closed": false,
+  "files": {
+    "C:\\Users\\Windows-500GB\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\m1\\evaluacion_T96_Q4.md": "bfab5a2afe54c523f34513f89ff8cb20909b66baac0eb9280c03e85059ca94fc",
+    "C:\\Users\\Windows-500GB\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\m1\\evidencias_T96_Q4.zip": "27a4a6b9772ef7b42c81fe60c36cb41a7e8ea24892452005dcca52f74d585172",
+    "C:\\Users\\Windows-500GB\\Documents\\Codex\\2026-10-07\\referenced-chatgpt-conversation-this-is-an\\outputs\\m1\\potencias_T96_Q4.csv": "29676ac35926c416b3077f00ac0ceb3e375e8c0ee6a111d00480940bfc5ab664"
+  },
+  "csv_rows": 74,
+  "archive_reports": 455,
+  "zip_crc_and_sha_verified": true
+}
