@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-07T14:41:16.725565+00:00",
+  "N": 767,
+  "prediction": {
+    "field": {
+      "powers": [
+        0.33221107750896745,
+        0.33251736439672624,
+        0.33269015719262646,
+        0.33280274547140776
+      ],
+      "orders": [
+        2.5652950127850973,
+        2.2626574608723806
+      ],
+      "discrepancy": 0.11797378095088885,
+      "prediction": 0.3328533205356861
+    },
+    "intensity": {
+      "powers": [
+        0.33245729835808063,
+        0.33267476750503766,
+        0.33279061239752644,
+        0.3328642007882665
+      ],
+      "orders": [
+        2.8224200119531972,
+        2.371771055092845
+      ],
+      "discrepancy": 0.15966757426315517,
+      "prediction": 0.33289647524084776
+    }
+  },
+  "point03_closed": false,
+  "no_N767_geometry_prepared": true,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_m1.py": "cba2162a6955ecea5dcbb05b8989301108e22f4f713df9d9168df0a5eac0c208",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-M1-CONTRACT.md": "6947ba98c12c4fdf0d5274f8620ac5dd26b803e2a6a15fe8d40a56f131d18d3d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_linear_prediction_20261007.json": "916b987027253fc5782690cd5d39d377e52084fc679b3d596e4aadd79247a7c8",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_linear_K640_20261007.json": "90c569a0f4e88d100760c24c43b979ee0d09cbb7b2f2bdf5d611a7a0c0ec4cff"
+  }
+}
