@@ -57,7 +57,7 @@ def main():
     def guard():
         assert time.monotonic()-start<115, 'Diagnostic work budget exceeded'
         assert psutil.virtual_memory().available>1.5*1024**3, 'Available RAM too low'
-        assert psutil.disk_usage(args.out).free>2*1024**3, 'Available disk too low'
+        assert psutil.disk_usage(str(args.out)).free>2*1024**3, 'Available disk too low'
 
     def load(path, expected):
         guard()
