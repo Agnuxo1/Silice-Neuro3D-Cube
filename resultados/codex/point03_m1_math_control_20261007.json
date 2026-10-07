@@ -1,0 +1,434 @@
+{
+  "created_utc": "2026-10-07T14:59:38.591871+00:00",
+  "pass_": true,
+  "no_optical_data_read": true,
+  "no_propagation": true,
+  "order_cases": [
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 0.5,
+      "coefficient": -0.0001,
+      "controller_order": 0.499999999997939,
+      "auditor_order": 0.4999999999979088
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 0.5,
+      "coefficient": 0.0001,
+      "controller_order": 0.499999999997939,
+      "auditor_order": 0.4999999999979088
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 1.0,
+      "coefficient": -0.0001,
+      "controller_order": 1.000000000001556,
+      "auditor_order": 1.0000000000015548
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 1.0,
+      "coefficient": 0.0001,
+      "controller_order": 1.000000000001556,
+      "auditor_order": 1.0000000000015548
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 2.0,
+      "coefficient": -0.0001,
+      "controller_order": 2.0000000000034395,
+      "auditor_order": 2.000000000003347
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 2.0,
+      "coefficient": 0.0001,
+      "controller_order": 2.0000000000034395,
+      "auditor_order": 2.000000000003347
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 3.0,
+      "coefficient": -0.0001,
+      "controller_order": 3.000000000000278,
+      "auditor_order": 3.000000000000278
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 3.0,
+      "coefficient": 0.0001,
+      "controller_order": 3.000000000000278,
+      "auditor_order": 3.000000000000278
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 6.0,
+      "coefficient": -0.0001,
+      "controller_order": 5.999999999999966,
+      "auditor_order": 5.99999999999986
+    },
+    {
+      "N": [
+        320,
+        400,
+        500
+      ],
+      "truth_order": 6.0,
+      "coefficient": 0.0001,
+      "controller_order": 5.999999999999966,
+      "auditor_order": 5.99999999999986
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 0.5,
+      "coefficient": -0.0001,
+      "controller_order": 0.5000000000014414,
+      "auditor_order": 0.500000000001331
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 0.5,
+      "coefficient": 0.0001,
+      "controller_order": 0.5000000000014414,
+      "auditor_order": 0.500000000001331
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 1.0,
+      "coefficient": -0.0001,
+      "controller_order": 0.9999999999925877,
+      "auditor_order": 0.9999999999929676
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 1.0,
+      "coefficient": 0.0001,
+      "controller_order": 0.9999999999925877,
+      "auditor_order": 0.9999999999929676
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 2.0,
+      "coefficient": -0.0001,
+      "controller_order": 1.9999999999952833,
+      "auditor_order": 1.9999999999952789
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 2.0,
+      "coefficient": 0.0001,
+      "controller_order": 1.9999999999952833,
+      "auditor_order": 1.9999999999952789
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 3.0,
+      "coefficient": -0.0001,
+      "controller_order": 2.9999999999988276,
+      "auditor_order": 2.9999999999988236
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 3.0,
+      "coefficient": 0.0001,
+      "controller_order": 2.9999999999988276,
+      "auditor_order": 2.9999999999988236
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 6.0,
+      "coefficient": -0.0001,
+      "controller_order": 6.000000000000482,
+      "auditor_order": 6.000000000000301
+    },
+    {
+      "N": [
+        400,
+        500,
+        640
+      ],
+      "truth_order": 6.0,
+      "coefficient": 0.0001,
+      "controller_order": 6.000000000000482,
+      "auditor_order": 6.000000000000301
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 0.5,
+      "coefficient": -0.0001,
+      "controller_order": 0.5000000000107342,
+      "auditor_order": 0.5000000000107129
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 0.5,
+      "coefficient": 0.0001,
+      "controller_order": 0.5000000000107342,
+      "auditor_order": 0.5000000000107129
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 1.0,
+      "coefficient": -0.0001,
+      "controller_order": 1.0000000000142515,
+      "auditor_order": 1.0000000000142495
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 1.0,
+      "coefficient": 0.0001,
+      "controller_order": 1.0000000000142515,
+      "auditor_order": 1.0000000000142495
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 2.0,
+      "coefficient": -0.0001,
+      "controller_order": 2.0000000000001563,
+      "auditor_order": 2.0000000000001474
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 2.0,
+      "coefficient": 0.0001,
+      "controller_order": 2.0000000000001563,
+      "auditor_order": 2.0000000000001474
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 3.0,
+      "coefficient": -0.0001,
+      "controller_order": 3.0000000000035203,
+      "auditor_order": 3.0000000000035003
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 3.0,
+      "coefficient": 0.0001,
+      "controller_order": 3.0000000000035203,
+      "auditor_order": 3.0000000000035003
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 6.0,
+      "coefficient": -0.0001,
+      "controller_order": 6.000000000001223,
+      "auditor_order": 6.00000000000072
+    },
+    {
+      "N": [
+        500,
+        640,
+        767
+      ],
+      "truth_order": 6.0,
+      "coefficient": 0.0001,
+      "controller_order": 6.000000000001223,
+      "auditor_order": 6.00000000000072
+    }
+  ],
+  "forecasts": [
+    {
+      "truth_order": 0.5,
+      "coefficient": -0.0001,
+      "truth": 0.33390865341727954,
+      "prediction": 0.33390865341727954,
+      "error": 0.0
+    },
+    {
+      "truth_order": 0.5,
+      "coefficient": 0.0001,
+      "truth": 0.3340913465827205,
+      "prediction": 0.3340913465827205,
+      "error": 0.0
+    },
+    {
+      "truth_order": 1.0,
+      "coefficient": -0.0001,
+      "truth": 0.33391655801825293,
+      "prediction": 0.333916558018253,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "truth_order": 1.0,
+      "coefficient": 0.0001,
+      "truth": 0.3340834419817471,
+      "prediction": 0.33408344198174705,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "truth_order": 2.0,
+      "coefficient": -0.0001,
+      "truth": 0.33393037435682127,
+      "prediction": 0.3339303743568213,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "truth_order": 2.0,
+      "coefficient": 0.0001,
+      "truth": 0.33406962564317877,
+      "prediction": 0.3340696256431787,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "truth_order": 3.0,
+      "coefficient": -0.0001,
+      "truth": 0.3339419029835275,
+      "prediction": 0.33394190298352755,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "truth_order": 3.0,
+      "coefficient": 0.0001,
+      "truth": 0.33405809701647254,
+      "prediction": 0.3340580970164725,
+      "error": 5.551115123125783e-17
+    },
+    {
+      "truth_order": 6.0,
+      "coefficient": -0.0001,
+      "truth": 0.33396624736676994,
+      "prediction": 0.33396624736676994,
+      "error": 0.0
+    },
+    {
+      "truth_order": 6.0,
+      "coefficient": 0.0001,
+      "truth": 0.3340337526332301,
+      "prediction": 0.3340337526332301,
+      "error": 0.0
+    }
+  ],
+  "rejections": [
+    {
+      "case": "constant",
+      "controller_rejected": true,
+      "auditor_rejected": true
+    },
+    {
+      "case": "nonmonotonic",
+      "controller_rejected": true,
+      "auditor_rejected": true
+    },
+    {
+      "case": "negative_order",
+      "controller_rejected": true,
+      "auditor_rejected": true
+    }
+  ],
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_m1_math.py": "3eadfd13e519a23d82b17514a59b78b6e1264411c76455e2d37a422d90c7953c",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_m1.py": "cba2162a6955ecea5dcbb05b8989301108e22f4f713df9d9168df0a5eac0c208",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_m1.py": "4576291a89eecc49cabe6352fe3dd1305a9cd00822c87648fab665736836a2ac",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-M1-MATH-CONTROL-CONTRACT.md": "7d1322577ccd58c1b689f51468e8ae0883868e210c3fa7b786889cb045f752b7"
+  },
+  "scope": "Scalar analytical formula verification only; not validation of the optical convergence hypothesis."
+}
