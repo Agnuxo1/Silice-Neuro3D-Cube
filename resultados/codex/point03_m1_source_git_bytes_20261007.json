@@ -1,0 +1,127 @@
+{
+  "working_all_match": true,
+  "committed_all_match": true,
+  "checks": [
+    {
+      "path": "scripts/run_point03_m1.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "Docs/POINT-03-M1-CONTRACT.md",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_m1_prediction_20261007.json",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "scripts/run_point03_exponential.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "scripts/run_point03_fdst_pilot.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "scripts/point03_fdst.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "scripts/run_point03_reconstructed.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "scripts/point03_union_geometry.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "scripts/point03_geometry_reference.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "experimentos/glass009_claude/adi2d.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "src/silice/coverage.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "src/silice/tracks.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "scripts/point03_linear_detector.py",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/geometry_source.txt",
+      "working_matches": true,
+      "in_git": false,
+      "git_matches": null
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/temporal_source.txt",
+      "working_matches": true,
+      "in_git": false,
+      "git_matches": null
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/geometry_report.json",
+      "working_matches": true,
+      "in_git": false,
+      "git_matches": null
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/geometry_selection.json",
+      "working_matches": true,
+      "in_git": false,
+      "git_matches": null
+    },
+    {
+      "path": "resultados/codex/point03_geometry_20261006234649Z/inputs/centres.json",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_fdst_accuracy_20261007_L2/assessment.json",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_fdst_accuracy_20261007_L2/integrity_audit.json",
+      "working_matches": true,
+      "in_git": true,
+      "git_matches": true
+    }
+  ],
+  "scope": "Sources only; M1 generated files not yet published; no optical fields examined."
+}
