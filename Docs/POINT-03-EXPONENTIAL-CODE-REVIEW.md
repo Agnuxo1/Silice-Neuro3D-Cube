@@ -40,3 +40,19 @@ Un PASS H requiere todos sus criterios; G permanece FAIL. Un FAIL H conserva
 punto3 abierto. El procedimiento no convierte un orden alto observado en
 precisión formal elevada. Quedan expresamente fuera Maxwell, modos físicos,
 frontera/dominio, metrología/fabricación y tolerancias de una red.
+
+## Límite adicional observado durante H, sin cambiar sus criterios
+
+En N256 yN400 la diferencia calculada entre R4/R8 es0; enN320 es1.22e-10
+relativa. La fuente instalada SciPy1.15.1 `_expm_multiply_simple_core`
+aplica un polinomio de Taylor en s subincrementos y una fase por trace shift.
+Como inferencia de esa estructura, particiones externas relacionadas por2
+pueden seleccionar el mismo grado y duplicar s, produciendo el mismo
+incremento interno efectivo. No se midieron los m_star/s reales de esos
+casos, así que no se afirma que ese mecanismo sea su causa comprobada.
+
+Los PASS R4/R8 sólo acreditan consistencia de las particiones examinadas;
+no equivalen a dos algoritmos independientes ni garantizan la exactitud de
+la referencia. La matriz/stencil/bucles, exponencial densa y controles de
+eigenmodos siguen siendo los contrastes independientes registrados. No se
+modifica ningún umbral ni se alinea fase después de observar esta limitación.
