@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-10-07T12:33:03.819921+00:00",
+  "manufactured_only": true,
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "controls_pass": true,
+  "N": 9,
+  "dx_m": 2.0195607721393294e-07,
+  "kinetic_spectral_radius_per_m": 16344461.981064592,
+  "constant_field_error": 9.71894897849323e-13,
+  "constant_norm_error": 1.0580425424677742e-12,
+  "dense_semigroup_error": 5.11557492539252e-16,
+  "dense_norm_error": 7.793765632868599e-14,
+  "reference_projection": 0.9999994806649445,
+  "rows": [
+    {
+      "steps": 3200,
+      "dz_m": 6.25e-07,
+      "dz_rho": 10.21528873816537,
+      "field_relative_error": 0.00045877221932380465,
+      "norm_relative_error": 1.2283507544452732e-12,
+      "projection_power": 0.9999997667545453,
+      "projection_error": 2.8608960078724266e-07
+    },
+    {
+      "steps": 6400,
+      "dz_m": 3.125e-07,
+      "dz_rho": 5.107644369082685,
+      "field_relative_error": 0.015041852176181442,
+      "norm_relative_error": 3.3879565819461277e-12,
+      "projection_power": 0.9999978971691651,
+      "projection_error": 1.5834957793892102e-06
+    },
+    {
+      "steps": 12800,
+      "dz_m": 1.5625e-07,
+      "dz_rho": 2.5538221845413425,
+      "field_relative_error": 0.0022628914878716827,
+      "norm_relative_error": 6.977307620559259e-12,
+      "projection_power": 0.9999996136381504,
+      "projection_error": 1.329732058907851e-07
+    },
+    {
+      "steps": 25600,
+      "dz_m": 7.8125e-08,
+      "dz_rho": 1.2769110922706712,
+      "field_relative_error": 0.0003092990754703575,
+      "norm_relative_error": 1.559241624704555e-11,
+      "projection_power": 0.9999994891268587,
+      "projection_error": 8.46191416936648e-09
+    }
+  ],
+  "observed_field_orders": [
+    -5.0350603812959625,
+    2.732742913971565,
+    2.871092978735132
+  ],
+  "order_is_diagnostic_only": true,
+  "elapsed_s": 7.408133600023575,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\diagnose_point03_fdst_scale.py": "862bb875d6a465374f79a650449e7c9b3310ab6ffe3b346c64e4ab793c712a62",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fdst.py": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_exponential.py": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FDST-SCALE-DIAGNOSTIC-CONTRACT.md": "9bb9fa543d6f916ef2c21b5cc10a017f4e56f401068ef75187c908885b17e3b4"
+  }
+}
