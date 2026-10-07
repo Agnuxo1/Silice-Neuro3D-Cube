@@ -1,0 +1,167 @@
+{
+  "created_utc": "2026-10-07T14:26:41.914124+00:00",
+  "integrity_pass": true,
+  "L2_accuracy_pass": true,
+  "point03_closed": false,
+  "L1_still_negative": true,
+  "rows": [
+    {
+      "N": 400,
+      "methods": {
+        "field": {
+          "P_core": 0.3325173008942276,
+          "levels": [
+            0.3325173008942276,
+            0.3325173008942276
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.3326747039831438,
+          "levels": [
+            0.3326747039831438,
+            0.3326747039831438
+          ],
+          "change": 0.0
+        }
+      },
+      "reference_methods": [
+        {
+          "field": {
+            "P_core": 0.33251736439672624,
+            "levels": [
+              0.33251736439672624,
+              0.33251736439672624
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.33267476750503766,
+            "levels": [
+              0.33267476750503766,
+              0.33267476750503766
+            ],
+            "change": 0.0
+          }
+        },
+        {
+          "field": {
+            "P_core": 0.33251736439672624,
+            "levels": [
+              0.33251736439672624,
+              0.33251736439672624
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.33267476750503766,
+            "levels": [
+              0.33267476750503766,
+              0.33267476750503766
+            ],
+            "change": 0.0
+          }
+        }
+      ],
+      "field_relative_error": 6.888016787309923e-07,
+      "power_errors": {
+        "field": 6.350249864839341e-08,
+        "intensity": 6.352189385605556e-08
+      },
+      "reference_field_difference": 0.0,
+      "bound_vs_computed_reference": 1.0571509971797254e-06,
+      "reference_consistency_bound": 0.0,
+      "quadrature_change": 0.0,
+      "combined_reference_relative_indicator": 1.0571509971797254e-06,
+      "gates": {
+        "field": true,
+        "power": true,
+        "reference_field": true,
+        "quadrature": true,
+        "observable_bound": true
+      },
+      "pass_": true
+    },
+    {
+      "N": 626,
+      "methods": {
+        "field": {
+          "P_core": 0.3328022398685799,
+          "levels": [
+            0.3328022398685799,
+            0.3328022398685799
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.33286634846517615,
+          "levels": [
+            0.33286634846517615,
+            0.33286634846517615
+          ],
+          "change": 0.0
+        }
+      },
+      "reference_methods": [
+        {
+          "field": {
+            "P_core": 0.33280266065013986,
+            "levels": [
+              0.33280266065013986,
+              0.33280266065013986
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.3328667691070599,
+            "levels": [
+              0.3328667691070599,
+              0.3328667691070599
+            ],
+            "change": 0.0
+          }
+        },
+        {
+          "field": {
+            "P_core": 0.33280266104069056,
+            "levels": [
+              0.33280266104069056,
+              0.33280266104069056
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.3328667694976858,
+            "levels": [
+              0.3328667694976858,
+              0.3328667694976858
+            ],
+            "change": 0.0
+          }
+        }
+      ],
+      "field_relative_error": 5.14488635874961e-06,
+      "power_errors": {
+        "field": 4.2117211068726235e-07,
+        "intensity": 4.210325096343226e-07
+      },
+      "reference_field_difference": 5.872692576620547e-10,
+      "bound_vs_computed_reference": 7.892951126111625e-06,
+      "reference_consistency_bound": 9.009504564607072e-10,
+      "quadrature_change": 0.0,
+      "combined_reference_relative_indicator": 7.893852076568087e-06,
+      "gates": {
+        "field": true,
+        "power": true,
+        "reference_field": true,
+        "quadrature": true,
+        "observable_bound": true
+      },
+      "pass_": true
+    }
+  ],
+  "new_checkpoints_checked": 32,
+  "P_in": 1.0000000000000002,
+  "P_total": 0.7673841472487662,
+  "scope": "Direct practical precision only for N400/N626 relative to computed FD references; no observed-order or spatial-convergence acceptance."
+}

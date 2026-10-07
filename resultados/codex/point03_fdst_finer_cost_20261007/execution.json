@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-07T14:29:18.630040+00:00",
+  "manufactured_only": true,
+  "no_T96_propagation": true,
+  "elapsed_s": 117.08908949996112,
+  "children": [
+    {
+      "N": 767,
+      "returncode": 0,
+      "result_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_finer_cost_20261007\\n767.json",
+      "result_sha256": "a7e5325a0e71b308901ded22f61ca9c40f3ede7b5610ab26173617557bad59e1"
+    },
+    {
+      "N": 959,
+      "returncode": 0,
+      "result_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_finer_cost_20261007\\n959.json",
+      "result_sha256": "88d59187a08fedaf0e26b8dc8afb83d019b28e2391bac2aad3023d00d6af83ee"
+    },
+    {
+      "N": 1199,
+      "returncode": 0,
+      "result_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_finer_cost_20261007\\n1199.json",
+      "result_sha256": "9b47e2755f1a8d09c7d51a6fa82bba7292e1608b4c41e0e40803fcc760e18fff"
+    }
+  ]
+}

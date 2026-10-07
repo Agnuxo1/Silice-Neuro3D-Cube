@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-07T14:24:45.577842+00:00",
+  "returncode": 0,
+  "provenance": "local",
+  "remote_advice": false,
+  "status": "ready",
+  "ready": null,
+  "scope": "Local doctor only; inherited remote security block retained; no probe/query bypass."
+}
