@@ -84,6 +84,9 @@ def export(out,visible,probe=None,pilot=None):
             cp=read(sol['checkpoints'][-1]['path'])
             for method,v in row['methods'].items():records.append(dict(estudio='L1_FDST',N=626,dx_um=128/626,dz_adi_um=row['dz_m']*1e6,segmentos_exponencial='',detector='bilineal_'+method,P_nucleo_entrada=v['P_core'],P_total_entrada=row['raw_total']/pa['P_in'],campo_sha256=cp['field_sha256']))
     csvpath=out/'potencias_T96_Q4.csv'
+    for record in records:
+        record['paso_longitudinal_um']=record.pop('dz_adi_um')
+        record['integrador']='FDST' if record['estudio']=='L1_FDST' else 'ADI' if record['estudio'] in ('E','G2') else 'Exponencial Taylor'
     with csvpath.open('x',encoding='utf-8-sig',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=list(records[0]));writer.writeheader();writer.writerows(records)
     files=[epath/'assessment.json',gpath/'assessment.json',gpath/'execution.json',gpath/'integrity_audit.json',hpath/'assessment.json',hpath/'execution.json',hpath/'integrity_audit.json',hpath/'manifest.json',ROOT/'resultados/codex/point03_exponential_20261007_H1/execution.json',ROOT/'resultados/codex/point03_exponential_20261007_H1/prediction.json',kpredpath]
