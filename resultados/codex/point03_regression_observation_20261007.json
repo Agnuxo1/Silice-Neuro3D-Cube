@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-07",
+  "command": ".venv/Scripts/python.exe -B scripts/check.py",
+  "source_commit": "28d41112773ead34a4cdce30fb2b07463f3a7f7b",
+  "exit_code": 0,
+  "tests_run": 51,
+  "suite_elapsed_s": 1.721,
+  "result": "OK",
+  "provenance": "Observed tool result; raw console output was not saved to a file. This is a factual observation record, not reconstructed raw output.",
+  "scientific_scope": "Regression only; point03 remains open."
+}

@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-07T15:24:23.735625+00:00",
+  "head": "28d41112773ead34a4cdce30fb2b07463f3a7f7b",
+  "base": "2143233c59fc47efa151898d02ea2abda73d8329",
+  "commits_ahead": 85,
+  "changed_files": 953,
+  "present_changed_blobs": 953,
+  "changed_blob_bytes": 423691199,
+  "largest_changed_blobs": [
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n640Ldz.npz",
+      "git_blob": "1e8e50b8aef559e1229f0c8690ebf47d8074d8ef",
+      "size_bytes": 16453032
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n640L.npz",
+      "git_blob": "ef5e2fa903880562f7b45945f278d7868004f57a",
+      "size_bytes": 16452764
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512C.npz",
+      "git_blob": "93fa54aa102fc32023701884c3e0485f74f6a99e",
+      "size_bytes": 11270071
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512Ldz.npz",
+      "git_blob": "f2b196a0522f1dcb116df810809458454c870bcd",
+      "size_bytes": 10531031
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512R.npz",
+      "git_blob": "1e29d4150e26e662bbccd42ad4c9329fcbc77fba",
+      "size_bytes": 10530897
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512L.npz",
+      "git_blob": "6d7778e09607ab1cd7d7ab3d4e96d7d6d343118f",
+      "size_bytes": 10530802
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512Lcoverage32.npz",
+      "git_blob": "4da0ded2a57117ef947a446253517dc015c867e9",
+      "size_bytes": 10530742
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n384L.npz",
+      "git_blob": "96db6df3c7958468b7a60bd8d5071b4ac1fd2d20",
+      "size_bytes": 5906087
+    },
+    {
+      "path": "resultados/codex/glass006b_refinement_v2__near_coherent.npz",
+      "git_blob": "30f8c89f8cb3b6a1b17c735b43fda3dfe577b702",
+      "size_bytes": 4343038
+    },
+    {
+      "path": "resultados/codex/glass006b_refinement_v2__near_right.npz",
+      "git_blob": "25f79e2a5da991d39fa5b8fff9311a9861b4be49",
+      "size_bytes": 4097257
+    }
+  ],
+  "findings": [],
+  "publication_preflight_pass": true,
+  "scope": "Committed changes: file size, symlinks, selected credential signatures. Not a proof of absence of every secret. No raw values disclosed.",
+  "script_sha256": "f98f3848d0a35c7a57f520ae0142fbcc4534676aeaf2a0ce62da83c3f544f059"
+}
