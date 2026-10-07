@@ -171,10 +171,10 @@ as recorded below.
 The earlier 664-line runner at `174ad56c...` could not be recovered byte
 for byte from the unavailable temporary execution service. A dedicated
 recovery attempt returned no output within three minutes. A new runner
-is therefore being implemented against the unchanged committed contract
-and the reviewed assessor interface. It requires a new full review and
-source freeze before any optical propagation. The earlier static review
-does not automatically certify the replacement source.
+was therefore implemented against the unchanged committed contract
+and the reviewed assessor interface. It received the new full review
+recorded below. The earlier static review was not used to certify the
+replacement source.
 
 ## Bounded scalar preflight — PASS
 
@@ -197,7 +197,40 @@ draft, wrapper, JSON reports and both raw child logs are retained.
 
 This preflight performed zero optical propagations and does not verify
 the replacement runner's end-to-end evidence interface. Final runner
-hashes and its review will be recorded before Stage E propagation.
+hashes and its review are recorded below before Stage E propagation.
+
+## Replacement runner — reviewed before execution
+
+The final replacement runner has 841 lines, 49,428 bytes, and SHA256
+`dbd5f503df5ac2eacb158cd7c96411943a9574460e134ed03bdb69395bfe9b2c`.
+Its syntax passed AST parsing with the Point 01 interpreter. The root
+reviewer read the complete implementation by sections; the independent
+assessor author also read it completely against the committed contract
+and the unchanged assessor interface. No blocking finding remained after
+the final two-line diagnostic-retention correction.
+
+The correction retains `error.diagnostic` if the worker's exit/resource
+or integrity check fails. It does not alter operators, powers, numerical
+gates, the case plan, or budgets. The earlier replacement draft was
+`dd4751df964d5760812eeccce093b083cdcd50260b496f1316e5d349618acf59`.
+This is a newly reviewed implementation, not a recovered copy of
+`174ad56c...`.
+
+The reviewed sequence contains eight field chains and 144 checkpoints.
+It checks the prescribed complete D grid identities, inherited ADI
+methods, fixed sparse options, chained fields, all input/source hashes
+and the prospective prediction after checkpoint 48. The final output
+inventory is attempted independently even when a provenance check fails.
+Any retained processing beyond the declared budget makes the attempt
+operationally failed.
+
+The external 200-line launcher was reviewed separately. Before launch,
+its two source pins are set to the runner hash above and assessor
+`18f99c958e8766e57322ec637942c004a11aa7a4e2ae688b4f1a005f7964590a`.
+It requires the two scientific-verdict aliases to be the same boolean
+and requires the corresponding return code 0 or 2. No optical execution
+was performed before this source freeze. Passing scalar self-checks and
+static review do not constitute end-to-end optical validation.
 
 ## Method references
 
