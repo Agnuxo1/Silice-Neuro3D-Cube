@@ -14,3 +14,5 @@ resultados/codex/point01_preflight_*/** -text whitespace=cr-at-eol
 requirements/cpu-win-py313.wheels.json -text whitespace=cr-at-eol
 resultados/codex/point02_boards_*/** -text whitespace=cr-at-eol
 resultados/codex/point03_*/** -text whitespace=cr-at-eol
+# M1 runs against this exact CRLF byte stream; preserve its recorded hash.
+scripts/run_point03_m1.py -text whitespace=cr-at-eol
