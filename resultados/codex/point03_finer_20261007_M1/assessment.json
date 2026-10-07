@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-10-07T18:03:02.098411+00:00",
+  "integrity_pass": true,
+  "scientific_pass": false,
+  "point03_closed": false,
+  "closure_requires_independent_audit": true,
+  "P_in": 0.9999999999999998,
+  "methods": {
+    "19": {
+      "field": {
+        "P_core": 0.33284362035171283,
+        "levels": [
+          0.33284362035171283,
+          0.33284362035171283
+        ],
+        "change": 0.0
+      },
+      "intensity": {
+        "P_core": 0.33288641123033724,
+        "levels": [
+          0.33288641123033724,
+          0.33288641123033724
+        ],
+        "change": 0.0
+      }
+    },
+    "31": {
+      "field": {
+        "P_core": 0.3328436201753269,
+        "levels": [
+          0.3328436201753269,
+          0.3328436201753269
+        ],
+        "change": 0.0
+      },
+      "intensity": {
+        "P_core": 0.33288641105392863,
+        "levels": [
+          0.33288641105392863,
+          0.33288641105392863
+        ],
+        "change": 0.0
+      }
+    },
+    "FDST": {
+      "field": {
+        "P_core": 0.33284344353047907,
+        "levels": [
+          0.33284344353047907,
+          0.33284344353047907
+        ],
+        "change": 0.0
+      },
+      "intensity": {
+        "P_core": 0.33288623446230997,
+        "levels": [
+          0.33288623446230997,
+          0.33288623446230997
+        ],
+        "change": 0.0
+      }
+    }
+  },
+  "gates": {
+    "field": {
+      "actual": 0.3328436201753269,
+      "prediction": 0.3328533205356861,
+      "residual": 9.70036035918831e-06,
+      "limit": 4.087470391916925e-06,
+      "new_order": 3.229242992955084,
+      "order_disagreement": 0.2993226382131683,
+      "order_failure": null,
+      "reference_error": 1.763859058812045e-10,
+      "temporal_error": 1.7664484786017454e-07,
+      "space_indicator": 0.00011711884003276448,
+      "total_indicator": 0.0001600865398682367,
+      "conditions": {
+        "holdout": false,
+        "order": false,
+        "reference_power": true,
+        "temporal_power": true,
+        "uncertainty": true
+      },
+      "pass_": false
+    },
+    "intensity": {
+      "actual": 0.33288641105392863,
+      "prediction": 0.33289647524084776,
+      "residual": 1.0064186919123141e-05,
+      "limit": 2.2210265662125917e-06,
+      "new_order": 4.06005591215015,
+      "order_disagreement": 0.4158279820740727,
+      "order_failure": null,
+      "reference_error": 1.764086099420581e-10,
+      "temporal_error": 1.765916186613481e-07,
+      "space_indicator": 6.363937354290676e-05,
+      "total_indicator": 0.00010660702017188421,
+      "conditions": {
+        "holdout": false,
+        "order": false,
+        "reference_power": true,
+        "temporal_power": true,
+        "uncertainty": true
+      },
+      "pass_": false
+    }
+  },
+  "global_gates": {
+    "reference_field": true,
+    "reference_bound": true,
+    "temporal_field": true,
+    "temporal_bound": true,
+    "quadrature": true
+  },
+  "reference_field_difference": 3.4119548288574007e-10,
+  "temporal_field_difference": 1.98989124720192e-06,
+  "reference_bound": 5.233533714409062e-10,
+  "temporal_bound": 3.052256925329396e-06,
+  "reconstruction_difference": 4.279087860170616e-05,
+  "quadrature_change": 0.0,
+  "checkpoints_checked": 90,
+  "scope": "Conditional local scalar core power only; all historical failures retained."
+}
