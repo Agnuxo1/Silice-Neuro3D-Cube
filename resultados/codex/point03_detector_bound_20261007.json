@@ -1,0 +1,116 @@
+{
+  "created_utc": "2026-10-07T13:42:41.917044+00:00",
+  "manufactured_only": true,
+  "no_T96_fields_read": true,
+  "pass_": true,
+  "matrices": [
+    {
+      "N": 400,
+      "quadrature": 16,
+      "active_cells": 1176,
+      "min_local_eigenvalue_relative_cell_area": 0.0,
+      "min_entry_relative_cell_area": 0.0,
+      "row_bound_relative_cell_area": 1.0,
+      "intensity_bound_relative_cell_area": 0.9999999999999999,
+      "hat_partition_identity_error": 2.4651903288156614e-16,
+      "area_relative_error": 2.220446049250313e-16
+    },
+    {
+      "N": 400,
+      "quadrature": 32,
+      "active_cells": 1176,
+      "min_local_eigenvalue_relative_cell_area": 0.0,
+      "min_entry_relative_cell_area": 0.0,
+      "row_bound_relative_cell_area": 1.0,
+      "intensity_bound_relative_cell_area": 0.9999999999999999,
+      "hat_partition_identity_error": 2.4651903288156614e-16,
+      "area_relative_error": 2.220446049250313e-16
+    },
+    {
+      "N": 626,
+      "quadrature": 16,
+      "active_cells": 2828,
+      "min_local_eigenvalue_relative_cell_area": 0.0,
+      "min_entry_relative_cell_area": 0.0,
+      "row_bound_relative_cell_area": 1.0,
+      "intensity_bound_relative_cell_area": 1.0,
+      "hat_partition_identity_error": 1.509451445773385e-16,
+      "area_relative_error": 2.220446049250313e-16
+    },
+    {
+      "N": 626,
+      "quadrature": 32,
+      "active_cells": 2828,
+      "min_local_eigenvalue_relative_cell_area": 0.0,
+      "min_entry_relative_cell_area": 0.0,
+      "row_bound_relative_cell_area": 1.0,
+      "intensity_bound_relative_cell_area": 1.0,
+      "hat_partition_identity_error": 3.01890289154677e-16,
+      "area_relative_error": 2.220446049250313e-16
+    }
+  ],
+  "pairs": [
+    {
+      "N": 400,
+      "pair": 0,
+      "max_energy_recomputation_error": 2.6020852139652106e-18,
+      "maximum_difference_to_bound_ratio": 0.0002983557040942026,
+      "bound": 0.028264792441451782
+    },
+    {
+      "N": 400,
+      "pair": 1,
+      "max_energy_recomputation_error": 3.0357660829594124e-18,
+      "maximum_difference_to_bound_ratio": 2.0942168880260064e-05,
+      "bound": 0.028222156870402276
+    },
+    {
+      "N": 400,
+      "pair": 2,
+      "max_energy_recomputation_error": 1.3010426069826053e-18,
+      "maximum_difference_to_bound_ratio": 0.00012046750897874318,
+      "bound": 0.028205564343808755
+    },
+    {
+      "N": 400,
+      "pair": 3,
+      "max_energy_recomputation_error": 2.6020852139652106e-18,
+      "maximum_difference_to_bound_ratio": 0.00026522279374915274,
+      "bound": 0.028251249350833285
+    },
+    {
+      "N": 626,
+      "pair": 0,
+      "max_energy_recomputation_error": 3.469446951953614e-18,
+      "maximum_difference_to_bound_ratio": 0.000229941329594453,
+      "bound": 0.02825145531555845
+    },
+    {
+      "N": 626,
+      "pair": 1,
+      "max_energy_recomputation_error": 1.3010426069826053e-18,
+      "maximum_difference_to_bound_ratio": 0.00020560886856228988,
+      "bound": 0.02827267158170467
+    },
+    {
+      "N": 626,
+      "pair": 2,
+      "max_energy_recomputation_error": 2.6020852139652106e-18,
+      "maximum_difference_to_bound_ratio": 5.869590457523035e-05,
+      "bound": 0.028236312125327855
+    },
+    {
+      "N": 626,
+      "pair": 3,
+      "max_energy_recomputation_error": 1.734723475976807e-18,
+      "maximum_difference_to_bound_ratio": 2.9565462476588983e-05,
+      "bound": 0.028244698324815447
+    }
+  ],
+  "elapsed_s": 4.3596392999752425,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\verify_point03_detector_bound.py": "57c3e053a75f0ec6baeea1e98f9df96c33a7eaafef2208356e71fde6488a0ec8",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_linear_detector.py": "494081be1ce4c8235ae2dcc390d9f5c5fdb4d0700abe377908bbf37002b937c9",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-DETECTOR-BOUND-CONTRACT.md": "2ac0f1e1d6b8d2f95b5c6fb3d3e067bef7bd53a8fcbcca8c87c6a1cc67701d66"
+  }
+}

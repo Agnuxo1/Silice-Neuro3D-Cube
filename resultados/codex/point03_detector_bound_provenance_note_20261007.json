@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-07T13:50:35.902563+00:00",
+  "source_bytes_unchanged": true,
+  "result_sha256": "1f9b857db0de046db3cf118fac010315bd5bfe9773ba167e14ae88dade03c77b",
+  "contract_and_source_written_before_calculation": true,
+  "first_git_commit_exit_code": 1,
+  "first_commit_reason": "No changes staged because asynchronous add had not completed",
+  "git_commit_not_confirmed_before_auxiliary_test": true,
+  "no_T96_fields_read": true,
+  "optical_L1_and_L2_freezes_unaffected": true
+}
