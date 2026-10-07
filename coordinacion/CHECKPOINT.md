@@ -1,3 +1,110 @@
+## M1 y N1 completos — 2026-10-07T18:24:59.719775+00:00
+
+M1 terminado sin relanzamiento/error,12064,711s. Auditor PASS90campos,
+4primarios y20fuentes; dictamen científico FAIL predicción y orden ambos
+detectores. Referencia/temporal/cuadratura pasan. Punto3 abierto.
+N1 registrado ca73a4c,18casos/7,792s; controles analíticos PASS; diagnóstico
+de inestabilidad de órdenes respaldado en1D, sin atribución causalT96.
+Paquete M1 exportado:74filas/455informes, CRC/SHA verificados; outputs/m1.
+N1 outputs/n1. Siete arrays finales portables:14observables PASS<=1e-12.
+Preservación posterior PASS333main/603E y estadoGit principal igual.
+No quedan simulaciones activas de este ensayo; no se inicia barrido modal.
+JEVfallbacklocal por bloqueo heredado. Siguiente:publicar evidencias y
+rediseñar el estudio espacial controlando malla/muestreo/dominio, sin
+relajar M1 ni repetir casos idénticos buscando PASS.
+
+## M1: seis tramos finales pendientes — 2026-10-07T17:52:46.390352+00:00
+
+Tramos guardados {"19": 19, "31": 31, "FDST": 34} de90; proceso original12475.
+No hay dictamen final todavía. Al terminar, ejecutar scripts/audit_point03_m1.py
+--out resultados/codex/point03_finer_20261007_M1 una sola vez.
+Guardar dictamen original, preservar todos los fallos históricos y adoptar
+cierre local sólo si pasan todos los criterios y el auditor separado.
+Punto3 abierto; siguientes no iniciados. GitHubPR1draft actualizado.
+JEVfallbacklocal/bloqueoheredado. Siguiente:auditar,documentar,exportar,push.
+
+## M1: tramo final de propagación — 2026-10-07T17:36:19.030588+00:00
+
+Tramos guardados {"19": 19, "31": 31, "FDST": 26} de90; proceso original12475.
+Ambas referencias completas; FDST sigue dentro de la ejecución original.
+No hay dictamen final, no se cambia ningún criterio/fuente/presupuesto.
+Punto3 abierto; sin avance modal; GitHubPR1draft publicado.
+JEVfallbacklocal por bloqueo heredado. Siguiente: terminarFDST y auditar
+los90campos y todos los criterios desde datos crudos.
+
+## M1: continuidad del contraste temporal — 2026-10-07T17:20:34.121189+00:00
+
+Tramos guardados {"19": 19, "31": 31, "FDST": 17} de90; proceso original12475.
+Referencias completas, FDST continúa. No hay dictamen final del ensayo.
+No se relanza ni modifica presupuesto/fuentes/criterios.
+Punto3 abierto; GitHubPR1draft publicado; barrido modal pendiente.
+JEVfallbacklocal por bloqueo remoto heredado. Siguiente: completarFDST,
+auditor independiente, informe, exportación y actualización de PR1.
+
+## M1: contraste FDST en ejecución — 2026-10-07T17:05:05.159736+00:00
+
+Tramos guardados {"19": 19, "31": 31, "FDST": 9} de90; proceso original12475.
+Referencias19/31 completas; FDST sigue sin relanzamiento.
+Criterios y fuentes congelados; sin lectura/evaluación final de potencias.
+Punto3 abierto, barrido modal no iniciado; GitHubPR1draft publicado.
+JEVfallbacklocal por bloqueo heredado. Siguiente: completarFDST, auditar,
+guardar dictamen científico y actualizar evidencias locales/remotas.
+
+## M1: ambas referencias completas, FDST activo — 2026-10-07T16:49:33.909749+00:00
+
+Referencia19 y31 completas:50tramos. FDST iniciado; tramos guardados {"19": 19, "31": 31, "FDST": 1}.
+Proceso original12475 sigue activo;90tramos previstos en total.
+No se han evaluado potencias/predicción finales del ensayo incompleto.
+Auditor separado4fbde6e preparado; contrato/predicciones/fuentes congelados.
+Punto3 abierto; GitHubPR1draft publicado; no hay avance modal.
+JEVfallbacklocal por bloqueo heredado. Siguiente: completar40FDST y auditar.
+
+## M1 próximo al contraste entre integradores — 2026-10-07T16:39:43.540437+00:00
+
+Tramos guardados {"19": 19, "31": 27} de90, proceso original12475.
+Sin dictamen ni lectura de potencias finales antes de completar el ensayo.
+Todo contrato/criterio/fuente activo se mantiene congelado; punto3 abierto.
+GitHubPR1draft ya contiene fuentes y registros prospectivos.
+JEVfallbacklocal por bloqueo heredado; no se inicia el punto modal.
+Siguiente: completar referencia31 y FDST, auditor independiente, informe y PR.
+
+## M1 en curso — 2026-10-07T16:28:58.388543+00:00
+
+Tramos guardados {"19": 19, "31": 22} de90; proceso original12475.
+Sin nueva óptica relanzada ni cambio de criterios/fuentes.
+Todavía falta completar segunda referencia y FDST antes del dictamen.
+Punto3 abierto; PR1draft publicado, sin iniciar barrido modal.
+JEVfallbacklocal/bloqueoheredado. Siguiente: terminar M1 y auditar.
+
+## Continuidad M1 — 2026-10-07T16:18:12.435718+00:00
+
+Tramos guardados {"19": 19, "31": 17}; proceso original12475 activo.
+Todos los reportes parciales guardados indican completed, sin dictamen final.
+Presupuesto/fuentes/criterios congelados; no relanzamiento ni avance modal.
+PR1 conserva investigación publicada; todos los20sources coinciden en Git.
+JEVfallbacklocal por bloqueo heredado. Siguiente: completar31 yFDST, auditar.
+
+## M1: ejecución sin relanzamiento — 2026-10-07T16:07:32.236676+00:00
+
+Tramos guardados: {"19": 19, "31": 12} de90previstos; proceso original12475.
+Primera referencia completa; segunda continúa; FDST pendiente.
+No hay dictamen científico ni lectura final de potencia del ensayo.
+Presupuesto y fuentes siguen congelados; punto3 abierto y siguientes pendientes.
+GitHubPR1draft actualizado hasta df54408;20fuentes exactas en Git verificadas.
+JEVfallbacklocal por bloqueo heredado. Siguiente: terminar y auditar M1.
+
+## Continuidad M1 y fuentes remotas — 2026-10-07T15:56:20.506257+00:00
+
+M1 sigue en su proceso original 12475. Tramos guardados: {"19": 19, "31": 6}.
+Primera referencia completa; segunda en ejecución; contraste FDST pendiente.
+No se han evaluado potencias finales ni predicción del ensayo incompleto.
+Las 20 fuentes del manifiesto coinciden en disco y en Git, comprobación
+point03_m1_source_git_bytes_full_20261007.json; commit df54408 publicado.
+PR1 en borrador, punto3 abierto, sin iniciar hitos posteriores.
+JEV fallback local por bloqueo remoto heredado.
+Siguiente: completar las tres trayectorias, auditor independiente, dictamen,
+exportación y actualización de la misma propuesta de revisión.
+
 ## Primera referencia M1 completa — 2026-10-07T15:43:18.648164+00:00
 
 Referencia19:19/19reportescompleted, segunda31iniciada.

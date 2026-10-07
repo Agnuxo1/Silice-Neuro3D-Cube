@@ -41,6 +41,11 @@ pasan. Predicción y estabilidad de orden FALLAN en ambos detectores:
 discrepancias29,93% y41,58% frente al20% registrado. El punto3 sigue
 abierto; no iniciar el barrido modal antes de su cierre.
 
+N1: contraste analítico1D registrado después del FAIL M1,18combinaciones,
+controles PASS y diagnóstico de órdenes inestables respaldado. No es
+convergencia T96 ni identificación causal del fallo. Se necesita controlar
+muestreo/dominio del problema real antes de otra afirmación de convergencia.
+
 J: diagnóstico de dispersión aplicado a cinco referencias consistentes,
 sin cierre ni cobertura probabilística. Fallo de un control sintético
 del indicador seleccionado retenido, envolvente distinta identificada.
@@ -54,6 +59,6 @@ Informes: [E](POINT-03-ANALYTIC-PROPAGATION-RESULTS.md),
 [particiones internas](POINT-03-EXPONENTIAL-PARTITION-RESULTS.md),
 [L1](POINT-03-FDST-PILOT-RESULTS.md),
 [L2](POINT-03-FDST-ACCURACY-RESULTS.md),
-[M1](POINT-03-M1-RESULTS.md).
+[M1](POINT-03-M1-RESULTS.md), [N1](POINT-03-N1-RESULTS.md).
 Arrays, fuentes congeladas, predicciones y fallos se retienen en D:.
 JEVfallbacklocal identificado; bloqueo remoto heredado conservado.

@@ -13,10 +13,12 @@ la precisión longitudinal práctica frente a las referencias discretas.
 Los controles aprobados no equivalen a convergencia espacial ni a un
 dispositivo físico validado.
 
-M1 continúa desde su lanzamiento original. Su contrato, predicciones y
-fuentes se congelaron antes de la geometría y propagación nueva. Están
-previstos 90 tramos y un auditor separado. No se declara un resultado
-hasta completar y auditar el ensayo. No se inicia el barrido modal.
+M1 terminó desde su lanzamiento original en12064,711s:90tramos y20fuentes
+auditados, sin error operativo. Su contrato/predicciones/fuentes estaban
+congelados antes de la geometría nueva. Predicción y estabilidad de orden
+FALLAN en ambos detectores; precisión longitudinal e integridad pasan.
+No se inicia el barrido modal. N1 aporta un diagnóstico1D con verdad
+analítica conocida; no revoca este resultado ni demuestra su causa.
 
 ## Comprobaciones de publicación
 
@@ -32,10 +34,12 @@ hasta completar y auditar el ensayo. No se inicia el barrido modal.
   producidos por E, sin cambios. No certifica todos los archivos no
   rastreados del checkout principal.
 
-Se suben fuentes, contratos y evidencias comprometidas. Los arrays
+Se suben fuentes, contratos, informes archivados y siete arrays finales
+con un verificador portable de observables. Los arrays intermedios
 adicionales de las recuperaciones y ensayos largos permanecen en D:;
 no afirmar que todos los datos crudos están disponibles remotamente.
-Los informes conservan sus hashes y rutas de origen. La auditoría
+El [índice de revisión](POINT-03-REVIEW-INDEX.md) especifica disponibilidad
+y límites de reproducción. Los informes conservan hashes y rutas de origen. La auditoría
 independiente del evaluador no equivale a replicación física externa.
 
 JEV: bloqueo remoto heredado conservado; evaluación local identificada,
