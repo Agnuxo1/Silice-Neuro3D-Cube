@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-07T21:52:25.979087+00:00",
+  "rows": {
+    "field": {
+      "actual": 0.33244502353291067,
+      "baseline": 0.332517364396726,
+      "change": 7.234086381535665e-05,
+      "reference_change": 1.0564271679669446e-11,
+      "hypothesis_pass": false,
+      "reference_pass": true
+    },
+    "intensity": {
+      "actual": 0.33260242129707634,
+      "baseline": 0.3326747675050374,
+      "change": 7.234620796103819e-05,
+      "reference_change": 1.0569545239036415e-11,
+      "hypothesis_pass": false,
+      "reference_pass": true
+    }
+  },
+  "reference_field_difference": 1.846262887193515e-10,
+  "reference_bound": 2.832052495114258e-10,
+  "quadrature_change": 5.551115123125783e-17,
+  "controls_eligible": true,
+  "hypothesis_pass": false,
+  "point03_closed": false,
+  "requires_independent_audit": true,
+  "scope": "Boundary-placement diagnostic N400 only; no convergence closure."
+}
