@@ -13,7 +13,7 @@ def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def fmt(x):return 'no disponible' if x is None else f'{x:.9g}'
 
-def export(out,visible,probe=None):
+def export(out,visible,probe=None,pilot=None):
     assert not out.exists();out.mkdir(parents=True)
     epath=ROOT/'resultados/codex/point03_analytic_20261007T004526617696Z';gpath=ROOT/'resultados/codex/point03_reconstructed_20261007_G2';hpath=ROOT/'resultados/codex/point03_exponential_20261007_H2'
     h=read(hpath/'assessment.json');he=read(hpath/'execution.json');ha=read(hpath/'integrity_audit.json');g=read(gpath/'assessment.json');e=read(epath/'assessment.json')
@@ -25,6 +25,12 @@ def export(out,visible,probe=None):
         pe=read(probe/'execution.json');pa=read(probe/'assessment.json');pi=read(probe/'integrity_audit.json')
         assert pe['status']=='completed' and pi['integrity_pass'] and sha(probe/'assessment.json')==pe['assessment_sha256']
         assert k and k['K640_pass']
+    la=le=None
+    if pilot:
+        assert probe is not None
+        le=read(pilot/'execution.json');la=read(pilot/'assessment.json');li=read(pilot/'integrity_audit.json')
+        assert le['status']=='completed' and li['integrity_pass'] and li['acceptance_recomputed']
+        assert sha(pilot/'assessment.json')==le['assessment_sha256'] and not la['point03_closed']
     closed=h['point03_closed'] or bool(pa and pa['point03_closed'])
     current=('CERRADO: convergencia local de potencia aceptada por '+('H2' if h['point03_closed'] else 'K y la prueba nueva N626')) if closed else 'ABIERTO: convergencia local aún no aceptada'
     lines=['# Evaluación T96/Q4 — 7 de octubre de 2026','',f'**Punto 3: {current}.**', '', 'El ensayo E se recuperó completo, sin relanzarlo: ocho simulaciones, 144 checkpoints y 28 800 pasos. Su evaluación científica es negativa. Los archivos originales y los fallos históricos se conservaron.', '', '## Contrastes realizados', '', '| Estudio | Resultado | Evidencia principal |','|---|---|---|', '| E original | FAIL | Discrepancia de órdenes 42,956%; predicción N500 fuera de tolerancia; control longitudinal N400 fuera del intervalo registrado |', '| F, reconstrucción del detector | Diagnóstico favorable, sin cierre | Predicciones espaciales pasan; el control longitudinal N400 sigue fallando |', '| G2, refinamiento ADI | FAIL | Control longitudinal N400/N500 y predicción N640 incumplen; integridad de 233 chunks válida |', f"| H2, referencia exponencial | {'PASS local' if h['scientific_pass'] else 'FAIL'} | {ha['checkpoints_checked']} checkpoints auditados; referencias temporales y nueva predicción N640 contrastadas |", '', 'H1 y G1 sufrieron fallos operativos conservados. Sus recuperaciones G2/H2 reutilizaron resultados válidos y repitieron sólo el trabajo necesario, con contratos y límites fijados previamente. H2 reutiliza 48 checkpoints de H1 y añade 28, con particiones de 11/17 tramos en N640.', '', '## Referencia H2: resultados y criterios', '', '| N | dx (µm) | Potencia núcleo / entrada, campo reconstruido | Partición fina |','|---:|---:|---:|---:|']
@@ -45,7 +51,16 @@ def export(out,visible,probe=None):
         lines += ['', '## Prueba prospectiva independiente N626', '', 'Geometría nueva con 48 celdas de referencia; 28 checkpoints auditados; predicciones procedentes exclusivamente de N320/400/500. N640 no se utilizó para reajustarlas.', '', '| Detector | Potencia medida | Predicción previa | Residual | Límite | Pasa |','|---|---:|---:|---:|---:|---|']
         for m,v in pa['gates'].items():lines.append(f"| {m} | {fmt(v['actual'])} | {fmt(v['prediction'])} | {fmt(v['residual'])} | {fmt(v['limit'])} | {all(v[q] for q in ('holdout_pass','reference_pass','quadrature_pass'))} |")
         lines += ['',f"Diferencia relativa entre referencias: {fmt(pa['reference_field_difference'])}. Resultado del ensayo nuevo: {pa['scientific_pass']}. E/G/H2 conservan sus resultados propios."]
+        for method,v in pa['gates'].items():lines.append(f"- Concordancia de potencia {method}: diferencia {fmt(v['reference_power_difference'])}; límite previo 1e-10; pasa: {v['reference_pass']}.")
+        lines += ['', 'También fallan ambas concordancias de potencia entre las particiones 11/17. El diagnóstico cúbico posterior revela potencia N626 superior a N640; no se utiliza como aceptación ni demuestra una causa.']
+    if la:
+        lines += ['', '## Piloto temporal independiente FDST', '', 'Segundo integrador del mismo operador espacial FD: difracción por transformada seno y composición de cuarto orden. Entradas N626 reutilizadas por hash. Los controles con matriz densa y modos conocidos pasaron antes de T96. Los criterios del piloto se congelaron antes de las tres trayectorias ópticas.', '', '| dz (µm) | Error relativo de campo frente R17 | Diferencia de potencia, campo bilineal | Diferencia de potencia, intensidad bilineal |', '|---:|---:|---:|---:|']
+        for row in la['rows']:lines.append(f"| {fmt(row['dz_m']*1e6)} | {fmt(row['errors']['field'])} | {fmt(row['errors']['power_field'])} | {fmt(row['errors']['power_intensity'])} |")
+        lines += ['',f"Resultado temporal FDST: {la['pilot_pass']}; 56 checkpoints auditados. Criterios individuales: {la['gates']}.", '', 'Órdenes observados al dividir dz por dos:']
+        for quantity,orders in la['observed_orders'].items():lines.append(f"- {quantity}: "+' / '.join(fmt(x) for x in orders)+'.')
+        lines += ['', 'Este piloto sólo contrasta el error temporal. Su resultado no cierra la convergencia espacial, no sustituye los fallos anteriores ni valida Maxwell o la fabricación. La referencia Taylor presenta la discrepancia de potencia registrada en K626; no se afirma exactitud ilimitada.']
     lines += ['', '## Alcance y continuidad', '', 'Modelo escalar paraxial ideal: longitud 2 mm, dominio 128 µm, núcleo de radio 6 µm, longitud de onda 1550 nm. Se comparó potencia fraccional del núcleo, sin renormalizar salidas ni alinear fases. La referencia exponencial resuelve el operador espacial discretizado, no el continuo exacto ni Maxwell.', '', 'Las particiones de un mismo algoritmo exponencial son controles de consistencia. Particiones relacionadas pueden compartir incrementos internos; no se presentan como dos algoritmos independientes. Campo complejo, fase, frontera, perfiles medidos y fabricación quedan sujetos a los puntos posteriores.', '', 'El checkout principal se preservó. La copia aislada retiene fuentes, contratos, predicciones, arrays completos y fallos. El paquete adjunto contiene informes y hashes, no todos los arrays. JEV: fallback local identificado; el bloqueo de seguridad remoto heredado se conservó, sin recomendación remota válida.', '', '## Fuentes primarias consultadas', '', '- [NASA: convergencia espacial](https://www.grc.nasa.gov/www/wind/valid/tutorial/spatconv.html).', '- [SciPy 1.15.1: acción de la exponencial](https://docs.scipy.org/doc/scipy-1.15.1/reference/generated/scipy.sparse.linalg.expm_multiply.html).', '- [Eça–Hoekstra 2014: estimación con dispersión](https://doi.org/10.1016/j.jcp.2014.01.006). Adaptación diagnóstica explícita, sin importar una garantía de cobertura.', '- [Vassallo 1997: interfaces y discretización óptica](https://opg.optica.org/josaa/abstract.cfm?uri=josaa-14-12-3273). Sólo resumen del editor.', '- [Henning–Peterseim 2017: potenciales abruptos](https://arxiv.org/html/1608.02267). Formulación e hipótesis examinadas; método distinto, sin transferencia automática del teorema.', '']
+    if la:lines += ['- [Yoshida 1990, artículo original: composición de órdenes superiores](https://tlakoba.w3.uvm.edu/math6737/for_final_topics/SSM_1990_Yoshida.pdf). Secciones2–4 examinadas; la aplicación con absorción se contrastó numéricamente.', '- [SciPy1.15.1: transformada seno multidimensional](https://docs.scipy.org/doc/scipy-1.15.1/reference/generated/scipy.fft.dstn.html).', '']
     report=out/'evaluacion_T96_Q4.md';report.write_text('\n'.join(lines),encoding='utf-8')
     records=[]
     for r in e['independent_measurements']:
@@ -64,6 +79,10 @@ def export(out,visible,probe=None):
         for part,vals in pa['methods'].items():
             sol=pe['solutions'][part];cp=read(sol['checkpoints'][-1]['path'])
             for m,v in vals.items():records.append(dict(estudio='K626',N=626,dx_um=128/626,dz_adi_um='',segmentos_exponencial=part,detector='bilineal_'+m,P_nucleo_entrada=v['P_core'],P_total_entrada=cp['raw_total']/pa['P_in'],campo_sha256=sol['field_sha256']))
+    if la:
+        for row,sol in zip(la['rows'],le['solutions'],strict=True):
+            cp=read(sol['checkpoints'][-1]['path'])
+            for method,v in row['methods'].items():records.append(dict(estudio='L1_FDST',N=626,dx_um=128/626,dz_adi_um=row['dz_m']*1e6,segmentos_exponencial='',detector='bilineal_'+method,P_nucleo_entrada=v['P_core'],P_total_entrada=row['raw_total']/pa['P_in'],campo_sha256=cp['field_sha256']))
     csvpath=out/'potencias_T96_Q4.csv'
     with csvpath.open('x',encoding='utf-8-sig',newline='') as f:
         writer=csv.DictWriter(f,fieldnames=list(records[0]));writer.writeheader();writer.writerows(records)
@@ -74,6 +93,12 @@ def export(out,visible,probe=None):
     files += [ROOT/'scripts'/name for name in ('run_point03_exponential.py','recover_point03_h.py','assess_point03_h_recovered.py','point03_linear_detector.py','predict_point03_linear.py','assess_point03_linear.py','run_point03_k626.py','point03_scatter_uncertainty.py','diagnose_point03_scatter.py')]
     files += [ROOT/'resultados/codex'/name for name in ('point03_linear_detector_preflight_20261007.json','point03_scatter_uncertainty_preflight_20261007_attempt1.json','point03_scatter_uncertainty_preflight_20261007_run2.json')]
     files += [ROOT/'Docs'/name for name in ('POINT-03-ANALYTIC-PROPAGATION-RESULTS.md','POINT-03-G-RESULTS.md','POINT-03-EXPONENTIAL-REFERENCE-CONTRACT.md','POINT-03-H-RECOVERY-CONTRACT.md','POINT-03-LINEAR-DETECTOR-CONTRACT.md','POINT-03-SCATTER-DIAGNOSTIC-CONTRACT.md','POINT-03-INTERFACE-LITERATURE.md','POINT-03-EXPONENTIAL-CODE-REVIEW.md','POINT-03-EXPONENTIAL-PARTITION-RESULTS.md')]
+    if la:
+        files += [pilot/name for name in ('execution.json','assessment.json','manifest.json','integrity_audit.json')]
+        files += [Path(link['path']) for sol in le['solutions'] for link in sol['checkpoints']]
+        files += [ROOT/'scripts'/name for name in ('point03_fdst.py','run_point03_fdst_pilot.py','audit_point03_fdst_pilot.py')]
+        files += [ROOT/'Docs'/name for name in ('POINT-03-FDST-KERNEL-CONTRACT.md','POINT-03-FDST-PILOT-CONTRACT.md','POINT-03-FDST-LITERATURE.md','POINT-03-K626-RESULTS.md')]
+        files += [ROOT/'resultados/codex'/name for name in ('point03_fdst_preflight_attempt1_20261007.json','point03_fdst_manufactured_timing_20261007.json','point03_fdst_manufactured_timing_metadata_audit_20261007.json')]
     manifest={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in files};(out/'SHA256.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     archive=out/'evidencias_T96_Q4.zip'
     with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED) as z:
@@ -89,5 +114,5 @@ def export(out,visible,probe=None):
     (out/'export.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8');print(json.dumps(result));return result
 
 def main():
-    p=argparse.ArgumentParser(__doc__);p.add_argument('--out',type=Path,required=True);p.add_argument('--visible',type=Path,required=True);p.add_argument('--probe',type=Path);args=p.parse_args();export(args.out,args.visible,args.probe)
+    p=argparse.ArgumentParser(__doc__);p.add_argument('--out',type=Path,required=True);p.add_argument('--visible',type=Path,required=True);p.add_argument('--probe',type=Path);p.add_argument('--pilot',type=Path);args=p.parse_args();export(args.out,args.visible,args.probe,args.pilot)
 if __name__=='__main__':main()
