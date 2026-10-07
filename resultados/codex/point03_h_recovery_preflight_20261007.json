@@ -1,0 +1,15 @@
+{
+  "pass_": true,
+  "rows": [
+    {
+      "segments": 11,
+      "dense_relative_error": 1.70803722321497e-15
+    },
+    {
+      "segments": 17,
+      "dense_relative_error": 1.0102705364663972e-15
+    }
+  ],
+  "partition_difference": 2.315644267630672e-15,
+  "scope": "Manufactured small case only; no new optical fields"
+}
