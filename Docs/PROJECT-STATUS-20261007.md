@@ -7,7 +7,7 @@ sin cambios. Trabajos en copia aislada, checkout principal preservado.
 |---|---|---|
 | 1. Entorno reproducible | Cerrado para la plataforma comprobada | Sin cambiar el alcance de las 51 pruebas históricas |
 | 2. Inventario | Cerrado por reconciliación, con esta actualización | Se distinguen resultados, controles y trabajos pendientes |
-| 3. T96/Q4 | **Abierto** | E recuperado completo; G2/H2/K626 negativos; K640 favorable; L1 negativo de orden; L2 positivo para precisión longitudinal práctica |
+| 3. T96/Q4 | **Abierto** | E recuperado completo; G2/H2/K626 negativos; K640 favorable; L1 negativo de orden; L2 positivo para precisión longitudinal práctica; M1 completo y auditado negativo |
 | Barrido modal y siguientes | Pendientes | Se mantiene el orden; no iniciados durante el punto 3 |
 
 E: ocho simulaciones y controles longitudinales recuperados sin relanzar;
@@ -34,11 +34,12 @@ sus geometrías, con ajustes de cinco mallas y sensibilidad incluyendo
 N626 negativo. Las bandas no bastan para un cierre. Los costes sintéticos
 se registraron antes de ejecutar; no constituyen trayectorias T96.
 
-M1 N767 está en ejecución desde el lanzamiento original, con predicción
-estricta congelada antes de preparar geometría. Contrato `bbc891d`,
-predicciones `60684a5`, auditor separado `4fbde6e`;90tramos previstos.
-La geometría pasó48contrastes y área global. No hay dictamen final M1
-y el punto3 sigue abierto; no iniciar el barrido modal antes de su cierre.
+M1 N767 terminó en12064,711s, sin relanzamiento ni fallo operativo.
+Contrato `bbc891d`, predicciones `60684a5`, auditor separado `4fbde6e`;
+90tramos y20fuentes auditados. Geometría, referencia y precisión temporal
+pasan. Predicción y estabilidad de orden FALLAN en ambos detectores:
+discrepancias29,93% y41,58% frente al20% registrado. El punto3 sigue
+abierto; no iniciar el barrido modal antes de su cierre.
 
 J: diagnóstico de dispersión aplicado a cinco referencias consistentes,
 sin cierre ni cobertura probabilística. Fallo de un control sintético
@@ -52,6 +53,7 @@ Informes: [E](POINT-03-ANALYTIC-PROPAGATION-RESULTS.md),
 [G](POINT-03-G-RESULTS.md), [H2/K640](POINT-03-H2-K640-RESULTS.md),
 [particiones internas](POINT-03-EXPONENTIAL-PARTITION-RESULTS.md),
 [L1](POINT-03-FDST-PILOT-RESULTS.md),
-[L2](POINT-03-FDST-ACCURACY-RESULTS.md).
+[L2](POINT-03-FDST-ACCURACY-RESULTS.md),
+[M1](POINT-03-M1-RESULTS.md).
 Arrays, fuentes congeladas, predicciones y fallos se retienen en D:.
 JEVfallbacklocal identificado; bloqueo remoto heredado conservado.
