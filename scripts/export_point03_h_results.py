@@ -102,6 +102,9 @@ def export(out,visible,probe=None,pilot=None):
         files += [ROOT/'scripts'/name for name in ('point03_fdst.py','run_point03_fdst_pilot.py','audit_point03_fdst_pilot.py')]
         files += [ROOT/'Docs'/name for name in ('POINT-03-FDST-KERNEL-CONTRACT.md','POINT-03-FDST-PILOT-CONTRACT.md','POINT-03-FDST-LITERATURE.md','POINT-03-K626-RESULTS.md')]
         files += [ROOT/'resultados/codex'/name for name in ('point03_fdst_preflight_attempt1_20261007.json','point03_fdst_manufactured_timing_20261007.json','point03_fdst_manufactured_timing_metadata_audit_20261007.json')]
+        files += [ROOT/'resultados/codex'/name for name in ('point03_fdst_scale_diagnostic_20261007.json','point03_fdst_scale_fine_20261007.json')]
+        files += [ROOT/'scripts'/name for name in ('diagnose_point03_fdst_scale.py','diagnose_point03_fdst_scale_fine.py')]
+        files += [ROOT/'Docs'/name for name in ('POINT-03-FDST-NUMERICAL-SCALE.md','POINT-03-FDST-SCALE-DIAGNOSTIC-CONTRACT.md','POINT-03-FDST-SCALE-DIAGNOSTIC-RESULTS.md','POINT-03-FDST-SCALE-FINE-CONTRACT.md','POINT-03-FDST-SCALE-FINE-RESULTS.md')]
     manifest={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in files};(out/'SHA256.json').write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
     archive=out/'evidencias_T96_Q4.zip'
     with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED) as z:
