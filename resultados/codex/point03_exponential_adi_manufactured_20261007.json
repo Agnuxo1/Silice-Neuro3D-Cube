@@ -1,0 +1,29 @@
+{
+  "scope": "Manufactured small-grid contrast only; no T96 optical fields",
+  "results": [
+    {
+      "steps": 100,
+      "dz_m": 1.0000000000000001e-07,
+      "raw_field_relative_error": 2.4688177277415325e-07
+    },
+    {
+      "steps": 200,
+      "dz_m": 5.0000000000000004e-08,
+      "raw_field_relative_error": 6.172092309807333e-08
+    },
+    {
+      "steps": 400,
+      "dz_m": 2.5000000000000002e-08,
+      "raw_field_relative_error": 1.5430263318496397e-08
+    }
+  ],
+  "observed_orders": [
+    1.9999887824330926,
+    1.9999969572077736
+  ],
+  "pass_": true,
+  "sources": {
+    "scripts/run_point03_exponential.py": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+    "experimentos/glass009_claude/adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb"
+  }
+}
