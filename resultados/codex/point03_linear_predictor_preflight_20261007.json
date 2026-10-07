@@ -1,0 +1,26 @@
+{
+  "pass_": true,
+  "manufactured_orders": [
+    0.5,
+    2,
+    4
+  ],
+  "targets": [
+    626,
+    640
+  ],
+  "constant_and_oscillation_rejected": true,
+  "predictor_selfcheck": {
+    "pass_": true,
+    "manufactured_orders": [
+      0.5,
+      2,
+      4
+    ],
+    "targets": [
+      626,
+      640
+    ],
+    "constant_and_oscillation_rejected": true
+  }
+}
