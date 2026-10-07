@@ -38,7 +38,7 @@ def main():
     if args.h:
         h=json.loads(args.h.read_text())
         ax[0].plot([128/r['N'] for r in h['rows']],
-                   [100*r['methods']['8']['field']['P_core'] for r in h['rows']],
+                   [100*r['methods'][str(r.get('fine_segments',8))]['field']['P_core'] for r in h['rows']],
                    '+--',label='H: referencia temporal sin separación',color='#ca8a20')
         subtitle+=' | H: '+('PASS local de potencia' if h['scientific_pass'] else 'FAIL')
     fig.text(.08,.84,subtitle,fontsize=11)
