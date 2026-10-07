@@ -1,0 +1,105 @@
+{
+  "created_utc": "2026-10-07T10:30:58.451233+00:00",
+  "prediction_path": "resultados\\codex\\point03_linear_prediction_20261007.json",
+  "prediction_sha256": "916b987027253fc5782690cd5d39d377e52084fc679b3d596e4aadd79247a7c8",
+  "h_assessment_sha256": "83fdb429468a232f59c9385329fad2d95dd1916781fadb44ae7f380567cefe0e",
+  "integrity_pass": true,
+  "rows": [
+    {
+      "N": 640,
+      "methods": {
+        "11": {
+          "field": {
+            "P_core": 0.3328027455310255,
+            "levels": [
+              0.3328027455310255,
+              0.3328027455310255
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.3328642008478953,
+            "levels": [
+              0.3328642008478953,
+              0.3328642008478953
+            ],
+            "change": 0.0
+          }
+        },
+        "17": {
+          "field": {
+            "P_core": 0.33280274547140776,
+            "levels": [
+              0.33280274547140776,
+              0.33280274547140776
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.3328642007882665,
+            "levels": [
+              0.3328642007882665,
+              0.3328642007882665
+            ],
+            "change": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "gates": {
+    "field": {
+      "actual": 0.33280274547140776,
+      "prediction": {
+        "N": 640,
+        "order": 2.565295012785098,
+        "infinity": 0.33291381765504335,
+        "prediction": 0.33279508668446367
+      },
+      "residual": 7.658786944086948e-06,
+      "limit": 1.1258827878130041e-05,
+      "holdout_pass": true,
+      "terms": {
+        "space": 0.00022045010726288452,
+        "temporal": 1.3615419658385974e-07,
+        "detector": 6.14553168587495e-05,
+        "quadrature": 0.0,
+        "reference": 5.961775517704382e-11
+      },
+      "combined": 0.00028204163793597305,
+      "uncertainty_pass": true,
+      "temporal_pass": true,
+      "reference_pass": true,
+      "quadrature_pass": true
+    },
+    "intensity": {
+      "actual": 0.3328642007882665,
+      "prediction": {
+        "N": 640,
+        "order": 2.822420011953198,
+        "infinity": 0.3329226678717433,
+        "prediction": 0.33285687712052797
+      },
+      "residual": 7.323667738534656e-06,
+      "limit": 7.358839074006474e-06,
+      "holdout_pass": true,
+      "terms": {
+        "space": 0.00014408754452550267,
+        "temporal": 1.3622503297616717e-07,
+        "detector": 6.14553168587495e-05,
+        "quadrature": 0.0,
+        "reference": 5.962880189613884e-11
+      },
+      "combined": 0.00020567914604603023,
+      "uncertainty_pass": true,
+      "temporal_pass": true,
+      "reference_pass": true,
+      "quadrature_pass": true
+    }
+  },
+  "K640_pass": true,
+  "H2_closed": false,
+  "N626_permitted": true,
+  "point03_closed": false,
+  "scope": "K640 screening only; new N626 prospectively predicted probe mandatory for K acceptance."
+}

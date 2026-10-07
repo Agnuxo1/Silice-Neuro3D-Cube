@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-10-07T10:30:46.082538+00:00",
+  "integrity_pass": true,
+  "checkpoints_checked": 76,
+  "new_checkpoints": 28,
+  "retained_checkpoints": 48,
+  "source_files_checked": 14,
+  "rows": [
+    {
+      "N": 256,
+      "segments": 4,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.7678380573517042,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 256,
+      "segments": 8,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.7678380573517042,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 320,
+      "segments": 4,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.7676158204309019,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 320,
+      "segments": 8,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.76761582041069,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 400,
+      "segments": 4,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.767384166089914,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 400,
+      "segments": 8,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.767384166089914,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 500,
+      "segments": 4,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.7671979150539632,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 500,
+      "segments": 8,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.7671979150539632,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 640,
+      "segments": 11,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.7670516209313515,
+      "max_positive_power_increment": 0
+    },
+    {
+      "N": 640,
+      "segments": 17,
+      "initial_power": 1.0000000000000002,
+      "final_power": 0.7670516207938811,
+      "max_positive_power_increment": 0
+    }
+  ],
+  "scientific_pass": false,
+  "point03_closed": false,
+  "scope": "Hashes, chains, shapes, raw powers, dissipativity and operational limits; no added scientific acceptance criterion."
+}
