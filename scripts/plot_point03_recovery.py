@@ -45,13 +45,13 @@ def main():
     ax[0].set(xlim=(.52,.18 if args.g else .24),xlabel='Paso transversal dx (µm)',ylabel='Potencia del núcleo (% de la entrada)')
     ax[0].legend(fontsize=8,frameon=False)
     ax[0].set_title('El método de integración cambia el funcional',loc='left',fontsize=11)
-    names=['E','F campo','F intensidad']
+    names=['E\nN500','F campo\nN500','F intensidad\nN500']
     ratios=[e['holdout']['absolute_residual']/e['holdout']['maximum_residual']]
     ratios += [f['spatial'][m]['residual']/f['spatial'][m]['limit'] for m in ('field','intensity')]
     if args.g:
-        names+=['G N640'];ratios+=[g['holdout']['field']['residual']/g['holdout']['field']['limit']]
+        names+=['G\nN640'];ratios+=[g['holdout']['field']['residual']/g['holdout']['field']['limit']]
     if args.h:
-        names+=['H N640'];ratios+=[h['holdout']['field']['residual']/h['holdout']['field']['limit']]
+        names+=['H\nN640'];ratios+=[h['holdout']['field']['residual']/h['holdout']['field']['limit']]
     ax[1].bar(names,ratios,color=['#a64636','#236f8c','#328754','#694694','#ca8a20'][:len(names)],width=.55)
     ax[1].axhline(1,color='#555555',linestyle='--',lw=1.3)
     ax[1].set(ylabel='Residual de predicción / límite previo',ylim=(0,max(6.3,max(ratios)*1.08)))
