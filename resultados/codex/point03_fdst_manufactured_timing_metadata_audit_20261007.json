@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-07T11:55:29.268257+00:00",
+  "timing_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_manufactured_timing_20261007.json",
+  "timing_sha256": "14ace7e7370d9bf5a1478fc34d316e90a6c67bbee5021d9757b04d82f991fb77",
+  "metadata_correction_only": true,
+  "original_source_sha256_is_module_name": true,
+  "kernel_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fdst.py",
+  "kernel_sha256": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+  "h_helper_sha256": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+  "manufactured_control_pass": true,
+  "field_relative_error": 2.541177907421221e-13,
+  "seconds_per_step": 0.18242289400019218,
+  "no_optical_propagation": true,
+  "raw_report_unchanged": true
+}

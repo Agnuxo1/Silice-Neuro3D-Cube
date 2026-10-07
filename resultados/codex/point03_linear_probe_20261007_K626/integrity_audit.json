@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-07T11:28:35.080296+00:00",
+  "integrity_pass": true,
+  "N": 626,
+  "checkpoints_checked": 28,
+  "geometry_reference_cells": 48,
+  "input_power": 0.9999999999999993,
+  "chains": [
+    {
+      "segments": 11,
+      "final_raw_power": 0.7670676132905526,
+      "max_positive_power_increment": 0
+    },
+    {
+      "segments": 17,
+      "final_raw_power": 0.7670676141910013,
+      "max_positive_power_increment": 0
+    }
+  ],
+  "scientific_pass": false,
+  "point03_closed": false,
+  "scope": "Evidence integrity recheck, not an additional optical solver."
+}

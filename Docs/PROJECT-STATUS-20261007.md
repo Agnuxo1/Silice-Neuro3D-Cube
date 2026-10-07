@@ -7,7 +7,7 @@ sin cambios. Trabajos en copia aislada, checkout principal preservado.
 |---|---|---|
 | 1. Entorno reproducible | Cerrado para la plataforma comprobada | Sin cambiar el alcance de las 51 pruebas históricas |
 | 2. Inventario | Cerrado por reconciliación, con esta actualización | Se distinguen resultados, controles y trabajos pendientes |
-| 3. T96/Q4 | **Abierto** | E recuperado completo; G2/H2 negativos; K640 favorable, nueva prueba N626 en curso |
+| 3. T96/Q4 | **Abierto** | E recuperado completo; G2/H2 negativos; K640 favorable; K626 completo y negativo; contraste FDST registrado |
 | Barrido modal y siguientes | Pendientes | Se mantiene el orden; no iniciados durante el punto 3 |
 
 E: ocho simulaciones y controles longitudinales recuperados sin relanzar;
@@ -20,9 +20,10 @@ No reinterpretar controles favorables como aprobación de la predicción.
 
 K: reconstrucciones bilineales verificadas antes de medir nuevos
 observables; predicciones640/626 congeladas. K640 pasa ambos métodos;
-la intensidad queda próxima a su límite. La prueba N626 es nueva y
-mantiene las predicciones originales y todos los umbrales. El estado
-de convergencia seguirá abierto hasta finalizar/auditar/evaluar esa prueba.
+la intensidad queda próxima a su límite. K626 terminó con integridad
+PASS y resultados negativos en ambas predicciones y ambas concordancias
+de potencia. Punto3 abierto. El nuevo kernelFDST pasa controles conocidos;
+su piloto temporal está registrado y no permite cerrar convergencia espacial.
 
 J: diagnóstico de dispersión aplicado a cinco referencias consistentes,
 sin cierre ni cobertura probabilística. Fallo de un control sintético
