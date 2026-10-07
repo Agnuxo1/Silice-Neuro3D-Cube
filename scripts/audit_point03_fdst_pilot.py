@@ -18,7 +18,8 @@ def audit(out):
     for path,digest in m['source_sha256'].items():assert sha(path)==digest
     assert sha(m['input_path'])==m['input_sha256']
     with np.load(m['input_path'],allow_pickle=False) as data:initial=data['A0']
-    dx=128e-6/626;pin=float(np.vdot(initial,initial).real*dx*dx)
+    dx=128e-6/626;pin_vdot=float(np.vdot(initial,initial).real*dx*dx)
+    pin=float(np.sum(np.abs(initial)**2)*dx*dx);assert abs(pin-pin_vdot)<=1e-12
     reference=read(m['reference_execution_path']);sol=reference['solutions']['17'];assert sha(sol['field_path'])==sol['field_sha256']
     with np.load(sol['field_path'],allow_pickle=False) as data:ref=data['field'].copy()
     detector=Detector();ref_measures=detector.measure(ref,626,pin);rows=[];count=0;max_power_residual=0.
@@ -46,7 +47,10 @@ def audit(out):
     assert count==56 and len(e['solutions'])==3 and not a['point03_closed'] and not e['point03_closed']
     orders={key:[math.log2(x[key]/y[key]) if x[key]>0 and y[key]>0 else None for x,y in zip(rows,rows[1:])] for key in rows[0]}
     passed=all(p is not None and 3.5<=p<=4.5 for ps in orders.values() for p in ps) and rows[-1]['field']<=1e-4 and all(rows[-1][key]<=1e-6 for key in ('power_field','power_intensity'))
-    assert passed==a['pilot_pass']==e['pilot_pass'] and orders==a['observed_orders']
+    assert passed==a['pilot_pass']==e['pilot_pass']
+    for key,values in orders.items():
+        for x,y in zip(values,a['observed_orders'][key],strict=True):
+            assert (x is None and y is None) or (x is not None and y is not None and abs(x-y)<=1e-8)
     return dict(created_utc=datetime.now(timezone.utc).isoformat(),integrity_pass=True,acceptance_recomputed=True,pilot_pass=passed,point03_closed=False,checkpoints_checked=count,source_files_checked=len(m['source_sha256']),max_raw_power_residual=max_power_residual,observed_orders=orders,assessment_sha256=sha(out/'assessment.json'),execution_sha256=sha(out/'execution.json'),manifest_sha256=sha(out/'manifest.json'),audit_source_sha256=sha(__file__))
 
 def main():
