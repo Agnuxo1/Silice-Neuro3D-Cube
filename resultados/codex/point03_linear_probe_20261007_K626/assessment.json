@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-07T11:28:25.626019+00:00",
+  "integrity_pass": true,
+  "scientific_pass": false,
+  "point03_closed": false,
+  "checkpoints_checked": 28,
+  "reference_field_difference": 5.872692576620547e-10,
+  "methods": {
+    "11": {
+      "field": {
+        "P_core": 0.3328026606501399,
+        "levels": [
+          0.3328026606501399,
+          0.3328026606501399
+        ],
+        "change": 0.0
+      },
+      "intensity": {
+        "P_core": 0.33286676910706003,
+        "levels": [
+          0.33286676910706003,
+          0.33286676910706003
+        ],
+        "change": 0.0
+      }
+    },
+    "17": {
+      "field": {
+        "P_core": 0.3328026610406906,
+        "levels": [
+          0.3328026610406906,
+          0.3328026610406906
+        ],
+        "change": 0.0
+      },
+      "intensity": {
+        "P_core": 0.33286676949768584,
+        "levels": [
+          0.33286676949768584,
+          0.33286676949768584
+        ],
+        "change": 0.0
+      }
+    }
+  },
+  "gates": {
+    "field": {
+      "actual": 0.3328026610406906,
+      "prediction": 0.3327881552636028,
+      "residual": 1.4505777087836513e-05,
+      "limit": 1.1250384806416048e-05,
+      "holdout_pass": false,
+      "reference_power_difference": 3.9055070288895877e-10,
+      "reference_pass": false,
+      "quadrature_pass": true
+    },
+    "intensity": {
+      "actual": 0.33286676949768584,
+      "prediction": 0.3328526391824184,
+      "residual": 1.4130315267424365e-05,
+      "limit": 7.6157100159401915e-06,
+      "holdout_pass": false,
+      "reference_power_difference": 3.9062580947657466e-10,
+      "reference_pass": false,
+      "quadrature_pass": true
+    }
+  },
+  "P_in": 0.9999999999999993,
+  "P_total": 0.7670676141910019,
+  "scope": "Local scalar core power for fixed T96/2mm/128um/input. K640 budget mandatory, no full field/phase/boundary/Maxwell/fabrication closure."
+}
