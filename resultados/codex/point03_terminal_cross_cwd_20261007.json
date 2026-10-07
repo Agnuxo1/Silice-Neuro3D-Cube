@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-07T18:29:03.556793+00:00",
+  "terminal_verification_pass": true,
+  "arrays_checked": 7,
+  "rows": [
+    {
+      "N": 767,
+      "label": "19",
+      "errors": {
+        "field": 0.0,
+        "intensity": 0.0
+      }
+    },
+    {
+      "N": 767,
+      "label": "31",
+      "errors": {
+        "field": 0.0,
+        "intensity": 0.0
+      }
+    },
+    {
+      "N": 767,
+      "label": "FDST",
+      "errors": {
+        "field": 0.0,
+        "intensity": 0.0
+      }
+    },
+    {
+      "N": 320,
+      "label": "primary",
+      "errors": {
+        "field": 0.0,
+        "intensity": 0.0
+      }
+    },
+    {
+      "N": 400,
+      "label": "primary",
+      "errors": {
+        "field": 0.0,
+        "intensity": 0.0
+      }
+    },
+    {
+      "N": 500,
+      "label": "primary",
+      "errors": {
+        "field": 0.0,
+        "intensity": 0.0
+      }
+    },
+    {
+      "N": 640,
+      "label": "primary",
+      "errors": {
+        "field": 0.0,
+        "intensity": 0.0
+      }
+    }
+  ],
+  "point03_closed": false,
+  "scope": "Portable numerical observable verification only, not full chain audit or independent physical replication."
+}
