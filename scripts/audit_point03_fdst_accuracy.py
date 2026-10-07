@@ -2,7 +2,10 @@
 import argparse
 from datetime import datetime, timezone
 import json
+import os
 from pathlib import Path
+for variable in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','NUMEXPR_NUM_THREADS'):
+    os.environ[variable]='1'
 import numpy as np
 from point03_linear_detector import Detector
 from run_point03_exponential import sha, write
