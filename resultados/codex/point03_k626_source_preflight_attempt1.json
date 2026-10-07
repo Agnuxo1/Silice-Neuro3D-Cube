@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-10-07T10:16:41.952536+00:00",
+  "pass_": false,
+  "error_type": "AssertionError",
+  "cause": "Adapter visited nested coordinates function and asserted outer name",
+  "no_geometry_prepared": true,
+  "no_propagation": true,
+  "source_path": "resultados\\codex\\point03_k626_source_preflight_attempt1_source.txt"
+}
