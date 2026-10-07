@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-07T13:08:44.188864+00:00",
+  "integrity_pass": true,
+  "acceptance_recomputed": true,
+  "pilot_pass": false,
+  "point03_closed": false,
+  "checkpoints_checked": 56,
+  "source_files_checked": 13,
+  "max_raw_power_residual": 1.8762769116165146e-14,
+  "observed_orders": {
+    "field": [
+      7.580339544104266,
+      2.6059180229828156
+    ],
+    "power_field": [
+      6.353926857257561,
+      2.4046593089308614
+    ],
+    "power_intensity": [
+      6.351655969755055,
+      2.4022275798959356
+    ]
+  },
+  "assessment_sha256": "4d6c98c45b38cb58603b7b09e699998ea1027eb538ee726a9566a38f296141eb",
+  "execution_sha256": "57c6eb0f70ce865a553d11bafd6ba69680893197672ca7bd067ea5dce08a7721",
+  "manifest_sha256": "1cbb8d181119175887601a62a3ac891c2ae89d04d01ba1c24e48ba6ad6558ba3",
+  "audit_source_sha256": "f6377ad9afa348c8506c33e01e45697451666785fb55790b2daf522686f4c028"
+}
