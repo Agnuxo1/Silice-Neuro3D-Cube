@@ -1,0 +1,10 @@
+{
+  "partial_integrity_pass": true,
+  "checkpoints_checked": 11,
+  "max_power_residual": 0.0,
+  "distance_m": 0.00034375,
+  "full_temporal_assessment": false,
+  "point03_closed": false,
+  "final_checked_report": "R5_65536/part011.json",
+  "final_checked_report_sha256": "21b7936e5ec4c29d9981e25cd9c292696df4c8bc092669a295d3963cce2b3fe1"
+}

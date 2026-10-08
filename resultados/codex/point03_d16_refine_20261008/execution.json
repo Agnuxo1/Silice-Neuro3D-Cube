@@ -1,0 +1,225 @@
+{
+  "status": "failed",
+  "started_utc": "2026-10-08T21:08:45.812102+00:00",
+  "children": [
+    {
+      "case": "R5_65536",
+      "index": 1,
+      "returncode": 0,
+      "elapsed_s": 72.22882869999921,
+      "reservation": {
+        "available_ram_bytes": 7497379840,
+        "free_disk_bytes": 512853110784
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 2,
+      "returncode": 0,
+      "elapsed_s": 71.77441760000147,
+      "reservation": {
+        "available_ram_bytes": 7907147776,
+        "free_disk_bytes": 512852606976
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 3,
+      "returncode": 0,
+      "elapsed_s": 72.27547589999995,
+      "reservation": {
+        "available_ram_bytes": 7853432832,
+        "free_disk_bytes": 512852078592
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 4,
+      "returncode": 0,
+      "elapsed_s": 73.2467646999994,
+      "reservation": {
+        "available_ram_bytes": 7974481920,
+        "free_disk_bytes": 512851566592
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 5,
+      "returncode": 0,
+      "elapsed_s": 72.63580860000002,
+      "reservation": {
+        "available_ram_bytes": 7602036736,
+        "free_disk_bytes": 512789815296
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 6,
+      "returncode": 0,
+      "elapsed_s": 76.6806918000002,
+      "reservation": {
+        "available_ram_bytes": 7931731968,
+        "free_disk_bytes": 512789311488
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 7,
+      "returncode": 0,
+      "elapsed_s": 75.0800089000004,
+      "reservation": {
+        "available_ram_bytes": 7693918208,
+        "free_disk_bytes": 512788791296
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 8,
+      "returncode": 0,
+      "elapsed_s": 74.38302260000091,
+      "reservation": {
+        "available_ram_bytes": 7396823040,
+        "free_disk_bytes": 512788254720
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 9,
+      "returncode": 0,
+      "elapsed_s": 73.81920450000143,
+      "reservation": {
+        "available_ram_bytes": 7078043648,
+        "free_disk_bytes": 512787374080
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 10,
+      "returncode": 0,
+      "elapsed_s": 76.38202640000054,
+      "reservation": {
+        "available_ram_bytes": 7432704000,
+        "free_disk_bytes": 512786804736
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 11,
+      "returncode": 0,
+      "elapsed_s": 74.03174340000078,
+      "reservation": {
+        "available_ram_bytes": 6676287488,
+        "free_disk_bytes": 512786300928
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 12,
+      "returncode": 0,
+      "elapsed_s": 75.00403740000002,
+      "reservation": {
+        "available_ram_bytes": 6519865344,
+        "free_disk_bytes": 512773378048
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 13,
+      "returncode": 0,
+      "elapsed_s": 75.82548270000007,
+      "reservation": {
+        "available_ram_bytes": 6568513536,
+        "free_disk_bytes": 512772866048
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 14,
+      "returncode": 0,
+      "elapsed_s": 74.59189960000003,
+      "reservation": {
+        "available_ram_bytes": 6602158080,
+        "free_disk_bytes": 512772329472
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 15,
+      "returncode": 0,
+      "elapsed_s": 73.22100060000048,
+      "reservation": {
+        "available_ram_bytes": 6532255744,
+        "free_disk_bytes": 512770109440
+      }
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "R5_65536/part001.json",
+      "sha256": "1ac7b125976220395e9f7fe4f24b585e29cc49bbe83fa5498b26f3f19fd6016c"
+    },
+    {
+      "path": "R5_65536/part002.json",
+      "sha256": "7a917f83c44af06250c1dd604997db4aa48880c2273b31294b17cf8cbd80891c"
+    },
+    {
+      "path": "R5_65536/part003.json",
+      "sha256": "94888b93b4c0af39fd74f8c0b3f5ce64f1bea95898ff375dda52260739914f17"
+    },
+    {
+      "path": "R5_65536/part004.json",
+      "sha256": "c76513a3d20769541a214941c639e58d4cb637d865b6e173ea47a303948cc2ba"
+    },
+    {
+      "path": "R5_65536/part005.json",
+      "sha256": "d8111f0f1da8e444933dbe4ffe4b52206f4abbc64f7d813400cce19e6867c311"
+    },
+    {
+      "path": "R5_65536/part006.json",
+      "sha256": "eedf29a92f870612cd877031811f5b5aea1c723422f41f9d3fd233a0b6a47b16"
+    },
+    {
+      "path": "R5_65536/part007.json",
+      "sha256": "9e426d7a7a4eb5c50a503887bbb07ff7dda4ca9b234a9fc1642b176e52574a8a"
+    },
+    {
+      "path": "R5_65536/part008.json",
+      "sha256": "b00c0e1a8f4d3b594eb3088133465652f9abf57514019595b04225205dbeed69"
+    },
+    {
+      "path": "R5_65536/part009.json",
+      "sha256": "54946c8d11a1f6aca571be61a847b82e511c02345cb3074e171004b962b2eed8"
+    },
+    {
+      "path": "R5_65536/part010.json",
+      "sha256": "d3a49be042130bd7aa5fe648de49021be177e04e75d81e6ce013d6a312bcadd8"
+    },
+    {
+      "path": "R5_65536/part011.json",
+      "sha256": "21b7936e5ec4c29d9981e25cd9c292696df4c8bc092669a295d3963cce2b3fe1"
+    },
+    {
+      "path": "R5_65536/part012.json",
+      "sha256": "8fb5e01ce39442ecf5edc48e7e8a9393d6a0b3c22e2a738fb538f3a8fa8b672e"
+    },
+    {
+      "path": "R5_65536/part013.json",
+      "sha256": "06be5514bdd9259e7709815145f723db0c723e5d66a5bd5ad16e384355df63c8"
+    },
+    {
+      "path": "R5_65536/part014.json",
+      "sha256": "4913c366a1a49053fc0b757d8136201c386ec420ebc7c7db00da157fb5f61aae"
+    },
+    {
+      "path": "R5_65536/part015.json",
+      "sha256": "378085c53ca084d7c4b8a05c9b3780fe590240d91260cf90b8858e74c738a080"
+    }
+  ],
+  "point03_closed": false,
+  "manifest_sha256": "0b4bbd2b4928492a6c59219519e5b78911a56712118b1bcf80957022ccd14735",
+  "wait_s": 885.847070900003,
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_d16_refine.py\", line 104, in run\n    assert time.monotonic()-start <= 22000 and e.get('wait_s', 0.)+time.monotonic()-waiting <= 900\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "elapsed_s": 2011.3565799999997,
+  "finished_utc": "2026-10-08T21:42:17.168683+00:00"
+}
