@@ -1,0 +1,533 @@
+{
+  "created_utc": "2026-10-08T11:25:27.618785+00:00",
+  "controls_pass": true,
+  "no_T96_results_read": true,
+  "cases_checked": 11,
+  "rows": [
+    {
+      "kind": "known_law",
+      "known_order": 0.75,
+      "values": [
+        0.3200635939868559,
+        0.32005379396338324,
+        0.3200455041528224,
+        0.3200384918268493
+      ],
+      "known_continuum": 0.32,
+      "known_error": 3.8491826849285093e-05,
+      "forecast": {
+        "powers": [
+          0.3200635939868559,
+          0.32005379396338324,
+          0.3200455041528224
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          -9.800023472672503e-06,
+          -8.289810560835331e-06
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": true,
+        "order": 0.7500000000011877,
+        "eligible": true,
+        "prediction": 0.3200384918268493
+      },
+      "result": {
+        "spatial_pass": true,
+        "point03_closed": false,
+        "powers": [
+          0.3200635939868559,
+          0.32005379396338324,
+          0.3200455041528224,
+          0.3200384918268493
+        ],
+        "order": 0.7500000000028174,
+        "order_discrepancy": 2.1729285037881936e-12,
+        "prediction": 0.3200384918268493,
+        "prediction_residual": 0.0,
+        "prediction_limit": 7.012325973110301e-07,
+        "gates": {
+          "coarse_eligible": true,
+          "monotone": true,
+          "order_range": true,
+          "order_stability": true,
+          "prospective_prediction": true,
+          "temporal_resolution": true,
+          "total_indicator": true
+        },
+        "indicators": {
+          "spatial": 4.811478356142541e-05,
+          "temporal_PSD": 1e-12,
+          "quadrature": 1e-14,
+          "reconstruction": 0.0,
+          "total": 4.811478457142541e-05
+        },
+        "scope": "Conditional consistency indicators, not an absolute continuum error bound or statistical interval."
+      }
+    },
+    {
+      "kind": "known_law",
+      "known_order": 1.0,
+      "values": [
+        0.3200546875,
+        0.32004375,
+        0.320035,
+        0.320028
+      ],
+      "known_continuum": 0.32,
+      "known_error": 2.799999999997249e-05,
+      "forecast": {
+        "powers": [
+          0.3200546875,
+          0.32004375,
+          0.320035
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          -1.093749999997451e-05,
+          -8.750000000001812e-06
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": true,
+        "order": 0.9999999999886274,
+        "eligible": true,
+        "prediction": 0.320028
+      },
+      "result": {
+        "spatial_pass": true,
+        "point03_closed": false,
+        "powers": [
+          0.3200546875,
+          0.32004375,
+          0.320035,
+          0.320028
+        ],
+        "order": 0.9999999999786766,
+        "order_discrepancy": 9.950817947525983e-12,
+        "prediction": 0.320028,
+        "prediction_residual": 0.0,
+        "prediction_limit": 7.000000000034757e-07,
+        "gates": {
+          "coarse_eligible": true,
+          "monotone": true,
+          "order_range": true,
+          "order_stability": true,
+          "prospective_prediction": true,
+          "temporal_resolution": true,
+          "total_indicator": true
+        },
+        "indicators": {
+          "spatial": 3.5000000001006455e-05,
+          "temporal_PSD": 1e-12,
+          "quadrature": 1e-14,
+          "reconstruction": 0.0,
+          "total": 3.500000101100646e-05
+        },
+        "scope": "Conditional consistency indicators, not an absolute continuum error bound or statistical interval."
+      }
+    },
+    {
+      "kind": "known_law",
+      "known_order": 2.0,
+      "values": [
+        0.3200299072265625,
+        0.32001914062500003,
+        0.32001225,
+        0.32000784
+      ],
+      "known_continuum": 0.32,
+      "known_error": 7.839999999981195e-06,
+      "forecast": {
+        "powers": [
+          0.3200299072265625,
+          0.32001914062500003,
+          0.32001225
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          -1.0766601562461897e-05,
+          -6.890625000033346e-06
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": true,
+        "order": 1.9999999999624534,
+        "eligible": true,
+        "prediction": 0.32000783999999993
+      },
+      "result": {
+        "spatial_pass": true,
+        "point03_closed": false,
+        "powers": [
+          0.3200299072265625,
+          0.32001914062500003,
+          0.32001225,
+          0.32000784
+        ],
+        "order": 2.0000000000112816,
+        "order_discrepancy": 2.4414137378276864e-11,
+        "prediction": 0.32000783999999993,
+        "prediction_residual": 5.551115123125783e-17,
+        "prediction_limit": 4.4100000000102395e-07,
+        "gates": {
+          "coarse_eligible": true,
+          "monotone": true,
+          "order_range": true,
+          "order_stability": true,
+          "prospective_prediction": true,
+          "temporal_resolution": true,
+          "total_indicator": true
+        },
+        "indicators": {
+          "spatial": 9.800000000022754e-06,
+          "temporal_PSD": 1e-12,
+          "quadrature": 1e-14,
+          "reconstruction": 0.0,
+          "total": 9.800001010022753e-06
+        },
+        "scope": "Conditional consistency indicators, not an absolute continuum error bound or statistical interval."
+      }
+    },
+    {
+      "kind": "known_law",
+      "known_order": 3.0,
+      "values": [
+        0.3200163555145264,
+        0.3200083740234375,
+        0.3200042875,
+        0.3200021952
+      ],
+      "known_continuum": 0.32,
+      "known_error": 2.1951999999991756e-06,
+      "forecast": {
+        "powers": [
+          0.3200163555145264,
+          0.3200083740234375,
+          0.3200042875
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          -7.98149108888202e-06,
+          -4.086523437529799e-06
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": true,
+        "order": 2.9999999999756497,
+        "eligible": true,
+        "prediction": 0.32000219519999995
+      },
+      "result": {
+        "spatial_pass": true,
+        "point03_closed": false,
+        "powers": [
+          0.3200163555145264,
+          0.3200083740234375,
+          0.3200042875,
+          0.3200021952
+        ],
+        "order": 3.0000000000789475,
+        "order_discrepancy": 3.44326049145551e-11,
+        "prediction": 0.32000219519999995,
+        "prediction_residual": 5.551115123125783e-17,
+        "prediction_limit": 2.0922999999783978e-07,
+        "gates": {
+          "coarse_eligible": true,
+          "monotone": true,
+          "order_range": true,
+          "order_stability": true,
+          "prospective_prediction": true,
+          "temporal_resolution": true,
+          "total_indicator": true
+        },
+        "indicators": {
+          "spatial": 4.64955555550755e-06,
+          "temporal_PSD": 1e-12,
+          "quadrature": 1e-14,
+          "reconstruction": 0.0,
+          "total": 4.64955656550755e-06
+        },
+        "scope": "Conditional consistency indicators, not an absolute continuum error bound or statistical interval."
+      }
+    },
+    {
+      "kind": "known_law",
+      "known_order": 5.0,
+      "values": [
+        0.32000489148078487,
+        0.3200016028404236,
+        0.32000052521875,
+        0.32000017210368
+      ],
+      "known_continuum": 0.32,
+      "known_error": 1.7210367997400056e-07,
+      "forecast": {
+        "powers": [
+          0.32000489148078487,
+          0.3200016028404236,
+          0.32000052521875
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          -3.2886403612542026e-06,
+          -1.0776216736174682e-06
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": true,
+        "order": 4.999999999826623,
+        "eligible": true,
+        "prediction": 0.32000017210368
+      },
+      "result": {
+        "spatial_pass": true,
+        "point03_closed": false,
+        "powers": [
+          0.32000489148078487,
+          0.3200016028404236,
+          0.32000052521875,
+          0.32000017210368
+        ],
+        "order": 4.999999999916362,
+        "order_discrepancy": 1.7947776598548533e-11,
+        "prediction": 0.32000017210368,
+        "prediction_residual": 0.0,
+        "prediction_limit": 3.531150700175623e-08,
+        "gates": {
+          "coarse_eligible": true,
+          "monotone": true,
+          "order_range": true,
+          "order_stability": true,
+          "prospective_prediction": true,
+          "temporal_resolution": true,
+          "total_indicator": true
+        },
+        "indicators": {
+          "spatial": 7.847001555945828e-07,
+          "temporal_PSD": 1e-12,
+          "quadrature": 1e-14,
+          "reconstruction": 0.0,
+          "total": 7.847011655945829e-07
+        },
+        "scope": "Conditional consistency indicators, not an absolute continuum error bound or statistical interval."
+      }
+    },
+    {
+      "kind": "wrong_holdout",
+      "values": [
+        0.3200299072265625,
+        0.32001914062500003,
+        0.32001225,
+        0.32001004499999997
+      ],
+      "result": {
+        "spatial_pass": false,
+        "point03_closed": false,
+        "powers": [
+          0.3200299072265625,
+          0.32001914062500003,
+          0.32001225,
+          0.32001004499999997
+        ],
+        "order": 5.106283719460261,
+        "order_discrepancy": 0.6083257198693505,
+        "prediction": 0.32000783999999993,
+        "prediction_residual": 2.205000000032875e-06,
+        "prediction_limit": 2.2050000000328752e-07,
+        "gates": {
+          "coarse_eligible": true,
+          "monotone": true,
+          "order_range": true,
+          "order_stability": false,
+          "prospective_prediction": false,
+          "temporal_resolution": true,
+          "total_indicator": true
+        },
+        "indicators": {
+          "spatial": 4.900000000073055e-06,
+          "temporal_PSD": 1e-12,
+          "quadrature": 1e-14,
+          "reconstruction": 0.0,
+          "total": 4.9000010100730555e-06
+        },
+        "scope": "Conditional consistency indicators, not an absolute continuum error bound or statistical interval."
+      }
+    },
+    {
+      "kind": "oscillation",
+      "result": {
+        "powers": [
+          0.31,
+          0.33,
+          0.32
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          0.020000000000000018,
+          -0.010000000000000009
+        ],
+        "monotone": false,
+        "resolved_above_time_discrepancy": true,
+        "order": null,
+        "eligible": false,
+        "prediction": null
+      }
+    },
+    {
+      "kind": "order_outside_range",
+      "known_order": 0.1,
+      "values": [
+        0.32009414316765983,
+        0.320092065688589,
+        0.32009003405372966
+      ],
+      "result": {
+        "powers": [
+          0.32009414316765983,
+          0.320092065688589,
+          0.32009003405372966
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          -2.0774790708277813e-06,
+          -2.0316348593452105e-06
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": true,
+        "order": 0.09999999995454353,
+        "eligible": false,
+        "prediction": null
+      }
+    },
+    {
+      "kind": "order_outside_range",
+      "known_order": 7.0,
+      "values": [
+        0.3200014629062406,
+        0.32000030679367486,
+        0.3200000643392969
+      ],
+      "result": {
+        "powers": [
+          0.3200014629062406,
+          0.32000030679367486,
+          0.3200000643392969
+        ],
+        "temporal_differences": [
+          1e-15,
+          1e-15,
+          1e-15
+        ],
+        "r": 1.25,
+        "increments": [
+          -1.1561125657366667e-06,
+          -2.4245437796333036e-07
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": true,
+        "order": 6.99999999967927,
+        "eligible": false,
+        "prediction": null
+      }
+    },
+    {
+      "kind": "unresolved_time",
+      "result": {
+        "powers": [
+          0.3200299072265625,
+          0.32001914062500003,
+          0.32001225
+        ],
+        "temporal_differences": [
+          0.001,
+          0.001,
+          0.001
+        ],
+        "r": 1.25,
+        "increments": [
+          -1.0766601562461897e-05,
+          -6.890625000033346e-06
+        ],
+        "monotone": true,
+        "resolved_above_time_discrepancy": false,
+        "order": 1.9999999999624534,
+        "eligible": false,
+        "prediction": null
+      }
+    },
+    {
+      "kind": "large_indicator",
+      "result": {
+        "spatial_pass": false,
+        "point03_closed": false,
+        "powers": [
+          0.3200299072265625,
+          0.32001914062500003,
+          0.32001225,
+          0.32000784
+        ],
+        "order": 2.0000000000112816,
+        "order_discrepancy": 2.4414137378276864e-11,
+        "prediction": 0.32000783999999993,
+        "prediction_residual": 5.551115123125783e-17,
+        "prediction_limit": 4.4100000000102395e-07,
+        "gates": {
+          "coarse_eligible": true,
+          "monotone": true,
+          "order_range": true,
+          "order_stability": true,
+          "prospective_prediction": true,
+          "temporal_resolution": true,
+          "total_indicator": false
+        },
+        "indicators": {
+          "spatial": 9.800000000022754e-06,
+          "temporal_PSD": 1e-12,
+          "quadrature": 0.002,
+          "reconstruction": 0.0,
+          "total": 0.002009800001000023
+        },
+        "scope": "Conditional consistency indicators, not an absolute continuum error bound or statistical interval."
+      }
+    }
+  ],
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_p5d_evaluator.py": "aab688c7436383feacda25115a15cc76cc40c1852d07601a056456abb9eba429",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_spatial.py": "de20387133fe2c3e9c4780f9ffe46d976db450132511693d22b25f25e34d8a38",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P5D-SPATIAL-CONTRACT.md": "77b24712e9e9296c9050d86b05eec02f131b8a4b9b979f3387521c3e88b147e6",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P5D-EVALUATOR-CONTROL.md": "91a89619fcbe1bf13d4291267258e5025cf21f7986cd49e06c09861ab1e0d433"
+  },
+  "point03_closed": false
+}

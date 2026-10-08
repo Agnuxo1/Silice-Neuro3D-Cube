@@ -6,6 +6,10 @@ sus resultados históricos. Trabajos sólo en la copia aislada.
 Punto3 T96/Q4 **abierto**. El usuario pidió ejecutar secuencialmente las
 22tareas y no pasar a la siguiente sin evidencia suficiente.
 
+Correspondencia de numeración: este «punto 3» de los archivos históricos
+es la tarea 1 de la lista actual de 22 tareas. La tarea 3 actual, sobre
+frontera, dominio, campo complejo y fase conjuntamente, es posterior.
+
 P1 terminó con auditoría PASS12campos/6fuentes y precisión PASS. La
 hipótesis de dominio numérico despreciable FAIL: fijar los fantasmas
 Dirichlet±64µm, manteniendo dx/interiores, cambia ambas potencias
@@ -34,6 +38,8 @@ h0,35 existente se reutilizará porhashes si precisión temporal aprueba.
 h0,28 reservado y sin generar; protocolo espacial y predicción antes de
 sus campos. P5C registra la propagación de las dos mallas gruesas, que
 sólo empezará si P4I2 aprueba con auditoría independiente.
+P5D fija los criterios espaciales antes de las potencias P5C. Su evaluador
+superó 11 controles con leyes conocidas y rechazos, sin datos ópticos T96.
 
 Control previo de seno N799 PASS(error2,1477e-13); previsión FDST6958s,
 estimación sin garantía. Presupuesto P2 global36000s; sin ampliarlo durante
