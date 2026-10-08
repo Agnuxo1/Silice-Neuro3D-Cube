@@ -23,12 +23,17 @@ sigue abierto y todos los registros originales se mantienen.
 Nueva investigaciónP4:FEM débil con interfaces conformes. Jerarquía1D
 alineada con verdad analítica PASS, mallaT96curva/matrices y detector/
 inicialización/amortiguador controlados. Dosfamilias temporalesPadé6/Radau5
-contrastadas con referenciasdensas pequeñas. P4I está ACTIVO sobre
-GaussianT96 a2mm; no hay dictamen y una malla no certifica espacio.
+contrastadas con referencias densas pequeñas. P4I terminó con 224 campos
+auditados: integridad aprobada, precisión temporal fallida por sus dos
+cotas PSD del observable. P4I2 añade sólo Padé con 32768 pasos y reutiliza
+Radau retenido; está en curso con los mismos límites. Una malla no
+certifica convergencia espacial. Detalles en POINT-03-P4I-RESULTS.md.
 
 PreparaciónP5A/B:mallas h0,546875/0,4375µm y todos sus controlesPASS;
 h0,35 existente se reutilizará porhashes si precisión temporal aprueba.
-h0,28holdoutNOgenerado; protocoloespacial/predicción antesdecamposfine.
+h0,28 reservado y sin generar; protocolo espacial y predicción antes de
+sus campos. P5C registra la propagación de las dos mallas gruesas, que
+sólo empezará si P4I2 aprueba con auditoría independiente.
 
 Control previo de seno N799 PASS(error2,1477e-13); previsión FDST6958s,
 estimación sin garantía. Presupuesto P2 global36000s; sin ampliarlo durante
