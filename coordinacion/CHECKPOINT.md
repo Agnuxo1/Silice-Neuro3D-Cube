@@ -1,3 +1,14 @@
+## Reanudación D16-C1 — 2026-10-08T18:20UTC
+
+Usuario pide continuar desde la propuesta específica de transferencia y
+ensayo CPU Colab; se retoma ese paso. Paquete ZIP ce bae... SHA completo
+cebaeac0f2952360f319acd9081f0f6149e0fbda7112258ac738aafc6d0a3ea1;
+6081913bytes y cuaderno bed56d... verificados de nuevo. Fuentes intactas.
+Pestaña antigua ya no disponible; cuaderno vacío actual de grupoSilice,
+791982984, inspeccionado. Importación ipynb iniciada mediante selector.
+ZIP todavía sin subir; cálculo D16-C1 no iniciado. Contrato e2f3cb9 y
+adaptaciones3f6e5ad/9879bd4, todas anteriores a campos nuevos. No alterar
+criterios ni operadores antiguos. No pasar a tarea2/h0,28. JEVfallbacklocal.
 ## D16-C1 preparado, cálculo sin iniciar — 2026-10-08T17:22UTC
 
 Contrato longitudinal nuevo e2f3cb9; fuentes portables3f6e5ad y ajustes
