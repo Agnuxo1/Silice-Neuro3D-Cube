@@ -27,7 +27,10 @@ RAMdisponible>2GiB/disco>2GiB. Registrar fallo y conservar artefactos.
 Importar triangle6 a MeshTri2 y coordenadasSI. Ensamblar masa/rigidez
 P2 con cuadratura8; cladding por tags materiales. Controles:
 - Área CAD cladding vs geometría analítica<=1e-8rel; área totalCAD128².
-- Jacobianos positivos en puntos de cuadratura;todos finitos.
+- Jacobianos finitos y no nulos, signo constante por elemento; una
+  orientación horaria es válida y se integra con valor absoluto.
+  Verificar también mínimo de determinante cuadrático en el triángulo
+  de referencia, no sólo en puntos de cuadratura.
 - Área de masa total vs128²µm²<=1e-10rel.
 - Área de masa cladding vsCAD<=1e-5rel (aproximación geométrica P2,
   no identidad exacta con círculos); informar error sin ocultarlo.
