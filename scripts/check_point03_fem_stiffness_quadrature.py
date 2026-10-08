@@ -23,7 +23,7 @@ from audit_point03_p4i import read
 def run(label,out):
     assert not out.exists() and out.is_relative_to(ROOT/'resultados/codex')
     # Prevent a second numerical job from competing with the active reference.
-    assert (ROOT/'resultados/codex/point03_p4i3_recovery_20261008/execution.json').exists()
+    assert (ROOT/'resultados/codex/point03_p4i3_recovery2_20261008/execution.json').exists()
     assert psutil.virtual_memory().available>=5*1024**3 and psutil.disk_usage(str(out.parent)).free>2*1024**3
     paths={'prototype':('point03_p4c_mesh_20261008','point03_p4f_detector_20261008'),
            'coarse':('point03_p5a_mesh_coarse_20261008','point03_p5b_detector_coarse_20261008'),
