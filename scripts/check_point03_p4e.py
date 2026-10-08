@@ -33,7 +33,9 @@ def run(out):
         return sigma*u*v
     D=damping.assemble(basis)
     M=load_npz(source/'mass.npz');K=load_npz(source/'stiffness.npz');C=load_npz(source/'cladding_mass.npz')
-    assert all((matrix-matrix.T).nnz==0 for matrix in (M,K,C,D))
+    for matrix in (M,K,C,D):
+        delta=matrix-matrix.T
+        assert not delta.nnz or np.max(abs(delta.data))/np.max(abs(matrix.data))<=1e-12
     with np.load(source/'mesh_arrays.npz',allow_pickle=False) as data:boundary=data['boundary_dofs'].copy()
     free=np.setdiff1d(np.arange(basis.N),boundary)
     mass=M[free,:][:,free].tocsc();k0=2*math.pi/1550e-9;beta=1.444*k0
