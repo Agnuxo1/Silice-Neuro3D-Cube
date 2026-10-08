@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "154c97d008acb69c766cd4e802e932e42317f4b7a42e1b6cf985b0374e83064e",
+  "bytes": 30429527,
+  "CRC_pass": true,
+  "files_recovered": 198,
+  "local_integrity_pass": true,
+  "temporal_precision_pass": false,
+  "point03_closed": false,
+  "transport": "Visible HTTPS notebook output, bounded base64 ranges; exact archive hash preserved"
+}
