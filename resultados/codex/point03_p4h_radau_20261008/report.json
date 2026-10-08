@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-10-08T05:33:37.881700+00:00",
+  "controls_pass": true,
+  "results": [
+    {
+      "damping": "zero",
+      "rows": [
+        {
+          "steps": 8192,
+          "error": 5.2727008654686056e-05,
+          "physical_power": 0.9999689501018226,
+          "reference_power": 1.0000000000000173,
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4h_radau_20261008\\zero_8192.npz",
+          "field_sha256": "fed7835a27ecc9a43f5fbeb6cd970bd4701f2d023a838c5ff1df1f9d06ad650c"
+        },
+        {
+          "steps": 16384,
+          "error": 1.6511360562191658e-06,
+          "physical_power": 0.99999902727305,
+          "reference_power": 1.0000000000000173,
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4h_radau_20261008\\zero_16384.npz",
+          "field_sha256": "47ec7156aeaf5afde85e9877f60f9da984d0bd2a7ea6a0a8c61b94384d421711"
+        },
+        {
+          "steps": 32768,
+          "error": 5.162302873034893e-08,
+          "physical_power": 0.9999999695861546,
+          "reference_power": 1.0000000000000173,
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4h_radau_20261008\\zero_32768.npz",
+          "field_sha256": "fae42bc5cdb3559d5dc1db4a59f84429336cbdc65dd3d68d7c3deccb3c0dbc45"
+        }
+      ],
+      "orders": [
+        4.9970112404489875,
+        4.999300408238631
+      ],
+      "pass_": true
+    },
+    {
+      "damping": "varying",
+      "rows": [
+        {
+          "steps": 8192,
+          "error": 6.574858941038411e-05,
+          "physical_power": 0.025170230258209223,
+          "reference_power": 0.025171196893873902,
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4h_radau_20261008\\varying_8192.npz",
+          "field_sha256": "a022e7f1778e577aff1b3df7d56198851dbf101f51dc8068fc4df10137df2617"
+        },
+        {
+          "steps": 16384,
+          "error": 2.0591932220406994e-06,
+          "physical_power": 0.025171166599545186,
+          "reference_power": 0.025171196893873902,
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4h_radau_20261008\\varying_16384.npz",
+          "field_sha256": "f69b2576226d5a4d81cd88d0ec457d008bb09528eb0dbdebd222b58f6a2ff156"
+        },
+        {
+          "steps": 32768,
+          "error": 6.438447301236088e-08,
+          "physical_power": 0.02517119594648315,
+          "reference_power": 0.025171196893873902,
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4h_radau_20261008\\varying_32768.npz",
+          "field_sha256": "30f56b6957219cb5f9ef9153c68e54ff69f15dca51f4a21c55a466431456ddb2"
+        }
+      ],
+      "orders": [
+        4.996808827658802,
+        4.999222590416414
+      ],
+      "pass_": true
+    }
+  ],
+  "elapsed_s": 4.681095099949744,
+  "no_T96_propagation": true,
+  "roots": {
+    "poles": [
+      {
+        "real": 2.6810828736277554,
+        "imag": 3.0504301992474097
+      },
+      {
+        "real": 2.6810828736277554,
+        "imag": -3.0504301992474097
+      },
+      {
+        "real": 3.6378342527444993,
+        "imag": 0.0
+      }
+    ],
+    "zeros": [
+      {
+        "real": -4.000000000000001,
+        "imag": 2.000000000000001
+      },
+      {
+        "real": -4.000000000000001,
+        "imag": -2.000000000000001
+      }
+    ]
+  },
+  "point03_closed": false,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_p4h_generated.py": "558b39864234c4e00d732b2c7ee6310df68b4e78eb8ed41e3dd7ac35da2412c0",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_radau.py": "323459cbc0b53221b069843e2aa5492cc875ae42d52632e51945ca61b1317ef2",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P4H-CONTRACT.md": "08e47555e529f81f2651446ccbc640305b7eb99d7453e9d0d0a6aa3944df0e4b"
+  }
+}

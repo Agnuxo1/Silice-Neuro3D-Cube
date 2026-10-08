@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-10-08T06:02:41.147249+00:00",
+  "status": "completed",
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "controls_pass": true,
+  "cad_area_um2": 323.0818752214972,
+  "analytic_area_um2": 323.081875221496,
+  "cad_relative_error": 3.774758283725532e-15,
+  "mass_domain_area_um2": 16384.0,
+  "mass_cladding_area_um2": 323.07897990081125,
+  "curved_geometry_relative_error": 8.96156952168159e-06,
+  "symmetry": {
+    "mass": 0.0,
+    "stiffness": 0.0,
+    "cladding_mass": 0.0
+  },
+  "constant_stiffness_residual": 2.8935187579293142e-15,
+  "dofs": 31549,
+  "elements": 15656,
+  "minimum_abs_jacobian": 3.3248976607417266e-14,
+  "minimum_oriented_jacobian_all_reference_triangle": 2.944857726460936e-14,
+  "versions": {
+    "gmsh": "4.15.2",
+    "skfem": "12.0.2",
+    "meshio": "5.3.5",
+    "numpy": "2.2.6",
+    "scipy": "1.15.1"
+  },
+  "hashes": {
+    "cladding_mass.npz": "ca600938642b4b0b439e738832e63ad18b4c7e03ce7784c268155544d331a995",
+    "mass.npz": "1f2b4e29164ee19a5995f0318f869b30b9e16af636e3b6d12a72585b94fd036d",
+    "mesh_arrays.npz": "08b63a96bcadd990030bb2ad1e87e0f523dbd71a21e06c8522e14c9eddba9d60",
+    "stiffness.npz": "32529b8fbf563b445e7169eb1dd2cc8ec7d499f9c0b652324156f0a88caa76ef",
+    "T96_curved.msh": "9be492debc2c0498fa3125f94762b33717013cb1a86cd53ff36f36e93f0efcc7"
+  },
+  "elapsed_s": 3.899761700013187
+}

@@ -16,13 +16,19 @@ P2 terminó5069,011s:auditorPASS87campos,75nuevos/12P1. Referencias y
 cuadratura pasan en todas las primarias. Estabilidad de orden de intensidad
 FAIL22,57%>20%; no se generó/calcultóM800 en ese ensayo. P2 queda negativo.
 
-P3 está activo con nueva hipótesis explícita del intervalo más fino
-400/500/640/800;M320 se mantiene como diagnóstico. Los órdenes iniciales
-2,06971/2,07894 están próximos a2. Se conserva todo FAIL P2 y no se
-relaja ningún límite fino. Predicción antes de geometría enGit05f25e5:
-campo0,33281456379176816/intensidad0,33285428284548196. Geometría y
-gaussianas conocidas PASS. Se ejecutan refs29/41 yFDST25600/64tramos;
-auditor separado antes de cierre local condicionado. Punto3 abierto.
+P3 terminó14051,339s,221campos auditados. Geometría/referencia/temporal
+pasan, pero predicción/orden FAILambos:22,27%/31,46%>20%. El punto3
+sigue abierto y todos los registros originales se mantienen.
+
+Nueva investigaciónP4:FEM débil con interfaces conformes. Jerarquía1D
+alineada con verdad analítica PASS, mallaT96curva/matrices y detector/
+inicialización/amortiguador controlados. Dosfamilias temporalesPadé6/Radau5
+contrastadas con referenciasdensas pequeñas. P4I está ACTIVO sobre
+GaussianT96 a2mm; no hay dictamen y una malla no certifica espacio.
+
+PreparaciónP5A/B:mallas h0,546875/0,4375µm y todos sus controlesPASS;
+h0,35 existente se reutilizará porhashes si precisión temporal aprueba.
+h0,28holdoutNOgenerado; protocoloespacial/predicción antesdecamposfine.
 
 Control previo de seno N799 PASS(error2,1477e-13); previsión FDST6958s,
 estimación sin garantía. Presupuesto P2 global36000s; sin ampliarlo durante
@@ -40,4 +46,5 @@ simulaciones externas. Fuentes/limitaciones en POINT-03-P2-LITERATURE.md.
 Informes y contratos:
 [P1](POINT-03-P1-RESULTS.md), [P2](POINT-03-P2-RESULTS.md),
 [P3](POINT-03-P3-CONTRACT.md),
+[P3 resultados](POINT-03-P3-RESULTS.md), [P4 controles](POINT-03-P4-CONTROL-RESULTS.md),
 [M1](POINT-03-M1-RESULTS.md), [N1](POINT-03-N1-RESULTS.md).

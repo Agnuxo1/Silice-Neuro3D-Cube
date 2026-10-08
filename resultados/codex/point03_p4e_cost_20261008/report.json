@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-08T04:40:13.924782+00:00",
+  "controls_pass": false,
+  "field_relative_difference": 1.778988442688161e-05,
+  "forecast8192_s": 1538.3234560012818,
+  "timings": [
+    {
+      "steps": 100,
+      "dt_m": 2.44140625e-07,
+      "factor_elapsed_s": 11.45783210004447,
+      "advance_elapsed_s": 18.778362500015646,
+      "seconds_per_step": 0.18778362500015647,
+      "physical_power": 0.9987824238741875,
+      "factor_memory_bytes": 1034664720
+    },
+    {
+      "steps": 200,
+      "dt_m": 1.220703125e-07,
+      "factor_elapsed_s": 11.525976400007494,
+      "advance_elapsed_s": 37.87319239997305,
+      "seconds_per_step": 0.18936596199986525,
+      "physical_power": 0.9987824238741662,
+      "factor_memory_bytes": 1034664900
+    }
+  ],
+  "elapsed_s": 83.54483450000407,
+  "Gaussian_T96_propagated": false,
+  "core_power_measured": false,
+  "point03_closed": false,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_p4e.py": "2779e70761bf5313c79b59884691276d41051e5b4a428aaa9e7a153d75e2280a",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_time.py": "3f355f83626ad8fe34c0e2d5ad3bc91f7061590e595d38d649c938a5055615bd",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P4E-CONTRACT.md": "7be2d1591824f318605b891e0f7211aec259bd468309b0248db1b55be712e9b1"
+  },
+  "artifacts": {
+    "damping.npz": "ad0ee9543297a3eca71c66110c2000a70786fc909320db89a42bf7f7a575b1b3",
+    "field_steps100.npz": "b55c2c538f2dd51a5627bd553c3c673278459828f6ebeb8ca4b8b84160411a8a",
+    "field_steps200.npz": "ef91b7c83c1443739f40c39105c0f0520e3659540c8997f4786e01d1ddccbcb2"
+  }
+}

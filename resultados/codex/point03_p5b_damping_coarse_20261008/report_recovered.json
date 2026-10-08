@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-08T06:14:54.476356+00:00",
+  "controls_pass": true,
+  "recovered": true,
+  "matrices_regenerated": false,
+  "reporting_error": "Prior optional comparison subtracted different mesh dimensions; scientific checks completed; now independently rechecked.",
+  "old_unsplit_difference_bound_m_inverse": null,
+  "quadrature_mass_norm_bound_m_inverse": 1.2867830318507634e-08,
+  "constant_integral": 5.068117333333308e-05,
+  "constant_exact": 5.0681173333333335e-05,
+  "linear_field_errors": [
+    2.6740752560981496e-14,
+    1.60444515365889e-14,
+    9.359263396343525e-15,
+    6.284076851830652e-15,
+    1.0428893498782784e-14,
+    3.5297793380495576e-14
+  ],
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "artifacts": {
+    "damping_q12.npz": "c1feaeb76028cd81374383618ca3e4fe3aea0d63c6c4f49ef57be8b1736fbe48",
+    "damping_q8.npz": "5016b4ee31cd02ba38b2859a4565d4d040a68e0731dd4672f205a34d577b89f9"
+  }
+}

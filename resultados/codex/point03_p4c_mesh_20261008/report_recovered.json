@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-08T04:22:23.038242+00:00",
+  "integrity_pass": true,
+  "geometry_and_assembly_controls_pass": true,
+  "reporting_failure_retained": true,
+  "geometry_regenerated": false,
+  "T96_propagation_performed": false,
+  "point03_closed": false,
+  "dofs": 74785,
+  "elements": 37208,
+  "minimum_oriented_jacobian": 2.1826076329951657e-14,
+  "cad_relative_error": 3.774758283725532e-15,
+  "curved_geometry_relative_error": 2.471145299831612e-06,
+  "constant_stiffness_residual": 2.733924198139448e-15,
+  "original_partial_report_sha256": "d6d5f39d2e5a5280edcfdd83cb353a63fcc5315151661d39aeb37b7a94538800",
+  "artifact_sha256": {
+    "cladding_mass.npz": "cb145c0eab81a178374661e18544156f476680a3736679a569e3fbbb063c1c06",
+    "mass.npz": "11254bf0e6e45249c7bc97eb58c9a91c8a2bbce882b6c2a9434ad310e5007222",
+    "mesh_arrays.npz": "379b2514e581cbd36f4dbddcb36a991e073c26c8d2e949cfdab3b22a8216e755",
+    "report.json": "d6d5f39d2e5a5280edcfdd83cb353a63fcc5315151661d39aeb37b7a94538800",
+    "stiffness.npz": "adabfcd5f45cf892f142736a5cfa49e3d37bba8ce936252583a0ee4d3b3b0973",
+    "T96_curved.msh": "addf8773816d625012aa5b0321bd1ada0519fcc4c604a54b2afac2617221692e"
+  },
+  "scope": "Saved conforming mesh/operator controls only; original NumPy serialization failure preserved."
+}
