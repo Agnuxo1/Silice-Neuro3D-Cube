@@ -1,3 +1,17 @@
+## Seguimiento D16-C1 — 2026-10-08T18:55UTC
+
+Celda7 Colab sigue ACTIVA (última observación24min19s); no salida final
+ni conteo de tramos verificado. No reiniciar ni modificarcelda/script/datos.
+CPU y memoriaUI≈1,58/12,67GiB; fuente numérica intacta en ZIPverificado.
+Salida subprocess noincremental observada. Intento descarga.ipynb vía
+menúArchivo: evento20s timeout; no copia local hallada, conservar pendiente.
+Importación/cuaderno privado/celda4fallida/celda5recovery siguenpreservados.
+Chrome3tab791982984 URL1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ.
+Al terminar7: leerreturncode/evaluación/auditor; ejecutar9descargaresults,
+recuperarZipporSHA+CRC, auditorlocalindependienteantesadopción.
+Contrato global22000s/espera900/hijos360 corte370 un hilo. No alterar.
+GitHub85dcfb8 yPR1 actualizados; tarea1 abierta,tareas2–22pendientes.
+JEVfallbacklocal/noretry. Sin Blender/GPU/fabricación ni cierreNobel atribuido.
 ## D16-C1 remoto activo — 2026-10-08T18:35UTC
 
 Cuaderno privado importado y CPU confirmado; URL
