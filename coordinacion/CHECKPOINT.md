@@ -1,3 +1,21 @@
+## Seguimiento D16 y control local acotado — 2026-10-08T19:36UTC
+
+D16-C1 Colabcelda7ACTIVA, último1h7min43s; informe finalvacío. SinconteoCP,
+sin dictamenadoptado. No cambiar/reiniciar. CPUmemUI1,41/12,67GiB.
+Contrato/cuotas intactos; recordar22000s desde≈18:29UTC y fuentesZIP.
+D16-X1 prereg5239615: sóloprimer1024pasos62,5µm de cadafamilia, Windows.
+Dosreferencias REALESterminadas: P6 72,003s/R5 71,306s, íntegros en
+point03_d16_cross_platform_20261008. No son otro ensayo2mm. Comparación
+contra primertramo remoto PENDIENTE; criterios Mrel1e-10/pot1e-12.
+D16-M1 preparado433b9db/aa0231a: trabajador3DOF+7inputsPASS, ningúncampo
+óptico. RequisitoauditoríaLOCALcoarseintegridad+temporalPASS no satisfecho.
+GitHub aa0231a verificado; X1 yactualizaciónactual aún localespendingpush.
+Cuaderno1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ, Chrome3tab791982984.
+Transporte:4errorcancelconservado,5hashes20PASS,7runactivo,9exportpendiente.
+Cuando7termine: descargarZIP, CRC/hash/extracciónsegura en
+point03_d16_cloud_recovery_20261008; auditorcoarse localguardar
+local_integrity_audit.json sin sobrescribir auditorremoto. VerificarX1.
+No pasaratarea2/nigenerarh0,28. JEVfallbacklocal/noretry. Principal/E intactos.
 ## D16-C1 activo, siguiente etapa condicionada — 2026-10-08T19:16UTC
 
 Celda7 ColabACTIVA (47min5s), salida final aún vacía. No reiniciar.
