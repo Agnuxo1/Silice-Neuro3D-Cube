@@ -1,4 +1,20 @@
-# Estado actual — 2026-10-08T22:13UTC
+# Estado actual — 2026-10-08T22:53UTC
+
+C2-R1 terminó sus 64 tramos en 6029,079251 s desde el inicio original.
+La auditoría independiente aprobó integridad y los cinco criterios
+temporales. La cota de intensidad fue 8,0928754243e-6 ≤1e-5.
+Véase [resultado C2](POINT-03-D16-C2-RESULTS.md). C1 negativo y el
+intento C2 fallido se conservan. Este aprobado corresponde sólo a la
+malla gruesa y no cierra T96/Q4.
+
+Se preparó [M2 intermedia](POINT-03-D16-MID-REFINED-TIME-CONTRACT.md)
+con requisito C2-R1 auditado, Padé32768 y Radau65536. Los controles de
+software y siete archivos numéricos aprobaron; no se ha propagado T96
+en M2 al registrar esta entrada. La carrera de dependencias del primer
+control de software se conserva y está descrita en
+[preparación M2](POINT-03-D16-M2-PREPARATION.md). M1 sigue sin ejecutar.
+
+## Lectura anterior — 2026-10-08T22:13UTC
 
 La tarea 1 (punto 3 histórico, convergencia T96/Q4) sigue **abierta**.
 D16-C1 terminó con 64 tramos; todos los datos se recuperaron y las

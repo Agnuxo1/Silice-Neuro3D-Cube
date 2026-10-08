@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-08T22:49:19.546788+00:00",
+  "integrity_pass": true,
+  "temporal_precision_pass": true,
+  "point03_closed": false,
+  "new_checkpoints_checked": 64,
+  "retained_P6_report_sha256": "a6b060faaff0d02ea6ee6cb2b7b0331d3962d5815bd97548af95e6d4830877a3",
+  "max_power_residual": 0.0,
+  "powers": {
+    "P6_32768": {
+      "field": 0.3329298439715965,
+      "intensity": 0.3323826831443692
+    },
+    "R5_65536": {
+      "field": 0.33292984424714417,
+      "intensity": 0.3323828699253613
+    }
+  },
+  "relative_field_difference": 1.1133721610599559e-05,
+  "power_differences": {
+    "field": 2.755476957716496e-10,
+    "intensity": 1.8678099211744126e-07
+  },
+  "PSD_observable_bounds": {
+    "field": 4.185175777540572e-06,
+    "intensity": 8.092875424346654e-06
+  }
+}
