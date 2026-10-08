@@ -1,3 +1,19 @@
+## D16-C1 remoto activo — 2026-10-08T18:35UTC
+
+Cuaderno privado importado y CPU confirmado; URL
+https://colab.research.google.com/drive/1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ.
+Chrome3,tab791982984. Celda3 dependencias NumPy2.2.6/SciPy1.15.1/psutil6.1.1
+terminóreturncode0. Selector iframe files.upload falló en dosintentos;
+cancelación dejó AssertionError en celda4, conservado. PanelArchivos subió
+mismoZIP6081913bytes. Adaptadortransporte4c90015 registradoantesde campos.
+NuevaCelda5: integridad20archivosPASS,UTC18:28:23; SHAcebaeac0...intacto.
+Celda7 original depropagación lanzada≈18:29UTC, ACTIVA. No reiniciar ni
+modificarla; salida subprocess aún no visible. No hay dictamenfinal ni
+conteo de campos verificado. Celda9 descarga preparada, ejecutar sólo
+tras terminar7. Fuente numérica/protocolo/umbrales originales intactos.
+Guard>3GiB, reserva4,5, global22000s, espera900, hijos360/corte370,unhilo.
+RecuperarZIPy ejecutar auditorlocal antesadoptar. No pasar a tarea2/h0,28.
+EstadoGithub9879bd4; nuevos registrostransporte pendientespush. JEVfallbacklocal.
 ## Reanudación D16-C1 — 2026-10-08T18:20UTC
 
 Usuario pide continuar desde la propuesta específica de transferencia y
