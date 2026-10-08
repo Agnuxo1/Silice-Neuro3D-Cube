@@ -1,3 +1,51 @@
+## C2-R1 recuperación activa — 2026-10-08T22:13UTC
+
+Sesión 50424 activa: 33/64 tramos completos, 15 retenidos y 18 nuevos.
+Último tiempo desde el inicio original: 3784,9 s; límite original 22000 s.
+Fuentes y manifiesto numérico congelados; no se repiten los tramos retenidos.
+Sin espera adicional; reserva 4,5 GiB y guardia numérica 3 GiB registrados
+antes de los nuevos campos en b564095. Fallo operativo original conservado.
+No hay evaluación temporal final de C2-R1 hasta completar y auditar 64 tramos.
+C1 completo e íntegro conserva resultado negativo: PSD intensidad 1,349e-5
+supera 1e-5. X1 valida sólo el primer tramo entre Windows y Linux.
+Al terminar: auditor independiente de recuperación, informe y publicación.
+M1 de malla intermedia sigue sin iniciar porque su condición C1 es falsa.
+Tarea 1 abierta; no se inicia tarea 2 ni la malla prospectiva h=0,28.
+JEV: fallback local identificado, bloqueo heredado sin nuevos intentos.
+GitHub verificado ed470ad; b564095 local pendiente de publicación.
+## C2-R1 recuperación activa — 2026-10-08T21:53UTC
+
+C2 original terminófailed por espera900s,15campos válidos auditadosPASS,
+residuo0,0,46875mm. Execution.json original intacto; no tramo16calculado.
+RecuperaciónC2-R1 preregb564095, sesión50424 ACTIVA;17/64 total,15retenidos
++2nuevos. Camposnuevos continúan enoriginal/R5_65536; informesRec separados
+point03_d16_refine_recovery_20261008. Trabajador def715... ymanifestnumérico
+original intactos. Fuente/auditorRec verifican físicos/datos/prerregistro.
+Reserva>4,5GiB,guardnumérico>3GiB/disco>2,unhilo,hijo360/corte370,
+sin esperaadicional. FundamentopicoRSS trabajadorpropio0,43864GiB observado.
+GlobalORIGINAL22000s desde2026-10-08T21:08:45.812102UTC, incluidastodas
+interrupciones. No resetear/ampliar. Últimoelapsedoriginal2619,5s.
+Al completar ejecutar scripts/audit_point03_d16_recovery.py conoutRec;
+auditor distingue reserva6first15/4,5rest y64campos, física idéntica.
+M1midnoiniciado/gateC1PASSfalso. C1negativo64CP/ZIP198/SHA154c97...CRC
++localAuditPASS,PSDI1,349e-5FAIL; X1firsttramo Win/LinuxPASS≈1,77e-14.
+TodoC1/X1originalpreservado. Tarea1abierta,ningúnh0,28/tarea2. JEVfallbacklocal.
+GitHubed470ad verificado; b564095Rec contrato aúnpendientepush;noobjetivosauto.
+## C2 esperando memoria, 11 tramos íntegros — 2026-10-08T21:33UTC
+
+Sesión84732 ACTIVA pero sin avanzar tras11/64 R5_65536. Últimoavance840,9s
+aprox; no part012.log/json. RAMobservada4,351GiB<reserva6GiB. Espera900s
+acumulada delcontrato3de7556; NO bajarreserva/editarfuentes duranteensayo.
+Auditorparcial11PASS,residuo0,distancia0,34375mm/2mm. Fuente
+scripts/audit_point03_d16_refine_partial.py e informe partial11_integrity_audit.json.
+No dictamen temporalfinalC2. Conservarcampos/sources/matriz/Padéretenido.
+Si termina, inspeccionar fallo y auditar antes de recuperar. Sólo nueva
+operación registrada despuésde fallo confirmado, sin extenderglobaloriginal.
+C1completo7621,698s/64CP: local+remoto íntegro, PSDintensidadFAIL1,349e-5.
+ZIP198archivos/SHA154c97...+CRCrecoveredPASS. X1realprimertramoWin/LinuxPASS
+Mrel≈1,77e-14; nootroensayo2mm. DatosC1/X1 preservados. M1NO iniciado/gatefalso.
+GitHubed470ad verificadoyPR1 actualizado. ArchivoC1/auditorlocal disponibles.
+Tarea1/punto3abierto; no tarea2/h0,28. Principal/Epreservados.JEVfallbacklocal.
 ## D16-C1 negativo recuperado; C2 local activo — 2026-10-08T21:09UTC
 
 C1completo7621,698s,64tramos2soluciones2mm. Remoto+LOCAL integridadPASS;

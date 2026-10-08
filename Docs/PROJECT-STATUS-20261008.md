@@ -1,3 +1,32 @@
+# Estado actual — 2026-10-08T22:13UTC
+
+La tarea 1 (punto 3 histórico, convergencia T96/Q4) sigue **abierta**.
+D16-C1 terminó con 64 tramos; todos los datos se recuperaron y las
+ auditorías local y remota aprobaron su integridad. El criterio temporal
+falló: la cota de discrepancia de intensidad es 1,3491078e-5, superior
+al umbral prerregistrado 1e-5. Los otros cuatro criterios aprobaron.
+Esto contrasta dos soluciones discretas; no certifica el error continuo.
+
+D16-C2 conserva Padé de C1 y calcula únicamente Radau con 65536 pasos.
+El intento original terminó por agotar 900 s de espera de memoria, con
+15 tramos íntegros. Su informe fallido permanece intacto. C2-R1, registrada
+en b564095 antes de nuevos campos, continúa exclusivamente los tramos
+restantes: 33/64 completados en la última lectura, sin evaluación final.
+La reserva operativa cambia a 4,5 GiB según el consumo observado;
+permanecen el trabajador, los datos, los criterios científicos, la guardia
+numérica de 3 GiB y el límite de 22000 s desde el inicio original.
+No se añade espera ni se recalculan los 15 tramos conservados.
+Véase [contrato de recuperación](POINT-03-D16-RECOVERY-CONTRACT.md).
+
+La malla intermedia preparada M1 sigue sin ejecutar: su condición de
+aprobación de C1 es falsa. La malla prospectiva h=0,28 y las tareas 2–22
+siguen pendientes. X1 reproduce únicamente el primer tramo Windows/Linux
+con diferencia relativa del campo aproximada de 1,8e-14. Los controles
+auxiliares de Blender son acotados y no validan el dispositivo T96.
+
+Las entradas siguientes documentan la evolución histórica de esta jornada;
+las expresiones «pendiente» o «no iniciado» se refieren a su momento.
+Los informes originales y el checkout principal se preservan.
 # Estado factual — 8 de octubre de 2026
 
 Complementa el inventario y la actualización del7deoctubre, sin modificar
