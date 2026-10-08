@@ -1,0 +1,6 @@
+{
+  "purpose": "Synthetic 3-DOF software control only; not T96",
+  "source_sha256": {
+    "scripts/run_point03_d16_mid_time.py": "62d570995aa895f6fd17adc43b18f465a555c392e53e5d7727d013a08d9b1376"
+  }
+}

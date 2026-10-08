@@ -1,0 +1,15 @@
+{
+  "controls_pass": true,
+  "manufactured_DOF": 3,
+  "dense_errors": {
+    "P6_32768_1": 1.3755036726418992e-13,
+    "P6_32768_2": 2.7408681924633753e-13,
+    "R5_32768_1": 2.4107773320163598e-14,
+    "R5_32768_2": 5.794449497972482e-14
+  },
+  "bad_previous_hash_rejected_in_both_families": true,
+  "resources_mocked_for_software_test": true,
+  "t96_propagated": false,
+  "point03_closed": false,
+  "tested_worker_sha256": "62d570995aa895f6fd17adc43b18f465a555c392e53e5d7727d013a08d9b1376"
+}
