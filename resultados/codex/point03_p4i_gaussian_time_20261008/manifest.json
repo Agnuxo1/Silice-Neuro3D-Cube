@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-10-08T05:45:01.574733+00:00",
+  "geometry_folder": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008",
+  "detector_folder": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008",
+  "damping_folder": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4g_damping_20261008",
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_p4i.py": "723b6302a2dca7c524f74139ffdf8e0f04eefcc30c796aab8061c29ca78ce358",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_p4i.py": "6c6c57b53d7709db567748be757f0179575564038e17a570d1ba1dc2c0c78453",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P4I-CONTRACT.md": "e7d0a92bee76d24af2531ad9f854e3431b6c1ed7fb1ee6c248ed68aaacf139ed",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_time.py": "3f355f83626ad8fe34c0e2d5ad3bc91f7061590e595d38d649c938a5055615bd",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_radau.py": "323459cbc0b53221b069843e2aa5492cc875ae42d52632e51945ca61b1317ef2",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\report_recovered.json": "340c34e6774a474cf8a1b5868e6ddb9908de20ad3659b9bdf2ccab5ae170db7f",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\mass.npz": "11254bf0e6e45249c7bc97eb58c9a91c8a2bbce882b6c2a9434ad310e5007222",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\stiffness.npz": "adabfcd5f45cf892f142736a5cfa49e3d37bba8ce936252583a0ee4d3b3b0973",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\cladding_mass.npz": "cb145c0eab81a178374661e18544156f476680a3736679a569e3fbbb063c1c06",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008\\report.json": "148a81c56c6e34301c1343a1a681dcebfa25f65d77e4f2920e337ee863d99736",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008\\gaussian_q16.npz": "3b8a54f017f8f5c0601c84b6aa3ee82c9c8e18485c6dc61fe592df6f4dac0f01",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008\\core_q32.npz": "06437bd5e8db2b0dda5a4839f8f46acd0522c819ff046a86692c40177eeb55dd",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008\\intensity_q32.npy": "72c74250f5bb83eae7bd1268b736cab5e4d9860223ebe3ccd5b72342758e4538",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4g_damping_20261008\\report.json": "7132a382b0ebe2b7b2e88310d7df221b826e8d1a5c0ac6ada36f8c81394a47c4",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4g_damping_20261008\\damping_q12.npz": "3dad7b4c9e561be6fec7340f705067f0ed5ae449c1c88a331693b1e57075694e",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4d_time_20261008\\report.json": "787af064b7bc858a2681bffb19e729f584a56bc86a4dfff8c47bb7c584212971",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4h_radau_20261008\\report.json": "c0249932e972bad150b339fd2080d57a51e116c197466210b48971aa26b0a042"
+  },
+  "plan": [
+    {
+      "id": "P6_8192",
+      "method": "P6",
+      "steps": 8192
+    },
+    {
+      "id": "P6_16384",
+      "method": "P6",
+      "steps": 16384
+    },
+    {
+      "id": "R5_32768",
+      "method": "R5",
+      "steps": 32768
+    }
+  ],
+  "numerical_threads": 1,
+  "P_in": 1.0000000000000002
+}
