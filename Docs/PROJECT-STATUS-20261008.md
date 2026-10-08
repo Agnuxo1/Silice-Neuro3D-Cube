@@ -35,7 +35,10 @@ por lo que su dictamen sigue siendo negativo. P4I3 añade sólo Radau
 con 65536 pasos y conserva Padé de P4I2; se interrumpió por recursos en
 el tramo 75. La auditoría parcial aprobó los 74 anteriores. Se registró
 una recuperación sólo de los tramos restantes, manteniendo el presupuesto
-original; está pendiente de recursos y de terminación. Una malla no
+original. La primera continuación guardó 15 tramos nuevos y se detuvo
+antes del 90 por dos lecturas fluctuantes de RAM. Se corrigió la reserva
+para tomar una sola muestra y se auditaron los 89 tramos retenidos.
+La continuación 90–256 está en marcha, sin dictamen final. Una malla no
 certifica convergencia espacial. Detalles en POINT-03-P4I3-RESOURCE-RESULTS.md.
 
 PreparaciónP5A/B:mallas h0,546875/0,4375µm y todos sus controlesPASS;
