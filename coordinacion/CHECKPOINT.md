@@ -1,3 +1,22 @@
+## D16-C1 activo, siguiente etapa condicionada — 2026-10-08T19:16UTC
+
+Celda7 ColabACTIVA (47min5s), salida final aún vacía. No reiniciar.
+Chrome3tab791982984, notebook1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ.
+Celda4 cancelada/fallo transporte preservado,5 integridad20PASS,7 cálculo,
+9 descarga preparada. Fuentes/modelo/criterios/cuotasdelZIP intactos.
+Guard>3GiB/reserva4,5,global22000s,espera900,hijos360/corte370,unhilo.
+Última RAMUI1,58/12,67GiB. Sin conteoCPni evaluación adoptados.
+Memorialocal recuperada7,719GiB; preservaciónprincipal333/E603PASS19:02.
+D16-M1 nuevo contrato/source433b9db preparado, SIN cálculo óptico. Fuente
+independiente mid K16d90b53...; P6/R532768, reserva6GiB, resto mismo.
+Trabajador manufacturado3DOF/cadenas/hashes corruptosPASS; recursosmock
+sóloen test. Inputs reales7hashesPASS,47777libres,Pin1,0000000000000002.
+Requisitoobligatorio: auditoríaLOCALcoarse integridad+temporalPASS en
+point03_d16_cloud_recovery_20261008/resultados/codex/cloud_d16_c1_20261008/
+local_integrity_audit.json. NO lanzar mid hasta recuperar/verificar.
+Al terminar7 recuperarZIP9 y ejecutarauditorlocalcoarse; fuentes viejas
+intactas para sus hashes. Tarea1abierta,ninguna tarea2/h0,28. JEVfallbacklocal.
+GitHub85dcfb8; mid433b9db+controles aún pendientespublicación. No metas/auto.
 ## Seguimiento D16-C1 — 2026-10-08T18:55UTC
 
 Celda7 Colab sigue ACTIVA (última observación24min19s); no salida final
