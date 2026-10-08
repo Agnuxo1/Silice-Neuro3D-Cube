@@ -33,6 +33,14 @@ No se cierran ni modifican aplicaciones ajenas. La recuperación comenzó
 tras 140 s de espera y guardó un nuevo tramo 75 con los controles del
 trabajador aprobados. La auditoría independiente final sigue pendiente.
 
+La primera continuación alcanzó el tramo 89 y se detuvo antes de lanzar
+el 90 por una carrera entre dos lecturas de RAM del control previo.
+Sus 15 tramos nuevos quedaron aprobados por el trabajador; una segunda
+auditoría parcial verificó los 89 retenidos con residuo máximo cero.
+Se registró la corrección en dcf43af/20ac751 antes de nuevos campos:
+usar una sola muestra de recursos y continuar exclusivamente 90–256.
+Los controles científicos, las reservas y el presupuesto original permanecen.
+
 El punto 3 histórico, tarea 1 actual, sigue abierto. P5C no se ha iniciado
 y la malla fina de 0,28 micrómetros no se ha generado. Antes del contraste
 espacial también queda pendiente verificar la sensibilidad de la rigidez
