@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-08T09:33:07.042487+00:00",
+  "integrity_pass": true,
+  "temporal_precision_pass": false,
+  "point03_closed": false,
+  "checkpoints_checked": 224,
+  "max_power_residual": 0.0,
+  "powers": {
+    "P6_8192": {
+      "field": 0.33292413581625746,
+      "intensity": 0.3326991619912742
+    },
+    "P6_16384": {
+      "field": 0.3329241274153423,
+      "intensity": 0.33269915524499305
+    },
+    "R5_32768": {
+      "field": 0.33292411735581956,
+      "intensity": 0.3326990926308162
+    }
+  },
+  "relative_field_difference": 3.148542628877064e-05,
+  "PSD_observable_bounds": {
+    "field": 1.0249061155976602e-05,
+    "intensity": 1.592163908803498e-05
+  },
+  "power_differences": {
+    "field": 1.0059522714822577e-08,
+    "intensity": 6.261417684338966e-08
+  },
+  "scope": "One-mesh practical temporal consistency only; no spatial or physical-device closure."
+}
