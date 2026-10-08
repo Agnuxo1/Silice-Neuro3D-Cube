@@ -1,0 +1,14 @@
+{
+  "original_sha256": "d0dcdee8190100f4550d7bcd30f2fd55689c94d5c494cf5dcb25513c67b6e5fa",
+  "generated_sha256": "f541d5053d5c13dc00df62549240e9b58aa4cfc66bcfd9ba7752dcbdb75e298c",
+  "numerical_criteria_unchanged": true,
+  "syntax_pass": true,
+  "changes": {
+    "e.get('wait_s', 0.) <= 900": "e['original_wait_budget_exhausted'] and e['recovery_wait_s'] == 0",
+    "read(out/link['path'])": "read(case_folder/link['path'])",
+    "sha(out/link['path'])": "sha(case_folder/link['path'])",
+    "sha(out/cp['field_path'])": "sha(case_folder/cp['field_path'])",
+    "np.load(out/cp['field_path']": "np.load(case_folder/cp['field_path']",
+    "event['reservation']['available_ram_bytes'] > 6*1024**3": "event['reservation']['available_ram_bytes'] > (6 if index <= 15 else 4.5)*1024**3"
+  }
+}
