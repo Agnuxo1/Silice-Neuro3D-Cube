@@ -14,6 +14,11 @@ def run(kind,mesh_folder,out):
     function=ast.parse(inspect.getsource(base.run)).body[0]
     replacement=mesh_folder.relative_to(ROOT).as_posix()
     class Change(ast.NodeTransformer):
+        def visit_Call(self,node):
+            for keyword in node.keywords:
+                if keyword.arg=='old_unsplit_difference_bound_m_inverse':
+                    keyword.value=ast.IfExp(test=ast.Compare(left=ast.Attribute(value=ast.Name(id='D',ctx=ast.Load()),attr='shape',ctx=ast.Load()),ops=[ast.Eq()],comparators=[ast.Attribute(value=ast.Name(id='old',ctx=ast.Load()),attr='shape',ctx=ast.Load())]),body=keyword.value,orelse=ast.Constant(None))
+            return self.generic_visit(node)
         def visit_Constant(self,node):
             table={'resultados/codex/point03_p4c_mesh_20261008':replacement,'report_recovered.json':'report.json','integrity_pass':'controls_pass','artifact_sha256':'hashes'}
             if isinstance(node.value,str) and node.value in table:return ast.copy_location(ast.Constant(table[node.value]),node)
