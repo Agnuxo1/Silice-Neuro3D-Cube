@@ -97,3 +97,13 @@ iniciar por RAM local insuficiente (1,676GiB). ZIP6,082MB y cuaderno CPU
 validados, transferencia/ejecución Colab pendiente de aprobación específica.
 Colab reconectado y sólo prueba genérica11,593GiB libres. Véase
 POINT-03-D16-PREPARATION-RESULTS.md. No se cierran T96/Q4 ni tareas posteriores.
+
+D16-C1 completo7621,698s/64tramos; ZIP198archivos recuperadoSHA/CRCPASS;
+auditoría local y remota integridadPASS, precisiónFAIL por PSDintensidad
+1,3491078e-5>1e-5. OtroscuatrocriteriosPASS. X1reproducción primeros1024
+pasos Linux/WindowsPASS conMrel≈1,8e-14; no es trayectoria2mm adicional.
+M1preparado/noiniciado porque su requisito temporal C1PASS es falso.
+D16-C2 prereg3de7556 añade sóloRadau65536 desde misma entrada, conserva
+Padé32768 completo porhash y el negativo anterior. Fuente/control3DOFPASS;
+CPUlocal iniciado, pendienteevaluación/auditoría. Tarea1sigueabierta.
+Véase POINT-03-D16-C1-RESULTS.md para métricas y trazabilidad de transporte.

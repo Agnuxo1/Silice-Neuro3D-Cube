@@ -1,0 +1,12 @@
+{
+  "controls_pass": true,
+  "dense_errors": [
+    1.205545323577413e-13,
+    2.508372900433991e-13
+  ],
+  "bad_previous_hash_rejected": true,
+  "resources_mocked_for_software_test": true,
+  "t96_propagated": false,
+  "point03_closed": false,
+  "tested_worker_sha256": "def715416c077fa120755e671199491a3a454a8c369645e5c45e3b2d9103e2d3"
+}

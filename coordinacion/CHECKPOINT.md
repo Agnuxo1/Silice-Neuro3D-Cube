@@ -1,3 +1,68 @@
+## D16-C1 negativo recuperado; C2 local activo — 2026-10-08T21:09UTC
+
+C1completo7621,698s,64tramos2soluciones2mm. Remoto+LOCAL integridadPASS;
+precisiónFAILPSDint1,3491078e-5>1e-5. CampoMrel1,885e-5 yotrosgatesPASS.
+ZIP30429527bytes198archivosSHA154c97d008acb69c766cd4e802e932e42317f4b7a42e1b6cf985b0374e83064e
++CRC verificados; recuperado enpoint03_d16_cloud_recovery_20261008,
+local_integrity_audit.json separado delremoto. Valores originalesintactos.
+X1primer1024p ambosLinux/WindowsPASSMrel1,77e-14/pot<3,5e-15.
+Cua: datos por salida HTTPS en rangos512KiB tras probar64; sin página interna.
+Celda4fallotransporteconservado; fuenteoriginal/dropcoeffintactos.
+C2prereg3de7556, workerSHAdef715... controlmanufacturado3DOF+badHashPASS.
+SOLO R5_65536nuevo,64tramos1024; retieneP6_32768C1part032SHAa6b060...
+Sesiónlocal84732 ACTIVA; no reiniciar/modificarfuentes/refs/matrices.
+GlobalC2nuevo22000s, espera900, reserva>6GiB/guard>3GiB/disco>2,
+hijos360/corte370,unhilo. Campos/RAMreales; mockúnicamente test3DOF.
+Al terminar ejecutar audit_point03_d16_refine.py. No M1: gateC1PASS falso.
+SiC2PASS, registrar nueva dependenciaMid antescampos, preservarM1.
+Tarea1/punto3abierto, no tarea2/h0,28. JEVfallbacklocal. GitHubaa5279e,
+C1recovery/C2regs3de7556 aúnlocalpendientespublicar. Principal/Epreservados.
+## D16-C1 remoto sigue activo — 2026-10-08T20:35UTC
+
+ÚltimaUI:celda7ACTIVA2h5min42s, sin informe final. RAM1,39/12,67GiB,
+disco20,81/107,72GB. No se ha confirmado número de tramos; no reiniciar.
+Global22000s desde≈18:29UTC, espera900s, hijos360/corte370, un hilo.
+ZIP/data/src/criterios intactos. Colabprivado1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ,
+Chrome3tab791982984. Celda5hashes20PASS;7run+auditor;9export tras concluir.
+No se ha recuperado la copia.ipynb pedida antes; no repetir ni sobrescribir.
+X1Windows2refs1024pasos/62,5µm completas72,003/71,306s, camposreales en
+point03_d16_cross_platform_20261008. Comparación1e-10/1e-12 pendiente.
+M1contrato433b9db/control/software+inputs47777DOFPASS, sincampoóptico.
+Requiere auditorLOCALcoarse integridad+temporalPASS anteslanzamiento.
+ResultadosremotosrecuperarCRC+SHA enpoint03_d16_cloud_recovery_20261008;
+auditor localguardar local_integrity_audit.json, mantenerauditorremoto.
+No avanzar tarea2/h0,28. Point3abierto. GitHubaa5279e/preflightPASS; último
+principal333/E603preservación19:02PASS. JEVfallbacklocal/noretry.
+## D16-C1 aún ejecutándose — 2026-10-08T20:15UTC
+
+ÚltimaUI:celda7ACTIVA1h45min14s, salida finalvacía, RAM1,41/12,67GiB.
+No afirmarconteoCPni precisión; no reiniciar/cambiarfuentes. Contrato22000s
+siguecontandodesde≈18:29UTC. Cuaderno/CPU/SHA20/celda5 verificados previamente.
+Chrome3tab791982984; privadoURL1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ.
+Tras terminar7: exportcelda9, recuperarZIPenpoint03_d16_cloud_recovery_20261008,
+auditorLOCALguardarlocal_integrity_audit.json manteniendoelremotointacto.
+CompararX1primero1024pasosporfam contra referenciasWindows(Mrel≤1e-10,
+pot≤1e-12); X1refs2realesconservadas, NO otroensayo2mm niportabilidadPASSaún.
+M1source433b9db/testedworker62d570...+7hashes47777DOFPASS. NingúncampoMid.
+Gatecoarseintegridad+temporalPASSobligatorio; esperar. Principal333/E603
+últimopreservación19:02PASS. Publicaciónaa5279e/preflightPASS. X1logs/fields
+realesyaenGitHub. Tarea1abierta,tareas2–22pendientes,noh0,28. JEVfallbacklocal.
+No scriptsnuméricos antiguosmodificados:preservarSHAparamauditorm.source.
+## D16-C1 aún activo — 2026-10-08T19:57UTC
+
+ÚltimaobservaciónColabcelda7ACTIVA1h26min32s; salida finalvacía. No
+reiniciar ni alterar. FuentesZIP/modelo/cuotas intactos, CPUmemUI1,4/12,67.
+No conteoCPni dictamenverificado. Campos/resultados runtimeaúnpendientes.
+Chrome3tab791982984/URL1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ, capturaproof
+colab_d16_started.jpg. Descarga.ipynb aúnno recuperada. Celda9exportpreparada.
+X1localcompleto2campos1024pasos62,5µm,143s aprox; controlportabilidadNO
+comparadohastaZIPremoto. Reportpoint03_d16_cross_platform_20261008.
+M1preparado47777DOF/7hashes/3DOFcontrolPASS; no propagaciónmid. Requisito
+local_integrity_audit.json decoarse debeaprobarintegridadytemporal. Gateintacto.
+GitHubaa5279e/publicaciónPASS; principal333/E603previoPASS19:02. No tarea2,
+noh0,28, ningúnciebrepoint3. JEVfallbacklocal/noretry. Globalcoarse22000s,
+espera900/hijos360 corte370. Recuperar/auditarLOCALal terminar; noadoptar
+soloporsalidaGUI. Mantener fuenteoriginal para SHA del manifiesto remoto.
 ## Seguimiento D16 y control local acotado — 2026-10-08T19:36UTC
 
 D16-C1 Colabcelda7ACTIVA, último1h7min43s; informe finalvacío. SinconteoCP,
