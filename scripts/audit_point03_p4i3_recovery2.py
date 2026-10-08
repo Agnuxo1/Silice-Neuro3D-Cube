@@ -2,7 +2,10 @@
 import ast
 from datetime import datetime,timezone
 import inspect
+import os
 from pathlib import Path
+for key in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','NUMEXPR_NUM_THREADS'):
+    os.environ[key]='1'
 import numpy as np
 from scipy.sparse import load_npz
 import audit_point03_p4i3 as original
