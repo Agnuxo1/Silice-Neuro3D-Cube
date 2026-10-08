@@ -38,7 +38,8 @@ una recuperación sólo de los tramos restantes, manteniendo el presupuesto
 original. La primera continuación guardó 15 tramos nuevos y se detuvo
 antes del 90 por dos lecturas fluctuantes de RAM. Se corrigió la reserva
 para tomar una sola muestra y se auditaron los 89 tramos retenidos.
-La continuación 90–256 está en marcha, sin dictamen final. Una malla no
+La continuación 90–256 se detuvo por agotar la espera de memoria:
+hay 100 tramos válidos, sin dictamen a 2 mm. Una malla no
 certifica convergencia espacial. Detalles en POINT-03-P4I3-RESOURCE-RESULTS.md.
 
 PreparaciónP5A/B:mallas h0,546875/0,4375µm y todos sus controlesPASS;
@@ -49,6 +50,14 @@ sólo podía empezar si P4I2 aprobaba: no se ha iniciado. Un eventual
 aprobado P4I3 requerirá registrar la nueva dependencia antes de campos.
 P5D fija los criterios espaciales antes de las potencias P5C. Su evaluador
 superó 11 controles con leyes conocidas y rechazos, sin datos ópticos T96.
+
+Nuevo control de rigidez: triangular8 no certifica las cotas en prototipo
+ni malla intermedia. Gauss–Duffy por bloques12/16 frente a24 sí aprueba
+en el prototipo; pendientes las otras mallas por recursos. Colab CPU
+comprobado con11,65GiB libres mediante prueba genérica; paquete preparado
+localmente y transferencia pendiente de autorización específica. No se
+han ejecutado datos del proyecto en Colab. Detalles en
+POINT-03-DUFFY-AND-RESOURCE-RESULTS.md.
 
 Control previo de seno N799 PASS(error2,1477e-13); previsión FDST6958s,
 estimación sin garantía. Presupuesto P2 global36000s; sin ampliarlo durante
@@ -68,3 +77,15 @@ Informes y contratos:
 [P3](POINT-03-P3-CONTRACT.md),
 [P3 resultados](POINT-03-P3-RESULTS.md), [P4 controles](POINT-03-P4-CONTROL-RESULTS.md),
 [M1](POINT-03-M1-RESULTS.md), [N1](POINT-03-N1-RESULTS.md).
+
+## Plataformas propuestas por el usuario — 2026-10-08
+
+BlenderPhotonics732799f y Optics Simulator2b488e2 fijados. Control auxiliar
+de espectro angular homogéneo y exportación JMesh: PASS, contrato5f2d9c3.
+No se propagó T96 ni se ejecutó Blender/Maxwell. Véase
+BLENDER-PLATFORMS-ASSESSMENT-20261008.md. Tarea1 sigue abierta.
+
+Controles Duffy coarse repetido y mid completados con PASS, sin cambiar
+contrato97a33b9; intento coarse original preservado. Duffy16 se fija como
+regla común antes de nuevas propagaciones. Cotas potencia16–24 <1e-6 en
+las tres mallas. Nuevos controles longitudinales/espaciales/dominio pendientes.

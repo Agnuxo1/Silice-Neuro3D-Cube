@@ -1,3 +1,15 @@
+## Controles Blender y cuadratura completados — 2026-10-08T17:00UTC
+
+No hay cálculo activo. Duffy prototype/coarse_retry/mid PASS (61,485/
+21,050/36,058s); fuente/criterios97a33b9 intactos. Duffy16 seleccionado
+antes de potencias nuevas; todas cotas potencia16–24<1e-6. No modificar
+operadores antiguos: temporalP4I3/K8 permanece100/256, auditoría100PASS.
+Control externo field.py OpticsSimulator2b488e2 PASS: modos<=1,05e-15,
+Gauss grids1,49e-10, vsparaxial3,016e-6; sinpropagaciónT96/Blender/Maxwell.
+JMesh planar74785v/148832caras, sólovisualización; importación pendiente.
+Prerregistro5f2d9c3. No avanzar tarea2 ni generarh0,28. Nuevoprotocolo
+longitudinal conDuffy16 necesario antesdecampos. Colabtransferencia sigue
+sinaprobar/sinejecutar; pregunta específica pendiente. JEV fallbacklocal.
 ## Plataformas Blender y estado factual — 2026-10-08
 
 No hay proceso numérico activo. P4I3 terminó por espera de RAM agotada;

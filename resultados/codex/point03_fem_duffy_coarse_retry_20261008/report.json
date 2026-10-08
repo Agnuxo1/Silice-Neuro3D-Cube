@@ -1,0 +1,109 @@
+{
+  "status": "completed",
+  "created_utc": "2026-10-08T16:56:31.344435+00:00",
+  "label": "coarse",
+  "point03_closed": false,
+  "no_new_propagation": true,
+  "resource_start": {
+    "available_ram_bytes": 5900795904,
+    "free_disk_bytes": 501836021760
+  },
+  "assembly_controls_pass": true,
+  "controls": {
+    "tri8": {
+      "symmetry": 0.0,
+      "constant_residual": 2.8171909249863347e-15,
+      "energy_x_m2": 1.638400000000024e-08,
+      "energy_y_m2": 1.638399999999981e-08,
+      "cross_m2": -1.1289495456925844e-22
+    },
+    "duffy12": {
+      "symmetry": 0.0,
+      "constant_residual": 3.0808688933348094e-15,
+      "energy_x_m2": 1.6384000000000023e-08,
+      "energy_y_m2": 1.638400000000007e-08,
+      "cross_m2": -5.187807048323275e-23
+    },
+    "duffy16": {
+      "symmetry": 0.0,
+      "constant_residual": 2.7200464103316335e-15,
+      "energy_x_m2": 1.6383999999999957e-08,
+      "energy_y_m2": 1.6383999999999957e-08,
+      "cross_m2": -3.989851935338776e-23
+    },
+    "duffy24": {
+      "symmetry": 0.0,
+      "constant_residual": 2.949029909160572e-15,
+      "energy_x_m2": 1.6383999999999947e-08,
+      "energy_y_m2": 1.6384000000000003e-08,
+      "cross_m2": -8.273100173586107e-25
+    }
+  },
+  "quadrature_controls": {
+    "duffy12": {
+      "points_per_axis": 12,
+      "total_points": 144,
+      "maximum_moment_absolute_error": 1.3877787807814457e-16
+    },
+    "duffy16": {
+      "points_per_axis": 16,
+      "total_points": 256,
+      "maximum_moment_absolute_error": 3.608224830031759e-16
+    },
+    "duffy24": {
+      "points_per_axis": 24,
+      "total_points": 576,
+      "maximum_moment_absolute_error": 1.3877787807814457e-16
+    }
+  },
+  "reproduction_relative_error": 1.437912387119578e-16,
+  "detector_mass_operator_upper_bounds": {
+    "field": 18.782195679067122,
+    "intensity": 16.355216025314277
+  },
+  "pairs": {
+    "duffy12_vs_duffy24": {
+      "generator_mass_norm_bound_m_inverse": 9.240157085892706e-06,
+      "field_mass_norm_bound": 1.8480314171785414e-08,
+      "observable_power_bounds": {
+        "field": 6.942017539702218e-07,
+        "intensity": 6.044990609904547e-07
+      },
+      "conservative_consistency_pass": true
+    },
+    "duffy16_vs_duffy24": {
+      "generator_mass_norm_bound_m_inverse": 1.0809173618226779e-05,
+      "field_mass_norm_bound": 2.161834723645356e-08,
+      "observable_power_bounds": {
+        "field": 8.120800561061814e-07,
+        "intensity": 7.071454783249077e-07
+      },
+      "conservative_consistency_pass": true
+    }
+  },
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_fem_duffy.py": "71288843f18d15019bca9328a3aee4732a155fb23f9373bbdce62a179e48464e",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FEM-DUFFY-CONTRACT.md": "e6d1984af3a13c524388fdde6e8c07af640365b483be91443109ba657a14f108",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_p4f.py": "517172338bb36569b1c83f856fc74bf316c49aa9a73e6b6eabcdb6b7512bbb5a",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_detector.py": "cc7303250a60b164e265a2062b0f443a5980d75dcbe2ff30e66003fb6f58c49c",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5a_mesh_coarse_20261008\\report.json": "be9c3d10b4829decb8b55b3230fc5a2cf8d41a978c3d9c0e17ade782cd68e499",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5a_mesh_coarse_20261008\\T96_curved.msh": "9be492debc2c0498fa3125f94762b33717013cb1a86cd53ff36f36e93f0efcc7",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5a_mesh_coarse_20261008\\mesh_arrays.npz": "08b63a96bcadd990030bb2ad1e87e0f523dbd71a21e06c8522e14c9eddba9d60",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5a_mesh_coarse_20261008\\stiffness.npz": "32529b8fbf563b445e7169eb1dd2cc8ec7d499f9c0b652324156f0a88caa76ef",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5a_mesh_coarse_20261008\\mass.npz": "1f2b4e29164ee19a5995f0318f869b30b9e16af636e3b6d12a72585b94fd036d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5b_detector_coarse_20261008\\core_q32.npz": "890e6ede86903f92023a75490ab007a7050e3acfed8fc384728321de9c8433a8",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5b_detector_coarse_20261008\\intensity_q32.npy": "44b1c23853eb2c8dda75db5007af2b6273a659f5fb97004eb6056a9945fc5eb6",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5b_detector_coarse_20261008\\gaussian_q16.npz": "bd6277c94db5d7e142f4999a32c3c30d608b559884adf70683353ff42dc60b86"
+  },
+  "artifacts": {
+    "stiffness_duffy12.npz": "526d67a5a0ee2cda72f6cfdcae3aea0a6ad72fe767d49d9adeedb3415d831e7e",
+    "stiffness_duffy16.npz": "51a273ef6a14dbcc425e1d5f22820963c2c9bc219f26fa56447115b06acef981",
+    "stiffness_duffy24.npz": "8b797fdd39b6b6c8385ceaab3f148141bb578a9300e3e2a23d87e139bce1849e",
+    "stiffness_tri8.npz": "279c89493bdac1db6d314fb038d9618889e90e483571f8e3e27753679693a1e1"
+  },
+  "elapsed_s": 21.049841000000015,
+  "resource_end": {
+    "available_ram_bytes": 5379219456,
+    "free_disk_bytes": 501826580480
+  }
+}

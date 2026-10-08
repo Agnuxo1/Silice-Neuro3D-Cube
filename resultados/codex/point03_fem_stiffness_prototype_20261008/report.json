@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-10-08T15:08:06.943494+00:00",
+  "assembly_controls_pass": true,
+  "label": "prototype",
+  "controls": {
+    "8": {
+      "symmetry": 0.0,
+      "constant_residual": 2.733924198139448e-15,
+      "energy_x_m2": 1.6384000000000096e-08,
+      "energy_y_m2": 1.638399999999987e-08,
+      "exact_linear_energy_m2": 1.6384e-08,
+      "cross_m2": -2.68833699079734e-23,
+      "quadrature_points": 16
+    },
+    "12": {
+      "symmetry": 0.0,
+      "constant_residual": 3.0773994463828558e-15,
+      "energy_x_m2": 1.638400000000054e-08,
+      "energy_y_m2": 1.63840000000002e-08,
+      "exact_linear_energy_m2": 1.6384e-08,
+      "cross_m2": -2.2622293622089567e-22,
+      "quadrature_points": 33
+    },
+    "16": {
+      "symmetry": 0.0,
+      "constant_residual": 2.979387569990166e-15,
+      "energy_x_m2": 1.638399999999983e-08,
+      "energy_y_m2": 1.638400000000048e-08,
+      "exact_linear_energy_m2": 1.6384e-08,
+      "cross_m2": -3.783188079693699e-22,
+      "quadrature_points": 61
+    }
+  },
+  "reproduction_relative_error": 0.0,
+  "detector_mass_operator_upper_bounds": {
+    "field": 18.52538052537009,
+    "intensity": 16.356650528482124
+  },
+  "pairs": {
+    "8_vs_16": {
+      "generator_mass_norm_bound_m_inverse": 2.852964736817031,
+      "field_mass_norm_bound": 0.005705929473634062,
+      "observable_power_bounds": {
+        "field": 0.2114090294999913,
+        "intensity": 0.1866597886807966
+      },
+      "conservative_consistency_pass": false
+    },
+    "12_vs_16": {
+      "generator_mass_norm_bound_m_inverse": 8.273201417448104e-05,
+      "field_mass_norm_bound": 1.654640283489621e-07,
+      "observable_power_bounds": {
+        "field": 6.130568176850293e-06,
+        "intensity": 5.412874573477664e-06
+      },
+      "conservative_consistency_pass": true
+    }
+  },
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_fem_stiffness_quadrature.py": "17c67b8bbc052a2d68c2a00f5341e669dfb0f2a925e7c0c1b0c49e9a11693bb0",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FEM-STIFFNESS-QUADRATURE-CONTRACT.md": "27d6119cd5723a78d336cf1f17ad3d7c6d5f00437c4ebb71a715969ca3fa12a5",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_p4f.py": "517172338bb36569b1c83f856fc74bf316c49aa9a73e6b6eabcdb6b7512bbb5a",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_detector.py": "cc7303250a60b164e265a2062b0f443a5980d75dcbe2ff30e66003fb6f58c49c",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\report_recovered.json": "340c34e6774a474cf8a1b5868e6ddb9908de20ad3659b9bdf2ccab5ae170db7f",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\T96_curved.msh": "addf8773816d625012aa5b0321bd1ada0519fcc4c604a54b2afac2617221692e",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\mesh_arrays.npz": "379b2514e581cbd36f4dbddcb36a991e073c26c8d2e949cfdab3b22a8216e755",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\stiffness.npz": "adabfcd5f45cf892f142736a5cfa49e3d37bba8ce936252583a0ee4d3b3b0973",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4c_mesh_20261008\\mass.npz": "11254bf0e6e45249c7bc97eb58c9a91c8a2bbce882b6c2a9434ad310e5007222",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008\\core_q32.npz": "06437bd5e8db2b0dda5a4839f8f46acd0522c819ff046a86692c40177eeb55dd",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008\\intensity_q32.npy": "72c74250f5bb83eae7bd1268b736cab5e4d9860223ebe3ccd5b72342758e4538",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4f_detector_20261008\\gaussian_q16.npz": "3b8a54f017f8f5c0601c84b6aa3ee82c9c8e18485c6dc61fe592df6f4dac0f01"
+  },
+  "artifacts": {
+    "stiffness_q12.npz": "055b8beed27336a0cd599ff615464bc9a99c921661f59a8da6a5c3a499ba0ff3",
+    "stiffness_q16.npz": "b0cf761f0fad55da4c66d6a5f647c3046b2ea60581848c1ce8f0592ee66a8c20",
+    "stiffness_q8.npz": "adabfcd5f45cf892f142736a5cfa49e3d37bba8ce936252583a0ee4d3b3b0973"
+  },
+  "elapsed_s": 7.676722800009884,
+  "point03_closed": false,
+  "no_new_propagation": true
+}
