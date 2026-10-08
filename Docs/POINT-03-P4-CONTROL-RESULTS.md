@@ -12,7 +12,8 @@
 | P4G | Amortiguador integrado porpartes PASS;D8/12Mbound2,107e-8m^-1 | Perfil físico igual, cuadratura controlada en diagonales/umbrales |
 | P4H | Radau5Lestablevsdense:errores5,16e-8/6,44e-8,órdenes~5 PASS | Segunda familia temporal independiente |
 | P4I | Terminado: 224 campos auditados, integridad aprobada; cotas PSD 1,024906e-5 y 1,592164e-5 frente al límite 1e-5 | Precisión temporal fallida; se conserva el resultado negativo |
-| P4I2 | En curso: añade Padé6 con 32768 pasos y reutiliza Radau5 retenido | Mismos límites; pendiente de terminación y auditoría |
+| P4I2 | Terminado y auditado: 128 campos nuevos y 224 retenidos; cota PSD de intensidad 1,169059e-5 >1e-5 | Integridad aprobada; dictamen temporal negativo conservado |
+| P4I3 | En curso: añade sólo Radau5 con 65536 pasos y conserva Padé6 de P4I2 | Mismos límites; todavía pendiente |
 
 Nueva dependencia sólo en entorno separado
 D:/PROJECTS/.cognition/silice_fem_env_20261008. NumPy2.2.6/SciPy1.15.1
