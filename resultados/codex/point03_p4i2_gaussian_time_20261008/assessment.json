@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-08T11:56:49.642602+00:00",
+  "temporal_precision_pass": false,
+  "point03_closed": false,
+  "requires_independent_audit": true,
+  "powers": {
+    "P6": {
+      "field": 0.3329241143829727,
+      "intensity": 0.33269895497933155
+    },
+    "R5": {
+      "field": 0.33292411735581956,
+      "intensity": 0.3326990926308162
+    }
+  },
+  "relative_field_difference": 2.0707065592179895e-05,
+  "PSD_observable_bounds": {
+    "field": 6.930634343582158e-06,
+    "intensity": 1.1690593819638059e-05
+  },
+  "power_differences": {
+    "field": 2.9728468575740408e-09,
+    "intensity": 1.3765148465516575e-07
+  },
+  "previous_P4I_pass": false
+}

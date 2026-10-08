@@ -29,15 +29,18 @@ alineada con verdad analítica PASS, mallaT96curva/matrices y detector/
 inicialización/amortiguador controlados. Dosfamilias temporalesPadé6/Radau5
 contrastadas con referencias densas pequeñas. P4I terminó con 224 campos
 auditados: integridad aprobada, precisión temporal fallida por sus dos
-cotas PSD del observable. P4I2 añade sólo Padé con 32768 pasos y reutiliza
-Radau retenido; está en curso con los mismos límites. Una malla no
-certifica convergencia espacial. Detalles en POINT-03-P4I-RESULTS.md.
+cotas PSD del observable. P4I2 terminó y fue auditado: 128 campos nuevos
+y 224 retenidos; la cota PSD de intensidad 1,169059e-5 supera 1e-5,
+por lo que su dictamen sigue siendo negativo. P4I3 añade sólo Radau
+con 65536 pasos y conserva Padé de P4I2; está en curso. Una malla no
+certifica convergencia espacial. Detalles en POINT-03-P4I2-RESULTS.md.
 
 PreparaciónP5A/B:mallas h0,546875/0,4375µm y todos sus controlesPASS;
 h0,35 existente se reutilizará porhashes si precisión temporal aprueba.
 h0,28 reservado y sin generar; protocolo espacial y predicción antes de
 sus campos. P5C registra la propagación de las dos mallas gruesas, que
-sólo empezará si P4I2 aprueba con auditoría independiente.
+sólo podía empezar si P4I2 aprobaba: no se ha iniciado. Un eventual
+aprobado P4I3 requerirá registrar la nueva dependencia antes de campos.
 P5D fija los criterios espaciales antes de las potencias P5C. Su evaluador
 superó 11 controles con leyes conocidas y rechazos, sin datos ópticos T96.
 
