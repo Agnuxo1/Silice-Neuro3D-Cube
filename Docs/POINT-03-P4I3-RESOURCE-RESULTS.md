@@ -29,9 +29,9 @@ los 74 tramos válidos y calcular exclusivamente 75–256, en otro directorio.
 Mantiene los límites científicos, el trabajador numérico y el presupuesto
 original de 22000 s, incluyendo el intervalo de interrupción. Añade una
 reserva previa de al menos 6 GiB y espera máxima acumulada de 1800 s.
-No se cierran ni modifican aplicaciones ajenas. Estado: recuperación
-preparada, auditoría parcial aprobada y espera de recursos al registrarse
-este informe; las comprobaciones posteriores determinarán su avance.
+No se cierran ni modifican aplicaciones ajenas. La recuperación comenzó
+tras 140 s de espera y guardó un nuevo tramo 75 con los controles del
+trabajador aprobados. La auditoría independiente final sigue pendiente.
 
 El punto 3 histórico, tarea 1 actual, sigue abierto. P5C no se ha iniciado
 y la malla fina de 0,28 micrómetros no se ha generado. Antes del contraste
