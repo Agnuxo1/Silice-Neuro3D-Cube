@@ -14,6 +14,7 @@ for key in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS', 'NUMEX
     os.environ[key] = '1'
 import numpy as np
 import psutil
+import scipy
 from scipy.sparse import load_npz
 from point03_fem_time import Pade6
 from point03_fem_radau import Radau5
@@ -80,6 +81,8 @@ def worker(args):
                   started_utc=datetime.now(timezone.utc).isoformat(), previous_report_path=None,
                   previous_report_sha256=None)
     try:
+        assert np.__version__ == '2.2.6' and scipy.__version__ == '1.15.1' and psutil.__version__ == '6.1.1'
+        assert read(ROOT/'resultados/codex/point03_d16_evaluator_controls_20261008.json')['controls_pass']
         record['resource_start'] = guard(args.prefix.parent)
         manifest = read(args.manifest)
         assert sha(args.manifest) == args.manifest_sha
@@ -91,11 +94,13 @@ def worker(args):
         if args.previous:
             old = read(args.previous)
             assert old['status'] == 'completed' and old['case'] == args.case and old['index'] == args.index-1
-            assert sha(old['field_path']) == old['field_sha256']
-            with np.load(old['field_path'], allow_pickle=False) as a:
+            old_field = args.prefix.parent.parent/old['field_path']
+            assert sha(old_field) == old['field_sha256']
+            with np.load(old_field, allow_pickle=False) as a:
                 initial = a['field'].copy()
             power = old['physical_power']
-            record.update(previous_report_path=str(args.previous), previous_report_sha256=sha(args.previous))
+            record.update(previous_report_path=args.previous.relative_to(args.prefix.parent.parent).as_posix(),
+                          previous_report_sha256=sha(args.previous))
         else:
             assert args.index == 1
         solver = (Pade6 if args.case == 'P6_32768' else Radau5)(M, B, .002/32768)
@@ -110,7 +115,7 @@ def worker(args):
         target = Path(str(args.prefix)+'.npz')
         assert not target.exists()
         np.savez(target, field=value)
-        record.update(field_path=str(target), field_sha256=sha(target))
+        record.update(field_path=target.relative_to(args.prefix.parent.parent).as_posix(), field_sha256=sha(target))
     record['elapsed_s'] = time.monotonic()-start
     if record['elapsed_s'] > 360:
         record.update(status='failed', error_type='ChildBudgetExceeded')
@@ -138,10 +143,12 @@ def run(out):
                         f'{G}/report.json', f'{T}/report.json', f'{D}/report_recovered.json', f'{Q}/report.json',
                         'scripts/run_point03_d16_time.py', 'scripts/audit_point03_d16_time.py',
                         'scripts/point03_fem_time.py', 'scripts/point03_fem_radau.py',
+                        'resultados/codex/point03_d16_evaluator_controls_20261008.json',
                         'Docs/POINT-03-D16-COARSE-TIME-CONTRACT.md']
         manifest = dict(created_utc=datetime.now(timezone.utc).isoformat(),
                         source_sha256={p: sha(ROOT/p) for p in source_files}, numerical_threads=1,
-                        python=sys.version, numpy=np.__version__, steps=32768, chunk_steps=1024,
+                        python=sys.version, numpy=np.__version__, scipy=scipy.__version__, psutil=psutil.__version__,
+                        steps=32768, chunk_steps=1024,
                         mesh='coarse', stiffness_sha256=K_SHA)
         write(out/'manifest.json', manifest)
         e['manifest_sha256'] = sha(out/'manifest.json')
@@ -175,7 +182,7 @@ def run(out):
                 e['children'].append(dict(case=case, index=index, returncode=child.returncode,
                                          reservation=reservation, elapsed_s=time.monotonic()-before))
                 assert child.returncode == 0 and read(cp)['status'] == 'completed'
-                chain.append(dict(path=str(cp), sha256=sha(cp)))
+                chain.append(dict(path=cp.relative_to(out).as_posix(), sha256=sha(cp)))
                 previous = cp
                 (out/'progress.json').write_text(json.dumps(dict(case=case, index=index, total=32, elapsed_s=time.monotonic()-start)), encoding='utf-8')
                 print(f'D16 {case} {index}/32', flush=True)
@@ -185,8 +192,8 @@ def run(out):
         w = np.load(ROOT/T/'intensity_q32.npy', allow_pickle=False)[free]
         final = []
         for case in ('P6_32768', 'R5_32768'):
-            cp = read(e['solutions'][case]['checkpoints'][-1]['path'])
-            with np.load(cp['field_path'], allow_pickle=False) as data:
+            cp = read(out/e['solutions'][case]['checkpoints'][-1]['path'])
+            with np.load(out/cp['field_path'], allow_pickle=False) as data:
                 final.append(data['field'].copy())
         assessment = evaluate(M, C, w, *final)
         write(out/'assessment.json', assessment)

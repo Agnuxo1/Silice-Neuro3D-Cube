@@ -46,17 +46,17 @@ def audit(out):
         previous, previous_sha, power = None, None, pin
         for index, link in enumerate(links, 1):
             event = e['children'][checked]
-            cp = read(link['path'])
+            cp = read(out/link['path'])
             assert event['case'] == case and event['index'] == index and event['returncode'] == 0 and event['elapsed_s'] <= 370
             assert event['reservation']['available_ram_bytes'] > 4.5*1024**3 and event['reservation']['free_disk_bytes'] > 2*1024**3
-            assert sha(link['path']) == link['sha256'] and cp['status'] == 'completed' and cp['case'] == case and cp['index'] == index
+            assert sha(out/link['path']) == link['sha256'] and cp['status'] == 'completed' and cp['case'] == case and cp['index'] == index
             assert cp['previous_report_path'] == previous and cp['previous_report_sha256'] == previous_sha
             assert cp['steps_done'] == index*1024 and cp['dt_m'] == .002/32768 and cp['elapsed_s'] <= 360
             assert cp['started_utc'] > m['created_utc']
             for resource in ('resource_start', 'resource_end'):
                 assert cp[resource]['available_ram_bytes'] > 3*1024**3 and cp[resource]['free_disk_bytes'] > 2*1024**3
-            assert sha(cp['field_path']) == cp['field_sha256']
-            with np.load(cp['field_path'], allow_pickle=False) as data:
+            assert sha(out/cp['field_path']) == cp['field_sha256']
+            with np.load(out/cp['field_path'], allow_pickle=False) as data:
                 field = data['field'].copy()
             assert field.shape == (len(free),) and field.dtype == np.dtype('complex128') and np.isfinite(field).all()
             actual = float(np.vdot(field, M@field).real)
