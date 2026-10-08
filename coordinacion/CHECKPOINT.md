@@ -1,3 +1,22 @@
+## D16-C1 preparado, cálculo sin iniciar — 2026-10-08T17:22UTC
+
+Contrato longitudinal nuevo e2f3cb9; fuentes portables3f6e5ad y ajustes
+previos a cualquier campo T96 nuevo. CoarseK16 fija51a273ef..., dosfamilias
+P6/R5 ambas32768pasos/2mm,32tramos1024 porfamilia; criterios1e-4/1e-6/1e-5.
+No reutilizar campos K8 ni reanudar presupuestoP4I3. Reserva4,5GiB;
+guard>3GiB, hijos360/corte370,global22000s,espera900s. Sin proceso activo.
+Controlesdensos PASS errores1,21e-14/2,61e-15; rechazo fase y amplitudPASS.
+Control trabajador3DOF PASS con recursos simulados SOLO en softwaretests;
+cadenas portables y rechazo hashes corruptosPASS. No son propagaciónT96.
+RAMlocal1,676GiB insuficiente. Paquete CPU privado preparado20archivos,
+6081913bytes, SHAcebaeac0f2952360f319acd9081f0f6149e0fbda7112258ac738aafc6d0a3ea1.
+CRC/hash/source/nbformat/sintaxisPASS; sin subir ni ejecutar enColab.
+Primer empaquetado falló al construir celda fstring; conservarlo inutilizado.
+Repetición nueva carpeta point03_d16_cloud_package_retry_20261008 PASS.
+Autorización específica de transferencia/ejecución Colab sigue pendiente.
+Duffy3mallasPASS, BlendercontrolPASS; importación realBlender sin ejecutar.
+Tarea1 abierta; demás tareas pendientes por orden. JEVfallbacklocal,noretry.
+GitHubúltimoverificado699b9b2; nuevos contratos publicados al cerrar turno.
 ## Controles Blender y cuadratura completados — 2026-10-08T17:00UTC
 
 No hay cálculo activo. Duffy prototype/coarse_retry/mid PASS (61,485/

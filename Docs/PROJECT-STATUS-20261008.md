@@ -89,3 +89,11 @@ Controles Duffy coarse repetido y mid completados con PASS, sin cambiar
 contrato97a33b9; intento coarse original preservado. Duffy16 se fija como
 regla común antes de nuevas propagaciones. Cotas potencia16–24 <1e-6 en
 las tres mallas. Nuevos controles longitudinales/espaciales/dominio pendientes.
+
+D16-C1 nuevo: contrato e2f3cb9, adaptaciones portables3f6e5ad; coarseK16,
+P6/R5 ambos32768pasos. Controles densos/evaluador/trabajador manufacturado
+PASS, hashes20entradas reales y norma inicial PASS. Ensayo completo sin
+iniciar por RAM local insuficiente (1,676GiB). ZIP6,082MB y cuaderno CPU
+validados, transferencia/ejecución Colab pendiente de aprobación específica.
+Colab reconectado y sólo prueba genérica11,593GiB libres. Véase
+POINT-03-D16-PREPARATION-RESULTS.md. No se cierran T96/Q4 ni tareas posteriores.
