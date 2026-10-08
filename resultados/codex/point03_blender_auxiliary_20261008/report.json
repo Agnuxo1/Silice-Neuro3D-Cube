@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-10-08T16:55:58.655126+00:00",
+  "status": "passed",
+  "point03_closed": false,
+  "t96_propagated": false,
+  "blender_import_executed": false,
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "provenance": {
+    "BlenderPhotonics": {
+      "commit": "732799f9e3ebe10e013e316b8a21d88452755dc8",
+      "source_sha256": {
+        "utils.py": "2bd7ff772eedf8e1d3c629910e485d5643e46da63abb71919c080896a93e01f4",
+        "runmmc.py": "62950696fd336e16d8464c5e3fad887c2c953056ca375fecc02bb14a25874f0c",
+        "obj2surf.py": "51a7fb110ada48f7d212d34a5b1506df3019e4a61ec3a0f19939a8b5ea410732"
+      }
+    },
+    "blender-optics-simulator": {
+      "commit": "2b488e2e99dff4f56d67f57f9674bd00f812dda1",
+      "source_sha256": {
+        "field.py": "8c802995942a0433db9b9c38787deb9f179bfdb89ea18aea938f230d66ff3e39"
+      }
+    }
+  },
+  "metrics": {
+    "constant_256": 0.0,
+    "fourier32_256": 1.0417785114778741e-15,
+    "gaussian_256": {
+      "roundtrip": 5.611208727862002e-16,
+      "relative_power_change": 0.0,
+      "complex_error_vs_paraxial": 3.016107065409923e-06
+    },
+    "constant_512": 0.0,
+    "fourier32_512": 8.314214164157796e-16,
+    "gaussian_512": {
+      "roundtrip": 3.7726979951201414e-11,
+      "relative_power_change": 2.220446049250313e-16,
+      "complex_error_vs_paraxial": 3.0161068231397516e-06
+    },
+    "gaussian_grid_discrepancy": 1.4896164866841561e-10
+  },
+  "invalid_shapes_rejected": 2,
+  "visualization": {
+    "vertices": 74785,
+    "triangles": 148832,
+    "region_triangles": [
+      122080,
+      26752
+    ],
+    "maximum_coordinate_error_m": 1.3552527156068805e-20,
+    "source_mesh_sha256": "379b2514e581cbd36f4dbddcb36a991e073c26c8d2e949cfdab3b22a8216e755",
+    "exchange_sha256": "0e5f408ac5898f73295d42c9ab1bcc1b13600ec16441eded673ff7544c11ee3b",
+    "units": "mm",
+    "limitations": "Planar piecewise-linear visualization only; not tetrahedral production geometry"
+  },
+  "script_sha256": "1158303f67de9290bd375d1cc5f2acaff5410a7fb0ec0d6325d61e658893495d"
+}
