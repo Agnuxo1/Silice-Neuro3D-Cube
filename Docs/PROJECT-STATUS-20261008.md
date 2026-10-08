@@ -32,8 +32,11 @@ auditados: integridad aprobada, precisión temporal fallida por sus dos
 cotas PSD del observable. P4I2 terminó y fue auditado: 128 campos nuevos
 y 224 retenidos; la cota PSD de intensidad 1,169059e-5 supera 1e-5,
 por lo que su dictamen sigue siendo negativo. P4I3 añade sólo Radau
-con 65536 pasos y conserva Padé de P4I2; está en curso. Una malla no
-certifica convergencia espacial. Detalles en POINT-03-P4I2-RESULTS.md.
+con 65536 pasos y conserva Padé de P4I2; se interrumpió por recursos en
+el tramo 75. La auditoría parcial aprobó los 74 anteriores. Se registró
+una recuperación sólo de los tramos restantes, manteniendo el presupuesto
+original; está pendiente de recursos y de terminación. Una malla no
+certifica convergencia espacial. Detalles en POINT-03-P4I3-RESOURCE-RESULTS.md.
 
 PreparaciónP5A/B:mallas h0,546875/0,4375µm y todos sus controlesPASS;
 h0,35 existente se reutilizará porhashes si precisión temporal aprueba.
