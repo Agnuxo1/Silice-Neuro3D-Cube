@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-08T04:19:20.016884+00:00",
+  "status": "completed",
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "controls_pass": true,
+  "cad_area_um2": 323.0818752214972,
+  "analytic_area_um2": 323.081875221496,
+  "cad_relative_error": 3.774758283725532e-15,
+  "mass_domain_area_um2": 16384.0,
+  "mass_cladding_area_um2": 323.0810768392398,
+  "curved_geometry_relative_error": 2.471145299831612e-06,
+  "symmetry": {
+    "mass": 0.0,
+    "stiffness": 0.0,
+    "cladding_mass": 0.0
+  },
+  "constant_stiffness_residual": 2.733924198139448e-15,
+  "dofs": 
