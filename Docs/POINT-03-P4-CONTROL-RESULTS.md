@@ -11,7 +11,8 @@
 | P4F | DetectorCircular/proyecciónL2 PASS;quadMnorm7,757e-14,inputq12/16diff4,926e-15,coreinputerror3,378e-9 | Integración/entrada sin propagación |
 | P4G | Amortiguador integrado porpartes PASS;D8/12Mbound2,107e-8m^-1 | Perfil físico igual, cuadratura controlada en diagonales/umbrales |
 | P4H | Radau5Lestablevsdense:errores5,16e-8/6,44e-8,órdenes~5 PASS | Segunda familia temporal independiente |
-| P4I | En ejecución:GaussianT96,Padé6_8192/16384,Radau5_32768,a2mm | Sin dictamen; una sola malla no demuestra convergencia espacial |
+| P4I | Terminado: 224 campos auditados, integridad aprobada; cotas PSD 1,024906e-5 y 1,592164e-5 frente al límite 1e-5 | Precisión temporal fallida; se conserva el resultado negativo |
+| P4I2 | En curso: añade Padé6 con 32768 pasos y reutiliza Radau5 retenido | Mismos límites; pendiente de terminación y auditoría |
 
 Nueva dependencia sólo en entorno separado
 D:/PROJECTS/.cognition/silice_fem_env_20261008. NumPy2.2.6/SciPy1.15.1
