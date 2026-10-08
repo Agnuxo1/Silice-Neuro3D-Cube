@@ -1,0 +1,8 @@
+{
+  "status": "failed_notebook_generation",
+  "error_type": "ValueError",
+  "phase": "fstring_cell_construction",
+  "scientific_simulation_executed": false,
+  "upload_performed": false,
+  "replacement_folder": "point03_d16_cloud_package_retry_20261008"
+}
