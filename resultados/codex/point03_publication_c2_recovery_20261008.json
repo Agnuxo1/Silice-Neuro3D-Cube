@@ -1,0 +1,65 @@
+{
+  "created_utc": "2026-10-08T22:14:50.688497+00:00",
+  "head": "9580a091a611e2f0e82ade549ba3f8f3ff0fbf05",
+  "base": "2143233c59fc47efa151898d02ea2abda73d8329",
+  "commits_ahead": 146,
+  "changed_files": 2208,
+  "present_changed_blobs": 2208,
+  "changed_blob_bytes": 774257681,
+  "largest_changed_blobs": [
+    {
+      "path": "resultados/codex/point03_d16_cloud_recovery_20261008/Silice_D16_C1_resultados_20261008.zip",
+      "git_blob": "e61e550db5e8c198c8a9d0fc3111ff7ade0f6048",
+      "size_bytes": 30429527
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/n767_input.npz",
+      "git_blob": "8319c4ec37aa5682033a57c4506d34343a81ef6f",
+      "size_bytes": 23532542
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n640Ldz.npz",
+      "git_blob": "1e8e50b8aef559e1229f0c8690ebf47d8074d8ef",
+      "size_bytes": 16453032
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n640L.npz",
+      "git_blob": "ef5e2fa903880562f7b45945f278d7868004f57a",
+      "size_bytes": 16452764
+    },
+    {
+      "path": "resultados/codex/point03_fixed_domain_20261007_P2/n639_input.npz",
+      "git_blob": "67a602d0fc0666a0cdd83ccd17ebd68519afc533",
+      "size_bytes": 16333822
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/geometry767.npz",
+      "git_blob": "f17002c02a41cf0ee5ad1f522f3fbeac825867ea",
+      "size_bytes": 14119714
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512C.npz",
+      "git_blob": "93fa54aa102fc32023701884c3e0485f74f6a99e",
+      "size_bytes": 11270071
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512Ldz.npz",
+      "git_blob": "f2b196a0522f1dcb116df810809458454c870bcd",
+      "size_bytes": 10531031
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512R.npz",
+      "git_blob": "1e29d4150e26e662bbccd42ad4c9329fcbc77fba",
+      "size_bytes": 10530897
+    },
+    {
+      "path": "resultados/codex/glass_gpu002_20261005_v1__n512L.npz",
+      "git_blob": "6d7778e09607ab1cd7d7ab3d4e96d7d6d343118f",
+      "size_bytes": 10530802
+    }
+  ],
+  "findings": [],
+  "publication_preflight_pass": true,
+  "scope": "Committed changes: file size, symlinks, selected credential signatures. Not a proof of absence of every secret. No raw values disclosed.",
+  "script_sha256": "f98f3848d0a35c7a57f520ae0142fbcc4534676aeaf2a0ce62da83c3f544f059"
+}

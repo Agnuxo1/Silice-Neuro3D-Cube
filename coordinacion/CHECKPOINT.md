@@ -1,3 +1,47 @@
+## M2 preparada, previa a campos — 2026-10-08T22:53UTC
+
+C2-R1 final e auditoría independiente PASS; informe D16-C2-RESULTS.md.
+Nuevo M2 usa C2-R1 PASS como condición, P6_32768/R5_65536 (96 tramos).
+Generador produce 5 archivos distintos; matrices mid K16 sin cambios.
+Evaluador positivo/fase/amplitud PASS; inputs 7 hashes PASS/47777 DOF,
+pin 1,0000000000000002; trabajador manufacturado PASS error<=2,741e-13,
+ambas cadenas y rechazo badHash. Primer control falló por dependencia
+FileNotFoundError, preservado en worker_dependency_race; repetición con
+mismo trabajador PASS. No campo T96 ejecutado en M2 al registrar.
+M2 trabajador SHA bd47274d4526c59f079ae399f086e7bd212c0b917d7b082cf46862a7e3a9ef93.
+Reserva >6 GiB, guard >3, disco >2, un hilo, hijo360/corte370,
+global22000 desde lanzamiento/espera<=900. RAM observada8,091GiB.
+Siguiente: commit de contrato/controles y C2 auditado, preflight/push,
+lanzar M2 conout point03_d16_mid_refined_time_20261008 sólo después.
+Auditor M2 scripts/audit_point03_d16_mid_refined_time.py. No M1/h0,28/tarea2.
+JEV fallback local. GitHub último verificado9580a09. Principal intacto.
+## C2-R1 completo y auditado — 2026-10-08T22:49UTC
+
+Sesión 50424 terminó exit0: 64/64 tramos, 15 retenidos y 49 nuevos.
+Elapsed desde inicio original 6029,079251 s <=22000; sin nueva espera.
+Auditor scripts/audit_point03_d16_recovery.py exit0: integridad PASS,
+precisión temporal PASS, residuo máximo potencia 0, complex128 y cadena.
+Campo relativo 1,1133721611e-5; diferencias potencia 2,75548e-10 y
+1,86781e-7; cotas campo 4,18518e-6 e intensidad 8,09288e-6 <1e-5.
+C1 negativo y C2 original fallido siguen intactos. Tarea 1 abierta.
+M1 intermedia no iniciada por gate C1 falso. Siguiente: registrar M2 con
+la pareja P6_32768/R5_65536 y condición C2-R1 auditada antes de campos;
+controlar software e inputs, publicar resultados. Sin h=0,28/tarea 2.
+GitHub último verificado 9580a09; resultado C2 aún pendiente de publicar.
+JEV fallback local por bloqueo heredado.
+## C2-R1 recuperación activa — 2026-10-08T22:30UTC
+
+Sesión 50424 activa: 48/64 tramos completos, 15 retenidos y 33 nuevos.
+Último tiempo desde inicio original: 4876,5 s; límite original 22000 s.
+Campos y criterios congelados, sin evaluación final hasta 64 y auditoría.
+No iniciar malla intermedia M1: su requisito C1 es falso. Tarea 1 abierta.
+GitHub remoto verificado 9580a091a611e2f0e82ade549ba3f8f3ff0fbf05;
+PR 1 actualizada con fallo original y protocolo C2-R1. Preflight PASS.
+Preservación 22:14UTC PASS: 333 archivos versionados principales y estado
+Git iguales; 603 productos originales de E iguales. Alcance acotado.
+Informes en resultados/codex/point03_publication_c2_recovery_20261008.json
+y point03_preservation_c2_recovery_20261008.json; copias en outputs/d16.
+JEV: fallback local por bloqueo heredado. Ninguna tarea posterior iniciada.
 ## C2-R1 recuperación activa — 2026-10-08T22:13UTC
 
 Sesión 50424 activa: 33/64 tramos completos, 15 retenidos y 18 nuevos.

@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "case": "P6_32768",
+  "index": 1,
+  "started_utc": "2026-10-08T22:51:47.900002+00:00",
+  "previous_report_path": null,
+  "previous_report_sha256": null,
+  "error_type": "FileNotFoundError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_d16_mid_refined_time.py\", line 86, in worker\n    assert read(ROOT/'resultados/codex/point03_d16_mid_refined_evaluator_controls_20261008.json')['controls_pass']\n           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_d16_mid_refined_time.py\", line 32, in read\n    return json.loads(Path(path).read_text(encoding='utf-8'))\n                      ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python313\\Lib\\pathlib\\_local.py\", line 546, in read_text\n    return PathBase.read_text(self, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python313\\Lib\\pathlib\\_abc.py\", line 632, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python313\\Lib\\pathlib\\_local.py\", line 537, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'D:\\\\PROJECTS\\\\Silice-Neuro3D-Cube-work-20261006\\\\resultados\\\\codex\\\\point03_d16_mid_refined_evaluator_controls_20261008.json'\n",
+  "elapsed_s": 0.0035796999982267153
+}

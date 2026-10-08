@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-08T22:14:12.969031+00:00",
+  "pass_": true,
+  "main_tracked_files_checked": 333,
+  "main_changed_tracked": [],
+  "main_porcelain_status_equal": true,
+  "E_produced_files_checked": 603,
+  "E_changed_produced": [],
+  "baseline_sha256": "cd158c4c43c17a048d1485a8d8f9e9b03828ba204d095bc1381a211f1d582b66",
+  "scope": "Tracked main bytes and original Git porcelain status; E603 produced bytes. Does not certify every untracked main file content."
+}

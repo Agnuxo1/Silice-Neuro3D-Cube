@@ -1,0 +1,47 @@
+{
+  "generation_pass": true,
+  "no_optical_propagation": true,
+  "prerequisite": "resultados/codex/point03_d16_refine_recovery_20261008/integrity_audit.json",
+  "prerequisite_sha256": "1b14098d5f5e0a177cd9b094b27df9c4cd1035d9a32ee6345887355435d74a3f",
+  "steps_by_case": {
+    "P6_32768": 32768,
+    "R5_65536": 65536
+  },
+  "files": [
+    {
+      "original": "run_point03_d16_mid_time.py",
+      "original_sha256": "62d570995aa895f6fd17adc43b18f465a555c392e53e5d7727d013a08d9b1376",
+      "generated": "run_point03_d16_mid_refined_time.py",
+      "generated_sha256": "bd47274d4526c59f079ae399f086e7bd212c0b917d7b082cf46862a7e3a9ef93",
+      "syntax_pass": true
+    },
+    {
+      "original": "audit_point03_d16_mid_time.py",
+      "original_sha256": "af90d4a096957b86bc7d9d39008047aac4da95bd1b0e391b726a166f1e855436",
+      "generated": "audit_point03_d16_mid_refined_time.py",
+      "generated_sha256": "ca22101b53991a784e4393d18425d144677f7611fafb046e2e7edefc2d3f3f0a",
+      "syntax_pass": true
+    },
+    {
+      "original": "check_point03_d16_mid_worker.py",
+      "original_sha256": "31a0ed32b81b4269ef1f07d7a2292119d3f9d894eb3cb0468100c06ed17fc965",
+      "generated": "check_point03_d16_mid_refined_worker.py",
+      "generated_sha256": "0e88834c5576630c82118a2864b2b184c44072d55ddb9564fa079700a309e59f",
+      "syntax_pass": true
+    },
+    {
+      "original": "check_point03_d16_mid_inputs.py",
+      "original_sha256": "9d2ae23d4846cb730702357b5caf4ae8113b51a76b44a21f2672a6980ef982e5",
+      "generated": "check_point03_d16_mid_refined_inputs.py",
+      "generated_sha256": "afd053bf6b5a5b27ed0a64f16c273eba8f5730b561eb9d1918d8a58973b91c81",
+      "syntax_pass": true
+    },
+    {
+      "original": "check_point03_d16_controls.py",
+      "original_sha256": "51a64423c873e4ba3cd346509668c19d4e2030e9b2b743bc0d4c9cfc2c58718d",
+      "generated": "check_point03_d16_mid_refined_controls.py",
+      "generated_sha256": "212d07bc900aa2c89d5bd526cdf2301627a4ea3ed0847a8f75e1265086d8b736",
+      "syntax_pass": true
+    }
+  ]
+}
