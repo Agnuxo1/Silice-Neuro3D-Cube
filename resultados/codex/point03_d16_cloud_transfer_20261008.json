@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-08T18:31:48.0413861Z",
+  "notebook": "https://colab.research.google.com/drive/1yWiV6pSaCjoO8YWl4dJiYXD0bmYm1RmZ",
+  "package_sha256": "cebaeac0f2952360f319acd9081f0f6149e0fbda7112258ac738aafc6d0a3ea1",
+  "package_bytes": 6081913,
+  "input_integrity_pass": true,
+  "files_checked": 20,
+  "input_verified_utc": "2026-10-08T18:28:23.052645+00:00",
+  "CPU_selected": true,
+  "dependencies_install_returncode": 0,
+  "remote_python": "3.13.16",
+  "remote_system": "Linux",
+  "transport": "Colab sidebar after iframe picker timeout",
+  "initial_upload_cell_error_preserved": true,
+  "optical_experiment_launched": true,
+  "optical_experiment_completed": false,
+  "point03_closed": false
+}
