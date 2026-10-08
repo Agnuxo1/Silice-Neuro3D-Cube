@@ -1,0 +1,10 @@
+{
+  "controls_pass": true,
+  "dense_errors": {
+    "Pade6": 1.2137985246116598e-14,
+    "Radau5": 2.6104721323776457e-15
+  },
+  "phase_only_error_rejected": true,
+  "amplitude_error_rejected": true,
+  "point03_closed": false
+}
