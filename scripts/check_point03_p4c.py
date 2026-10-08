@@ -23,6 +23,28 @@ from run_point03_exponential import ROOT,sha,write
 from point03_union_geometry import UnionRegion
 
 
+def minimum_oriented_jacobian(mapping):
+    points=np.array([[0.,1.,0.,.5,0.,.5],[0.,0.,1.,0.,.5,.5]])
+    values=mapping.detDF(points)
+    sign=np.sign(values[:,0]);assert np.all(sign!=0)
+    values=values*sign[:,None]
+    f=values[:,0];a=2*(values[:,1]+f-2*values[:,3]);d=values[:,1]-f-a
+    c=2*(values[:,2]+f-2*values[:,4]);e=values[:,2]-f-c
+    b=4*(values[:,5]-f-.25*a-.25*c-.5*d-.5*e)
+    minimum=np.min(values[:,:3],axis=1)
+    for aa,dd,ff in ((a,d,f),(c,e,f),(a-b+c,b-2*c+d-e,c+e+f)):
+        x=np.divide(-dd,2*aa,out=np.full_like(aa,-1.),where=aa>0)
+        candidate=aa*x*x+dd*x+ff
+        minimum=np.minimum(minimum,np.where((x>0)&(x<1)&(aa>0),candidate,np.inf))
+    determinant=4*a*c-b*b
+    x=np.divide(b*e-2*c*d,determinant,out=np.full_like(a,-1.),where=abs(determinant)>0)
+    y=np.divide(b*d-2*a*e,determinant,out=np.full_like(a,-1.),where=abs(determinant)>0)
+    candidate=a*x*x+b*x*y+c*y*y+d*x+e*y+f
+    minimum=np.minimum(minimum,np.where((x>0)&(y>0)&(x+y<1),candidate,np.inf))
+    assert np.all(np.isfinite(minimum)) and np.all(minimum>0)
+    return float(minimum.min())
+
+
 def check(out):
     assert not out.exists() and out.is_relative_to(ROOT/'resultados/codex');out.mkdir();start=time.monotonic()
     report=dict(created_utc=datetime.now(timezone.utc).isoformat(),status='failed',no_T96_propagation=True,point03_closed=False)
@@ -66,6 +88,7 @@ def check(out):
         det=basis.mapping.detDF(basis.X);assert np.all(np.isfinite(det)) and np.all(abs(det)>0)
         # Orientation can be clockwise; each element must retain one sign.
         assert np.all(np.min(det,axis=1)*np.max(det,axis=1)>0)
+        min_jacobian=minimum_oriented_jacobian(basis.mapping)
         M=mass.assemble(basis);K=laplace.assemble(basis);C=mass.assemble(basis.with_elements(clad_cells))
         def symmetric_error(matrix):
             delta=matrix-matrix.T
@@ -81,7 +104,7 @@ def check(out):
         np.savez(out/'mesh_arrays.npz',points=mesh.p,triangles=mesh.t,doflocs=basis.doflocs,element_dofs=basis.element_dofs,cladding_cells=clad_cells,boundary_dofs=boundary_dofs)
         for name,matrix in (('mass',M),('stiffness',K),('cladding_mass',C)):save_npz(out/(name+'.npz'),matrix)
         assert time.monotonic()-start<=600
-        report.update(status='completed',controls_pass=True,cad_area_um2=area,analytic_area_um2=truth,cad_relative_error=abs(area/truth-1),mass_domain_area_um2=area_mass,mass_cladding_area_um2=area_clad,curved_geometry_relative_error=abs(area_clad/area-1),symmetry=symmetry,constant_stiffness_residual=constant,dofs=basis.N,elements=mesh.nelements,minimum_abs_jacobian=float(abs(det).min()),versions=dict(gmsh=gmsh.__version__,skfem=skfem.__version__,meshio=meshio.__version__,numpy=np.__version__,scipy=scipy.__version__),hashes={path.name:sha(path) for path in out.iterdir() if path.is_file()})
+        report.update(status='completed',controls_pass=True,cad_area_um2=area,analytic_area_um2=truth,cad_relative_error=abs(area/truth-1),mass_domain_area_um2=area_mass,mass_cladding_area_um2=area_clad,curved_geometry_relative_error=abs(area_clad/area-1),symmetry=symmetry,constant_stiffness_residual=constant,dofs=basis.N,elements=mesh.nelements,minimum_abs_jacobian=float(abs(det).min()),minimum_oriented_jacobian_all_reference_triangle=min_jacobian,versions=dict(gmsh=gmsh.__version__,skfem=skfem.__version__,meshio=meshio.__version__,numpy=np.__version__,scipy=scipy.__version__),hashes={path.name:sha(path) for path in out.iterdir() if path.is_file()})
     except Exception as error:
         if gmsh.isInitialized():gmsh.finalize()
         report.update(error=str(error),error_type=type(error).__name__,diagnostic=traceback.format_exc())
