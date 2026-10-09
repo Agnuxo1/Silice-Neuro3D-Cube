@@ -1,0 +1,9 @@
+# Validated target: CPython 3.13.7, Linux x86_64 (manylinux_2_17).
+# Scientific execution remains CPU-only. Hashes come from PyPI JSON metadata
+# (sha256 of the published wheels); verified by the Linux CI job, not yet by a fresh local install.
+numpy==2.2.6 --hash=sha256:1bc23a79bfabc5d056d106f9befb8d50c31ced2fbc70eedb8155aec74a45798f
+scipy==1.15.1 --hash=sha256:070d10654f0cb6abd295bc96c12656f948e623ec5f9a4eab0ddb1466c000716e
+psutil==6.1.1 --hash=sha256:97f7cb9921fbec4904f522d972f0c0e1f4fabbdd4e0287813b21215074a0f160
+pip==25.3 --hash=sha256:9655943313a94722b7774661c21049070f6bbb0a1516bf02f7c8d5d9201514cd
+setuptools==82.0.1 --hash=sha256:a59e362652f08dcd477c78bb6e7bd9d80a7995bc73ce773050228a348ce2e5bb
+wheel==0.45.1 --hash=sha256:708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248
