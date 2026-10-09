@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-09T12:34:21.741997+00:00",
+  "main_head": "822a998f67491d1bf98a2391c5c46ede99ad7d83",
+  "both_pushes_verified": true,
+  "R3_raw_fields_published": 168,
+  "R3_accuracy_pass": true,
+  "R3_integrity_pass": true,
+  "GIF_v2_sha256": "17d2b0bc2c37a1fdc55d01f84fea11211fdab7a19a8af5379e8b0169e31ff97d",
+  "automation_updated": true,
+  "point03_closed": false,
+  "JEV": "explicit local fallback"
+}

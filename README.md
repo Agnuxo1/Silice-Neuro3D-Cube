@@ -264,4 +264,4 @@ Reglas: contrato antes de medir · umbrales no se relajan después · fallos ret
 - [ ] Red 3D pequeña con tarea congelada, separando detección y no linealidad
 - [ ] Fabricación: fuera del alcance actual
 
-Repositorio remoto: [`Agnuxo1/Silice-Neuro3D-Cube`](https://github.com/Agnuxo1/Silice-Neuro3D-Cube) (actualmente **privado**; hacerlo público es una decisión pendiente del autor, igual que la **licencia**, aún sin elegir).
+Repositorio remoto: [`Agnuxo1/Silice-Neuro3D-Cube`](https://github.com/Agnuxo1/Silice-Neuro3D-Cube) (repositorio público; los resultados revisados se publican en **main**. La **licencia** sigue pendiente).
