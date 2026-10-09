@@ -1,0 +1,4 @@
+[gpuq] 2026-10-09T10:04:20 en cola: Silice:R1-direct-identity-diagnostic
+[gpuq] 2026-10-09T10:04:20 esperando (posiciÃ³n 2 de 2)
+
+[gpuq] se agotó la espera de 1.0 min (turno de «Neuro3D:native-equal-refinement-ablation-20261009»)

@@ -1,3 +1,27 @@
+## R1 segundo intento preregistrado, gate pendiente — 2026-10-09T08:08:13.059968+00:00
+
+Perfilv3eab2a5944b4c13bbeb8744303c80c11ec1aff7d30620b3869c4fe342fa94c75c preparado: invocación directa del runtime instaladoC:/Python313/python.exe,3.13.7/psutil6.1.1; seis fuentes/Blender/gates/límites idénticos a66a6. Docs/POINT-03-RENDER-GPU-WINDOWS-LAUNCH.md exige comprobar identidad directa bajo FIFO antes de run02. Primer diagnóstico directo agotó espera1min por turno ajeno; conservado, no PASS. No GPU ni modificación de guard/shader/cola compartida. F1 último confirmado96/192; Chrome desconectado, intervención de conexión solicitada. Próximo publicar/verificar preparación y conservar gate; sin relanzar F1 ni repetir productos. Tarea1 abierta y JEV fallback local.
+
+## R1 bloqueado antes de GPU; Chrome desconectado — 2026-10-09T08:05:15.237787+00:00
+
+RAM disponible10,3341GiB y reserva FIFO obtenida; R1run01 bloqueado antes de lanzar Blender por identidad del supervisor. Cero frames/GPU y fuentes intactas. guard.json y excepción del auditor congelado conservados; blocked_integrity_audit.json verifica cero productos y no adopta. Diagnóstico CPU bajo reserva demuestra que Windows venv añade redirector: holder child4228, runtime28008, parent4228; comprobación directa no coincidía. No se relaja la reserva: se verifica invocación directa del runtime instaladoC:/Python313/python.exe (3.13.7/psutil6.1.1) antes de preregistrar nuevo intento. F1 último dato confirmado07:45 Padé64/Radau32,96/192; Chrome ya no disponible en computer-use, no lectura fresca ni relanzamiento. Handoff no se pudo renovar por desconexión. Tarea1 abierta; JEV fallback local; deadline/límites intactos.
+
+## Seguimiento F1/R1 sin cambio de etapa — 2026-10-09T07:46:11.295440+00:00
+
+F1 activa: lectura fresca Padé64/64 y Radau32/128,96/192 campos reportados, elapsed15711,092983127 s; sin dictamen final ni auditoría completa. Colab marcada handoff. R1 preflight nuevo0745 con perfilv2/fuentes publicadas66a6 verificadas: RAM7.388817GiB <8; resource_block_retained, sin GPU. Cola ocupada por otro proyecto; no interferir ni reducir reserva. Sin repetición de campos/celdas/controles ni cambios de fuentes/límites. Próximo final F1/transporte/auditoría local; S16 sólo tras PASS y R1 sólo con recursos/reserva FIFO. Tarea1 abierta; JEV fallback local.
+
+## Seguimiento F1/R1 sin cambio accionable — 2026-10-09T07:35:04.679686+00:00
+
+F1 activa: lectura fresca Padé64/64 y Radau28/128,92/192 campos reportados, elapsed15054,534584894 s; sin dictamen final ni auditoría completa. Colab marcada handoff. R1 preflight nuevo0734 con perfilv2/fuentes Git66a6 verificadas: resource_block_retained, sin lanzar GPU. RAM inferior a8GiB; cola con dos solicitudes ajenas. No reducir reservas ni interferir con procesos ajenos. Sin repetición de campos/celdas/controles ni cambios de fuentes/límites. Próximo final F1/transporte/auditoría local; S16 sólo tras PASS, R1 sólo con recursos/reserva FIFO vigente. Tarea1 abierta; JEV fallback local.
+
+## Seguimiento F1/R1 sin cambio accionable — 2026-10-09T07:16:11.969175+00:00
+
+F1 activa: lectura fresca Padé64/64 y Radau21/128,85/192 campos reportados, elapsed13903,239977473 s, sin dictamen final. Colab marcada handoff. R1 preflight nuevo0715 con perfilv2/fuentes Git66a6f5d verificadas: RAM6.418358GiB <8, resource_block_retained, sin lanzar GPU. Cola libre; VRAM disponible no cambia reserva. No reejecutar campos/celdas/controles ni alterar límites. Siguiente final F1/transporte/auditoría local; S16 sólo tras PASS; R1 auxiliar sólo con recursos y reserva vigente. Tarea1 abierta y JEV fallback local.
+
+## Preparación R1 publicada y continuidad verificada — 2026-10-09T07:13:59.623568+00:00
+
+HEAD66a6f5db69dec2a5f345c51c9430288baa68bb53 publicado/push y PR1 abierta/no fusionada verificados; preflight incremental PASS15 archivos (14 revisados + recibo). Perfilv2 y seis fuentes coinciden con blobs publicados. R1 GPU aún no lanzado: preflight conservado RAM6,5153GiB <8. Heartbeat actualizado con dirección del motor3D, comandos/cola y límites; sin extender ventana. F1 trabajador SHA39b1024a intacto, última lectura fresca82/192 activa; Colab marcada handoff. Siguiente F1 final/transporte/auditoría local y S16 sólo tras aprobado; R1 auxiliar sólo con reserva suficiente y auditoría independiente. Tarea1 abierta y etapas físicas pendientes; JEV fallback local.
+
 ## Dirección motor 3D y preparación gráfica R1 — 2026-10-09T07:09:12.523823+00:00
 
 Usuario pide continuar todos los pendientes y priorizar ventajas propias del motor 3D. F1 sigue activa intacta: lectura fresca Padé64/Radau18, 82/192 campos reportados, elapsed13400,241755703 s, sin auditoría/dictamen final. Nuevo banco auxiliar R1 preparado: triángulos 3D/rasterización/campo P2 complejo en Blender, 12 grupos CPU PASS, cinco fuentes Python compilan; GLSL/backend/rendimiento pendientes. Perfilv2 ad2475ff... antes de GPU, v1 conservado. Preflight07:05: RAM6,5153GiB <reserva8, VRAM0,7158GiB/27C; bloqueado sin lanzar GPU. Mantener reserva FIFO/hijo120(timer115)/deadline13:45UTC; no tocar procesos ajenos ni ampliar F1. No red funcional/RT/ventaja física demostrados. Docs/POINT-03-RENDER-GPU-PREPARATION.md y contrato. Próximo: publicar/verificar preparación; GPU R1 sólo con reserva vigente, y completar/transportar/auditar F1 antes de S16. Tarea1 abierta; tareas2–22 pendientes; JEV fallback local. Colab marcada handoff.
