@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-08T22:55:32.699189+00:00",
+  "source_sha256": {
+    "resultados/codex/point03_d16_refine_recovery_20261008/integrity_audit.json": "1b14098d5f5e0a177cd9b094b27df9c4cd1035d9a32ee6345887355435d74a3f",
+    "resultados/codex/point03_p5a_mesh_mid_20261008/mass.npz": "5e7f59c3222906a0570161d52b0fe52627664c17b64ba8513b429851a16b3202",
+    "resultados/codex/point03_p5a_mesh_mid_20261008/cladding_mass.npz": "f48644237ac095b1e16c9211c63e510119cff65523b34270cd2369a96c62d947",
+    "resultados/codex/point03_fem_duffy_mid_20261008/stiffness_duffy16.npz": "d90b53ab2fb53538596b31871050a80cd50cfdc73cf096fb5d5b0e736c88408e",
+    "resultados/codex/point03_p5b_detector_mid_20261008/gaussian_q16.npz": "111939d3ac9181cb5e32dee8f0b1cae52f0470ed5c3970a1c87de23304bd63f4",
+    "resultados/codex/point03_p5b_detector_mid_20261008/core_q32.npz": "c6e857a8b9e48bd64292ba72c988f136669e0845683ab53181aa86fcdd07952e",
+    "resultados/codex/point03_p5b_detector_mid_20261008/intensity_q32.npy": "728bf20e98d317d348f2e37a8dae77a4041157b6e6a9a1a6774ba7654cf20109",
+    "resultados/codex/point03_p5b_damping_mid_20261008/damping_q12.npz": "2278459fd5a0a9983dfb9feec25864e00a3f1b075d72ccebdc5d4fc71d22e82e",
+    "resultados/codex/point03_p5a_mesh_mid_20261008/report.json": "672bfb907694594a2e1e4a160b10d18052805a30a3c76b1b7fb5f8ba90d78344",
+    "resultados/codex/point03_p5b_detector_mid_20261008/report.json": "ad46f525e50f61dab3b02e96e75d044a61d813fb2a07dc135ba263dc9d260718",
+    "resultados/codex/point03_p5b_damping_mid_20261008/report.json": "18af397719ad3acdb20757594b12c2d012a6c5e790e44792bedb577f068c55c9",
+    "resultados/codex/point03_fem_duffy_mid_20261008/report.json": "6f2e3bd738078b2a9ab3db1af346f17b78de98b1de7b76752b03a4950115e028",
+    "scripts/run_point03_d16_mid_refined_time.py": "bd47274d4526c59f079ae399f086e7bd212c0b917d7b082cf46862a7e3a9ef93",
+    "scripts/audit_point03_d16_mid_refined_time.py": "ca22101b53991a784e4393d18425d144677f7611fafb046e2e7edefc2d3f3f0a",
+    "scripts/check_point03_d16_mid_refined_worker.py": "0e88834c5576630c82118a2864b2b184c44072d55ddb9564fa079700a309e59f",
+    "scripts/check_point03_d16_mid_refined_controls.py": "212d07bc900aa2c89d5bd526cdf2301627a4ea3ed0847a8f75e1265086d8b736",
+    "scripts/check_point03_d16_mid_refined_inputs.py": "afd053bf6b5a5b27ed0a64f16c273eba8f5730b561eb9d1918d8a58973b91c81",
+    "scripts/prepare_point03_d16_mid_refined.py": "bdc691109a4dd9dfbdd6612f460ac9c71f37a14bb06c420ab8451a8948544eaa",
+    "resultados/codex/point03_d16_mid_refined_worker_controls_20261008/report.json": "000146ed7264677c6b8a0b5753b9c65d08225f9957a0d9ab1a7a2cd64e72f668",
+    "resultados/codex/point03_d16_mid_refined_input_integrity_20261008.json": "763d6b6fe1f555be9c38b78d4d8ed93ad09c0612b91a25034cabeab9457c7b56",
+    "resultados/codex/point03_d16_mid_refined_generation_20261008.json": "4e7b2a524b1174496ed9898d580c3f7b3e134cbfd61d6752050b393533d3d069",
+    "scripts/point03_fem_time.py": "3f355f83626ad8fe34c0e2d5ad3bc91f7061590e595d38d649c938a5055615bd",
+    "scripts/point03_fem_radau.py": "323459cbc0b53221b069843e2aa5492cc875ae42d52632e51945ca61b1317ef2",
+    "resultados/codex/point03_d16_mid_refined_evaluator_controls_20261008.json": "5fab655e671f60aaa3f79785994b3eae72ddcb7bfa6afdb670df1221401de3f5",
+    "Docs/POINT-03-D16-MID-REFINED-TIME-CONTRACT.md": "943b52b7b6c906ffb0691f7b63d5c6891bd6755c82aabb37956f482aeb7b1493"
+  },
+  "numerical_threads": 1,
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "scipy": "1.15.1",
+  "psutil": "6.1.1",
+  "steps_by_case": {
+    "P6_32768": 32768,
+    "R5_65536": 65536
+  },
+  "chunk_steps": 1024,
+  "mesh": "mid",
+  "stiffness_sha256": "d90b53ab2fb53538596b31871050a80cd50cfdc73cf096fb5d5b0e736c88408e"
+}
