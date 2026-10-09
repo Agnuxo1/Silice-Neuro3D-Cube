@@ -1,0 +1,11 @@
+{
+  "schema": "silice.point03-geometry.attempt.v1",
+  "attempt_id": "20261006T232259773594Z_44778654",
+  "status": "execution_started",
+  "created_utc": "2026-10-06T23:22:59.773970+00:00",
+  "driver_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_geometry.py",
+  "driver_sha256": "c89d5384f9aa4ef92057ac7ca293da2d817eb530316579f4172ff1a7c50bd651",
+  "total_wall_budget_s": 600,
+  "resume_allowed": false,
+  "scope": "A missing final execution.json indicates an interrupted/unknown-cost attempt; no implicit recovery or reuse."
+}

@@ -1,0 +1,13 @@
+{
+  "local_audit_startup_pass": true,
+  "numerical_thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "optical_audit_executed": false,
+  "first_control_invocation_failed": "ModuleNotFoundError: runpy invocation without scripts path",
+  "failure_scope": "Startup control only; wrapper unchanged; no fields or audit executed",
+  "source_sha256": "18deaac21e3351eea7664c006228c380db0199cde22453de156fc8490a50d6d2"
+}

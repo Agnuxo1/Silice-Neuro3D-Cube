@@ -1,0 +1,31 @@
+{
+  "status": "resource_block_retained",
+  "samples": [
+    {
+      "available_ram_gib": 7.388816833496094,
+      "vram_used_gib": 1.0166015625,
+      "temperature_c": 27.0,
+      "utilization_percent": 7.0
+    }
+  ],
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": null,
+  "child_finished": true,
+  "profile_sha256": "ad2475ff795a3cb540a226974c57c7ace9bbe340a9fae9c93bc46d8f24c42c54",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/check_point03_render_reference.py": "b4b00b2c78b7bfbc39bc49e04f5ad680dd0c5a45a5be277abd13e0423fb1c9d1",
+    "scripts/run_point03_render_blender.py": "3b0aeadc5ca48c52d5347c9d6428636a735e9272589e86a8e023c76727e11d29",
+    "scripts/guard_point03_render_gpu.py": "186ffbf0891d28fc3058b6f7a7bf9c0d9eb038a449dbb509f918362e65aadba6",
+    "scripts/audit_point03_render_gpu.py": "3b14724720c66d780ba821bfe2f8bf123d76db9f28e4530705e942db3bf70f77"
+  },
+  "profile_relative": "resultados/codex/point03_render_profile_v2_20261009.json",
+  "published_commit": "66a6f5db69dec2a5f345c51c9430288baa68bb53",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "resource_preflight_pass": false,
+  "elapsed_guard_s": 0.5086351999998442,
+  "finished_utc": "2026-10-09T07:45:53.032707+00:00"
+}

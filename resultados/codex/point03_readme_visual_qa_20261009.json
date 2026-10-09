@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-09T10:13:12.822363+00:00",
+  "pass": true,
+  "readme_local_links_checked": 30,
+  "missing_links": [],
+  "gif_version1_preserved": true,
+  "gif_version2_visual_review_pass": true,
+  "gif_frames_decoded": true,
+  "numerical_gifs_data_audited": true,
+  "architecture_proposal_labeled_every_frame": true,
+  "new_simulation": false,
+  "physical_validation": false,
+  "network_validated": false
+}

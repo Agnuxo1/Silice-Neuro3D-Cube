@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-10-08T13:33:34.625177+00:00",
+  "partial_integrity_pass": true,
+  "accepted_checkpoints": 74,
+  "rejected_checkpoint": 75,
+  "failed_field_not_adopted": true,
+  "failed_field_recomputed_mass_power": 0.9993489010709398,
+  "last_accepted_power": 0.9993727830778784,
+  "max_power_residual": 0.0,
+  "original_execution_sha256": "c4a5a482df63aedc805fc2b5a26b87a85bc4d89d0b47dc90c180c699252d92e6",
+  "original_manifest_sha256": "233b700e7840cf864493a7b0bc6750b64e1bd6e69b5368b439d1b8bce71be87c",
+  "failed_report_sha256": "e4a5354ffa6a5a2b7894c0895b0e7b8d40c14e570cccff3f64ad1a3c6ce06672",
+  "failed_field_sha256": "d018c9a79b421df21d3ef711b0d738f4db0e74304f7061e328b4eb6578cec2c9",
+  "point03_closed": false,
+  "temporal_precision_pass": null
+}

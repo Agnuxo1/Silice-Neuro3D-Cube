@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "created_utc": "2026-10-08T15:41:22.822936+00:00",
+  "label": "coarse",
+  "point03_closed": false,
+  "no_new_propagation": true,
+  "resource_start": {
+    "available_ram_bytes": 2666958848,
+    "free_disk_bytes": 502858407936
+  },
+  "error": "",
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_fem_duffy.py\", line 47, in run\n    assert report['resource_start']['available_ram_bytes']>=3.5*1024**3 and report['resource_start']['free_disk_bytes']>2*1024**3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "elapsed_s": 0.012246099999174476,
+  "resource_end": {
+    "available_ram_bytes": 2666934272,
+    "free_disk_bytes": 502858407936
+  }
+}

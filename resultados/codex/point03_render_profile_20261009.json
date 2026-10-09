@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-09T07:04:52.886148+00:00",
+  "status": "prepared_before_gpu",
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/check_point03_render_reference.py": "b4b00b2c78b7bfbc39bc49e04f5ad680dd0c5a45a5be277abd13e0423fb1c9d1",
+    "scripts/run_point03_render_blender.py": "3b0aeadc5ca48c52d5347c9d6428636a735e9272589e86a8e023c76727e11d29",
+    "scripts/guard_point03_render_gpu.py": "acc8b4d1ef24eea6426aaa8b0a575147dc473df3e07b4ca755ddb4f83c490f9f",
+    "scripts/audit_point03_render_gpu.py": "3b14724720c66d780ba821bfe2f8bf123d76db9f28e4530705e942db3bf70f77"
+  },
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "deadline_utc": "2026-10-09T13:45:00+00:00",
+  "ram_preflight_gib": 8,
+  "ram_floor_gib": 6,
+  "queue_wait_minutes": 1,
+  "child_seconds": 120
+}

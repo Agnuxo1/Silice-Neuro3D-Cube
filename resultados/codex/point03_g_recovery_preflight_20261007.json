@@ -1,0 +1,28 @@
+{
+  "pass_": true,
+  "worker_changes_only_chunk_length": true,
+  "original_children": 216,
+  "expected_recovered_children": 234,
+  "expected_valid_chunks": 233,
+  "assessor_diff": [
+    "--- \n",
+    "+++ \n",
+    "@@ -1,4 +1,4 @@\n",
+    "-\"\"\"G evidence assessment and reconstructed detector; imports no wave solver.\"\"\"",
+    "+\"\"\"G2 recovery evidence assessment and reconstructed detector; imports no wave solver.\"\"\"",
+    " import argparse",
+    " from datetime import datetime, timezone",
+    " import hashlib",
+    "@@ -131,8 +131,8 @@\n",
+    "                 cp=json.loads(Path(checkpoint['path']).read_text())",
+    "                 assert cp['previous_report_path']==previous and cp['start_step']==done",
+    "                 assert cp['previous_report_sha256']==previous_sha",
+    "-                assert cp['steps_done']==200 and sha(cp['field_path'])==cp['field_sha256']",
+    "-                done+=200; previous=checkpoint['path'];previous_sha=checkpoint['sha256']",
+    "+                assert cp['steps_done'] in (100,200) and sha(cp['field_path'])==cp['field_sha256']",
+    "+                done+=cp['steps_done']; previous=checkpoint['path'];previous_sha=checkpoint['sha256']",
+    "             assert done==case['steps'] and cp['field_path']==case['field_path']",
+    "     detector=Detector()",
+    "     rows=read_rows(manifest,execution['results'],detector)"
+  ]
+}

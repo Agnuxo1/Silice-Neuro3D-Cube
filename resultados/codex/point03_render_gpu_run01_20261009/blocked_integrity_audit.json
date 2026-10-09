@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-09T08:02:06.526979+00:00",
+  "status": "blocked_before_launch_retained",
+  "frozen_auditor_exit_code": 1,
+  "reason": "No render_result.json exists because own FIFO check blocked before Blender launch",
+  "raw_frames_found": 0,
+  "new_gpu_execution": false,
+  "complete_integrity_pass": false,
+  "accuracy_pass": null,
+  "adopted": false,
+  "physical_validation": false,
+  "point03_closed": false,
+  "files_sha256": {
+    "audit_stderr.txt": "9c7a78c228fadd2e5f068b2552292d7a5e2869c99ac7ce38f85ce0f48067d4bc",
+    "audit_stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "guard.json": "309d332e08e1ecfd11403075a681230cb9a0d66ba3666d54447f47a9f4cc6f20"
+  },
+  "guard_reason": "own live FIFO reservation required"
+}

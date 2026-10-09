@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-09T08:46:55.040243+00:00",
+  "pass": true,
+  "scope": "Exact reviewed staged P0 preparation and archival raw bytes; source/profile/control SHA match; selected signatures, no complete absence of secrets claim",
+  "files": [
+    {
+      "path": "Docs/POINT-03-RENDER-BUFFER-CALIBRATION-CONTRACT.md",
+      "bytes": 4101,
+      "sha256": "af0c36cce293117e3635d4cd2baac95f007e6dd8352dc75125b6404e45adf1a0"
+    },
+    {
+      "path": "coordinacion/CHECKPOINT.md",
+      "bytes": 132964,
+      "sha256": "426c2dbbd9bf3b3b31a7ebebca81e2e466dea889f025d2ba5bce54a506f95dc1"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_cpu_controls_20261009.json",
+      "bytes": 1194,
+      "sha256": "00009cae8d09c7c57635d63a93df168db2e720e1fa6e6cda0bdc312df275cd9e"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_cpu_controls_portable_20261009.json",
+      "bytes": 1142,
+      "sha256": "c521a5031de9e7b6f60bf94845ce013995b3659bbcb51d68e3058040e258652a"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_guard_prepublication_crlf_20261009.txt",
+      "bytes": 8039,
+      "sha256": "89d47efada0363abfe2228045149ab5723a10199f468823be615867528e993b7"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_profile_20261009.json",
+      "bytes": 2086,
+      "sha256": "ff1c6468388e4983ba664da26b138ac885deb0d5c7b7fc2f1d9c48b17203e65f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_profile_v2_20261009.json",
+      "bytes": 2712,
+      "sha256": "7852f544c6be043cba2ba7a68ec0469d8bf20316976ed709b7e53b9873e7dfb4"
+    },
+    {
+      "path": "resultados/codex/point03_render_primary_sources_20261009/manifest.json",
+      "bytes": 587,
+      "sha256": "03bd282dab5533a4b356af3172390fe79b95b475a54cc54df6d3e62425b5e46f"
+    },
+    {
+      "path": "resultados/codex/point03_render_run02_publication_receipt_20261009.json",
+      "bytes": 543,
+      "sha256": "d90bddd3a570807fdda8fa32bd041ffa2c39fc5392f58b189edaf778125a1a50"
+    },
+    {
+      "path": "scripts/audit_point03_render_buffer.py",
+      "bytes": 4067,
+      "sha256": "a13f588baab4835054d515d67c9e72d7e826345f75c4610fe954ebacfa7303fb"
+    },
+    {
+      "path": "scripts/check_point03_render_buffer.py",
+      "bytes": 2334,
+      "sha256": "ec65ce729f770a9ee901c351755e3e1fd186c5e08926533d754cca552cf8072f"
+    },
+    {
+      "path": "scripts/guard_point03_render_buffer.py",
+      "bytes": 7898,
+      "sha256": "cf201fd396f705d568722e98bae59d36d1c1b3be62d2d0005a2666757a00ffe1"
+    },
+    {
+      "path": "scripts/point03_render_buffer_reference.py",
+      "bytes": 1318,
+      "sha256": "7b8fec7bf8b0094e77d008add79c2bd0a476bb290ce51c5b50d62523c4749100"
+    },
+    {
+      "path": "scripts/run_point03_render_buffer_blender.py",
+      "bytes": 7412,
+      "sha256": "5b28dfd00b12ba5504ad67005c67ddf56aa3016e7a606e8b4ec77d96e7b21b3f"
+    }
+  ],
+  "bytes": 176397,
+  "findings": [],
+  "profile_source_blobs_match": true,
+  "f1_worker_unchanged": true,
+  "old_r1_sources_unchanged": true,
+  "cpu_marker_groups_pass": 6,
+  "invalid_groups_pass": 5,
+  "prior_preflight_failed": "CRLF guard source differed from normalized Git blob; archived, normalized before any GPU, no criterion change",
+  "archival_preparation_bytes_preserved_exactly": true,
+  "gpu_execution": false
+}

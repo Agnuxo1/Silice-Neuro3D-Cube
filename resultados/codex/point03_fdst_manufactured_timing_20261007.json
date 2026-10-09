@@ -1,0 +1,11 @@
+{
+  "manufactured_only": true,
+  "no_T96_propagation": true,
+  "N": 626,
+  "steps": 100,
+  "elapsed_s": 18.242289400019217,
+  "seconds_per_step": 0.18242289400019218,
+  "field_relative_error": 2.541177907421221e-13,
+  "pass_": true,
+  "source_sha256": "run_point03_exponential"
+}

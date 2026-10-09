@@ -1,0 +1,12 @@
+{
+  "generation_pass": true,
+  "original_sha256": "c04e968959a1e1dae6be198d3e7ae4d0b07772893a15d312060f418af561d0ba",
+  "template_sha256": "6897cdbc5f813497d9bfb506344d4c2ed6a49f565d1565f6000900626a30c1ee",
+  "generated_sha256": "def715416c077fa120755e671199491a3a454a8c369645e5c45e3b2d9103e2d3",
+  "changes": [
+    "Select only Radau5",
+    "step2mm/65536",
+    "new driver and retained-reference provenance"
+  ],
+  "optical_propagation_executed": false
+}

@@ -1,0 +1,65 @@
+{
+  "scope": "Diagnostic only; no changed gates or adoption of transformed raw frames",
+  "rows": [
+    {
+      "n": 64,
+      "cpu_bbox": {
+        "row_min": 10,
+        "row_max": 56,
+        "column_min": 7,
+        "column_max": 56,
+        "count": 1210
+      },
+      "raw_gpu_bbox": {
+        "row_min": 0,
+        "row_max": 61,
+        "column_min": 0,
+        "column_max": 63,
+        "count": 1352
+      },
+      "max_original": 1.1492298916672241,
+      "transpose_diagnostic_max": 1.2471665694936966,
+      "adopt_transposed_frames": false
+    },
+    {
+      "n": 128,
+      "cpu_bbox": {
+        "row_min": 19,
+        "row_max": 113,
+        "column_min": 13,
+        "column_max": 114,
+        "count": 4940
+      },
+      "raw_gpu_bbox": {
+        "row_min": 0,
+        "row_max": 125,
+        "column_min": 0,
+        "column_max": 127,
+        "count": 5480
+      },
+      "max_original": 1.1794357285364216,
+      "transpose_diagnostic_max": 1.2711578147157707,
+      "adopt_transposed_frames": false
+    },
+    {
+      "n": 256,
+      "cpu_bbox": {
+        "row_min": 38,
+        "row_max": 228,
+        "column_min": 26,
+        "column_max": 229,
+        "count": 19738
+      },
+      "raw_gpu_bbox": {
+        "row_min": 0,
+        "row_max": 253,
+        "column_min": 0,
+        "column_max": 255,
+        "count": 21896
+      },
+      "max_original": 1.2084201636429492,
+      "transpose_diagnostic_max": 1.2941209405615826,
+      "adopt_transposed_frames": false
+    }
+  ]
+}

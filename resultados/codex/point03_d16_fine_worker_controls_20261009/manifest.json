@@ -1,0 +1,6 @@
+{
+  "purpose": "Synthetic 3-DOF software control only; not T96",
+  "source_sha256": {
+    "scripts/run_point03_d16_fine_time.py": "39b1024a2237edb1938873defd22aaac76e995fdb93adad2e5c7eb3339081456"
+  }
+}

@@ -1,0 +1,1167 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-08T09:44:58.924956+00:00",
+  "children": [
+    {
+      "index": 1,
+      "returncode": 0,
+      "elapsed_s": 60.053656499949284
+    },
+    {
+      "index": 2,
+      "returncode": 0,
+      "elapsed_s": 59.59493980003754
+    },
+    {
+      "index": 3,
+      "returncode": 0,
+      "elapsed_s": 59.720287500007544
+    },
+    {
+      "index": 4,
+      "returncode": 0,
+      "elapsed_s": 60.195300000021234
+    },
+    {
+      "index": 5,
+      "returncode": 0,
+      "elapsed_s": 59.30945319996681
+    },
+    {
+      "index": 6,
+      "returncode": 0,
+      "elapsed_s": 61.10734340001363
+    },
+    {
+      "index": 7,
+      "returncode": 0,
+      "elapsed_s": 59.435623799974564
+    },
+    {
+      "index": 8,
+      "returncode": 0,
+      "elapsed_s": 60.42081480001798
+    },
+    {
+      "index": 9,
+      "returncode": 0,
+      "elapsed_s": 59.186986799992155
+    },
+    {
+      "index": 10,
+      "returncode": 0,
+      "elapsed_s": 59.14459680003347
+    },
+    {
+      "index": 11,
+      "returncode": 0,
+      "elapsed_s": 59.87267129996326
+    },
+    {
+      "index": 12,
+      "returncode": 0,
+      "elapsed_s": 60.21770389995072
+    },
+    {
+      "index": 13,
+      "returncode": 0,
+      "elapsed_s": 59.1469756999868
+    },
+    {
+      "index": 14,
+      "returncode": 0,
+      "elapsed_s": 59.32871939998586
+    },
+    {
+      "index": 15,
+      "returncode": 0,
+      "elapsed_s": 59.8162430000375
+    },
+    {
+      "index": 16,
+      "returncode": 0,
+      "elapsed_s": 59.83157670003129
+    },
+    {
+      "index": 17,
+      "returncode": 0,
+      "elapsed_s": 60.09845180000411
+    },
+    {
+      "index": 18,
+      "returncode": 0,
+      "elapsed_s": 59.85648029996082
+    },
+    {
+      "index": 19,
+      "returncode": 0,
+      "elapsed_s": 59.371644800005015
+    },
+    {
+      "index": 20,
+      "returncode": 0,
+      "elapsed_s": 60.218690300011076
+    },
+    {
+      "index": 21,
+      "returncode": 0,
+      "elapsed_s": 60.435863799997605
+    },
+    {
+      "index": 22,
+      "returncode": 0,
+      "elapsed_s": 60.87005309999222
+    },
+    {
+      "index": 23,
+      "returncode": 0,
+      "elapsed_s": 59.201192200009245
+    },
+    {
+      "index": 24,
+      "returncode": 0,
+      "elapsed_s": 60.23843890003627
+    },
+    {
+      "index": 25,
+      "returncode": 0,
+      "elapsed_s": 59.77093000005698
+    },
+    {
+      "index": 26,
+      "returncode": 0,
+      "elapsed_s": 59.513517099956516
+    },
+    {
+      "index": 27,
+      "returncode": 0,
+      "elapsed_s": 60.67440770001849
+    },
+    {
+      "index": 28,
+      "returncode": 0,
+      "elapsed_s": 60.419186100014485
+    },
+    {
+      "index": 29,
+      "returncode": 0,
+      "elapsed_s": 59.90267589996802
+    },
+    {
+      "index": 30,
+      "returncode": 0,
+      "elapsed_s": 59.68541010003537
+    },
+    {
+      "index": 31,
+      "returncode": 0,
+      "elapsed_s": 60.19440819998272
+    },
+    {
+      "index": 32,
+      "returncode": 0,
+      "elapsed_s": 59.554102700029034
+    },
+    {
+      "index": 33,
+      "returncode": 0,
+      "elapsed_s": 60.411952700000256
+    },
+    {
+      "index": 34,
+      "returncode": 0,
+      "elapsed_s": 63.23178780003218
+    },
+    {
+      "index": 35,
+      "returncode": 0,
+      "elapsed_s": 61.67295999999624
+    },
+    {
+      "index": 36,
+      "returncode": 0,
+      "elapsed_s": 62.127576200000476
+    },
+    {
+      "index": 37,
+      "returncode": 0,
+      "elapsed_s": 61.921193499991205
+    },
+    {
+      "index": 38,
+      "returncode": 0,
+      "elapsed_s": 61.726005500007886
+    },
+    {
+      "index": 39,
+      "returncode": 0,
+      "elapsed_s": 60.71838120004395
+    },
+    {
+      "index": 40,
+      "returncode": 0,
+      "elapsed_s": 63.350002699997276
+    },
+    {
+      "index": 41,
+      "returncode": 0,
+      "elapsed_s": 63.56868010002654
+    },
+    {
+      "index": 42,
+      "returncode": 0,
+      "elapsed_s": 63.7524917999981
+    },
+    {
+      "index": 43,
+      "returncode": 0,
+      "elapsed_s": 62.07780520000961
+    },
+    {
+      "index": 44,
+      "returncode": 0,
+      "elapsed_s": 61.73838819999946
+    },
+    {
+      "index": 45,
+      "returncode": 0,
+      "elapsed_s": 63.12302699999418
+    },
+    {
+      "index": 46,
+      "returncode": 0,
+      "elapsed_s": 62.108039500017185
+    },
+    {
+      "index": 47,
+      "returncode": 0,
+      "elapsed_s": 62.034781599999405
+    },
+    {
+      "index": 48,
+      "returncode": 0,
+      "elapsed_s": 62.172059100004844
+    },
+    {
+      "index": 49,
+      "returncode": 0,
+      "elapsed_s": 62.02134560002014
+    },
+    {
+      "index": 50,
+      "returncode": 0,
+      "elapsed_s": 62.536376799980644
+    },
+    {
+      "index": 51,
+      "returncode": 0,
+      "elapsed_s": 63.17756309994729
+    },
+    {
+      "index": 52,
+      "returncode": 0,
+      "elapsed_s": 62.406875299988315
+    },
+    {
+      "index": 53,
+      "returncode": 0,
+      "elapsed_s": 62.0504135999945
+    },
+    {
+      "index": 54,
+      "returncode": 0,
+      "elapsed_s": 61.024142000009306
+    },
+    {
+      "index": 55,
+      "returncode": 0,
+      "elapsed_s": 62.35070650000125
+    },
+    {
+      "index": 56,
+      "returncode": 0,
+      "elapsed_s": 62.9922332999995
+    },
+    {
+      "index": 57,
+      "returncode": 0,
+      "elapsed_s": 62.93437910004286
+    },
+    {
+      "index": 58,
+      "returncode": 0,
+      "elapsed_s": 61.673091600008775
+    },
+    {
+      "index": 59,
+      "returncode": 0,
+      "elapsed_s": 62.06714529998135
+    },
+    {
+      "index": 60,
+      "returncode": 0,
+      "elapsed_s": 64.07015710003907
+    },
+    {
+      "index": 61,
+      "returncode": 0,
+      "elapsed_s": 61.976224899990484
+    },
+    {
+      "index": 62,
+      "returncode": 0,
+      "elapsed_s": 61.71801999997115
+    },
+    {
+      "index": 63,
+      "returncode": 0,
+      "elapsed_s": 61.754203799995594
+    },
+    {
+      "index": 64,
+      "returncode": 0,
+      "elapsed_s": 61.874875299981795
+    },
+    {
+      "index": 65,
+      "returncode": 0,
+      "elapsed_s": 61.56373840000015
+    },
+    {
+      "index": 66,
+      "returncode": 0,
+      "elapsed_s": 62.898886399983894
+    },
+    {
+      "index": 67,
+      "returncode": 0,
+      "elapsed_s": 62.12443229998462
+    },
+    {
+      "index": 68,
+      "returncode": 0,
+      "elapsed_s": 61.40949160000309
+    },
+    {
+      "index": 69,
+      "returncode": 0,
+      "elapsed_s": 61.29321560001699
+    },
+    {
+      "index": 70,
+      "returncode": 0,
+      "elapsed_s": 61.276971900020726
+    },
+    {
+      "index": 71,
+      "returncode": 0,
+      "elapsed_s": 63.423915299994405
+    },
+    {
+      "index": 72,
+      "returncode": 0,
+      "elapsed_s": 61.52831289998721
+    },
+    {
+      "index": 73,
+      "returncode": 0,
+      "elapsed_s": 61.8835579000297
+    },
+    {
+      "index": 74,
+      "returncode": 0,
+      "elapsed_s": 63.40277489996515
+    },
+    {
+      "index": 75,
+      "returncode": 0,
+      "elapsed_s": 63.338864199991804
+    },
+    {
+      "index": 76,
+      "returncode": 0,
+      "elapsed_s": 63.577482799999416
+    },
+    {
+      "index": 77,
+      "returncode": 0,
+      "elapsed_s": 63.28980800003046
+    },
+    {
+      "index": 78,
+      "returncode": 0,
+      "elapsed_s": 61.881229599996004
+    },
+    {
+      "index": 79,
+      "returncode": 0,
+      "elapsed_s": 61.68168549996335
+    },
+    {
+      "index": 80,
+      "returncode": 0,
+      "elapsed_s": 62.29670549998991
+    },
+    {
+      "index": 81,
+      "returncode": 0,
+      "elapsed_s": 63.223237700003665
+    },
+    {
+      "index": 82,
+      "returncode": 0,
+      "elapsed_s": 62.96417669998482
+    },
+    {
+      "index": 83,
+      "returncode": 0,
+      "elapsed_s": 62.58457679999992
+    },
+    {
+      "index": 84,
+      "returncode": 0,
+      "elapsed_s": 61.88846400001785
+    },
+    {
+      "index": 85,
+      "returncode": 0,
+      "elapsed_s": 62.02493430004688
+    },
+    {
+      "index": 86,
+      "returncode": 0,
+      "elapsed_s": 63.410120200016536
+    },
+    {
+      "index": 87,
+      "returncode": 0,
+      "elapsed_s": 63.10185749997618
+    },
+    {
+      "index": 88,
+      "returncode": 0,
+      "elapsed_s": 61.774145899980795
+    },
+    {
+      "index": 89,
+      "returncode": 0,
+      "elapsed_s": 62.00505969999358
+    },
+    {
+      "index": 90,
+      "returncode": 0,
+      "elapsed_s": 61.487751699984074
+    },
+    {
+      "index": 91,
+      "returncode": 0,
+      "elapsed_s": 65.35126259998651
+    },
+    {
+      "index": 92,
+      "returncode": 0,
+      "elapsed_s": 61.8099905999843
+    },
+    {
+      "index": 93,
+      "returncode": 0,
+      "elapsed_s": 62.593879399995785
+    },
+    {
+      "index": 94,
+      "returncode": 0,
+      "elapsed_s": 62.81138169998303
+    },
+    {
+      "index": 95,
+      "returncode": 0,
+      "elapsed_s": 62.20588470000075
+    },
+    {
+      "index": 96,
+      "returncode": 0,
+      "elapsed_s": 64.72827149997465
+    },
+    {
+      "index": 97,
+      "returncode": 0,
+      "elapsed_s": 62.29224579996662
+    },
+    {
+      "index": 98,
+      "returncode": 0,
+      "elapsed_s": 62.1953481999808
+    },
+    {
+      "index": 99,
+      "returncode": 0,
+      "elapsed_s": 62.30957310000667
+    },
+    {
+      "index": 100,
+      "returncode": 0,
+      "elapsed_s": 63.74461860000156
+    },
+    {
+      "index": 101,
+      "returncode": 0,
+      "elapsed_s": 61.65347219997784
+    },
+    {
+      "index": 102,
+      "returncode": 0,
+      "elapsed_s": 62.53976580000017
+    },
+    {
+      "index": 103,
+      "returncode": 0,
+      "elapsed_s": 60.2807385000051
+    },
+    {
+      "index": 104,
+      "returncode": 0,
+      "elapsed_s": 60.18432830000529
+    },
+    {
+      "index": 105,
+      "returncode": 0,
+      "elapsed_s": 66.17861260002246
+    },
+    {
+      "index": 106,
+      "returncode": 0,
+      "elapsed_s": 64.10828909999691
+    },
+    {
+      "index": 107,
+      "returncode": 0,
+      "elapsed_s": 63.45275420002872
+    },
+    {
+      "index": 108,
+      "returncode": 0,
+      "elapsed_s": 63.379343100008555
+    },
+    {
+      "index": 109,
+      "returncode": 0,
+      "elapsed_s": 64.61190990003524
+    },
+    {
+      "index": 110,
+      "returncode": 0,
+      "elapsed_s": 64.98410080000758
+    },
+    {
+      "index": 111,
+      "returncode": 0,
+      "elapsed_s": 64.27403189998586
+    },
+    {
+      "index": 112,
+      "returncode": 0,
+      "elapsed_s": 65.5753367000143
+    },
+    {
+      "index": 113,
+      "returncode": 0,
+      "elapsed_s": 63.34636450000107
+    },
+    {
+      "index": 114,
+      "returncode": 0,
+      "elapsed_s": 62.78502110001864
+    },
+    {
+      "index": 115,
+      "returncode": 0,
+      "elapsed_s": 63.716704899969045
+    },
+    {
+      "index": 116,
+      "returncode": 0,
+      "elapsed_s": 61.6341883999994
+    },
+    {
+      "index": 117,
+      "returncode": 0,
+      "elapsed_s": 61.82549889996881
+    },
+    {
+      "index": 118,
+      "returncode": 0,
+      "elapsed_s": 62.3532110999804
+    },
+    {
+      "index": 119,
+      "returncode": 0,
+      "elapsed_s": 62.8045090000378
+    },
+    {
+      "index": 120,
+      "returncode": 0,
+      "elapsed_s": 63.76390979997814
+    },
+    {
+      "index": 121,
+      "returncode": 0,
+      "elapsed_s": 60.08080090000294
+    },
+    {
+      "index": 122,
+      "returncode": 0,
+      "elapsed_s": 61.35370049998164
+    },
+    {
+      "index": 123,
+      "returncode": 0,
+      "elapsed_s": 59.62904670002172
+    },
+    {
+      "index": 124,
+      "returncode": 0,
+      "elapsed_s": 61.00599909998709
+    },
+    {
+      "index": 125,
+      "returncode": 0,
+      "elapsed_s": 60.64191280002706
+    },
+    {
+      "index": 126,
+      "returncode": 0,
+      "elapsed_s": 61.068152700026985
+    },
+    {
+      "index": 127,
+      "returncode": 0,
+      "elapsed_s": 60.15243640000699
+    },
+    {
+      "index": 128,
+      "returncode": 0,
+      "elapsed_s": 60.25286009995034
+    }
+  ],
+  "checkpoints": [
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part001.json",
+      "sha256": "530762565d31d1c05b00ebf66c1a8b943cf9d7defc2abeed0846f0b8245fa851"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part002.json",
+      "sha256": "c4b8c50475a5da69db0e7da7c45cc8544936a0412dbbff27ad754e352d4f779e"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part003.json",
+      "sha256": "e8e1ac56a6559c7c186a3586c24c5030faaba91cd9abb1d85841641d51b51863"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part004.json",
+      "sha256": "08c332d13976f08fb06546a65756b0ed4fd7a66c59215ba94b0f920d61db9822"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part005.json",
+      "sha256": "7dd3a060f3a9935d14f1bd160348d7e469edcdfa37108a3a3bd46b95bde141e9"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part006.json",
+      "sha256": "475db6abb3b56b9e0b0646830bf275d972b32563a916315919c09ca883559666"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part007.json",
+      "sha256": "a0b4295843b74cdedf10bb66140ee3cd33ef2a0a7c23a87cf690b7ab81e1e0c9"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part008.json",
+      "sha256": "a4cb4a0e343bb5e7c54e7419daa8c6df01ee0173c469968e8d180e792462b0f6"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part009.json",
+      "sha256": "cc68420bd301736bae24b31eff88d0d30951a1c6e0ca28a1305bc29a0380a233"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part010.json",
+      "sha256": "b1ea49953cd202d3d8571da392393987fd1f0b482b68c7302d492259efae49f2"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part011.json",
+      "sha256": "36a7c6f1450599b33a53501b6f30bdb508411285e9797c7a4ef476bc2178af22"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part012.json",
+      "sha256": "4a1dd1eb791dff706b1b08cf130001e3cfb3900d116f3ffdfad2efec9971ca87"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part013.json",
+      "sha256": "e08908afbc28a6ced6f9097bc31494813826534a9a599304b347ab78a0c79957"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part014.json",
+      "sha256": "43df47bce001d52386700a86f4141089863353dab3a2781f059b1b759d366805"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part015.json",
+      "sha256": "d64765d67438524f037ab3fbece067faccca11f254c30a09da57d2820d0487b9"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part016.json",
+      "sha256": "3154e1e0a85a825d0d89c33e2b09d6b876719b1a63fd4fc20012ece33c786e6c"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part017.json",
+      "sha256": "a96db0f4bc737bf70e829df4524006b8d16a6c9a6e51661018e1ff4ea377ff14"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part018.json",
+      "sha256": "2ac0090d3adf8c3c79f12d3ea1e996c942ff4e5f77122f5a3b09088747f230da"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part019.json",
+      "sha256": "a3e1823acc6763c62713594a766471a10a43671850f0bc5579fa0829d38689bc"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part020.json",
+      "sha256": "292cc8ad72c6992588a3438ccf9e72930dd111b73071d0c60b480b11d139dba8"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part021.json",
+      "sha256": "72c92efd24830bdaf312ca2552d0a6eac7ac7ecc4bebbc4aff07beefc95fc6b7"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part022.json",
+      "sha256": "51ff5ceae36762956bb622e67709b41860edb87a5be4210ed0b8b6ee6a372883"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part023.json",
+      "sha256": "6526f6f7571f947c216bf0498a722395ead1b67b00548c643fad0dfdcc9dacfa"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part024.json",
+      "sha256": "15a76d19531d457415d9b837f8de67760de355087de333aff855b3818a2837ce"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part025.json",
+      "sha256": "d298ed4b70b0160448364f903964b46154233d14e4f75f83869103d46af45a09"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part026.json",
+      "sha256": "a7c4afdfed7e690a4844a57fa7afe145d30bfd4155244c3066e15dc593383b20"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part027.json",
+      "sha256": "3c6e7d19d18c2e54b211e7e59a3db283db79282804cfe396b4d58ad1fc481a54"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part028.json",
+      "sha256": "501864a803941ab5e3878a2c5865403912d6d8ae11c182d058645c43864effff"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part029.json",
+      "sha256": "ab568359331ac76d8314b6fbf49438763529cc4653683549af546714c8e13f6e"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part030.json",
+      "sha256": "c9a95efd93dcc38d1bd7170a64a418d8ee65959abb6e1fd652065dbd37ea2f00"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part031.json",
+      "sha256": "71cc1b9b5efdaf04094fe5af63a08f7e1613c32036184d458aa04d1defb0e3b7"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part032.json",
+      "sha256": "fa49b2987d274c30035a8c82945f749482c84a3534d175bb2c02c84f6e7e3f80"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part033.json",
+      "sha256": "4e02bff7ac3917091147f076f9d459ad2eb0ccc5acb5b20fe1bb607c48f67b2a"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part034.json",
+      "sha256": "a9e8ceb4ba06166ffc2dfbc5faf9f4d5fd56827fbd3581feb8684af8c304c2bb"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part035.json",
+      "sha256": "e9c13595e37d704cc0d28183408a4c37e5cd02f49ff88b742eb802bdc314a4b5"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part036.json",
+      "sha256": "e1d27cef3b744314e55afe053d5eeab7630c376b4989b11d7c4fb7ed4d6aba3c"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part037.json",
+      "sha256": "5860f3ad7fc0a836a01d84ebf15feb274b8603f1d09832c4dc89f1c43d72d215"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part038.json",
+      "sha256": "eb54a6beee3973f7dd0146ecbd7f151f41a841936eeed426e86892c0f825d2b3"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part039.json",
+      "sha256": "05f4128a79f42daf8f2131563c533d8ab108d6aef7374910e923dc49fc914696"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part040.json",
+      "sha256": "5905e78fcc33e651af1b55ddd243cbebb6694ad422c171de8bf00eaf9554a46d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part041.json",
+      "sha256": "6c93cf660030101f3d1c1a9dd06fafb67b116ae6d6e2170a1ad53d2c5f5f12ab"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part042.json",
+      "sha256": "c60b1ad8c2c0e9e1b64e21876a3004b395c2b4bd8253e145b955b6613a4a85b9"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part043.json",
+      "sha256": "b5f00bfce552cc311573c14afc1c8df5767b75b977d7c1cefa5e9e9a0eeb05c3"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part044.json",
+      "sha256": "88f501c1b3ee1a6d35669c935b50d446db5458da186d055818eb868759313d26"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part045.json",
+      "sha256": "4b231a9a20cd3e793bf80e0f9ab522f5feb3fca428016292c6e96831f0a18997"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part046.json",
+      "sha256": "fc69d0ff3fe9e5099b016b96689197660ebf114807a01f944ef346a6e5480685"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part047.json",
+      "sha256": "b8835ba7ee5d863a23ef08913b06b05648a8a9252c1ad9319cfce209ae111715"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part048.json",
+      "sha256": "e6459fd6749f355dd8899851b489e1de5f1e70786bb36aff7d522974dc9b4097"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part049.json",
+      "sha256": "67c408dd2612aea2af8491fcdbce3764d202360ef1fbd4e42014ba36bfcf077e"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part050.json",
+      "sha256": "66dc694047a2673fb444ad68da2da2396e37482eed2441cc9f071140bc8c7115"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part051.json",
+      "sha256": "4f75e14b58ad8cd12b485776d043da58263ded977e6bdc4d8057011e165ac296"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part052.json",
+      "sha256": "29367c34db48a935abcaed11bac6877b57921eb906dcf2e408ecac56bb65512a"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part053.json",
+      "sha256": "fe815c3ee5daf1edaf3a4dc14c10dd6338138658d136dcb14ce0c0d4fec3b6e0"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part054.json",
+      "sha256": "354f35f74d3504bf18afb109e216616b492517f494270123f5796df52f778c7e"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part055.json",
+      "sha256": "3427929c1d2024af7765c000b9f40116e85125193c18e4d98bf7932caddf6c01"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part056.json",
+      "sha256": "c9b5ae9b545590d5e06b16361fe9aa420ea44b3233fafe6c1ee7d61bddba257d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part057.json",
+      "sha256": "16c6d82cf0d82f282220ce374a8845ebacb9d47a1e7342745a082ebf6945373d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part058.json",
+      "sha256": "fd37bcf390379997a6256bf16ca5e9ab234f42fdd0fbdc274afe89d0f8ca1f34"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part059.json",
+      "sha256": "b4d0e10c950d1998cee0e5f509dc3366d4cb0607159e938bfaa72783d01858aa"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part060.json",
+      "sha256": "80f190f4fab00f298d4f843746b8e672226b9a4c04e117aedd4c34b254021816"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part061.json",
+      "sha256": "f93305db748b2abc47e0a0ec6516bfd0420a449793c563bde850e6458a7c3adf"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part062.json",
+      "sha256": "ba240cc8b3705219827c6b276b0d48849191066311bae6c90b0e03e41efc1dd2"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part063.json",
+      "sha256": "0efccef57f37d174cc498f2f6809e63feb2ef8ac94df3c041c856703f5b196cd"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part064.json",
+      "sha256": "06ba86e2469d034dbe2141f48fdeed3547de4be2d05f76eb49629b4bc928b843"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part065.json",
+      "sha256": "3659a05beffa792cd7506247d95dc23cc79f8865e887730edfad720986daff42"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part066.json",
+      "sha256": "ad77ee0cce4ab8ed2e84a88ad84fd960b45d50802e4c866af96aa9f85dcb5751"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part067.json",
+      "sha256": "81b9d54654f1ae601c9ef6453a7a3f017bc09de9a1beb291cdfd8c562f8b524f"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part068.json",
+      "sha256": "f15e20a30fa2c280c577c6b072140cc694ab1a20e72885ef14636961f4e3031b"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part069.json",
+      "sha256": "bae2d44a697419d3c5600ab51e04c1b8af11bb8a92314bf18a83cf583f6a5a73"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part070.json",
+      "sha256": "20475a5b5a745624a096756fb9bc25dce01f08bce6c25480cfbfc6fda30c7e3d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part071.json",
+      "sha256": "df0eaa7def99c9f43be311d7a6b5cf483fd41b956f7ef2ddd37f2bd672a1b35d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part072.json",
+      "sha256": "2eb854d5749d4d2c87b7722cfd71b8daaa93f1f3597a6df4ee76372df29ad782"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part073.json",
+      "sha256": "6d866b512f99d7550a2e8e8ca6bd6d9f59f6a49ee40455a08f367fd29009824c"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part074.json",
+      "sha256": "382199de488d4d5ac0260ca85358dad4e451d956a83b3d6e6927c847b5e2a3c0"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part075.json",
+      "sha256": "bb953c599befbfaea1865e751e886cb6ff19f663bceb343ddee5a2ef430b74b8"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part076.json",
+      "sha256": "06daa08ea91c5d4f0ee90ddfbccd1a4cdd57752a365c50d881b1cf944450d472"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part077.json",
+      "sha256": "bed3403737becba695bf284adcb960d6d07ed29cc43b6cd9189340d1c44955b9"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part078.json",
+      "sha256": "63046a0bad2988c8c2fa5e33a23a607656f03a4db94ce10e0ebc0c52e3606611"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part079.json",
+      "sha256": "385104e6f1ec8c2b5b70c3de68c9e46c25277289e4c0c74ee777aafb2938569d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part080.json",
+      "sha256": "85571bd31b2644cf48610586b9821797e3a1452e01d59aceadbd9d3707e085c8"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part081.json",
+      "sha256": "d59cf3a679d9fe3ccd8fc7837d72326ac013a583ead0f09c556a255f0ce29148"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part082.json",
+      "sha256": "45ba7e67381ef971222f208e347052f66ef3e5a52f5fc09473ee17bde803ea56"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part083.json",
+      "sha256": "b880862c601253bcdb56c43d0a84278e2a253e386a16d11576086aa045c33b82"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part084.json",
+      "sha256": "efc61d820eb8ee39924c65f8b931ed2d98af708fe4323cd06593683a1df4d8c9"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part085.json",
+      "sha256": "64cf587b53b36635f4a77d197117210739946426a6521c8c8728452645732cb7"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part086.json",
+      "sha256": "8b1625587028f6369d3393646e4b901f92cca2b5c49762793a6df0a6e6f72978"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part087.json",
+      "sha256": "8b8449cda683893c591feec4cf90972a3ce1c9dde84db3e639090548c9400149"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part088.json",
+      "sha256": "fe6521f0e01a32b26a54c8f2b0b98d24928d7ba2ebbbce15ea671d10565231aa"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part089.json",
+      "sha256": "3279ba308d88f055d179650e7804803f398ccee2ddc1e9c6086fd6ab3b38ed8f"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part090.json",
+      "sha256": "827c564d0afe7ed757813ed2945210e649552e3fa9c4ff64a9f4d9e4232294e5"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part091.json",
+      "sha256": "68012740528b5729b1281ab47d0b01e15e26e360b23243512d5840fedab3b279"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part092.json",
+      "sha256": "0ec04ba6e70373a918ab039711e1b6aaa9b19f11ea091d7b7dfc100e0448f27f"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part093.json",
+      "sha256": "056cdf83d6b1fbf967c8add8fdc22cb733a7df3f9e74bc5da4d1fc637899260a"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part094.json",
+      "sha256": "85816b67b7a3f803d3e03ae86d1fe10d3e40b4720a23b4247f85d5aea125d0e6"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part095.json",
+      "sha256": "6c7bc525dcc49d440768f9b13cb75e9afdc06dd5b0cadbe69c280c814f544ae6"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part096.json",
+      "sha256": "26c5dc1cb57cc84457249f43fd35dd80886ccd551a96ee28892a6cf267d9f870"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part097.json",
+      "sha256": "d581c445683c2e63352a7e29c71749324e48c2106c5b88b7ccb5d611654ae170"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part098.json",
+      "sha256": "240eebb6fbcd04e91663ec7fa0f6d7c3d713140f05369728f9361c35a792ad4b"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part099.json",
+      "sha256": "1e5e9a7bcfe85bff70e9e7d976f21d3038aa46da05d6467f0e4f0a36b5b788a3"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part100.json",
+      "sha256": "39ffe014b869cc59b68f323440ac530c324832cdb31ef9e10757b2daaf4fe20f"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part101.json",
+      "sha256": "cf926e5b144b1b7dd6fcb7da9e628ee56e9218ea91ede76ccdedf37ba4a1697d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part102.json",
+      "sha256": "aacb245387d1f4fe09c433703c20e5a1f438c1f123079e4eee6a349a3e25f9ba"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part103.json",
+      "sha256": "532072cfab069fed2d108575c495ec5706f324da2011a3f7f311061c57ddc5ee"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part104.json",
+      "sha256": "cff41d0e30e11a870fb4999d90fdcf47aa5410162b7b6dfb80a282a36f303c2f"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part105.json",
+      "sha256": "a36bc1c81412202f2df6f0ef85b8c08243cb0aae9e65a9496d4bde146253e45b"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part106.json",
+      "sha256": "1160715f8e8b021a104e4664d4956abad0872a656970b42c98d37fb774a2c906"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part107.json",
+      "sha256": "2d2cad98474ef8369c94594894898e3ebcca0d0820a1bf55169c0984eb662164"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part108.json",
+      "sha256": "77631bcece9fcc525cda113efe1bb1bf5a77f082d797c0593a91b9f6ff67d511"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part109.json",
+      "sha256": "72fbe225fc879d0ce1f171a09fcf71c0c0b9808576165abcaf607efe6bfc6aa7"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part110.json",
+      "sha256": "aa953a776928e18341630cb18e1c7bfba949f9439cd76967dab00daf4990592e"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part111.json",
+      "sha256": "33e9e3029cb18f14786193abb4e77ded18d5a8bd784dd83db307a75e8f14516b"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part112.json",
+      "sha256": "2e89d4e0562cf36e502a9236e4013528219988e46e1f7a79412270733f17bfae"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part113.json",
+      "sha256": "1967ca3e21eecccf9576fae3cb9363603481cd509ef759fd123ebc217b1f20f7"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part114.json",
+      "sha256": "024dac779b8122a3f5aa0dc511d80257a9c6ebd981c02fa23627898e7c86da67"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part115.json",
+      "sha256": "d1881260a15201cf7038038fcf9d388017a81682b880a17c8eef0e7d5d8d8e33"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part116.json",
+      "sha256": "19e9866ad2c99864d00379c86f3791ab427c59c3df1d4661722b9e5212531cf0"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part117.json",
+      "sha256": "c11c0adb3ff499a5bd9892d5737900888c0c48d20b761c8f3b55d1988ffe7461"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part118.json",
+      "sha256": "53be4e0da821c98e596e24b46807fd21cdff09280b44ba1cae9cf7d4976ac323"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part119.json",
+      "sha256": "55596eee22a6d9ad8827b76cb50cd8148d75ec19e775116b92ab159ca7890908"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part120.json",
+      "sha256": "73444a297dca5411df6c6baafe96f3c91e943690948a5e4b5c8714fc9c7b053b"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part121.json",
+      "sha256": "3ade0439b4b56c5d4f89aeb6c78e1123952470832560c5147f0320b78c6397fb"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part122.json",
+      "sha256": "229b7e4b118f85313d634988ec1e36da1c0c17cfc79fd52a73a03834ffcffe4d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part123.json",
+      "sha256": "634a4b602129d9934708f876553853e18d051d4db613df7efe40a635d36290aa"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part124.json",
+      "sha256": "ae7c389adb22d141d207ffbab8f388b47d2bb162fb5f52a217dcf9a24c03a2c1"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part125.json",
+      "sha256": "28d2d9b25c1d06d461c18c92cfcfe625ebda487eb3673138071185ee3e90f4bd"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part126.json",
+      "sha256": "8e69a8ac18c952307691081c37dfddad4115e3b4d63e563c1012a5354aaf5215"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part127.json",
+      "sha256": "1a96092832379cdd7859025ac388f7aa5a7adec4a893ab261a45a56d3219645d"
+    },
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i2_gaussian_time_20261008\\P6_32768\\part128.json",
+      "sha256": "08e47b1d4f5e161e9640ddcefe4081bbcd9914361be87fd0ac9fde0efbe5291a"
+    }
+  ],
+  "point03_closed": false,
+  "manifest_sha256": "1f31a871dc793718b93f7d07fcfe5fd17bf0be277b6f0c27ebca233c560c08f2",
+  "temporal_precision_pass": false,
+  "assessment_sha256": "662cc976a0f7771b394436ddb5734e14511d082c377585705dfce7f34e54b0f7",
+  "finished_utc": "2026-10-08T11:56:49.651213+00:00",
+  "elapsed_s": 7910.726536299975,
+  "sources_unchanged": true
+}

@@ -1,0 +1,252 @@
+{
+  "schema": "silice.point03-geometry.worker.v1",
+  "status": "grid_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "16b64deee8b53b5ed81e3aa15ed01fa533d11032e228b3b20d8b66ce13863512",
+  "array_artifacts": [
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\grid_n400.npz",
+      "sha256": "c66374c40a35ef0fcf0bad030a315a2bbc959ee6f9a423ced0fe833d220766cf"
+    }
+  ],
+  "N": 400,
+  "dx_um": 0.32,
+  "active_cell": null,
+  "cells_completed": 160000,
+  "raw_endpoint_corrections": [
+    {
+      "iy": 171,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 172,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 173,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 178,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 179,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 199,
+      "ix": 173,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 199,
+      "ix": 175,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 201,
+      "ix": 171,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 201,
+      "ix": 172,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 201,
+      "ix": 177,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 201,
+      "ix": 178,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 201,
+      "ix": 222,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 201,
+      "ix": 228,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 201,
+      "ix": 232,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 222,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 223,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 226,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    },
+    {
+      "iy": 230,
+      "ix": 201,
+      "raw_fraction": 1.0000000000000002,
+      "fraction": 1.0,
+      "correction": -2.220446049250313e-16
+    }
+  ],
+  "numeric_valid": true,
+  "resource_check_schedule": {
+    "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+    "grid_wall_time": "Before every row and every candidate-evaluated cell",
+    "retention_reserve_s": 4,
+    "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"
+  },
+  "cell_status_legend": {
+    "0": "unprocessed",
+    "1": "support-disjoint exact zero",
+    "2": "candidate evaluated"
+  },
+  "support_bounds_um": [
+    -12.0,
+    12.0,
+    -12.0,
+    12.0
+  ],
+  "support_scope": "Driver-derived conservative disk bounding box intersected with outer-annulus box; helper bounds independently matched. Inner hole does not justify a skip.",
+  "candidate_evaluated_cells": 5625,
+  "support_disjoint_cells": 154375,
+  "raw_min": 0.0,
+  "raw_max": 1.0000000000000002,
+  "fraction_min": 0.0,
+  "fraction_max": 1.0,
+  "min_cancel_ratio": 0.006161447589942367,
+  "max_boundary_closure_um": 2.662800535624399e-16,
+  "endpoint_correction_count": 18,
+  "max_absolute_endpoint_correction": 2.220446049250313e-16,
+  "raw_grid_area_um2": 323.08187522149643,
+  "grid_area_um2": 323.08187522149643,
+  "nominal_raw_fraction_grid_area_um2": 323.081875221496,
+  "nominal_fraction_grid_area_um2": 323.081875221496,
+  "diagnostics": {
+    "schema": "silice.point03-union.predicates.v1",
+    "input_disk_count": 96,
+    "unique_circle_count": 98,
+    "coincident_roles": [],
+    "float_predicates": 3176,
+    "decimal_predicates": 82,
+    "exact_zero_predicates": 11,
+    "unrepresentable_events": 0,
+    "classification_boundary_hits": 0,
+    "line_cache_hits": 47848,
+    "predicate_categories": {
+      "circle_intersection": 392,
+      "circle_containment": 88,
+      "circle_line": 2696
+    },
+    "angular_membership_queries": 16518,
+    "halfplane_cache_hits": 42832,
+    "angular_merging": "Exact Decimal equality only; no angular epsilon.",
+    "angular_representation": {
+      "decimal_digits": 128,
+      "working_digits": 144,
+      "atan": "Half-angle reduction to abs(z)<=1/8, then alternating series.",
+      "pi": "Cached Machin formula; constants and events share precision.",
+      "integration": "Convert only the preserved Decimal span and trig angles to float."
+    },
+    "cancel_ratio_definition": "abs(raw area)/sum(abs(contributions)); 1 for empty sum.",
+    "validation_status": "requires_independent_geometry_audit",
+    "cached_exposed_arc_count": 178
+  },
+  "cancellation_scope": "abs(raw area)/sum(abs(boundary contributions)); smaller means stronger cancellation",
+  "profile_diagnostics": [
+    {
+      "N": 400,
+      "profile_samples": 64,
+      "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n400_ss64.npz",
+      "input_npz_sha256": "bc5e948150d9c091bdcb9cd31596357d8cb3c9540b6f94158d056b6c6028dfd9",
+      "l1_fraction_sum": 0.1604372784052828,
+      "l1_area_um2": 0.01642877730870096,
+      "linf_fraction": 0.002449858485626788,
+      "signed_area_difference_um2": 0.0002752214959490289,
+      "original_profile_area_um2": 323.08160000000004,
+      "candidate_profile_area_um2": 323.081875221496,
+      "candidate_raw_profile_area_um2": 323.081875221496,
+      "raw_l1_area_um2": 0.01642877730870137,
+      "raw_linf_fraction": 0.002449858485626788,
+      "changed_cells": 538,
+      "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+    },
+    {
+      "N": 400,
+      "profile_samples": 32,
+      "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n400_ss32.npz",
+      "input_npz_sha256": "41b35f12b85d6ae25f79041f4d94265e65c1cfafb7490432304711b0be58d37b",
+      "l1_fraction_sum": 0.40874615002763715,
+      "l1_area_um2": 0.041855605762830046,
+      "linf_fraction": 0.002601898072289499,
+      "signed_area_difference_um2": 0.009475221495948963,
+      "original_profile_area_um2": 323.0724,
+      "candidate_profile_area_um2": 323.081875221496,
+      "candidate_raw_profile_area_um2": 323.081875221496,
+      "raw_l1_area_um2": 0.041855605762830456,
+      "raw_linf_fraction": 0.002601898072289499,
+      "changed_cells": 538,
+      "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+    }
+  ],
+  "partial_arrays_retained": true,
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 41656320,
+    "peak_wset_bytes": 56655872,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 8.210857300029602
+}

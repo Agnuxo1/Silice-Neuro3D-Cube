@@ -1,0 +1,82 @@
+{
+  "created_utc": "2026-10-08T06:13:05.450847+00:00",
+  "controls_pass": true,
+  "geometry": {
+    "curve_min_radius2": 0.9999999999999988,
+    "chord_min_radius2": 1.0
+  },
+  "quadrature_mass_norm_bound": 4.146477206003198e-14,
+  "statistics": [
+    {
+      "full_elements": 811,
+      "partial_elements": 166
+    },
+    {
+      "full_elements": 811,
+      "partial_elements": 166
+    }
+  ],
+  "polynomial_controls": [
+    {
+      "error_scaled_by_area": 1.1427941260208007e-16,
+      "field_integral": 9.46032039745753e-11,
+      "exact": 9.460320397457529e-11,
+      "intensity_integral": 9.496119063733395e-11
+    },
+    {
+      "error_scaled_by_area": 9.142353008166405e-16,
+      "field_integral": 2.370632027650164e-10,
+      "exact": 2.370632027650165e-10,
+      "intensity_integral": 2.379558294997454e-10
+    },
+    {
+      "error_scaled_by_area": 4.571176504083203e-16,
+      "field_integral": 1.9205001625303068e-10,
+      "exact": 1.9205001625303073e-10,
+      "intensity_integral": 1.9260427568968878e-10
+    },
+    {
+      "error_scaled_by_area": 0.0,
+      "field_integral": 3.205266055671308e-10,
+      "exact": 3.205266055671308e-10,
+      "intensity_integral": 3.2148213252035376e-10
+    },
+    {
+      "error_scaled_by_area": 0.0,
+      "field_integral": 1.1418233131260765e-10,
+      "exact": 1.1418233131260765e-10,
+      "intensity_integral": 1.1443005087109062e-10
+    },
+    {
+      "error_scaled_by_area": 2.2855882520416014e-16,
+      "field_integral": 2.2652008438009904e-10,
+      "exact": 2.26520084380099e-10,
+      "intensity_integral": 2.2682057499157866e-10
+    }
+  ],
+  "input_quadrature_field_difference": 4.868840486034317e-15,
+  "input_projection_norm_before_scaling": [
+    0.9999999996851042,
+    0.9999999996851121
+  ],
+  "initial_core_field": 0.864664707612555,
+  "initial_core_intensity": 0.8634748443794622,
+  "Gaussian_continuum_core": 0.8646647167633873,
+  "initial_projection_core_error": 9.150832314119839e-09,
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "elapsed_s": 5.4779186000232585,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fem_control_sources_20261008\\point03_p5a_mesh_coarse_20261008_detector.txt": "4c593bd422c9b9a18bddc6dd86dbc40393658f03dda90040e2a2cd681def9634",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_detector.py": "cc7303250a60b164e265a2062b0f443a5980d75dcbe2ff30e66003fb6f58c49c",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P4F-CONTRACT.md": "34007b63a3772f871283772154acf2e7db5e04446c3f7ef01f2e182f443b5b58"
+  },
+  "artifacts": {
+    "core_q16.npz": "73ab0fb06b4f7e1ff7e03d3a39dc34d61069ee7c7bae9b7ac81194c44559333c",
+    "core_q32.npz": "890e6ede86903f92023a75490ab007a7050e3acfed8fc384728321de9c8433a8",
+    "gaussian_q12.npz": "cb335e9998ffc8564aa6f917016044d0fd72a29f00fd74d633743d8b850a0ae4",
+    "gaussian_q16.npz": "bd6277c94db5d7e142f4999a32c3c30d608b559884adf70683353ff42dc60b86",
+    "intensity_q16.npy": "ee4e302e4beb32def65783673fb52cd11839a92345e78758b65e5eb508364a6f",
+    "intensity_q32.npy": "44b1c23853eb2c8dda75db5007af2b6273a659f5fb97004eb6056a9945fc5eb6"
+  }
+}

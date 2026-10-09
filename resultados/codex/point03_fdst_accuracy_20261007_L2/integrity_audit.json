@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-10-07T14:26:51.492852+00:00",
+  "integrity_pass": true,
+  "acceptance_recomputed": true,
+  "L2_accuracy_pass": true,
+  "point03_closed": false,
+  "L1_still_negative": true,
+  "checkpoints_checked": 32,
+  "source_files_checked": 18,
+  "max_raw_power_residual": 5.329070518200751e-15,
+  "rows": [
+    {
+      "N": 400,
+      "field_relative_error": 6.888016787309923e-07,
+      "reference_field_difference": 0.0,
+      "bound_vs_computed_reference": 1.0571509971797248e-06,
+      "reference_consistency_bound": 0.0,
+      "quadrature_change": 0.0,
+      "combined_reference_relative_indicator": 1.0571509971797248e-06,
+      "power_errors": {
+        "field": 6.350249864839341e-08,
+        "intensity": 6.35218938005444e-08
+      },
+      "gates": {
+        "field": true,
+        "power": true,
+        "reference_field": true,
+        "quadrature": true,
+        "observable_bound": true
+      },
+      "pass_": true
+    },
+    {
+      "N": 626,
+      "field_relative_error": 5.14488635874961e-06,
+      "reference_field_difference": 5.872692576620547e-10,
+      "bound_vs_computed_reference": 7.892951126111652e-06,
+      "reference_consistency_bound": 9.009504564607103e-10,
+      "quadrature_change": 0.0,
+      "combined_reference_relative_indicator": 7.893852076568114e-06,
+      "power_errors": {
+        "field": 4.211721106317512e-07,
+        "intensity": 4.210325096343226e-07
+      },
+      "gates": {
+        "field": true,
+        "power": true,
+        "reference_field": true,
+        "quadrature": true,
+        "observable_bound": true
+      },
+      "pass_": true
+    }
+  ],
+  "execution_sha256": "bff4fc591842d4e9822ea0b6cf0b40fd275dda30971b8b05e9f2199cf864c12f",
+  "assessment_sha256": "b0d31c4f21aba60e5f5c95a7359bdc2c4a870c4562d96b66e1578529acf2d5f2",
+  "audit_source_sha256": "9dca3fcd90b208bbcca1aa25f2d70a32b3803ec0893a88db02500a36a73feb18",
+  "scope": "Practical accuracy versus computed FD references only; no spatial or observed-order acceptance."
+}

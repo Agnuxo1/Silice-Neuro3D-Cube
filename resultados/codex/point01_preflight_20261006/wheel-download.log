@@ -1,0 +1,29 @@
+Collecting numpy==2.2.6
+  Downloading numpy-2.2.6-cp313-cp313-win_amd64.whl.metadata (60 kB)
+Collecting scipy==1.15.1
+  Downloading scipy-1.15.1-cp313-cp313-win_amd64.whl.metadata (60 kB)
+Collecting psutil==6.1.1
+  Downloading psutil-6.1.1-cp37-abi3-win_amd64.whl.metadata (23 kB)
+Collecting setuptools==82.0.1
+  Downloading setuptools-82.0.1-py3-none-any.whl.metadata (6.5 kB)
+Collecting pip==25.3
+  Downloading pip-25.3-py3-none-any.whl.metadata (4.7 kB)
+Collecting wheel==0.45.1
+  Downloading wheel-0.45.1-py3-none-any.whl.metadata (2.3 kB)
+Downloading numpy-2.2.6-cp313-cp313-win_amd64.whl (12.6 MB)
+   ---------------------------------------- 12.6/12.6 MB 41.5 MB/s  0:00:00
+Downloading scipy-1.15.1-cp313-cp313-win_amd64.whl (43.6 MB)
+   ---------------------------------------- 43.6/43.6 MB 38.2 MB/s  0:00:01
+Downloading psutil-6.1.1-cp37-abi3-win_amd64.whl (254 kB)
+Downloading setuptools-82.0.1-py3-none-any.whl (1.0 MB)
+   ---------------------------------------- 1.0/1.0 MB 67.6 MB/s  0:00:00
+Downloading pip-25.3-py3-none-any.whl (1.8 MB)
+   ---------------------------------------- 1.8/1.8 MB 65.9 MB/s  0:00:00
+Downloading wheel-0.45.1-py3-none-any.whl (72 kB)
+Saved d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\numpy-2.2.6-cp313-cp313-win_amd64.whl
+Saved d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\scipy-1.15.1-cp313-cp313-win_amd64.whl
+Saved d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\psutil-6.1.1-cp37-abi3-win_amd64.whl
+Saved d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\setuptools-82.0.1-py3-none-any.whl
+Saved d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\pip-25.3-py3-none-any.whl
+Saved d:\projects\silice-neuro3d-cube-work-20261006\.audit_tmp\wheels\wheel-0.45.1-py3-none-any.whl
+Successfully downloaded numpy scipy psutil setuptools pip wheel

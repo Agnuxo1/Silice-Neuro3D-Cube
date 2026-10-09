@@ -1,0 +1,1666 @@
+{
+  "created_utc": "2026-10-09T08:21:07.603751+00:00",
+  "scope": "Independent hash/shape audit and unmodified pixel metrics of all 84 frames of failed run02; no adoption of complete trial",
+  "frame_bytes_shape_source_pass": true,
+  "metric_agreement_at_original_tolerance_pass": false,
+  "metric_mismatches": [
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 0,
+      "metric": "relative_l2",
+      "reported": 1.273575358341552,
+      "local": 1.2735753583415375
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 2,
+      "metric": "relative_l2",
+      "reported": 1.27361406899918,
+      "local": 1.2736140689991666
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 4,
+      "metric": "relative_l2",
+      "reported": 1.2736513357333634,
+      "local": 1.2736513357333492
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 5,
+      "metric": "relative_l2",
+      "reported": 1.2736694773670474,
+      "local": 1.2736694773670332
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 6,
+      "metric": "relative_l2",
+      "reported": 1.2736872641158916,
+      "local": 1.2736872641158767
+    }
+  ],
+  "accuracy_pass": false,
+  "raw_frames": 84,
+  "failed_accuracy_rows": 63,
+  "full_integrity_pass": false,
+  "adopted": false,
+  "guard_status": "failure_retained",
+  "guard_reason": "independent own-child hard cutoff",
+  "child_finished": true,
+  "frozen_full_auditor_exit_code": 1,
+  "initial_frame_audit_attempt": "Aborted at original metric agreement assertion; retained mismatch diagnostic, no tolerance changed",
+  "zero_timing_rows": [
+    [
+      "single",
+      64,
+      0
+    ],
+    [
+      "single",
+      64,
+      1
+    ],
+    [
+      "single",
+      64,
+      2
+    ],
+    [
+      "single",
+      64,
+      3
+    ],
+    [
+      "single",
+      64,
+      4
+    ],
+    [
+      "single",
+      64,
+      5
+    ],
+    [
+      "single",
+      64,
+      6
+    ],
+    [
+      "constructive",
+      64,
+      0
+    ],
+    [
+      "constructive",
+      64,
+      1
+    ],
+    [
+      "constructive",
+      64,
+      2
+    ],
+    [
+      "constructive",
+      64,
+      3
+    ],
+    [
+      "constructive",
+      64,
+      4
+    ],
+    [
+      "constructive",
+      64,
+      5
+    ],
+    [
+      "constructive",
+      64,
+      6
+    ],
+    [
+      "destructive",
+      64,
+      0
+    ],
+    [
+      "destructive",
+      64,
+      1
+    ],
+    [
+      "destructive",
+      64,
+      2
+    ],
+    [
+      "destructive",
+      64,
+      3
+    ],
+    [
+      "destructive",
+      64,
+      4
+    ],
+    [
+      "destructive",
+      64,
+      5
+    ],
+    [
+      "destructive",
+      64,
+      6
+    ],
+    [
+      "quarter",
+      64,
+      0
+    ],
+    [
+      "quarter",
+      64,
+      1
+    ],
+    [
+      "quarter",
+      64,
+      2
+    ],
+    [
+      "quarter",
+      64,
+      3
+    ],
+    [
+      "quarter",
+      64,
+      4
+    ],
+    [
+      "quarter",
+      64,
+      5
+    ],
+    [
+      "quarter",
+      64,
+      6
+    ],
+    [
+      "single",
+      128,
+      0
+    ],
+    [
+      "single",
+      128,
+      1
+    ],
+    [
+      "single",
+      128,
+      2
+    ],
+    [
+      "single",
+      128,
+      3
+    ],
+    [
+      "single",
+      128,
+      4
+    ],
+    [
+      "single",
+      128,
+      5
+    ],
+    [
+      "single",
+      128,
+      6
+    ],
+    [
+      "constructive",
+      128,
+      0
+    ],
+    [
+      "constructive",
+      128,
+      1
+    ],
+    [
+      "constructive",
+      128,
+      2
+    ],
+    [
+      "constructive",
+      128,
+      3
+    ],
+    [
+      "constructive",
+      128,
+      4
+    ],
+    [
+      "constructive",
+      128,
+      5
+    ],
+    [
+      "constructive",
+      128,
+      6
+    ],
+    [
+      "destructive",
+      128,
+      0
+    ],
+    [
+      "destructive",
+      128,
+      1
+    ],
+    [
+      "destructive",
+      128,
+      2
+    ],
+    [
+      "destructive",
+      128,
+      3
+    ],
+    [
+      "destructive",
+      128,
+      4
+    ],
+    [
+      "destructive",
+      128,
+      5
+    ],
+    [
+      "destructive",
+      128,
+      6
+    ],
+    [
+      "quarter",
+      128,
+      0
+    ],
+    [
+      "quarter",
+      128,
+      1
+    ],
+    [
+      "quarter",
+      128,
+      2
+    ],
+    [
+      "quarter",
+      128,
+      3
+    ],
+    [
+      "quarter",
+      128,
+      4
+    ],
+    [
+      "quarter",
+      128,
+      5
+    ],
+    [
+      "quarter",
+      128,
+      6
+    ],
+    [
+      "single",
+      256,
+      0
+    ],
+    [
+      "single",
+      256,
+      1
+    ],
+    [
+      "single",
+      256,
+      2
+    ],
+    [
+      "single",
+      256,
+      3
+    ],
+    [
+      "single",
+      256,
+      4
+    ],
+    [
+      "single",
+      256,
+      5
+    ],
+    [
+      "single",
+      256,
+      6
+    ],
+    [
+      "constructive",
+      256,
+      0
+    ],
+    [
+      "constructive",
+      256,
+      1
+    ],
+    [
+      "constructive",
+      256,
+      2
+    ],
+    [
+      "constructive",
+      256,
+      3
+    ],
+    [
+      "constructive",
+      256,
+      4
+    ],
+    [
+      "constructive",
+      256,
+      5
+    ],
+    [
+      "constructive",
+      256,
+      6
+    ],
+    [
+      "destructive",
+      256,
+      0
+    ],
+    [
+      "destructive",
+      256,
+      1
+    ],
+    [
+      "destructive",
+      256,
+      2
+    ],
+    [
+      "destructive",
+      256,
+      3
+    ],
+    [
+      "destructive",
+      256,
+      4
+    ],
+    [
+      "destructive",
+      256,
+      5
+    ],
+    [
+      "destructive",
+      256,
+      6
+    ],
+    [
+      "quarter",
+      256,
+      0
+    ],
+    [
+      "quarter",
+      256,
+      1
+    ],
+    [
+      "quarter",
+      256,
+      2
+    ],
+    [
+      "quarter",
+      256,
+      3
+    ],
+    [
+      "quarter",
+      256,
+      4
+    ],
+    [
+      "quarter",
+      256,
+      5
+    ],
+    [
+      "quarter",
+      256,
+      6
+    ]
+  ],
+  "timing_resolution_valid": false,
+  "resource_samples_pass": true,
+  "rows": [
+    {
+      "case": "single",
+      "resolution": 64,
+      "repeat": 0,
+      "max_complex_error": 1.1492298916672241,
+      "relative_l2": 1.33185621758593,
+      "gpu_power": 0.2096126482405113,
+      "cpu_power": 0.251377900069172,
+      "outside_max": 1.0696925099444416,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 64,
+      "repeat": 1,
+      "max_complex_error": 1.161119279704221,
+      "relative_l2": 1.331849522704516,
+      "gpu_power": 0.21391222247369002,
+      "cpu_power": 0.2565262965294009,
+      "outside_max": 1.0805318656085852,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 64,
+      "repeat": 2,
+      "max_complex_error": 1.173008667998222,
+      "relative_l2": 1.3318429455036047,
+      "gpu_power": 0.21825550042956726,
+      "cpu_power": 0.26172695851280064,
+      "outside_max": 1.0913712699734965,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 64,
+      "repeat": 3,
+      "max_complex_error": 1.1848980565414906,
+      "relative_l2": 1.3318364834554803,
+      "gpu_power": 0.2226424820277808,
+      "cpu_power": 0.2669798860193712,
+      "outside_max": 1.102210648409417,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 64,
+      "repeat": 4,
+      "max_complex_error": 1.1967874453265985,
+      "relative_l2": 1.331830132171245,
+      "gpu_power": 0.2270731664053777,
+      "cpu_power": 0.27228507904911275,
+      "outside_max": 1.113050028243395,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 64,
+      "repeat": 5,
+      "max_complex_error": 1.2086768343464085,
+      "relative_l2": 1.331823913288806,
+      "gpu_power": 0.2315475724293242,
+      "cpu_power": 0.27764253760202506,
+      "outside_max": 1.1238895118929508,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 64,
+      "repeat": 6,
+      "max_complex_error": 1.2205662788421592,
+      "relative_l2": 1.3318177786165346,
+      "gpu_power": 0.23606566479132834,
+      "cpu_power": 0.2830522616781083,
+      "outside_max": 1.1347289220570613,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 64,
+      "repeat": 0,
+      "max_complex_error": 2.2984597833344482,
+      "relative_l2": 1.33185621758593,
+      "gpu_power": 0.8384505929620452,
+      "cpu_power": 1.005511600276688,
+      "outside_max": 2.1393850198888833,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 64,
+      "repeat": 1,
+      "max_complex_error": 2.322238559408442,
+      "relative_l2": 1.331849522704516,
+      "gpu_power": 0.8556488898947601,
+      "cpu_power": 1.0261051861176036,
+      "outside_max": 2.1610637312171703,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 64,
+      "repeat": 2,
+      "max_complex_error": 2.346017335996444,
+      "relative_l2": 1.3318429455036047,
+      "gpu_power": 0.873022001718269,
+      "cpu_power": 1.0469078340512026,
+      "outside_max": 2.182742539946993,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 64,
+      "repeat": 3,
+      "max_complex_error": 2.369796113082981,
+      "relative_l2": 1.3318364834554803,
+      "gpu_power": 0.8905699281111232,
+      "cpu_power": 1.067919544077485,
+      "outside_max": 2.204421296818834,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 64,
+      "repeat": 4,
+      "max_complex_error": 2.393574890653197,
+      "relative_l2": 1.331830132171245,
+      "gpu_power": 0.9082926656215108,
+      "cpu_power": 1.089140316196451,
+      "outside_max": 2.22610005648679,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 64,
+      "repeat": 5,
+      "max_complex_error": 2.417353668692817,
+      "relative_l2": 1.331823913288806,
+      "gpu_power": 0.9261902897172968,
+      "cpu_power": 1.1105701504081003,
+      "outside_max": 2.2477790237859017,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 64,
+      "repeat": 6,
+      "max_complex_error": 2.4411325576843184,
+      "relative_l2": 1.3318177786165346,
+      "gpu_power": 0.9442626591653134,
+      "cpu_power": 1.1322090467124333,
+      "outside_max": 2.2694578441141227,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "destructive",
+      "resolution": 64,
+      "repeat": 0,
+      "max_complex_error": 1.2094444830548446e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 3.7700646477373556e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 64,
+      "repeat": 1,
+      "max_complex_error": 1.2215780736957804e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 3.847278227299855e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 64,
+      "repeat": 2,
+      "max_complex_error": 1.2337116762410094e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 3.92527566415907e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 64,
+      "repeat": 3,
+      "max_complex_error": 1.2458452903427154e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.004056958314998e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 64,
+      "repeat": 4,
+      "max_complex_error": 1.2579789156665003e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.0836221097676414e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 64,
+      "repeat": 5,
+      "max_complex_error": 1.2701125518907444e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.163971118516998e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 64,
+      "repeat": 6,
+      "max_complex_error": 1.2822461987060006e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.2451039845630694e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "quarter",
+      "resolution": 64,
+      "repeat": 0,
+      "max_complex_error": 1.7483085194819301,
+      "relative_l2": 1.280141956475689,
+      "gpu_power": 0.419225296097169,
+      "cpu_power": 0.502755800138344,
+      "outside_max": 1.1123834557891308,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 64,
+      "repeat": 1,
+      "max_complex_error": 1.766319386895537,
+      "relative_l2": 1.2801620833594396,
+      "gpu_power": 0.4278244452810967,
+      "cpu_power": 0.5130525930588018,
+      "outside_max": 1.1237664130575955,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 64,
+      "repeat": 2,
+      "max_complex_error": 1.7843302946345287,
+      "relative_l2": 1.2801818221625048,
+      "gpu_power": 0.43651100127955667,
+      "cpu_power": 0.5234539170256014,
+      "outside_max": 1.1351495056441285,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 64,
+      "repeat": 3,
+      "max_complex_error": 1.8023412414899835,
+      "relative_l2": 1.2802011843887693,
+      "gpu_power": 0.44528496404110207,
+      "cpu_power": 0.5339597720387426,
+      "outside_max": 1.146532587868765,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 64,
+      "repeat": 4,
+      "max_complex_error": 1.820352226300821,
+      "relative_l2": 1.2802201805519584,
+      "gpu_power": 0.4541463326190322,
+      "cpu_power": 0.5445701580982255,
+      "outside_max": 1.1579156230250987,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 64,
+      "repeat": 5,
+      "max_complex_error": 1.838363247951462,
+      "relative_l2": 1.2802388444931785,
+      "gpu_power": 0.46309514551090614,
+      "cpu_power": 0.5552850752040501,
+      "outside_max": 1.1692987559514265,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 64,
+      "repeat": 6,
+      "max_complex_error": 1.8563743053696182,
+      "relative_l2": 1.2802571414331587,
+      "gpu_power": 0.4721313298865899,
+      "cpu_power": 0.5661045233562166,
+      "outside_max": 1.1806818773203056,
+      "dark_power_ratio": null,
+      "included_pixels": 4096,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 128,
+      "repeat": 0,
+      "max_complex_error": 1.1794357285364216,
+      "relative_l2": 1.3296996369862484,
+      "gpu_power": 0.22065263312936537,
+      "cpu_power": 0.26225483772201874,
+      "outside_max": 1.087670710738721,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 128,
+      "repeat": 1,
+      "max_complex_error": 1.19159861186461,
+      "relative_l2": 1.329690377518618,
+      "gpu_power": 0.22518263240121322,
+      "cpu_power": 0.267630592758069,
+      "outside_max": 1.0986981632761827,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 128,
+      "repeat": 2,
+      "max_complex_error": 1.203761337630603,
+      "relative_l2": 1.3296812865672338,
+      "gpu_power": 0.2297587149779992,
+      "cpu_power": 0.2730609672739898,
+      "outside_max": 1.1097255073224455,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 128,
+      "repeat": 3,
+      "max_complex_error": 1.2159242311334486,
+      "relative_l2": 1.3296723677868776,
+      "gpu_power": 0.23438088673959312,
+      "cpu_power": 0.2785459612697811,
+      "outside_max": 1.120752947347542,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 128,
+      "repeat": 4,
+      "max_complex_error": 1.2280870210071033,
+      "relative_l2": 1.3296636067364414,
+      "gpu_power": 0.23904914117573053,
+      "cpu_power": 0.2840855747454429,
+      "outside_max": 1.131780352681615,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 128,
+      "repeat": 5,
+      "max_complex_error": 1.2402498698427318,
+      "relative_l2": 1.329655030139537,
+      "gpu_power": 0.2437635029146547,
+      "cpu_power": 0.2896798077009752,
+      "outside_max": 1.1428079091006569,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 128,
+      "repeat": 6,
+      "max_complex_error": 1.2524127232581805,
+      "relative_l2": 1.3296465835870221,
+      "gpu_power": 0.2485239304338416,
+      "cpu_power": 0.29532866013637793,
+      "outside_max": 1.1538353836276003,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 128,
+      "repeat": 0,
+      "max_complex_error": 2.3588714570728433,
+      "relative_l2": 1.3296996369862484,
+      "gpu_power": 0.8826105325174615,
+      "cpu_power": 1.049019350888075,
+      "outside_max": 2.175341421477442,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 128,
+      "repeat": 1,
+      "max_complex_error": 2.38319722372922,
+      "relative_l2": 1.329690377518618,
+      "gpu_power": 0.9007305296048529,
+      "cpu_power": 1.070522371032276,
+      "outside_max": 2.1973963265523655,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 128,
+      "repeat": 2,
+      "max_complex_error": 2.407522675261206,
+      "relative_l2": 1.3296812865672338,
+      "gpu_power": 0.9190348599119968,
+      "cpu_power": 1.0922438690959593,
+      "outside_max": 2.219451014644891,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 128,
+      "repeat": 3,
+      "max_complex_error": 2.431848462266897,
+      "relative_l2": 1.3296723677868776,
+      "gpu_power": 0.9375235469583725,
+      "cpu_power": 1.1141838450791244,
+      "outside_max": 2.241505894695084,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 128,
+      "repeat": 4,
+      "max_complex_error": 2.4561740420142066,
+      "relative_l2": 1.3296636067364414,
+      "gpu_power": 0.9561965647029221,
+      "cpu_power": 1.1363422989817715,
+      "outside_max": 2.26356070536323,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 128,
+      "repeat": 5,
+      "max_complex_error": 2.4804997396854636,
+      "relative_l2": 1.329655030139537,
+      "gpu_power": 0.9750540116586188,
+      "cpu_power": 1.1587192308039007,
+      "outside_max": 2.2856158182013138,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 128,
+      "repeat": 6,
+      "max_complex_error": 2.504825446516361,
+      "relative_l2": 1.3296465835870221,
+      "gpu_power": 0.9940957217353664,
+      "cpu_power": 1.1813146405455117,
+      "outside_max": 2.3076707672552006,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "destructive",
+      "resolution": 128,
+      "repeat": 0,
+      "max_complex_error": 1.2388809630587248e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 3.933192584239955e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 128,
+      "repeat": 1,
+      "max_complex_error": 1.2513010056588427e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.013815996285057e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 128,
+      "repeat": 2,
+      "max_complex_error": 1.2637210588324218e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.0952585693227554e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 128,
+      "repeat": 3,
+      "max_complex_error": 1.2761411222707436e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.177520303353051e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 128,
+      "repeat": 4,
+      "max_complex_error": 1.2885611956769926e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.260601198375943e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 128,
+      "repeat": 5,
+      "max_complex_error": 1.3009812787656847e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.3445012543914324e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 128,
+      "repeat": 6,
+      "max_complex_error": 1.3134013712621382e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.429220471399518e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "quarter",
+      "resolution": 128,
+      "repeat": 0,
+      "max_complex_error": 1.8249803240965725,
+      "relative_l2": 1.271549256088177,
+      "gpu_power": 0.4413052658461352,
+      "cpu_power": 0.5245096754440375,
+      "outside_max": 1.1553537233945104,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 128,
+      "repeat": 1,
+      "max_complex_error": 1.8436660267699199,
+      "relative_l2": 1.2715685344140253,
+      "gpu_power": 0.45036526478475747,
+      "cpu_power": 0.535261185516138,
+      "outside_max": 1.1671629446906144,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 128,
+      "repeat": 2,
+      "max_complex_error": 1.8623515335452456,
+      "relative_l2": 1.2715874448959121,
+      "gpu_power": 0.4595174299206002,
+      "cpu_power": 0.5461219345479796,
+      "outside_max": 1.178972131006974,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 128,
+      "repeat": 3,
+      "max_complex_error": 1.8810371947458624,
+      "relative_l2": 1.271606005635396,
+      "gpu_power": 0.46876177325245305,
+      "cpu_power": 0.5570919225395622,
+      "outside_max": 1.1907813428894929,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 128,
+      "repeat": 4,
+      "max_complex_error": 1.8997228921159997,
+      "relative_l2": 1.2716242173335173,
+      "gpu_power": 0.4780982822969333,
+      "cpu_power": 0.5681711494908858,
+      "outside_max": 1.202590483392467,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 128,
+      "repeat": 5,
+      "max_complex_error": 1.9184086245987604,
+      "relative_l2": 1.2716421180565973,
+      "gpu_power": 0.4875270060374917,
+      "cpu_power": 0.5793596154019504,
+      "outside_max": 1.21439981741897,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 128,
+      "repeat": 6,
+      "max_complex_error": 1.9370942740068935,
+      "relative_l2": 1.2716596697952127,
+      "gpu_power": 0.49704786046381766,
+      "cpu_power": 0.5906573202727559,
+      "outside_max": 1.2262090793286036,
+      "dark_power_ratio": null,
+      "included_pixels": 16384,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 256,
+      "repeat": 0,
+      "max_complex_error": 1.2084201636429492,
+      "relative_l2": 1.330905881556513,
+      "gpu_power": 0.22044320809193407,
+      "cpu_power": 0.2619358229319657,
+      "outside_max": 1.0928943187780358,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 256,
+      "repeat": 1,
+      "max_complex_error": 1.2208891705142222,
+      "relative_l2": 1.3308969400104393,
+      "gpu_power": 0.22496902307148606,
+      "cpu_power": 0.26730513701317593,
+      "outside_max": 1.103973757564003,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 256,
+      "repeat": 2,
+      "max_complex_error": 1.2333581291078928,
+      "relative_l2": 1.3308881609702163,
+      "gpu_power": 0.22954088023327174,
+      "cpu_power": 0.27272900608327755,
+      "outside_max": 1.1150532089693233,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 256,
+      "repeat": 3,
+      "max_complex_error": 1.2458270932746023,
+      "relative_l2": 1.3308795441637595,
+      "gpu_power": 0.23415878220847694,
+      "cpu_power": 0.27820743014227056,
+      "outside_max": 1.1261325888295641,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 256,
+      "repeat": 4,
+      "max_complex_error": 1.2582961168786022,
+      "relative_l2": 1.3308710817093345,
+      "gpu_power": 0.23882272701871027,
+      "cpu_power": 0.28374040919015503,
+      "outside_max": 1.1372121108630908,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 256,
+      "repeat": 5,
+      "max_complex_error": 1.27076514573401,
+      "relative_l2": 1.33086279849714,
+      "gpu_power": 0.24353273820976493,
+      "cpu_power": 0.2893279432269308,
+      "outside_max": 1.1482915514585008,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "single",
+      "resolution": 256,
+      "repeat": 6,
+      "max_complex_error": 1.283234125654627,
+      "relative_l2": 1.3308546384536497,
+      "gpu_power": 0.24828877267284402,
+      "cpu_power": 0.294970032252598,
+      "outside_max": 1.1593710032603404,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 256,
+      "repeat": 0,
+      "max_complex_error": 2.4168403272858985,
+      "relative_l2": 1.330905881556513,
+      "gpu_power": 0.8817728323677363,
+      "cpu_power": 1.0477432917278628,
+      "outside_max": 2.1857886375560716,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 256,
+      "repeat": 1,
+      "max_complex_error": 2.4417783410284444,
+      "relative_l2": 1.3308969400104393,
+      "gpu_power": 0.8998760922859442,
+      "cpu_power": 1.0692205480527037,
+      "outside_max": 2.207947515128006,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 256,
+      "repeat": 2,
+      "max_complex_error": 2.4667162582157856,
+      "relative_l2": 1.3308881609702163,
+      "gpu_power": 0.918163520933087,
+      "cpu_power": 1.0909160243331102,
+      "outside_max": 2.2301064179386465,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 256,
+      "repeat": 3,
+      "max_complex_error": 2.4916541865492046,
+      "relative_l2": 1.3308795441637595,
+      "gpu_power": 0.9366351288339078,
+      "cpu_power": 1.1128297205690822,
+      "outside_max": 2.2522651776591283,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 256,
+      "repeat": 4,
+      "max_complex_error": 2.5165922337572044,
+      "relative_l2": 1.3308710817093345,
+      "gpu_power": 0.9552909080748411,
+      "cpu_power": 1.1349616367606201,
+      "outside_max": 2.2744242217261816,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 256,
+      "repeat": 5,
+      "max_complex_error": 2.54153029146802,
+      "relative_l2": 1.33086279849714,
+      "gpu_power": 0.9741309528390597,
+      "cpu_power": 1.1573117729077231,
+      "outside_max": 2.2965831029170016,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "constructive",
+      "resolution": 256,
+      "repeat": 6,
+      "max_complex_error": 2.566468251309254,
+      "relative_l2": 1.3308546384536497,
+      "gpu_power": 0.9931550906913761,
+      "cpu_power": 1.179880129010392,
+      "outside_max": 2.3187420065206807,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "destructive",
+      "resolution": 256,
+      "repeat": 0,
+      "max_complex_error": 1.2438672635592813e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 3.928408128717997e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 256,
+      "repeat": 1,
+      "max_complex_error": 1.2563357432408562e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.008934941912789e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 256,
+      "repeat": 2,
+      "max_complex_error": 1.268804233290659e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.090279948890408e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 256,
+      "repeat": 3,
+      "max_complex_error": 1.281272733405999e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.172443149650857e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 256,
+      "repeat": 4,
+      "max_complex_error": 1.2937412432958561e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.255424544194134e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 256,
+      "repeat": 5,
+      "max_complex_error": 1.3062097626803194e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.33922413252024e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "destructive",
+      "resolution": 256,
+      "repeat": 6,
+      "max_complex_error": 1.3186782912900663e-16,
+      "relative_l2": null,
+      "gpu_power": 0.0,
+      "cpu_power": 4.423841914629174e-33,
+      "outside_max": 0.0,
+      "dark_power_ratio": 0.0,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": true
+    },
+    {
+      "case": "quarter",
+      "resolution": 256,
+      "repeat": 0,
+      "max_complex_error": 1.8548584188300608,
+      "relative_l2": 1.2735753583415375,
+      "gpu_power": 0.44088641621377356,
+      "cpu_power": 0.5238716458639314,
+      "outside_max": 1.1641048476051696,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 256,
+      "repeat": 1,
+      "max_complex_error": 1.8738302011771042,
+      "relative_l2": 1.2735949002110953,
+      "gpu_power": 0.44993804599308695,
+      "cpu_power": 0.5346102740263519,
+      "outside_max": 1.1760003237368941,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 256,
+      "repeat": 2,
+      "max_complex_error": 1.8928020228745959,
+      "relative_l2": 1.2736140689991666,
+      "gpu_power": 0.4590817602651194,
+      "cpu_power": 0.5454580121665551,
+      "outside_max": 1.1878958980519922,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 256,
+      "repeat": 3,
+      "max_complex_error": 1.9117738827510313,
+      "relative_l2": 1.2736328781450068,
+      "gpu_power": 0.4683175642668844,
+      "cpu_power": 0.5564148602845411,
+      "outside_max": 1.1997913770140232,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 256,
+      "repeat": 4,
+      "max_complex_error": 1.9307456625478914,
+      "relative_l2": 1.2736513357333492,
+      "gpu_power": 0.47764545417228194,
+      "cpu_power": 0.5674808183803101,
+      "outside_max": 1.2116869899467657,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 256,
+      "repeat": 5,
+      "max_complex_error": 1.9497177125827019,
+      "relative_l2": 1.2736694773670332,
+      "gpu_power": 0.48706547644266635,
+      "cpu_power": 0.5786558864538616,
+      "outside_max": 1.2235825067678914,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    },
+    {
+      "case": "quarter",
+      "resolution": 256,
+      "repeat": 6,
+      "max_complex_error": 1.968689446138342,
+      "relative_l2": 1.2736872641158767,
+      "gpu_power": 0.49657754546228705,
+      "cpu_power": 0.5899400645051959,
+      "outside_max": 1.2354780480788365,
+      "dark_power_ratio": null,
+      "included_pixels": 65536,
+      "excluded_pixels": 0,
+      "accuracy_pass": false
+    }
+  ],
+  "report_sha256": "ee5651a3b6100f5bbee8d64d12ea4f35feb2c6248692fab3449a0f50f8d2e71a",
+  "guard_sha256": "8606b08a722c62ec0966c7e282c096fe532a69fb8537f86f261459082d36fd46",
+  "physical_validation": false,
+  "network_validated": false,
+  "point03_closed": false,
+  "general_speedup_claim": false
+}

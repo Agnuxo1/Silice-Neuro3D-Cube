@@ -1,0 +1,14 @@
+{
+  "pid": 42068,
+  "command": [
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_geometry.py",
+    "--study",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\manifest.json",
+    "--out-dir",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z"
+  ],
+  "started_utc": "2026-10-06T23:46:50.616818+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "pass_": true,
+  "checks": {
+    "manufactured_second_order": true,
+    "constant_rejected": true,
+    "oscillation_rejected": true,
+    "negative_order_rejected": true,
+    "wrong_prediction_rejected": true
+  },
+  "manufactured": {
+    "pass_": true,
+    "differences": [
+      0.0006866455078125,
+      0.0004394531249999889,
+      0.00028125000000001066
+    ],
+    "orders": [
+      2.0000000000001132,
+      1.9999999999997171
+    ],
+    "order_disagreement": 1.9806378759311672e-13,
+    "predicted_500": 0.3335,
+    "residual_500": 0.0,
+    "limit_500": 2.8125000000001066e-05,
+    "u_space": 0.0006250000000001333,
+    "p_indicator": 1.9999999999997171
+  }
+}

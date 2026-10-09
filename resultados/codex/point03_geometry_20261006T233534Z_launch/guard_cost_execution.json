@@ -1,0 +1,15 @@
+{
+  "command": [
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T233534Z_launch\\measure_resource_guard.py",
+    "--out",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T233534Z",
+    "--child"
+  ],
+  "timeout_s": 40,
+  "source_sha256": "246b00699e42190977e8888931e8bcfc191f66e656ae8025efb8acbcbfac8cfa",
+  "returncode": 0,
+  "elapsed_s": 2.125525099982042
+}

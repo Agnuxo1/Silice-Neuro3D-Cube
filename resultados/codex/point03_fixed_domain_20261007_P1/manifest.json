@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-07T21:43:14.920028+00:00",
+  "input_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fixed_domain_20261007_P1\\n399_fixed_input.npz",
+  "input_sha256": "4cfce8d97c12e8a023ec1ff1bba1e55e40a93b09dec66fb70366412d3f07b684",
+  "original_input_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_analytic_20261007T004526617696Z\\inputs\\n400_geom.npz",
+  "original_input_sha256": "fb88d8f864745a439ad19191bc6dab1dc90b8139e5fe6e19040edfc13f548108",
+  "baseline_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n400_segments8\\segment_08.npz",
+  "baseline_sha256": "c960e8436af2c5ee84544584c4d1e41d4b32d6979fbf470168f04fbf3c36bc5b",
+  "P_in": 1.000000000000001,
+  "baseline_P_in": 1.0000000000000009,
+  "dx_m": 3.2e-07,
+  "N": 399,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_p1.py": "c4da25ce3a1e24d0dd9a085e32d84974bf8a5cec3c91ae1aab2725721b87431c",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P1-CONTRACT.md": "5a9dc1d1fa057842afd47e4c16e26802705063dac194142a874c384f9d81f655",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_p1.py": "cef4ffebf7d2a31857a2f44919334ed5a369281633ad8f9d65de866d87efca08",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_exponential.py": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_linear_detector.py": "494081be1ce4c8235ae2dcc390d9f5c5fdb4d0700abe377908bbf37002b937c9",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fdst_accuracy_20261007_L2\\manifest.json": "6cbf7f86d21d51a3e76f8fc71bcfef5fc7f0122abfc962d0c258d72777c40636"
+  },
+  "preflight": {
+    "pass_": true,
+    "principal_submatrix_exact": true,
+    "sine_field_error": 2.8938790151313463e-11,
+    "sine_power_error": 3.38000460953225e-13
+  },
+  "numerical_threads": 1
+}

@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-09T01:53:41.685630+00:00",
+  "returncode": 0,
+  "provenance": "local",
+  "status": "ready",
+  "remote_advice": false,
+  "remote_security_block_retained": true,
+  "retry_condition": "Explicit authorized and verified recovery of the inherited security block",
+  "scope": "Local v2-doctor only; no remote probe or query performed"
+}

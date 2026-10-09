@@ -1,0 +1,298 @@
+{
+  "experiment": "GLASS-GPU-001-v1",
+  "status": "completed",
+  "gpu_used": true,
+  "backend": "scalar_paraxial_cuda_ssfm_NOT_RT_NOT_physical_optics",
+  "torch_version": "2.6.0+cu124",
+  "cuda_version": "12.4",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "time_utc": "2026-10-05T01:22:42.730948+00:00",
+  "deadline_utc": "2026-10-05T13:13:06Z",
+  "records": [
+    {
+      "case": "pilot_v1__near_left__complex128",
+      "fixture_path": "resultados/codex/glass006b_pilot_v1__near_left.npz",
+      "fixture_sha256": "b7f5efd823927ad68610e0fd380ccd013387ea8512351b30337e78b274cfab3b",
+      "reference_json_sha256": "00749d58a8dccf52b5814fdac518d309ff486339e81e5cb10cf4ea1ec0876959",
+      "dtype": "torch.complex128",
+      "errors": {
+        "field_relative": 3.223941990011149e-14,
+        "port_absolute": 7.920801340038683e-15,
+        "core_absolute": 1.0769163338864018e-14
+      },
+      "budget": {
+        "input_power": 1.0000000000000002,
+        "output_power": 0.9939048850470058,
+        "boundary_removed": 0.006095114953072388,
+        "material_removed": 0.0,
+        "balance_relative": 7.796974871299155e-14
+      },
+      "tolerance": 1e-10,
+      "pass_": true,
+      "preparation_s": 0.040376000019023195,
+      "h2d_s": 0.29682050002156757,
+      "cold_propagation_budget_s": 0.8352845000044908,
+      "d2h_s": 0.0008014999912120402,
+      "disk_s": 0.04735929999151267,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__pilot_v1__near_left__complex128.npz",
+      "output_sha256": "8f73b733f89a3b004603a568820ae7fff63a17a939b00163a04df021410d1122",
+      "hot_gpu_s": [
+        0.09987780000665225,
+        0.10982030001468956,
+        0.11012990001472645
+      ],
+      "hot_cpu_s": [
+        2.43291840000893,
+        2.465633199986769,
+        2.4527838999929372
+      ]
+    },
+    {
+      "case": "pilot_v1__near_right__complex128",
+      "fixture_path": "resultados/codex/glass006b_pilot_v1__near_right.npz",
+      "fixture_sha256": "92b1db5efacd3f995ace9a21dc6147752daebb46aa5f84b5c4ad1078d213d0c4",
+      "reference_json_sha256": "e246617741590ffc9a996612130476bcc39b78c6e59093ea2ffa3af27937ad0c",
+      "dtype": "torch.complex128",
+      "errors": {
+        "field_relative": 2.8412936040355887e-14,
+        "port_absolute": 9.510285066616739e-15,
+        "core_absolute": 5.856426454897701e-15
+      },
+      "budget": {
+        "input_power": 0.9999999999999999,
+        "output_power": 0.9939048850469976,
+        "boundary_removed": 0.006095114953065796,
+        "material_removed": 0.0,
+        "balance_relative": 6.34952160294411e-14
+      },
+      "tolerance": 1e-10,
+      "pass_": true,
+      "preparation_s": 0.03334799999720417,
+      "h2d_s": 0.0024311000015586615,
+      "cold_propagation_budget_s": 0.2893616000073962,
+      "d2h_s": 0.00031599999056197703,
+      "disk_s": 0.04675519999000244,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__pilot_v1__near_right__complex128.npz",
+      "output_sha256": "833440dcbc4ddfa322479ca1af035906797fc784dfaeb4f867ac1b1d1527a8f8",
+      "hot_gpu_s": [],
+      "hot_cpu_s": []
+    },
+    {
+      "case": "pilot_v1__near_coherent__complex128",
+      "fixture_path": "resultados/codex/glass006b_pilot_v1__near_coherent.npz",
+      "fixture_sha256": "2724b45acab58e70d56332ac03ca9809a4e9a44c7dd1a656f5d47385cda9cb70",
+      "reference_json_sha256": "625a7772d7780349fb38f8a653c9261e7beea44bf610a435af9baefddb3d3a6b",
+      "dtype": "torch.complex128",
+      "errors": {
+        "field_relative": 3.1549826836433284e-14,
+        "port_absolute": 1.183120275923129e-14,
+        "core_absolute": 5.703770789011742e-15
+      },
+      "budget": {
+        "input_power": 1.0,
+        "output_power": 0.993904885046981,
+        "boundary_removed": 0.006095114953072509,
+        "material_removed": 0.0,
+        "balance_relative": 5.355525051209398e-14
+      },
+      "tolerance": 1e-10,
+      "pass_": true,
+      "preparation_s": 0.03319340001326054,
+      "h2d_s": 0.0012849999766331166,
+      "cold_propagation_budget_s": 0.10279130001435988,
+      "d2h_s": 0.00026439997600391507,
+      "disk_s": 0.04770429999916814,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__pilot_v1__near_coherent__complex128.npz",
+      "output_sha256": "af1e8e13061e90a16d71af7025997d3a8cba7fcee0e66bf6d5e06b4685ce636b",
+      "hot_gpu_s": [],
+      "hot_cpu_s": []
+    },
+    {
+      "case": "refinement_v2__near_left__complex128",
+      "fixture_path": "resultados/codex/glass006b_refinement_v2__near_left.npz",
+      "fixture_sha256": "40e1506d94a89ad73d4555e0d439a507c89a62ff19af829e14701a9a3ad22c05",
+      "reference_json_sha256": "0fc375c69b4d00ddce527dbee45fd2b40ab4b08b2f013cf588666e8243eced97",
+      "dtype": "torch.complex128",
+      "errors": {
+        "field_relative": 7.80678150046314e-14,
+        "port_absolute": 6.23556294781186e-14,
+        "core_absolute": 9.481304630298837e-14
+      },
+      "budget": {
+        "input_power": 1.0000000000000002,
+        "output_power": 0.9930471437062446,
+        "boundary_removed": 0.006952856293739376,
+        "material_removed": 0.0,
+        "balance_relative": 1.6262165225544575e-14
+      },
+      "tolerance": 1e-10,
+      "pass_": true,
+      "preparation_s": 0.05266259997733869,
+      "h2d_s": 0.0026904999976977706,
+      "cold_propagation_budget_s": 0.1823316999943927,
+      "d2h_s": 0.0010763000173028558,
+      "disk_s": 0.0770116999919992,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__refinement_v2__near_left__complex128.npz",
+      "output_sha256": "fc5109d988c8552d8e2562c6bfaa0dab7ba16a00ef51ed1642a4eb7cd8a0694b",
+      "hot_gpu_s": [],
+      "hot_cpu_s": []
+    },
+    {
+      "case": "pilot_v1__near_left__complex64",
+      "fixture_path": "resultados/codex/glass006b_pilot_v1__near_left.npz",
+      "fixture_sha256": "b7f5efd823927ad68610e0fd380ccd013387ea8512351b30337e78b274cfab3b",
+      "reference_json_sha256": "00749d58a8dccf52b5814fdac518d309ff486339e81e5cb10cf4ea1ec0876959",
+      "dtype": "torch.complex64",
+      "errors": {
+        "field_relative": 6.508121581115686e-05,
+        "port_absolute": 5.644722022796009e-05,
+        "core_absolute": 8.609991799268801e-05
+      },
+      "budget": {
+        "input_power": 0.9999999986463225,
+        "output_power": 0.9937823693932482,
+        "boundary_removed": 0.006094649536105228,
+        "material_removed": 0.0,
+        "balance_relative": 0.0001229797171355888
+      },
+      "tolerance": 0.0001,
+      "pass_": false,
+      "preparation_s": 0.03354190001846291,
+      "h2d_s": 0.006290500023169443,
+      "cold_propagation_budget_s": 0.2826698000135366,
+      "d2h_s": 0.00016759999562054873,
+      "disk_s": 0.044060799991711974,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__pilot_v1__near_left__complex64.npz",
+      "output_sha256": "4cf3ca6ad5d9d95593fd96c458204a89aba187049221c1a32c5eb724181dbd17",
+      "hot_gpu_s": [
+        0.11491210001986474,
+        0.12454879999859259,
+        0.12449080002261326
+      ],
+      "hot_cpu_s": []
+    },
+    {
+      "case": "pilot_v1__near_right__complex64",
+      "fixture_path": "resultados/codex/glass006b_pilot_v1__near_right.npz",
+      "fixture_sha256": "92b1db5efacd3f995ace9a21dc6147752daebb46aa5f84b5c4ad1078d213d0c4",
+      "reference_json_sha256": "e246617741590ffc9a996612130476bcc39b78c6e59093ea2ffa3af27937ad0c",
+      "dtype": "torch.complex64",
+      "errors": {
+        "field_relative": 6.0768707270637176e-05,
+        "port_absolute": 4.9067905199630336e-05,
+        "core_absolute": 7.4743282487022e-05
+      },
+      "budget": {
+        "input_power": 0.9999999986463225,
+        "output_power": 0.9937913041779711,
+        "boundary_removed": 0.006094874732342773,
+        "material_removed": 0.0,
+        "balance_relative": 0.00011381973616267414
+      },
+      "tolerance": 0.0001,
+      "pass_": false,
+      "preparation_s": 0.03339830000186339,
+      "h2d_s": 0.001342500007012859,
+      "cold_propagation_budget_s": 0.11185449999175034,
+      "d2h_s": 0.00016739999409765005,
+      "disk_s": 0.024930099985795096,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__pilot_v1__near_right__complex64.npz",
+      "output_sha256": "d5ec9bca697d41f994372b3482b58ea5f961ed4467f9b44efc49b9754242b4a9",
+      "hot_gpu_s": [],
+      "hot_cpu_s": []
+    },
+    {
+      "case": "pilot_v1__near_coherent__complex64",
+      "fixture_path": "resultados/codex/glass006b_pilot_v1__near_coherent.npz",
+      "fixture_sha256": "2724b45acab58e70d56332ac03ca9809a4e9a44c7dd1a656f5d47385cda9cb70",
+      "reference_json_sha256": "625a7772d7780349fb38f8a653c9261e7beea44bf610a435af9baefddb3d3a6b",
+      "dtype": "torch.complex64",
+      "errors": {
+        "field_relative": 5.8305724585500167e-05,
+        "port_absolute": 4.991082161040144e-05,
+        "core_absolute": 8.08426146228225e-05
+      },
+      "budget": {
+        "input_power": 1.000000004453259,
+        "output_power": 0.9937954702602203,
+        "boundary_removed": 0.006094680425170529,
+        "material_removed": 0.0,
+        "balance_relative": 0.00010985376737905477
+      },
+      "tolerance": 0.0001,
+      "pass_": false,
+      "preparation_s": 0.034086600004229695,
+      "h2d_s": 0.001476600009482354,
+      "cold_propagation_budget_s": 0.11011810001218691,
+      "d2h_s": 0.00016909997793845832,
+      "disk_s": 0.023743700003251433,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__pilot_v1__near_coherent__complex64.npz",
+      "output_sha256": "0d2fe8ca480262d71027959475c69681c7aec5675eb546ae1ad6228b58b7d872",
+      "hot_gpu_s": [],
+      "hot_cpu_s": []
+    },
+    {
+      "case": "refinement_v2__near_left__complex64",
+      "fixture_path": "resultados/codex/glass006b_refinement_v2__near_left.npz",
+      "fixture_sha256": "40e1506d94a89ad73d4555e0d439a507c89a62ff19af829e14701a9a3ad22c05",
+      "reference_json_sha256": "0fc375c69b4d00ddce527dbee45fd2b40ab4b08b2f013cf588666e8243eced97",
+      "dtype": "torch.complex64",
+      "errors": {
+        "field_relative": 0.00011434598146529047,
+        "port_absolute": 0.00010001564765803111,
+        "core_absolute": 0.00015263062348169765
+      },
+      "budget": {
+        "input_power": 0.9999999997527942,
+        "output_power": 0.9928261082832308,
+        "boundary_removed": 0.006951915285241717,
+        "material_removed": 0.0,
+        "balance_relative": 0.0002219761843765329
+      },
+      "tolerance": 0.0001,
+      "pass_": false,
+      "preparation_s": 0.04937719998997636,
+      "h2d_s": 0.0021037000115029514,
+      "cold_propagation_budget_s": 0.17750929997419007,
+      "d2h_s": 0.0002179000002797693,
+      "disk_s": 0.036258600011933595,
+      "output_path": "resultados/codex/glass_gpu001_20261005_v1__refinement_v2__near_left__complex64.npz",
+      "output_sha256": "38837cc7d1363a44772a92faf5d4053de547647087b59048905f6b248b372cc7",
+      "hot_gpu_s": [],
+      "hot_cpu_s": []
+    }
+  ],
+  "linearity": [
+    {
+      "dtype": "torch.complex128",
+      "error": 5.44879831634541e-15,
+      "threshold": 1e-10,
+      "pass_": true
+    },
+    {
+      "dtype": "torch.complex64",
+      "error": 3.020652949284913e-06,
+      "threshold": 0.0001,
+      "pass_": true
+    }
+  ],
+  "source_hashes_before": {
+    "src/silice/gpu_bpm.py": "b90d1f09041d5e5e81837d6f1d00d6efcb547bb0bd48d11ff27190d310634db5",
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "scripts/run_glass_gpu001.py": "8be24868e3e96442b42906886ff4a23588eec64ca624a6c3a0e794d1a9641521",
+    "Docs/GLASS-GPU-001-CONTRACT.md": "8e07ac16e6383d038450a0c0a45f3f03a870569e17f169af3511f52e3bf68d08"
+  },
+  "source_hashes_after": {
+    "src/silice/gpu_bpm.py": "b90d1f09041d5e5e81837d6f1d00d6efcb547bb0bd48d11ff27190d310634db5",
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "scripts/run_glass_gpu001.py": "8be24868e3e96442b42906886ff4a23588eec64ca624a6c3a0e794d1a9641521",
+    "Docs/GLASS-GPU-001-CONTRACT.md": "8e07ac16e6383d038450a0c0a45f3f03a870569e17f169af3511f52e3bf68d08"
+  },
+  "peak_cuda_allocated_bytes": 11700736,
+  "peak_cuda_reserved_bytes": 31457280,
+  "elapsed_s": 16.533093500009272,
+  "pass_": false,
+  "old_dx_and_gaussian_reduction_failures_unchanged": true,
+  "independent_peer_gate": false
+}

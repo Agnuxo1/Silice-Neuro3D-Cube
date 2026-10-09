@@ -1,0 +1,9 @@
+{
+  "kind": "detector",
+  "geometry_folder": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5a_mesh_mid_20261008",
+  "source_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fem_control_sources_20261008\\point03_p5a_mesh_mid_20261008_detector.txt",
+  "source_sha256": "6f46894eb7b5e492027b3e7fde97acef4c2f86d197e4b722ac785e06c2866766",
+  "contract_sha256": "6af08f91cebd44be24be6f78f6877eb5575f046a396efa044dd2f2422fbe3f44",
+  "original_control_sha256": "517172338bb36569b1c83f856fc74bf316c49aa9a73e6b6eabcdb6b7512bbb5a",
+  "no_propagation": true
+}

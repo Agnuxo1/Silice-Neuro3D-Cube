@@ -1,0 +1,222 @@
+{
+  "auditor_sha256": "5df002c4ad96ad523ad749b519c29a6a245e1630da75b29892431367f7d9b1ad",
+  "gpu_used": false,
+  "audit_kind": "recomputed_retained_array_arithmetic_NOT_independent_wave_solver",
+  "reports": [
+    {
+      "path": "resultados/codex/glass006b_pilot_v1.json",
+      "sha256": "0b45ae75f812c51b1bb615633ef614aa782f285d940005cf39b8921727f82ae6",
+      "evidence_consistent": true,
+      "cases": [
+        {
+          "name": "near_left",
+          "core_powers_input": [
+            0.654773180428983,
+            0.17362307752496664
+          ],
+          "port_error": 0.16283251824545822,
+          "reduction_pass": false,
+          "balance": 8.071321389024884e-14,
+          "arrays_sha256": "b7f5efd823927ad68610e0fd380ccd013387ea8512351b30337e78b274cfab3b"
+        },
+        {
+          "name": "near_right",
+          "core_powers_input": [
+            0.1736230775249771,
+            0.654773180428956
+          ],
+          "port_error": 0.16283251824547,
+          "reduction_pass": false,
+          "balance": 5.928590951498336e-14,
+          "arrays_sha256": "92b1db5efacd3f995ace9a21dc6147752daebb46aa5f84b5c4ad1078d213d0c4"
+        },
+        {
+          "name": "near_coherent",
+          "core_powers_input": [
+            0.08566212681166004,
+            0.7427341311422639
+          ],
+          "port_error": 0.1696848452857412,
+          "reduction_pass": false,
+          "balance": 4.96269692007445e-14,
+          "arrays_sha256": "2724b45acab58e70d56332ac03ca9809a4e9a44c7dd1a656f5d47385cda9cb70"
+        },
+        {
+          "name": "far_left",
+          "core_powers_input": [
+            0.8075662147626649,
+            9.729849678685632e-05
+          ],
+          "port_error": 0.16419355087913812,
+          "reduction_pass": false,
+          "balance": 7.394085344003536e-14,
+          "arrays_sha256": "0b4a6ad12e7334ca03babed7fb2a38ad8d06ef7273b4ee37f46f84ac8e66726e"
+        },
+        {
+          "name": "vacuum_left",
+          "core_powers_input": [
+            0.02072633982101914,
+            0.01826255841014427
+          ],
+          "port_error": 0.8939274499670953,
+          "reduction_pass": false,
+          "balance": 8.304468224196167e-14,
+          "arrays_sha256": "e9ffcf810f5e72ae0df80f02dd08c11722429ea0dfc81504689649ccfef3fe0b"
+        },
+        {
+          "name": "near_half",
+          "core_powers_input": [
+            0.8077014573528541,
+            0.052141957770277275
+          ],
+          "port_error": 0.09036099893238787,
+          "reduction_pass": false,
+          "balance": 4.5630166312093915e-14,
+          "arrays_sha256": "e1e6a8fe6a3e72b1a82f7a230316b9d11f4f89ff26ed962dd8f4ccd813828e13"
+        },
+        {
+          "name": "near_dz",
+          "core_powers_input": [
+            0.6542795495461288,
+            0.1736097764736113
+          ],
+          "port_error": 0.1637132028721419,
+          "reduction_pass": false,
+          "balance": 1.0791367799356517e-13,
+          "arrays_sha256": "2a9e43224f3b6831c74d8ac3815d78809bf150a88883c2878e2ef2d41f92655d"
+        },
+        {
+          "name": "near_coarse",
+          "core_powers_input": [
+            0.6540747065459497,
+            0.17385234505700872
+          ],
+          "port_error": 0.1612053331224163,
+          "reduction_pass": false,
+          "balance": 3.086420008457933e-14,
+          "arrays_sha256": "829027ad86a34890d097225f81746ea05c801aedddcab5ef8db3490bf43e052c"
+        },
+        {
+          "name": "near_wide",
+          "core_powers_input": [
+            0.6541337086321763,
+            0.1737890284416116
+          ],
+          "port_error": 0.16124759060071545,
+          "reduction_pass": false,
+          "balance": 8.226752612472402e-14,
+          "arrays_sha256": "d0ce28dad808a6c2af0ee7d569026a31e237870038f805fc216221de51d9bda1"
+        }
+      ],
+      "gates": [
+        {
+          "name": "mirror_symmetry_and_reciprocity",
+          "error": 1.9523832989275486e-14,
+          "threshold": 1e-08,
+          "pass_": true
+        },
+        {
+          "name": "full_field_linearity",
+          "error": 5.6183947310550006e-15,
+          "threshold": 1e-10,
+          "pass_": true
+        },
+        {
+          "name": "dx",
+          "error": 0.006544798404963815,
+          "threshold": 0.005,
+          "pass_": false
+        },
+        {
+          "name": "dz",
+          "error": 0.0009110056282674994,
+          "threshold": 0.005,
+          "pass_": true
+        },
+        {
+          "name": "domain_equal_dx",
+          "error": 6.331661539712985e-05,
+          "threshold": 0.005,
+          "pass_": true
+        }
+      ],
+      "measured_status": false,
+      "reduction_pass": false
+    },
+    {
+      "path": "resultados/codex/glass006b_refinement_v2.json",
+      "sha256": "23d110a43f64dff147c4247f8d20ab5b571bcd93f48bb2a08a90358409619c41",
+      "evidence_consistent": true,
+      "cases": [
+        {
+          "name": "near_left",
+          "core_powers_input": [
+            0.6544063626628981,
+            0.17339753104073408
+          ],
+          "port_error": 0.16427618431961374,
+          "reduction_pass": false,
+          "balance": 1.2245759961615474e-13,
+          "arrays_sha256": "40e1506d94a89ad73d4555e0d439a507c89a62ff19af829e14701a9a3ad22c05"
+        },
+        {
+          "name": "near_right",
+          "core_powers_input": [
+            0.17339753104074668,
+            0.6544063626628822
+          ],
+          "port_error": 0.1642761843196229,
+          "reduction_pass": false,
+          "balance": 1.1113332476497818e-13,
+          "arrays_sha256": "f34d4bdac2ed9289fb2f6544564585c1e85cdf9faa6bde1e02cc3783fba1813b"
+        },
+        {
+          "name": "near_coherent",
+          "core_powers_input": [
+            0.08565200281649663,
+            0.7421518908871161
+          ],
+          "port_error": 0.17123153822551085,
+          "reduction_pass": false,
+          "balance": 9.769962616701379e-14,
+          "arrays_sha256": "7f72eb1626c7d7b27f47cc9f7ce6165e72bdc64d80029afb582f662300da84d5"
+        }
+      ],
+      "gates": [
+        {
+          "name": "dx05_to04_near_left",
+          "error": 0.006371894243435932,
+          "threshold": 0.005,
+          "pass_": false
+        },
+        {
+          "name": "dx05_to04_near_right",
+          "error": 0.006371894243433461,
+          "threshold": 0.005,
+          "pass_": false
+        },
+        {
+          "name": "dx05_to04_near_coherent",
+          "error": 0.006976871275804504,
+          "threshold": 0.005,
+          "pass_": false
+        },
+        {
+          "name": "mirror_symmetry_and_reciprocity",
+          "error": 1.6590522401662596e-14,
+          "threshold": 1e-08,
+          "pass_": true
+        },
+        {
+          "name": "full_field_linearity",
+          "error": 6.12122453608749e-15,
+          "threshold": 1e-10,
+          "pass_": true
+        }
+      ],
+      "measured_status": false,
+      "reduction_pass": false
+    }
+  ],
+  "elapsed_s": 1.7246784000017215
+}

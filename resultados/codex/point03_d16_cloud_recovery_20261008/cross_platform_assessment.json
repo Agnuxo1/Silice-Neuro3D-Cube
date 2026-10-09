@@ -1,0 +1,18 @@
+{
+  "cases": {
+    "P6_32768": {
+      "relative_field_difference": 1.770366270549791e-14,
+      "physical_power_difference": 1.887379141862766e-15,
+      "cross_platform_pass": true
+    },
+    "R5_32768": {
+      "relative_field_difference": 1.7743073016937933e-14,
+      "physical_power_difference": 3.4416913763379853e-15,
+      "cross_platform_pass": true
+    }
+  },
+  "cross_platform_pass": true,
+  "distance_m": 6.25e-05,
+  "full_device_validation": false,
+  "point03_closed": false
+}

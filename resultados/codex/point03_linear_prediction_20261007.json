@@ -1,0 +1,197 @@
+{
+  "created_utc": "2026-10-07T09:55:14.000968+00:00",
+  "source_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\prediction.json",
+  "source_sha256": "aae7ffc2321cf29fdcf3a088008f6b83e959d5c06c60bf66efd2e1084533e747",
+  "source_sha256_map": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\predict_point03_linear.py": "348cb7dbb94fc7275ad45348ab4b0e0f1f670cf9127d29345c7f0d26f11ce0ae",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_linear_detector.py": "494081be1ce4c8235ae2dcc390d9f5c5fdb4d0700abe377908bbf37002b937c9",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\assess_point03_linear.py": "32941e898725c061d5cccd29f391aa4abb4ee6b8a062b971e044b8800d633947",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\assess_point03_exponential.py": "da32240f7c9321865e6448c8de44ecce841d285080c0cdd3fcd659d96ca38781",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-LINEAR-DETECTOR-CONTRACT.md": "93c87af3e8a17683f8252e9679f7c04087ab3c4032093f460830c007cfd24dbd",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_linear_detector_preflight_20261007.json": "bcc39c7e7a860fbec5b55d20194d0d90c62e2a0538488ff10fcc564d37f947d6"
+  },
+  "rows": [
+    {
+      "N": 256,
+      "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n256_segments8\\segment_08.npz",
+      "field_sha256": "ef500959772d9af24f56f42628d5dd71ed56a04c7336e26cecd47f9087510d37",
+      "P_in": 1.0000000000000002,
+      "methods": {
+        "field": {
+          "P_core": 0.33164343120044426,
+          "levels": [
+            0.33164343120044426,
+            0.33164343120044426
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.3320284430275848,
+          "levels": [
+            0.3320284430275848,
+            0.3320284430275848
+          ],
+          "change": 0.0
+        }
+      }
+    },
+    {
+      "N": 320,
+      "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n320_segments8\\segment_08.npz",
+      "field_sha256": "83d673276966fdf5b625b6523496fac12517f26ecf50926b9d1de1d14d126115",
+      "P_in": 1.0000000000000002,
+      "methods": {
+        "field": {
+          "P_core": 0.33221107750896745,
+          "levels": [
+            0.33221107750896745,
+            0.33221107750896745
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.33245729835808063,
+          "levels": [
+            0.33245729835808063,
+            0.33245729835808063
+          ],
+          "change": 0.0
+        }
+      }
+    },
+    {
+      "N": 400,
+      "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n400_segments8\\segment_08.npz",
+      "field_sha256": "c960e8436af2c5ee84544584c4d1e41d4b32d6979fbf470168f04fbf3c36bc5b",
+      "P_in": 1.0000000000000002,
+      "methods": {
+        "field": {
+          "P_core": 0.33251736439672624,
+          "levels": [
+            0.33251736439672624,
+            0.33251736439672624
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.33267476750503766,
+          "levels": [
+            0.33267476750503766,
+            0.33267476750503766
+          ],
+          "change": 0.0
+        }
+      }
+    },
+    {
+      "N": 500,
+      "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_exponential_20261007_H1\\n500_segments8\\segment_08.npz",
+      "field_sha256": "e40ba878f08535459fa13be6400217e0c45c7c57a0aa81dcb41633db69dc9b4e",
+      "P_in": 1.0000000000000002,
+      "methods": {
+        "field": {
+          "P_core": 0.33269015719262646,
+          "levels": [
+            0.33269015719262646,
+            0.33269015719262646
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.33279061239752644,
+          "levels": [
+            0.33279061239752644,
+            0.33279061239752644
+          ],
+          "change": 0.0
+        }
+      }
+    }
+  ],
+  "spatial": {
+    "field": {
+      "pass_": true,
+      "differences": [
+        0.0005676463085231842,
+        0.00030628688775879986,
+        0.0001727927959002118
+      ],
+      "orders": [
+        2.764930110861476,
+        2.565295012785098
+      ],
+      "order_disagreement": 0.07220258381654975,
+      "predicted_500": 0.33268262867521164,
+      "residual_500": 7.528517414812086e-06,
+      "limit_500": 1.727927959002118e-05,
+      "u_space": 0.00038398399088935956,
+      "p_indicator": 2.0
+    },
+    "intensity": {
+      "pass_": true,
+      "differences": [
+        0.00042885533049585867,
+        0.0002174691469570278,
+        0.00011584489248878116
+      ],
+      "orders": [
+        3.0431650195968354,
+        2.822420011953198
+      ],
+      "order_disagreement": 0.07253796827386048,
+      "predicted_500": 0.3327850443898406,
+      "residual_500": 5.5680076858632965e-06,
+      "limit_500": 1.1584489248878116e-05,
+      "u_space": 0.0002574330944195137,
+      "p_indicator": 2.0
+    }
+  },
+  "predictions": {
+    "field": {
+      "640": {
+        "N": 640,
+        "order": 2.565295012785098,
+        "infinity": 0.33291381765504335,
+        "prediction": 0.33279508668446367
+      },
+      "626": {
+        "N": 626,
+        "order": 2.565295012785098,
+        "infinity": 0.33291381765504335,
+        "prediction": 0.3327881552636028
+      }
+    },
+    "intensity": {
+      "640": {
+        "N": 640,
+        "order": 2.822420011953198,
+        "infinity": 0.3329226678717433,
+        "prediction": 0.33285687712052797
+      },
+      "626": {
+        "N": 626,
+        "order": 2.822420011953198,
+        "infinity": 0.3329226678717433,
+        "prediction": 0.3328526391824184
+      }
+    }
+  },
+  "primary_pass": true,
+  "point03_closed": false,
+  "N640_new_functionals_not_measured": true,
+  "N626_not_prepared_or_propagated": true,
+  "scope": "Bilinear core-power convergence; same local scalar model, no full field/phase/Maxwell claim.",
+  "predictor_selfcheck": {
+    "pass_": true,
+    "manufactured_orders": [
+      0.5,
+      2,
+      4
+    ],
+    "targets": [
+      626,
+      640
+    ],
+    "constant_and_oscillation_rejected": true
+  }
+}

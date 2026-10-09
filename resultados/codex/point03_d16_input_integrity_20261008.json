@@ -1,0 +1,9 @@
+{
+  "input_integrity_pass": true,
+  "package_source_files_checked": 20,
+  "free_DOF": 31077,
+  "initial_physical_power": 1.0000000000000004,
+  "stiffness_sha256": "51a273ef6a14dbcc425e1d5f22820963c2c9bc219f26fa56447115b06acef981",
+  "optical_propagation_executed": false,
+  "point03_closed": false
+}

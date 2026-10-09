@@ -1,0 +1,117 @@
+"""Conditional new K probe. No preparation before completed H2 and K640 PASS."""
+import argparse
+import ast
+from datetime import datetime,timezone
+import inspect
+import json
+from pathlib import Path
+import subprocess
+import sys
+import time
+import traceback
+from run_point03_exponential import ROOT,sha,write,load,guard,worker
+
+def geometry_source():
+    # Preserve the original G generator. Only grid and output names change.
+    original=load('k626_g_geometry',ROOT/'scripts/run_point03_reconstructed.py')
+    tree=ast.parse(inspect.getsource(original.prepare640))
+    class GridChange(ast.NodeTransformer):
+        def __init__(self):self.changes=[]
+        def visit_FunctionDef(self,node):
+            assert node.name=='prepare640';node.name='prepare626';self.changes.append('function name');return self.generic_visit(node)
+        def visit_Constant(self,node):
+            if node.value==640:self.changes.append('grid 640 to626');return ast.copy_location(ast.Constant(626),node)
+            if node.value in ('geometry640.npz','n640_input.npz'):
+                self.changes.append(str(node.value));return ast.copy_location(ast.Constant(node.value.replace('640','626')),node)
+            return node
+    adapter=GridChange();tree=adapter.visit(tree);ast.fix_missing_locations(tree)
+    assert adapter.changes==['function name','grid 640 to626','geometry640.npz','n640_input.npz']
+    return original,tree,adapter.changes
+
+def prepare(out,deadline):
+    original,tree,changes=geometry_source();source=ast.unparse(tree)+'\n'
+    (out/'geometry_generator_source.txt').write_text(source,encoding='utf-8')
+    namespace=dict(original.__dict__);exec(compile(tree,'registered_G_geometry_N626','exec'),namespace)
+    inp=namespace['prepare626'](out,deadline)
+    report=json.loads((out/'geometry_report.json').read_text(encoding='utf-8'))
+    assert report['N']==626 and report['geometry_pass'] and len(report['reference_cells'])==48
+    return inp,changes
+
+def measure(execution,prediction):
+    import numpy as np
+    from point03_linear_detector import Detector
+    detector=Detector();n=626;dx=128e-6/n;manifest=json.loads(Path(execution['manifest_path']).read_text(encoding='utf-8'))
+    for p,d in manifest['source_sha256'].items():assert sha(p)==d
+    assert sha(execution['manifest_path'])==execution['manifest_sha256']
+    case=manifest['plan'][0];assert sha(case['input_path'])==case['input_sha256']
+    with np.load(case['input_path'],allow_pickle=False) as inp:pin=float(np.sum(np.abs(inp['A0'])**2)*dx*dx)
+    fields={};methods={};count=0
+    for part in (11,17):
+        sol=execution['solutions'][str(part)];assert len(sol['checkpoints'])==part;previous=None;previous_sha=None;power=pin
+        for i,link in enumerate(sol['checkpoints'],1):
+            assert sha(link['path'])==link['sha256'];cp=json.loads(Path(link['path']).read_text(encoding='utf-8'))
+            assert cp['status']=='completed' and cp['N']==n and cp['segments']==part and cp['segment']==i and cp['elapsed_s']<=360
+            assert cp['previous_report_path']==previous and cp['previous_report_sha256']==previous_sha
+            assert cp['length_m']==.002/part and cp['started_utc']>prediction['created_utc']
+            assert sha(cp['field_path'])==cp['field_sha256']
+            with np.load(cp['field_path'],allow_pickle=False) as data:field=data['field']
+            assert field.shape==(n,n) and field.dtype==np.dtype('complex128') and np.all(np.isfinite(field))
+            actual=float(np.sum(np.abs(field)**2)*dx*dx);assert abs(actual-cp['raw_total'])<=1e-12 and 0<actual<=power+1e-10
+            for key in ('resource_start','resource_end'):assert cp[key]['available_ram_bytes']>1.5*1024**3 and cp[key]['free_disk_bytes']>2*1024**3
+            previous=link['path'];previous_sha=link['sha256'];power=actual;count+=1
+        assert sol['field_path']==cp['field_path'] and sol['field_sha256']==cp['field_sha256']
+        fields[part]=field;methods[str(part)]=detector.measure(field,n,pin)
+    difference=float(np.linalg.norm(fields[11]-fields[17])/np.linalg.norm(fields[17]));gates={}
+    for m in ('field','intensity'):
+        actual=methods['17'][m]['P_core'];last=prediction['rows'][-1]['methods'][m]['P_core'];frozen=prediction['predictions'][m]['626']
+        residual=abs(actual-frozen['prediction']);limit=.1*abs(actual-last);ref=abs(actual-methods['11'][m]['P_core'])
+        gates[m]=dict(actual=actual,prediction=frozen['prediction'],residual=residual,limit=limit,holdout_pass=abs(actual-last)>1e-12 and residual<=limit,reference_power_difference=ref,reference_pass=ref<=1e-10,quadrature_pass=max(methods[p][m]['change'] for p in ('11','17'))<=1e-10)
+    assert count==28
+    passed=difference<=1e-9 and all(all(v[q] for q in ('holdout_pass','reference_pass','quadrature_pass')) for v in gates.values())
+    return dict(created_utc=datetime.now(timezone.utc).isoformat(),integrity_pass=True,scientific_pass=passed,point03_closed=passed,checkpoints_checked=count,reference_field_difference=difference,methods=methods,gates=gates,P_in=pin,P_total=float(np.sum(np.abs(fields[17])**2)*dx*dx/pin),scope='Local scalar core power for fixed T96/2mm/128um/input. K640 budget mandatory, no full field/phase/boundary/Maxwell/fabrication closure.')
+
+def run(out):
+    import platform
+    from importlib.metadata import version
+    assert platform.python_version()=='3.13.7' and version('numpy')=='2.2.6' and version('scipy')=='1.15.1'
+    start=time.monotonic();assert not out.exists() and out.is_relative_to(ROOT/'resultados/codex')
+    hpath=ROOT/'resultados/codex/point03_exponential_20261007_H2';kpath=ROOT/'resultados/codex/point03_linear_K640_20261007.json';ppath=ROOT/'resultados/codex/point03_linear_prediction_20261007.json'
+    h=json.loads((hpath/'assessment.json').read_text(encoding='utf-8'));k=json.loads(kpath.read_text(encoding='utf-8'));pred=json.loads(ppath.read_text(encoding='utf-8'))
+    assert json.loads((hpath/'execution.json').read_text(encoding='utf-8'))['status']=='completed'
+    assert json.loads((hpath/'integrity_audit.json').read_text(encoding='utf-8'))['integrity_pass']
+    assert not h['point03_closed'] and k['K640_pass'] and k['N626_permitted']
+    assert sha(ppath)==k['prediction_sha256'] and sha(hpath/'assessment.json')==k['h_assessment_sha256']
+    assert pred['N626_not_prepared_or_propagated'] and pred['N640_new_functionals_not_measured']
+    for p,d in pred['source_sha256_map'].items():assert sha(p)==d
+    out.mkdir(parents=True);report=dict(status='running',started_utc=datetime.now(timezone.utc).isoformat(),solutions={},children=[],prediction_path=str(ppath),prediction_sha256=sha(ppath))
+    try:
+        guard(out);inp,changes=prepare(out,start+7200)
+        sources=[Path(__file__),ROOT/'scripts/run_point03_exponential.py',ROOT/'scripts/run_point03_reconstructed.py',ROOT/'scripts/point03_union_geometry.py',ROOT/'scripts/point03_geometry_reference.py',ROOT/'experimentos/glass009_claude/adi2d.py',ROOT/'src/silice/coverage.py',ROOT/'src/silice/tracks.py',ROOT/'scripts/point03_linear_detector.py',ROOT/'Docs/POINT-03-LINEAR-DETECTOR-CONTRACT.md',ROOT/'Docs/POINT-03-K626-EXECUTION-CONTRACT.md',ROOT/'resultados/codex/point03_geometry_20261006234649Z/inputs/centres.json',hpath/'assessment.json',hpath/'integrity_audit.json',kpath,ppath,out/'geometry_report.json',out/'geometry_generator_source.txt']
+        manifest=dict(created_utc=datetime.now(timezone.utc).isoformat(),source_sha256={str(p):sha(p) for p in sources},plan=[dict(N=626,input_path=str(inp),input_sha256=sha(inp))],geometry_adapter_changes=changes,partitions=[11,17],numerical_threads=1)
+        write(out/'manifest.json',manifest);report.update(manifest_path=str(out/'manifest.json'),manifest_sha256=sha(out/'manifest.json'))
+        for part in (11,17):
+            caseout=out/f'n626_segments{part}';caseout.mkdir();chain=[];previous=None
+            for segment in range(1,part+1):
+                assert time.monotonic()-start<7200;guard(out);prefix=caseout/f'segment_{segment:02d}'
+                cmd=[sys.executable,str(Path(__file__).resolve()),'--worker','--manifest',report['manifest_path'],'--manifest-sha',report['manifest_sha256'],'--n','626','--segments',str(part),'--segment',str(segment),'--prefix',str(prefix)]
+                if previous:cmd+=['--previous',str(previous)]
+                childstart=time.monotonic()
+                with Path(str(prefix)+'.log').open('xb') as log:child=subprocess.run(cmd,stdout=log,stderr=subprocess.STDOUT,timeout=370,check=False)
+                report['children'].append(dict(segments=part,segment=segment,returncode=child.returncode,elapsed_s=time.monotonic()-childstart));cp=Path(str(prefix)+'.json')
+                assert child.returncode==0 and cp.exists();data=json.loads(cp.read_text(encoding='utf-8'));assert data['status']=='completed'
+                chain.append(dict(path=str(cp),sha256=sha(cp)));previous=cp
+                print(json.dumps(dict(N=626,segments=part,segment=segment,child_s=round(data['elapsed_s'],2),elapsed_s=round(time.monotonic()-start,1))),flush=True)
+            report['solutions'][str(part)]=dict(checkpoints=chain,field_path=data['field_path'],field_sha256=data['field_sha256'])
+        assessment=measure(report,pred);write(out/'assessment.json',assessment)
+        report.update(status='completed',scientific_pass=assessment['scientific_pass'],point03_closed=assessment['point03_closed'],assessment_path=str(out/'assessment.json'),assessment_sha256=sha(out/'assessment.json'))
+    except Exception as err:report.update(status='failed',error_type=type(err).__name__,error=str(err),diagnostic=traceback.format_exc())
+    report.update(elapsed_s=time.monotonic()-start,finished_utc=datetime.now(timezone.utc).isoformat(),sources_unchanged=all(sha(p)==d for p,d in locals().get('manifest',{}).get('source_sha256',{}).items()))
+    write(out/'execution.json',report);print(json.dumps({k:report.get(k) for k in ('status','scientific_pass','point03_closed','elapsed_s','error')}),flush=True)
+    return 0 if report.get('scientific_pass') else 2 if report['status']=='completed' else 1
+
+def main():
+    p=argparse.ArgumentParser(__doc__);p.add_argument('--out',type=Path);p.add_argument('--source-check',action='store_true');p.add_argument('--worker',action='store_true');p.add_argument('--manifest',type=Path);p.add_argument('--manifest-sha');p.add_argument('--n',type=int);p.add_argument('--segments',type=int);p.add_argument('--segment',type=int);p.add_argument('--prefix',type=Path);p.add_argument('--previous',type=Path);args=p.parse_args()
+    if args.source_check:
+        _,_,changes=geometry_source();print(json.dumps(dict(source_adapter_pass=True,changes=changes,no_geometry_prepared=True)));return 0
+    return worker(args) if args.worker else run(args.out.resolve())
+if __name__=='__main__':raise SystemExit(main())

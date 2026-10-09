@@ -1,0 +1,72 @@
+{
+  "schema": "silice.point03-geometry.launch.v1",
+  "status": "failed",
+  "created_utc": "2026-10-06T23:22:59.651803+00:00",
+  "root": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006",
+  "out_dir": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z",
+  "launch_dir": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z_launch",
+  "command": [
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.venv\\Scripts\\python.exe",
+    "-B",
+    "-u",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_geometry.py",
+    "--study",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\manifest.json",
+    "--out-dir",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z"
+  ],
+  "outer_driver_wait_timeout_s": 640,
+  "threads": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "pythonunbuffered": "1",
+  "driver_sha256": "c89d5384f9aa4ef92057ac7ca293da2d817eb530316579f4172ff1a7c50bd651",
+  "launcher_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.audit_tmp\\launch_point03_geometry.py",
+  "launcher_sha256": "5066a97f0c4e2b75d577f6944dba5e725554179d171642be3de7373c430a4e1b",
+  "sources_sha256_before": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_geometry.py": "c89d5384f9aa4ef92057ac7ca293da2d817eb530316579f4172ff1a7c50bd651",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_union_geometry.py": "0b3846f2d81c632b3458779b4d8d7f3dc232bfadc35f99355b242b4c6dfb872a",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_geometry_reference.py": "b95bf9044d8f6719c13c72dac4fd2bf920762e0a2f6e4ba3479e5270e2d0d1a1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-GEOMETRY-CONTRACT.md": "83b2cd5dcc3d0e225a8394282881a4dc3dd7b22a32fce4b3d728d2f9e7143717",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\src\\silice\\tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\manifest.json": "b09c57d05e190b8fdcc6ad54108e50a05a28570acdc4b82ae12501995c9a0e73",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.venv\\Scripts\\python.exe": "200d001707ed494066ef00e31e38330e32490c2a74a450ca5d66d2179396fd0e"
+  },
+  "scope": "External launch/cost evidence only; the unchanged driver owns 14 sequential children with 35/40/600 s limits and scientific acceptance. No scientific module is imported here.",
+  "pid": 25584,
+  "returncode": 1,
+  "driver_process_elapsed_s_including_cleanup": 10.551074799965136,
+  "stdout_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z_launch\\driver.stdout.log",
+  "stderr_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z_launch\\driver.stderr.log",
+  "execution": {
+    "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z\\execution.json",
+    "sha256": "e32082ffa5db6842e69fb1ec77bc85971422759680351f122837a974effe5911",
+    "status": "failed",
+    "operational_pass": false,
+    "geometry_pass": false,
+    "elapsed_s": 10.393704999994952,
+    "children": 2
+  },
+  "sources_sha256_after": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_geometry.py": "c89d5384f9aa4ef92057ac7ca293da2d817eb530316579f4172ff1a7c50bd651",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_union_geometry.py": "0b3846f2d81c632b3458779b4d8d7f3dc232bfadc35f99355b242b4c6dfb872a",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_geometry_reference.py": "b95bf9044d8f6719c13c72dac4fd2bf920762e0a2f6e4ba3479e5270e2d0d1a1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-GEOMETRY-CONTRACT.md": "83b2cd5dcc3d0e225a8394282881a4dc3dd7b22a32fce4b3d728d2f9e7143717",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\src\\silice\\tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\manifest.json": "b09c57d05e190b8fdcc6ad54108e50a05a28570acdc4b82ae12501995c9a0e73",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\.venv\\Scripts\\python.exe": "200d001707ed494066ef00e31e38330e32490c2a74a450ca5d66d2179396fd0e"
+  },
+  "sources_unchanged": true,
+  "elapsed_s": 10.56869700003881,
+  "launch_artifact_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z_launch\\attempt.json": "43b1e315bf6abb598aa9af65f3ecfb04f4f882f4759e24b8158dfdb2896315c7",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z_launch\\driver.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z_launch\\driver.stdout.log": "53556cdf75187fb8c4e72d3ab4d89e31b2780c6ee373a358455b15126c9573a4",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T232258Z_launch\\process_started.json": "9fd4f913c44fb1052c461c55008214ec31e873ce7508a5a2ecd57b90ae08cbf2"
+  }
+}

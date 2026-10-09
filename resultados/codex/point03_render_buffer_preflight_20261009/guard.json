@@ -1,0 +1,32 @@
+{
+  "status": "preflight_ready",
+  "samples": [
+    {
+      "available_ram_gib": 10.857643127441406,
+      "vram_used_gib": 0.541015625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0
+    }
+  ],
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": null,
+  "child_finished": true,
+  "profile_sha256": "7852f544c6be043cba2ba7a68ec0469d8bf20316976ed709b7e53b9873e7dfb4",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "Docs/POINT-03-RENDER-BUFFER-CALIBRATION-CONTRACT.md": "af0c36cce293117e3635d4cd2baac95f007e6dd8352dc75125b6404e45adf1a0",
+    "scripts/point03_render_buffer_reference.py": "7b8fec7bf8b0094e77d008add79c2bd0a476bb290ce51c5b50d62523c4749100",
+    "scripts/check_point03_render_buffer.py": "ec65ce729f770a9ee901c351755e3e1fd186c5e08926533d754cca552cf8072f",
+    "scripts/run_point03_render_buffer_blender.py": "5b28dfd00b12ba5504ad67005c67ddf56aa3016e7a606e8b4ec77d96e7b21b3f",
+    "scripts/guard_point03_render_buffer.py": "cf201fd396f705d568722e98bae59d36d1c1b3be62d2d0005a2666757a00ffe1",
+    "scripts/audit_point03_render_buffer.py": "a13f588baab4835054d515d67c9e72d7e826345f75c4610fe954ebacfa7303fb"
+  },
+  "profile_relative": "resultados/codex/point03_render_buffer_profile_v2_20261009.json",
+  "published_commit": "f02c2ad77b43ac6d585ad12c6e99f68cb9f4b16f",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "resource_preflight_pass": true,
+  "elapsed_guard_s": 0.5017359999983455,
+  "finished_utc": "2026-10-09T08:48:01.729605+00:00"
+}

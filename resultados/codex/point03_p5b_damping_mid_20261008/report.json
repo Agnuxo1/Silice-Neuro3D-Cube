@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-08T06:16:35.366307+00:00",
+  "controls_pass": true,
+  "active_elements": [
+    4829,
+    4829
+  ],
+  "quadrature_mass_norm_bound_m_inverse": 1.5905064201916223e-08,
+  "old_unsplit_difference_bound_m_inverse": null,
+  "constant_integral": 5.068117333333307e-05,
+  "constant_exact": 5.0681173333333335e-05,
+  "linear_field_errors": [
+    2.7810382663420757e-14,
+    1.6579266587808527e-14,
+    9.359263396343525e-15,
+    5.749261800611022e-15,
+    1.0428893498782784e-14,
+    3.4228163278056315e-14
+  ],
+  "elapsed_s": 6.131846999982372,
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fem_control_sources_20261008\\point03_p5a_mesh_mid_20261008_damping.txt": "84e6c2f355ae682528ad4b07ee4363547ba7835655142f53a5aa9a998690427d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_damping.py": "58da4b16cd9a517738b730713bd034dc4d451840f828843e035b748a9fbaa77e",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P4G-CONTRACT.md": "21fbf90955645b2bb543f0a42576152040e3757852b6c623741db2deaf676e17"
+  },
+  "artifacts": {
+    "damping_q12.npz": "2278459fd5a0a9983dfb9feec25864e00a3f1b075d72ccebdc5d4fc71d22e82e",
+    "damping_q8.npz": "d65830aa92f6fcc22c413e50e2e2cc9dd45bba14148ba0acee5a4f4a8a6d2eb1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "changed_python_files_compiled": 212,
+  "syntax_errors": [],
+  "code_config_modified_reviewed": [
+    ".gitattributes",
+    ".gitignore",
+    "pyproject.toml",
+    "scripts/check.py"
+  ],
+  "boards_review_scope": "Factual continuity/status changes reviewed through project checkpoints and named reports; no executable changes",
+  "all_syntax_pass": true
+}

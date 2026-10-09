@@ -1,0 +1,34 @@
+{
+  "pass_": true,
+  "checks": [
+    {
+      "name": "independent_loop_stencil",
+      "error": 1.577860495719828e-16
+    },
+    {
+      "name": "dense_exponential",
+      "error": 4.0661111314976226e-16
+    },
+    {
+      "name": "semigroup",
+      "error": 3.8495053573217373e-16
+    },
+    {
+      "name": "sine_mode_sigma_0.0",
+      "error": 1.9224692882833157e-16
+    },
+    {
+      "name": "power_sigma_0.0",
+      "error": 2.220446049250313e-16
+    },
+    {
+      "name": "sine_mode_sigma_12000.0",
+      "error": 1.737812595270812e-16
+    },
+    {
+      "name": "power_sigma_12000.0",
+      "error": 1.1102230246251565e-16
+    }
+  ],
+  "random_seed": 0
+}

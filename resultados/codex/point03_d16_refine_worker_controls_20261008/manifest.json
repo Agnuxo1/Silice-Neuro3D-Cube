@@ -1,0 +1,6 @@
+{
+  "purpose": "Manufactured3DOF only",
+  "source_sha256": {
+    "scripts/run_point03_d16_refine.py": "def715416c077fa120755e671199491a3a454a8c369645e5c45e3b2d9103e2d3"
+  }
+}

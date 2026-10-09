@@ -1,0 +1,217 @@
+{
+  "status": "completed",
+  "rows": [
+    {
+      "case": "constant",
+      "width": 8,
+      "height": 5,
+      "raw": "constant_8x5.npz",
+      "sha256": "b41dfe421c2bc02cede4a6b7bbbfa564592fe2ffc17b74208c0b0655367f1a75",
+      "buffer_metadata": {
+        "dimensions": [
+          5,
+          8,
+          4
+        ],
+        "numpy_strides": [
+          4,
+          20,
+          160
+        ]
+      },
+      "draw_both_readbacks_ns": 765300,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.75,
+        "pass": false
+      },
+      "old_stride_prediction_max_error": 0.0
+    },
+    {
+      "case": "coordinates",
+      "width": 8,
+      "height": 5,
+      "raw": "coordinates_8x5.npz",
+      "sha256": "d613465ea11490759ca4e39589462ae29236d6276ace7c67620d18fb426d72bf",
+      "buffer_metadata": {
+        "dimensions": [
+          5,
+          8,
+          4
+        ],
+        "numpy_strides": [
+          4,
+          20,
+          160
+        ]
+      },
+      "draw_both_readbacks_ns": 303400,
+      "corrected": {
+        "max_channel_error": 4.768371586472142e-08,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.9375,
+        "pass": false
+      },
+      "old_stride_prediction_max_error": 0.0
+    },
+    {
+      "case": "constant",
+      "width": 13,
+      "height": 7,
+      "raw": "constant_13x7.npz",
+      "sha256": "f2e4e797afb020d29ba3e4129f06a501b0a11c188f7728cd86e0c0bffe96158f",
+      "buffer_metadata": {
+        "dimensions": [
+          7,
+          13,
+          4
+        ],
+        "numpy_strides": [
+          4,
+          28,
+          364
+        ]
+      },
+      "draw_both_readbacks_ns": 221000,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.75,
+        "pass": false
+      },
+      "old_stride_prediction_max_error": 0.0
+    },
+    {
+      "case": "coordinates",
+      "width": 13,
+      "height": 7,
+      "raw": "coordinates_13x7.npz",
+      "sha256": "cc6330bf59c2634ab2cee07cd7e8646f8f8fc62fb67a851c1fff18198559ea8f",
+      "buffer_metadata": {
+        "dimensions": [
+          7,
+          13,
+          4
+        ],
+        "numpy_strides": [
+          4,
+          28,
+          364
+        ]
+      },
+      "draw_both_readbacks_ns": 262900,
+      "corrected": {
+        "max_channel_error": 6.680960185079243e-08,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.9615384615384616,
+        "pass": false
+      },
+      "old_stride_prediction_max_error": 0.0
+    },
+    {
+      "case": "constant",
+      "width": 32,
+      "height": 16,
+      "raw": "constant_32x16.npz",
+      "sha256": "3ecc4965305f27a723f87a04bf52c0854f7a7ac260341077ae67709ad952f28f",
+      "buffer_metadata": {
+        "dimensions": [
+          16,
+          32,
+          4
+        ],
+        "numpy_strides": [
+          4,
+          64,
+          2048
+        ]
+      },
+      "draw_both_readbacks_ns": 223100,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.75,
+        "pass": false
+      },
+      "old_stride_prediction_max_error": 0.0
+    },
+    {
+      "case": "coordinates",
+      "width": 32,
+      "height": 16,
+      "raw": "coordinates_32x16.npz",
+      "sha256": "c9491e40824e0b8e73f494da3606ec36f7bd9f77c6f35b668274809473551f6f",
+      "buffer_metadata": {
+        "dimensions": [
+          16,
+          32,
+          4
+        ],
+        "numpy_strides": [
+          4,
+          64,
+          2048
+        ]
+      },
+      "draw_both_readbacks_ns": 268200,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.984375,
+        "pass": false
+      },
+      "old_stride_prediction_max_error": 0.0
+    }
+  ],
+  "gpu_execution": true,
+  "new_t96_field": false,
+  "physical_validation": false,
+  "profile_sha256": "7852f544c6be043cba2ba7a68ec0469d8bf20316976ed709b7e53b9873e7dfb4",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "Docs/POINT-03-RENDER-BUFFER-CALIBRATION-CONTRACT.md": "af0c36cce293117e3635d4cd2baac95f007e6dd8352dc75125b6404e45adf1a0",
+    "scripts/point03_render_buffer_reference.py": "7b8fec7bf8b0094e77d008add79c2bd0a476bb290ce51c5b50d62523c4749100",
+    "scripts/check_point03_render_buffer.py": "ec65ce729f770a9ee901c351755e3e1fd186c5e08926533d754cca552cf8072f",
+    "scripts/run_point03_render_buffer_blender.py": "5b28dfd00b12ba5504ad67005c67ddf56aa3016e7a606e8b4ec77d96e7b21b3f",
+    "scripts/guard_point03_render_buffer.py": "cf201fd396f705d568722e98bae59d36d1c1b3be62d2d0005a2666757a00ffe1",
+    "scripts/audit_point03_render_buffer.py": "a13f588baab4835054d515d67c9e72d7e826345f75c4610fe954ebacfa7303fb"
+  },
+  "marker_only": true,
+  "exit_method": "os._exit after offscreen free and closed/fsynced report",
+  "engine": {
+    "version": "4.5.14 LTS",
+    "renderer": "NVIDIA GeForce RTX 3090/PCIe/SSE2",
+    "vendor": "NVIDIA Corporation",
+    "backend": "OPENGL"
+  },
+  "runtime": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "perf_counter_resolution_s": 1e-07,
+    "monotonic_resolution_s": 0.015625,
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "shader_batch_preparation_ns": 48547100,
+  "accuracy_pass": true,
+  "layout_prediction_pass": true,
+  "timing_positive": true,
+  "elapsed_worker_ns": 262414700,
+  "finished_utc": "2026-10-09T08:48:52.621323+00:00"
+}

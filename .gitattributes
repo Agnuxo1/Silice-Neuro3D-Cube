@@ -8,3 +8,13 @@ resultados/codex/*.json -text whitespace=cr-at-eol
 experimentos/glass009d_claude/resultados009d.json -text whitespace=cr-at-eol
 experimentos/glass009d_claude/run009d.py -text whitespace=cr-at-eol
 experimentos/glass006a_claude/resultados.json -text whitespace=cr-at-eol
+# Point 01 nested evidence and wheel metadata retain their measured bytes.
+resultados/codex/env_*/** -text whitespace=cr-at-eol
+resultados/codex/point01_preflight_*/** -text whitespace=cr-at-eol
+requirements/cpu-win-py313.wheels.json -text whitespace=cr-at-eol
+resultados/codex/point02_boards_*/** -text whitespace=cr-at-eol
+resultados/codex/point03_*/** -text whitespace=cr-at-eol
+# M1 runs against this exact CRLF byte stream; preserve its recorded hash.
+scripts/run_point03_m1.py -text whitespace=cr-at-eol
+scripts/diagnose_point03_p4b_generated.py -text whitespace=cr-at-eol
+scripts/check_point03_p4h_generated.py -text whitespace=cr-at-eol

@@ -1,0 +1,356 @@
+{
+  "created_utc": "2026-10-08T03:26:19.654235+00:00",
+  "scientific_pass": false,
+  "point03_closed": false,
+  "requires_independent_audit": true,
+  "coarse": {
+    "320": {
+      "measured": {
+        "E4": {
+          "field": {
+            "P_core": 0.3321332345300116,
+            "levels": [
+              0.3321332345300116,
+              0.3321332345300116
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.33237945833038307,
+            "levels": [
+              0.33237945833038307,
+              0.33237945833038307
+            ],
+            "change": 0.0
+          }
+        },
+        "E9": {
+          "field": {
+            "P_core": 0.3321332345873544,
+            "levels": [
+              0.3321332345873544,
+              0.3321332345873544
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.3323794583877685,
+            "levels": [
+              0.3323794583877685,
+              0.3323794583877685
+            ],
+            "change": 0.0
+          }
+        }
+      },
+      "fine_label": "E9",
+      "reference_field": 1.5588917310848432e-10,
+      "reference_bound": 2.391595970418056e-10,
+      "quadrature_change": 0.0,
+      "power_errors": {
+        "field": 5.734279717728441e-11,
+        "intensity": 5.7385429741430016e-11
+      },
+      "eligible": true
+    },
+    "400": {
+      "measured": {
+        "E5": {
+          "field": {
+            "P_core": 0.3324450235223464,
+            "levels": [
+              0.3324450235223464,
+              0.3324450235223464
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.3326024212865068,
+            "levels": [
+              0.33260242128650674,
+              0.3326024212865068
+            ],
+            "change": 5.551115123125783e-17
+          }
+        },
+        "E7": {
+          "field": {
+            "P_core": 0.33244502353291067,
+            "levels": [
+              0.33244502353291067,
+              0.33244502353291067
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.33260242129707634,
+            "levels": [
+              0.33260242129707634,
+              0.33260242129707634
+            ],
+            "change": 0.0
+          }
+        }
+      },
+      "fine_label": "E7",
+      "reference_field": 1.846262887193515e-10,
+      "reference_bound": 2.832052495114258e-10,
+      "quadrature_change": 5.551115123125783e-17,
+      "power_errors": {
+        "field": 1.0564271679669446e-11,
+        "intensity": 1.0569545239036415e-11
+      },
+      "eligible": true
+    },
+    "500": {
+      "measured": {
+        "E9": {
+          "field": {
+            "P_core": 0.33262444892660104,
+            "levels": [
+              0.33262444892660104,
+              0.33262444892660104
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.33272489383371456,
+            "levels": [
+              0.33272489383371456,
+              0.33272489383371456
+            ],
+            "change": 0.0
+          }
+        },
+        "E13": {
+          "field": {
+            "P_core": 0.33262444890554166,
+            "levels": [
+              0.33262444890554166,
+              0.33262444890554166
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.3327248938126491,
+            "levels": [
+              0.3327248938126491,
+              0.3327248938126491
+            ],
+            "change": 0.0
+          }
+        }
+      },
+      "fine_label": "E13",
+      "reference_field": 2.7145897546049284e-10,
+      "reference_bound": 4.1635082647523156e-10,
+      "quadrature_change": 0.0,
+      "power_errors": {
+        "field": 2.1059376464904744e-11,
+        "intensity": 2.1065482691540183e-11
+      },
+      "eligible": true
+    },
+    "640": {
+      "measured": {
+        "E17": {
+          "field": {
+            "P_core": 0.3327467348992299,
+            "levels": [
+              0.3327467348992299,
+              0.3327467348992299
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.33280818457524763,
+            "levels": [
+              0.33280818457524763,
+              0.33280818457524763
+            ],
+            "change": 0.0
+          }
+        },
+        "E23": {
+          "field": {
+            "P_core": 0.3327467348635915,
+            "levels": [
+              0.3327467348635915,
+              0.3327467348635915
+            ],
+            "change": 0.0
+          },
+          "intensity": {
+            "P_core": 0.33280818453960254,
+            "levels": [
+              0.33280818453960254,
+              0.33280818453960254
+            ],
+            "change": 0.0
+          }
+        }
+      },
+      "fine_label": "E23",
+      "reference_field": 5.33357290416829e-10,
+      "reference_bound": 8.17966433491763e-10,
+      "quadrature_change": 0.0,
+      "power_errors": {
+        "field": 3.563838113507245e-11,
+        "intensity": 3.564509798437143e-11
+      },
+      "eligible": true
+    }
+  },
+  "prediction": {
+    "created_utc": "2026-10-07T23:31:55.802049+00:00",
+    "methods": {
+      "field": {
+        "powers": [
+          0.33244502353291067,
+          0.33262444890554166,
+          0.3327467348635915
+        ],
+        "orders": [
+          2.069708692378861
+        ],
+        "prediction": 0.33281456379176816
+      },
+      "intensity": {
+        "powers": [
+          0.33260242129707634,
+          0.3327248938126491,
+          0.33280818453960254
+        ],
+        "orders": [
+          2.078942333274478
+        ],
+        "prediction": 0.33285428284548196
+      }
+    },
+    "primary_M": [
+      400,
+      500,
+      640
+    ],
+    "holdout_M": 800,
+    "diagnostic_M320_retained": true,
+    "P2_pass": false,
+    "point03_closed": false,
+    "source_sha256": {
+      "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_p3.py": "fd6e57a7df6c4896f879964ff0d9796667fac0f68578b823852b264913b6eb9b",
+      "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_p3.py": "b9893fdef3238a56a38dc259e94feae0170d837fc530d87f41b86e19dfedba31",
+      "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P3-CONTRACT.md": "fe6b1215f39724898d485d1f26f309cc3ece46ee9490e8604bca80f0af139a66",
+      "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fixed_domain_20261007_P2\\prediction.json": "1d29c96e7fa02e3e1eab586d5d665e66af6399172d73b06dde81dea97f3acf3a",
+      "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fixed_domain_20261007_P2\\coarse_assessment.json": "88e593801665dbe168584277072eca1aa1619c69a174b6027d388775571cb804",
+      "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fixed_domain_20261007_P2\\integrity_audit.json": "71931790fcfd60601aeb51d10cb0648cf582eeff2f18cd86d17a45001734859a",
+      "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fixed_domain_20261007_P2\\execution.json": "eb6602067633601167d6dc77f137b789b491a26e68276ee46ff6a0f993793ed7"
+    }
+  },
+  "fine_reference": {
+    "measured": {
+      "E29": {
+        "field": {
+          "P_core": 0.3328056668594895,
+          "levels": [
+            0.3328056668594895,
+            0.3328056668594895
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.3328449415780157,
+          "levels": [
+            0.3328449415780157,
+            0.3328449415780157
+          ],
+          "change": 0.0
+        }
+      },
+      "E41": {
+        "field": {
+          "P_core": 0.33280566642758425,
+          "levels": [
+            0.33280566642758425,
+            0.33280566642758425
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.3328449411460596,
+          "levels": [
+            0.3328449411460596,
+            0.3328449411460596
+          ],
+          "change": 0.0
+        }
+      }
+    },
+    "fine_label": "E41",
+    "reference_field": 6.728788138816814e-10,
+    "reference_bound": 1.0318699800235058e-09,
+    "quadrature_change": 0.0,
+    "power_errors": {
+      "field": 4.3190523379976753e-10,
+      "intensity": 4.3195608201429536e-10
+    },
+    "eligible": true
+  },
+  "FDST_measurements": {
+    "field": {
+      "P_core": 0.33280556654896687,
+      "levels": [
+        0.33280556654896687,
+        0.33280556654896687
+      ],
+      "change": 0.0
+    },
+    "intensity": {
+      "P_core": 0.33284484128917347,
+      "levels": [
+        0.33284484128917347,
+        0.33284484128917347
+      ],
+      "change": 0.0
+    }
+  },
+  "temporal_field_error": 1.1162819253660114e-06,
+  "temporal_bound": 1.7118354348604534e-06,
+  "global_eligible": true,
+  "rows": {
+    "field": {
+      "actual": 0.33280566642758425,
+      "prediction": 0.33281456379176816,
+      "residual": 8.897364183912959e-06,
+      "limit": 5.893156399272571e-06,
+      "new_order": 2.662565414031986,
+      "order_disagreement": 0.2226637206840857,
+      "temporal_error": 9.9878617376703e-08,
+      "space_indicator": 0.000130959031094946,
+      "total_indicator": 0.00017033406009292484,
+      "conditions": {
+        "holdout": false,
+        "order": false,
+        "temporal": true,
+        "indicator": true
+      }
+    },
+    "intensity": {
+      "actual": 0.3328449411460596,
+      "prediction": 0.33285428284548196,
+      "residual": 9.341699422349414e-06,
+      "limit": 3.67566064570779e-06,
+      "new_order": 3.0330657704901784,
+      "order_disagreement": 0.3145739358831982,
+      "temporal_error": 9.985688614877475e-08,
+      "space_indicator": 8.168134768239533e-05,
+      "total_indicator": 0.00012105635499999446,
+      "conditions": {
+        "holdout": false,
+        "order": false,
+        "temporal": true,
+        "indicator": true
+      }
+    }
+  },
+  "scope": "Conditional local scalar core power for fixed ghosts only; all historic failures retained."
+}

@@ -1,0 +1,46 @@
+{
+  "status": "not_adopted",
+  "mismatches": [
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 0,
+      "metric": "relative_l2",
+      "reported": 1.273575358341552,
+      "local": 1.2735753583415375
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 2,
+      "metric": "relative_l2",
+      "reported": 1.27361406899918,
+      "local": 1.2736140689991666
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 4,
+      "metric": "relative_l2",
+      "reported": 1.2736513357333634,
+      "local": 1.2736513357333492
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 5,
+      "metric": "relative_l2",
+      "reported": 1.2736694773670474,
+      "local": 1.2736694773670332
+    },
+    {
+      "case": "quarter",
+      "n": 256,
+      "k": 6,
+      "metric": "relative_l2",
+      "reported": 1.2736872641158916,
+      "local": 1.2736872641158767
+    }
+  ],
+  "tolerance_not_changed": true
+}

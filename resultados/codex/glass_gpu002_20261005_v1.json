@@ -1,0 +1,579 @@
+{
+  "experiment": "GLASS-GPU-002-v1",
+  "status": "completed",
+  "gpu_used": true,
+  "backend": "scalar_paraxial_CUDA128_NO_RT_NO_physical_device",
+  "torch_version": "2.6.0+cu124",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "time_utc": "2026-10-05T01:28:56.872588+00:00",
+  "elapsed_s": 85.41504129997338,
+  "rows": [
+    {
+      "name": "n384L",
+      "points": 384,
+      "dx_m": 3.333333333333333e-07,
+      "steps": 400,
+      "coverage_samples": 16,
+      "ports": [
+        [
+          0.45825588060454137,
+          -0.7250756526086816
+        ],
+        [
+          0.3687186597497715,
+          0.23433564655663017
+        ]
+      ],
+      "core_powers": [
+        0.6545240119024477,
+        0.17332411358868088
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 16,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.420364583333332e-10,
+        "detector_area_errors": [
+          4.440892098500626e-16,
+          4.440892098500626e-16
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653052,
+        "orthogonality_error": 4.440892098500626e-16,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 1.0000000000000004,
+        "output_power": 0.9929874652849208,
+        "boundary_removed": 0.0070125347148914914,
+        "material_removed": 0.0,
+        "balance_relative": 1.8818540475917792e-13
+      },
+      "cpu_field_parity": null,
+      "cpu_propagation_s": null,
+      "geometry_operator_preparation_s": 3.555074500007322,
+      "gpu_propagation_budget_s": 0.475739200017415,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n384L.npz",
+      "arrays_sha256": "a462fa553307bb8fa9adad859bcdfc2254fd89a2f4513f67cbc4ebc61440df5b",
+      "pass_": true
+    },
+    {
+      "name": "n512L",
+      "points": 512,
+      "dx_m": 2.5e-07,
+      "steps": 400,
+      "coverage_samples": 16,
+      "ports": [
+        [
+          0.46060275020023417,
+          -0.7231655394599656
+        ],
+        [
+          0.36763617585508435,
+          0.2356246768093917
+        ]
+      ],
+      "core_powers": [
+        0.6541265057410178,
+        0.17318583132767296
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 16,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.420087890625e-10,
+        "detector_area_errors": [
+          7.771561172376096e-16,
+          7.771561172376096e-16
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653057,
+        "orthogonality_error": 1.4432899320127035e-15,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 0.9999999999999991,
+        "output_power": 0.9923971673398574,
+        "boundary_removed": 0.007602832660326901,
+        "material_removed": 0.0,
+        "balance_relative": 1.8517826161357238e-13
+      },
+      "cpu_field_parity": 3.192289877996225e-14,
+      "cpu_propagation_s": 12.915333200013265,
+      "geometry_operator_preparation_s": 4.541442499990808,
+      "gpu_propagation_budget_s": 0.2227720000082627,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n512L.npz",
+      "arrays_sha256": "7f46ebcc7a98ec0f1f2ebc1a54450b84f126fc531baab9ed3efb60714fa8d01c",
+      "pass_": true
+    },
+    {
+      "name": "n640L",
+      "points": 640,
+      "dx_m": 2e-07,
+      "steps": 400,
+      "coverage_samples": 16,
+      "ports": [
+        [
+          0.461053228553627,
+          -0.7226802558056052
+        ],
+        [
+          0.3672436735971131,
+          0.23579455119909637
+        ]
+      ],
+      "core_powers": [
+        0.6539532791950542,
+        0.17301862676880467
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 16,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.42036875e-10,
+        "detector_area_errors": [
+          1.4432899320127035e-15,
+          1.4432899320127035e-15
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653054,
+        "orthogonality_error": 2.7755575615628914e-15,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 1.0000000000000018,
+        "output_power": 0.9920155992165995,
+        "boundary_removed": 0.007984400783488749,
+        "material_removed": 0.0,
+        "balance_relative": 8.651412919391517e-14
+      },
+      "cpu_field_parity": 4.324601673169683e-14,
+      "cpu_propagation_s": 20.623982599994633,
+      "geometry_operator_preparation_s": 5.186472100001993,
+      "gpu_propagation_budget_s": 0.5731894999917131,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n640L.npz",
+      "arrays_sha256": "b3e53995ee085967aa2cb8f5746d6694e60cc97a77987a57896287b7fcf856a2",
+      "pass_": true
+    },
+    {
+      "name": "n512R",
+      "points": 512,
+      "dx_m": 2.5e-07,
+      "steps": 400,
+      "coverage_samples": 16,
+      "ports": [
+        [
+          0.36763617585511155,
+          0.2356246768093789
+        ],
+        [
+          0.4606027502002192,
+          -0.7231655394599436
+        ]
+      ],
+      "core_powers": [
+        0.17318583132768553,
+        0.6541265057409755
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 16,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.420087890625e-10,
+        "detector_area_errors": [
+          7.771561172376096e-16,
+          7.771561172376096e-16
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653057,
+        "orthogonality_error": 1.4432899320127035e-15,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 0.9999999999999994,
+        "output_power": 0.9923971673398218,
+        "boundary_removed": 0.00760283266032422,
+        "material_removed": 0.0,
+        "balance_relative": 1.4652602048359505e-13
+      },
+      "cpu_field_parity": null,
+      "cpu_propagation_s": null,
+      "geometry_operator_preparation_s": 3.261068299994804,
+      "gpu_propagation_budget_s": 0.33048829998006113,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n512R.npz",
+      "arrays_sha256": "604b7449edf69adfe7bb33be8ecde4766a8ea9610c5449e31e2469734bce0f28",
+      "pass_": true
+    },
+    {
+      "name": "n512C",
+      "points": 512,
+      "dx_m": 2.5e-07,
+      "steps": 400,
+      "coverage_samples": 16,
+      "ports": [
+        [
+          0.15908352131295214,
+          -0.2513972239159331
+        ],
+        [
+          0.7713132898291696,
+          0.4923071348865456
+        ]
+      ],
+      "core_powers": [
+        0.08568125427305245,
+        0.7416310827956005
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 16,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.420087890625e-10,
+        "detector_area_errors": [
+          7.771561172376096e-16,
+          7.771561172376096e-16
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653057,
+        "orthogonality_error": 1.4432899320127035e-15,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 0.9999999999999991,
+        "output_power": 0.9923971673398124,
+        "boundary_removed": 0.007602832660322754,
+        "material_removed": 0.0,
+        "balance_relative": 1.3606737264693093e-13
+      },
+      "cpu_field_parity": null,
+      "cpu_propagation_s": null,
+      "geometry_operator_preparation_s": 3.0724110000010114,
+      "gpu_propagation_budget_s": 0.4116333999845665,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n512C.npz",
+      "arrays_sha256": "c6c3286c6be8375524be61dc7e88c55de7624d3e82181f0e2e96bf570e042bcb",
+      "pass_": true
+    },
+    {
+      "name": "n512Lcoverage32",
+      "points": 512,
+      "dx_m": 2.5e-07,
+      "steps": 400,
+      "coverage_samples": 32,
+      "ports": [
+        [
+          0.4602329970431336,
+          -0.7234389649241426
+        ],
+        [
+          0.3677109392991187,
+          0.23539523287092864
+        ]
+      ],
+      "core_powers": [
+        0.6541848379971524,
+        0.17314215716648831
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 32,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.42028564453125e-10,
+        "detector_area_errors": [
+          7.771561172376096e-16,
+          7.771561172376096e-16
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653057,
+        "orthogonality_error": 1.4432899320127035e-15,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 0.9999999999999991,
+        "output_power": 0.9923959990875012,
+        "boundary_removed": 0.007604000912683594,
+        "material_removed": 0.0,
+        "balance_relative": 1.8568393350681962e-13
+      },
+      "cpu_field_parity": null,
+      "cpu_propagation_s": null,
+      "geometry_operator_preparation_s": 11.16877679998288,
+      "gpu_propagation_budget_s": 0.3900897999992594,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n512Lcoverage32.npz",
+      "arrays_sha256": "2bbddacc7509b286eada34021b89e7b63f951a0da5ee0dd68c7a346b64f0d1b4",
+      "pass_": true
+    },
+    {
+      "name": "n512Ldz",
+      "points": 512,
+      "dx_m": 2.5e-07,
+      "steps": 800,
+      "coverage_samples": 16,
+      "ports": [
+        [
+          0.46198138340734934,
+          -0.7225404756430238
+        ],
+        [
+          0.3675293624837722,
+          0.23639401523997353
+        ]
+      ],
+      "core_powers": [
+        0.6545583154449062,
+        0.17346907745979617
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 16,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.420087890625e-10,
+        "detector_area_errors": [
+          7.771561172376096e-16,
+          7.771561172376096e-16
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653057,
+        "orthogonality_error": 1.4432899320127035e-15,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 0.9999999999999991,
+        "output_power": 0.9929825335541497,
+        "boundary_removed": 0.007017466446195555,
+        "material_removed": 0.0,
+        "balance_relative": 3.461146300121068e-13
+      },
+      "cpu_field_parity": null,
+      "cpu_propagation_s": null,
+      "geometry_operator_preparation_s": 3.1319454000040423,
+      "gpu_propagation_budget_s": 0.49654339998960495,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n512Ldz.npz",
+      "arrays_sha256": "bbbcfdc907110ee6a409dca32121b2ae2eb6eee808e6ca0cb9165d6539e01590",
+      "pass_": true
+    },
+    {
+      "name": "n640Ldz",
+      "points": 640,
+      "dx_m": 2e-07,
+      "steps": 800,
+      "coverage_samples": 16,
+      "ports": [
+        [
+          0.4624690120197426,
+          -0.7220819070555068
+        ],
+        [
+          0.36715682215351064,
+          0.23659163343591047
+        ]
+      ],
+      "core_powers": [
+        0.6544532795827683,
+        0.1733283380724844
+      ],
+      "geometry": {
+        "separation_m": 1.4e-05,
+        "radius_m": 6e-06,
+        "thickness_m": 6e-06,
+        "delta_n": -0.005,
+        "samples": 16,
+        "topology": "union_outer_disks_minus_both_intact_cores",
+        "modified_area_m2": 5.42036875e-10,
+        "detector_area_errors": [
+          1.4432899320127035e-15,
+          1.4432899320127035e-15
+        ],
+        "fully_core_untouched": true,
+        "no_double_index": true
+      },
+      "basis": {
+        "raw_overlap_abs": 0.06572852861653054,
+        "orthogonality_error": 2.7755575615628914e-15,
+        "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+      },
+      "budget": {
+        "input_power": 1.0000000000000018,
+        "output_power": 0.9926850608465897,
+        "boundary_removed": 0.007314939153568753,
+        "material_removed": 0.0,
+        "balance_relative": 1.5667155073284506e-13
+      },
+      "cpu_field_parity": null,
+      "cpu_propagation_s": null,
+      "geometry_operator_preparation_s": 4.936418700002832,
+      "gpu_propagation_budget_s": 0.7392674000002444,
+      "arrays_path": "resultados/codex/glass_gpu002_20261005_v1__n640Ldz.npz",
+      "arrays_sha256": "80ac70a5d40087eab950856e0bc46939a5bbe5750ca99f84db1916c4bc6af591",
+      "pass_": true
+    }
+  ],
+  "gates": [
+    {
+      "name": "dx320_384",
+      "port_error": 0.0019488698261532138,
+      "core_error": 0.00011764923954959983,
+      "error": 0.0019488698261532138,
+      "threshold": 0.005,
+      "pass_": true,
+      "required": false,
+      "phase_difference_rad": [
+        0.0022717757414511606,
+        0.002016403769864672
+      ]
+    },
+    {
+      "name": "dx384_512",
+      "port_error": 0.0030259426861863627,
+      "core_error": 0.0003975061614298614,
+      "error": 0.0030259426861863627,
+      "threshold": 0.005,
+      "pass_": true,
+      "required": false,
+      "phase_difference_rad": [
+        0.0035040592716023087,
+        0.003821104635644796
+      ]
+    },
+    {
+      "name": "dx512_640",
+      "port_error": 0.0006621412025126642,
+      "core_error": 0.00017322654596363396,
+      "error": 0.0006621412025126642,
+      "threshold": 0.005,
+      "pass_": true,
+      "required": true,
+      "phase_difference_rad": [
+        0.0007473583267656579,
+        0.0008130045695849924
+      ]
+    },
+    {
+      "name": "dz512",
+      "port_error": 0.0015137153943230429,
+      "core_error": 0.0004318097038883417,
+      "error": 0.0015137153943230429,
+      "threshold": 0.005,
+      "pass_": true,
+      "required": true,
+      "phase_difference_rad": [
+        0.0017474144954033313,
+        0.0016141311713694024
+      ]
+    },
+    {
+      "name": "dz640",
+      "port_error": 0.0015370309202064442,
+      "core_error": 0.000500000387714139,
+      "error": 0.0015370309202064442,
+      "threshold": 0.005,
+      "pass_": true,
+      "required": true,
+      "phase_difference_rad": [
+        0.0017672476155239083,
+        0.0016430449704626024
+      ]
+    },
+    {
+      "name": "coverage512",
+      "port_error": 0.0004598683307711448,
+      "core_error": 5.8332256134607796e-05,
+      "error": 0.0004598683307711448,
+      "threshold": 0.005,
+      "pass_": true,
+      "required": true,
+      "phase_difference_rad": [
+        -0.0005350375335794268,
+        -0.0005348473800592429
+      ]
+    },
+    {
+      "name": "linearity",
+      "error": 5.580540584300166e-15,
+      "threshold": 1e-10,
+      "pass_": true,
+      "required": true
+    },
+    {
+      "name": "mirror",
+      "error": 3.005969844360133e-14,
+      "threshold": 1e-08,
+      "pass_": true,
+      "required": true
+    }
+  ],
+  "hashes_before": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/coupler.py": "0d4414e28189d5c8f3054d3a294e8c74dcae1afe37c29c64af21313e627c1576",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "src/silice/gpu_bpm.py": "b90d1f09041d5e5e81837d6f1d00d6efcb547bb0bd48d11ff27190d310634db5",
+    "src/silice/gpu_refinement.py": "5037c91ad6dedb888986a98f39e6162b74b000ada39cec4b8a2b9add12892a43",
+    "scripts/run_glass_gpu001.py": "8be24868e3e96442b42906886ff4a23588eec64ca624a6c3a0e794d1a9641521",
+    "scripts/run_glass_gpu002.py": "c77279420fd2dc7aebb5295f7ee3c3042c6926cae613c9b2ad8ebb99f1a444a1",
+    "scripts/glass_gpu_guard.py": "3151f7b2f835dfcb0a2f380a800495e331912ba2638bb2ab0b3e472a68b3ea44",
+    "Docs/GLASS-GPU-002-CONTRACT.md": "e816edddbc9545e51bfd7eb150c578d56b88a2a0810514aa98f8c2c33ca74d33",
+    "resultados/codex/glass006b_refinement_v2__near_left.json": "0fc375c69b4d00ddce527dbee45fd2b40ab4b08b2f013cf588666e8243eced97",
+    "resultados/codex/glass006b_refinement_v2__near_left.npz": "40e1506d94a89ad73d4555e0d439a507c89a62ff19af829e14701a9a3ad22c05"
+  },
+  "hashes_after": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/coupler.py": "0d4414e28189d5c8f3054d3a294e8c74dcae1afe37c29c64af21313e627c1576",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "src/silice/gpu_bpm.py": "b90d1f09041d5e5e81837d6f1d00d6efcb547bb0bd48d11ff27190d310634db5",
+    "src/silice/gpu_refinement.py": "5037c91ad6dedb888986a98f39e6162b74b000ada39cec4b8a2b9add12892a43",
+    "scripts/run_glass_gpu001.py": "8be24868e3e96442b42906886ff4a23588eec64ca624a6c3a0e794d1a9641521",
+    "scripts/run_glass_gpu002.py": "c77279420fd2dc7aebb5295f7ee3c3042c6926cae613c9b2ad8ebb99f1a444a1",
+    "scripts/glass_gpu_guard.py": "3151f7b2f835dfcb0a2f380a800495e331912ba2638bb2ab0b3e472a68b3ea44",
+    "Docs/GLASS-GPU-002-CONTRACT.md": "e816edddbc9545e51bfd7eb150c578d56b88a2a0810514aa98f8c2c33ca74d33",
+    "resultados/codex/glass006b_refinement_v2__near_left.json": "0fc375c69b4d00ddce527dbee45fd2b40ab4b08b2f013cf588666e8243eced97",
+    "resultados/codex/glass006b_refinement_v2__near_left.npz": "40e1506d94a89ad73d4555e0d439a507c89a62ff19af829e14701a9a3ad22c05"
+  },
+  "peak_cuda_allocated_bytes": 49154048,
+  "peak_cuda_reserved_bytes": 65011712,
+  "local_stability_pass": true,
+  "global_convergence_certified": false,
+  "independent_ADI_gate": false,
+  "guided_eigenmodes": false,
+  "old_failures_preserved": true
+}

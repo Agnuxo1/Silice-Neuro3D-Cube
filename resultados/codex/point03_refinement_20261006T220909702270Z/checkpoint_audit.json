@@ -1,0 +1,703 @@
+{
+  "schema": "silice.point03-postrun.v1",
+  "status": "passed",
+  "assessor_returncode": 2,
+  "execution_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\execution_20261006T220951026234Z_4f76baa8.json",
+  "execution_sha256": "a4755332ed7d5e91827464751321ce3226a03424586d0e62134a8b24697a5f7a",
+  "assessment_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\assessment.json",
+  "assessment_sha256": "94c9d3c37b339c5b9bf8c615d77f40c79d898e91c1327d24d8a11a835b0f3039",
+  "chains": [
+    {
+      "case_id": "n256_ss64_z125",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T220951822109Z_33274a5d.json",
+          "report_sha256": "7130c89b2ea51bcb16594848f9690249997e960496785ea4aedfef0789dc1050",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T220951822109Z_33274a5d.npz",
+          "field_sha256": "ba62f3954ba98eaa9c8d1b9c7553b7d1d00ce339e44bbc185da47c3fc76c2e6e",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T220958805959Z_ec5abe5e.json",
+          "report_sha256": "b31ff6e7b51f5568830e4ab9685cce928b1c696d683b46c36cfdcb1bac3bea21",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T220958805959Z_ec5abe5e.npz",
+          "field_sha256": "c8c2ba4c3a77d641e950a589e54eafc5bf578e8a53a9b26ec2997aa603ebd11f",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221005835556Z_d8d53131.json",
+          "report_sha256": "c9d9febdbd40bb7c2e377c49971afbdbfeb7ae255a135270af326dff6fe56951",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221005835556Z_d8d53131.npz",
+          "field_sha256": "95a253f9eac141a969d52aa954107a212d2689ce43bec3bf4af4b66e84d94877",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221012978113Z_f7464b62.json",
+          "report_sha256": "9ee7a7f8f430990a68fc9cb083e390f7bf66eb9a3ec378eb92a90ec5dcb55ef4",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221012978113Z_f7464b62.npz",
+          "field_sha256": "4bde0bc6a2a27f5927d5d453f1a264d7b5680061f03edf9ce33141e41aeaf8dc",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221019898094Z_fcd7fbaf.json",
+          "report_sha256": "14eacb5640dd69a07b542612204db824251473002628b33ee1059452d22fc90b",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221019898094Z_fcd7fbaf.npz",
+          "field_sha256": "a76415a035ed96ce6ce0d37acaf2985d604c8335d6110f04c09a4e2bdc7df422",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221026832397Z_abcf47aa.json",
+          "report_sha256": "0dd0e3f51099f450394f5532328b830e6bc2603ba3680d52d92586a4e0a6b644",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221026832397Z_abcf47aa.npz",
+          "field_sha256": "81a16f388afd1e7ee228dd3588ee0cf73a44e371f4c48938fa5853c5e0d808cc",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221033804241Z_3b02db33.json",
+          "report_sha256": "f834c7e6dd26051c477de6d73666970790fb75d63a562d7753dc8541e110c222",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221033804241Z_3b02db33.npz",
+          "field_sha256": "c42cc6a3be34e26ac063a436227e7db85eee0f33e11bdff11021267ff12cad80",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221040846858Z_2fd82036.json",
+          "report_sha256": "5e042235d16bbbed1afa3f02b1c2a4fc32fa887b310e83ab1b42d5f1a367b7cc",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n256_ss64_z125\\chunk_20261006T221040846858Z_2fd82036.npz",
+          "field_sha256": "9d1e2808ba5b71b037ec0adca9df096834efae06544ab22305cdd9c85c27410c",
+          "steps_start": 1400,
+          "steps_done": 1600
+        }
+      ],
+      "chain_pass": true
+    },
+    {
+      "case_id": "n320_ss64_z125",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221047879069Z_ca5dc405.json",
+          "report_sha256": "e224ffc2d9d3cf6954899bcd274cd0b003185fc48cb89cb53857cad595b1e0dd",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221047879069Z_ca5dc405.npz",
+          "field_sha256": "eca33c88e6eefd92479a66ffcda5ac4ead62a92c5c5c1868ec76288ef651a300",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221056265010Z_52542936.json",
+          "report_sha256": "3a646a76d26ce24d48610c03d1093df92fbd9640c510e36b0b868f6ed46b95e0",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221056265010Z_52542936.npz",
+          "field_sha256": "84b41b4c7adae86328281e687c7b81d6748872bd57d164dea6ae5ab443f560b2",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221104729101Z_6f73a20e.json",
+          "report_sha256": "38f2d94e9ff99be73d2853596b560422caa50c1e1a821dafa19694d4cdbb8b33",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221104729101Z_6f73a20e.npz",
+          "field_sha256": "e05e6681f9fddde93904229d2325277369579412871f2c71a7c0b010d3184d53",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221113124382Z_ecc35ba9.json",
+          "report_sha256": "7de7929347622f050cefa1917eb16ed47c100f3a8996f7b278d9d29be79549d0",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221113124382Z_ecc35ba9.npz",
+          "field_sha256": "9512ff29be54c33655467fdb3030624f7abb9c5befa118c0c21bbe9fa4ebb156",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221121367871Z_1f415672.json",
+          "report_sha256": "2f12e287340a59eddb212a966fe1b92f4478d5fa1d02f04caa5942de8a7755d5",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221121367871Z_1f415672.npz",
+          "field_sha256": "9f2baaaf5b802028c9634d535f3fe419098da321004ae2dd8f107b9dedf65691",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221129501077Z_4e649a70.json",
+          "report_sha256": "034699d75ec0333f0f87528b16e8ae07e809768679ec9781df5aa7c7110ce92c",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221129501077Z_4e649a70.npz",
+          "field_sha256": "ea239d89b3f3d43799e8f0a12f478295fd5aa5f48143012a66d6726c1b40435c",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221137729264Z_315a0864.json",
+          "report_sha256": "53e1629034196caf32fc5d23aab7c41216bbb95e8dcf85d081dc505291fa1112",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221137729264Z_315a0864.npz",
+          "field_sha256": "43a640036ba5f4a314b874f0e995e5a313beae36de00b8c0586080978a23e269",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221146025308Z_5f2f2a7c.json",
+          "report_sha256": "4e05e732399c5eafcf56df24b965ac2936a89da802f5beb797b3dbcc38d9a0a5",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n320_ss64_z125\\chunk_20261006T221146025308Z_5f2f2a7c.npz",
+          "field_sha256": "3bbb281a2858206a0c41443fdd49c9de397960e3e67b66df97f2f3062ca0596f",
+          "steps_start": 1400,
+          "steps_done": 1600
+        }
+      ],
+      "chain_pass": true
+    },
+    {
+      "case_id": "n400_ss64_z125",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221154461777Z_43be986d.json",
+          "report_sha256": "0b2dd788c339ed9ff6955f29f7dba6fe5adc943772c170df7374e5be38363988",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221154461777Z_43be986d.npz",
+          "field_sha256": "18741c333a1c6c98bbca3c0fab6e8f21fdf8eca174b7502b50aa746190246ef6",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221205690393Z_d1b628db.json",
+          "report_sha256": "83579e5bfa59fa18df40e6de9f794302195cdd7414864e6eee1617b141b9a5a9",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221205690393Z_d1b628db.npz",
+          "field_sha256": "f79138d39ab898d1524c0ac036f0e0e62cada881fd062f9a2288c94488481962",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221217351264Z_b7a07353.json",
+          "report_sha256": "63ec58d87710219e021e6669ff572610ea21058121192388964c2b1ac3b4a59f",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221217351264Z_b7a07353.npz",
+          "field_sha256": "8f2e11386ba3847288381cba5db7852365b7a8ecb255f97b1bda48b6537f2593",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221229137839Z_83227ccc.json",
+          "report_sha256": "d48838d721bc17ec0c01b01f0f9a95844cebbfd1b0305997c7a624c021008d8e",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221229137839Z_83227ccc.npz",
+          "field_sha256": "12f5240c1ebd64cc915eff33add8a82a33fc1bec2b5d0f3a2d9d4e530038d18f",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221240461304Z_ff567901.json",
+          "report_sha256": "f86b261010d712eae43584e95062a5c102caff927db31d2fbda2b5ce535baad8",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221240461304Z_ff567901.npz",
+          "field_sha256": "be6460911f14b1da1efd48da968565abb13a03b81b3de2496dae31198db5ef62",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221251890799Z_852299cc.json",
+          "report_sha256": "437f4d3c3cdd725cc248a15f8739b2d5f71d3f71f5c27d1e7da6d76566a997e4",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221251890799Z_852299cc.npz",
+          "field_sha256": "f03b156cbdce4964bd1295bb5516962f8b0955e854545ba550087147dd04e111",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221303451631Z_88daf24b.json",
+          "report_sha256": "7ebb21bdaee10b2c29b3889833cef5b1243d4e2e2714e9633828eec09b31675a",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221303451631Z_88daf24b.npz",
+          "field_sha256": "fc97d6a9c644c73f097a2842d63d2c4042a8e540284b1abb82c37c66a65ffe37",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221314801195Z_ae920e67.json",
+          "report_sha256": "d6a77a3928bd8ca7ab8836baee8998f84c858e4a1ecb1a15b8ecfce059a6da8f",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z125\\chunk_20261006T221314801195Z_ae920e67.npz",
+          "field_sha256": "49c57492f98df34a61d5ed4b09c007f60a590ff342d1d161b402c42a4c141021",
+          "steps_start": 1400,
+          "steps_done": 1600
+        }
+      ],
+      "chain_pass": true
+    },
+    {
+      "case_id": "n500_ss64_z125",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221326220780Z_a12bc8c6.json",
+          "report_sha256": "ef3e4c50ebfed08c827bb32342b7aeccb4d9f90e30f7b54600468f3bc9d03ffc",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221326220780Z_a12bc8c6.npz",
+          "field_sha256": "af0522a5e3f13149d282977e318606f22825a63fa1d4e40853ebd53750c2fbdc",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221343587185Z_c8dd2efe.json",
+          "report_sha256": "bab16b7994c504911d6a460179fd31a1ad52296d8aea4f6c8b93acc3d349ebb3",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221343587185Z_c8dd2efe.npz",
+          "field_sha256": "312110f24e4156ef8e96d8d04e350e02a91402d03de8456a60f0829ae5ba5a8b",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221401626232Z_03ed7ab9.json",
+          "report_sha256": "3c6652c45022079a5dd24808d9255bb3b565d0d1fe882fa0632acf370537cf28",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221401626232Z_03ed7ab9.npz",
+          "field_sha256": "14c3641d64b819ebe143294caaf12b908c4b91be22dae5152ec6257805614100",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221418594471Z_1f9c97b8.json",
+          "report_sha256": "0248d1376ef7832b6203d8067c641a79335ad5b72b49c24143a8260049e11618",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221418594471Z_1f9c97b8.npz",
+          "field_sha256": "8211f494bd67bd27d250d92845cb5a256bba75eac171006a680c5c45a56346de",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221435962666Z_aeed0dcc.json",
+          "report_sha256": "d95230c2b6072ed575796d7921bbd9dbafbec8a7501cff6dc286abf7e36d3522",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221435962666Z_aeed0dcc.npz",
+          "field_sha256": "c039b4f45e1343910af99283cd4785b89ae72f0bc1e2aee3ef57b6cdc3e21799",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221453800600Z_c5400d38.json",
+          "report_sha256": "426710022fcde5e27538112f4afb05ac117bc36c2b40280c2f267c181a92d1e3",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221453800600Z_c5400d38.npz",
+          "field_sha256": "4ca9c0905e6510bcb669d7c0022c18dd768158b4dd45ae438b8e951fd442dd26",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221511946881Z_40a3c7c8.json",
+          "report_sha256": "540efa126e7618b6554b2b41f1113c771241cdcb919910e93224ffbefe1658a7",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221511946881Z_40a3c7c8.npz",
+          "field_sha256": "bc4930fa2aea3760794c670b354ed198369b24764edb741bb5517a4c80481f89",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221528983238Z_75498cf7.json",
+          "report_sha256": "3a0b60ecb46dde56ca6023ad96737bb7181f3431bf5e803a6a4045b8c8a9c902",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z125\\chunk_20261006T221528983238Z_75498cf7.npz",
+          "field_sha256": "4b132ad09114ad48dbcfe5ca01e9083ed5cf9f37ac7fecf942e50318e01acb90",
+          "steps_start": 1400,
+          "steps_done": 1600
+        }
+      ],
+      "chain_pass": true
+    },
+    {
+      "case_id": "n400_ss32_z125",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221546931057Z_ff81fea6.json",
+          "report_sha256": "b46e3ee1fbd7af0c28484594a654f86123878d74dbd35bccfb07d4ddab559f98",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221546931057Z_ff81fea6.npz",
+          "field_sha256": "d31089669f46da5e4bf8356c9ec9affb4522ce336c3010faa7aa76e52da99123",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221558409208Z_cdba6f5f.json",
+          "report_sha256": "ff09ef3fb56aa46c58a14342b2bc28264f5190f7802efc69598524a378ebb9e8",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221558409208Z_cdba6f5f.npz",
+          "field_sha256": "6fdcf68363c05f38b0595cc708efb3571f071f8836501755b633fbbddb01411c",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221609587393Z_6cc4ad5d.json",
+          "report_sha256": "a6e5f3ebf136663f6a1745df852fcbb087e6962e86fa0e656f0e317b7a239cec",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221609587393Z_6cc4ad5d.npz",
+          "field_sha256": "55345fccda6b3739313a14ad587783be2100ab9c1fcd1d81e56c8bb9dcd71fb9",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221620868218Z_4e5cf08d.json",
+          "report_sha256": "4ba3a2f3dfe7af4b1da788d3b0ad39c7d7ca175af07aac2af26ec93910ed64b9",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221620868218Z_4e5cf08d.npz",
+          "field_sha256": "310e94f4c86db0d38f1311950a2dfce4b9dce4685a5b309463c4694acebde12e",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221631967374Z_24c3ef6d.json",
+          "report_sha256": "3c579dff1d959f9f91baeaf528e6853e8d0638bf95f4b8487a395e16f329f96c",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221631967374Z_24c3ef6d.npz",
+          "field_sha256": "bbb0f7a5c547cfb4198c84f406954233b02d4ed56ff9b0c6621a90d19ec08ae2",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221643035523Z_70ed826f.json",
+          "report_sha256": "e41d065e605bb6280d4b8ea1ccfbd8c087a9649bf9ebb36dbd49a49dded1e1af",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221643035523Z_70ed826f.npz",
+          "field_sha256": "730658acb6016563e4a7f864190fa70b6805a7ccd445d8462f5bdd0e3b698c94",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221654397268Z_2d167fa6.json",
+          "report_sha256": "4ff8f8ccf019d27e9d2161499c2d21007c306ef2646b161840c685d0c8852b19",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221654397268Z_2d167fa6.npz",
+          "field_sha256": "202b0dbacca312accafd02cd0f0ba9ea887a2340fe0d69890830f9587e7038d6",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221705462199Z_9bcfb210.json",
+          "report_sha256": "3d79c9733873832d1f54b367ffc483cfd033e7de46827357d93323d18616073a",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss32_z125\\chunk_20261006T221705462199Z_9bcfb210.npz",
+          "field_sha256": "f298a611d48ba98086219f6d60d6b48b7ffeb6d5ab4753c72c42d03c79191093",
+          "steps_start": 1400,
+          "steps_done": 1600
+        }
+      ],
+      "chain_pass": true
+    },
+    {
+      "case_id": "n500_ss32_z125",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221716616294Z_fd9b61d8.json",
+          "report_sha256": "8e02b786285852b60f03b379039cfd2b5086e2fa4a9f6ab252637afdcd5c62d7",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221716616294Z_fd9b61d8.npz",
+          "field_sha256": "1c4f9eabdcfd3fbdd894a380e57b74f565ee47578b22e35f9300e37bd14f0618",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221733680319Z_a2412638.json",
+          "report_sha256": "c881bc0d82376ada52cd296bb574968fe5d57566d2166e070c0562aacc7d0ef3",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221733680319Z_a2412638.npz",
+          "field_sha256": "3456d9979e808abda7b24520db6978ad4fea129283926fd1ad477ecb0cdd4df2",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221751658480Z_b336adea.json",
+          "report_sha256": "fb38653c7043969e7a74231a55d4206686a8fea6cfb11a50be3de205d68ba04f",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221751658480Z_b336adea.npz",
+          "field_sha256": "f0b6c5181c0cec624254bf7aac017007bc8f9f0409c1f74e38b738f889bd7e8b",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221809410159Z_53be3ec6.json",
+          "report_sha256": "d136dfee0ccf0a6445095e535c6edf48c5048fab4dc92328c54ba5ac0ce4d1a8",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221809410159Z_53be3ec6.npz",
+          "field_sha256": "a4bbc416fb31894672e0aac6b576259fe1d78aef51818d14e1944469ce0f9f18",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221826934747Z_cb11282d.json",
+          "report_sha256": "e21b3f9a8c4cde23192f72cbff7634044220bfc007f4bf90f84062abb371febc",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221826934747Z_cb11282d.npz",
+          "field_sha256": "f6eb9192ef169b0cb1feadbc25c904aac86472fde2b6f0b075f7de71b3c627e8",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221848093497Z_6d4d84b3.json",
+          "report_sha256": "14cef70c5c52b69eee3118889b0e7e78ee1df57643181c54c1b5d7b0e3ad251e",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221848093497Z_6d4d84b3.npz",
+          "field_sha256": "951350df9565d5d54e63b897e3592ff85054eb4684ba3afbe58d849e13dafd1c",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221908384577Z_9c83ed9c.json",
+          "report_sha256": "646e6c96ad072ed6419dc1ceb4324802d98d1c99bbb1cb6c3dfc245070d2d40c",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221908384577Z_9c83ed9c.npz",
+          "field_sha256": "9ce99e534827aace6e82ce5f8902a2deab3092dcf08b2b9622a21b0cff26e3be",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221927512467Z_fb3e084a.json",
+          "report_sha256": "667801ebda10cc65fc221eb6627df810b5dbe7a0a2e348494cfe57d2cd0f8620",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss32_z125\\chunk_20261006T221927512467Z_fb3e084a.npz",
+          "field_sha256": "c811323ee20e2dd900a543ec60bec9f595524f53567fc515c24e3902a1fa288c",
+          "steps_start": 1400,
+          "steps_done": 1600
+        }
+      ],
+      "chain_pass": true
+    },
+    {
+      "case_id": "n400_ss64_z0625",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T221948383966Z_31b31bc8.json",
+          "report_sha256": "29800636dd88bd87de8a339101672a73dd9d9dd55f7baa75e13f0d7bf740fe6a",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T221948383966Z_31b31bc8.npz",
+          "field_sha256": "e63a8c30ef46c4f9bd2a31981a59e2327a81579331a4f23e3258afc5ea56f989",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222002254142Z_634d27f4.json",
+          "report_sha256": "e15a05508eca0ecf86f46cb8a046cd9364716cbc40a5b753a730ecf1ff1dec72",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222002254142Z_634d27f4.npz",
+          "field_sha256": "ebcf169b098dfc37bd2dc4e71a6b34df55fa3c64a895599d02d5d3b6bc07729a",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222016382703Z_49c07b66.json",
+          "report_sha256": "8393c64ddde9b4a9a15a43bdd809e65df77d418b254147287e4a2d0e3fb29d92",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222016382703Z_49c07b66.npz",
+          "field_sha256": "d02148c6c86f8b3385e16799dcd3c29145e7acca739db081f1a4d2e9d9af36b2",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222031190189Z_0a739af6.json",
+          "report_sha256": "581629b4a41f7e51b1d8f8689c62328a940aaaa6f50a34dcb9ad519c04cd14f1",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222031190189Z_0a739af6.npz",
+          "field_sha256": "63b2eaa36197a9d02562f6c47d207e041251ef77aef409a9cb656639f042861b",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222042494032Z_4bf7dcc4.json",
+          "report_sha256": "fe10e592637a22d5f16518b0f50b5a815b040c94972fd2a79e74290f46c98220",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222042494032Z_4bf7dcc4.npz",
+          "field_sha256": "5095c738e8d888344ab20559dc7db3f02bbed1e7c18ba00aa45b10f19ab48e00",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222053792582Z_5d6a0a57.json",
+          "report_sha256": "7015d0c536bd4f68f85179717056cca609a1e18656442d69160bcec33cdc8f4f",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222053792582Z_5d6a0a57.npz",
+          "field_sha256": "172473833f031a48615103731a89fbb158cd6761ac95c8cca6f09f51db0ef8b3",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222105403666Z_2175452b.json",
+          "report_sha256": "906688fd7cfa2b0e1bab353b75abd290e83aab4ec47113e2662f36c4490979b6",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222105403666Z_2175452b.npz",
+          "field_sha256": "71b0394a0b65f35c6fc43cadd56768c14345efb3f0e68cf87a6e218f9a4fd504",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222117046421Z_7b3dca99.json",
+          "report_sha256": "ccd75d0d69ef81e110a8d5d4c2d66fe2d42637a2fd4d8752ed94e503e53b478d",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222117046421Z_7b3dca99.npz",
+          "field_sha256": "bc2698579a9f9abf18bf8b372e59762e9b7e120cc88d572949f9678bfe730940",
+          "steps_start": 1400,
+          "steps_done": 1600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222128387204Z_1978bb69.json",
+          "report_sha256": "7eb0db54422d9dd31c80230660026048d413df56029ab641e3f14031408d2e7f",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222128387204Z_1978bb69.npz",
+          "field_sha256": "1b4108110c0c1837337a18f1700d6188616ab8df1f273609ed598c242f69b7cc",
+          "steps_start": 1600,
+          "steps_done": 1800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222139790468Z_5046d85a.json",
+          "report_sha256": "548ea385fc2d67a04071f97d3dd65308f3ed425794c5bf2b6ad5bfa7b6828cb9",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222139790468Z_5046d85a.npz",
+          "field_sha256": "aa5416a94a92c8f3aa7b8c4ab8d733602eae38325e92fa0bddbb21d5a5c91733",
+          "steps_start": 1800,
+          "steps_done": 2000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222151357618Z_e867050a.json",
+          "report_sha256": "2686b3d9d83edc4985fe377a18f35d534eb274f5ae40e871d2955b97b96c43d1",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222151357618Z_e867050a.npz",
+          "field_sha256": "f787ae0f946e4cbe0ffa0ce1259cba65ccecee009365f136dbdc56cffdcb8873",
+          "steps_start": 2000,
+          "steps_done": 2200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222203857959Z_2ae873c4.json",
+          "report_sha256": "fcf49f099d6373ede4d6476dea29a7029988cc581f8e5b143d1081ac9bd677c6",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222203857959Z_2ae873c4.npz",
+          "field_sha256": "ea430129c82dcf64356a2f064e77bca6859a4ae59e67505e661ca502cb4d8833",
+          "steps_start": 2200,
+          "steps_done": 2400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222218243726Z_ea949987.json",
+          "report_sha256": "08153f411fe75b1f13675716e9cb8701b556038a6a8a1b880c240e430c727b69",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222218243726Z_ea949987.npz",
+          "field_sha256": "fee4794eed39d8453ffe0054c26b8cae004ed6e9d4a20b146013adf025093af6",
+          "steps_start": 2400,
+          "steps_done": 2600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222230966074Z_f1d3be5c.json",
+          "report_sha256": "29780b39c3e53b1be7f8e6f76e0e5eb206418cc65dabff2f035efc96456fbdb6",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222230966074Z_f1d3be5c.npz",
+          "field_sha256": "21065bf60b4528e2e5f7c0092034079b5315ccdbebf77fc6541ec635f59f0737",
+          "steps_start": 2600,
+          "steps_done": 2800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222245060672Z_a96942e3.json",
+          "report_sha256": "cfecc1ca9fdae1f3e69b18bb5b055a8585d1a110848b5273cdf5c1a06f047b7a",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222245060672Z_a96942e3.npz",
+          "field_sha256": "968c6d693eee27819b5245a85a95c4f4d4f7b03a6dabd0a212719ef9727d4e7a",
+          "steps_start": 2800,
+          "steps_done": 3000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222257930258Z_e5c21615.json",
+          "report_sha256": "54ab4b0941f1e726f92636a754fb36912de9ea1ae293331c73584b6e2eb3004b",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n400_ss64_z0625\\chunk_20261006T222257930258Z_e5c21615.npz",
+          "field_sha256": "c5f7e0f78b84669493b088c9c0146d59067c1b45cf00b26e6deae6c7fa9a1cff",
+          "steps_start": 3000,
+          "steps_done": 3200
+        }
+      ],
+      "chain_pass": true
+    },
+    {
+      "case_id": "n500_ss64_z0625",
+      "checkpoints": [
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222310021556Z_e18c63b5.json",
+          "report_sha256": "c37af6d1841a19ebd21471248012dd3547d40a02c55ae113fed94d4040ee0fc9",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222310021556Z_e18c63b5.npz",
+          "field_sha256": "a8e2d6a00f50929e91611792d97fa4ea01f8a0137c464695da41d5beaa5acc27",
+          "steps_start": 0,
+          "steps_done": 200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222327709968Z_05e089b4.json",
+          "report_sha256": "45cf2cc3da25d2095fac115ad0676de1e235c5f2412f93316d785a528787e8f8",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222327709968Z_05e089b4.npz",
+          "field_sha256": "08eb8dbff7929a8480fdc2ddad2042b1e1cf18f718f2c90acfea33b56eef3983",
+          "steps_start": 200,
+          "steps_done": 400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222345785738Z_a06a5ca2.json",
+          "report_sha256": "fe88006c5949f04b0aa7f5173bd534e3dfaa5bd903c83d8120f2ac7eabebe105",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222345785738Z_a06a5ca2.npz",
+          "field_sha256": "6b7d82067288127ae55e2e8bb15b3f881ea0c8b7a651a1a21732906acca2d4d7",
+          "steps_start": 400,
+          "steps_done": 600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222403787479Z_25c9405e.json",
+          "report_sha256": "a921fbe1e0416a012d1675a6065fdd979a92e59c1dca6ee541620848632e252f",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222403787479Z_25c9405e.npz",
+          "field_sha256": "73128805e7f1d8544d2c88c4f46f555b977312f074ac606d69d9c2040b0c80a0",
+          "steps_start": 600,
+          "steps_done": 800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222421078144Z_839bacc9.json",
+          "report_sha256": "e6668d9a41cd69ac55aa83b0257cbb0c28bea5caba339fc7fdadca6bd43ab6c2",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222421078144Z_839bacc9.npz",
+          "field_sha256": "14db1e9e9396dd08069bd58a82d8c5a21351afe81726827e9863b58f5155da22",
+          "steps_start": 800,
+          "steps_done": 1000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222438448818Z_c7943884.json",
+          "report_sha256": "1cd9db4b1e194aaeddddcf5a41328d8579ff22373d82eb56f91675418f0e985b",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222438448818Z_c7943884.npz",
+          "field_sha256": "429eae72960ac4994b48cb7a0123be6d356f9106bada37edb025b810d168ce04",
+          "steps_start": 1000,
+          "steps_done": 1200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222455453163Z_7267e4f9.json",
+          "report_sha256": "3700e614845b5da9c9f510d88559ecbedb44fb197704dfdf0faae524475d2f53",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222455453163Z_7267e4f9.npz",
+          "field_sha256": "38eceabd9e40dd79cd42ea5e48b7ea7cd4e77d02b018ed8f4882f60e0071143f",
+          "steps_start": 1200,
+          "steps_done": 1400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222513002937Z_a501bd6f.json",
+          "report_sha256": "6a74eaff7e2d5aecbd897c094b110d6e9c9f87868c1af2243eab1270019582e2",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222513002937Z_a501bd6f.npz",
+          "field_sha256": "82c08022f4c63f4542bdbde4d2d7f6a82084b18b78749edf513c9bca0bf40fa3",
+          "steps_start": 1400,
+          "steps_done": 1600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222530256738Z_c710dbe7.json",
+          "report_sha256": "592c62017129fd9bbd248453cb725d1415dda45fa2e0bdad8bf292e94868e4a6",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222530256738Z_c710dbe7.npz",
+          "field_sha256": "557890ada51c13aa776dff05bc851407c486f94cb7e69fadd95c025143e3dfd1",
+          "steps_start": 1600,
+          "steps_done": 1800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222547895782Z_293f171d.json",
+          "report_sha256": "c632d5477fc8bb8b9bbf6b1342781b5958824553a0f4fd82ed8e9bf2b28a43a2",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222547895782Z_293f171d.npz",
+          "field_sha256": "34c81ae3be22e0d9935eca1c3698b91742cde3c233d016c4450d00b6db3aa0aa",
+          "steps_start": 1800,
+          "steps_done": 2000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222606518981Z_27da3d40.json",
+          "report_sha256": "1351c137091b701a39f0f1915eb7645b2d6630dc2becc73dad58cfc040d78c3e",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222606518981Z_27da3d40.npz",
+          "field_sha256": "1fef5574ee1710ce56978bfe4524372835581890bd86ff5f50b1827bfaa6abe8",
+          "steps_start": 2000,
+          "steps_done": 2200
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222625891582Z_aad676d8.json",
+          "report_sha256": "aefafbcb33d53b0d9e67f2887b2b6b63bebc30272d658f24e2faf09b5aa4a105",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222625891582Z_aad676d8.npz",
+          "field_sha256": "4da467171aef7a3f84c2390f17b4a2153b3bc0f5552dcf82b14c934ad8c2c27c",
+          "steps_start": 2200,
+          "steps_done": 2400
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222645052910Z_d5e5dcc1.json",
+          "report_sha256": "00d57f941ddafd55f8fdaa2f1723a9463ace7027595936d4e81c235d1446b8d4",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222645052910Z_d5e5dcc1.npz",
+          "field_sha256": "47d1076bf5545a8e016b108d68385ad075a52d1f72ac41eead3d5b57dd107619",
+          "steps_start": 2400,
+          "steps_done": 2600
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222702791620Z_bbf0f919.json",
+          "report_sha256": "db275d7dd305ac26cae8770be7eae0bfdfd117dc53db116bfca3a8ac9645efab",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222702791620Z_bbf0f919.npz",
+          "field_sha256": "782e60c8951d5bbec59710c2a2c14074cebfd3f1d2e4ada51df288c0f6d17735",
+          "steps_start": 2600,
+          "steps_done": 2800
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222721558625Z_ff25dff4.json",
+          "report_sha256": "e9ce9f4b268a1941ec1a99eb7c26dfb979dfb40a3ff89d5d6e080375f04c72a7",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222721558625Z_ff25dff4.npz",
+          "field_sha256": "b54c325b3d9f0d3d87c8fb578d2564b5f4c1367c9f3a117d8d857407095c3a2d",
+          "steps_start": 2800,
+          "steps_done": 3000
+        },
+        {
+          "report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222739456632Z_a8e122ab.json",
+          "report_sha256": "9333c89973cf388642ec4e459345860c92fe365455284e12363d2566a9226984",
+          "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\cases\\n500_ss64_z0625\\chunk_20261006T222739456632Z_a8e122ab.npz",
+          "field_sha256": "7c96b5a173b6a5fe3d7de544770d0f9e87df82422bd999c20ba50ac9dcdce4fe",
+          "steps_start": 3000,
+          "steps_done": 3200
+        }
+      ],
+      "chain_pass": true
+    }
+  ],
+  "checkpoint_count": 80,
+  "tracked_inputs_unchanged": true,
+  "tracked_file_count": 392,
+  "elapsed_s": 2.759751600038726
+}
