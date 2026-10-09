@@ -196,11 +196,12 @@ El [inventario actual](Docs/PROJECT-STATUS.md) distingue ejecución, criterios a
 Detalle en [`Docs/`](Docs/), [`coordinacion/respuestas/`](coordinacion/respuestas/) y [`resultados/`](resultados/).
 
 La [réplica independiente V2](Docs/GLASS-007-V2-RESULTS.md) confirma que
-96trazos retienen un8.5% menos potencia en núcleo que el continuo y separa
-el efecto de promediar el índice del efecto del detector. Los GIF anteriores
-conservan datosV1: no son figuras deV2. No se han certificado frontera,
-convergencia global ni fabricación. Ambos fallos de escritura propios se
-conservan junto a la continuación por hashes, sin repetir cuatro casos válidos.
+96 trazos retienen un 8,5 % menos potencia en el núcleo que el continuo. La
+misma réplica separa el efecto de promediar el índice del efecto del detector.
+Los GIF anteriores conservan datos de V1: no son figuras de V2. No se han certificado
+frontera, convergencia global ni fabricación. Ambos fallos de escritura
+propios se conservan junto a la continuación por hashes, sin repetir cuatro
+casos válidos.
 
 ### Qué **no** demuestra el repositorio
 
@@ -256,7 +257,7 @@ Reglas: contrato antes de medir · umbrales no se relajan después · fallos ret
 
 - [x] BPM escalar paraxial + segundo solver radial + solver 2D independiente
 - [x] Camisa continua y de trazos discretos (modelo ideal)
-- [x] Observable con área parcial y perfil por cobertura (009b/d, réplica007V2)
+- [x] Observable con área parcial y perfil por cobertura (009b/d, réplica GLASS-007 V2)
 - [ ] Completar frontera y fase en guías: 009c ejecutado con validación parcial en vacío
 - [ ] Perfiles/trazos medidos de SK1310 (necesita el PDF completo) y modos reales
 - [ ] Cerrar el acoplador: piloto GLASS-006b ejecutado; base modal y contraste independiente pendientes
