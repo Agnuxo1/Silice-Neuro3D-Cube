@@ -54,3 +54,19 @@ Tres iteraciones de diagnóstico sin superar V1 a V5 detienen el trabajo, y el i
 ## Lo que este contrato no afirma
 
 Nada sobre la trinchera con fuga, sobre el BPM, sobre el proyecto en su conjunto ni sobre fabricación. Los resultados solo informan sobre la validez del modelo escalar en la guía de salto ideal, que es la analogía del límite de espesor infinito.
+
+## Enmienda E1 (registrada antes de calcular)
+
+**Motivo.** Con a = 6 µm, los contrastes Δn = 0,001 y 0,003 dan V = 1,307 y 2,263. Ambos quedan por debajo del corte de LP₁₁ (V = 2,405), así que H2 y H3 no tendrían modos LP₁₁ que comparar.
+
+**Cambio.** H3 se evalúa a **V constante** (V* = 2,9202, el valor de Δn = 0,005 con a = 6 µm). El radio se ajusta con a = V*/(k0·√(n1² − n2²)):
+
+| Δn | a (µm) | V |
+|---|---|---|
+| 0,001 | 13,407 | 2,9202 |
+| 0,003 | 7,743 | 2,9202 |
+| 0,005 | 6,000 | 2,9202 |
+
+H1 y H2 no cambian: se evalúan con Δn = 0,005 y a = 6 µm. Los umbrales 10⁻⁵ y 10⁻⁴ y los criterios V1 a V5 tampoco cambian.
+
+**Validez.** La enmienda se publica antes de programar el solver y antes de cualquier cálculo de n_eff.
