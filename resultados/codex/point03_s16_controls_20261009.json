@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-09T03:57:01.109783+00:00",
+  "controls_pass": true,
+  "known_laws": [
+    2,
+    3
+  ],
+  "both_observables_mandatory": true,
+  "temporal_discrepancy_is_observable_specific": true,
+  "false_temporal_prerequisite_rejected": true,
+  "zero_increments_rejected": true,
+  "no_T96_results_read": true,
+  "optical_fields_created": 0,
+  "sources": {
+    "forecast_point03_s16.py": "68d5f69b50b2ec8e59d91d6bc887fc85bfb2dc464cc8bc98749d21ef57ceeed9",
+    "audit_point03_s16_forecast.py": "ddead0b924d9d57b48fe62d2d4013f95df9927e5e5d8019947b273a1b7621355",
+    "check_point03_s16.py": "60e57451da5d292384f2364532886703a82db32628c1de0b9cee88bb9650a329",
+    "point03_fem_spatial.py": "de20387133fe2c3e9c4780f9ffe46d976db450132511693d22b25f25e34d8a38"
+  },
+  "point03_closed": false
+}
