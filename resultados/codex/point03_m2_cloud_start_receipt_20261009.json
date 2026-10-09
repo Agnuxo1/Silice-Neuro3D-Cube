@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-09T02:18:39.258093+00:00",
+  "preregistration_commit": "626310e1b3902874e9c670054a12cf40ddaa431a",
+  "latest_remote_head": "830bb1173643c7111553027ac2ffea1dd7726bec",
+  "source": "Colab UI and progress.json read through browser tools",
+  "notebook_url": "https://colab.research.google.com/drive/1NYr2uO__aTywj9xTcA64oTHnFwL7RiyU",
+  "tab_id": "791982998",
+  "generic_resource_check": {
+    "available_ram_bytes": 12659486720,
+    "free_disk_bytes": 93637111808
+  },
+  "pinned_environment": {
+    "python": "3.13.16",
+    "numpy": "2.2.6",
+    "scipy": "1.15.1",
+    "psutil": "6.1.1",
+    "available_ram_bytes": 12459216896
+  },
+  "package_received_SHA_CRC_pass": true,
+  "package_members": 202,
+  "package_sha256": "146fecfa22ca7d8c0624461f9ffae59d47a049e057b3c86d6f1eb766fe6f05e6",
+  "last_progress_read": {
+    "index": 54,
+    "total": 64,
+    "retained": 83,
+    "original_elapsed_s": 11985.022818
+  },
+  "computed_checkpoints_at_last_read": 86,
+  "independently_audited_retained_checkpoints": 83,
+  "full_temporal_assessment_available": false,
+  "original_budget_s": 22000,
+  "extra_resource_wait_s": 0,
+  "automation_id": "silice-ventana-de-doce-horas",
+  "window_deadline_utc": "2026-10-09T13:45:00Z",
+  "point03_closed": false
+}
