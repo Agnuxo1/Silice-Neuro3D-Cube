@@ -1,0 +1,1 @@
+{"integrity_pass": true, "accuracy_pass": false, "raw_frames": 84, "point03_closed": false}

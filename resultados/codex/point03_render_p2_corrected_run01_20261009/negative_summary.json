@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-09T10:29:30.205372+00:00",
+  "raw_frames": 84,
+  "integrity_pass": true,
+  "strict_metric_agreement_pass": true,
+  "accuracy_pass": false,
+  "failed_accuracy_rows": 63,
+  "max_complex_error": 0.0001620808784123121,
+  "max_relative_l2": 9.548178802696875e-05,
+  "max_power_difference": 1.7472283952324474e-05,
+  "max_outside": 0.0,
+  "max_dark_ratio": 0,
+  "zero_timing_rows": 0,
+  "child_s": 3.442037699998764,
+  "guard_s": 4.046447100001387,
+  "worker_s": 1.580528,
+  "min_ram_gib": 7.831996917724609,
+  "max_vram_gib": 0.8173828125,
+  "max_owned_rss_gib": 0.24571609497070312,
+  "runtime": {
+    "python": "3.11.15",
+    "numpy": "1.26.4",
+    "perf_counter_resolution_s": 1e-07,
+    "thread_caps": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "engine": {
+    "version": "4.5.14 LTS",
+    "renderer": "NVIDIA GeForce RTX 3090/PCIe/SSE2",
+    "vendor": "NVIDIA Corporation",
+    "backend": "OPENGL"
+  },
+  "adopted_as_success": false,
+  "physical_validation": false,
+  "network_validated": false,
+  "general_speedup_claim": false,
+  "point03_closed": false
+}

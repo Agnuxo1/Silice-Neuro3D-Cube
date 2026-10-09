@@ -38,7 +38,7 @@ comprobar ese significado; el aspecto de una imagen no valida la física.
 | F1, h=0,35 µm | Última lectura confirmada: 96/192 campos a las 07:45 UTC | Conexión de Chrome perdida; estado posterior sin certificar. Auditoría final pendiente |
 | R1 P2 en Blender/RTX 3090 | 84 fotogramas conservados; 63 fallan precisión | Lectura defectuosa y tiempos insuficientes; [negativo retenido](Docs/POINT-03-RENDER-GPU-RUN02-RESULTS.md) |
 | P0, lectura gráfica calibrada | Seis marcas GPU auditadas, error máximo 6,68×10⁻⁸ | Coordenadas/canales y reloj/cierre aprobados; [calibración](Docs/POINT-03-RENDER-BUFFER-RESULTS.md) |
-| R2 P2 corregido | Protocolo, controles y fuentes publicados antes de campos | Preparado; último preflight bloqueado por RAM <8 GiB. [Contrato](Docs/POINT-03-RENDER-P2-CORRECTED-CONTRACT.md) |
+| R2 P2 corregido | 84 fotogramas nuevos: integridad y tiempos aprobados; 63 fallan precisión | Error máximo 1,62×10⁻⁴ >5×10⁻⁶; [negativo auditado](Docs/POINT-03-RENDER-P2-CORRECTED-RESULTS.md) |
 | Software CPU | 51 pruebas aprobadas nuevamente para esta publicación | Ninguna inicialización GPU; [registro](resultados/codex/point03_main_cpu_tests_20261009/report.json) |
 
 T96/Q4 permanece abierta: faltan F1 completa y auditada, convergencia espacial,
