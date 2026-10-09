@@ -44,3 +44,13 @@ En los diez casos a = 10 µm, la malla sola (N 500 → 700, dominio fijo) cambia
 - **P4.** La oscilación persiste: al menos un cambio de signo en las diferencias sucesivas entre N = 500 y N = 1800. Si no hay cambio de signo, la no monotonía era transitoria.
 
 **Ejecución.** Un proceso por caso y malla (para cumplir el límite de 30 s), salida en `conv_n_a10_ext.json`.
+
+## Enmienda E3 (registrada antes de ejecutar)
+
+**Motivo.** Todo el barrido en N usó el dominio nominal (R0 = 70 µm, Rmax = 150 µm). Falta comprobar que el dominio no sesga los resultados en malla fina.
+
+**Prueba.** Para los diez casos de a = 10 µm, se compara N = 1400 con el dominio nominal frente a N = 1400 con el dominio B (R0 = 90 µm, Rmax = 200 µm, θ = 0,6).
+
+**P5.** |Re(dominio B) − Re(nominal)|/|Re| < 1 % en N = 1400, para los diez casos.
+
+**Salida.** `conv_domain_fine.json`.
