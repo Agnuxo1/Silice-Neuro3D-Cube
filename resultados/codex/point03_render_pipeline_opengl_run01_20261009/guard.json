@@ -1,0 +1,69 @@
+{
+  "status": "completed",
+  "samples": [
+    {
+      "available_ram_gib": 8.424297332763672,
+      "vram_used_gib": 0.736328125,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "available_ram_gib": 8.423591613769531,
+      "vram_used_gib": 0.736328125,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.001461029052734375
+    },
+    {
+      "available_ram_gib": 8.299156188964844,
+      "vram_used_gib": 0.7626953125,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.12285232543945312
+    },
+    {
+      "available_ram_gib": 8.197769165039062,
+      "vram_used_gib": 0.8349609375,
+      "temperature_c": 27.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.16933059692382812
+    },
+    {
+      "available_ram_gib": 8.208084106445312,
+      "vram_used_gib": 0.8359375,
+      "temperature_c": 30.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.2144317626953125
+    },
+    {
+      "available_ram_gib": 8.110736846923828,
+      "vram_used_gib": 0.833984375,
+      "temperature_c": 30.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3008575439453125
+    }
+  ],
+  "new_gpu_execution": true,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": 21204,
+  "child_finished": true,
+  "profile_sha256": "56fe7848b0622a6ed2addb9742dd9e0d79c710559efdbe40897811868e806cb6",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-PIPELINE-CALIBRATION-CONTRACT.md": "5e984f5696e9140d2600a3aa7137c76aec3abb9e8376842a2efddc823c6bb72f",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/point03_render_p2_gate.py": "914d33718a5f6c325f20f9b5ec2632ef35da6796ca2b29113fe59376f0bf3c93",
+    "scripts/point03_render_pipeline_reference.py": "664604d962121e7eaf57b91464b18ef85c52237a4895201fce36440a2a73a9c5",
+    "scripts/check_point03_render_pipeline.py": "580406bab6ca4bb6f12234556d7500737ad282c46526759344453552b9903c33",
+    "scripts/run_point03_render_pipeline.py": "67cfabbacac3f842725d4539d26b1b18c269f8b33f8251b7b28530d54434a9c5",
+    "scripts/guard_point03_render_pipeline.py": "7ece9845c8c3f8486b6c95b2b1b58381d56a04b26171aa763e824f4f644615a6",
+    "scripts/audit_point03_render_pipeline.py": "92325fa1e2bf3e66be9f0fc3a9f78c50b14444bc376fb86165ace017a759f167"
+  },
+  "profile_relative": "resultados/codex/point03_render_pipeline_opengl_profile_20261009.json",
+  "published_commit": "4ef9c1d00d61806f74f51cf7254e4853905b0a00",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "resource_preflight_pass": true,
+  "elapsed_child_with_startup_s": 2.8011338999931468,
+  "elapsed_guard_s": 3.3843554999984917,
+  "finished_utc": "2026-10-09T10:50:02.781545+00:00"
+}

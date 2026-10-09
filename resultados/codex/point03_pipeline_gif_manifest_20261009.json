@@ -1,0 +1,24 @@
+{
+  "kind": "audited GPU instrument calibration; no generated optical network",
+  "inputs_sha256": {
+    "resultados/codex/point03_render_pipeline_opengl_run01_20261009/local_integrity_audit.json": "729607a1f6eadc45b2dae9ccbee13bd667da28714f5cb78a8cb0302274b5a02d",
+    "resultados/codex/point03_render_pipeline_opengl_run01_20261009/bary_smooth_none_64.npz": "5fb6de13835e7d6bc52a2400cb3ae4fe21cb6ec9a0e109f4240496514d3958b7",
+    "resultados/codex/point03_render_pipeline_opengl_run01_20261009/bary_smooth_none_128.npz": "dcf7b8b343f736e92d3f82c592a4c99e8cc94384b45a8f66e010b87462b9f79d",
+    "resultados/codex/point03_render_pipeline_opengl_run01_20261009/bary_smooth_none_256.npz": "8dae505896600e35598e76f64b4b8de8bdfa2eef980212e2e8077defa67109da",
+    "resultados/codex/point03_render_pipeline_vulkan_run01_20261009/local_integrity_audit.json": "453d04c084241e2462358222aeff9468bbfe69f94ccd792b8a58b7d2d38382f7",
+    "resultados/codex/point03_render_pipeline_vulkan_run01_20261009/bary_smooth_none_64.npz": "5fb6de13835e7d6bc52a2400cb3ae4fe21cb6ec9a0e109f4240496514d3958b7",
+    "resultados/codex/point03_render_pipeline_vulkan_run01_20261009/bary_smooth_none_128.npz": "dcf7b8b343f736e92d3f82c592a4c99e8cc94384b45a8f66e010b87462b9f79d",
+    "resultados/codex/point03_render_pipeline_vulkan_run01_20261009/bary_smooth_none_256.npz": "8dae505896600e35598e76f64b4b8de8bdfa2eef980212e2e8077defa67109da"
+  },
+  "generator_sha256": "d4ede70a4ab7568c957f5d7e59dbafe82ee6f6d946220dff94bfe1c5251b930b",
+  "frames": 6,
+  "size": [
+    1100,
+    620
+  ],
+  "sha256": "506697b2ce0b5ca05cdd0c0337e18c37c882bc7db19e84d4e9695af05453955a",
+  "bytes": 237639,
+  "numpy": "2.2.6",
+  "matplotlib": "3.10.0",
+  "gpu_executed_by_generator": false
+}

@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-09T10:57:13.665895+00:00",
+  "local_links_checked": 35,
+  "all_links_valid": true,
+  "gif_all_frames_decode": true,
+  "visual_frames_reviewed": [
+    0,
+    5
+  ],
+  "visual_pass": true,
+  "scales_fixed": true,
+  "no_network_simulation": true
+}

@@ -1,3 +1,7 @@
+## P1 OpenGL/Vulkan auditados: negativos smooth - 2026-10-09T10:54:29.445267+00:00
+
+Prerregistro 4ef9 precede a 60 crudos (30 por backend). Ambos completados y auditados: integridad, acuerdo 1e-14, recursos, duraciones y cierre PASS. Cada backend: 21 marcas aprobadas y nueve negativas; accuracy global False. Uniformes, atributos constantes, suma y coordenadas analiticas pasan; smooth y cuadrados fallan. No prueba causa unica de R2 ni valida sus campos. GIF cuantitativo de seis frames preparado; publicacion main pendiente de QA visual. F1: entorno asignado solo sample_data; final original desconocido, consulta por ZIP pendiente, ninguna celda repetida. S16 bloqueado. Tarea 1 abierta, deadline 13:45, JEV fallback local.
+
 ## F1 reconectada sin productos; P1 en preparacion - 2026-10-09T10:47:26.442627+00:00
 
 Chrome4 disponible; cuaderno existente abierto en791983315. Sesiones no mostraron ensayo activo y Colab asigno entorno: panel contiene solo sample_data; cero celdas reejecutadas. F1 original terminal desconocido/no recuperado, no se reinicia presupuesto ni propaga nuevos campos; S16 bloqueado. Se consulta al usuario por ZIP/copia ya descargada. P1 calibraje prospectivo de uniformes/atributos/barycentric/quadratic y suma, OpenGL/Vulkan, fuentes nuevas aun no publicadas/GPU. R2 negativo intacto; main e2bd verificado; JEV fallback local; deadline13:45 intacto.

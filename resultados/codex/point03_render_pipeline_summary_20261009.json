@@ -1,0 +1,292 @@
+{
+  "created_utc": "2026-10-09T10:53:54.713994+00:00",
+  "preregistered_commit": "4ef9c1d00d61806f74f51cf7254e4853905b0a00",
+  "rows": [
+    {
+      "marker": "attribute_none",
+      "opengl": {
+        "max_error": 5.4836273299940785e-09,
+        "passed": 3,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 5.4836273299940785e-09,
+        "passed": 3,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "bary_analytic_add1",
+      "opengl": {
+        "max_error": 7.152557379708213e-08,
+        "passed": 3,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 7.102886834253752e-08,
+        "passed": 3,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "bary_analytic_none",
+      "opengl": {
+        "max_error": 7.152557379708213e-08,
+        "passed": 3,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 7.102886834253752e-08,
+        "passed": 3,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "bary_smooth_add1",
+      "opengl": {
+        "max_error": 4.5483248929167885e-05,
+        "passed": 0,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 4.5483248929167885e-05,
+        "passed": 0,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "bary_smooth_none",
+      "opengl": {
+        "max_error": 4.5483248929167885e-05,
+        "passed": 0,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 4.5483248929167885e-05,
+        "passed": 0,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "quadratic_analytic_none",
+      "opengl": {
+        "max_error": 1.6450881967777775e-07,
+        "passed": 3,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 1.3536877108144552e-07,
+        "passed": 3,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "quadratic_smooth_none",
+      "opengl": {
+        "max_error": 6.373034583195825e-05,
+        "passed": 0,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 6.373034583195825e-05,
+        "passed": 0,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "uniform_add1",
+      "opengl": {
+        "max_error": 5.4836273299940785e-09,
+        "passed": 3,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 5.4836273299940785e-09,
+        "passed": 3,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "uniform_add2",
+      "opengl": {
+        "max_error": 1.0967254659988157e-08,
+        "passed": 3,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 1.0967254659988157e-08,
+        "passed": 3,
+        "frames": 3
+      }
+    },
+    {
+      "marker": "uniform_none",
+      "opengl": {
+        "max_error": 5.4836273299940785e-09,
+        "passed": 3,
+        "frames": 3
+      },
+      "vulkan": {
+        "max_error": 5.4836273299940785e-09,
+        "passed": 3,
+        "frames": 3
+      }
+    }
+  ],
+  "backends": {
+    "opengl": {
+      "integrity_pass": true,
+      "accuracy_pass": false,
+      "frames": 30,
+      "passed": 21,
+      "failed": 9,
+      "child_seconds": 2.8011338999931468,
+      "guard_seconds": 3.3843554999984917,
+      "worker_seconds": 0.738696,
+      "shader_batch_seconds": 0.0470737,
+      "cpu_ns": [
+        645700,
+        443200,
+        528500,
+        415500,
+        411400,
+        402800,
+        399200,
+        411600,
+        404200,
+        415100,
+        1664200,
+        1150600,
+        1379500,
+        1139100,
+        1185700,
+        1158400,
+        1092500,
+        1076000,
+        1088200,
+        1060000,
+        5355500,
+        5483800,
+        5372800,
+        4306800,
+        4373000,
+        4253300,
+        4068200,
+        4232800,
+        4345200,
+        4485200
+      ],
+      "gpu_ns": [
+        797700,
+        255700,
+        460500,
+        378100,
+        234700,
+        300500,
+        358200,
+        299300,
+        213900,
+        306300,
+        610600,
+        444200,
+        348100,
+        438900,
+        323500,
+        539300,
+        536200,
+        561300,
+        473200,
+        426200,
+        1312700,
+        1011100,
+        896900,
+        933900,
+        874500,
+        907700,
+        954900,
+        951700,
+        952200,
+        888800
+      ]
+    },
+    "vulkan": {
+      "integrity_pass": true,
+      "accuracy_pass": false,
+      "frames": 30,
+      "passed": 21,
+      "failed": 9,
+      "child_seconds": 3.3483052999945357,
+      "guard_seconds": 3.9860858999963966,
+      "worker_seconds": 1.7190524,
+      "shader_batch_seconds": 1.0201567,
+      "cpu_ns": [
+        742600,
+        435900,
+        559800,
+        428200,
+        392500,
+        440800,
+        460900,
+        450400,
+        471300,
+        410300,
+        1807000,
+        1261800,
+        1581000,
+        1163200,
+        1231100,
+        1416900,
+        1348300,
+        1373100,
+        1152300,
+        1140400,
+        6000100,
+        5591200,
+        5487100,
+        4157200,
+        4177800,
+        4302700,
+        5090900,
+        4099300,
+        4283200,
+        4136800
+      ],
+      "gpu_ns": [
+        62636000,
+        7942000,
+        468500,
+        455300,
+        416000,
+        672700,
+        573100,
+        690900,
+        498700,
+        455000,
+        745700,
+        684100,
+        536700,
+        545300,
+        601000,
+        711900,
+        553400,
+        565400,
+        507600,
+        594700,
+        1018300,
+        1379400,
+        1405200,
+        1186000,
+        1222100,
+        1179300,
+        1183100,
+        1232600,
+        1206800,
+        1303600
+      ]
+    }
+  },
+  "network_validated": false,
+  "physical_validation": false,
+  "point03_closed": false,
+  "general_speedup_claim": false
+}

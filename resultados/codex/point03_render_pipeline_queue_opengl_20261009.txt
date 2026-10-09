@@ -1,0 +1,4 @@
+[gpuq] 2026-10-09T12:49:51 en cola: Silice:P1-OpenGL
+[gpuq] 2026-10-09T12:49:59 TURNO: Silice:P1-OpenGL -> C:/Python313/python.exe scripts/guard_point03_render_pipeline.py --profile resultados/codex/point03_render_pipeline_opengl_profile_20261009.json --out resultados/codex/point03_render_pipeline_opengl_run01_20261009 --published-commit 4ef9c1d00d61806f74f51cf7254e4853905b0a00
+{"status": "completed", "new_gpu_execution": true, "child_finished": true}
+[gpuq] 2026-10-09T12:50:02 fin: Silice:P1-OpenGL rc=0
