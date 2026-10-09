@@ -52,3 +52,21 @@ HE₁₁ vectorial frente al escalar guardado (pérdida y n_eff mapeado con n₀
 - Geometría circular y capas uniformes. Sin no circularidad, sin tensión de escritura, sin birrefringencia inducida.
 - Los modos con fuga se caracterizan por Im β, sin campo de radiación explícito.
 - Para δn = −0,003 no hay TE, TM ni HE₂₁ válidos: quedan para un cálculo con otra base.
+
+## Medida de convergencia del FD escalar (2026-10-10, tarea 6)
+
+Objetivo: medir el error de un solver de diferencias finitas estándar frente a la precisión que exige la separación TE/TM (≈ 3·10⁻⁶ en n_eff). Caso: modo LP₀₁ escalar de la fibra de salto análoga (λ = 1,55 µm, a = 6 µm, n₁ = 1,444, n₂ = 1,439, V = 2,9202), ventana de ±30 µm, Laplaciano de 5 puntos con contorno de Dirichlet y valor propio más cercano a k₀²n₁² (`fd_escalar_convergencia.py`, datos en `fd_escalar_convergencia.json`).
+
+| h (µm) | incógnitas | n_eff (FD) | |error| |
+|---|---|---|---|
+| 0,5 | 14 161 | 1,4421632 | 2,9·10⁻⁵ |
+| 0,25 | 57 121 | 1,4421814 | 1,1·10⁻⁵ |
+| 0,125 | 229 441 | 1,4421879 | 4,2·10⁻⁶ |
+
+Referencia analítica: n_eff = 1,4421922.
+
+Lectura:
+- El orden observado es 1,42 y 1,36, no 2. La causa probable es el contorno escalonado del núcleo circular. Por eso la extrapolación de Richardson con orden 2 (|error| = 2,0·10⁻⁶) **no es válida** aquí, y no se usa.
+- Con el orden medido, reducir el error de 4,2·10⁻⁶ a unos 3·10⁻⁷ exigiría h ≈ 0,02 µm, es decir unos 3000 nodos por eje. Con este método no es práctico.
+- Un FD vectorial con promediado de la permitividad en la interfaz podría converger a orden 2 y reducir ese requisito. No está implementado ni validado aquí, así que la comprobación independiente de T6 queda pendiente.
+- La medida es escalar. No demuestra que un FD vectorial no pueda resolver la separación TE/TM; demuestra que el FD estándar con contorno escalonado no la resuelve sin una malla inviable.
