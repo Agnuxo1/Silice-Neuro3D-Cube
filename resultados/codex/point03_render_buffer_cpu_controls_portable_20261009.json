@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-10-09T08:38:38.750087+00:00",
+  "pass": true,
+  "marker_groups": [
+    {
+      "case": "constant",
+      "width": 8,
+      "height": 5,
+      "analytic_pass": true,
+      "old_stride_rejected": true
+    },
+    {
+      "case": "coordinates",
+      "width": 8,
+      "height": 5,
+      "analytic_pass": true,
+      "old_stride_rejected": true
+    },
+    {
+      "case": "constant",
+      "width": 13,
+      "height": 7,
+      "analytic_pass": true,
+      "old_stride_rejected": true
+    },
+    {
+      "case": "coordinates",
+      "width": 13,
+      "height": 7,
+      "analytic_pass": true,
+      "old_stride_rejected": true
+    },
+    {
+      "case": "constant",
+      "width": 32,
+      "height": 16,
+      "analytic_pass": true,
+      "old_stride_rejected": true
+    },
+    {
+      "case": "coordinates",
+      "width": 32,
+      "height": 16,
+      "analytic_pass": true,
+      "old_stride_rejected": true
+    }
+  ],
+  "invalid_groups": 5,
+  "gpu_execution": false,
+  "reads_prior_gpu_frames": false,
+  "new_t96_field": false,
+  "source_sha256": "ec65ce729f770a9ee901c351755e3e1fd186c5e08926533d754cca552cf8072f"
+}

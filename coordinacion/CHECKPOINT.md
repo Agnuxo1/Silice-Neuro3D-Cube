@@ -1,3 +1,15 @@
+## P0 revisión de bytes previa a publicación — 2026-10-09T08:44:10.233177+00:00
+
+Preflight detectó SHA del nuevo guardCRLF distinto al blobGitLF; detuvo antes del commit/GPU. Se conserva guardCRLF como dato y perfilv1original. Nuevo guardLF sin cambio de conducta y controles portablesLF iguales porJSON (sin reejecutarCPU); perfilv2nuevo registra hashes/transporte y sustituye sólo preparaciónnoejecutada. F1/R1fuentes/crudos intactos. PublicaciónP0/GPU aún pendientes; no marcar listo hasta blobs/hashes/aprobaciónlocal de los6marcadores. Chrome desconectado; tarea1abierta; JEVfallbacklocal.
+
+## CalibraciónP0 preparada tras negativoR1 — 2026-10-09T08:40:14.942412+00:00
+
+Código oficialBlenderv4.5.14 inspeccionado: Buffer(h,w,canales) exporta stridesF; lectura directa anterior mezcló almacenamientoRGBA. Se registra instrumentoP0 con6 marcas analíticas/tamaños no cuadrados y Buffer1D antes de copiar/reshapeC; ninguna transformación deR1seadopta. SeisgruposCPU y5 inválidosPASS,5fuentes compilan; sinGLSL/GPU todavía. Nuevos worker/guard/auditor/perfil independientes, perf_counter_ns y cierre sólo proceso propio tras liberar/guardar/fsync. R1fuentes/84crudos intactos; F1SHA39b intacto, Chrome aún desconectado/último96a07:45. Próximo publicar/verificarP0 antesdeGPU, reservaFIFO/límitesidénticos; nueva tandaP2 requiere preregistro posterior siP0PASS. Tarea1abierta; JEVfallbacklocal.
+
+## R1run02 negativo publicado y continuidad verificada — 2026-10-09T08:29:49.954585+00:00
+
+HEAD2e6444f7b8d4aa5fc6fa75ab25fc01386c8af7f0 local/remoto y PR1 abierta/no fusionada verificados. Publicación revisada102 archivos/84crudos,4,756MB sin hallazgos; F1workerSHA39b intacto. Heartbeat actualizado: no repetirrun01/run02; próxima versión requiere calibraje independiente del Buffer/reloj/cierre y publicación previa. Ninguna nueva fuente/trial preparada. No ventaja/validaciónfísica ni adopción deR1. F1último96/192a07:45; Chrome desconectado, petición de reconexión pendiente; no lectura posterior nihandoffposible. S16/domain pendientes, tarea1abierta; JEVfallbacklocal; deadline13:45UTCsinextensión.
+
 ## R1run02 GPU ejecutado y negativo auditado — 2026-10-09T08:26:22.715561+00:00
 
 Gate identidad directa FIFO PASS (salida nueva0815), seguido de run02 con perfilv3/fuentesa67c33a. Blender4.5.14/OpenGL/RTX3090 generó84RGBAframes;63 fallan precisión y84 filas tienen al menos tiempo0. Workercompleted/accuracyFalse; Blender no cerró y supervisor cortó por timer115 (hijo115,579s<=120), recursosmuestreadosPASS. Auditor completo exit1; auditoría adicional hashes/formas/fuentes84PASS, métricas originales con5 discrepancias~1e-14 y precisiónnegativa, no adopción. Fallos/stdout/stderr/crudos/diagnósticos conservados. Docs/POINT-03-RENDER-GPU-RUN02-RESULTS.md. No speedup/red/validaciónfísica. Próximo publicar negativo antes de preregistrar calibración layout/reloj/cierre nueva. F1 último96/192a07:45; Chrome aún desconectado, ninguna celda relanzada. S16 bloqueadohastaF1localPASS; tarea1abierta; JEVfallbacklocal.
