@@ -1,3 +1,11 @@
+## R2P2 calibrado preparado, sin campos — 2026-10-09T09:14:19.406744+00:00
+
+Fuentes/contract/guard/auditor/perfil/carpeta nuevos; referenciaP2SHA22ec9f5 y12controles originales reutilizados porhash, sin rerun. Conversión1D/perf_counter_ns/cierre propioP0integrados prospectivamente; shader/NODAL/casos/64-128-256/gates/margenfase originales intactos. NuevoCPUgatePASS16rechazosP0y7duracionesinválidas; control real deP0false bloqueó antesGPU (childNone/0campos). PrerrequisitoP0localPASSportable porhash, controlescopiasJSONiguales; sin transformarR1crudos. Fuentescompilan; aún noGPUniGLSLR2. Próximo revisar/publicar/verificar antescampos, mismasreservas/deadline, auditoríaestricta1e-14 entreNumPy1.26.4motor/2.2.6local, conservarnegativos. F1SHA39bintacto/Chrome desconectadoúltimo96a07:45. Tarea1abierta;JEVfallbacklocal.
+
+## P0 publicado y continuidad verificada — 2026-10-09T09:00:13.153534+00:00
+
+HEAD2edbba587b2d82ba04ff2cf82cab2eb76570d385 local/remoto yPR1abierta/no fusionada verificados. Seis marcas calibradasPASS publicadas con18archivos revisados; fuente/perfilv2 Git/local coinciden; F1SHA39bintacto. R1P2negativo intacto; P0sóloinstrumento/noP2/red/ventaja/física. Heartbeat actualizado sin extenderwindow: próxima tandaP2 exige protocolo/fuentes/control/auditor/perfilnuevo antescampos, mismohelper/gates y costecompleto; aún no preparada. Chrome sigue desconectado, petición pendiente, últimoF196/192a07:45. Tarea1abierta/JEVfallbacklocal.
+
 ## CalibraciónP0 GPU/lectura/reloj/cierre PASS — 2026-10-09T08:53:45.767972+00:00
 
 Preparación publicadaf02c2ad77b43ac6d585ad12c6e99f68cb9f4b16f yPR1head/open/no merge verificados antes deGPU; perfilv2SHA7852f544c6be043cba2ba7a68ec0469d8bf20316976ed709b7e53b9873e7dfb4. Seis marcas no cuadradas nuevas Blender4.5.14/OpenGL/RTX3090: auditor local integridad/precisión/predicciónC-F PASS, métodoanterior rechazado. Python3.11.15/NumPy1.26.4 delmotor/perf_resolution1e-7s/monotonic0,015625s;ns positivos. Hijo cerróexit0 en2,2395457s (guard2,755621s),recursosPASS. R1run02negativos/84crudos siguenintactos/noadoptados; P0no validaP2/red/T96/física ni speedup. Próximo publicarresultados antes de preregistrar nueva tandaP2 manteniendo gates/referencia. F1SHA39bintacto; Chrome desconectado/último96/192a07:45. Tarea1abierta; JEVfallbacklocal.
