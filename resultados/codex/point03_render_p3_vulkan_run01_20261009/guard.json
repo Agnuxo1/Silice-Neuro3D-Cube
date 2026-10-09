@@ -1,0 +1,121 @@
+{
+  "status": "completed",
+  "samples": [
+    {
+      "available_ram_gib": 8.556835174560547,
+      "vram_used_gib": 0.751953125,
+      "temperature_c": 28.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "available_ram_gib": 8.555461883544922,
+      "vram_used_gib": 0.751953125,
+      "temperature_c": 28.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.047924041748046875
+    },
+    {
+      "available_ram_gib": 8.459827423095703,
+      "vram_used_gib": 0.751953125,
+      "temperature_c": 27.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.09229278564453125
+    },
+    {
+      "available_ram_gib": 8.475589752197266,
+      "vram_used_gib": 0.751953125,
+      "temperature_c": 27.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.09231948852539062
+    },
+    {
+      "available_ram_gib": 8.470375061035156,
+      "vram_used_gib": 0.751953125,
+      "temperature_c": 27.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.11582565307617188
+    },
+    {
+      "available_ram_gib": 8.383712768554688,
+      "vram_used_gib": 0.84765625,
+      "temperature_c": 30.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.2043609619140625
+    },
+    {
+      "available_ram_gib": 8.346149444580078,
+      "vram_used_gib": 0.84765625,
+      "temperature_c": 31.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.24193572998046875
+    },
+    {
+      "available_ram_gib": 8.360275268554688,
+      "vram_used_gib": 0.84765625,
+      "temperature_c": 31.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.241943359375
+    },
+    {
+      "available_ram_gib": 8.38018798828125,
+      "vram_used_gib": 0.84765625,
+      "temperature_c": 31.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.24199676513671875
+    },
+    {
+      "available_ram_gib": 8.375282287597656,
+      "vram_used_gib": 0.84765625,
+      "temperature_c": 31.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.2784576416015625
+    },
+    {
+      "available_ram_gib": 8.343708038330078,
+      "vram_used_gib": 0.83984375,
+      "temperature_c": 29.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3428993225097656
+    },
+    {
+      "available_ram_gib": 8.340404510498047,
+      "vram_used_gib": 0.83984375,
+      "temperature_c": 28.0,
+      "utilization_percent": 2.0,
+      "owned_rss_gib": 0.34992218017578125
+    },
+    {
+      "available_ram_gib": 8.332218170166016,
+      "vram_used_gib": 0.83984375,
+      "temperature_c": 28.0,
+      "utilization_percent": 3.0,
+      "owned_rss_gib": 0.3462791442871094
+    }
+  ],
+  "new_gpu_execution": true,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": 27160,
+  "child_finished": true,
+  "profile_sha256": "3deab4cd6a6796f5c4869d4a54fae4643d1dab9da09eb8d8f28c9d9524d14535",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "Docs/POINT-03-RENDER-P3-ANALYTIC-CONTRACT.md": "c72f13556087eaae9b2cc9f8de38040574914b3fb2d4ac2b1df16b703b91ac46",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/check_point03_render_reference.py": "b4b00b2c78b7bfbc39bc49e04f5ad680dd0c5a45a5be277abd13e0423fb1c9d1",
+    "scripts/point03_render_p2_gate.py": "914d33718a5f6c325f20f9b5ec2632ef35da6796ca2b29113fe59376f0bf3c93",
+    "scripts/point03_render_pipeline_reference.py": "664604d962121e7eaf57b91464b18ef85c52237a4895201fce36440a2a73a9c5",
+    "scripts/point03_render_p3_gate.py": "6acbe871e558a2ba3d9a0d690f49a54e3634f3fc42801620e093ff14223958b6",
+    "scripts/check_point03_render_p3_gate.py": "d9a9fcc2304d058765d9eb3027b033bed835db5835dcbd48b6d1c3d231c07a46",
+    "scripts/run_point03_render_p3_analytic.py": "887bf75fbd870872dbf48e9dc69b12f15c4866c47e86ba3fdfa4dda31621dc61",
+    "scripts/guard_point03_render_p3_analytic.py": "f7ca08c87ee783026a995934dba267a73d6daacab24b74e649ac1437e5b64784",
+    "scripts/audit_point03_render_p3_analytic.py": "bcf99b74c1d19882eff0fe5fea005be4dd7fce6b8dc554ffd590556e6dff8e28"
+  },
+  "profile_relative": "resultados/codex/point03_render_p3_vulkan_profile_20261009.json",
+  "published_commit": "ce183e71df79371f3b3f66d4a8fc82dc2a88abf1",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "resource_preflight_pass": true,
+  "elapsed_child_with_startup_s": 6.904298599998583,
+  "elapsed_guard_s": 7.711603999996441,
+  "finished_utc": "2026-10-09T12:01:23.458986+00:00"
+}

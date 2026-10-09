@@ -40,8 +40,8 @@ comprobar ese significado; el aspecto de una imagen no valida la física.
 | P0, lectura gráfica calibrada | Seis marcas GPU auditadas, error máximo 6,68×10⁻⁸ | Coordenadas/canales y reloj/cierre aprobados; [calibración](Docs/POINT-03-RENDER-BUFFER-RESULTS.md) |
 | R2 P2 corregido | 84 fotogramas nuevos: integridad y tiempos aprobados; 63 fallan precisión | Error máximo 1,62×10⁻⁴ >5×10⁻⁶; [negativo auditado](Docs/POINT-03-RENDER-P2-CORRECTED-RESULTS.md) |
 | P1, OpenGL y Vulkan | 60 marcas nuevas; integridad aprobada, nueve fallos por backend | Coordenadas analíticas precisas; interpolación smooth negativa. [Resultados](Docs/POINT-03-RENDER-PIPELINE-RESULTS.md) |
-| R3 P2 analítico | Protocolo y controles publicados; reserva GPU agotada sin campos | OpenGL/Vulkan pendientes; [estado](Docs/POINT-03-RENDER-P3-RESERVATION-STATUS.md) |
-| Software CPU | 51 pruebas aprobadas nuevamente para esta publicación | Ninguna inicialización GPU; [registro](resultados/codex/point03_main_cpu_tests_20261009/report.json) |
+| R3 P2 analítico | 168 campos nuevos: 84/84 aprobados en OpenGL y 84/84 en Vulkan | Error máximo 5,86×10⁻⁷ ≤5×10⁻⁶; representación y suma coherente P2. [Resultados auditados](Docs/POINT-03-RENDER-P3-ANALYTIC-RESULTS.md) |
+| Software CPU | 51 pruebas aprobadas en la publicación previa | Ninguna inicialización GPU; [registro](resultados/codex/point03_main_cpu_tests_20261009/report.json) |
 
 T96/Q4 permanece abierta: faltan F1 completa y auditada, convergencia espacial,
 predicción prospectiva, malla reservada de 0,28 µm y dominio. Las etapas de
@@ -77,6 +77,22 @@ Calibración real del instrumento gráfico, sin red funcional ni propagación ó
 [Datos, costes y resultados](Docs/POINT-03-RENDER-PIPELINE-RESULTS.md) ·
 [Generador](tools/gif_pipeline_calibration_20261009.py) ·
 [Manifiesto](resultados/codex/point03_pipeline_gif_manifest_20261009.json).
+
+### Campos complejos P2: rasterización y superposición auditadas
+
+<img src="assets/13_gpu_p2_analytic_fields_v2.gif" alt="Partes real e imaginaria y error de 168 campos P2 auditados en OpenGL y Vulkan, con escalas fijas" width="100%"/>
+
+OpenGL y Vulkan aprueban los 84 campos de cada ensayo, incluidos suma
+constructiva, destructiva y desfase de 90°. Los triángulos 3D se rasterizan;
+el fragment shader calcula el campo complejo y la suma coherente conserva
+su fase. El GIF muestra píxeles ya calculados, con escala constante y
+repetición cero fijada; las barras incluyen las 21 muestras de cada caso.
+Es un banco manufacturado de representación P2, sin propagación guiada ni
+una red funcional. Todos los costes de preparación, arranque, dibujo y
+lectura se publican; no hay ventaja general o energética demostrada.
+[168 crudos, auditorías y costes](Docs/POINT-03-RENDER-P3-ANALYTIC-RESULTS.md) ·
+[Generador](tools/gif_p3_analytic_v2_20261009.py) ·
+[Manifiesto](resultados/codex/point03_p3_gif_manifest_v2_20261009.json).
 
 ### Arquitectura de la red que queremos comprobar
 

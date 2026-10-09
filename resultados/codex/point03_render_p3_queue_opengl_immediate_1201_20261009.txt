@@ -1,0 +1,4 @@
+[gpuq] 2026-10-09T14:00:10 en cola: Silice:R3-OpenGL-immediate
+[gpuq] 2026-10-09T14:00:19 TURNO: Silice:R3-OpenGL-immediate -> C:/Python313/python.exe scripts/guard_point03_render_p3_analytic.py --profile resultados/codex/point03_render_p3_opengl_profile_20261009.json --out resultados/codex/point03_render_p3_opengl_run01_20261009 --published-commit ce183e71df79371f3b3f66d4a8fc82dc2a88abf1
+{"status": "completed", "new_gpu_execution": true, "child_finished": true}
+[gpuq] 2026-10-09T14:00:37 fin: Silice:R3-OpenGL-immediate rc=0
