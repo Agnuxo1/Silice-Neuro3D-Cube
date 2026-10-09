@@ -1,0 +1,75 @@
+{
+ "best_seed": 5,
+ "trained_setting": {
+  "V_PI": 1.0,
+  "THETA_B": 0.0
+ },
+ "stored": {
+  "train_acc": 0.653,
+  "test_acc": 0.6425
+ },
+ "S1_reproduction": {
+  "abs_diff_train": 0.0,
+  "abs_diff_test": 0.0,
+  "pass": true
+ },
+ "grid": [
+  {
+   "V_pi": 0.5,
+   "theta_b": -0.7853981633974483,
+   "train_acc": 0.6175,
+   "test_acc": 0.6185
+  },
+  {
+   "V_pi": 0.5,
+   "theta_b": 0.0,
+   "train_acc": 0.5845,
+   "test_acc": 0.593
+  },
+  {
+   "V_pi": 0.5,
+   "theta_b": 0.7853981633974483,
+   "train_acc": 0.525,
+   "test_acc": 0.535
+  },
+  {
+   "V_pi": 1.0,
+   "theta_b": -0.7853981633974483,
+   "train_acc": 0.664,
+   "test_acc": 0.6595
+  },
+  {
+   "V_pi": 1.0,
+   "theta_b": 0.0,
+   "train_acc": 0.653,
+   "test_acc": 0.6425
+  },
+  {
+   "V_pi": 1.0,
+   "theta_b": 0.7853981633974483,
+   "train_acc": 0.6045,
+   "test_acc": 0.595
+  },
+  {
+   "V_pi": 2.0,
+   "theta_b": -0.7853981633974483,
+   "train_acc": 0.6505,
+   "test_acc": 0.6515
+  },
+  {
+   "V_pi": 2.0,
+   "theta_b": 0.0,
+   "train_acc": 0.6735,
+   "test_acc": 0.6835
+  },
+  {
+   "V_pi": 2.0,
+   "theta_b": 0.7853981633974483,
+   "train_acc": 0.6565,
+   "test_acc": 0.674
+  }
+ ],
+ "S2_test_range": 0.14849999999999997,
+ "S2_sensitive": true,
+ "S2_threshold": 0.05
+}
