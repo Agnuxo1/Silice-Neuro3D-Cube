@@ -255,6 +255,8 @@ Leer el [contrato de investigación](Docs/RESEARCH-CONTRACT.md), el [checkpoint]
 
 Reglas: contrato antes de medir · umbrales no se relajan después · fallos retenidos · visualización, modelo matemático, simulación y dispositivo físico se distinguen siempre · sin GPU/Blender sin ventana y reserva exclusiva.
 
+Autoría, roles y uso de IA: [CONTRIBUTORS.md](CONTRIBUTORS.md). Cómo citar el repositorio: [CITATION.cff](CITATION.cff).
+
 ## Hoja de ruta
 
 - [x] BPM escalar paraxial + segundo solver radial + solver 2D independiente
