@@ -75,3 +75,19 @@ Competidores directos que cambian la evaluación de novedad:
 - **Riesgo:** el trabajo de 2026 con chip neuronal 3D programable puede cubrir la idea de 3D antes que el proyecto. Hay que leer el artículo original.
 
 **Fuentes que no se han verificado en texto completo:** Amorim et al., JLT 2019 (pérdidas 350–1750 nm); Springer DOI 10.1007/s00339-015-8990-x (guía tubular, 0,3 dB/cm); sapphire arXiv:2405.08840 (1,9 dB/cm propagación y 4,3 dB de acoplamiento, según fragmento); arXiv:1912.08203 (interconexiones 3D para PNN, no verificado en detalle).
+
+## 7 · Segunda búsqueda del 2026-10-10 (tarea 19)
+
+Búsqueda web en modo estándar. Todo lo de esta sección viene de resúmenes o prensa, no de texto completo.
+
+| Referencia | Qué dice | Estado |
+|---|---|---|
+| HUST y SJTU, «Programmable Three-dimensional Photonic Neural Network Chip», *Nature Communications* (mayo de 2026, según 36Kr) | Red fotónica neuronal programable **dentro del vidrio**, núcleo de cómputo óptico 3D; 93 % en MNIST; 94 % de fidelidad en generación de patrones; 6554 TOPS teóricos. Autores: Zhang Xinliang y Dong Jianji (HUST), Tang Hao y Xu Xiaoyun (SJTU). | [B] solo prensa secundaria (36Kr, 28-05-2026, sin DOI). **Riesgo alto de solapamiento con la hipótesis 3D.** Longitud de onda no conocida. |
+| arXiv:2409.13110 (zafiro, láser fs) | Núcleo de 10 µm en un revestimiento de unos 40 µm, 88 pistas; unos 0,7 dB/cm en TE y TM, obtenido por diferencia de inserción entre muestras de 10, 40 y 100 mm; una simulación de modo con fuga da 0,015 dB/cm. | [B] fragmento. Según el fragmento, no es un cutback de una sola muestra. Longitud de onda por confirmar. |
+| Lee et al., *Scientific Reports* (2021) | Pérdida de curva en sílice escrita con fs, con técnica de microgrietas: unos 1 dB/cm con radio de 10 mm a 1550 nm. | [B] fragmento. **Referencia para la curva de T8** (pendiente). |
+| Okhrimchuk et al., *Optics Express* (2012) | Guía con camisa deprimida en Nd:YAG: 0,12 dB/cm a 1064 nm. | [B] no es sílice ni 1550 nm; solo referencia de orden de magnitud. |
+
+**Conclusión actualizada.**
+- No se ha encontrado un cutback a 1550 nm en camisa deprimida de sílice escrita con fs. La brecha que describen los autores del niobato de litio sigue abierta, lo que mantiene la candidatura de (c), sin establecerla.
+- La contribución (a), «red 3D multicapa escrita desde varias caras», **queda en riesgo** por el trabajo de HUST/SJTU de 2026, que no hemos podido leer. Hasta leer el artículo original, no afirmamos novedad en 3D.
+- La fuente de 2026 se conoce solo por prensa. Su metodología, longitud de onda y medidas no están verificadas.
