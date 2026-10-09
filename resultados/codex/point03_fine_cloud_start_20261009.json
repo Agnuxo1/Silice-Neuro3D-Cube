@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-09T03:41:50.164376+00:00",
+  "F1_status": "running",
+  "package_received_SHA_CRC_pass": true,
+  "package_sha256": "d79a777e2d5d1d955205c039aef95faae9c54efd38ca40fc3815828ad616368f",
+  "package_bytes": 14011045,
+  "package_members": 28,
+  "prerequisite_M2_local_PASS": true,
+  "resource_before_launch_available_ram_bytes": 12345966592,
+  "manifest_created_utc": "2026-10-09T03:22:29.100869+00:00",
+  "last_progress_read": {
+    "case": "P6_32768",
+    "index": 5,
+    "total": 64,
+    "elapsed_s": 826.9923414859995
+  },
+  "total_checkpoints_planned": 192,
+  "computed_checkpoints_at_last_read": 5,
+  "full_temporal_assessment_available": false,
+  "numerical_threads": 1,
+  "global_budget_s": 32000,
+  "deadline_utc": "2026-10-09T13:45:00Z",
+  "notebook_url": "https://colab.research.google.com/drive/1NYr2uO__aTywj9xTcA64oTHnFwL7RiyU",
+  "tab_id": "791982998",
+  "active_cell": 9,
+  "point03_closed": false
+}
