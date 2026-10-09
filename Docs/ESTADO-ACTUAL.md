@@ -1,31 +1,51 @@
 # Estado actual del repositorio · 2026-10-09
 
-Documento de entrada. Resume el estado a fecha de hoy. El detalle científico sigue en [PROJECT-STATUS](PROJECT-STATUS.md), reconciliado el 2026-10-06.
+Documento de entrada. Resume qué está hecho, qué está parcial y qué depende de una decisión o de un laboratorio. El detalle científico sigue en [PROJECT-STATUS](PROJECT-STATUS.md) (reconciliado el 2026-10-06).
 
-## Repositorio
+## Trabajo de la auditoría (2026-10-09)
 
-- **Rama principal:** `main`. Los cambios de hoy llegan por fast-forward; el historial anterior no se reescribe.
-- **Licencia:** no publicada. La propuesta está en [LICENCIA-PROPUESTA](LICENCIA-PROPUESTA.md) y espera la decisión del titular.
-- **Visibilidad:** pública. El registro de eventos de GitHub indica que lo fue desde su creación el 2026-09-30 (un `PublicEvent` con la misma marca temporal que `created_at`). Falta la confirmación del titular.
-- **Integración continua:** [`cpu-tests.yml`](../.github/workflows/cpu-tests.yml) ejecuta las 51 pruebas CPU en Windows 2022 y Ubuntu 24.04, y el guardián de tamaño. Ejecuciones verificadas en GitHub Actions.
-- **Tamaño:** 947,5 MB únicos en el historial (paquete de 776,7 MiB). Política en [ARCHIVO-Y-TAMANO](ARCHIVO-Y-TAMANO.md).
-- **Autoría y citación:** [CONTRIBUTORS](../CONTRIBUTORS.md) y [CITATION.cff](../CITATION.cff).
-- **Bitácora de coordinación:** la instantánea íntegra está en [`coordinacion/archivo/`](../coordinacion/archivo/LEEME.md). La bitácora viva sigue activa.
+Cada punto se cerró con un commit propio o con un contrato publicado antes de calcular. Los fallos y las hipótesis no cumplidas se conservan.
 
-## Operación
+| Punto | Estado | Evidencia |
+|---|---|---|
+| D1 licencia | **Propuesta lista, sin publicar** (espera decisión del titular) | [LICENCIA-PROPUESTA](LICENCIA-PROPUESTA.md) |
+| D2 visibilidad | Evidencia recogida: creado público el 2026-09-30. **Falta confirmación del titular** | Evento `PublicEvent` con la misma marca que `created_at` |
+| D3 texto corrupto del README | Hecho | `e0af007` |
+| D4 estructura del README | Hecho | `2b26c03`, `75fc749` |
+| D5 CI Windows y Linux | Hecho. Verde en `windows-2022` y `ubuntu-24.04` | [cpu-tests.yml](../.github/workflows/cpu-tests.yml), `5854160`, `3c0c69d` |
+| D6 autoría | Hecho: sin reescribir el historial | [CONTRIBUTORS](../CONTRIBUTORS.md), [CITATION.cff](../CITATION.cff), `b922b79` |
+| D7 tamaño del repositorio | Auditoría y guardián en CI hechos. **Falta autorizar Zenodo para las evidencias pesadas** | [ARCHIVO-Y-TAMANO](ARCHIVO-Y-TAMANO.md), `5c4e450` |
+| D8 F1 en Colab | **Bloqueado**: sin estado verificado. Procedimiento propuesto | [OPERACION-EJECUCIONES-LARGAS](OPERACION-EJECUCIONES-LARGAS.md), `cf853db` |
+| F0 base y archivo | Hecho: bitácora archivada, CI y README | `c03f31d` |
+| F1a reencuadre | Hecho: «transformación óptica lineal»; la red neuronal queda como objetivo | `75fc749` |
+| F1b contraste vectorial | **Hecho**. H1 cumple, H2 no cumple, H3 cumple | [VECTORIAL-RESULTADOS](VECTORIAL-RESULTADOS.md), `544679f` |
+| F1c G2 de GLASS-006a | **Diagnóstico y convergencia hechos**. Veredicto histórico intacto. Q4 de trazos sigue abierta | [RESULTADOS-G2-N](../experimentos/glass006a_claude/RESULTADOS-G2-N.md), `a70744f` |
+| F1d PDF de SK1310 | **Parcial**: el artículo no se pudo obtener. Comprobación del índice hecha | [SK1310-FUENTES](SK1310-FUENTES.md), `ed74bfe` |
+| F1e segunda máquina | Hecho: CI en Ubuntu, con la misma suite | `5854160` |
+| F2 protocolo de medida | **Protocolo congelado; medida pendiente de laboratorio** | [F2-PROTOCOLO-MEDIDA](F2-PROTOCOLO-MEDIDA.md), `9a7eeab` |
+| F3 red pequeña | **Hecho, resultado negativo**: H1 y H2 no cumplen. Balance energético paramétrico | [RESULTADOS-F3](../experimentos/f3_red_pequena/RESULTADOS-F3.md), `beafe0a` |
+| Paralelo literatura | Hecho con etiquetas de verificación. **Novedad no establecida** | [LITERATURA-NOVEDAD](LITERATURA-NOVEDAD.md), `50cf595` |
 
-- **Ejecuciones largas en Colab:** el estado de F1 no está verificado. Procedimiento en [OPERACION-EJECUCIONES-LARGAS](OPERACION-EJECUCIONES-LARGAS.md).
+## Resultados científicos de esta sesión
 
-## Ciencia (resumen sin nuevos resultados)
-
-- Pruebas CPU: 51 de 51 aprobadas en Windows y en Linux (CI).
-- Hitos y criterios: ver [PROJECT-STATUS](PROJECT-STATUS.md).
-- Hoja de ruta de 25 puntos: 2 cerrados, 3 parciales y el resto abierto o sin demostrar.
+- **Contraste vectorial (F1b).** En una guía de salto ideal con el contraste del proyecto, el modelo escalar describe el índice modal a 2–3·10⁻⁶ relativo. Los efectos vectoriales escalan como Δn².
+- **G2 a 10 µm (F1c).** Los fallos originales vienen de mallas gruesas (N ≤ 800). Con N ≥ 1400 Re γ varía ±0,8 %. El criterio de dos mallas consecutivas no basta para demostrar convergencia, porque Re γ no es monótona en N.
+- **SK1310 (F1d).** La dispersión de la ficha coincide con la sílice de referencia más un desplazamiento constante de +6·10⁻⁴. El n₀ = 1,444 del proyecto es consistente con eso.
+- **F3.** Una malla unitaria con lectura de intensidad no alcanza el umbral preregistrado (59 % frente a 60 %), y es peor que una línea base de igual número de parámetros (85 %).
 
 ## Decisiones pendientes del titular
 
-1. Licencia (propuesta lista, sin publicar).
-2. Confirmar que la visibilidad pública es intencionada.
-3. Autorizar la subida de evidencias pesadas a Zenodo (acción externa con DOI).
-4. Revisar desde su navegador la sesión de Colab de F1 y decidir si descarga alguna parte.
-5. Decidir si se monta Drive para persistir partes en ejecuciones futuras.
+1. **Licencia** (propuesta lista, sin publicar).
+2. **Confirmar que la visibilidad pública es intencionada.**
+3. **Autorizar Zenodo** para las evidencias pesadas (acción externa con DOI).
+4. **Acceder a la sesión de Colab de F1** desde su navegador y decidir si descarga alguna parte.
+5. **PDF del artículo de SK1310** (acceso institucional) para verificar el material.
+6. **Decidir si se monta Drive** para persistir las partes en ejecuciones futuras.
+7. **Socio experimental** para la fase de medida (F2). Sin él, el proyecto no pasa de simulación.
+
+## Lo que no se ha hecho
+
+- Ninguna medida de laboratorio. Ningún dispositivo fabricado.
+- Ningún resultado de red funcional ni de ventaja energética.
+- Ninguna reproducción externa ni revisión por pares.
+- Ninguna escaneo DAST: no hay aplicación en ejecución y `HAWK_API_KEY` no está definida.
