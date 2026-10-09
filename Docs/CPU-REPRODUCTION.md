@@ -2,9 +2,17 @@
 
 ## Supported, tested target
 
-The fixed environment requires 64-bit Windows 10 and CPython 3.13.7.
-The verification host uses exactly this operating-system and Python target. This is a CPU-only
-reproduction path; it neither installs the optional GPU extra nor runs CUDA.
+Two targets are validated for the CPU test suite (51 tests):
+
+- **Windows 10 x64, CPython 3.13.7**: the full path, including the one-command
+  bootstrap and the environment verification with 339 tracked hashes. This is
+  the original verification host.
+- **Linux x86_64 (Ubuntu 24.04), CPython 3.13.7**: the CPU suite only, run by
+  GitHub Actions ([workflow](.github/workflows/cpu-tests.yml)). Bootstrap and
+  `verify_environment.py` have not been validated on Linux.
+
+This is a CPU-only reproduction path; it neither installs the optional GPU
+extra nor runs CUDA.
 The general package metadata accepts Python 3.10 and newer, but that is not
 a claim that every Python version or platform has been validated.
 
@@ -39,6 +47,22 @@ To run the complete lightweight CPU test suite directly:
 ```powershell
 & '.\.venv\Scripts\python.exe' -B scripts/check.py
 ```
+
+## Linux (CI-validated path)
+
+The CPU suite runs on Ubuntu 24.04 with the hash-checked Linux lock. From the
+repository root:
+
+```bash
+python3.13 -m venv .venv
+.venv/bin/python -m pip install --require-hashes -r requirements/cpu-linux-py313.lock
+.venv/bin/python -B scripts/check.py
+```
+
+`scripts/check.py` runs the 51 CPU tests, limits the process to one thread and
+exits with status 1 on any failure, skip or boundary violation. It does not
+write reports unless `--report` is given. The automated run is recorded in
+GitHub Actions for each commit on `main`.
 
 ## Dependency groups
 
