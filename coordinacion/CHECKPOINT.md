@@ -1,3 +1,7 @@
+## CalibraciónP0 GPU/lectura/reloj/cierre PASS — 2026-10-09T08:53:45.767972+00:00
+
+Preparación publicadaf02c2ad77b43ac6d585ad12c6e99f68cb9f4b16f yPR1head/open/no merge verificados antes deGPU; perfilv2SHA7852f544c6be043cba2ba7a68ec0469d8bf20316976ed709b7e53b9873e7dfb4. Seis marcas no cuadradas nuevas Blender4.5.14/OpenGL/RTX3090: auditor local integridad/precisión/predicciónC-F PASS, métodoanterior rechazado. Python3.11.15/NumPy1.26.4 delmotor/perf_resolution1e-7s/monotonic0,015625s;ns positivos. Hijo cerróexit0 en2,2395457s (guard2,755621s),recursosPASS. R1run02negativos/84crudos siguenintactos/noadoptados; P0no validaP2/red/T96/física ni speedup. Próximo publicarresultados antes de preregistrar nueva tandaP2 manteniendo gates/referencia. F1SHA39bintacto; Chrome desconectado/último96/192a07:45. Tarea1abierta; JEVfallbacklocal.
+
 ## P0 revisión de bytes previa a publicación — 2026-10-09T08:44:10.233177+00:00
 
 Preflight detectó SHA del nuevo guardCRLF distinto al blobGitLF; detuvo antes del commit/GPU. Se conserva guardCRLF como dato y perfilv1original. Nuevo guardLF sin cambio de conducta y controles portablesLF iguales porJSON (sin reejecutarCPU); perfilv2nuevo registra hashes/transporte y sustituye sólo preparaciónnoejecutada. F1/R1fuentes/crudos intactos. PublicaciónP0/GPU aún pendientes; no marcar listo hasta blobs/hashes/aprobaciónlocal de los6marcadores. Chrome desconectado; tarea1abierta; JEVfallbacklocal.
