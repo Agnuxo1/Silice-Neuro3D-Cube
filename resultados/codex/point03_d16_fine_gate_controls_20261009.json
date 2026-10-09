@@ -1,0 +1,10 @@
+{
+  "controls_pass": true,
+  "false_temporal_prerequisite_rejected": true,
+  "optical_workers_launched": 0,
+  "optical_fields_created": 0,
+  "prerequisite_mocked_for_software_control_only": true,
+  "source_sha256": "39b1024a2237edb1938873defd22aaac76e995fdb93adad2e5c7eb3339081456",
+  "execution_sha256": "4912a1df800604732ade9b83fe29608bfa31abcae822f26f09d12e38b9472424",
+  "point03_closed": false
+}

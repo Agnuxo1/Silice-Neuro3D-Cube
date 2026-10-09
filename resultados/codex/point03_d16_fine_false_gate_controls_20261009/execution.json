@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "started_utc": "2026-10-09T02:32:28.863233+00:00",
+  "children": [],
+  "solutions": {},
+  "point03_closed": false,
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_d16_fine_time.py\", line 140, in run\n    assert prerequisite['integrity_pass'] and prerequisite['temporal_precision_pass']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "elapsed_s": 0.0008111999995890073,
+  "finished_utc": "2026-10-09T02:32:28.864043+00:00"
+}

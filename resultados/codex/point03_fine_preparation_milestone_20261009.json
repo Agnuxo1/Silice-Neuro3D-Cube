@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-10-09T02:33:51.908226+00:00",
+  "last_progress_read": {
+    "index": 56,
+    "total": 64,
+    "retained": 83,
+    "original_elapsed_s": 12358.060823
+  },
+  "computed_fields_at_last_read": 88,
+  "retained_fields_independently_audited": 83,
+  "fine_preparation_controls_pass": true,
+  "fine_optical_fields_created": 0,
+  "fine_prerequisite_pass": false,
+  "local_M2_audit_wrapper": "scripts/audit_point03_d16_mid_recovery_local.py",
+  "point03_closed": false,
+  "jev_provenance": "local",
+  "remote_security_block_retained": true
+}
