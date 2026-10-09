@@ -38,6 +38,9 @@ jobs:
       - name: Run the CPU suite
         run: python -B scripts/check.py
 
+      - name: Run the vectorial validation gates (V1-V5)
+        run: python -B -m unittest discover -s experimentos/vectorial_claude -p "test_*.py"
+
   repo-size-guard:
     name: Fail on new blobs above 10 MB
     runs-on: ubuntu-24.04
