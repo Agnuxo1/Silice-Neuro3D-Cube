@@ -1,4 +1,4 @@
-"""Recalculate M2-R1 locally, preserving the separate remote audit unchanged."""
+"""Recalculate F1 locally, preserving the separate remote audit unchanged."""
 import argparse
 from datetime import datetime, timezone
 import hashlib
@@ -11,7 +11,7 @@ for key in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS', 'NUMEX
 import numpy as np
 import scipy
 import psutil
-from audit_point03_d16_mid_recovery import audit
+from audit_point03_d16_fine_time import audit
 
 
 if __name__ == '__main__':
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     result = audit(out)
     assert result['integrity_pass'] == remote['integrity_pass']
     assert result['temporal_precision_pass'] == remote['temporal_precision_pass']
-    assert result['checkpoints_checked'] == remote['checkpoints_checked'] == 96
+    assert result['checkpoints_checked'] == remote['checkpoints_checked'] == 192
     assert abs(result['relative_field_difference']-remote['relative_field_difference']) <= 1e-12
     for key in ('power_differences', 'PSD_observable_bounds'):
         for detector in ('field', 'intensity'):
