@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below."
+title: "Silice-Neuro3D-Cube: CPU research models for laser-written optical silica networks"
+type: software
+version: 0.1.0
+date-released: "2026-10-09"
+authors:
+  - family-names: "Angulo de Lafuente"
+    given-names: "Francisco"
+repository-code: "https://github.com/Agnuxo1/Silice-Neuro3D-Cube"
+url: "https://github.com/Agnuxo1/Silice-Neuro3D-Cube"
+keywords:
+  - femtosecond laser writing
+  - optical waveguides
+  - fused silica
+  - beam propagation method
+  - coupled-mode theory
+  - reproducible research
+abstract: >-
+  Numerical research on a passive optical network written with femtosecond
+  laser inside fused silica. The repository contains CPU models, bounded
+  CUDA tests, retained negative results and their audits. No fabricated
+  device, measured optical system or validated neural network is claimed.
