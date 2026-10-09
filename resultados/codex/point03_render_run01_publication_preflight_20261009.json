@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-10-09T08:08:13.059968+00:00",
+  "pass": true,
+  "scope": "Exact reviewed staged files; sizes and selected credential signatures; no complete secret absence claim",
+  "files": [
+    {
+      "path": "Docs/POINT-03-RENDER-GPU-WINDOWS-LAUNCH.md",
+      "bytes": 3813,
+      "sha256": "28fd9d1441ecaacc841d481f66a8bc0c0d391dfad22706e558527259a4198100"
+    },
+    {
+      "path": "coordinacion/CHECKPOINT.md",
+      "bytes": 129197,
+      "sha256": "59adcc2faa30f03360b9a6045e99468ee08436241e022661de8935d61493d9fd"
+    },
+    {
+      "path": "resultados/codex/point03_f1_monitor_20261009.jsonl",
+      "bytes": 5798,
+      "sha256": "a939baad79f6c32d6e43037077b0cb3f028cca9ef3b4c9ea556ec7dec018627c"
+    },
+    {
+      "path": "resultados/codex/point03_render_gpu_run01_20261009/audit_stderr.txt",
+      "bytes": 1306,
+      "sha256": "9c7a78c228fadd2e5f068b2552292d7a5e2869c99ac7ce38f85ce0f48067d4bc"
+    },
+    {
+      "path": "resultados/codex/point03_render_gpu_run01_20261009/audit_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resultados/codex/point03_render_gpu_run01_20261009/blocked_integrity_audit.json",
+      "bytes": 794,
+      "sha256": "b2632e7645f4941978919f2ae7cf3e49766e720bd462f396c5fec2ba67e7915d"
+    },
+    {
+      "path": "resultados/codex/point03_render_gpu_run01_20261009/guard.json",
+      "bytes": 1615,
+      "sha256": "309d332e08e1ecfd11403075a681230cb9a0d66ba3666d54447f47a9f4cc6f20"
+    },
+    {
+      "path": "resultados/codex/point03_render_preflight_0715_20261009/guard.json",
+      "bytes": 1535,
+      "sha256": "ee0bff5eb8976096e2c50c43279301a390443152428a82db562f539aae28ef07"
+    },
+    {
+      "path": "resultados/codex/point03_render_preflight_0734_20261009/guard.json",
+      "bytes": 1535,
+      "sha256": "6cd43ce130843f4eec8f77bfd9c1663153a50491d112420a3d6b5f7afe27b365"
+    },
+    {
+      "path": "resultados/codex/point03_render_preflight_0745_20261009/guard.json",
+      "bytes": 1534,
+      "sha256": "52069cad2b5f980ff539092607dd2c00f3090ead7f33f356fc305adc5846c946"
+    },
+    {
+      "path": "resultados/codex/point03_render_preflight_0800_20261009/guard.json",
+      "bytes": 1525,
+      "sha256": "fd63caae5087736c2a49a04dbd4d143e222baa28963d4b07575e8b43f0d736e8"
+    },
+    {
+      "path": "resultados/codex/point03_render_profile_v3_20261009.json",
+      "bytes": 1810,
+      "sha256": "eab2a5944b4c13bbeb8744303c80c11ec1aff7d30620b3869c4fe342fa94c75c"
+    },
+    {
+      "path": "resultados/codex/point03_render_publication_receipt_20261009.json",
+      "bytes": 487,
+      "sha256": "92f65b06ad0c07d64b1bfe895249cf581b939aa4ee9a59127058fa2176c5837e"
+    },
+    {
+      "path": "resultados/codex/point03_render_queue_diagnostic_20261009/base_runtime.json",
+      "bytes": 542,
+      "sha256": "d89b120fac057829f420eb8cc545f643494733435a81f4ad254709f48d899aaf"
+    },
+    {
+      "path": "resultados/codex/point03_render_queue_diagnostic_20261009/direct_base_output.txt",
+      "bytes": 239,
+      "sha256": "98cd6e66bfa3855a1afd3b9f221cc632387f8e008f0286b992ce928189f03336"
+    },
+    {
+      "path": "resultados/codex/point03_render_queue_diagnostic_20261009/probe.py",
+      "bytes": 551,
+      "sha256": "510c3445a283a92ef7fcb5b819dc6b2a4a15614c6831a5b44d71064584b39cb0"
+    },
+    {
+      "path": "resultados/codex/point03_render_queue_diagnostic_20261009/venv_redirector_observation.json",
+      "bytes": 891,
+      "sha256": "acea56ff455878aa5d133e86996d40105fadf99af16f079ce2e122e6681db4e9"
+    }
+  ],
+  "bytes": 153172,
+  "findings": [],
+  "f1_worker_unchanged": true,
+  "r1_sources_unchanged": true,
+  "new_gpu_execution": false,
+  "direct_identity_gate_pass": false
+}
