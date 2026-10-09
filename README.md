@@ -214,18 +214,20 @@ casos válidos.
 
 ```
 Silice-Neuro3D-Cube/
-├── assets/                 GIF del README (generados por tools/)
-├── tools/                  scripts que generan los GIF a partir de los datos
-├── src/silice/             BPM escalar paraxial (bpm.py) y trazos discretos (tracks.py)   [Codex]
-├── scripts/  tests/        ensayos, auditorías y 51 pruebas CPU                              [Codex]
-├── experimentos/
-│   ├── glass_min1/         DFT4 por modos acoplados y Monte Carlo                            [Claude]
-│   ├── glass005_claude/    solver radial FD + escalado complejo exterior                     [Claude]
-│   ├── glass006a_claude/   fuga vs grosor, contrato, fe de erratas, resultados               [Claude]
-│   └── glass009_claude/    solver 2D ADI Crank–Nicolson independiente                        [Claude]
-├── resultados/codex/       informes JSON con parámetros, hashes y gates
-├── Docs/                   contratos, resultados y revisiones
-└── coordinacion/           checkpoint, tablón, cola, respuestas y tareas
+├── src/silice/        biblioteca (7 módulos): bpm.py (BPM escalar paraxial), tracks.py (trazos
+│                      discretos), coupler.py (acoplamiento CMT), coverage.py (área parcial y
+│                      cobertura), gpu_bpm.py y gpu_refinement.py (ensayos CUDA acotados)        [Codex]
+├── tests/             12 ficheros, 51 pruebas CPU                                                [Codex]
+├── scripts/           200 ficheros: ensayos, auditorías, verificación (check.py) [Codex]
+├── experimentos/      ensayos por hito de Claude (glass_min1, glass005…glass010) [Claude]
+├── tools/             11 generadores de los GIF del README a partir de los datos
+├── assets/            GIF y cabecera del README
+├── resultados/codex/  informes JSON con parámetros, hashes y criterios (evidencia retenida)
+├── Docs/              contratos, resultados, revisiones y estado (168 Markdown)
+├── coordinacion/      checkpoint, tablón, cola, respuestas y tareas de los agentes
+├── requirements/      bloqueos de dependencias con hash (Windows x64, CPython 3.13)
+├── pyproject.toml     metadatos del paquete silice-neuro3d-cube
+└── AGENTS.md          reglas de colaboración entre agentes y revisión
 ```
 
 ## Reproducir
