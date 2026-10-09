@@ -90,3 +90,7 @@ la duración de esta ventana.
 
 Documento de reanudación; las actualizaciones posteriores se añaden al
 checkpoint y a informes nuevos, sin sustituir registros históricos.
+
+## Actualización de publicación solicitada por el usuario
+
+El9deoctubre el usuario pidió publicar todoslos resultados en GitHubmain y añadirGIFprofesionales enREADME. Se autoriza esa integración revisada después de preparar y verificar artefactos/datos/QA, preservando el checkoutprincipal local. Sustituye la restricción de nofusionar para esta publicación; no modifica el límite13:45UTC, los presupuestos, las fuentes de ensayos activos ni el orden de tareas. La red completa/fabricación/validaciónfísica siguen pendientes.

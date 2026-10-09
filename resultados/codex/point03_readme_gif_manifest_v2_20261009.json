@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-10-09T09:59:23.662771+00:00",
+  "inputs": [
+    {
+      "path": "resultados/codex/point03_d16_mid_recovery_20261009/local_integrity_audit.json",
+      "sha256": "aae404b31b538d07b12a70b18092be371b98fe70d2824793b6d1587970ab5917"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/local_integrity_audit.json",
+      "sha256": "cdd52ace2c4f35c64b18aef4e1a576bc79909b1050bc5a81a0c8776c609f14d8"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/constant_8x5.npz",
+      "sha256": "b41dfe421c2bc02cede4a6b7bbbfa564592fe2ffc17b74208c0b0655367f1a75"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/coordinates_8x5.npz",
+      "sha256": "d613465ea11490759ca4e39589462ae29236d6276ace7c67620d18fb426d72bf"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/constant_13x7.npz",
+      "sha256": "f2e4e797afb020d29ba3e4129f06a501b0a11c188f7728cd86e0c0bffe96158f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/coordinates_13x7.npz",
+      "sha256": "cc6330bf59c2634ab2cee07cd7e8646f8f8fc62fb67a851c1fff18198559ea8f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/constant_32x16.npz",
+      "sha256": "3ecc4965305f27a723f87a04bf52c0854f7a7ac260341077ae67709ad952f28f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/coordinates_32x16.npz",
+      "sha256": "c9491e40824e0b8e73f494da3606ec36f7bd9f77c6f35b668274809473551f6f"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "assets/09_m2_temporal_audit_v2.gif",
+      "sha256": "0e882f3385f5c42f6aa645802dd73edfb499dcee8e496d7da23e7afdcd3e9026",
+      "bytes": 125591,
+      "frames": 5,
+      "size": [
+        864,
+        486
+      ],
+      "kind": "audited_numerical_results"
+    },
+    {
+      "path": "assets/10_gpu_buffer_calibration_v2.gif",
+      "sha256": "0fb0211aaf87fe5a954e62c281648b9c362f829a1b506b8393c8c96d546a835a",
+      "bytes": 497713,
+      "frames": 18,
+      "size": [
+        864,
+        486
+      ],
+      "kind": "audited_gpu_calibration"
+    },
+    {
+      "path": "assets/11_optical_network_proposal_v2.gif",
+      "sha256": "b1106a33bad3b6ba12dda6955e745e8033d757639fcaffbbc19118ec8af93129",
+      "bytes": 626846,
+      "frames": 32,
+      "size": [
+        864,
+        486
+      ],
+      "kind": "conceptual_cpu_illustration_not_simulation"
+    }
+  ],
+  "generator_sha256": "97b907eaaf11e37fd9e7d24e9c5ed81878890a9149027a49bf649d8264aaf73b",
+  "runtime": {
+    "python": "3.13.7",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.0",
+    "pillow": "10.4.0"
+  },
+  "numerical_gifs_use_audited_data": true,
+  "architecture_proposal_labeled_in_every_frame": true,
+  "new_simulation": false,
+  "gpu_execution": false,
+  "physical_validation": false,
+  "network_validated": false
+}

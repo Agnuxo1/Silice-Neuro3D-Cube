@@ -1,0 +1,34 @@
+{
+  "status": "resource_block_retained",
+  "samples": [
+    {
+      "available_ram_gib": 6.187431335449219,
+      "vram_used_gib": 0.7158203125,
+      "temperature_c": 27.0,
+      "utilization_percent": 0.0
+    }
+  ],
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": null,
+  "child_finished": true,
+  "profile_sha256": "11bf0198b1b0cc3f91e3da40799a93aced3de91de09d420e4ed63ef2019c50e8",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "Docs/POINT-03-RENDER-P2-CORRECTED-CONTRACT.md": "9d76198c308f04ea56cf89d2f8556e7cb0ce81bb9aa92ac43ba2d81065c2853d",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/check_point03_render_reference.py": "b4b00b2c78b7bfbc39bc49e04f5ad680dd0c5a45a5be277abd13e0423fb1c9d1",
+    "scripts/point03_render_p2_gate.py": "914d33718a5f6c325f20f9b5ec2632ef35da6796ca2b29113fe59376f0bf3c93",
+    "scripts/check_point03_render_p2_gate.py": "1199387b3a62564b60b92277bf7131019f495250031167c9dd38076d868e9dff",
+    "scripts/run_point03_render_p2_corrected.py": "feaa9efa4e1a52c7058de4dad275f23effc5e26c1f2c213f92d46595e63a2b1c",
+    "scripts/guard_point03_render_p2_corrected.py": "6b843879c85ea2a537b638420e3c8d604a43e2e19bea93704ec2c79acf289b91",
+    "scripts/audit_point03_render_p2_corrected.py": "817217f919a5f32b86d4cdc7a2bab92588754f23b8b73fa3176708969724fb74"
+  },
+  "profile_relative": "resultados/codex/point03_render_p2_corrected_profile_20261009.json",
+  "published_commit": "3084cd757caedd41fc7e9a49a5bafefbd7ab366d",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "resource_preflight_pass": false,
+  "elapsed_guard_s": 0.6007333999950788,
+  "finished_utc": "2026-10-09T09:24:13.697129+00:00"
+}
