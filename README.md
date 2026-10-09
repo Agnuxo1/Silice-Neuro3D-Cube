@@ -232,7 +232,7 @@ Silice-Neuro3D-Cube/
 
 ## Reproducir
 
-La instalación reproducible de CPU utiliza Windows 10 x64 y CPython 3.13.7. Desde la raíz del repositorio:
+La instalación reproducible de CPU utiliza Windows 10 x64 y CPython 3.13.7. También existe una ruta validada en Linux (Ubuntu 24.04, CI en GitHub Actions) descrita en [CPU-REPRODUCTION](Docs/CPU-REPRODUCTION.md#linux-ci-validated-path). Desde la raíz del repositorio:
 
 ```powershell
 & 'C:\Python313\python.exe' scripts/bootstrap_cpu.py
