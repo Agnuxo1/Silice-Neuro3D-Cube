@@ -1,0 +1,39 @@
+name: CPU tests
+
+# Runs the CPU-only suite on Windows (the original target) and Linux
+# (second platform for reproduction). No GPU, Blender or secrets are used.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu-suite:
+    name: CPU suite on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            lock: requirements/cpu-linux-py313.lock
+          - os: windows-2022
+            lock: requirements/cpu-win-py313.lock
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up CPython 3.13.7
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13.7"
+
+      - name: Install pinned dependencies (hash-checked)
+        run: python -m pip install --require-hashes -r "${{ matrix.lock }}"
+
+      - name: Run the CPU suite
+        run: python -B scripts/check.py
