@@ -1,0 +1,61 @@
+{
+ "H1": {
+  "test_acc_M1": 0.5905,
+  "threshold": 0.6,
+  "passed": false
+ },
+ "H2": {
+  "acc_M1": 0.5905,
+  "acc_M2": 0.848,
+  "diff_mean": -0.25742899999999996,
+  "ci95": [
+   -0.2815,
+   -0.23548749999999993
+  ],
+  "passed": false
+ },
+ "H3": {
+  "acc_M3": 0.9915,
+  "acc_M1": 0.5905,
+  "passed": true
+ },
+ "energy_breakeven_table": [
+  {
+   "E_src_J": 1e-12,
+   "E_det_J": 1e-15,
+   "E_opt_J": 1.004e-12,
+   "E_op_breakeven_J": 5.02e-14
+  },
+  {
+   "E_src_J": 1e-12,
+   "E_det_J": 1e-14,
+   "E_opt_J": 1.04e-12,
+   "E_op_breakeven_J": 5.2e-14
+  },
+  {
+   "E_src_J": 1e-12,
+   "E_det_J": 1e-13,
+   "E_opt_J": 1.4e-12,
+   "E_op_breakeven_J": 7e-14
+  },
+  {
+   "E_src_J": 1e-11,
+   "E_det_J": 1e-15,
+   "E_opt_J": 1.0004e-11,
+   "E_op_breakeven_J": 5.002e-13
+  },
+  {
+   "E_src_J": 1e-11,
+   "E_det_J": 1e-14,
+   "E_opt_J": 1.004e-11,
+   "E_op_breakeven_J": 5.02e-13
+  },
+  {
+   "E_src_J": 1e-11,
+   "E_det_J": 1e-13,
+   "E_opt_J": 1.04e-11,
+   "E_op_breakeven_J": 5.2e-13
+  }
+ ],
+ "energy_note": "Parametric break-even only; source and detector energies are assumptions, no advantage is claimed."
+}

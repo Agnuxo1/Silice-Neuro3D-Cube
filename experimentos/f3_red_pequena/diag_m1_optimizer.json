@@ -1,0 +1,242 @@
+{
+ "summary": {
+  "restarts": 32,
+  "all_success": true,
+  "nit_range": [
+   19,
+   40
+  ],
+  "train_loss_best": 1.0953434252948822,
+  "test_acc_of_best": 0.5905,
+  "test_acc_range": [
+   0.5805,
+   0.5905
+  ]
+ },
+ "rows": [
+  {
+   "seed": 1,
+   "train_loss": 1.095343425533331,
+   "nit": 27,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 2,
+   "train_loss": 1.0953434254359822,
+   "nit": 21,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 3,
+   "train_loss": 1.1097470348740601,
+   "nit": 26,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 4,
+   "train_loss": 1.1097470355725614,
+   "nit": 26,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 5,
+   "train_loss": 1.0953434254049288,
+   "nit": 28,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 6,
+   "train_loss": 1.1097470349728742,
+   "nit": 29,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 7,
+   "train_loss": 1.09534342539753,
+   "nit": 26,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 8,
+   "train_loss": 1.0953434253221253,
+   "nit": 40,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 9,
+   "train_loss": 1.1097470349842178,
+   "nit": 25,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 10,
+   "train_loss": 1.0953434256431733,
+   "nit": 36,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 11,
+   "train_loss": 1.1097470351670273,
+   "nit": 23,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 12,
+   "train_loss": 1.0953434264410935,
+   "nit": 24,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 13,
+   "train_loss": 1.109747034857634,
+   "nit": 31,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 14,
+   "train_loss": 1.1097470357592387,
+   "nit": 28,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 15,
+   "train_loss": 1.1097470348849678,
+   "nit": 24,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 16,
+   "train_loss": 1.1097470348235725,
+   "nit": 26,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 17,
+   "train_loss": 1.0953434260553017,
+   "nit": 38,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 18,
+   "train_loss": 1.0953434257571988,
+   "nit": 25,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 19,
+   "train_loss": 1.1097470348032292,
+   "nit": 27,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 20,
+   "train_loss": 1.0953434256660899,
+   "nit": 22,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 21,
+   "train_loss": 1.0953434253471888,
+   "nit": 24,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 22,
+   "train_loss": 1.0953434254005454,
+   "nit": 19,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 23,
+   "train_loss": 1.0953434256308023,
+   "nit": 24,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 24,
+   "train_loss": 1.1097470350088252,
+   "nit": 23,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 25,
+   "train_loss": 1.0953434254166057,
+   "nit": 25,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 26,
+   "train_loss": 1.1097470350743897,
+   "nit": 24,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 27,
+   "train_loss": 1.1097470349952097,
+   "nit": 26,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 28,
+   "train_loss": 1.0953434254462786,
+   "nit": 29,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 29,
+   "train_loss": 1.0953434263521453,
+   "nit": 34,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 30,
+   "train_loss": 1.1097470350194114,
+   "nit": 22,
+   "success": true,
+   "test_acc": 0.5805
+  },
+  {
+   "seed": 31,
+   "train_loss": 1.0953434296047402,
+   "nit": 27,
+   "success": true,
+   "test_acc": 0.5905
+  },
+  {
+   "seed": 32,
+   "train_loss": 1.0953434252948822,
+   "nit": 23,
+   "success": true,
+   "test_acc": 0.5905
+  }
+ ]
+}
