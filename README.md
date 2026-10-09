@@ -173,7 +173,7 @@ Cada ensayo se congela **antes** de medir. Los fallos no se ocultan ni se relaja
 
 ## Resultados hasta hoy
 
-El [inventario actual](Docs/PROJECT-STATUS.md) distingue ejecución, criterios aprobados, fallos y límites. Los informes y GIF anteriores conservan su fecha y su versión; no se reinterpretan como mediciones de un dispositivo.
+Estado a fecha de hoy: [ESTADO-ACTUAL](Docs/ESTADO-ACTUAL.md). El [inventario actual](Docs/PROJECT-STATUS.md) distingue ejecución, criterios aprobados, fallos y límites. Los informes y GIF anteriores conservan su fecha y su versión; no se reinterpretan como mediciones de un dispositivo.
 
 | Hito | Resultado documentado | Estado y límite |
 |---|---|---|
