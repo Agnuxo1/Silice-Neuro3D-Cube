@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-09T07:09:53.747909+00:00",
+  "pass": true,
+  "scope": "exact staged reviewed files; incremental; frozen F1 unchanged",
+  "files": [
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md",
+    "Docs/POINT-03-RENDER-GPU-PREPARATION.md",
+    "coordinacion/CHECKPOINT.md",
+    "resultados/codex/point03_f1_monitor_20261009.jsonl",
+    "resultados/codex/point03_f1_pade64_publication_receipt_20261009.json",
+    "resultados/codex/point03_render_preflight_20261009/guard.json",
+    "resultados/codex/point03_render_profile_20261009.json",
+    "resultados/codex/point03_render_profile_v2_20261009.json",
+    "resultados/codex/point03_render_reference_controls_20261009.json",
+    "scripts/audit_point03_render_gpu.py",
+    "scripts/check_point03_render_reference.py",
+    "scripts/guard_point03_render_gpu.py",
+    "scripts/point03_render_reference.py",
+    "scripts/run_point03_render_blender.py"
+  ],
+  "bytes": 169017,
+  "findings": [],
+  "profile_source_blobs_match": true,
+  "new_gpu_execution": false
+}

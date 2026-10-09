@@ -1,3 +1,19 @@
+## Dirección motor 3D y preparación gráfica R1 — 2026-10-09T07:09:12.523823+00:00
+
+Usuario pide continuar todos los pendientes y priorizar ventajas propias del motor 3D. F1 sigue activa intacta: lectura fresca Padé64/Radau18, 82/192 campos reportados, elapsed13400,241755703 s, sin auditoría/dictamen final. Nuevo banco auxiliar R1 preparado: triángulos 3D/rasterización/campo P2 complejo en Blender, 12 grupos CPU PASS, cinco fuentes Python compilan; GLSL/backend/rendimiento pendientes. Perfilv2 ad2475ff... antes de GPU, v1 conservado. Preflight07:05: RAM6,5153GiB <reserva8, VRAM0,7158GiB/27C; bloqueado sin lanzar GPU. Mantener reserva FIFO/hijo120(timer115)/deadline13:45UTC; no tocar procesos ajenos ni ampliar F1. No red funcional/RT/ventaja física demostrados. Docs/POINT-03-RENDER-GPU-PREPARATION.md y contrato. Próximo: publicar/verificar preparación; GPU R1 sólo con reserva vigente, y completar/transportar/auditar F1 antes de S16. Tarea1 abierta; tareas2–22 pendientes; JEV fallback local. Colab marcada handoff.
+
+## Estado solicitado: últimas nueve horas y pendientes — 2026-10-09T06:46:17.346262+00:00
+
+Registro revisado desde aproximadamente 21:45 UTC del 8 de octubre: C2-R1 completada/auditada; M2 falló por recursos, 83 campos preservados, recuperación M2-R1 completada y auditada local/remota con 96 campos; F1 preparada y activa. Lectura fresca actual: Padé 64/64, Radau 10/128, total 74/192 campos reportados, elapsed 12092,472463253 s; sin dictamen temporal final ni auditoría completa. Importador, auditor local/parcial y pronóstico S16 preparados/controlados/publicados. Se explican las 22 tareas: tarea 1 abierta; tareas 2–22 pendientes. No se atribuyen a esta ventana las ocho simulaciones E ni las 51 pruebas de base heredadas. Colab marcada handoff; límites y fuentes intactos; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T06:38:44.549184+00:00
+
+F1 activa: lectura fresca Radau 7/128, elapsed 11603,171713756 s; Padé 64/64 y 71/192 campos reportados, sin dictamen final ni auditoría completa. Colab marcada handoff. No se ejecutaron celdas ni propagaciones adicionales; fuentes y límites conservados. Sin cambio accionable. Siguiente: final F1, transporte SHA/CRC y auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Publicación del hito F1 verificada — 2026-10-09T06:26:41.293990+00:00
+
+HEAD643034250cb4078f6e13a15b7d4a8844fec7816e publicado; push remoto yPR1 abierta/no fusionada verificados. Registro de observaciones ycheckpoint revisados; preflight incremental de los dos archivos nuevos PASS. F1 sigue activa(Padé64/Radau2, lectura06:23UTC), sin auditoría/dictamen final. Heartbeat actualizado; Colab marcada handoff. Tarea1 abierta; sin cambio de fuentes/modelo/presupuesto, fallbackJEVlocal.
+
 ## F1: Padé completo y Radau iniciado — 2026-10-09T06:24:24.738058+00:00
 
 Lectura fresca Colab: R5_65536 index2/128, elapsed10795,164329518s. La ejecución secuencial ha terminado64/64Padé; total66/192campos reportados. Ensayo activo, sin dictamen temporal final ni auditoría completa. Ninguna celda relanzada; fuentes/matrices/criterios y límites32000s/espera900/deadline13:45UTC conservados. Colab marcada handoff. Registro completo de observaciones: point03_f1_monitor_20261009.jsonl. Siguiente: terminar Radau, exportar todosZIPs, SHA/CRC/importación y auditoría LOCAL; ante failed preservar/auditar prefijos antes de recuperación registrada. S16/h0,28 bloqueados hasta LOCALPASS. Tarea1 abierta; JEVfallbacklocal.
