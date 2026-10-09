@@ -1,0 +1,58 @@
+# Literatura y novedad: mapa de antecedentes (2026-10-09)
+
+Mapa de antecedentes para situar el proyecto frente a la camisa deprimida, las redes ópticas lineales y las herramientas de simulación. **Etiquetas:** [V] = verificado en el texto o en el resumen con una lectura directa; [B] = solo en fragmentos de búsqueda, pendiente de leer el artículo completo.
+
+## 1 · Pérdidas en sílice escrita con láser fs
+
+| Referencia | Resultado | Longitud de onda | Estado |
+|---|---|---|---|
+| Skryabin et al., [arXiv:2408.06688](https://arxiv.org/abs/2408.06688) (2024) | Pérdida de propagación **0,07 dB/cm**; acoplamiento 0,2 dB por faceta; solapamiento > 98,8 % con fibra SMF-28 | No indicada en el resumen (una búsqueda secundaria la sitúa en 920 nm) | [V] resumen. Guías multiscan, **no** camisa deprimida |
+| Springer, [DOI 10.1007/s00339-015-8990-x](https://link.springer.com/10.1007/s00339-015-8990-x) (2015) | Guía tubular de camisa deprimida en sílice fundida, unos **0,3 dB/cm**; diferencia entre polarizaciones de unos 0,1 dB/cm | No confirmada | [B] fragmento de búsqueda |
+| Amorim et al., Journal of Lightwave Technology (2019) | Mapa de pérdidas de guías fs en sílice entre 350 y 1750 nm; la escritura rápida empeora la dispersión de Rayleigh y la pérdida de acoplamiento a larga longitud de onda | Barrido 350–1750 nm | [B] fragmento de búsqueda; no es arXiv |
+| Lithium niobate, [arXiv:1605.06580](https://arxiv.org/pdf/1605.06580) (2016) | Camisa deprimida enterrada a 1550 nm: pérdida combinada de inserción y propagación de unos **2,15 dB** (s) y **6,04 dB** (p) en una guía de unos 13 µm | 1550 nm | [B] fragmento. Cota superior de pérdida de propagación, no medida separada |
+
+**Lectura para el proyecto.** En sílice a 1550 nm, el valor más cercano a camisa deprimida que aparece es el de 0,3 dB/cm en guía tubular, y su longitud de onda no está confirmada. El límite de fuga ideal de [F2](F2-PROTOCOLO-MEDIDA.md) (0,044 dB/cm para t = 12 µm) queda por debajo de todas las pérdidas reportadas, lo que es coherente con que la fuga sea solo una parte de la pérdida total.
+
+## 2 · Redes ópticas lineales con detección
+
+- **Shen et al., [arXiv:1610.02365](https://arxiv.org/abs/1610.02365)** y **Nature Photonics 11, 441 (2017)**, [DOI 10.1038/nphoton.2017.93](https://doi.org/10.1038/nphoton.2017.93) [V, resumen y metadatos]. Una malla de interferómetros con 56 elementos ajustables en chip de silicio, con una etapa no lineal, probada con reconocimiento de vocales. Los resúmenes difieren en la fuerza con que afirman las ganancias de velocidad y eficiencia. **No se ha confirmado cómo se implementa la no linealidad experimental** (puramente óptica u optoelectrónica).
+- **Revisión** [arXiv:2509.01262](https://arxiv.org/pdf/2509.01262) [B]. Tabula ese trabajo como malla 4×4 con 76,7 % en la tarea de vocales. La cifra de 56 elementos y la etiqueta 4×4 pueden referirse a cosas distintas. Verificar antes de citar.
+- **Resultado propio** (F3, [RESULTADOS-F3](../experimentos/f3_red_pequena/RESULTADOS-F3.md)): una malla unitaria 4×4 con lectura de intensidad llega al 59 % en una tarea cuadrática congelada. Ese resultado es una cota de la familia unitaria con esa lectura; no contradice a Shen et al., que usa otra tarea y otra arquitectura.
+
+## 3 · Herramientas de simulación (Python y GitHub)
+
+Búsqueda [B]: ninguna herramienta abierta encontrada cubre a la vez BPM vectorial, solver de modos vectorial y guías escritas con fs. Candidatos, sin verificar licencia ni mantenimiento salvo indicación:
+
+| Herramienta | Tipo | Notas de la búsqueda |
+|---|---|---|
+| Murphy `modesolver` ([GitHub](https://github.com/thomas-e-murphy/modesolver)) | Solver de modos escalar, semivectorial y vectorial completo | Malla no uniforme, PML con coordenadas complejas; actualización reciente indicada |
+| `philsol` ([PyPI](https://pypi.org/project/philsol)) | Diferencias finitas vectoriales (Zhu y Brown) | Advierte que no está bien probado; último push 2021 |
+| `modesolverpy` / `modes` ([GitHub](https://github.com/joamatab/modesolverpy)) | Semivectorial y vectorial completo | Pruebas diarias indicadas |
+| `femwell` ([GitHub](https://github.com/HelgeGehring/femwell)) | Elementos finitos de modos | Licencia GPL-3.0 indicada en el README; la vectorialidad no está confirmada |
+| `Beampy` ([PyPI](https://pypi.org/project/beampy)) | BPM para guías | Última actualización indicada 2020; no está claro si es vectorial |
+| `Diffractio` ([PyPI](https://pypi.org/project/diffractio)) | Óptica escalar y vectorial, BPM y WPM | Licencia MIT indicada; las rutinas vectoriales no son BPM |
+| `cbeam` ([GitHub](https://github.com/jw-lin/cbeam)) | Acoplo de modos en guías de pocos modos | Alternativa sin BPM |
+| `femto` ([GitHub](https://github.com/ricalbr/femto)) | Diseño de circuitos fs y exportación | No simula propagación |
+
+**Implicación.** El solver exacto de fibra de salto de [VECTORIAL-RESULTADOS](VECTORIAL-RESULTADOS.md) es una referencia analítica, no un solver general. Un solver FD vectorial independiente, como el de Zhu y Brown que implementa `philsol`, sería el siguiente paso para validar la trinchera con fuga. Antes de usarlo, habría que probarlo contra el mismo caso analítico.
+
+## 4 · Novedad: qué se puede y qué no se puede afirmar
+
+**No establecido:**
+- Que una red o un acoplador lineal escrito en 3D con láser fs en sílice sea nuevo. Las redes lineales están demostradas en silicio (Shen et al.), y las guías de camisa deprimida son conocidas desde hace años.
+- Que la pérdida de camisa deprimida en sílice a 1550 nm sea mejor o peor que la publicada. No hay medida comparable con el mismo diseño.
+- Que la escritura desde seis caras o la red 3D sean factibles. Son hipótesis del proyecto.
+
+**Lo que el proyecto sí aporta, con evidencia:**
+- Un límite de fuga ideal explícito y su convergencia numérica (GLASS-006a, con la nota sobre no monotonía de Re γ).
+- Un contraste escalar-vectorial cuantificado para una guía de salto análoga (H1 cumplida, H2 no cumplida).
+- Un resultado negativo medido para la familia unitaria con lectura de intensidad (F3).
+
+**Pendiente para establecer novedad:** comparar un diseño concreto con el estado del arte en el mismo régimen de longitud de onda, con una medida real. Eso depende de [F2](F2-PROTOCOLO-MEDIDA.md) y de un socio experimental.
+
+## 5 · Lo que queda sin verificar
+
+- Texto completo de Skryabin et al. (método de medida de pérdidas y longitud de onda).
+- Texto completo del artículo de 2015 en Springer (longitud de onda, geometría).
+- Texto completo de Shen et al. (método de la no linealidad).
+- Licencias y estado de mantenimiento de las herramientas de la tabla 3.
