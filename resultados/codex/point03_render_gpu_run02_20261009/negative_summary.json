@@ -1,0 +1,23 @@
+{
+  "worker_status": "completed",
+  "guard_status": "failure_retained",
+  "accuracy_pass": false,
+  "frames": 84,
+  "failed_rows": 63,
+  "max_complex_error": 2.566468251309254,
+  "max_relative_l2": 1.33185621758593,
+  "max_power_difference": 0.1879463875471199,
+  "max_outside_field": 2.3187420065206807,
+  "max_dark_ratio": 0,
+  "min_ram_gib": 10.106742858886719,
+  "max_vram_gib": 0.7294921875,
+  "max_temperature_c": 30.0,
+  "max_owned_rss_gib": 0.3443336486816406,
+  "elapsed_child_s": 115.57900230000087,
+  "zero_timing_rows": 84,
+  "metric_mismatches": 5,
+  "complete_adoption": false,
+  "no_speedup_claim": true,
+  "new_t96_field": false,
+  "point03_closed": false
+}
