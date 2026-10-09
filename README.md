@@ -6,11 +6,11 @@
 
 ![estado](https://img.shields.io/badge/estado-investigaci%C3%B3n_num%C3%A9rica-0ea5e9)
 ![dispositivo](https://img.shields.io/badge/dispositivo_fabricado-no-f87171)
-![gpu](https://img.shields.io/badge/GPU-ensayos_CUDA-34d399)
+![gpu](https://img.shields.io/badge/GPU-rasterizaci%C3%B3n_calibrada-34d399)
 ![tests](https://img.shields.io/badge/tests_CPU-51_pasan-34d399)
 ![evidencia](https://img.shields.io/badge/fallos-retenidos-fbbf24)
 
-[Idea](#la-idea) · [Cómo funciona](#cómo-funciona-en-8-gifs) · [Resultados](#resultados-hasta-hoy) · [Reproducir](#reproducir) · [Método](#método-y-colaboración) · [Hoja de ruta](#hoja-de-ruta)
+[Idea](#la-idea) · [Laboratorio actual](#laboratorio-20261009) · [Cómo funciona](#cómo-funciona-en-8-gifs) · [Resultados](#resultados-hasta-hoy) · [Reproducir](#reproducir) · [Método](#método-y-colaboración) · [Hoja de ruta](#hoja-de-ruta)
 
 </div>
 
@@ -22,7 +22,73 @@ Escribir, dentro de un bloque de sílice fundida, **guías de onda, acopladores 
 
 Este repositorio **no** presenta un procesador ya construido: conecta geometría y propiedades del material con cálculos verificables, primero en simulación y después, si la evidencia lo permite, en un diseño fabricable.
 
-> **Estado actualizado (6 de octubre de 2026).** Investigación numérica en CPU y ensayos CUDA acotados. No hay dispositivo fabricado, red completa validada ni ventaja de velocidad o eficiencia demostrada. Project Silica de Microsoft ([página oficial](https://www.microsoft.com/en-us/research/project/project-silica/)) demuestra **almacenamiento** volumétrico, no procesamiento óptico: no es una réplica ni una evidencia a favor de esta idea.
+> **Contexto histórico (6 de octubre de 2026).** Investigación numérica en CPU y ensayos CUDA acotados. No hay dispositivo fabricado, red completa validada ni ventaja de velocidad o eficiencia demostrada. Project Silica de Microsoft ([página oficial](https://www.microsoft.com/en-us/research/project/project-silica/)) demuestra **almacenamiento** volumétrico, no procesamiento óptico: no es una réplica ni una evidencia a favor de esta idea.
+
+<a id="laboratorio-20261009"></a>
+## Laboratorio científico · 9 de octubre de 2026
+
+**El núcleo del proyecto es nuestra red óptica dentro de un motor 3D.** La
+geometría, el campo complejo, la fase y la detección deben conservar su
+significado al utilizar el hardware gráfico. Las referencias CPU permiten
+comprobar ese significado; el aspecto de una imagen no valida la física.
+
+| Evidencia actual | Resultado | Alcance |
+|---|---|---|
+| D16 C2 / M2-R1 | Auditorías temporales aprobadas; M2 conserva 83 campos y calcula 13 nuevos | Consistencia de soluciones discretas; [M2 auditada](Docs/POINT-03-D16-M2-RESULTS.md) |
+| F1, h=0,35 µm | Última lectura confirmada: 96/192 campos a las 07:45 UTC | Conexión de Chrome perdida; estado posterior sin certificar. Auditoría final pendiente |
+| R1 P2 en Blender/RTX 3090 | 84 fotogramas conservados; 63 fallan precisión | Lectura defectuosa y tiempos insuficientes; [negativo retenido](Docs/POINT-03-RENDER-GPU-RUN02-RESULTS.md) |
+| P0, lectura gráfica calibrada | Seis marcas GPU auditadas, error máximo 6,68×10⁻⁸ | Coordenadas/canales y reloj/cierre aprobados; [calibración](Docs/POINT-03-RENDER-BUFFER-RESULTS.md) |
+| R2 P2 corregido | Protocolo, controles y fuentes publicados antes de campos | Preparado; último preflight bloqueado por RAM <8 GiB. [Contrato](Docs/POINT-03-RENDER-P2-CORRECTED-CONTRACT.md) |
+| Software CPU | 51 pruebas aprobadas nuevamente para esta publicación | Ninguna inicialización GPU; [registro](resultados/codex/point03_main_cpu_tests_20261009/report.json) |
+
+T96/Q4 permanece abierta: faltan F1 completa y auditada, convergencia espacial,
+predicción prospectiva, malla reservada de 0,28 µm y dominio. Las etapas de
+fabricación, medidas, red completa y reproducción externa siguen pendientes.
+
+### Auditoría temporal: datos, umbrales y dos detectores
+
+<img src="assets/09_m2_temporal_audit_v2.gif" alt="Cinco criterios temporales M2 auditados, comparados con sus umbrales registrados" width="100%"/>
+
+Cada barra representa un valor final fijo dividido por su umbral, en escala
+logarítmica. El resaltado cambia para facilitar la lectura; **no representa
+propagación temporal ni nuevos datos**. La cota PSD es el indicador numérico
+registrado, no una garantía del error continuo.
+
+### Motor gráfico: calibrar también la lectura de la GPU
+
+<img src="assets/10_gpu_buffer_calibration_v2.gif" alt="Lecturas GPU anteriores rechazadas frente a las seis marcas calibradas y auditadas en Blender" width="100%"/>
+
+Triángulos 3D, rasterización, shaders y framebuffer FP32 se ejecutaron en
+Blender 4.5.14/OpenGL/RTX 3090. La calibración independiente detectó y corrigió
+la interpretación del búfer. Los seis casos nuevos aprobaron; los 84 resultados
+P2 anteriores permanecen negativos. Una calibración de lectura **no equivale a
+una red neuronal validada**. Todos los tiempos, incluidos arranque y lectura,
+se conservan y no hay ventaja general de velocidad o energía demostrada.
+
+### Arquitectura de la red que queremos comprobar
+
+<img src="assets/11_optical_network_proposal_v2.gif" alt="Ilustración conceptual de entradas, guías y fases tridimensionales con detección y control fuera del cubo" width="100%"/>
+
+**Ilustración conceptual CPU, rotulada en cada fotograma.** Los puntos muestran
+el flujo propuesto, sin afirmar trayectorias ópticas calculadas. La red pasiva
+es lineal en campo; detección, no linealidad y control deben declararse y
+validarse como parte del sistema completo. Entrenamiento, compilador a
+geometría fabricable e integración completos están pendientes.
+
+Las animaciones se generan con [el generador reproducible](tools/gif_scientific_snapshot_20261009.py).
+[Manifiesto de entradas, versiones y hashes](resultados/codex/point03_readme_gif_manifest_v2_20261009.json).
+Se conservan también los GIF y la fuente anteriores a la revisión visual.
+
+### Aceleración gráfica: aplicar y comprobar, antes de afirmar ventajas
+
+Utilizamos rasterización nativa, interpolación geométrica, shaders de campo
+complejo, geometría preparada y almacenamiento FP32. Evaluaremos Vulkan,
+instancing, transferencia asíncrona y BVH/RT cuando correspondan al subproblema,
+con protocolo previo y comparación de precisión/coste completo. Los núcleos RT
+pueden acelerar intersecciones; el campo coherente y la propagación requieren
+un modelo óptico propio comprobado. [Tecnologías, evidencia y siguiente ensayo](Docs/GRAPHICS-ACCELERATION-20261009.md).
+
+Los ocho GIF históricos siguientes mantienen sus datos y fechas originales.
 
 ## Cómo funciona en 8 GIFs
 
