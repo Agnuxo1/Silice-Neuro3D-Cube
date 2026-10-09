@@ -1,3 +1,60 @@
+## M2 fallo operativo auditado; M2-R1 preparada — 2026-10-09T02:01:49.319510+00:00
+
+M2 original failed por espera acumulada900s, 83/96 campos (P6 32/R5 51), elapsed10654,7637205s. Execution original SHA b3e68b02... preservado. Auditor parcial PASS83/25fuentes, residuo0. wait_s285,8266 sólo cuenta esperas cerradas; última espera agotó900 y no queda espera adicional. Nuevo contrato M2-R1 conserva trabajador/matrices/manifest/criterios/reserva6GiB y global ORIGINAL22000s; sólo R5 52–64. Ocho controles del controlador PASS; auditor independiente generado. ZIP202 archivos/69633620bytes/SHA146fecfa... CRC+hashes PASS. Colab separado generic resource check: RAM12659486720bytes/disco93637111808, Python3.13.16; versiones originales no coinciden, preparación aislada requerida. venv inicial falló sin campos ópticos. No se han enviado ni ejecutado campos nuevos; siguiente publicar prerregistro verificado y después descargar paquete revisado en CPU estándar, comprobar versiones y límites antes de continuar. Original/main/E preservados; JEV fallback local. Docs/POINT-03-D16-M2-RESOURCE-RESULTS.md. Tarea1 abierta.
+
+## Reanudación de ventana de doce horas — 2026-10-09T01:53:41.685630+00:00
+
+M2 original activa: P6 32/32, Radau 51/64; espera por memoria, sin relanzar ni editar sus fuentes. Auditor parcial independiente PASS 83 campos/25 fuentes, residuo de potencia 0; reservas del controlador y dictamen temporal final pendientes. Preservación PASS 333 archivos principales/estado Git y E603. HEAD local/remoto c9cf004; PR1 abierta, sin fusión. Presupuesto M2 original 22000 s/espera900 intacto; ventana de usuario termina como máximo 2026-10-09T13:45UTC (15:45 Madrid). JEV doctor local ready, sin consulta remota por bloqueo heredado. Tarea1 abierta, tareas2–22 pendientes. Detalles Docs/WORK-WINDOW-20261009.md. Siguiente: final M2 o auditoría de fallo antes de recuperación registrada; no repetir campos.
+
+## Lectura para resumen de estado — 2026-10-09T01:36UTC (03:36 Madrid)
+
+M2 sesión36949 activa confirmada por lectura del proceso. Último progress:
+P6_32768 32/32 completos y R5_65536 49/64; total81/96, sin execution.json
+final ni auditoría final. No asumir aprobado ni relanzar. Contrato c9cf004
+congelado; mismo presupuesto desde22:55:32UTC original, sin ampliación.
+C2-R1 integridad/temporal PASS64 tramos confirmado en informe local.
+E recuperado completo8simulaciones y controles sin repetir; 51 pruebas
+CPU de base documentadas. Tarea1/T96-Q4 sigue abierta. Las etapas físicas
+y de impacto científico permanecen pendientes; ningún resultado Nobel.
+Siguiente al completar M2: auditor independiente; si falla, preservar y
+verificar antes de cualquier recuperación. JEV fallback local heredado.
+## M2 activa, dos tramos — 2026-10-08T22:59UTC
+
+Lectura actual sesión36949: P6_32768 2/32 completos; proceso activo.
+Luego64R5_65536; aún sin dictamen final M2. No editar fuentes/manifest.
+Prerregistro c9cf004 remoto verificado antes de campos. C2-R1 aprobado
+por auditor independiente,64/64; tarea1 abierta. Siguiente al completar:
+scripts/audit_point03_d16_mid_refined_time.py --out
+resultados/codex/point03_d16_mid_refined_time_20261008. Si falla, preservar
+antes de recuperar. Reserva6GiB/guard3/global22000/espera900 sin extender.
+PR1 actualizada; informes C2/M2 en outputs/d16. JEVfallbacklocal heredado.
+## M2 primer tramo completo — 2026-10-08T22:58UTC
+
+Sesión36949 ACTIVA: P6_32768 1/32; R5_65536 todavía no iniciado.
+Tramo1 real47777DOF:118,7029811s<=360, dt0,002/32768m; guardia
+RAM inicio7540621312/final7746392064bytes>3GiB y disco>2GiB.
+Cadena inicial y campo guardados; aún sin evaluación temporal final M2.
+Fuentes/manifest/prerregistro c9cf004 congelados; no editar ni relanzar.
+Al completar32+64=96 usar auditor M2 antes de adoptar cualquier resultado.
+C2-R1 independientePASS64tramos; T96/Q4 sigue abierto hasta validación
+espacial/prospectiva/dominio. C1negativo/C2failed/M1sin ejecutar conservados.
+GitHubc9cf004 remotoverificado yPR1 actualizado. ReportesC2 yM2 enoutputs/d16.
+JEVfallbacklocal por bloqueoheredado. Sin h0,28 ni tareas2–22 iniciadas.
+## M2 activa — 2026-10-08T22:56UTC
+
+Prerregistro c9cf004ba33475989acb1580149883654f01fd84 publicado y remoto
+verificado antes del inicio. PR1 actualizada con C2 PASS/M2 iniciado.
+Sesión M2 36949 ACTIVA, manifiesto creado22:55:32,699189UTC. Carpeta
+resultados/codex/point03_d16_mid_refined_time_20261008. No dictamen final.
+Primero32 tramos P6_32768, después64 R5_65536; total96, cada uno1024pasos.
+Fuentes/contrato/controls/matrices congelados; no editar mientras corre.
+Un hilo, reserva>6GiB/guard>3/disco>2; hijo360/corte370; global22000s
+original desde lanzamiento y espera acumulada<=900. No ampliar ni resetear.
+Al completar usar scripts/audit_point03_d16_mid_refined_time.py --out carpeta.
+Si falla preservar y auditar antes de registrar recuperación. No relanzar.
+C2-R1 completo y auditado PASS64tramos; cota intensidad8,09288e-6<1e-5.
+C1 negativo/C2 original failed/M1 sin ejecutar preservados. Tarea1 abierta.
+Principal y E603 controlados22:54PASS. JEV fallback local. No h0,28/tarea2.
 ## M2 preparada, previa a campos — 2026-10-08T22:53UTC
 
 C2-R1 final e auditoría independiente PASS; informe D16-C2-RESULTS.md.
