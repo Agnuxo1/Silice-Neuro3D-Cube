@@ -1,0 +1,1483 @@
+{
+  "status": "failure_retained",
+  "samples": [
+    {
+      "available_ram_gib": 10.832233428955078,
+      "vram_used_gib": 0.5283203125,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0
+    },
+    {
+      "available_ram_gib": 10.832008361816406,
+      "vram_used_gib": 0.5283203125,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.05194091796875
+    },
+    {
+      "available_ram_gib": 10.697647094726562,
+      "vram_used_gib": 0.5634765625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.13444137573242188
+    },
+    {
+      "available_ram_gib": 10.665802001953125,
+      "vram_used_gib": 0.5673828125,
+      "temperature_c": 28.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.18058395385742188
+    },
+    {
+      "available_ram_gib": 10.592754364013672,
+      "vram_used_gib": 0.5673828125,
+      "temperature_c": 30.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.2719993591308594
+    },
+    {
+      "available_ram_gib": 10.55600357055664,
+      "vram_used_gib": 0.572265625,
+      "temperature_c": 30.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.27996063232421875
+    },
+    {
+      "available_ram_gib": 10.54599380493164,
+      "vram_used_gib": 0.57421875,
+      "temperature_c": 30.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.2947425842285156
+    },
+    {
+      "available_ram_gib": 10.537269592285156,
+      "vram_used_gib": 0.623046875,
+      "temperature_c": 29.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3214225769042969
+    },
+    {
+      "available_ram_gib": 10.502601623535156,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 28.0,
+      "utilization_percent": 14.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.503238677978516,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 27.0,
+      "utilization_percent": 14.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.499393463134766,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.503364562988281,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.507438659667969,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.511104583740234,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.505210876464844,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.509979248046875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.516735076904297,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.506031036376953,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3443336486816406
+    },
+    {
+      "available_ram_gib": 10.51058578491211,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.511856079101562,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.517463684082031,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.106742858886719,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.134490966796875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.129875183105469,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.135189056396484,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.135356903076172,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.137435913085938,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.133590698242188,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.131072998046875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.140644073486328,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.13387680053711,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.140369415283203,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.138870239257812,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.143321990966797,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.147346496582031,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.137718200683594,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.13592529296875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.133544921875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.52044677734375,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.525993347167969,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435249328613281
+    },
+    {
+      "available_ram_gib": 10.469104766845703,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.468307495117188,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.502365112304688,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.510261535644531,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.502727508544922,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.483375549316406,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.473529815673828,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.475341796875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.58560562133789,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.58908462524414,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.588371276855469,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.561908721923828,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.51705551147461,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.519500732421875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.505348205566406,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.506477355957031,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3435020446777344
+    },
+    {
+      "available_ram_gib": 10.506603240966797,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434715270996094
+    },
+    {
+      "available_ram_gib": 10.513351440429688,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.510425567626953,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.583763122558594,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.586372375488281,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.541610717773438,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.581615447998047,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.584976196289062,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.589027404785156,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.590614318847656,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.57979965209961,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.532901763916016,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.515827178955078,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.472709655761719,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.45123291015625,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.465511322021484,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.416767120361328,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.416698455810547,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.411556243896484,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.426753997802734,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.465995788574219,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.465484619140625,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.485313415527344,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.502967834472656,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.504005432128906,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.508567810058594,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.513362884521484,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.510608673095703,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.508575439453125,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.5130615234375,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.511489868164062,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.517086029052734,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.515617370605469,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.522552490234375,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.601081848144531,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.545516967773438,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.544357299804688,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.5521240234375,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.540740966796875,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.545066833496094,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.5308837890625,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.575458526611328,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.580673217773438,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.584957122802734,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.581634521484375,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.582866668701172,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.582710266113281,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.585403442382812,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.578285217285156,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.58175277709961,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.58188247680664,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.583259582519531,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.578643798828125,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3434486389160156
+    },
+    {
+      "available_ram_gib": 10.581645965576172,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.593109130859375,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.587642669677734,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.590320587158203,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.536731719970703,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51620864868164,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.517757415771484,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.520084381103516,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.510425567626953,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.513336181640625,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51700210571289,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.510906219482422,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.513729095458984,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.512447357177734,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.515213012695312,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.50973129272461,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51242446899414,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.510997772216797,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51436996459961,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.514057159423828,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51275634765625,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51544189453125,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.489143371582031,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.495948791503906,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.497241973876953,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.491802215576172,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.497081756591797,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.495525360107422,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.496208190917969,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.495403289794922,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.520668029785156,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.478233337402344,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.512870788574219,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.515144348144531,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51202392578125,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.510723114013672,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51519775390625,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.513450622558594,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.512516021728516,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.516334533691406,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.507640838623047,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.597930908203125,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.60904312133789,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.60543441772461,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.606239318847656,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.604972839355469,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.614799499511719,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.59866714477539,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.596832275390625,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.59537124633789,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.581836700439453,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.579841613769531,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.576961517333984,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.58926773071289,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.588054656982422,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.591968536376953,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.574024200439453,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.574417114257812,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.573249816894531,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.576526641845703,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.576431274414062,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.580848693847656,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.581283569335938,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.579608917236328,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 1.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.579952239990234,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.58243179321289,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.59286117553711,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.587322235107422,
+      "vram_used_gib": 0.7294921875,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.591659545898438,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.590145111083984,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.586841583251953,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.599220275878906,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.588420867919922,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 26.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.591907501220703,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.579292297363281,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.567489624023438,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.569938659667969,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.569713592529297,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.5201416015625,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.507347106933594,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.518997192382812,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.519336700439453,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.520214080810547,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.51540756225586,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.520084381103516,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.512645721435547,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.508861541748047,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.542465209960938,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.546356201171875,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.546062469482422,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.482826232910156,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.452430725097656,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.540939331054688,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.54738998413086,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.54787826538086,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.545021057128906,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.556617736816406,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.545890808105469,
+      "vram_used_gib": 0.6806640625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.3433952331542969
+    },
+    {
+      "available_ram_gib": 10.545818328857422,
+      "vram_used_gib": 0.53515625,
+      "temperature_c": 25.0,
+      "utilization_percent": 0.0,
+      "owned_rss_gib": 0.14616775512695312
+    }
+  ],
+  "new_gpu_execution": true,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": 14720,
+  "child_finished": true,
+  "profile_sha256": "eab2a5944b4c13bbeb8744303c80c11ec1aff7d30620b3869c4fe342fa94c75c",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/check_point03_render_reference.py": "b4b00b2c78b7bfbc39bc49e04f5ad680dd0c5a45a5be277abd13e0423fb1c9d1",
+    "scripts/run_point03_render_blender.py": "3b0aeadc5ca48c52d5347c9d6428636a735e9272589e86a8e023c76727e11d29",
+    "scripts/guard_point03_render_gpu.py": "186ffbf0891d28fc3058b6f7a7bf9c0d9eb038a449dbb509f918362e65aadba6",
+    "scripts/audit_point03_render_gpu.py": "3b14724720c66d780ba821bfe2f8bf123d76db9f28e4530705e942db3bf70f77"
+  },
+  "profile_relative": "resultados/codex/point03_render_profile_v3_20261009.json",
+  "published_commit": "a67c33ae335a225dca6f675e34df9a35f64d6f6c",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "resource_preflight_pass": true,
+  "elapsed_child_with_startup_s": 115.57900230000087,
+  "error_type": "RuntimeError",
+  "reason": "independent own-child hard cutoff",
+  "elapsed_guard_s": 116.04989139999816,
+  "finished_utc": "2026-10-09T08:18:22.022545+00:00"
+}

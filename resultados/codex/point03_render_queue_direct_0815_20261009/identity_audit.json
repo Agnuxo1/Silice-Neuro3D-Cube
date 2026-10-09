@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-10-09T08:15:59.367714+00:00",
+  "direct_fifo_identity_pass": true,
+  "exit_code": 0,
+  "observations": [
+    {
+      "queue_holder": {
+        "name": "Silice:R1-direct-identity-0815",
+        "pid": 34704,
+        "ctime": 1791533750.640412,
+        "child_pid": 31336,
+        "child_ctime": 1791533759.0411959
+      },
+      "self_pid": 31336,
+      "parent_pid": 34704,
+      "chain": [
+        {
+          "pid": 31336,
+          "ppid": 34704,
+          "ctime": 1791533759.0411959,
+          "exe": "C:\\Python313\\python.exe"
+        },
+        {
+          "pid": 34704,
+          "ppid": 31156,
+          "ctime": 1791533750.640412,
+          "exe": "C:\\Python313\\python.exe"
+        },
+        {
+          "pid": 31156,
+          "ppid": 34804,
+          "ctime": 1791533750.6316948,
+          "exe": "D:\\PROJECTS\\.cognition\\silice_fem_env_20261008\\Scripts\\python.exe"
+        },
+        {
+          "pid": 34804,
+          "ppid": 33956,
+          "ctime": 1791533750.5504334,
+          "exe": "C:\\Python313\\python.exe"
+        },
+        {
+          "pid": 33956,
+          "ppid": 32660,
+          "ctime": 1791533750.5413167,
+          "exe": "D:\\PROJECTS\\.cognition\\silice_fem_env_20261008\\Scripts\\python.exe"
+        }
+      ],
+      "gpuq_env": "1",
+      "new_gpu_execution": false
+    }
+  ],
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "profile_sha256": "eab2a5944b4c13bbeb8744303c80c11ec1aff7d30620b3869c4fe342fa94c75c",
+  "stdout_sha256": "4eb807cf0b7c9f8e9ec6f54fe72bcdcf6f8e3f9f98e3ab5221fda09409c21d58",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

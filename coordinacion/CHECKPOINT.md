@@ -1,3 +1,11 @@
+## R1run02 GPU ejecutado y negativo auditado — 2026-10-09T08:26:22.715561+00:00
+
+Gate identidad directa FIFO PASS (salida nueva0815), seguido de run02 con perfilv3/fuentesa67c33a. Blender4.5.14/OpenGL/RTX3090 generó84RGBAframes;63 fallan precisión y84 filas tienen al menos tiempo0. Workercompleted/accuracyFalse; Blender no cerró y supervisor cortó por timer115 (hijo115,579s<=120), recursosmuestreadosPASS. Auditor completo exit1; auditoría adicional hashes/formas/fuentes84PASS, métricas originales con5 discrepancias~1e-14 y precisiónnegativa, no adopción. Fallos/stdout/stderr/crudos/diagnósticos conservados. Docs/POINT-03-RENDER-GPU-RUN02-RESULTS.md. No speedup/red/validaciónfísica. Próximo publicar negativo antes de preregistrar calibración layout/reloj/cierre nueva. F1 último96/192a07:45; Chrome aún desconectado, ninguna celda relanzada. S16 bloqueadohastaF1localPASS; tarea1abierta; JEVfallbacklocal.
+
+## Publicación R1run01/v3 verificada — 2026-10-09T08:10:57.008641+00:00
+
+HEADa67c33ae335a225dca6f675e34df9a35f64d6f6c local/remoto y PR1 abierta/no fusionada verificados; revisión incremental18 archivos sin hallazgos. Perfilv3/seis fuentes coinciden con Git y local; runtime directo fijado, F1workerSHA39b intacto. Heartbeat actualizado sin cambiar deadline. R1run01 cero frames/bloqueo auditado; gate directo FIFO aún pendiente (timeout no PASS), no run02. Chrome desconectado, último F1confirmado96/192 a07:45; conexión solicitada, no celdas relanzadas. Siguiente recuperar seguimiento y gate/recurso R1, F1final/transporte/auditoría antes deS16. Tarea1 abierta, JEV fallback local.
+
 ## R1 segundo intento preregistrado, gate pendiente — 2026-10-09T08:08:13.059968+00:00
 
 Perfilv3eab2a5944b4c13bbeb8744303c80c11ec1aff7d30620b3869c4fe342fa94c75c preparado: invocación directa del runtime instaladoC:/Python313/python.exe,3.13.7/psutil6.1.1; seis fuentes/Blender/gates/límites idénticos a66a6. Docs/POINT-03-RENDER-GPU-WINDOWS-LAUNCH.md exige comprobar identidad directa bajo FIFO antes de run02. Primer diagnóstico directo agotó espera1min por turno ajeno; conservado, no PASS. No GPU ni modificación de guard/shader/cola compartida. F1 último confirmado96/192; Chrome desconectado, intervención de conexión solicitada. Próximo publicar/verificar preparación y conservar gate; sin relanzar F1 ni repetir productos. Tarea1 abierta y JEV fallback local.
