@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-10-09T11:09:56.323720+00:00",
+  "connector": "Google Drive",
+  "queries": [
+    "Silice_D16_F1",
+    "Silice"
+  ],
+  "accessible_results": [
+    0,
+    0
+  ],
+  "scope": "bounded searches only; no proof of absence across all Drive accounts",
+  "original_f1_restarted": false
+}

@@ -19,3 +19,4 @@ scripts/run_point03_m1.py -text whitespace=cr-at-eol
 scripts/diagnose_point03_p4b_generated.py -text whitespace=cr-at-eol
 scripts/check_point03_p4h_generated.py -text whitespace=cr-at-eol
 resultados/codex/point03_render_pipeline_queue_*.txt -text whitespace=cr-at-eol
+resultados/codex/point03_render_p3_queue_*.txt -text whitespace=cr-at-eol
