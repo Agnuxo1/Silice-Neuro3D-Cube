@@ -7,16 +7,16 @@ precisión y coste total; una cifra de kernel no prueba el sistema completo.
 
 | Técnica | Papel previsto | Evidencia de este proyecto |
 |---|---|---|
-| Rasterización de triángulos y shaders FP32 | Interpolación y representación del campo P2 | R1 ejecutada/negativa; P0 instrumento auditado; R2 registrada, aún pendiente |
+| Rasterización de triángulos y shaders FP32 | Interpolación y representación del campo P2 | R1 y R2 negativas; P0 auditada; P1 separa rutas de interpolación |
 | Batches y geometría preparada | Reutilizar geometría, actualizar amplitudes y fases | Ya presentes en los workers; todos los costes de preparación/lectura se guardan |
-| Vulkan | Backend moderno del motor, con comparación equivalente de lectura/precisión | Soporte oficial4.5 verificado; todavía ningún resultado Vulkan adoptado |
+| Vulkan | Backend moderno del motor, con comparación equivalente de lectura/precisión | P1 ejecutada y auditada: 21/30 marcas pasan, nueve fallan; no ventaja demostrada |
 | Instancing y buffers persistentes | Compartir geometría entre elementos/instancias | Candidatos; requieren medir equivalencia y coste de actualizaciones |
 | Lectura asíncrona/pipeline de transferencias | Reducir esperas CPU/GPU y sincronizaciones | Candidato; auditoría y coste extremo a extremo antes de adopción |
 | BVH/RTX/OptiX | Intersecciones y caminos geométricos cuando sea válido un modelo de rayos | MEGA-001 heredado sólo verifica CPU/metadata; no pipeline RT óptico validado |
 | CUDA/FFT | Referencias de propagación y contraste numérico | Ensayos históricos locales; no sustituyen la red propia ni cierran convergencia global |
 
 El backend Vulkan está plenamente soportado en Blender4.5LTS; OpenGL sigue
-siendo predeterminado. Se registra como candidato ejecutable por proceso,
+siendo predeterminado. Se ejecutó por proceso en la calibración P1,
 sin cambiar preferencias globales ni sustituir el ensayo OpenGL congelado.
 [Blender4.5LTS](https://www.blender.org/download/releases/4-5/),
 [notas técnicas](https://developer.blender.org/docs/release_notes/4.5/eevee/).
@@ -30,9 +30,10 @@ difracción. No se adopta como prueba un resultado de otro proyecto.
 
 ## Orden de los ensayos
 
-1. Terminar R2P2 con lector/reloj/cierre P0 auditados, bajo los mismos gates.
-2. Después registrar una calibración equivalente Vulkan con fuentes/perfil
-   nuevos y mismos marcadores; publicar/verificar antes de GPU.
+1. R2 terminó con lectura/reloj/cierre correctos, pero 63/84 campos fallan precisión.
+2. P1 ejecutó las mismas 30 marcas en OpenGL y Vulkan con prerregistro.
+   Uniformes, suma y coordenadas analíticas pasan; smooth falla. Una nueva
+   tanda P2 con coordenadas analíticas requiere protocolo y publicación previos.
 3. Sólo tras F1localPASS puede registrarse lectura GPU de su malla y campos
    exactos, conservando ambos detectores. Nunca reemplazar primarias por GIF.
 4. BVH/RT y red completa siguen el orden de la tarea1 y requieren presupuestos

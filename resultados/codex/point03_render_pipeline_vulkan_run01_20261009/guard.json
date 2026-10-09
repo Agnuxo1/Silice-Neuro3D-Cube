@@ -1,0 +1,76 @@
+{
+  "status": "completed",
+  "samples": [
+    {
+      "available_ram_gib": 8.4691162109375,
+      "vram_used_gib": 0.7783203125,
+      "temperature_c": 26.0,
+      "utilization_percent": 17.0
+    },
+    {
+      "available_ram_gib": 8.468635559082031,
+      "vram_used_gib": 0.7783203125,
+      "temperature_c": 26.0,
+      "utilization_percent": 17.0,
+      "owned_rss_gib": 0.052516937255859375
+    },
+    {
+      "available_ram_gib": 8.339622497558594,
+      "vram_used_gib": 0.81640625,
+      "temperature_c": 26.0,
+      "utilization_percent": 11.0,
+      "owned_rss_gib": 0.13528060913085938
+    },
+    {
+      "available_ram_gib": 8.244873046875,
+      "vram_used_gib": 0.8740234375,
+      "temperature_c": 29.0,
+      "utilization_percent": 11.0,
+      "owned_rss_gib": 0.21491622924804688
+    },
+    {
+      "available_ram_gib": 8.134601593017578,
+      "vram_used_gib": 0.8740234375,
+      "temperature_c": 30.0,
+      "utilization_percent": 3.0,
+      "owned_rss_gib": 0.29712677001953125
+    },
+    {
+      "available_ram_gib": 8.14455795288086,
+      "vram_used_gib": 0.8740234375,
+      "temperature_c": 30.0,
+      "utilization_percent": 3.0,
+      "owned_rss_gib": 0.3187103271484375
+    },
+    {
+      "available_ram_gib": 8.083736419677734,
+      "vram_used_gib": 0.876953125,
+      "temperature_c": 31.0,
+      "utilization_percent": 3.0,
+      "owned_rss_gib": 0.37053680419921875
+    }
+  ],
+  "new_gpu_execution": true,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": 26620,
+  "child_finished": true,
+  "profile_sha256": "3190e0c7a4899cd3d618109d6df3280d39d28114cf51f16247aa0de3e07a3feb",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-PIPELINE-CALIBRATION-CONTRACT.md": "5e984f5696e9140d2600a3aa7137c76aec3abb9e8376842a2efddc823c6bb72f",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/point03_render_p2_gate.py": "914d33718a5f6c325f20f9b5ec2632ef35da6796ca2b29113fe59376f0bf3c93",
+    "scripts/point03_render_pipeline_reference.py": "664604d962121e7eaf57b91464b18ef85c52237a4895201fce36440a2a73a9c5",
+    "scripts/check_point03_render_pipeline.py": "580406bab6ca4bb6f12234556d7500737ad282c46526759344453552b9903c33",
+    "scripts/run_point03_render_pipeline.py": "67cfabbacac3f842725d4539d26b1b18c269f8b33f8251b7b28530d54434a9c5",
+    "scripts/guard_point03_render_pipeline.py": "7ece9845c8c3f8486b6c95b2b1b58381d56a04b26171aa763e824f4f644615a6",
+    "scripts/audit_point03_render_pipeline.py": "92325fa1e2bf3e66be9f0fc3a9f78c50b14444bc376fb86165ace017a759f167"
+  },
+  "profile_relative": "resultados/codex/point03_render_pipeline_vulkan_profile_20261009.json",
+  "published_commit": "4ef9c1d00d61806f74f51cf7254e4853905b0a00",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "resource_preflight_pass": true,
+  "elapsed_child_with_startup_s": 3.3483052999945357,
+  "elapsed_guard_s": 3.9860858999963966,
+  "finished_utc": "2026-10-09T10:50:54.171459+00:00"
+}
