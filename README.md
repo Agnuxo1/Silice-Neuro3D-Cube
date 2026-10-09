@@ -2,7 +2,7 @@
 
 <img src="assets/header.gif" alt="Silice-Neuro3D-Cube: cubo de sílice con guías escritas por láser de femtosegundo" width="100%"/>
 
-**Investigación abierta sobre una red neuronal óptica 3D escrita con láser de femtosegundo en un cubo de sílice.**
+**Investigación abierta sobre transformaciones ópticas lineales 3D escritas con láser de femtosegundo en un cubo de sílice. La red neuronal es el objetivo declarado, todavía no demostrado.**
 
 ![estado](https://img.shields.io/badge/estado-investigaci%C3%B3n_num%C3%A9rica-0ea5e9)
 ![dispositivo](https://img.shields.io/badge/dispositivo_fabricado-no-f87171)
@@ -18,7 +18,7 @@
 
 ## La idea
 
-Escribir, dentro de un bloque de sílice fundida, **guías de onda, acopladores y elementos de fase** con un láser de femtosegundo, de modo que la propia geometría del vidrio realice un cálculo óptico. Una red entrenada en software se convertiría en parámetros fabricables (separaciones, longitudes, grosores). Se estudia también escribir desde las seis caras del cubo.
+Escribir, dentro de un bloque de sílice fundida, **guías de onda, acopladores y elementos de fase** con un láser de femtosegundo, de modo que la propia geometría del vidrio realice una transformación óptica lineal del campo. El objetivo a largo plazo es una red neuronal: si existiera, una red entrenada en software se convertiría en parámetros fabricables (separaciones, longitudes, grosores). Esa red no existe todavía en el repositorio. Se estudia también escribir desde las seis caras del cubo.
 
 Este repositorio **no** presenta un procesador ya construido: conecta geometría y propiedades del material con cálculos verificables, primero en simulación y después, si la evidencia lo permite, en un diseño fabricable.
 
@@ -225,6 +225,7 @@ Silice-Neuro3D-Cube/
 ├── resultados/codex/  informes JSON con parámetros, hashes y criterios (evidencia retenida)
 ├── Docs/              contratos, resultados, revisiones y estado (168 Markdown)
 ├── coordinacion/      checkpoint, tablón, cola, respuestas y tareas de los agentes
+├── .github/           CI: pruebas CPU en Windows y Linux, guardián de tamaño de blobs
 ├── requirements/      bloqueos de dependencias con hash (Windows x64, CPython 3.13)
 ├── pyproject.toml     metadatos del paquete silice-neuro3d-cube
 └── AGENTS.md          reglas de colaboración entre agentes y revisión
