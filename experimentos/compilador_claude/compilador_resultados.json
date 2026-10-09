@@ -1,0 +1,310 @@
+{
+ "contract": "CONTRATO-COMPILADOR.md (amendment E-1)",
+ "bits": 8,
+ "sigma_delta": 0.02,
+ "seed_delta": 20261040,
+ "criteria": {
+  "C1_all_targets": true,
+  "C2_all_targets": false,
+  "C3_all_targets": true,
+  "C4": "published as obtained; no thresholds relaxed"
+ },
+ "targets": {
+  "DFT4": {
+   "C1_eps_ideal_continuous": 6.930191732305721e-16,
+   "C2_eps_dac8_direct_ideal": 0.013038149030740066,
+   "eps1_uncalibrated_dac8_direct": 0.0766921905257188,
+   "eps2_calibrated_dac8_discrete": 0.0085470480130912,
+   "diag_eps_calibrated_continuous": 3.19460179249562e-16,
+   "diag_eps_calibrated_rounded_dac8": 0.01067765914096609,
+   "diag_eps_calibrated_rounded_dac10": 0.0031894949747917857,
+   "diag_eps_calibrated_rounded_dac12": 0.0009653698893500946,
+   "diag_eps_ideal_discrete_dac8": 0.008343643396167028,
+   "C1": true,
+   "C2": false,
+   "C3": true,
+   "delta": [
+    -0.03273655354841075,
+    0.028697956868025027,
+    -0.04344049056261249,
+    -0.015162786320752113,
+    0.012055690247821244,
+    0.004617561676431645,
+    0.00982298340250394,
+    -0.01299116080658504,
+    0.0536133019035675,
+    0.017497478315664516,
+    -0.03139470657224744,
+    -0.001818434773147588
+   ],
+   "codes_calibrated": [
+    192,
+    194,
+    64,
+    1,
+    50,
+    94,
+    43,
+    119,
+    42,
+    231,
+    78,
+    233,
+    242,
+    131,
+    96,
+    46
+   ],
+   "codes_ideal_discrete": [
+    64,
+    64,
+    192,
+    128,
+    206,
+    224,
+    42,
+    199,
+    42,
+    25,
+    78,
+    153,
+    100,
+    68,
+    36,
+    235
+   ]
+  },
+  "haar1": {
+   "C1_eps_ideal_continuous": 6.453381172803705e-16,
+   "C2_eps_dac8_direct_ideal": 0.012872090839558308,
+   "eps1_uncalibrated_dac8_direct": 0.03595116083991426,
+   "eps2_calibrated_dac8_discrete": 0.00925101955733898,
+   "diag_eps_calibrated_continuous": 3.556479285721087e-16,
+   "diag_eps_calibrated_rounded_dac8": 0.011333865156110864,
+   "diag_eps_calibrated_rounded_dac10": 0.003471814736655675,
+   "diag_eps_calibrated_rounded_dac12": 0.0008864251158448291,
+   "diag_eps_ideal_discrete_dac8": 0.00692300461625843,
+   "C1": true,
+   "C2": false,
+   "C3": true,
+   "delta": [
+    -0.002169685939937904,
+    -0.010448574509996436,
+    0.014350863216935286,
+    0.020073501945402385,
+    -0.019111661145411282,
+    0.032028387366115026,
+    0.004384112937465958,
+    0.031217389007711746,
+    -0.006640382982986951,
+    0.010239937240711509,
+    -0.010454953360613799,
+    -0.018660731684504144
+   ],
+   "codes_calibrated": [
+    39,
+    121,
+    238,
+    27,
+    29,
+    183,
+    98,
+    167,
+    223,
+    142,
+    198,
+    245,
+    99,
+    35,
+    169,
+    159
+   ],
+   "codes_ideal_discrete": [
+    39,
+    120,
+    238,
+    25,
+    29,
+    187,
+    98,
+    172,
+    224,
+    138,
+    198,
+    243,
+    95,
+    36,
+    170,
+    160
+   ]
+  },
+  "haar2": {
+   "C1_eps_ideal_continuous": 6.744305039184212e-16,
+   "C2_eps_dac8_direct_ideal": 0.016994773273261557,
+   "eps1_uncalibrated_dac8_direct": 0.04522135291290164,
+   "eps2_calibrated_dac8_discrete": 0.008871502856414198,
+   "diag_eps_calibrated_continuous": 3.622208959480119e-16,
+   "diag_eps_calibrated_rounded_dac8": 0.016378301959377953,
+   "diag_eps_calibrated_rounded_dac10": 0.003515986641283688,
+   "diag_eps_calibrated_rounded_dac12": 0.0009113507532123595,
+   "diag_eps_ideal_discrete_dac8": 0.011149619640627814,
+   "C1": true,
+   "C2": false,
+   "C3": true,
+   "delta": [
+    -0.026311801167444214,
+    0.0031375222542448615,
+    -0.01630916999742269,
+    -0.006858723722191268,
+    -0.03218664190463076,
+    -0.016492598337488465,
+    0.011146401448349502,
+    0.01408412440490206,
+    0.004503892788027053,
+    -0.01605556407199287,
+    -0.02273204270910213,
+    -0.006085436413728994
+   ],
+   "codes_calibrated": [
+    90,
+    134,
+    57,
+    243,
+    60,
+    191,
+    14,
+    187,
+    89,
+    255,
+    214,
+    237,
+    115,
+    220,
+    65,
+    161
+   ],
+   "codes_ideal_discrete": [
+    166,
+    8,
+    57,
+    242,
+    60,
+    152,
+    242,
+    154,
+    167,
+    126,
+    213,
+    25,
+    128,
+    57,
+    156,
+    123
+   ]
+  }
+ },
+ "netlist_DFT4": {
+  "mesh": "rectangular 4x4, 6 MZI; theta_code = inner phase (D1, between couplers), phi_code = input-arm phase (D2)",
+  "columns": [
+   {
+    "mzi": 0,
+    "pair": [
+     0,
+     1
+    ],
+    "theta_code": 192,
+    "phi_code": 194,
+    "theta_rad": 4.71238898038469,
+    "phi_rad": 4.76147636559703,
+    "coupler_ratios": [
+     0.46726344645158924,
+     0.528697956868025
+    ]
+   },
+   {
+    "mzi": 1,
+    "pair": [
+     2,
+     3
+    ],
+    "theta_code": 64,
+    "phi_code": 1,
+    "theta_rad": 1.5707963267948966,
+    "phi_rad": 0.02454369260617026,
+    "coupler_ratios": [
+     0.4565595094373875,
+     0.48483721367924787
+    ]
+   },
+   {
+    "mzi": 2,
+    "pair": [
+     1,
+     2
+    ],
+    "theta_code": 50,
+    "phi_code": 94,
+    "theta_rad": 1.227184630308513,
+    "phi_rad": 2.3071071049800045,
+    "coupler_ratios": [
+     0.5120556902478213,
+     0.5046175616764317
+    ]
+   },
+   {
+    "mzi": 3,
+    "pair": [
+     0,
+     1
+    ],
+    "theta_code": 43,
+    "phi_code": 119,
+    "theta_rad": 1.055378782065321,
+    "phi_rad": 2.9206994201342606,
+    "coupler_ratios": [
+     0.509822983402504,
+     0.487008839193415
+    ]
+   },
+   {
+    "mzi": 4,
+    "pair": [
+     2,
+     3
+    ],
+    "theta_code": 42,
+    "phi_code": 231,
+    "theta_rad": 1.030835089459151,
+    "phi_rad": 5.66959299202533,
+    "coupler_ratios": [
+     0.5536133019035675,
+     0.5174974783156645
+    ]
+   },
+   {
+    "mzi": 5,
+    "pair": [
+     1,
+     2
+    ],
+    "theta_code": 78,
+    "phi_code": 233,
+    "theta_rad": 1.9144080232812801,
+    "phi_rad": 5.71868037723767,
+    "coupler_ratios": [
+     0.4686052934277526,
+     0.4981815652268524
+    ]
+   }
+  ],
+  "output_codes": [
+   242,
+   131,
+   96,
+   46
+  ],
+  "dac_bits": 8,
+  "layout_check": "not performed (declared limit)",
+  "delta_status": "assumed N(0; 0.02), to be measured in T14"
+ }
+}
