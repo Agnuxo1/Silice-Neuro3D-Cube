@@ -1,0 +1,549 @@
+{
+  "schema": "silice.point03-geometry.compact.v1",
+  "scope": "Retained-data summary after independent audit. Geometry only; Point 03 remains open.",
+  "out_dir": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z",
+  "manifest_sha256": "16b64deee8b53b5ed81e3aa15ed01fa533d11032e228b3b20d8b66ce13863512",
+  "execution_sha256": "19ed15f1dc1bc6391553033946d216c636507ed2c32ffe690dd7cd32f882227d",
+  "independent_audit_sha256": "94fb4234b68c0b49f9cc5c6d9c8fd1d8cc31d293818514b9b13ede66eb85a922",
+  "source_commit": "da6a8d63a6dae4c057a5a8863fece0925c4462b1",
+  "source_commit_basis": "Root recorded the clean freeze commit immediately before this fourth attempt; scientific source hashes are independently retained in the manifest.",
+  "environment": {
+    "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.2.6",
+    "scipy": "1.15.1",
+    "psutil": "6.1.1",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    }
+  },
+  "elapsed_s": 146.18630770000163,
+  "max_child_elapsed_s": 22.829702899965923,
+  "children": 14,
+  "child_costs": [
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 3.8585105999954976,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 5.120642299996689,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 6.3615210999851115,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 8.371019200014416,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 9.6292650999967,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 22.404576000000816,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 2.2665343999979086,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 22.496315800002776,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 2.0948694000253454,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 22.829702899965923,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 2.290057700010948,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 22.29406889999518,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 2.098343499994371,
+      "returncode": 0
+    },
+    {
+      "mode": null,
+      "N": null,
+      "batch": null,
+      "elapsed_s": 7.610499200003687,
+      "returncode": 0
+    }
+  ],
+  "tracked_file_count": 958,
+  "tracked_unchanged": true,
+  "frozen_unchanged": true,
+  "produced_unchanged": true,
+  "audit_counts": {
+    "grids": 4,
+    "reference_rows": 192,
+    "resolved_references": 192,
+    "synthetic_rows": 22,
+    "invariance_suites": 54,
+    "global_comparisons": 18
+  },
+  "audit_errors": {
+    "integrity": [],
+    "completion": [],
+    "science": []
+  },
+  "synthetic_max_absolute_fraction_error": 1.9579639266076244e-15,
+  "synthetic_max_reference_quality": 1.3211653992500908e-14,
+  "reference_max_absolute_fraction_error": 9.325873406851315e-15,
+  "reference_max_quality": 2.0087342503898e-14,
+  "global_reference": {
+    "area_fine_um2": 323.0818752214932,
+    "area_coarse_um2": 323.0818752214932,
+    "quality_total": 1.5247504789864415e-14,
+    "quality_pass": true
+  },
+  "global_comparisons": [
+    {
+      "label": "global_oriented_boundary_raw",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "global_oriented_boundary_reported",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n256_raw_grid",
+      "candidate_area_um2": 323.0818752214959,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.445178496776506e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n256_endpoint_corrected_grid",
+      "candidate_area_um2": 323.0818752214959,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.445178496776506e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n256_nominal_raw_fraction_grid",
+      "candidate_area_um2": 323.0818752214959,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.445178496776506e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n256_nominal_endpoint_corrected_fraction_grid",
+      "candidate_area_um2": 323.0818752214959,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.445178496776506e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n320_raw_grid",
+      "candidate_area_um2": 323.0818752214956,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 7.389531184679444e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n320_endpoint_corrected_grid",
+      "candidate_area_um2": 323.0818752214956,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 7.389531184679444e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n320_nominal_raw_fraction_grid",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n320_nominal_endpoint_corrected_fraction_grid",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n400_raw_grid",
+      "candidate_area_um2": 323.08187522149643,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 1.0028649464922102e-14,
+      "state": "PASS"
+    },
+    {
+      "label": "n400_endpoint_corrected_grid",
+      "candidate_area_um2": 323.08187522149643,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 1.0028649464922102e-14,
+      "state": "PASS"
+    },
+    {
+      "label": "n400_nominal_raw_fraction_grid",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n400_nominal_endpoint_corrected_fraction_grid",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n500_raw_grid",
+      "candidate_area_um2": 323.08187522149655,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 1.038053190228779e-14,
+      "state": "PASS"
+    },
+    {
+      "label": "n500_endpoint_corrected_grid",
+      "candidate_area_um2": 323.08187522149655,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 1.038053190228779e-14,
+      "state": "PASS"
+    },
+    {
+      "label": "n500_nominal_raw_fraction_grid",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    },
+    {
+      "label": "n500_nominal_endpoint_corrected_fraction_grid",
+      "candidate_area_um2": 323.081875221496,
+      "reference_area_um2": 323.0818752214932,
+      "relative_error": 8.62111971545935e-15,
+      "state": "PASS"
+    }
+  ],
+  "grids": [
+    {
+      "N": 256,
+      "dx_um": 0.5,
+      "status": "grid_completed",
+      "elapsed_s": 4.970379900012631,
+      "cells_completed": 65536,
+      "candidate_evaluated_cells": 2401,
+      "raw_min": -4.1710370822819566e-17,
+      "raw_max": 1.0,
+      "fraction_min": 0.0,
+      "fraction_max": 1.0,
+      "max_boundary_closure_um": 2.42861286636753e-16,
+      "endpoint_correction_count": 2,
+      "max_absolute_endpoint_correction": 4.1710370822819566e-17,
+      "raw_grid_area_um2": 323.0818752214959,
+      "grid_area_um2": 323.0818752214959,
+      "nominal_raw_fraction_grid_area_um2": 323.0818752214959,
+      "nominal_fraction_grid_area_um2": 323.0818752214959,
+      "profile_diagnostics": [
+        {
+          "N": 256,
+          "profile_samples": 64,
+          "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n256_ss64.npz",
+          "input_npz_sha256": "6c52097cf13dfd30d29c01e6c6d9ed94f07439d10032cf9e84d01730b20969c4",
+          "l1_fraction_sum": 0.09982079444971792,
+          "l1_area_um2": 0.02495519861242948,
+          "linf_fraction": 0.0017490021199200179,
+          "signed_area_difference_um2": -0.0008884503790332647,
+          "original_profile_area_um2": 323.082763671875,
+          "candidate_profile_area_um2": 323.0818752214959,
+          "candidate_raw_profile_area_um2": 323.0818752214959,
+          "raw_l1_area_um2": 0.024955198612429494,
+          "raw_linf_fraction": 0.0017490021199200179,
+          "changed_cells": 297,
+          "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+        }
+      ],
+      "resource_check_schedule": {
+        "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+        "grid_wall_time": "Before every row and every candidate-evaluated cell",
+        "retention_reserve_s": 4,
+        "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"
+      },
+      "array_artifacts": [
+        {
+          "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\grid_n256.npz",
+          "sha256": "06223d91e242847e811dfb47b07c6e824096e60d46af606f76504bdc817257be"
+        }
+      ],
+      "unrepresentable_events": 0
+    },
+    {
+      "N": 320,
+      "dx_um": 0.4,
+      "status": "grid_completed",
+      "elapsed_s": 6.201835300016683,
+      "cells_completed": 102400,
+      "candidate_evaluated_cells": 3721,
+      "raw_min": 0.0,
+      "raw_max": 1.0000000000000002,
+      "fraction_min": 0.0,
+      "fraction_max": 1.0,
+      "max_boundary_closure_um": 2.7755575615628914e-16,
+      "endpoint_correction_count": 10,
+      "max_absolute_endpoint_correction": 2.220446049250313e-16,
+      "raw_grid_area_um2": 323.0818752214956,
+      "grid_area_um2": 323.0818752214956,
+      "nominal_raw_fraction_grid_area_um2": 323.081875221496,
+      "nominal_fraction_grid_area_um2": 323.081875221496,
+      "profile_diagnostics": [
+        {
+          "N": 320,
+          "profile_samples": 64,
+          "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n320_ss64.npz",
+          "input_npz_sha256": "29bf4e7efb0cf0748fa0f18b7aeb638c0b11a8f5eb49ffcf299a325b5b8b30c6",
+          "l1_fraction_sum": 0.13259656745719092,
+          "l1_area_um2": 0.021215450793150552,
+          "linf_fraction": 0.0010805053745062132,
+          "signed_area_difference_um2": -0.005781028504079174,
+          "original_profile_area_um2": 323.08765625000007,
+          "candidate_profile_area_um2": 323.081875221496,
+          "candidate_raw_profile_area_um2": 323.081875221496,
+          "raw_l1_area_um2": 0.021215450793150906,
+          "raw_linf_fraction": 0.0010805053745062132,
+          "changed_cells": 412,
+          "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+        }
+      ],
+      "resource_check_schedule": {
+        "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+        "grid_wall_time": "Before every row and every candidate-evaluated cell",
+        "retention_reserve_s": 4,
+        "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"
+      },
+      "array_artifacts": [
+        {
+          "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\grid_n320.npz",
+          "sha256": "f0ca2b4c3b3ab2bc4fbf6921c12b3d8d9590edd5e98fca99e345ecc896aa5dce"
+        }
+      ],
+      "unrepresentable_events": 0
+    },
+    {
+      "N": 400,
+      "dx_um": 0.32,
+      "status": "grid_completed",
+      "elapsed_s": 8.210857300029602,
+      "cells_completed": 160000,
+      "candidate_evaluated_cells": 5625,
+      "raw_min": 0.0,
+      "raw_max": 1.0000000000000002,
+      "fraction_min": 0.0,
+      "fraction_max": 1.0,
+      "max_boundary_closure_um": 2.662800535624399e-16,
+      "endpoint_correction_count": 18,
+      "max_absolute_endpoint_correction": 2.220446049250313e-16,
+      "raw_grid_area_um2": 323.08187522149643,
+      "grid_area_um2": 323.08187522149643,
+      "nominal_raw_fraction_grid_area_um2": 323.081875221496,
+      "nominal_fraction_grid_area_um2": 323.081875221496,
+      "profile_diagnostics": [
+        {
+          "N": 400,
+          "profile_samples": 64,
+          "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n400_ss64.npz",
+          "input_npz_sha256": "bc5e948150d9c091bdcb9cd31596357d8cb3c9540b6f94158d056b6c6028dfd9",
+          "l1_fraction_sum": 0.1604372784052828,
+          "l1_area_um2": 0.01642877730870096,
+          "linf_fraction": 0.002449858485626788,
+          "signed_area_difference_um2": 0.0002752214959490289,
+          "original_profile_area_um2": 323.08160000000004,
+          "candidate_profile_area_um2": 323.081875221496,
+          "candidate_raw_profile_area_um2": 323.081875221496,
+          "raw_l1_area_um2": 0.01642877730870137,
+          "raw_linf_fraction": 0.002449858485626788,
+          "changed_cells": 538,
+          "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+        },
+        {
+          "N": 400,
+          "profile_samples": 32,
+          "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n400_ss32.npz",
+          "input_npz_sha256": "41b35f12b85d6ae25f79041f4d94265e65c1cfafb7490432304711b0be58d37b",
+          "l1_fraction_sum": 0.40874615002763715,
+          "l1_area_um2": 0.041855605762830046,
+          "linf_fraction": 0.002601898072289499,
+          "signed_area_difference_um2": 0.009475221495948963,
+          "original_profile_area_um2": 323.0724,
+          "candidate_profile_area_um2": 323.081875221496,
+          "candidate_raw_profile_area_um2": 323.081875221496,
+          "raw_l1_area_um2": 0.041855605762830456,
+          "raw_linf_fraction": 0.002601898072289499,
+          "changed_cells": 538,
+          "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+        }
+      ],
+      "resource_check_schedule": {
+        "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+        "grid_wall_time": "Before every row and every candidate-evaluated cell",
+        "retention_reserve_s": 4,
+        "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"
+      },
+      "array_artifacts": [
+        {
+          "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\grid_n400.npz",
+          "sha256": "c66374c40a35ef0fcf0bad030a315a2bbc959ee6f9a423ced0fe833d220766cf"
+        }
+      ],
+      "unrepresentable_events": 0
+    },
+    {
+      "N": 500,
+      "dx_um": 0.256,
+      "status": "grid_completed",
+      "elapsed_s": 9.471862800011877,
+      "cells_completed": 250000,
+      "candidate_evaluated_cells": 9025,
+      "raw_min": 0.0,
+      "raw_max": 1.0,
+      "fraction_min": 0.0,
+      "fraction_max": 1.0,
+      "max_boundary_closure_um": 2.498001805406602e-16,
+      "endpoint_correction_count": 0,
+      "max_absolute_endpoint_correction": 0.0,
+      "raw_grid_area_um2": 323.08187522149655,
+      "grid_area_um2": 323.08187522149655,
+      "nominal_raw_fraction_grid_area_um2": 323.081875221496,
+      "nominal_fraction_grid_area_um2": 323.081875221496,
+      "profile_diagnostics": [
+        {
+          "N": 500,
+          "profile_samples": 64,
+          "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n500_ss64.npz",
+          "input_npz_sha256": "bde56bfcc3b419c9887aef930b0cc62a8b5ed8d9eb41213fb628b035f9fc2fe4",
+          "l1_fraction_sum": 0.20838902036677273,
+          "l1_area_um2": 0.013656982838756817,
+          "linf_fraction": 0.0017633109986279205,
+          "signed_area_difference_um2": -0.0016127785040438254,
+          "original_profile_area_um2": 323.083488,
+          "candidate_profile_area_um2": 323.081875221496,
+          "candidate_raw_profile_area_um2": 323.081875221496,
+          "raw_l1_area_um2": 0.013656982838756817,
+          "raw_linf_fraction": 0.0017633109986279205,
+          "changed_cells": 670,
+          "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+        },
+        {
+          "N": 500,
+          "profile_samples": 32,
+          "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n500_ss32.npz",
+          "input_npz_sha256": "261b92a47aee4d7cbf037b2a0fd6ce3dce77eeabe6d0f546de82445538d45685",
+          "l1_fraction_sum": 0.6023019974931373,
+          "l1_area_um2": 0.039472463707710244,
+          "linf_fraction": 0.004777446756561048,
+          "signed_area_difference_um2": -0.0006207785040439828,
+          "original_profile_area_um2": 323.082496,
+          "candidate_profile_area_um2": 323.081875221496,
+          "candidate_raw_profile_area_um2": 323.081875221496,
+          "raw_l1_area_um2": 0.039472463707710244,
+          "raw_linf_fraction": 0.004777446756561048,
+          "changed_cells": 670,
+          "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+        }
+      ],
+      "resource_check_schedule": {
+        "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+        "grid_wall_time": "Before every row and every candidate-evaluated cell",
+        "retention_reserve_s": 4,
+        "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"
+      },
+      "array_artifacts": [
+        {
+          "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\grid_n500.npz",
+          "sha256": "756fe138bb2d8bcc481d258b3101f067cb23d0c2e8e278f4b624e2fe6e17a641"
+        }
+      ],
+      "unrepresentable_events": 0
+    }
+  ],
+  "frozen_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-Q4-REFINEMENT-CONTRACT.md": "1cadbf948074434363376a5e4f059c686121d3146fa07831cda8ed8ac3de9036",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\experimentos\\glass009d_claude\\resultados009d.json": "96b5cb7d9fe186b95644e3dfd4f214103db35b655da08d7705acaf33d3feb3ef",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_refinement.py": "fc28de576fea0c69a0a0bebfd68845ccba9794ba7690bf1694a09085507f3880",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\assess_point03_refinement.py": "6af62709ed61523e5aa6080b4790db8778f72a8bf54e7bd793bc03f26d654afc",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\experimentos\\glass009_claude\\adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\src\\silice\\coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\src\\silice\\tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\src\\silice\\bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\manifest.json": "b09c57d05e190b8fdcc6ad54108e50a05a28570acdc4b82ae12501995c9a0e73",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-GEOMETRY-CONTRACT.md": "83b2cd5dcc3d0e225a8394282881a4dc3dd7b22a32fce4b3d728d2f9e7143717",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_union_geometry.py": "838bfc8e56886ebdfa6597450f17c0a3e135f26f20dbcbbe9e8d1e3bdcfe4622",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_geometry_reference.py": "b95bf9044d8f6719c13c72dac4fd2bf920762e0a2f6e4ba3479e5270e2d0d1a1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\audit_point03_geometry.py": "1e937e953d7980d572c5ff9ef1406980047a25baddf2d43793ee92d71c0cf3d3",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\inputs\\centres.json": "040435d17a97057c8edbd611b5249a387157519a67b451b7a31b450c536e205d",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\src\\silice\\__init__.py": "b026b820df116e6c6128c24972986286a89e3aba3197453e91be8475bb486278",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n256_ss64.npz": "6c52097cf13dfd30d29c01e6c6d9ed94f07439d10032cf9e84d01730b20969c4",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n320_ss64.npz": "29bf4e7efb0cf0748fa0f18b7aeb638c0b11a8f5eb49ffcf299a325b5b8b30c6",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n400_ss64.npz": "bc5e948150d9c091bdcb9cd31596357d8cb3c9540b6f94158d056b6c6028dfd9",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n500_ss64.npz": "bde56bfcc3b419c9887aef930b0cc62a8b5ed8d9eb41213fb628b035f9fc2fe4",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n400_ss32.npz": "41b35f12b85d6ae25f79041f4d94265e65c1cfafb7490432304711b0be58d37b",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n500_ss32.npz": "261b92a47aee4d7cbf037b2a0fd6ce3dce77eeabe6d0f546de82445538d45685",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\inputs\\axes_n256.npz": "e741e92fe00f5cb36be90f8f6bb2489e5ca0160ebabbec2c8aff4b24d4f4d9a8",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\inputs\\axes_n320.npz": "a44630e59bf17770cb3c84d28c87940eb37631f8554ab1f45748c312028a3fb5",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\inputs\\axes_n400.npz": "f4fa156dc571b915bbaa409ed053e039c33a69cd5a6b90a766379a80e1d170c2",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\inputs\\axes_n500.npz": "06d76bf405e0c73d2d049046b5cdddb62a7c5ae98dfca36da1964ae1d4aa664e"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "case": "P6_32768",
+  "index": 3,
+  "started_utc": "2026-10-08T19:06:54.828264+00:00",
+  "previous_report_path": null,
+  "previous_report_sha256": null,
+  "resource_start": {
+    "available_ram_bytes": 10737418240,
+    "free_disk_bytes": 10737418240,
+    "synthetic_resource_sample": true
+  },
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_d16_mid_time.py\", line 98, in worker\n    assert sha(old_field) == old['field_sha256']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "elapsed_s": 0.008791700000074343
+}

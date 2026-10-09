@@ -1,0 +1,54 @@
+{
+  "pass_": true,
+  "truth": 0.8646647167633873,
+  "rows": [
+    {
+      "phase_m_inverse": 0.0,
+      "method": "field",
+      "order": 2.004007121797813,
+      "known_error": 0.00026907773361062315,
+      "indicator": 0.0003360233268052188,
+      "pass_": true
+    },
+    {
+      "phase_m_inverse": 0.0,
+      "method": "intensity",
+      "order": 2.035739431462348,
+      "known_error": 0.0001283863296144272,
+      "indicator": 0.00015984130715981001,
+      "pass_": true
+    },
+    {
+      "phase_m_inverse": 200000.0,
+      "method": "field",
+      "order": 1.9997563630631663,
+      "known_error": 0.0004165472232972034,
+      "indicator": 0.0005203422246895057,
+      "pass_": true
+    },
+    {
+      "phase_m_inverse": 200000.0,
+      "method": "intensity",
+      "order": 2.0357394316218143,
+      "known_error": 0.00012838632961409413,
+      "indicator": 0.00015984130715487567,
+      "pass_": true
+    },
+    {
+      "phase_m_inverse": 400000.0,
+      "method": "field",
+      "order": 1.9946010286686362,
+      "known_error": 0.0008588046964853602,
+      "indicator": 0.0010761001582020278,
+      "pass_": true
+    },
+    {
+      "phase_m_inverse": 400000.0,
+      "method": "intensity",
+      "order": 2.035739431585802,
+      "known_error": 0.00012838632961265084,
+      "indicator": 0.00015984130715734283,
+      "pass_": true
+    }
+  ]
+}

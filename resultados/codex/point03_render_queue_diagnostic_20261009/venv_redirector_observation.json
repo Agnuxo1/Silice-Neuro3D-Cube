@@ -1,0 +1,35 @@
+{
+  "source": "Transcribed exactly from bounded exec tool output of FIFO CPU probe 2026-10-09T08:03:07UTC",
+  "queue_holder": {
+    "name": "Silice:R1-identity-diagnostic",
+    "pid": 13804,
+    "ctime": 1791532978.6136167,
+    "child_pid": 4228,
+    "child_ctime": 1791532987.0026429
+  },
+  "self_pid": 28008,
+  "parent_pid": 4228,
+  "chain": [
+    {
+      "pid": 28008,
+      "ppid": 4228,
+      "ctime": 1791532987.0121856,
+      "exe": "C:/Python313/python.exe"
+    },
+    {
+      "pid": 4228,
+      "ppid": 13804,
+      "ctime": 1791532987.0026429,
+      "exe": "D:/PROJECTS/.cognition/silice_fem_env_20261008/Scripts/python.exe"
+    },
+    {
+      "pid": 13804,
+      "ppid": 13000,
+      "ctime": 1791532978.6136167,
+      "exe": "C:/Python313/python.exe"
+    }
+  ],
+  "gpuq_env": "1",
+  "new_gpu_execution": false,
+  "strict_identity_match": false
+}

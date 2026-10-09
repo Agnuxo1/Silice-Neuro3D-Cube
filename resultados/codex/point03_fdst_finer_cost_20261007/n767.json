@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-07T14:27:44.400441+00:00",
+  "manufactured_only": true,
+  "no_T96_propagation": true,
+  "N": 767,
+  "steps": 100,
+  "dz_m": 6.103515625e-08,
+  "elapsed_s": 22.018776000011712,
+  "seconds_per_step": 0.2201877600001171,
+  "field_relative_error": 2.2113167974627407e-13,
+  "pass_": true,
+  "forecasts_s": {
+    "32768": 7215.1125196838375,
+    "65536": 14430.225039367675,
+    "131072": 28860.45007873535
+  },
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\time_point03_fdst_finer.py": "6c43e97880f117a95e102046ea4c2343be42b98106ea3dcb4310f1bd175adaff",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fdst.py": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-FDST-FINER-COST-CONTRACT.md": "73041de665bf49458520510c19bbfee6bceebfdc8cc886e04e4d9d9e1fe0e7e2"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-08T19:30:15.766485+00:00",
+  "source_sha256": {
+    "scripts/run_point03_d16_time.py": "c04e968959a1e1dae6be198d3e7ae4d0b07772893a15d312060f418af561d0ba",
+    "scripts/audit_point03_d16_time.py": "373eb10c99e4de69c791f17e0247798c6bd720df5af8cc666157bb174c5f3868",
+    "scripts/point03_fem_time.py": "3f355f83626ad8fe34c0e2d5ad3bc91f7061590e595d38d649c938a5055615bd",
+    "scripts/point03_fem_radau.py": "323459cbc0b53221b069843e2aa5492cc875ae42d52632e51945ca61b1317ef2",
+    "scripts/check_point03_d16_controls.py": "51a64423c873e4ba3cd346509668c19d4e2030e9b2b743bc0d4c9cfc2c58718d",
+    "Docs/POINT-03-D16-COARSE-TIME-CONTRACT.md": "8f3ce953f4a185f98d122c88d347ae2faf76ab33779c1704c6924704fd1aeca4",
+    "scripts/check_point03_d16_worker.py": "de06d2a89d42fec9c88ee56ce8dc3b436ccef97cac01dcad5f77360ed5736e9a",
+    "resultados/codex/point03_d16_worker_controls_20261008/report.json": "69acc1c081535c5e495d477ebc0c2ac57c73b5ce5a9bcd06927e14b6a3a148a4",
+    "resultados/codex/point03_d16_evaluator_controls_20261008.json": "5fab655e671f60aaa3f79785994b3eae72ddcb7bfa6afdb670df1221401de3f5",
+    "resultados/codex/point03_p5a_mesh_coarse_20261008/mass.npz": "1f2b4e29164ee19a5995f0318f869b30b9e16af636e3b6d12a72585b94fd036d",
+    "resultados/codex/point03_p5a_mesh_coarse_20261008/cladding_mass.npz": "ca600938642b4b0b439e738832e63ad18b4c7e03ce7784c268155544d331a995",
+    "resultados/codex/point03_p5a_mesh_coarse_20261008/report.json": "be9c3d10b4829decb8b55b3230fc5a2cf8d41a978c3d9c0e17ade782cd68e499",
+    "resultados/codex/point03_p5b_detector_coarse_20261008/gaussian_q16.npz": "bd6277c94db5d7e142f4999a32c3c30d608b559884adf70683353ff42dc60b86",
+    "resultados/codex/point03_p5b_detector_coarse_20261008/core_q32.npz": "890e6ede86903f92023a75490ab007a7050e3acfed8fc384728321de9c8433a8",
+    "resultados/codex/point03_p5b_detector_coarse_20261008/intensity_q32.npy": "44b1c23853eb2c8dda75db5007af2b6273a659f5fb97004eb6056a9945fc5eb6",
+    "resultados/codex/point03_p5b_detector_coarse_20261008/report.json": "8396dcb37b812faf8ed094b6d4c5101b0731ff6e770796c40287db086e44f1ae",
+    "resultados/codex/point03_p5b_damping_coarse_20261008/damping_q12.npz": "c1feaeb76028cd81374383618ca3e4fe3aea0d63c6c4f49ef57be8b1736fbe48",
+    "resultados/codex/point03_p5b_damping_coarse_20261008/report_recovered.json": "156c0c0b45d86507b17bab6fa9840736102a6296a4576f4890dc0c176dc4d407",
+    "resultados/codex/point03_fem_duffy_coarse_retry_20261008/stiffness_duffy16.npz": "51a273ef6a14dbcc425e1d5f22820963c2c9bc219f26fa56447115b06acef981",
+    "resultados/codex/point03_fem_duffy_coarse_retry_20261008/report.json": "84c347cecf5c42cc5e1b02e289c588b96db394cf703f4455634a2f651031a0d9",
+    "scripts/check_point03_d16_cross_platform.py": "e4377dce4b8349a4dfd6b7a868d680999101af811fc958a744f254bba05a7867",
+    "Docs/POINT-03-D16-CROSS-PLATFORM-CONTRACT.md": "8eab8cd3f44767df6a7a29e28d0bef61b0990ba82643b1a197f77174bcaa27cb"
+  },
+  "purpose": "Real-input first1024steps only; full2mm trial is remote and is not duplicated"
+}

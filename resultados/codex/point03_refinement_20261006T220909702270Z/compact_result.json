@@ -1,0 +1,164 @@
+{
+  "status": "scientific_fail",
+  "scientific_pass": false,
+  "operational_pass": true,
+  "integrity_pass": true,
+  "primary_grids": [
+    256,
+    320,
+    400,
+    500
+  ],
+  "primary_core_powers": [
+    0.33228164377549263,
+    0.33264174033747024,
+    0.3328103520352122,
+    0.3328770953095073
+  ],
+  "signed_differences": [
+    0.00036009656197760753,
+    0.0001686116977419605,
+    6.674327429512239e-05
+  ],
+  "candidate_observed_orders": [
+    3.400384165011342,
+    4.153133203929287
+  ],
+  "relative_order_disagreement": 0.18124846999989494,
+  "holdout": {
+    "fit_grids": [
+      256,
+      320,
+      400
+    ],
+    "withheld_grid": 500,
+    "predicted_core_power": 0.3328893028156898,
+    "absolute_residual": 1.2207506182471128e-05,
+    "maximum_residual": 6.674327429512239e-06
+  },
+  "auxiliary": {
+    "400": {
+      "profile_component": 2.0169917727130837e-05,
+      "longitudinal_component": 1.9714488002087194e-06,
+      "sum": 2.2141366527339557e-05
+    },
+    "500": {
+      "profile_component": 5.285342379868219e-07,
+      "longitudinal_component": 1.768790048040092e-06,
+      "sum": 2.297324286026914e-06
+    }
+  },
+  "auxiliary_sum_both_grids": 2.443869081336647e-05,
+  "auxiliary_maximum_sum": 6.674327429512239e-06,
+  "gates": {
+    "nonzero_differences": true,
+    "same_signed_differences": true,
+    "positive_finite_observed_orders": true,
+    "observed_order_stability": true,
+    "withheld_finest_grid_prediction": false,
+    "individual_auxiliary_components": true,
+    "auxiliary_difference_budget": false,
+    "auxiliary_corner_robustness": false,
+    "absolute_total_indicator": false,
+    "relative_total_indicator": false
+  },
+  "accepted_gci": null,
+  "historical_Q4_replaced": false,
+  "cases": [
+    {
+      "case_id": "n256_ss64_z125",
+      "N": 256,
+      "profile_samples": 64,
+      "dz_m": 1.25e-06,
+      "steps_completed": 1600,
+      "P0": 1.0000000000000002,
+      "P_final": 0.7678346646583395,
+      "P_core": 0.33228164377549263,
+      "maximum_metric_absolute_error": 0.0
+    },
+    {
+      "case_id": "n320_ss64_z125",
+      "N": 320,
+      "profile_samples": 64,
+      "dz_m": 1.25e-06,
+      "steps_completed": 1600,
+      "P0": 1.0,
+      "P_final": 0.7676352197836916,
+      "P_core": 0.33264174033747024,
+      "maximum_metric_absolute_error": 0.0
+    },
+    {
+      "case_id": "n400_ss64_z125",
+      "N": 400,
+      "profile_samples": 64,
+      "dz_m": 1.25e-06,
+      "steps_completed": 1600,
+      "P0": 1.0000000000000002,
+      "P_final": 0.7673901727808257,
+      "P_core": 0.3328103520352122,
+      "maximum_metric_absolute_error": 0.0
+    },
+    {
+      "case_id": "n500_ss64_z125",
+      "N": 500,
+      "profile_samples": 64,
+      "dz_m": 1.25e-06,
+      "steps_completed": 1600,
+      "P0": 1.0000000000000002,
+      "P_final": 0.7672052534657238,
+      "P_core": 0.3328770953095073,
+      "maximum_metric_absolute_error": 0.0
+    },
+    {
+      "case_id": "n400_ss32_z125",
+      "N": 400,
+      "profile_samples": 32,
+      "dz_m": 1.25e-06,
+      "steps_completed": 1600,
+      "P0": 1.0000000000000002,
+      "P_final": 0.7673784049633613,
+      "P_core": 0.33279018211748507,
+      "maximum_metric_absolute_error": 0.0
+    },
+    {
+      "case_id": "n500_ss32_z125",
+      "N": 500,
+      "profile_samples": 32,
+      "dz_m": 1.25e-06,
+      "steps_completed": 1600,
+      "P0": 1.0000000000000002,
+      "P_final": 0.767205986853971,
+      "P_core": 0.33287656677526933,
+      "maximum_metric_absolute_error": 0.0
+    },
+    {
+      "case_id": "n400_ss64_z0625",
+      "N": 400,
+      "profile_samples": 64,
+      "dz_m": 6.25e-07,
+      "steps_completed": 3200,
+      "P0": 1.0000000000000002,
+      "P_final": 0.7673846984464813,
+      "P_core": 0.332808380586412,
+      "maximum_metric_absolute_error": 0.0
+    },
+    {
+      "case_id": "n500_ss64_z0625",
+      "N": 500,
+      "profile_samples": 64,
+      "dz_m": 6.25e-07,
+      "steps_completed": 3200,
+      "P0": 1.0000000000000002,
+      "P_final": 0.7671997897779468,
+      "P_core": 0.3328753265194593,
+      "maximum_metric_absolute_error": 0.0
+    }
+  ],
+  "execution_elapsed_s": 1088.277411499992,
+  "child_count": 80,
+  "maximum_child_elapsed_s": 21.047309899993706,
+  "tracked_file_count": 392,
+  "checkpoint_count": 80,
+  "assessment_elapsed_s": 1.9326422000303864,
+  "assessment_sha256": "94c9d3c37b339c5b9bf8c615d77f40c79d898e91c1327d24d8a11a835b0f3039"
+}

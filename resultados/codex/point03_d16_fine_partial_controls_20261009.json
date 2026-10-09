@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-09T04:15:28.633261+00:00",
+  "controls_pass": true,
+  "controls": {
+    "valid_chains_both_families": true,
+    "previous_hash_rejected": true,
+    "field_hash_rejected": true,
+    "external_field_path_rejected": true,
+    "wrong_time_step_rejected": true,
+    "wrong_steps_done_rejected": true,
+    "power_residual_rejected": true,
+    "previous_power_rejected": true,
+    "worker_timeout_rejected": true,
+    "worker_low_memory_rejected": true,
+    "worker_low_disk_rejected": true,
+    "worker_started_before_manifest_rejected": true,
+    "worker_started_after_deadline_rejected": true,
+    "failed_report_rejected": true,
+    "invalid_counts_rejected": true,
+    "dtype_rejected": true,
+    "shape_rejected": true,
+    "nonfinite_rejected": true
+  },
+  "no_T96_results_read": true,
+  "optical_fields_created": 0,
+  "full_temporal_assessment": false,
+  "point03_closed": false,
+  "source_sha256": {
+    "audit_point03_d16_fine_partial.py": "3e2e7680ba91bdfe3ef0d992b81b2bf4d85b65fdc15a8f72b503f38bba2738f2",
+    "check_point03_d16_fine_partial.py": "f85c7f6b773eb8d835a3a513ac9918a6fafe06947074863acc7593bc6b803788"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "silice.point03-analytic.preflight-retention.v1",
+  "status": "PASS",
+  "source_freeze_commit": "f0d10e1ddef0ab79f571e574eb06cd86e9deffff",
+  "tracked_files_unchanged_during_preflight": 1040,
+  "physical_propagations": 0,
+  "scope": "Post-run packaging inventory. All eight original preflight files are unchanged; this manifest excludes itself.",
+  "files": [
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\assessor_review1.py",
+      "bytes": 60181,
+      "sha256": "87747cc443e3aab3848a5734aff72ac3b343f3c322d0c6bdceaab802cb8b29ec"
+    },
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\assessor_source.py",
+      "bytes": 60645,
+      "sha256": "18f99c958e8766e57322ec637942c004a11aa7a4e2ae688b4f1a005f7964590a"
+    },
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\attempt.json",
+      "bytes": 396,
+      "sha256": "ce6679aafdca03c3622e3a50a4e8358605fb36d0118eb193b3bec32788c0f001"
+    },
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\execution.json",
+      "bytes": 331103,
+      "sha256": "6963936b4f3f5e988f76800a2434a66baf3c7b3262309dc9c40a83e4ce62931f"
+    },
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\preflight_wrapper.py",
+      "bytes": 5040,
+      "sha256": "1b1d8d034c5e3a5cc8ae7f8063ccb55b21c4c49a054da65e89f09ea942c889b1"
+    },
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\self_checks.json",
+      "bytes": 3351,
+      "sha256": "94445c035549cd48a13d3710bba2d535f1d6287ae300716fe3b609d717aa8ba3"
+    },
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\self_checks.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z\\self_checks.stdout.log",
+      "bytes": 234,
+      "sha256": "3f94475a0bc2cc2efee7389147d1721dfacbb306c6656ba2affec9e25e432c11"
+    }
+  ]
+}

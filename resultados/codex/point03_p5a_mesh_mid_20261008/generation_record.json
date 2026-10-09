@@ -1,0 +1,10 @@
+{
+  "h_local_um": 0.4375,
+  "h_background_um": 1.75,
+  "source_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_mesh_sources_20261008\\h0_4375.txt",
+  "source_sha256": "99c1d74732cb5201699753555c53d9c55a6a6bf82f5f74f3c7ebfe89aa974a73",
+  "original_generator_sha256": "5df5313d30ebf47b2804547e3a2bc94ce8fd2b1ac3712c796a6ef33fb0727b4d",
+  "contract_sha256": "389f2950f54f401c66e617f45a4c1c8f5a9cfd701faf6661c9234dd33dd63706",
+  "status_code": 0,
+  "no_propagation": true
+}

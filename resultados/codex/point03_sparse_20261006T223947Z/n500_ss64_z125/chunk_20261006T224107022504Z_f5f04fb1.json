@@ -1,0 +1,104 @@
+{
+  "schema": "silice.point03-sparse.worker.v1",
+  "status": "checkpoint_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "c11722129bc5b1e4f90e0afff1429cce9655d5c2f69841a943a0f02e620db13b",
+  "case_id": "n500_ss64_z125",
+  "steps_start": 200,
+  "steps_done": 400,
+  "previous_checkpoint_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n500_ss64_z125\\chunk_20261006T224049017286Z_e2349436.json",
+  "previous_checkpoint_sha256": "9950cd473da530969f06e5aa16e042daacd0f49ac0eb77083fde55146b7c73c8",
+  "input_npz_sha256": "bde56bfcc3b419c9887aef930b0cc62a8b5ed8d9eb41213fb628b035f9fc2fe4",
+  "propagation_s": 16.453903799992986,
+  "factor_metadata": {
+    "backend": "scipy.sparse.linalg.splu",
+    "scipy_version": "1.15.1",
+    "numpy_version": "2.2.6",
+    "original_class": "point03_sparse_original_adi.Stepper",
+    "options": {
+      "permc_spec": "NATURAL",
+      "diag_pivot_thresh": 0.0,
+      "Equil": false
+    },
+    "factors": [
+      {
+        "factor_index": 0,
+        "line_count": 500,
+        "line_size": 500,
+        "matrix_order": 250000,
+        "matrix_nnz": 749000,
+        "expected_matrix_nnz": 749000,
+        "L_nnz": 499500,
+        "U_nnz": 499500,
+        "matrix_csc_bytes": 15980004,
+        "factor_export_csc_bytes": 21980008,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 250000,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "0249697a5f65f5530be96ae67bfc5091c0f0b8ebd91ff95cb82c88d035c39b62"
+        },
+        "perm_c": {
+          "length": 250000,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "0249697a5f65f5530be96ae67bfc5091c0f0b8ebd91ff95cb82c88d035c39b62"
+        },
+        "assembly_s": 0.036581700027454644,
+        "factorization_s": 0.11859399999957532,
+        "solve_calls": 200,
+        "solve_elapsed_s": 2.911926399508957,
+        "setup_elapsed_s": 0.17139970004791394
+      },
+      {
+        "factor_index": 1,
+        "line_count": 500,
+        "line_size": 500,
+        "matrix_order": 250000,
+        "matrix_nnz": 749000,
+        "expected_matrix_nnz": 749000,
+        "L_nnz": 499500,
+        "U_nnz": 499500,
+        "matrix_csc_bytes": 15980004,
+        "factor_export_csc_bytes": 21980008,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 250000,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "0249697a5f65f5530be96ae67bfc5091c0f0b8ebd91ff95cb82c88d035c39b62"
+        },
+        "perm_c": {
+          "length": 250000,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "0249697a5f65f5530be96ae67bfc5091c0f0b8ebd91ff95cb82c88d035c39b62"
+        },
+        "assembly_s": 0.051003700005821884,
+        "factorization_s": 0.1351773000205867,
+        "solve_calls": 200,
+        "solve_elapsed_s": 2.9418407002813183,
+        "setup_elapsed_s": 0.20086830004584044
+      }
+    ],
+    "validation_status": "requires_paired_audit_result"
+  },
+  "npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n500_ss64_z125\\chunk_20261006T224107022504Z_f5f04fb1.npz",
+  "npz_sha256": "86d0060355bf297eced3dbb6f042c4da6506b9100dc5ff97529098f212c5fc82",
+  "input_power": 1.0000000000000002,
+  "output_power": 0.9995503485806115,
+  "core_power_analytic_input": 0.6661149924740609,
+  "core_area_m2": 1.1309733552923254e-10,
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 58314752,
+    "peak_wset_bytes": 326610944,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 17.673271199979354
+}

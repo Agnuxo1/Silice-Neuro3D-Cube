@@ -1,0 +1,59 @@
+{
+  "diagnostic_only": true,
+  "point03_closed": false,
+  "reference_scientific_pass": false,
+  "rows": [
+    {
+      "N": 626,
+      "segments": 11,
+      "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_linear_probe_20261007_K626\\n626_segments11\\segment_11.npz",
+      "field_sha256": "b68fefa0b95c772b08e51a930683515c9c03427ef18271ef4b08fb1598cf69a5",
+      "methods": {
+        "field": {
+          "P_core": 0.332966816857381,
+          "levels": [
+            0.33296681678478135,
+            0.3329668168277436,
+            0.332966816857381
+          ],
+          "change": 2.9637403642368554e-11
+        },
+        "intensity": {
+          "P_core": 0.33296680673515805,
+          "levels": [
+            0.33296680667930184,
+            0.33296680670795437,
+            0.33296680673515805
+          ],
+          "change": 2.7203683750087748e-11
+        }
+      }
+    },
+    {
+      "N": 626,
+      "segments": 17,
+      "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_linear_probe_20261007_K626\\n626_segments17\\segment_17.npz",
+      "field_sha256": "d6d7de3b4c27cc9b4f1b18124f405fecc0f1fc91b65c4292977275af596ea7c0",
+      "methods": {
+        "field": {
+          "P_core": 0.3329668172481241,
+          "levels": [
+            0.3329668171755245,
+            0.3329668172184867,
+            0.3329668172481241
+          ],
+          "change": 2.9637403642368554e-11
+        },
+        "intensity": {
+          "P_core": 0.3329668071259011,
+          "levels": [
+            0.33296680707004495,
+            0.3329668070986974,
+            0.3329668071259011
+          ],
+          "change": 2.7203683750087748e-11
+        }
+      }
+    }
+  ]
+}

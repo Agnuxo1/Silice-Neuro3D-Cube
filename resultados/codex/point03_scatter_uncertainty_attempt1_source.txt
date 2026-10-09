@@ -1,0 +1,109 @@
+"""Conservative scatter-aware diagnostic inspired by Eca/Hoekstra 2014.
+
+No solver import. Fixed Fs=3; no claimed probabilistic or rigorous coverage.
+Only manufactured selfchecks are allowed before a separate optical contract.
+"""
+import argparse
+import json
+import math
+import os
+from pathlib import Path
+
+for k in ('OMP_NUM_THREADS','OPENBLAS_NUM_THREADS','MKL_NUM_THREADS','NUMEXPR_NUM_THREADS'):
+    os.environ[k]='1'
+
+def fit_fixed(h,y,exponents,weighted):
+    import numpy as np
+    h=np.asarray(h,dtype=float);y=np.asarray(y,dtype=float)
+    weights=(1/h)/(1/h).sum() if weighted else np.full(len(h),1/len(h))
+    matrix=np.column_stack([np.ones(len(h))]+[h**p for p in exponents])
+    coefficients,_,rank,_=np.linalg.lstsq(matrix*np.sqrt(weights[:,None]),y*np.sqrt(weights),rcond=None)
+    assert rank==matrix.shape[1] and np.linalg.cond(matrix)<1e10
+    fit=matrix@coefficients;residual=y-fit
+    sigma=math.sqrt(float(np.sum(len(h)*weights*residual**2)/(len(h)-matrix.shape[1])))
+    return dict(exponents=list(exponents),weighted=weighted,coefficients=coefficients.tolist(),fitted=fit.tolist(),residual=residual.tolist(),sigma=sigma,condition=float(np.linalg.cond(matrix)))
+
+def fit_power(h,y,weighted):
+    import numpy as np
+    from scipy.optimize import minimize_scalar
+    candidates=[]
+    for low,high in ((-4.,-.05),(.05,8.)):
+        nodes=np.linspace(low,high,161)
+        def score(p):
+            f=fit_fixed(h,y,[float(p)],weighted)
+            # For the nonlinear fit there are three fitted parameters.
+            return f['sigma']**2*(len(h)-2)/(len(h)-3)
+        values=[score(p) for p in nodes]
+        candidates += [(values[0],float(nodes[0])),(values[-1],float(nodes[-1]))]
+        for i in range(1,len(nodes)-1):
+            if values[i]<=values[i-1] and values[i]<=values[i+1]:
+                result=minimize_scalar(score,bounds=(nodes[i-1],nodes[i+1]),method='bounded',options={'xatol':1e-10,'maxiter':120})
+                assert result.success;candidates.append((float(result.fun),float(result.x)))
+    _,p=min(candidates)
+    report=fit_fixed(h,y,[p],weighted)
+    report['sigma']*=math.sqrt((len(h)-2)/(len(h)-3))
+    report['p']=p;report['boundary_hit']=min(abs(p-x) for x in (-4.,-.05,.05,8.))<1e-7
+    return report
+
+def evaluate(h,y):
+    import numpy as np
+    h=np.asarray(h,dtype=float);y=np.asarray(y,dtype=float)
+    assert len(h)==len(y)>=4 and np.all(np.isfinite(h)) and np.all(h>0) and np.all(np.isfinite(y))
+    assert len(set(h))==len(h) and float(y.max()-y.min())>1e-12
+    order=np.argsort(h)[::-1];h=h[order];y=y[order]
+    h=h/h[-1]
+    differences=np.diff(y)
+    monotonic=bool(np.all(differences>1e-12) or np.all(differences<-1e-12))
+    powers=[fit_power(h,y,weighted) for weighted in (False,True)]
+    positive=[f for f in powers if f['p']>0 and not f['boundary_hit']]
+    observed=min(positive,key=lambda f:f['sigma']) if positive else None
+    candidates=[];reason=None
+    if monotonic and observed and .5<=observed['p']<=2:
+        selected=observed;reason='Positive observed order in [0.5,2]'
+    else:
+        terms=[(1,),(2,)] if monotonic and observed and observed['p']>2 else [(1,),(2,),(1,2)]
+        candidates=[fit_fixed(h,y,p,weighted) for p in terms for weighted in (False,True)]
+        selected=min(candidates,key=lambda f:f['sigma'])
+        reason='Fallback fixed powers for high/low/anomalous observed order'
+    delta=float((y.max()-y.min())/(len(y)-1));sigma=selected['sigma']
+    intervals=[]
+    for hi,yi,fitted in zip(h,y,selected['fitted']):
+        disc=abs(fitted-selected['coefficients'][0]);scatter=abs(float(yi)-fitted)
+        uncertainty=3*disc+sigma+scatter if sigma<delta else 3*sigma/delta*(disc+sigma+scatter)
+        intervals.append(dict(h_normalized=float(hi),value=float(yi),estimate_discretization_error=disc,fit_scatter=scatter,uncertainty=uncertainty,low=float(yi)-uncertainty,high=float(yi)+uncertainty))
+    return dict(scope='Conditional engineering indicator; no rigorous/probabilistic coverage claimed',fixed_safety_factor=3,h=h.tolist(),powers=y.tolist(),monotonic=monotonic,power_fits=powers,observed=observed,candidates=candidates,selected=selected,selection_reason=reason,data_range_parameter=delta,intervals=intervals)
+
+def predict(report,h_normalized):
+    selected=report['selected'];coef=selected['coefficients']
+    predicted=coef[0]+sum(a*h_normalized**p for a,p in zip(coef[1:],selected['exponents']))
+    band=3*selected['sigma']+max(abs(r) for r in selected['residual'])
+    return dict(prediction=predicted,scatter_band=band,h_normalized=h_normalized,refit=False)
+
+def selfcheck():
+    import numpy as np
+    h=np.array([2.5,2,1.6,1.28,1.]);truth=.333;reports=[]
+    for p in (.25,.5,1.,2.,3.,4.,6.):
+        y=truth+.0001*h**p;r=evaluate(h,y);interval=r['intervals'][-1]
+        covered=interval['low']<=truth<=interval['high']
+        reports.append(dict(kind='manufactured_power',p=p,truth=truth,covered=covered,selected=r['selected'],interval=interval))
+        assert covered
+    y=truth+.0003*h-.0002*h*h;r=evaluate(h,y);interval=r['intervals'][-1]
+    covered=interval['low']<=truth<=interval['high'];assert covered
+    reports.append(dict(kind='mixed_first_second',truth=truth,covered=covered,interval=interval))
+    noise=np.array([2,-1,1,-2,1])*2e-6;y=truth+.0001*h*h+noise;r=evaluate(h,y);interval=r['intervals'][-1]
+    covered=interval['low']<=truth<=interval['high'];assert covered
+    reports.append(dict(kind='known_scatter',truth=truth,covered=covered,interval=interval))
+    h2=h*7;r2=evaluate(h2,y);assert abs(r2['intervals'][-1]['uncertainty']-interval['uncertainty'])<1e-12
+    rejected=False
+    try:evaluate(h,np.ones(5))
+    except AssertionError:rejected=True
+    assert rejected
+    return dict(pass_=True,cases=reports,units_rescaling_pass=True,constant_rejected=True,scope='Selected manufactured controls only; not universal coverage')
+
+def main():
+    p=argparse.ArgumentParser(__doc__);p.add_argument('--selfcheck',type=Path,required=True);a=p.parse_args()
+    result=selfcheck()
+    with a.selfcheck.open('x',encoding='utf-8') as f:json.dump(result,f,indent=2,allow_nan=False);f.write('\n')
+    print(json.dumps(dict(pass_=result['pass_'],manufactured_cases=len(result['cases']))))
+
+if __name__=='__main__':main()

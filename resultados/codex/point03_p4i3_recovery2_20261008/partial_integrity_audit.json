@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-08T14:03:20.296731+00:00",
+  "partial_integrity_pass": true,
+  "accepted_checkpoints": 89,
+  "last_accepted_power": 0.9985602633519454,
+  "max_power_residual": 0.0,
+  "first_partial_audit": {
+    "created_utc": "2026-10-08T14:03:19.943102+00:00",
+    "partial_integrity_pass": true,
+    "accepted_checkpoints": 74,
+    "rejected_checkpoint": 75,
+    "failed_field_not_adopted": true,
+    "failed_field_recomputed_mass_power": 0.9993489010709398,
+    "last_accepted_power": 0.9993727830778784,
+    "max_power_residual": 0.0,
+    "original_execution_sha256": "c4a5a482df63aedc805fc2b5a26b87a85bc4d89d0b47dc90c180c699252d92e6",
+    "original_manifest_sha256": "233b700e7840cf864493a7b0bc6750b64e1bd6e69b5368b439d1b8bce71be87c",
+    "failed_report_sha256": "e4a5354ffa6a5a2b7894c0895b0e7b8d40c14e570cccff3f64ad1a3c6ce06672",
+    "failed_field_sha256": "d018c9a79b421df21d3ef711b0d738f4db0e74304f7061e328b4eb6578cec2c9",
+    "point03_closed": false,
+    "temporal_precision_pass": null
+  },
+  "previous_execution_sha256": "3af2e91f46b7115bed49fa5b38bd53bd24bbe07ab198f67eb695b566267bcd5f",
+  "previous_manifest_sha256": "ceb1c1c5fa4e810a44075d194f428389128d8790f19f912ecb94a0ee665b1c58",
+  "no_checkpoint90_computed": true,
+  "point03_closed": false,
+  "temporal_precision_pass": null
+}

@@ -1,0 +1,111 @@
+{
+  "name": "far_left",
+  "status": "completed",
+  "time_utc": "2026-09-30T19:02:16.464173+00:00",
+  "gpu_used": false,
+  "points": 256,
+  "width_m": 0.000128,
+  "length_m": 0.001,
+  "input_power": 1.0000000000000009,
+  "output_power": 0.991533765832409,
+  "material_removed": 0.0,
+  "boundary_removed": 0.008466234167665787,
+  "balance_relative": 7.394085344003536e-14,
+  "backend": "scalar_paraxial_cpu_ssfm",
+  "steps": 400,
+  "dx_m": 5e-07,
+  "dz_m": 2.5e-06,
+  "geometry": {
+    "separation_m": 3.2e-05,
+    "radius_m": 6e-06,
+    "thickness_m": 6e-06,
+    "delta_n": -0.005,
+    "samples": 16,
+    "topology": "union_outer_disks_minus_both_intact_cores",
+    "modified_area_m2": 6.786875e-10,
+    "detector_area_errors": [
+      4.440892098500626e-16,
+      4.440892098500626e-16
+    ],
+    "fully_core_untouched": true,
+    "no_double_index": true
+  },
+  "basis": {
+    "raw_overlap_abs": 6.658361469857323e-07,
+    "orthogonality_error": 6.661338147750939e-16,
+    "basis_kind": "orthonormalized_Gaussians_NOT_guided_eigenmodes"
+  },
+  "reduction": {
+    "hermiticity_error_per_m": 1.4149922474164907e-13,
+    "out_of_basis_generator_norm_per_m": [
+      3985.0069228531197,
+      3985.006922853119
+    ],
+    "reduction": "two_Gaussian_Galerkin_no_sponge_no_fit_NOT_modal_CMT"
+  },
+  "coverage16_vs32_relative": 0.00016406135318969284,
+  "input_amplitudes": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "gaussian_port_amplitudes": [
+    [
+      0.4726443318770675,
+      -0.8264374346651159
+    ],
+    [
+      -0.009998949910887903,
+      -0.0025702884663693854
+    ]
+  ],
+  "reduced_prediction": [
+    [
+      0.3507674142802639,
+      -0.936462609545245
+    ],
+    [
+      4.190968701950207e-05,
+      1.5697959960487887e-05
+    ]
+  ],
+  "reduction_max_complex_error": 0.16419355087914095,
+  "reduction_pass": false,
+  "core_powers_input": [
+    0.8075662147626649,
+    9.729849678685632e-05
+  ],
+  "projected_power_input": 0.906498083253498,
+  "unprojected_power_input": 0.0850356825788942,
+  "projection_budget_error": 1.687538997430238e-14,
+  "preparation_s": 1.6361323000019183,
+  "propagation_s": 2.472096800003783,
+  "elapsed_s": 4.2876813000038965,
+  "ram_free_before_gib": 3.92132568359375,
+  "rss_after_mib": 40.64453125,
+  "arrays_path": "resultados/codex/glass006b_pilot_v1__far_left.npz",
+  "arrays_sha256": "0b4a6ad12e7334ca03babed7fb2a38ad8d06ef7273b4ee37f46f84ac8e66726e",
+  "hashes_before": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coupler.py": "0d4414e28189d5c8f3054d3a294e8c74dcae1afe37c29c64af21313e627c1576",
+    "scripts/run_glass006b_pilot.py": "c14a820acc8bcac3c3c3451f82bff71d359d7b3df497614c3344b579c1cd050c",
+    "Docs/GLASS-006B-PILOT-CONTRACT.md": "5be9ad3c884dd107a7cfeed78ae5f03b25dee418d0737dba8afe38af3d5cd236"
+  },
+  "hashes_after": {
+    "src/silice/bpm.py": "71ef25b7d26aad69fdc156bef72cad064f736c21f744e61a16a598a02a5b1c51",
+    "src/silice/coverage.py": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+    "src/silice/tracks.py": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+    "src/silice/coupler.py": "0d4414e28189d5c8f3054d3a294e8c74dcae1afe37c29c64af21313e627c1576",
+    "scripts/run_glass006b_pilot.py": "c14a820acc8bcac3c3c3451f82bff71d359d7b3df497614c3344b579c1cd050c",
+    "Docs/GLASS-006B-PILOT-CONTRACT.md": "5be9ad3c884dd107a7cfeed78ae5f03b25dee418d0737dba8afe38af3d5cd236"
+  },
+  "sources_unchanged": true,
+  "numeric_pass": true
+}

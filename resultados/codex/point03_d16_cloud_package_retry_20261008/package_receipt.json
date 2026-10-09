@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-08T17:22:03.507013+00:00",
+  "archive_bytes": 6081913,
+  "archive_sha256": "cebaeac0f2952360f319acd9081f0f6149e0fbda7112258ac738aafc6d0a3ea1",
+  "source_files": 20,
+  "CRC_pass": true,
+  "notebook_sha256": "bed56d1245c9a34f0731a1727b914cc3385dd415ce2e6218458731e4322bf2fb",
+  "nbformat_validation_pass": true,
+  "syntax_pass": true,
+  "upload_performed": false,
+  "remote_execution_performed": false
+}

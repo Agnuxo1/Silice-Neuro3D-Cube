@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-10-09T08:49:41.637340+00:00",
+  "integrity_pass": true,
+  "accuracy_pass": false,
+  "layout_prediction_pass": true,
+  "old_export_rejected": true,
+  "marker_frames": 6,
+  "rows": [
+    {
+      "case": "constant",
+      "width": 8,
+      "height": 5,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.75,
+        "pass": false
+      },
+      "prediction_error": 0.0
+    },
+    {
+      "case": "coordinates",
+      "width": 8,
+      "height": 5,
+      "corrected": {
+        "max_channel_error": 4.768371586472142e-08,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.9375,
+        "pass": false
+      },
+      "prediction_error": 0.0
+    },
+    {
+      "case": "constant",
+      "width": 13,
+      "height": 7,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.75,
+        "pass": false
+      },
+      "prediction_error": 0.0
+    },
+    {
+      "case": "coordinates",
+      "width": 13,
+      "height": 7,
+      "corrected": {
+        "max_channel_error": 6.680960185079243e-08,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.9615384615384616,
+        "pass": false
+      },
+      "prediction_error": 0.0
+    },
+    {
+      "case": "constant",
+      "width": 32,
+      "height": 16,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.75,
+        "pass": false
+      },
+      "prediction_error": 0.0
+    },
+    {
+      "case": "coordinates",
+      "width": 32,
+      "height": 16,
+      "corrected": {
+        "max_channel_error": 0.0,
+        "pass": true
+      },
+      "old": {
+        "max_channel_error": 0.984375,
+        "pass": false
+      },
+      "prediction_error": 0.0
+    }
+  ],
+  "physical_validation": false,
+  "p2_field_validated": false,
+  "network_validated": false,
+  "general_speedup_claim": false,
+  "point03_closed": false,
+  "report_sha256": "c633c9e5a1456a4b6a5cd46cdf19c983cf079df0e4d634859c27f3c872fbdaad",
+  "control_fixture": true
+}

@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-07T23:25:15.286865+00:00",
+  "integrity_pass": true,
+  "scientific_pass": false,
+  "point03_closed": false,
+  "coarse_eligible": false,
+  "global_eligible": false,
+  "stage": "prerequisites_failed",
+  "checkpoints_checked": 87,
+  "new_checkpoints_checked": 75,
+  "max_raw_power_residual": 6.661338147750939e-15,
+  "rows": {},
+  "predictions_recomputed": {
+    "field": {
+      "powers": [
+        0.3321332345873533,
+        0.33244502353291094,
+        0.33262444890554127,
+        0.33274673486358913
+      ],
+      "orders": [
+        2.476285462844585,
+        2.0697086924330472
+      ],
+      "forecast": 0.3328145637917638
+    },
+    "intensity": {
+      "powers": [
+        0.33237945838776745,
+        0.3326024212970766,
+        0.33272489381264875,
+        0.33280818453960015
+      ],
+      "orders": [
+        2.6849029962770445,
+        2.0789423333588886
+      ],
+      "forecast": null
+    }
+  },
+  "historical_failures_retained": true,
+  "scope": "Conditional local scalar core-power convergence for fixed physical domain only; no general boundary/phase/Maxwell/fabrication closure."
+}

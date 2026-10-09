@@ -1,0 +1,39 @@
+def worker(args):
+    import numpy as np
+    from point03_fdst import Solver
+    start = time.monotonic()
+    r = dict(status='failed', started_utc=datetime.now(timezone.utc).isoformat(), steps_total=args.steps, chunk=args.chunk, previous_report_path=str(args.previous) if args.previous else None)
+    try:
+        m = verify_manifest(args.manifest, args.manifest_sha)
+        r['resource_start'] = guard(args.prefix.parent)
+        with np.load(m['input_path'], allow_pickle=False) as data:
+            field = data['A0'].copy()
+            dn = data['dn']
+            sigma = data['sigma']
+        if args.previous:
+            p = read(args.previous)
+            assert p['status'] == 'completed' and p['steps_total'] == args.steps and (p['chunk'] == args.chunk - 1)
+            assert sha(p['field_path']) == p['field_sha256']
+            with np.load(p['field_path'], allow_pickle=False) as data:
+                field = data['field'].copy()
+            r['previous_report_sha256'] = sha(args.previous)
+        else:
+            assert args.chunk == 1
+            r['previous_report_sha256'] = None
+        dx = 0.000128 / 767
+        previous_power = float(np.sum(np.abs(field) ** 2) * dx * dx)
+        solver = Solver(dn, sigma, dx, 0.002 / args.steps)
+        field = solver.advance(field, 512)
+        assert field.shape == (767, 767) and field.dtype == np.dtype('complex128') and np.all(np.isfinite(field))
+        total = float(np.sum(np.abs(field) ** 2) * dx * dx)
+        assert 0 < total <= previous_power + 1e-09
+        r.update(status='completed', raw_total=total, previous_power=previous_power, steps_done=512 * args.chunk, dz_m=0.002 / args.steps, max_negative_amplification=solver.max_negative_amplification, resource_end=guard(args.prefix.parent))
+        np.savez(str(args.prefix) + '.npz', field=field)
+        r.update(field_path=str(args.prefix) + '.npz', field_sha256=sha(str(args.prefix) + '.npz'))
+    except Exception as err:
+        r.update(error_type=type(err).__name__, error=str(err), diagnostic=traceback.format_exc())
+    r['elapsed_s'] = time.monotonic() - start
+    if r['elapsed_s'] > 360:
+        r.update(status='failed', error='360s child budget exceeded')
+    write(str(args.prefix) + '.json', r)
+    return 0 if r['status'] == 'completed' else 1

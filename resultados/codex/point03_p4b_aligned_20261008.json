@@ -1,0 +1,433 @@
+{
+  "created_utc": "2026-10-08T03:58:47.744052+00:00",
+  "controls_pass": true,
+  "hypothesis_supported": true,
+  "point03_closed": false,
+  "truth_core_power": 0.9245469751106029,
+  "moment_errors": [
+    1.9829800536680262e-16,
+    2.139696074769293e-16,
+    3.209544112153939e-16,
+    2.139696074769293e-16,
+    2.139696074769293e-16,
+    8.91540031153872e-17
+  ],
+  "rows": [
+    {
+      "N": 127,
+      "h_m": 1e-06,
+      "variant": "nodal",
+      "P_core": {
+        "field": 0.9073500107511623,
+        "intensity": 0.908903530110142
+      },
+      "error": {
+        "field": -0.017196964359440625,
+        "intensity": -0.015643445000460887
+      },
+      "physical_output_norm": 1.0002509977661085,
+      "scheme_norm_change": 2.220446049250313e-16,
+      "input_reconstruction_norm_before_scaling": 0.9964332828544764,
+      "eigenpair_residual": 1.006134484272093e-15,
+      "raw_field_error": 0.6068510133726334,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n127_nodal.npz",
+      "raw_sha256": "42d78fb3975c68117c91ac949e69d4dda27992ae5c17a454a8a2cf28cd9a000d"
+    },
+    {
+      "N": 127,
+      "h_m": 1e-06,
+      "variant": "cell_average",
+      "P_core": {
+        "field": 0.9239551289187196,
+        "intensity": 0.9261932355969972
+      },
+      "error": {
+        "field": -0.0005918461918833495,
+        "intensity": 0.0016462604863942687
+      },
+      "physical_output_norm": 0.9999733033592214,
+      "scheme_norm_change": 4.440892098500626e-16,
+      "input_reconstruction_norm_before_scaling": 0.9964332828544764,
+      "eigenpair_residual": 1.0961415820075295e-15,
+      "raw_field_error": 0.04036246423385553,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n127_cell_average.npz",
+      "raw_sha256": "2e48f20e020290446d6a6c790b994ceecd424e4e818fb09edc97046cd38ca4d7"
+    },
+    {
+      "N": 127,
+      "h_m": 1e-06,
+      "variant": "FEM_lumped",
+      "P_core": {
+        "field": 0.9239217643874343,
+        "intensity": 0.9261199048659523
+      },
+      "error": {
+        "field": -0.0006252107231685677,
+        "intensity": 0.0015729297553493948
+      },
+      "physical_output_norm": 0.999975004634624,
+      "scheme_norm_change": 4.440892098500626e-16,
+      "input_reconstruction_norm_before_scaling": 0.9964332828544764,
+      "eigenpair_residual": 9.6285127429978e-16,
+      "raw_field_error": 0.00775317057821922,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n127_FEM_lumped.npz",
+      "raw_sha256": "99e6752ff6e05d71c1c397f237546f26e3ebf8f740493b2342880401925b27cc"
+    },
+    {
+      "N": 127,
+      "h_m": 1e-06,
+      "variant": "FEM_consistent",
+      "P_core": {
+        "field": 0.9234678453390236,
+        "intensity": 0.9256567025439103
+      },
+      "error": {
+        "field": -0.0010791297715793124,
+        "intensity": 0.0011097274333073948
+      },
+      "physical_output_norm": 0.9999999999999976,
+      "scheme_norm_change": 2.4424906541753444e-15,
+      "input_reconstruction_norm_before_scaling": 0.9964332828544764,
+      "eigenpair_residual": 9.124641010612491e-16,
+      "raw_field_error": 0.026720002502830166,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n127_FEM_consistent.npz",
+      "raw_sha256": "6ae8c6fc8dda0bfc85e4c55b36290f869deda27bee564130064d60ccc124be97"
+    },
+    {
+      "N": 255,
+      "h_m": 5e-07,
+      "variant": "nodal",
+      "P_core": {
+        "field": 0.9163420098560949,
+        "intensity": 0.9168043563203598
+      },
+      "error": {
+        "field": -0.008204965254507979,
+        "intensity": -0.007742618790243072
+      },
+      "physical_output_norm": 1.0000384373261209,
+      "scheme_norm_change": 7.549516567451064e-15,
+      "input_reconstruction_norm_before_scaling": 0.9991083665941991,
+      "eigenpair_residual": 1.3720003082624794e-15,
+      "raw_field_error": 0.3065649830126262,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n255_nodal.npz",
+      "raw_sha256": "721fbcb419563d1b164a4e54b8081468d6242b19f52ff0ff9b799c51741bb90b"
+    },
+    {
+      "N": 255,
+      "h_m": 5e-07,
+      "variant": "cell_average",
+      "P_core": {
+        "field": 0.9244031994475426,
+        "intensity": 0.9249518484399337
+      },
+      "error": {
+        "field": -0.0001437756630603415,
+        "intensity": 0.00040487332933081266
+      },
+      "physical_output_norm": 0.9999983754731742,
+      "scheme_norm_change": 1.1102230246251565e-15,
+      "input_reconstruction_norm_before_scaling": 0.9991083665941991,
+      "eigenpair_residual": 1.6337601583625312e-15,
+      "raw_field_error": 0.010214308364935852,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n255_cell_average.npz",
+      "raw_sha256": "5c0185337bf0bd28a2332ca3b6fc3588fa718c2b9e8cf1f32cc390e03b1b6be4"
+    },
+    {
+      "N": 255,
+      "h_m": 5e-07,
+      "variant": "FEM_lumped",
+      "P_core": {
+        "field": 0.9244001123279584,
+        "intensity": 0.9249464065550733
+      },
+      "error": {
+        "field": -0.00014686278264453012,
+        "intensity": 0.00039943144447041057
+      },
+      "physical_output_norm": 0.9999984075968622,
+      "scheme_norm_change": 3.774758283725532e-15,
+      "input_reconstruction_norm_before_scaling": 0.9991083665941991,
+      "eigenpair_residual": 1.2323807089432934e-15,
+      "raw_field_error": 0.001944354528320018,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n255_FEM_lumped.npz",
+      "raw_sha256": "eb95212b663a4810376c1cf9ec9225729dce3640660a2d54d792fc000742419d"
+    },
+    {
+      "N": 255,
+      "h_m": 5e-07,
+      "variant": "FEM_consistent",
+      "P_core": {
+        "field": 0.9242821502815864,
+        "intensity": 0.9248277505992485
+      },
+      "error": {
+        "field": -0.0002648248290164634,
+        "intensity": 0.00028077548864557933
+      },
+      "physical_output_norm": 0.9999999999999987,
+      "scheme_norm_change": 1.7763568394002505e-15,
+      "input_reconstruction_norm_before_scaling": 0.9991083665941991,
+      "eigenpair_residual": 1.1544303765076258e-15,
+      "raw_field_error": 0.006677995444078527,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n255_FEM_consistent.npz",
+      "raw_sha256": "94b1046c7ba31b334a7dad4c320b8b513e25de9c40d700f5b08857c1e7c2dcc0"
+    },
+    {
+      "N": 511,
+      "h_m": 2.5e-07,
+      "variant": "nodal",
+      "P_core": {
+        "field": 0.9206392004091554,
+        "intensity": 0.9207651702522155
+      },
+      "error": {
+        "field": -0.003907774701447542,
+        "intensity": -0.0037818048583874164
+      },
+      "physical_output_norm": 1.0000051576361113,
+      "scheme_norm_change": 0.0,
+      "input_reconstruction_norm_before_scaling": 0.999777095131182,
+      "eigenpair_residual": 1.9192559794341172e-15,
+      "raw_field_error": 0.1533261518851706,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n511_nodal.npz",
+      "raw_sha256": "9471520db5ae93e4a577639b2df64b059afb74a942f517d6e2b96c09201e217c"
+    },
+    {
+      "N": 511,
+      "h_m": 2.5e-07,
+      "variant": "cell_average",
+      "P_core": {
+        "field": 0.9245094901779286,
+        "intensity": 0.9246459746548099
+      },
+      "error": {
+        "field": -3.7484932674303195e-05,
+        "intensity": 9.89995442070013e-05
+      },
+      "physical_output_norm": 0.9999999018236472,
+      "scheme_norm_change": 6.661338147750939e-16,
+      "input_reconstruction_norm_before_scaling": 0.999777095131182,
+      "eigenpair_residual": 1.7937013531114627e-15,
+      "raw_field_error": 0.0025613454930136577,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n511_cell_average.npz",
+      "raw_sha256": "20542048976c83f6aaf7ce0cde2fe9581f18015907e94d5320728c9e7f6a4df0"
+    },
+    {
+      "N": 511,
+      "h_m": 2.5e-07,
+      "variant": "FEM_lumped",
+      "P_core": {
+        "field": 0.9245125460529646,
+        "intensity": 0.9246488926286914
+      },
+      "error": {
+        "field": -3.442905763828552e-05,
+        "intensity": 0.00010191751808852345
+      },
+      "physical_output_norm": 0.9999998974926496,
+      "scheme_norm_change": 2.4424906541753444e-15,
+      "input_reconstruction_norm_before_scaling": 0.999777095131182,
+      "eigenpair_residual": 1.9962940093195503e-15,
+      "raw_field_error": 0.0004866752073935002,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n511_FEM_lumped.npz",
+      "raw_sha256": "80056562359f3de2141a5021fa149dda10a89d813ee179d5a21da725b7cdf220"
+    },
+    {
+      "N": 511,
+      "h_m": 2.5e-07,
+      "variant": "FEM_consistent",
+      "P_core": {
+        "field": 0.9244814297988243,
+        "intensity": 0.9246177321831003
+      },
+      "error": {
+        "field": -6.554531177860312e-05,
+        "intensity": 7.075707249737384e-05
+      },
+      "physical_output_norm": 0.9999999999999993,
+      "scheme_norm_change": 8.881784197001252e-16,
+      "input_reconstruction_norm_before_scaling": 0.999777095131182,
+      "eigenpair_residual": 1.4131462983808935e-15,
+      "raw_field_error": 0.0016693731208175713,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n511_FEM_consistent.npz",
+      "raw_sha256": "9510d7481b754cfe5c2e29e1bcf667a765ac6c99ce46dfa7145cd7b1f1a541d0"
+    },
+    {
+      "N": 1023,
+      "h_m": 1.25e-07,
+      "variant": "nodal",
+      "P_core": {
+        "field": 0.9225953682092589,
+        "intensity": 0.9226280633325301
+      },
+      "error": {
+        "field": -0.001951606901343994,
+        "intensity": -0.001918911778072796
+      },
+      "physical_output_norm": 1.0000006814849418,
+      "scheme_norm_change": 6.661338147750939e-16,
+      "input_reconstruction_norm_before_scaling": 0.9999442740102051,
+      "eigenpair_residual": 2.773300767372196e-15,
+      "raw_field_error": 0.07658178086973513,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n1023_nodal.npz",
+      "raw_sha256": "7112eda5338494316d3e6036429cf6cff8b09a165d0e04d362b44e0283d2cd2d"
+    },
+    {
+      "N": 1023,
+      "h_m": 1.25e-07,
+      "variant": "cell_average",
+      "P_core": {
+        "field": 0.9245381015879247,
+        "intensity": 0.924572182998039
+      },
+      "error": {
+        "field": -8.873522678198853e-06,
+        "intensity": 2.5207887436096144e-05
+      },
+      "physical_output_norm": 0.9999999936952018,
+      "scheme_norm_change": 1.7763568394002505e-15,
+      "input_reconstruction_norm_before_scaling": 0.9999442740102051,
+      "eigenpair_residual": 2.916478182359187e-15,
+      "raw_field_error": 0.0006408365278744568,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n1023_cell_average.npz",
+      "raw_sha256": "c6485196715d94fff4a4937625c635e3b8e763d6a1245d93943a7d13955538b0"
+    },
+    {
+      "N": 1023,
+      "h_m": 1.25e-07,
+      "variant": "FEM_lumped",
+      "P_core": {
+        "field": 0.9245384036182619,
+        "intensity": 0.9245724756171136
+      },
+      "error": {
+        "field": -8.571492341014064e-06,
+        "intensity": 2.5500506510733878e-05
+      },
+      "physical_output_norm": 0.9999999935866855,
+      "scheme_norm_change": 2.220446049250313e-15,
+      "input_reconstruction_norm_before_scaling": 0.9999442740102051,
+      "eigenpair_residual": 2.637366905732008e-15,
+      "raw_field_error": 0.00012168457069338019,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n1023_FEM_lumped.npz",
+      "raw_sha256": "14429af9d593484d90fc0d01d6ccb70a6d178f12161dff4c5491917d32de22fa"
+    },
+    {
+      "N": 1023,
+      "h_m": 1.25e-07,
+      "variant": "FEM_consistent",
+      "P_core": {
+        "field": 0.924530573894699,
+        "intensity": 0.9245646430145799
+      },
+      "error": {
+        "field": -1.6401215903960598e-05,
+        "intensity": 1.766790397694784e-05
+      },
+      "physical_output_norm": 1.0000000000000004,
+      "scheme_norm_change": 2.220446049250313e-16,
+      "input_reconstruction_norm_before_scaling": 0.9999442740102051,
+      "eigenpair_residual": 1.3678489739658824e-15,
+      "raw_field_error": 0.0004173346292332428,
+      "raw_path": "resultados\\codex\\point03_p4b_aligned_20261008_raw\\n1023_FEM_consistent.npz",
+      "raw_sha256": "2da207b7929136268d1b4c1f596d401a2f8787d3ce22ac5e889693d7a251faeb"
+    }
+  ],
+  "diagnostics": {
+    "nodal": {
+      "field": {
+        "orders": [
+          1.0652481390760453,
+          1.135363622875577
+        ],
+        "stable": true,
+        "known_error": 0.001951606901343994,
+        "indicator": 0.002043226863840108,
+        "covered": true
+      },
+      "intensity": {
+        "orders": [
+          0.9962065986114012,
+          1.0882520549924988
+        ],
+        "stable": true,
+        "known_error": 0.001918911778072796,
+        "indicator": 0.0020677440155421746,
+        "covered": true
+      }
+    },
+    "cell_average": {
+      "field": {
+        "orders": [
+          2.075710053547192,
+          1.8933532830898696
+        ],
+        "stable": true,
+        "known_error": 8.873522678198853e-06,
+        "indicator": 1.31729522390244e-05,
+        "covered": true
+      },
+      "intensity": {
+        "orders": [
+          2.020944754213825,
+          2.051406853403562
+        ],
+        "stable": true,
+        "known_error": 2.5207887436096144e-05,
+        "indicator": 3.074652365454381e-05,
+        "covered": true
+      }
+    },
+    "FEM_lumped": {
+      "field": {
+        "orders": [
+          2.088985543554791,
+          2.120416498364547
+        ],
+        "stable": true,
+        "known_error": 8.571492341014064e-06,
+        "indicator": 1.0773985540529774e-05,
+        "covered": true
+      },
+      "intensity": {
+        "orders": [
+          1.9797866587820487,
+          1.9609914565944966
+        ],
+        "stable": true,
+        "known_error": 2.5500506510733878e-05,
+        "indicator": 3.301470569848382e-05,
+        "covered": true
+      }
+    },
+    "FEM_consistent": {
+      "field": {
+        "orders": [
+          2.0307757273223026,
+          2.019703423645765
+        ],
+        "stable": true,
+        "known_error": 1.6401215903960598e-05,
+        "indicator": 2.0476706614434386e-05,
+        "covered": true
+      },
+      "intensity": {
+        "orders": [
+          1.9807726285363356,
+          1.9840263895048538
+        ],
+        "stable": true,
+        "known_error": 1.766790397694784e-05,
+        "indicator": 2.2450083849851375e-05,
+        "covered": true
+      }
+    }
+  },
+  "elapsed_s": 4.750374800001737,
+  "source_sha256": {
+    "scripts\\diagnose_point03_p4b_generated.py": "831e35d874a42053cf62539004f4a042f9dad6f765253199636fab54bb343efc",
+    "Docs\\POINT-03-P4B-CONTRACT.md": "3f2a87dc1a78193524895c4cc1c8fbdb7eb8aebd311a02eea87432a9494506af"
+  },
+  "scope": "Known 1D diagnostic only; all input conventions declared; no T96 propagation or causal closure."
+}

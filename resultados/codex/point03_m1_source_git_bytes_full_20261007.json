@@ -1,0 +1,131 @@
+{
+  "created_utc": "2026-10-07T15:55:33.356308+00:00",
+  "source_files": 20,
+  "all_git_sources_match": true,
+  "all_working_sources_match": true,
+  "manifest_sha256": "f6391809d91b311a0493afd66f55f3d17b674c4175ffeef3ec0f9f7805b28eaa",
+  "git_commit": "df54408e653b5fbd54dcfbb8d6d71b7419e4c06d",
+  "rows": [
+    {
+      "path": "scripts/run_point03_m1.py",
+      "expected_sha256": "cba2162a6955ecea5dcbb05b8989301108e22f4f713df9d9168df0a5eac0c208",
+      "git_sha256": "cba2162a6955ecea5dcbb05b8989301108e22f4f713df9d9168df0a5eac0c208",
+      "working_matches": true
+    },
+    {
+      "path": "Docs/POINT-03-M1-CONTRACT.md",
+      "expected_sha256": "6947ba98c12c4fdf0d5274f8620ac5dd26b803e2a6a15fe8d40a56f131d18d3d",
+      "git_sha256": "6947ba98c12c4fdf0d5274f8620ac5dd26b803e2a6a15fe8d40a56f131d18d3d",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_m1_prediction_20261007.json",
+      "expected_sha256": "bff0912810fc7070908c4b1c03cdd41eaf95dc2b698f5cae6891e8482520ac9c",
+      "git_sha256": "bff0912810fc7070908c4b1c03cdd41eaf95dc2b698f5cae6891e8482520ac9c",
+      "working_matches": true
+    },
+    {
+      "path": "scripts/run_point03_exponential.py",
+      "expected_sha256": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+      "git_sha256": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d",
+      "working_matches": true
+    },
+    {
+      "path": "scripts/run_point03_fdst_pilot.py",
+      "expected_sha256": "6ec8713d3ea23b94010b643ac2bfd150afcf99bd0ad36d60f53d7abd42962c1b",
+      "git_sha256": "6ec8713d3ea23b94010b643ac2bfd150afcf99bd0ad36d60f53d7abd42962c1b",
+      "working_matches": true
+    },
+    {
+      "path": "scripts/point03_fdst.py",
+      "expected_sha256": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+      "git_sha256": "c70b9b0e8420a4f4f67480b419952386129b8bc9e7e18da2ce74d98ceff9c3f1",
+      "working_matches": true
+    },
+    {
+      "path": "scripts/run_point03_reconstructed.py",
+      "expected_sha256": "13636eb89fb955ff3404fc32c98f2062cae054a47c92a1232cd12d8fa22ebdea",
+      "git_sha256": "13636eb89fb955ff3404fc32c98f2062cae054a47c92a1232cd12d8fa22ebdea",
+      "working_matches": true
+    },
+    {
+      "path": "scripts/point03_union_geometry.py",
+      "expected_sha256": "838bfc8e56886ebdfa6597450f17c0a3e135f26f20dbcbbe9e8d1e3bdcfe4622",
+      "git_sha256": "838bfc8e56886ebdfa6597450f17c0a3e135f26f20dbcbbe9e8d1e3bdcfe4622",
+      "working_matches": true
+    },
+    {
+      "path": "scripts/point03_geometry_reference.py",
+      "expected_sha256": "b95bf9044d8f6719c13c72dac4fd2bf920762e0a2f6e4ba3479e5270e2d0d1a1",
+      "git_sha256": "b95bf9044d8f6719c13c72dac4fd2bf920762e0a2f6e4ba3479e5270e2d0d1a1",
+      "working_matches": true
+    },
+    {
+      "path": "experimentos/glass009_claude/adi2d.py",
+      "expected_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+      "git_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+      "working_matches": true
+    },
+    {
+      "path": "src/silice/coverage.py",
+      "expected_sha256": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+      "git_sha256": "48f53bad6ef32538c14ed3aa9445ae69d9c4f37f2ec2875d0957b817bd3752f2",
+      "working_matches": true
+    },
+    {
+      "path": "src/silice/tracks.py",
+      "expected_sha256": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+      "git_sha256": "871475c3cf31a6b6cc9478387fe940a8004719015f75146de37530ea23af3086",
+      "working_matches": true
+    },
+    {
+      "path": "scripts/point03_linear_detector.py",
+      "expected_sha256": "494081be1ce4c8235ae2dcc390d9f5c5fdb4d0700abe377908bbf37002b937c9",
+      "git_sha256": "494081be1ce4c8235ae2dcc390d9f5c5fdb4d0700abe377908bbf37002b937c9",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/geometry_source.txt",
+      "expected_sha256": "24516f375542aab89a0b2315527a1b83d019fd75feedd66f8635212535cb6b9e",
+      "git_sha256": "24516f375542aab89a0b2315527a1b83d019fd75feedd66f8635212535cb6b9e",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/temporal_source.txt",
+      "expected_sha256": "f2d711810edf1b11349d4abfd05aa2d4aee3120fd7f8e91234d54191ce2bdf8c",
+      "git_sha256": "f2d711810edf1b11349d4abfd05aa2d4aee3120fd7f8e91234d54191ce2bdf8c",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/geometry_report.json",
+      "expected_sha256": "2b45fffa9d48b290ec3bbd472c5e49406ee56e966a21ae83fb9d9e744966297d",
+      "git_sha256": "2b45fffa9d48b290ec3bbd472c5e49406ee56e966a21ae83fb9d9e744966297d",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_finer_20261007_M1/geometry_selection.json",
+      "expected_sha256": "3603a64c589292f0118fd2537d2f4122183fcdb6ed637ef5b9f8a2c7955cf141",
+      "git_sha256": "3603a64c589292f0118fd2537d2f4122183fcdb6ed637ef5b9f8a2c7955cf141",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_geometry_20261006234649Z/inputs/centres.json",
+      "expected_sha256": "040435d17a97057c8edbd611b5249a387157519a67b451b7a31b450c536e205d",
+      "git_sha256": "040435d17a97057c8edbd611b5249a387157519a67b451b7a31b450c536e205d",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_fdst_accuracy_20261007_L2/assessment.json",
+      "expected_sha256": "b0d31c4f21aba60e5f5c95a7359bdc2c4a870c4562d96b66e1578529acf2d5f2",
+      "git_sha256": "b0d31c4f21aba60e5f5c95a7359bdc2c4a870c4562d96b66e1578529acf2d5f2",
+      "working_matches": true
+    },
+    {
+      "path": "resultados/codex/point03_fdst_accuracy_20261007_L2/integrity_audit.json",
+      "expected_sha256": "4b16e1aba540e192e793bee2fb321d98c469aaa12d59af3cf243486d79febbab",
+      "git_sha256": "4b16e1aba540e192e793bee2fb321d98c469aaa12d59af3cf243486d79febbab",
+      "working_matches": true
+    }
+  ],
+  "scope": "Source byte identity only; no numerical acceptance or availability of every raw array."
+}

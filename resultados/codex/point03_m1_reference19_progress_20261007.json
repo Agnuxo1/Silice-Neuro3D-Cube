@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-07T15:43:18.648164+00:00",
+  "reference19_checkpoints": 19,
+  "all_child_reports_completed": true,
+  "max_child_elapsed_s": 194.97158710000804,
+  "minimum_available_ram_bytes": 5207924736,
+  "minimum_free_disk_bytes": 529326268416,
+  "checkpoint_sha256": {
+    "part001.json": "3ca0b360239b412a1e9cfc1c59a04dcc77fc95d11b335161a55c7e9636feb7e4",
+    "part002.json": "eb80cec99a9d3466e7c2ef9d40b2a922c366e718ae13c7a034ff47e8ce465864",
+    "part003.json": "739a8e34ea3a581e998e5c9dc493770ddda72322c10d44636941943254664687",
+    "part004.json": "90c4bdc57aafbd49d655e6e00a12362e384f1e945e4101d23fedce5c598d40f5",
+    "part005.json": "6407d89e0080c768353dc33fb4d7ef8a1d706e7fba0acde3b701b90877e5ca37",
+    "part006.json": "9e4fff36fc61e2a0460e05c88b1e41a8195660cb2188754d1be4a5bb139eaf7c",
+    "part007.json": "1624da4cdac049dfc60157a36a937c03affb1ba7236fed233ccc1f05c8e19eb8",
+    "part008.json": "2cd53cd4d7710879f25b91cfabf8ef879ee77a099a9b607133b3f468306774e3",
+    "part009.json": "f14d6b083fb21ec6911daed91c4b6d61e4dcbf036c4edde31905e1eeff53cb6e",
+    "part010.json": "325ff793c934b64887bbef7e0c1a064949a3cacdd9611253a1913b9f8a2fa3df",
+    "part011.json": "f9b40878bff07701b0de697af459cad5a9b2054f27028656e442bcaf0470c8ae",
+    "part012.json": "e8378899f83883eebaf69be796b3639195df8af025aa0f03f48557f6f4ed1647",
+    "part013.json": "a0e19202dd76b9d6c36b1476003a08e5e75e11f55290b009fd9e6ea382354d38",
+    "part014.json": "8d7c9b7efa2596844213ebd97786214aa1406b80a99015914b2737b105747f33",
+    "part015.json": "0b7354238145eec000cfb9e924fc2cbe567f3fb451a127ff98335ea872e986c6",
+    "part016.json": "da928499e5360c34e5353e8d3da9590eca704c129ef8cf9d70ec221c1e7c274d",
+    "part017.json": "52cd82d811cc23f07d07f97b192b01a4d8f867a03622a47eb0f33fcad3cbdb6a",
+    "part018.json": "722dda6c429d4d84bb44e8ff608d56965c5b9aaa5c599836061a7c9da45571a1",
+    "part019.json": "6e3d01f24baf2bcc889e4e2de6b7f1ca9c62d59e3f6f3494f46522176aeef991"
+  },
+  "point03_closed": false,
+  "scope": "Partial execution metadata only. No final core powers evaluated; complete independent audit still required."
+}

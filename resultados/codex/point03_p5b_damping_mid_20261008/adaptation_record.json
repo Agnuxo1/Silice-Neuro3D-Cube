@@ -1,0 +1,9 @@
+{
+  "kind": "damping",
+  "geometry_folder": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p5a_mesh_mid_20261008",
+  "source_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_fem_control_sources_20261008\\point03_p5a_mesh_mid_20261008_damping.txt",
+  "source_sha256": "84e6c2f355ae682528ad4b07ee4363547ba7835655142f53a5aa9a998690427d",
+  "contract_sha256": "6af08f91cebd44be24be6f78f6877eb5575f046a396efa044dd2f2422fbe3f44",
+  "original_control_sha256": "7cb058210a0482fa8559108f28e032bf25df7afa1edf18a5549a693be7b90aab",
+  "no_propagation": true
+}

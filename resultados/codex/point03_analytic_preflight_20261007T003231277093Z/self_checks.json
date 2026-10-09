@@ -1,0 +1,123 @@
+{
+  "schema": "silice.point03-analytic.assessment.v1",
+  "created_utc": "2026-10-07T00:32:36.312203+00:00",
+  "status": "completed",
+  "operational_pass": true,
+  "scientific_pass": null,
+  "accepted_gci": null,
+  "historical_Q4_replaced": false,
+  "historical_StageB_replaced": false,
+  "checks": [
+    {
+      "name": "separable_spatial_and_longitudinal_order_two",
+      "pass": true,
+      "expected_extrapolation_scope": "Spatial continuum at fixed primary dz, not simultaneous dz=0."
+    },
+    {
+      "name": "oscillatory_spatial_differences",
+      "pass": true,
+      "failed_gate": "same_signed_differences"
+    },
+    {
+      "name": "negative_observed_spatial_order",
+      "pass": true,
+      "failed_gate": "positive_finite_observed_orders"
+    },
+    {
+      "name": "unstable_positive_spatial_orders",
+      "pass": true,
+      "failed_gate": "observed_order_stability"
+    },
+    {
+      "name": "withheld_grid_residual",
+      "pass": true,
+      "failed_gate": "withheld_finest_grid_prediction"
+    },
+    {
+      "name": "longitudinal_order_outside_band",
+      "pass": true,
+      "failed_gate": "longitudinal_order_band"
+    },
+    {
+      "name": "oscillatory_longitudinal_differences",
+      "pass": true,
+      "failed_gate": "longitudinal_order_band"
+    },
+    {
+      "name": "unresolvable_longitudinal_differences",
+      "pass": true,
+      "failed_gate": "longitudinal_order_band"
+    },
+    {
+      "name": "combined_auxiliary_budget",
+      "pass": true,
+      "failed_gate": "auxiliary_difference_budget"
+    },
+    {
+      "name": "corners_can_fail_inside_sum_budget",
+      "pass": true,
+      "failed_gate": "auxiliary_corner_robustness"
+    },
+    {
+      "name": "final_absolute_target",
+      "pass": true,
+      "failed_gate": "absolute_total_indicator"
+    },
+    {
+      "name": "final_relative_target",
+      "pass": true,
+      "failed_gate": "relative_total_indicator"
+    },
+    {
+      "name": "missing_case",
+      "pass": true,
+      "accepted_gci": null
+    },
+    {
+      "name": "duplicate_case",
+      "pass": true,
+      "accepted_gci": null
+    },
+    {
+      "name": "nonfinite_nan",
+      "pass": true,
+      "accepted_gci": null
+    },
+    {
+      "name": "nonfinite_infinity",
+      "pass": true,
+      "accepted_gci": null
+    },
+    {
+      "name": "json_overflow",
+      "pass": true
+    },
+    {
+      "name": "json_duplicate_key",
+      "pass": true
+    }
+  ],
+  "self_check_pass": true,
+  "checks_count": 18,
+  "physical_propagations": 0,
+  "scope": "Analytic scalar fixtures and evidence-parser logic only; no solver, geometry, files or experimental data generated.",
+  "progress": {},
+  "files_verified": {},
+  "files_verified_count": 0,
+  "resource_samples": [
+    {
+      "elapsed_s": 2.570002106949687e-05,
+      "available_ram_bytes": 5909741568,
+      "free_disk_bytes": 620209819648
+    },
+    {
+      "elapsed_s": 0.001202500017825514,
+      "available_ram_bytes": 5909737472,
+      "free_disk_bytes": 620209819648
+    }
+  ],
+  "elapsed_s": 0.0013584999833256006,
+  "resource_scope": "Sampled available RAM/disk; 31 s work deadline, 4 s retention reserve, 40 s outer timeout.",
+  "assessor_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\assess_point03_analytic.py",
+  "assessor_sha256": "18f99c958e8766e57322ec637942c004a11aa7a4e2ae688b4f1a005f7964590a"
+}

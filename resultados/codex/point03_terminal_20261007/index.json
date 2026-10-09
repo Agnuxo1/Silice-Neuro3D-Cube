@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-10-07T18:22:41.638896+00:00",
+  "items": [
+    {
+      "N": 767,
+      "label": "19",
+      "sha256": "d0e8658ba94097525b2ea5e5efb78f5bfe7800bbad8427a86ddb16040d857a1d",
+      "P_in": 0.9999999999999998,
+      "expected": {
+        "field": 0.33284362035171283,
+        "intensity": 0.33288641123033724
+      },
+      "source_relative_path": "resultados/codex/point03_finer_20261007_M1/19/part019.npz",
+      "file": "n767_19.npz"
+    },
+    {
+      "N": 767,
+      "label": "31",
+      "sha256": "2cd7ca657a27ebfdc3a58eed9bd9e46c815ee95a3daf62873055a6061d1ca6e8",
+      "P_in": 0.9999999999999998,
+      "expected": {
+        "field": 0.3328436201753269,
+        "intensity": 0.33288641105392863
+      },
+      "source_relative_path": "resultados/codex/point03_finer_20261007_M1/31/part031.npz",
+      "file": "n767_31.npz"
+    },
+    {
+      "N": 767,
+      "label": "FDST",
+      "sha256": "7b28778c8b60039f02cbe353ac3c880f712f0cde1abb1bad3489423a6c245cc6",
+      "P_in": 0.9999999999999998,
+      "expected": {
+        "field": 0.33284344353047907,
+        "intensity": 0.33288623446230997
+      },
+      "source_relative_path": "resultados/codex/point03_finer_20261007_M1/FDST/part040.npz",
+      "file": "n767_FDST.npz"
+    },
+    {
+      "N": 320,
+      "label": "primary",
+      "sha256": "83d673276966fdf5b625b6523496fac12517f26ecf50926b9d1de1d14d126115",
+      "P_in": 1.0000000000000002,
+      "expected": {
+        "field": 0.33221107750896745,
+        "intensity": 0.33245729835808063
+      },
+      "source_relative_path": "resultados/codex/point03_exponential_20261007_H1/n320_segments8/segment_08.npz",
+      "file": "n320_primary.npz"
+    },
+    {
+      "N": 400,
+      "label": "primary",
+      "sha256": "c960e8436af2c5ee84544584c4d1e41d4b32d6979fbf470168f04fbf3c36bc5b",
+      "P_in": 1.0000000000000002,
+      "expected": {
+        "field": 0.33251736439672624,
+        "intensity": 0.33267476750503766
+      },
+      "source_relative_path": "resultados/codex/point03_exponential_20261007_H1/n400_segments8/segment_08.npz",
+      "file": "n400_primary.npz"
+    },
+    {
+      "N": 500,
+      "label": "primary",
+      "sha256": "e40ba878f08535459fa13be6400217e0c45c7c57a0aa81dcb41633db69dc9b4e",
+      "P_in": 1.0000000000000002,
+      "expected": {
+        "field": 0.33269015719262646,
+        "intensity": 0.33279061239752644
+      },
+      "source_relative_path": "resultados/codex/point03_exponential_20261007_H1/n500_segments8/segment_08.npz",
+      "file": "n500_primary.npz"
+    },
+    {
+      "N": 640,
+      "label": "primary",
+      "sha256": "d8482791f0e18b365fc0d24a86d693dbdc60ac7c63830555b2f66c2fc305cef2",
+      "P_in": 1.0000000000000002,
+      "expected": {
+        "field": 0.33280274547140776,
+        "intensity": 0.3328642007882665
+      },
+      "source_relative_path": "resultados/codex/point03_exponential_20261007_H2/n640_segments17/segment_17.npz",
+      "file": "n640_primary.npz"
+    }
+  ],
+  "scope": "Seven terminal arrays only; intermediate fields for the full 90-field chain audit remain local."
+}

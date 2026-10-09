@@ -1,0 +1,20 @@
+{
+  "controls_pass": true,
+  "checks": {
+    "budget_expired_rejected": true,
+    "negative_elapsed_rejected": true,
+    "insufficient_RAM_rejected": true,
+    "insufficient_disk_rejected": true,
+    "existing_output_rejected": true,
+    "unfinished_original_rejected": true,
+    "real_retained_prerequisites_verified": true,
+    "independent_auditor_no_evaluator_import": true
+  },
+  "worker_sha256": "b5fadac438ca29c4840b88ecf90a6e3316bcc81a6e42cd50e1198bfd8431478f",
+  "auditor_sha256": "7d3c97671f8e91de914119a6b4e5f9b630affb85722002f7290034154d805438",
+  "resources_synthetic_in_controls_only": true,
+  "optical_worker_launched": false,
+  "original_failure_sha256": "b3e68b02488949a3851d363318092720a84541e274fc753a48403ba41e5fec5c",
+  "partial_audit_sha256": "1cf1ea6a710744b4010b0385dc7730d9857b6471139061ba66dce97e3285a3cf",
+  "point03_closed": false
+}

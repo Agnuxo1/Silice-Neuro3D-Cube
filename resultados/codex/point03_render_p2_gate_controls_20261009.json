@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-09T09:10:27.544987+00:00",
+  "pass": true,
+  "accepted_calibration_cases": 1,
+  "rejected_calibration_cases": 16,
+  "accepted_ns_cases": 4,
+  "rejected_ns_cases": 7,
+  "gpu_execution": false,
+  "reads_prior_raw_frames": false,
+  "new_t96_field": false,
+  "source_sha256": "1199387b3a62564b60b92277bf7131019f495250031167c9dd38076d868e9dff"
+}

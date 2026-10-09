@@ -1,0 +1,19 @@
+{
+  "status": "failed",
+  "started_utc": "2026-10-08T13:16:26.957135+00:00",
+  "case": "R5_65536",
+  "index": 75,
+  "previous_report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i3_gaussian_time_20261008\\R5_65536\\part074.json",
+  "resource_start": {
+    "utc": "2026-10-08T13:16:26.968199+00:00",
+    "available_ram_bytes": 6344929280,
+    "free_disk_bytes": 517542297600
+  },
+  "previous_report_sha256": "5664970bfc337af0e2988d24a4eeac21d28e22c3d9ac3c3ad8ef44237d8d7d42",
+  "error": "",
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_p4i.py\", line 53, in worker\n    cp.update(status='completed',physical_power=physical,previous_power=power,steps_done=args.index*256,steps_total=case['steps'],dt_m=.002/case['steps'],resource_end=guard(args.prefix.parent))\n                                                                                                                                                                       ~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\run_point03_p4i.py\", line 27, in guard\n    assert ram>3*1024**3 and disk>2*1024**3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i3_gaussian_time_20261008\\R5_65536\\part075.npz",
+  "field_sha256": "d018c9a79b421df21d3ef711b0d738f4db0e74304f7061e328b4eb6578cec2c9",
+  "elapsed_s": 78.64755260001402
+}

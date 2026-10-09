@@ -1,0 +1,125 @@
+{
+  "schema": "silice.point03-geometry.worker.v1",
+  "status": "grid_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "16b64deee8b53b5ed81e3aa15ed01fa533d11032e228b3b20d8b66ce13863512",
+  "array_artifacts": [
+    {
+      "path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006234649Z\\grid_n500.npz",
+      "sha256": "756fe138bb2d8bcc481d258b3101f067cb23d0c2e8e278f4b624e2fe6e17a641"
+    }
+  ],
+  "N": 500,
+  "dx_um": 0.256,
+  "active_cell": null,
+  "cells_completed": 250000,
+  "raw_endpoint_corrections": [],
+  "numeric_valid": true,
+  "resource_check_schedule": {
+    "grid_memory_and_disk": "Before every row; existing worker entry/exit and profile checks also retained",
+    "grid_wall_time": "Before every row and every candidate-evaluated cell",
+    "retention_reserve_s": 4,
+    "thresholds": "Unchanged: available RAM > 1.5 GiB and free disk > 2 GiB"
+  },
+  "cell_status_legend": {
+    "0": "unprocessed",
+    "1": "support-disjoint exact zero",
+    "2": "candidate evaluated"
+  },
+  "support_bounds_um": [
+    -12.0,
+    12.0,
+    -12.0,
+    12.0
+  ],
+  "support_scope": "Driver-derived conservative disk bounding box intersected with outer-annulus box; helper bounds independently matched. Inner hole does not justify a skip.",
+  "candidate_evaluated_cells": 9025,
+  "support_disjoint_cells": 240975,
+  "raw_min": 0.0,
+  "raw_max": 1.0,
+  "fraction_min": 0.0,
+  "fraction_max": 1.0,
+  "min_cancel_ratio": 0.007476372236361067,
+  "max_boundary_closure_um": 2.498001805406602e-16,
+  "endpoint_correction_count": 0,
+  "max_absolute_endpoint_correction": 0.0,
+  "raw_grid_area_um2": 323.08187522149655,
+  "grid_area_um2": 323.08187522149655,
+  "nominal_raw_fraction_grid_area_um2": 323.081875221496,
+  "nominal_fraction_grid_area_um2": 323.081875221496,
+  "diagnostics": {
+    "schema": "silice.point03-union.predicates.v1",
+    "input_disk_count": 96,
+    "unique_circle_count": 98,
+    "coincident_roles": [],
+    "float_predicates": 3508,
+    "decimal_predicates": 74,
+    "exact_zero_predicates": 3,
+    "unrepresentable_events": 0,
+    "classification_boundary_hits": 0,
+    "line_cache_hits": 71620,
+    "predicate_categories": {
+      "circle_intersection": 392,
+      "circle_containment": 88,
+      "circle_line": 3028
+    },
+    "angular_membership_queries": 16518,
+    "halfplane_cache_hits": 65192,
+    "angular_merging": "Exact Decimal equality only; no angular epsilon.",
+    "angular_representation": {
+      "decimal_digits": 128,
+      "working_digits": 144,
+      "atan": "Half-angle reduction to abs(z)<=1/8, then alternating series.",
+      "pi": "Cached Machin formula; constants and events share precision.",
+      "integration": "Convert only the preserved Decimal span and trig angles to float."
+    },
+    "cancel_ratio_definition": "abs(raw area)/sum(abs(contributions)); 1 for empty sum.",
+    "validation_status": "requires_independent_geometry_audit",
+    "cached_exposed_arc_count": 178
+  },
+  "cancellation_scope": "abs(raw area)/sum(abs(boundary contributions)); smaller means stronger cancellation",
+  "profile_diagnostics": [
+    {
+      "N": 500,
+      "profile_samples": 64,
+      "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n500_ss64.npz",
+      "input_npz_sha256": "bde56bfcc3b419c9887aef930b0cc62a8b5ed8d9eb41213fb628b035f9fc2fe4",
+      "l1_fraction_sum": 0.20838902036677273,
+      "l1_area_um2": 0.013656982838756817,
+      "linf_fraction": 0.0017633109986279205,
+      "signed_area_difference_um2": -0.0016127785040438254,
+      "original_profile_area_um2": 323.083488,
+      "candidate_profile_area_um2": 323.081875221496,
+      "candidate_raw_profile_area_um2": 323.081875221496,
+      "raw_l1_area_um2": 0.013656982838756817,
+      "raw_linf_fraction": 0.0017633109986279205,
+      "changed_cells": 670,
+      "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+    },
+    {
+      "N": 500,
+      "profile_samples": 32,
+      "input_npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_refinement_20261006T220909702270Z\\inputs\\n500_ss32.npz",
+      "input_npz_sha256": "261b92a47aee4d7cbf037b2a0fd6ce3dce77eeabe6d0f546de82445538d45685",
+      "l1_fraction_sum": 0.6023019974931373,
+      "l1_area_um2": 0.039472463707710244,
+      "linf_fraction": 0.004777446756561048,
+      "signed_area_difference_um2": -0.0006207785040439828,
+      "original_profile_area_um2": 323.082496,
+      "candidate_profile_area_um2": 323.081875221496,
+      "candidate_raw_profile_area_um2": 323.081875221496,
+      "raw_l1_area_um2": 0.039472463707710244,
+      "raw_linf_fraction": 0.004777446756561048,
+      "changed_cells": 670,
+      "scope": "Diagnostic comparison to frozen SS32/64 profile on corresponding nominal grid; no optical field computation or pass threshold."
+    }
+  ],
+  "partial_arrays_retained": true,
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 40878080,
+    "peak_wset_bytes": 66498560,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 9.471862800011877
+}

@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-07T14:40:03.152531+00:00",
+  "pass_": true,
+  "no_geometry_or_propagation": true,
+  "geometry_changes": 4,
+  "temporal_changes": {
+    "N": 3,
+    "chunk": 2
+  },
+  "geometry_generated_sha256": "a9f56f49d0a0b612117c5d090b8b86771edabf2ba3cbec00cda6ebeba697f963",
+  "temporal_generated_sha256": "fb582e3a91e103cfa8fa08a44f784400ff305a4f743448922870560a6fa4d4a0",
+  "source_sha256": "cba2162a6955ecea5dcbb05b8989301108e22f4f713df9d9168df0a5eac0c208"
+}

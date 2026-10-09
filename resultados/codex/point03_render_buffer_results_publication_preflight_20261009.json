@@ -1,0 +1,100 @@
+{
+  "created_utc": "2026-10-09T08:53:45.767972+00:00",
+  "pass": true,
+  "scope": "Exact reviewed staged calibration result files; raw hashes and selected signatures; not universal absence of secrets",
+  "files": [
+    {
+      "path": "Docs/POINT-03-RENDER-BUFFER-RESULTS.md",
+      "bytes": 2808,
+      "sha256": "54ce182ec889f5642a584ecc19020890931c5b459d6b080bfc5cd7fe028255a5"
+    },
+    {
+      "path": "coordinacion/CHECKPOINT.md",
+      "bytes": 133816,
+      "sha256": "f093547503b79dc561de37d1fca3d07d5ca05fc10808c10ecfa2552134ef824b"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/audit_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/audit_stdout.txt",
+      "bytes": 126,
+      "sha256": "b8db2e7d6cbe9e226a1ac0064b10dbffb581c1d3715bc06db4722edcb25b9fb1"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/blender_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/blender_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/calibration_summary.json",
+      "bytes": 1067,
+      "sha256": "336096e4647b366835027459410f8b63edde54b65033987103b255a9f050a089"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/constant_13x7.npz",
+      "bytes": 469,
+      "sha256": "f2e4e797afb020d29ba3e4129f06a501b0a11c188f7728cd86e0c0bffe96158f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/constant_32x16.npz",
+      "bytes": 531,
+      "sha256": "3ecc4965305f27a723f87a04bf52c0854f7a7ac260341077ae67709ad952f28f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/constant_8x5.npz",
+      "bytes": 455,
+      "sha256": "b41dfe421c2bc02cede4a6b7bbbfa564592fe2ffc17b74208c0b0655367f1a75"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/coordinates_13x7.npz",
+      "bytes": 1661,
+      "sha256": "cc6330bf59c2634ab2cee07cd7e8646f8f8fc62fb67a851c1fff18198559ea8f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/coordinates_32x16.npz",
+      "bytes": 3931,
+      "sha256": "c9491e40824e0b8e73f494da3606ec36f7bd9f77c6f35b668274809473551f6f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/coordinates_8x5.npz",
+      "bytes": 866,
+      "sha256": "d613465ea11490759ca4e39589462ae29236d6276ace7c67620d18fb426d72bf"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/guard.json",
+      "bytes": 2561,
+      "sha256": "60bcae9ef466baf6ecdbc49dd7e2309710c672103cf5940dea195eefaaf9464f"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/local_integrity_audit.json",
+      "bytes": 2252,
+      "sha256": "cdd52ace2c4f35c64b18aef4e1a576bc79909b1050bc5a81a0c8776c609f14d8"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_calibration_run01_20261009/render_result.json",
+      "bytes": 5901,
+      "sha256": "c633c9e5a1456a4b6a5cd46cdf19c983cf079df0e4d634859c27f3c872fbdaad"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_preflight_20261009/guard.json",
+      "bytes": 1677,
+      "sha256": "9e7f82a00992ae1adca9b79b35783b9f0c001dbf5a7f510d56ff2f2f6e62e4fe"
+    }
+  ],
+  "bytes": 158121,
+  "findings": [],
+  "marker_frames": 6,
+  "local_integrity_pass": true,
+  "accuracy_pass": true,
+  "f1_worker_unchanged": true,
+  "p2_field_validated": false,
+  "point03_closed": false
+}

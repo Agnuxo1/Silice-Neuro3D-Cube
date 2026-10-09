@@ -1,0 +1,196 @@
+{
+  "created_utc": "2026-10-08T16:23:59.993356+00:00",
+  "purpose": "Three-mesh stiffness quadrature audit only; no optical propagation or physical claim.",
+  "destination_proposed": "Private CPU Google Colab notebook, only after specific upload authorization.",
+  "scientific_data": [
+    {
+      "path": "Docs/POINT-03-FEM-DUFFY-CONTRACT.md",
+      "bytes": 2349,
+      "sha256": "e6d1984af3a13c524388fdde6e8c07af640365b483be91443109ba657a14f108"
+    },
+    {
+      "path": "Docs/POINT-03-FEM-STIFFNESS-QUADRATURE-CONTRACT.md",
+      "bytes": 2659,
+      "sha256": "27d6119cd5723a78d336cf1f17ad3d7c6d5f00437c4ebb71a715969ca3fa12a5"
+    },
+    {
+      "path": "resultados/codex/point03_p4c_mesh_20261008/cladding_mass.npz",
+      "bytes": 1032323,
+      "sha256": "cb145c0eab81a178374661e18544156f476680a3736679a569e3fbbb063c1c06"
+    },
+    {
+      "path": "resultados/codex/point03_p4c_mesh_20261008/mass.npz",
+      "bytes": 5243979,
+      "sha256": "11254bf0e6e45249c7bc97eb58c9a91c8a2bbce882b6c2a9434ad310e5007222"
+    },
+    {
+      "path": "resultados/codex/point03_p4c_mesh_20261008/mesh_arrays.npz",
+      "bytes": 3790592,
+      "sha256": "379b2514e581cbd36f4dbddcb36a991e073c26c8d2e949cfdab3b22a8216e755"
+    },
+    {
+      "path": "resultados/codex/point03_p4c_mesh_20261008/report.json",
+      "bytes": 597,
+      "sha256": "d6d5f39d2e5a5280edcfdd83cb353a63fcc5315151661d39aeb37b7a94538800"
+    },
+    {
+      "path": "resultados/codex/point03_p4c_mesh_20261008/report_recovered.json",
+      "bytes": 1318,
+      "sha256": "340c34e6774a474cf8a1b5868e6ddb9908de20ad3659b9bdf2ccab5ae170db7f"
+    },
+    {
+      "path": "resultados/codex/point03_p4c_mesh_20261008/stiffness.npz",
+      "bytes": 5459390,
+      "sha256": "adabfcd5f45cf892f142736a5cfa49e3d37bba8ce936252583a0ee4d3b3b0973"
+    },
+    {
+      "path": "resultados/codex/point03_p4c_mesh_20261008/T96_curved.msh",
+      "bytes": 5094143,
+      "sha256": "addf8773816d625012aa5b0321bd1ada0519fcc4c604a54b2afac2617221692e"
+    },
+    {
+      "path": "resultados/codex/point03_p4f_detector_20261008/core_q32.npz",
+      "bytes": 300330,
+      "sha256": "06437bd5e8db2b0dda5a4839f8f46acd0522c819ff046a86692c40177eeb55dd"
+    },
+    {
+      "path": "resultados/codex/point03_p4f_detector_20261008/gaussian_q16.npz",
+      "bytes": 1789466,
+      "sha256": "3b8a54f017f8f5c0601c84b6aa3ee82c9c8e18485c6dc61fe592df6f4dac0f01"
+    },
+    {
+      "path": "resultados/codex/point03_p4f_detector_20261008/intensity_q32.npy",
+      "bytes": 598408,
+      "sha256": "72c74250f5bb83eae7bd1268b736cab5e4d9860223ebe3ccd5b72342758e4538"
+    },
+    {
+      "path": "resultados/codex/point03_p4i3_recovery2_20261008/execution.json",
+      "bytes": 39787,
+      "sha256": "0b8aeed8c2540da23493a845dc4c56a59d5ada84ad087f30477868fb9429c80c"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_coarse_20261008/cladding_mass.npz",
+      "bytes": 449858,
+      "sha256": "ca600938642b4b0b439e738832e63ad18b4c7e03ce7784c268155544d331a995"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_coarse_20261008/mass.npz",
+      "bytes": 2264011,
+      "sha256": "1f2b4e29164ee19a5995f0318f869b30b9e16af636e3b6d12a72585b94fd036d"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_coarse_20261008/mesh_arrays.npz",
+      "bytes": 1599816,
+      "sha256": "08b63a96bcadd990030bb2ad1e87e0f523dbd71a21e06c8522e14c9eddba9d60"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_coarse_20261008/report.json",
+      "bytes": 1406,
+      "sha256": "be9c3d10b4829decb8b55b3230fc5a2cf8d41a978c3d9c0e17ade782cd68e499"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_coarse_20261008/stiffness.npz",
+      "bytes": 2370090,
+      "sha256": "32529b8fbf563b445e7169eb1dd2cc8ec7d499f9c0b652324156f0a88caa76ef"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_coarse_20261008/T96_curved.msh",
+      "bytes": 2114144,
+      "sha256": "9be492debc2c0498fa3125f94762b33717013cb1a86cd53ff36f36e93f0efcc7"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_mid_20261008/cladding_mass.npz",
+      "bytes": 665537,
+      "sha256": "f48644237ac095b1e16c9211c63e510119cff65523b34270cd2369a96c62d947"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_mid_20261008/mass.npz",
+      "bytes": 3341991,
+      "sha256": "5e7f59c3222906a0570161d52b0fe52627664c17b64ba8513b429851a16b3202"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_mid_20261008/mesh_arrays.npz",
+      "bytes": 2451376,
+      "sha256": "13ddf5dedafed180d5847d7f7788917bcffc7d2430b90df98f1ae3b898b71835"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_mid_20261008/report.json",
+      "bytes": 1417,
+      "sha256": "672bfb907694594a2e1e4a160b10d18052805a30a3c76b1b7fb5f8ba90d78344"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_mid_20261008/stiffness.npz",
+      "bytes": 3496332,
+      "sha256": "48ec698e8b99d13d8fd1b272b82f0e29c9d081b5605657e77a8f5e3c6e676c7b"
+    },
+    {
+      "path": "resultados/codex/point03_p5a_mesh_mid_20261008/T96_curved.msh",
+      "bytes": 3279690,
+      "sha256": "6a35fb5e762d14e17d0acfd098f524b36469101e9a87ba3c2d69a05ed925fff8"
+    },
+    {
+      "path": "resultados/codex/point03_p5b_detector_coarse_20261008/core_q32.npz",
+      "bytes": 140263,
+      "sha256": "890e6ede86903f92023a75490ab007a7050e3acfed8fc384728321de9c8433a8"
+    },
+    {
+      "path": "resultados/codex/point03_p5b_detector_coarse_20261008/gaussian_q16.npz",
+      "bytes": 753914,
+      "sha256": "bd6277c94db5d7e142f4999a32c3c30d608b559884adf70683353ff42dc60b86"
+    },
+    {
+      "path": "resultados/codex/point03_p5b_detector_coarse_20261008/intensity_q32.npy",
+      "bytes": 252520,
+      "sha256": "44b1c23853eb2c8dda75db5007af2b6273a659f5fb97004eb6056a9945fc5eb6"
+    },
+    {
+      "path": "resultados/codex/point03_p5b_detector_mid_20261008/core_q32.npz",
+      "bytes": 206401,
+      "sha256": "c6e857a8b9e48bd64292ba72c988f136669e0845683ab53181aa86fcdd07952e"
+    },
+    {
+      "path": "resultados/codex/point03_p5b_detector_mid_20261008/gaussian_q16.npz",
+      "bytes": 1156634,
+      "sha256": "111939d3ac9181cb5e32dee8f0b1cae52f0470ed5c3970a1c87de23304bd63f4"
+    },
+    {
+      "path": "resultados/codex/point03_p5b_detector_mid_20261008/intensity_q32.npy",
+      "bytes": 387080,
+      "sha256": "728bf20e98d317d348f2e37a8dae77a4041157b6e6a9a1a6774ba7654cf20109"
+    },
+    {
+      "path": "scripts/audit_point03_p4i.py",
+      "bytes": 4835,
+      "sha256": "6c6c57b53d7709db567748be757f0179575564038e17a570d1ba1dc2c0c78453"
+    },
+    {
+      "path": "scripts/check_point03_fem_duffy.py",
+      "bytes": 7656,
+      "sha256": "71288843f18d15019bca9328a3aee4732a155fb23f9373bbdce62a179e48464e"
+    },
+    {
+      "path": "scripts/check_point03_p4f.py",
+      "bytes": 5976,
+      "sha256": "517172338bb36569b1c83f856fc74bf316c49aa9a73e6b6eabcdb6b7512bbb5a"
+    },
+    {
+      "path": "scripts/point03_fem_detector.py",
+      "bytes": 5274,
+      "sha256": "cc7303250a60b164e265a2062b0f443a5980d75dcbe2ff30e66003fb6f58c49c"
+    },
+    {
+      "path": "scripts/run_point03_exponential.py",
+      "bytes": 11793,
+      "sha256": "370d318e0b65a114d789b0e28dca089d0420a46d5e58ae949524744726eac65d"
+    }
+  ],
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.1",
+    "psutil": "6.1.1",
+    "meshio": "5.3.5",
+    "scikit-fem": "12.0.2"
+  },
+  "upload_performed": false,
+  "point03_closed": false
+}

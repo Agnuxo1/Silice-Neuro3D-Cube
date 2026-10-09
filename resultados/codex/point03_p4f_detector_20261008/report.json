@@ -1,0 +1,82 @@
+{
+  "created_utc": "2026-10-08T05:13:43.846068+00:00",
+  "controls_pass": true,
+  "geometry": {
+    "curve_min_radius2": 0.9999999999999988,
+    "chord_min_radius2": 0.9999999999999994
+  },
+  "quadrature_mass_norm_bound": 7.756517872543105e-14,
+  "statistics": [
+    {
+      "full_elements": 2035,
+      "partial_elements": 281
+    },
+    {
+      "full_elements": 2035,
+      "partial_elements": 281
+    }
+  ],
+  "polynomial_controls": [
+    {
+      "error_scaled_by_area": 2.2855882520416014e-16,
+      "field_integral": 9.460320397457531e-11,
+      "exact": 9.460320397457529e-11,
+      "intensity_integral": 9.475523640804352e-11
+    },
+    {
+      "error_scaled_by_area": 4.571176504083203e-16,
+      "field_integral": 2.3706320276501647e-10,
+      "exact": 2.370632027650165e-10,
+      "intensity_integral": 2.3744142574037395e-10
+    },
+    {
+      "error_scaled_by_area": 6.856764756124804e-16,
+      "field_integral": 1.920500162530308e-10,
+      "exact": 1.9205001625303073e-10,
+      "intensity_integral": 1.922871695387761e-10
+    },
+    {
+      "error_scaled_by_area": 4.571176504083203e-16,
+      "field_integral": 3.2052660556713085e-10,
+      "exact": 3.205266055671308e-10,
+      "intensity_integral": 3.2093281014961924e-10
+    },
+    {
+      "error_scaled_by_area": 2.2855882520416014e-16,
+      "field_integral": 1.1418233131260768e-10,
+      "exact": 1.1418233131260765e-10,
+      "intensity_integral": 1.1428662180539307e-10
+    },
+    {
+      "error_scaled_by_area": 2.2855882520416014e-16,
+      "field_integral": 2.2652008438009898e-10,
+      "exact": 2.26520084380099e-10,
+      "intensity_integral": 2.266467022944142e-10
+    }
+  ],
+  "input_quadrature_field_difference": 4.925872876359183e-15,
+  "input_projection_norm_before_scaling": [
+    0.9999999999748922,
+    0.9999999999749002
+  ],
+  "initial_core_field": 0.8646647133854584,
+  "initial_core_intensity": 0.8641866308701731,
+  "Gaussian_continuum_core": 0.8646647167633873,
+  "initial_projection_core_error": 3.377928936565411e-09,
+  "no_T96_propagation": true,
+  "point03_closed": false,
+  "elapsed_s": 12.163755399989896,
+  "source_sha256": {
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\check_point03_p4f.py": "517172338bb36569b1c83f856fc74bf316c49aa9a73e6b6eabcdb6b7512bbb5a",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\scripts\\point03_fem_detector.py": "cc7303250a60b164e265a2062b0f443a5980d75dcbe2ff30e66003fb6f58c49c",
+    "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\Docs\\POINT-03-P4F-CONTRACT.md": "34007b63a3772f871283772154acf2e7db5e04446c3f7ef01f2e182f443b5b58"
+  },
+  "artifacts": {
+    "core_q16.npz": "15de0eb03486a2cc5c7032e15a1d12941a0056e85db106136228a51b4b1189ca",
+    "core_q32.npz": "06437bd5e8db2b0dda5a4839f8f46acd0522c819ff046a86692c40177eeb55dd",
+    "gaussian_q12.npz": "90d299ebc0a79c63e19adb68bb8114ce3ee13e5db484454f46e79e6d7406aad7",
+    "gaussian_q16.npz": "3b8a54f017f8f5c0601c84b6aa3ee82c9c8e18485c6dc61fe592df6f4dac0f01",
+    "intensity_q16.npy": "8add1b1b6d9420a99f0db103d2ec3b8116a807c85d6eda297827d481bffc5d2d",
+    "intensity_q32.npy": "72c74250f5bb83eae7bd1268b736cab5e4d9860223ebe3ccd5b72342758e4538"
+  }
+}

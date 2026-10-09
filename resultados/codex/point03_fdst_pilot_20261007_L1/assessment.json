@@ -1,0 +1,156 @@
+{
+  "created_utc": "2026-10-07T13:08:06.981502+00:00",
+  "pilot_pass": false,
+  "point03_closed": false,
+  "gates": {
+    "integrity": true,
+    "field_fine": true,
+    "power_fine": true,
+    "observed_order": false,
+    "quadrature": true
+  },
+  "rows": [
+    {
+      "steps": 3200,
+      "dz_m": 6.25e-07,
+      "raw_total": 0.7667417562040952,
+      "methods": {
+        "field": {
+          "P_core": 0.33262024763119175,
+          "levels": [
+            0.33262024763119175,
+            0.33262024763119175
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.33268500998160105,
+          "levels": [
+            0.33268500998160105,
+            0.33268500998160105
+          ],
+          "change": 0.0
+        }
+      },
+      "errors": {
+        "field": 0.005994388103340976,
+        "power_field": 0.00018241340949887164,
+        "power_intensity": 0.00018175951608478957
+      },
+      "reference11_field_error": 0.005994388084390993
+    },
+    {
+      "steps": 6400,
+      "dz_m": 3.125e-07,
+      "raw_total": 0.7670670325854759,
+      "methods": {
+        "field": {
+          "P_core": 0.33280043089011624,
+          "levels": [
+            0.33280043089011624,
+            0.33280043089011624
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.33286454384092423,
+          "levels": [
+            0.33286454384092423,
+            0.33286454384092423
+          ],
+          "change": 0.0
+        }
+      },
+      "errors": {
+        "field": 3.132097533920959e-05,
+        "power_field": 2.2301505743782535e-06,
+        "power_intensity": 2.225656761611905e-06
+      },
+      "reference11_field_error": 3.1320956322901475e-05
+    },
+    {
+      "steps": 12800,
+      "dz_m": 1.5625e-07,
+      "raw_total": 0.7670675042300958,
+      "methods": {
+        "field": {
+          "P_core": 0.33280223986857993,
+          "levels": [
+            0.33280223986857993,
+            0.33280223986857993
+          ],
+          "change": 0.0
+        },
+        "intensity": {
+          "P_core": 0.3328663484651762,
+          "levels": [
+            0.3328663484651762,
+            0.3328663484651762
+          ],
+          "change": 0.0
+        }
+      },
+      "errors": {
+        "field": 5.14488635874961e-06,
+        "power_field": 4.2117211068726235e-07,
+        "power_intensity": 4.210325096343226e-07
+      },
+      "reference11_field_error": 5.144862190002711e-06
+    }
+  ],
+  "observed_orders": {
+    "field": [
+      7.580339544104266,
+      2.6059180229828156
+    ],
+    "power_field": [
+      6.353926857257561,
+      2.4046593089308614
+    ],
+    "power_intensity": [
+      6.351655969755055,
+      2.4022275798959356
+    ]
+  },
+  "reference_methods": {
+    "11": {
+      "field": {
+        "P_core": 0.3328026606501399,
+        "levels": [
+          0.3328026606501399,
+          0.3328026606501399
+        ],
+        "change": 0.0
+      },
+      "intensity": {
+        "P_core": 0.33286676910706003,
+        "levels": [
+          0.33286676910706003,
+          0.33286676910706003
+        ],
+        "change": 0.0
+      }
+    },
+    "17": {
+      "field": {
+        "P_core": 0.3328026610406906,
+        "levels": [
+          0.3328026610406906,
+          0.3328026610406906
+        ],
+        "change": 0.0
+      },
+      "intensity": {
+        "P_core": 0.33286676949768584,
+        "levels": [
+          0.33286676949768584,
+          0.33286676949768584
+        ],
+        "change": 0.0
+      }
+    }
+  },
+  "reference_field_difference": 5.872692576620547e-10,
+  "checkpoints_checked": 56,
+  "scope": "Temporal same-FD-operator pilot only; no spatial convergence closure."
+}

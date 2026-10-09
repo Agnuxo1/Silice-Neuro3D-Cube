@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-10-07T18:03:25.228866+00:00",
+  "integrity_pass": true,
+  "acceptance_recomputed": true,
+  "scientific_pass": false,
+  "point03_closed": false,
+  "checkpoints_checked": 90,
+  "primary_fields_remeasured": 4,
+  "source_files_checked": 20,
+  "max_raw_power_residual": 2.120525977034049e-14,
+  "rows": {
+    "field": {
+      "actual": 0.3328436201753288,
+      "forecast": 0.3328533205356861,
+      "residual": 9.70036035730093e-06,
+      "limit": 4.0874703921056635e-06,
+      "new_order": 3.2292429927465,
+      "order_disagreement": 0.29932263816791105,
+      "total_indicator": 0.00016008653987358912,
+      "conditions": {
+        "holdout": false,
+        "order": false,
+        "reference_power": true,
+        "temporal_power": true,
+        "uncertainty": true
+      }
+    },
+    "intensity": {
+      "actual": 0.3328864110539305,
+      "forecast": 0.33289647524084776,
+      "residual": 1.0064186917235762e-05,
+      "limit": 2.2210265664013297e-06,
+      "new_order": 4.060055911769454,
+      "order_disagreement": 0.415827982019298,
+      "total_indicator": 0.00010660702017734766,
+      "conditions": {
+        "holdout": false,
+        "order": false,
+        "reference_power": true,
+        "temporal_power": true,
+        "uncertainty": true
+      }
+    }
+  },
+  "global_gates": {
+    "reference_field": true,
+    "reference_bound": true,
+    "temporal_field": true,
+    "temporal_bound": true,
+    "quadrature": true
+  },
+  "reference_bound": 5.233533714409092e-10,
+  "temporal_bound": 3.052256925329413e-06,
+  "execution_sha256": "d420e0f0dc2dccea4ca5e4c752d3e151f5ff095f16be8a00218b1ab9a4ba4f6d",
+  "assessment_sha256": "456019376af76f17128ac80c8a4ae77aebcc630080aafce15639b7e21393ae51",
+  "audit_source_sha256": "4576291a89eecc49cabe6352fe3dd1305a9cd00822c87648fab665736836a2ac",
+  "historical_failures_retained": true,
+  "scope": "Conditional local scalar core-power convergence under new M1 criteria only; no boundary/phase/Maxwell/fabrication closure."
+}

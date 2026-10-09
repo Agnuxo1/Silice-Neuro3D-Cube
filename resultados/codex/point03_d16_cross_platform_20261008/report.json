@@ -1,0 +1,22 @@
+{
+  "local_reference_complete": true,
+  "remote_comparison_performed": false,
+  "full_optical_experiment": false,
+  "point03_closed": false,
+  "distance_m": 6.25e-05,
+  "records": {
+    "P6_32768": {
+      "report": "P6_32768/part001.json",
+      "report_sha256": "eb6ab88414261ddc1ea9f5b11af103273ef9bd515f3d9aa50af02c7dadb398d1",
+      "physical_power": 0.9999999994726422,
+      "elapsed_s": 72.00305380000009
+    },
+    "R5_32768": {
+      "report": "R5_32768/part001.json",
+      "report_sha256": "8be9b220a807ba1ebd7470ceb2a45d94fbb60cf00f38f3bb789a86e5b8df4faa",
+      "physical_power": 0.9999999993708135,
+      "elapsed_s": 71.30616499999996
+    }
+  },
+  "elapsed_s": 144.91973599999983
+}

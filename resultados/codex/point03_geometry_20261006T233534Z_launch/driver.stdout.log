@@ -1,0 +1,3 @@
+{"progress": "synthetic_completed", "N": null, "batch": null, "children": 1}
+{"progress": "grid_completed", "N": 256, "batch": null, "children": 2}
+{"status": "failed", "report": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_geometry_20261006T233534Z\\execution.json"}

@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-08T05:55:03.837929+00:00",
+  "case": "P6_8192",
+  "index": 11,
+  "previous_report_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i_gaussian_time_20261008\\P6_8192\\part010.json",
+  "resource_start": {
+    "utc": "2026-10-08T05:55:03.849253+00:00",
+    "available_ram_bytes": 8260087808,
+    "free_disk_bytes": 518807302144
+  },
+  "previous_report_sha256": "2f01db07f5a904849e7a4790d83dcb2e7e71a1eaa0e39a90b15841149ccf02a9",
+  "physical_power": 0.9986591856789371,
+  "previous_power": 0.9991836355528461,
+  "steps_done": 2816,
+  "steps_total": 8192,
+  "dt_m": 2.44140625e-07,
+  "resource_end": {
+    "utc": "2026-10-08T05:56:03.673917+00:00",
+    "available_ram_bytes": 7811305472,
+    "free_disk_bytes": 518807252992
+  },
+  "field_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_p4i_gaussian_time_20261008\\P6_8192\\part011.npz",
+  "field_sha256": "60456e7c7e33b2db0dde750cef115554aed1e413e10feb0001c35542b1dca340",
+  "elapsed_s": 59.84950489999028
+}

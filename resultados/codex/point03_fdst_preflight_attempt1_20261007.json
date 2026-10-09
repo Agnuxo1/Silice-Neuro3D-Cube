@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-07T11:46:09.126464+00:00",
+  "pass_": true,
+  "kinetic_dense_error": 2.415135173294784e-16,
+  "sine_controls": [
+    {
+      "sigma": 0.0,
+      "field_relative_error": 2.851685066024365e-14,
+      "power_error": 4.3298697960381105e-14,
+      "max_negative_amplification": 1.0
+    },
+    {
+      "sigma": 12000.0,
+      "field_relative_error": 1.8883296182627037e-14,
+      "power_error": 1.609823385706477e-15,
+      "max_negative_amplification": 1.0010541768300838
+    }
+  ],
+  "order_controls": [
+    {
+      "steps": 400,
+      "error": 1.1701335274603278e-08,
+      "max_negative_amplification": 1.002616846134414
+    },
+    {
+      "steps": 800,
+      "error": 7.316211224812972e-10,
+      "max_negative_amplification": 1.0013075681999084
+    },
+    {
+      "steps": 1600,
+      "error": 4.5698210742297343e-11,
+      "max_negative_amplification": 1.0006535705227402
+    }
+  ],
+  "observed_orders": [
+    3.999432631816272,
+    4.000887142899289
+  ],
+  "no_optical_propagation": true
+}

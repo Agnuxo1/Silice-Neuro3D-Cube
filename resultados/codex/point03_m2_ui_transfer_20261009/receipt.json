@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-09T03:08:02.400551+00:00",
+  "transport_SHA_CRC_pass": true,
+  "sha256": "671b34d6fd5b3b7f96f37f4e11c8a6666801baaad5aa942268922ddc8ed6b9bc",
+  "bytes": 9499714,
+  "chunks": 49,
+  "members": 44,
+  "source": "Visible readonly fields in own Colab HTTPS result-transfer viewer",
+  "original_data_modified": false
+}

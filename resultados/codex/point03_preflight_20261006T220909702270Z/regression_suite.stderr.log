@@ -1,0 +1,56 @@
+test_deadline (test_bpm.BPMTests.test_deadline) ... ok
+test_gaussian_diffraction_analytic (test_bpm.BPMTests.test_gaussian_diffraction_analytic) ... ok
+test_input_unit_power (test_bpm.BPMTests.test_input_unit_power) ... ok
+test_invalid_grid (test_bpm.BPMTests.test_invalid_grid) ... ok
+test_invalid_profile (test_bpm.BPMTests.test_invalid_profile) ... ok
+test_invalid_propagation (test_bpm.BPMTests.test_invalid_propagation) ... ok
+test_loss_power_not_amplitude (test_bpm.BPMTests.test_loss_power_not_amplitude) ... ok
+test_profile_core_untouched_and_outside_untouched (test_bpm.BPMTests.test_profile_core_untouched_and_outside_untouched) ... ok
+test_sponge_budget_not_material (test_bpm.BPMTests.test_sponge_budget_not_material) ... ok
+test_superposition (test_bpm.BPMTests.test_superposition) ... ok
+test_uniform_index_phase_not_intensity_only (test_bpm.BPMTests.test_uniform_index_phase_not_intensity_only) ... ok
+test_geometry_intact_cores_and_no_double_index (test_coupler.CouplerTests.test_geometry_intact_cores_and_no_double_index) ... ok
+test_geometry_invalid_or_expired (test_coupler.CouplerTests.test_geometry_invalid_or_expired) ... ok
+test_orthogonal_ports_projection (test_coupler.CouplerTests.test_orthogonal_ports_projection) ... ok
+test_reduction_hermitian_zero_and_lossless (test_coupler.CouplerTests.test_reduction_hermitian_zero_and_lossless) ... ok
+test_short_field_linearity_no_renormalization (test_coupler.CouplerTests.test_short_field_linearity_no_renormalization) ... ok
+test_analytic_disk_area_and_partial_pixels (test_coverage.CoverageTests.test_analytic_disk_area_and_partial_pixels) ... ok
+test_geometry_deadline_and_detector_validation (test_coverage.CoverageTests.test_geometry_deadline_and_detector_validation) ... ok
+test_opt_in_does_not_change_original_grid (test_coverage.CoverageTests.test_opt_in_does_not_change_original_grid) ... ok
+test_profile_budget_and_equal_integral (test_coverage.CoverageTests.test_profile_budget_and_equal_integral) ... ok
+test_quarter_circle_cell_and_symmetry (test_coverage.CoverageTests.test_quarter_circle_cell_and_symmetry) ... ok
+test_union_duplicate_is_not_double_index (test_coverage.CoverageTests.test_union_duplicate_is_not_double_index) ... ok
+test_aligned_core_retains_radius (test_glass006a_audit.RadiusSamplingTests.test_aligned_core_retains_radius) ... ok
+test_ten_micron_core_drift_is_explicit (test_glass006a_audit.RadiusSamplingTests.test_ten_micron_core_drift_is_explicit) ... ok
+test_both_error_thresholds (test_glass007_gates.DiscreteGateTests.test_both_error_thresholds) ... ok
+test_parent_invalid (test_glass007_gates.DiscreteGateTests.test_parent_invalid) ... ok
+test_budget_backend_does_not_collide_with_report_backend (test_glass007_v2_runner.RunnerReportTests.test_budget_backend_does_not_collide_with_report_backend) ... ok
+test_field_validation (test_gpu_bpm.GPUPreparationTests.test_field_validation) ... ok
+test_uniform_phase_sign (test_gpu_bpm.GPUPreparationTests.test_uniform_phase_sign) ... ok
+test_vacuum_and_passive_sponge (test_gpu_bpm.GPUPreparationTests.test_vacuum_and_passive_sponge) ... ok
+test_validation (test_gpu_bpm.GPUPreparationTests.test_validation) ... ok
+test_limits (test_gpu_guard.GuardTests.test_limits) ... ok
+test_missing_telemetry_does_not_pass (test_gpu_guard.GuardTests.test_missing_telemetry_does_not_pass) ... ok
+test_no_cpu_fallback (test_gpu_guard.GuardTests.test_no_cpu_fallback) ... ok
+test_resource_floor_and_budget (test_gpu_guard.GuardTests.test_resource_floor_and_budget) ... ok
+test_bounds (test_gpu_refinement.FineGridTests.test_bounds) ... ok
+test_exact_old_operators (test_gpu_refinement.FineGridTests.test_exact_old_operators) ... ok
+test_old_limits_unchanged (test_gpu_refinement.FineGridTests.test_old_limits_unchanged) ... ok
+test_24_independent_coordinate_hits (test_megageometry_optics.MegaGeometryTests.test_24_independent_coordinate_hits) ... ok
+test_all_frozen_gates (test_megageometry_optics.MegaGeometryTests.test_all_frozen_gates) ... ok
+test_dark_port_and_small_angle (test_megageometry_optics.MegaGeometryTests.test_dark_port_and_small_angle) ... ok
+test_optical_budget_is_not_triangle_count (test_megageometry_optics.MegaGeometryTests.test_optical_budget_is_not_triangle_count) ... ok
+test_parallel_ray_rejected (test_megageometry_optics.MegaGeometryTests.test_parallel_ray_rejected) ... ok
+test_scale_does_not_preserve_physical_path (test_megageometry_optics.MegaGeometryTests.test_scale_does_not_preserve_physical_path) ... ok
+test_absolute_and_relative_required (test_research_gates.ResearchGateTests.test_absolute_and_relative_required) ... ok
+test_no_trivial_zero_certification (test_research_gates.ResearchGateTests.test_no_trivial_zero_certification) ... ok
+test_equal_integral (test_tracks.TrackTests.test_equal_integral) ... ok
+test_geometry_counts (test_tracks.TrackTests.test_geometry_counts) ... ok
+test_invalid_tracks (test_tracks.TrackTests.test_invalid_tracks) ... ok
+test_overlap_not_summed (test_tracks.TrackTests.test_overlap_not_summed) ... ok
+test_wedge_really_omits_centres (test_tracks.TrackTests.test_wedge_really_omits_centres) ... ok
+
+----------------------------------------------------------------------
+Ran 51 tests in 1.113s
+
+OK

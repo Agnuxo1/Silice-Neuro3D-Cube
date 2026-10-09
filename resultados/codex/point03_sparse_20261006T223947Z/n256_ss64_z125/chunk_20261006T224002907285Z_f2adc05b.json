@@ -1,0 +1,104 @@
+{
+  "schema": "silice.point03-sparse.worker.v1",
+  "status": "checkpoint_completed",
+  "gpu_used": false,
+  "audit_manifest_sha256": "c11722129bc5b1e4f90e0afff1429cce9655d5c2f69841a943a0f02e620db13b",
+  "case_id": "n256_ss64_z125",
+  "steps_start": 200,
+  "steps_done": 400,
+  "previous_checkpoint_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n256_ss64_z125\\chunk_20261006T223956234583Z_65239e19.json",
+  "previous_checkpoint_sha256": "4ec5621dcd6e91c1d25331d3bac1bbd57c3d78d740d0d3ea4c090ab062ea93e5",
+  "input_npz_sha256": "6c52097cf13dfd30d29c01e6c6d9ed94f07439d10032cf9e84d01730b20969c4",
+  "propagation_s": 5.801688599982299,
+  "factor_metadata": {
+    "backend": "scipy.sparse.linalg.splu",
+    "scipy_version": "1.15.1",
+    "numpy_version": "2.2.6",
+    "original_class": "point03_sparse_original_adi.Stepper",
+    "options": {
+      "permc_spec": "NATURAL",
+      "diag_pivot_thresh": 0.0,
+      "Equil": false
+    },
+    "factors": [
+      {
+        "factor_index": 0,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.00991950003663078,
+        "factorization_s": 0.03155179996974766,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.740754300262779,
+        "setup_elapsed_s": 0.04605850001098588
+      },
+      {
+        "factor_index": 1,
+        "line_count": 256,
+        "line_size": 256,
+        "matrix_order": 65536,
+        "matrix_nnz": 196096,
+        "expected_matrix_nnz": 196096,
+        "L_nnz": 130816,
+        "U_nnz": 130816,
+        "matrix_csc_bytes": 4184068,
+        "factor_export_csc_bytes": 5756936,
+        "storage_scope": "CSC arrays only; excludes native SuperLU workspace and Python overhead.",
+        "perm_r": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "perm_c": {
+          "length": 65536,
+          "dtype": "int32",
+          "identity": true,
+          "nonidentity_entries": 0,
+          "sha256": "4a35a59aabf394adb1d83cda6d3c2e799553e35ba7e4ee55537c8add209532a7"
+        },
+        "assembly_s": 0.010070899967104197,
+        "factorization_s": 0.03468580002663657,
+        "solve_calls": 200,
+        "solve_elapsed_s": 0.7528842000174336,
+        "setup_elapsed_s": 0.04867119999835268
+      }
+    ],
+    "validation_status": "requires_paired_audit_result"
+  },
+  "npz_path": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_sparse_20261006T223947Z\\n256_ss64_z125\\chunk_20261006T224002907285Z_f2adc05b.npz",
+  "npz_sha256": "e4957ddfaa69c4e328bed957b8be0052e3afda71bc1b3b8792b654c0b202746a",
+  "input_power": 1.0000000000000002,
+  "output_power": 0.9995647559459839,
+  "core_power_analytic_input": 0.6657327293894513,
+  "core_area_m2": 1.130973355292326e-10,
+  "sources_and_inputs_unchanged": true,
+  "memory": {
+    "rss_current_bytes": 57274368,
+    "peak_wset_bytes": 128397312,
+    "scope": "Windows peak working set if available; RSS is a current sample."
+  },
+  "elapsed_s": 6.5354611000511795
+}

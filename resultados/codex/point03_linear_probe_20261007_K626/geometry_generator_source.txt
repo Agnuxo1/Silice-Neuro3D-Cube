@@ -1,0 +1,72 @@
+def prepare626(out, deadline):
+    import numpy as np
+    regionmod = load('g_union', ROOT / 'scripts/point03_union_geometry.py')
+    refmod = load('g_reference', ROOT / 'scripts/point03_geometry_reference.py')
+    spec = json.loads((D / 'inputs/centres.json').read_text())['spec_um']
+    region = regionmod.UnionRegion(spec)
+    n = 626
+    dx_um = 128 / n
+    dx = 0.000128 / n
+    ax = (np.arange(n) - n // 2) * dx_um
+    fraction = np.zeros((n, n), dtype=np.float64)
+    raw = fraction.copy()
+    correction = fraction.copy()
+    chosen = {}
+    indices = np.flatnonzero(np.abs(ax) <= 12 + dx_um)
+    for iy in indices:
+        guard(out, deadline)
+        for ix in indices:
+            rect = [ax[ix] - dx_um / 2, ax[ix] + dx_um / 2, ax[iy] - dx_um / 2, ax[iy] + dx_um / 2]
+            result = region.cell(rect)
+            assert result['within_guard'] and result['boundary_closed']
+            raw[iy, ix] = result['raw_fraction']
+            fraction[iy, ix] = result['fraction']
+            correction[iy, ix] = result['correction']
+            if 0 < result['fraction'] < 1:
+                chosen[int(iy), int(ix)] = rect
+    np.savez(out / 'geometry626.npz', raw_fraction=raw, fraction=fraction, correction=correction)
+    global_area = region.global_area()['area_um2']
+    area = float(np.sum(fraction) * dx_um ** 2)
+    assert abs(area / global_area - 1) <= 1e-12, 'Global coverage area mismatch'
+    pools = {name: sorted((k for k in chosen if abs(math.hypot(ax[k[1]], ax[k[0]]) - radius) <= dx_um)) for name, radius in (('inner', 6), ('outer', 12))}
+    selection = []
+    for name, pool in pools.items():
+        assert len(pool) >= 16
+        selection += [(name, pool[i]) for i in np.linspace(0, len(pool) - 1, 16, dtype=int)]
+    used = {k for _, k in selection}
+    pool = sorted(set(chosen) - used)
+    assert len(pool) >= 16
+    selection += [('partial', pool[i]) for i in np.linspace(0, len(pool) - 1, 16, dtype=int)]
+    assert len({k for _, k in selection}) == 48
+    report = dict(spec_um=spec, N=n, global_area=global_area, grid_area=area, maximum_endpoint_correction=float(np.abs(correction).max()), reference_cells=[], selection=[dict(group=g, iy=k[0], ix=k[1], rect=chosen[k]) for g, k in selection])
+    write(out / 'geometry_selection.json', report['selection'])
+    try:
+        for group, k in selection:
+            guard(out, deadline)
+            ref = refmod.cell_reference(spec, chosen[k], deadline=deadline)
+            delta = abs(ref['fraction_fine'] - fraction[k])
+            report['reference_cells'].append(dict(group=group, iy=k[0], ix=k[1], reference=ref, delta=delta))
+            assert ref['quality_pass'] and ref['quality_total'] <= 1e-13 and (delta <= 1e-12)
+        report['geometry_pass'] = True
+    finally:
+        write(out / 'geometry_report.json', report)
+    adi = load('g_input_adi', ROOT / 'experimentos/glass009_claude/adi2d.py')
+    sys.path.insert(0, str(ROOT / 'src'))
+    from silice.coverage import circle_coverage
+
+    class Grid:
+        points = n
+        width_m = 0.000128
+        dx_m = dx
+
+        def coordinates(self):
+            axis = (np.arange(n) - n // 2) * dx
+            return np.meshgrid(axis, axis, indexing='xy')
+    a0 = adi.gaussian(n, dx, 6e-06)
+    sig = adi.sigma_map(n, dx, smax=40000.0, frac=0.2)
+    weights = circle_coverage(Grid(), 6e-06)
+    assert abs(float(np.sum(np.abs(a0) ** 2) * dx * dx) - 1) <= 1e-12
+    assert abs(float(weights.sum() * dx * dx) / (math.pi * 6e-06 ** 2) - 1) <= 1e-12
+    path = out / 'n626_input.npz'
+    np.savez(path, A0=a0, sigma=sig, dn=-0.003 * fraction, weights=weights)
+    return path

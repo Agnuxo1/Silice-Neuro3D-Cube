@@ -1,0 +1,1371 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-08T22:55:32.662346+00:00",
+  "recovery_started_utc": "2026-10-09T02:06:20.411015+00:00",
+  "manifest_sha256": "27e1416abe272cee460b515173f5c33a2f1d7e5a3dc55e15f5f2d00e598a3741",
+  "original_wait_budget_exhausted": true,
+  "recovery_wait_s": 0.0,
+  "original_wait_s_recorded": 285.8266042000214,
+  "retained_checkpoints": 83,
+  "children": [
+    {
+      "case": "P6_32768",
+      "index": 1,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7572897792,
+        "free_disk_bytes": 512658747392
+      },
+      "elapsed_s": 119.33409559999927
+    },
+    {
+      "case": "P6_32768",
+      "index": 2,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8413388800,
+        "free_disk_bytes": 512657977344
+      },
+      "elapsed_s": 116.58809050000127
+    },
+    {
+      "case": "P6_32768",
+      "index": 3,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8419360768,
+        "free_disk_bytes": 512656945152
+      },
+      "elapsed_s": 117.70812980000119
+    },
+    {
+      "case": "P6_32768",
+      "index": 4,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8658968576,
+        "free_disk_bytes": 512656171008
+      },
+      "elapsed_s": 116.27887620000183
+    },
+    {
+      "case": "P6_32768",
+      "index": 5,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8650289152,
+        "free_disk_bytes": 512655400960
+      },
+      "elapsed_s": 116.51324750000276
+    },
+    {
+      "case": "P6_32768",
+      "index": 6,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7953891328,
+        "free_disk_bytes": 512654630912
+      },
+      "elapsed_s": 118.837962900001
+    },
+    {
+      "case": "P6_32768",
+      "index": 7,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8468180992,
+        "free_disk_bytes": 512653860864
+      },
+      "elapsed_s": 118.68461299999763
+    },
+    {
+      "case": "P6_32768",
+      "index": 8,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8473489408,
+        "free_disk_bytes": 512653090816
+      },
+      "elapsed_s": 119.95792029999939
+    },
+    {
+      "case": "P6_32768",
+      "index": 9,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8312434688,
+        "free_disk_bytes": 512652320768
+      },
+      "elapsed_s": 118.26565219999975
+    },
+    {
+      "case": "P6_32768",
+      "index": 10,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8524730368,
+        "free_disk_bytes": 512651550720
+      },
+      "elapsed_s": 116.19498439999734
+    },
+    {
+      "case": "P6_32768",
+      "index": 11,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8577937408,
+        "free_disk_bytes": 512650780672
+      },
+      "elapsed_s": 120.6708980000003
+    },
+    {
+      "case": "P6_32768",
+      "index": 12,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8554774528,
+        "free_disk_bytes": 512650010624
+      },
+      "elapsed_s": 118.21472900000299
+    },
+    {
+      "case": "P6_32768",
+      "index": 13,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8543223808,
+        "free_disk_bytes": 512649240576
+      },
+      "elapsed_s": 116.5508461999998
+    },
+    {
+      "case": "P6_32768",
+      "index": 14,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8004591616,
+        "free_disk_bytes": 512648466432
+      },
+      "elapsed_s": 119.48400419999962
+    },
+    {
+      "case": "P6_32768",
+      "index": 15,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8432582656,
+        "free_disk_bytes": 512647696384
+      },
+      "elapsed_s": 119.31768699999884
+    },
+    {
+      "case": "P6_32768",
+      "index": 16,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8585089024,
+        "free_disk_bytes": 512646402048
+      },
+      "elapsed_s": 117.44111940000221
+    },
+    {
+      "case": "P6_32768",
+      "index": 17,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8430768128,
+        "free_disk_bytes": 512645632000
+      },
+      "elapsed_s": 117.07609840000077
+    },
+    {
+      "case": "P6_32768",
+      "index": 18,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8307048448,
+        "free_disk_bytes": 512644861952
+      },
+      "elapsed_s": 116.5696863000012
+    },
+    {
+      "case": "P6_32768",
+      "index": 19,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8627531776,
+        "free_disk_bytes": 512644091904
+      },
+      "elapsed_s": 117.3182295000006
+    },
+    {
+      "case": "P6_32768",
+      "index": 20,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8527347712,
+        "free_disk_bytes": 512643317760
+      },
+      "elapsed_s": 118.75786620000144
+    },
+    {
+      "case": "P6_32768",
+      "index": 21,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8530264064,
+        "free_disk_bytes": 512642547712
+      },
+      "elapsed_s": 118.10092350000195
+    },
+    {
+      "case": "P6_32768",
+      "index": 22,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8027459584,
+        "free_disk_bytes": 512641777664
+      },
+      "elapsed_s": 118.15111949999846
+    },
+    {
+      "case": "P6_32768",
+      "index": 23,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8247373824,
+        "free_disk_bytes": 512641007616
+      },
+      "elapsed_s": 117.70758430000205
+    },
+    {
+      "case": "P6_32768",
+      "index": 24,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8456388608,
+        "free_disk_bytes": 512640237568
+      },
+      "elapsed_s": 119.11343809999744
+    },
+    {
+      "case": "P6_32768",
+      "index": 25,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8512008192,
+        "free_disk_bytes": 512639467520
+      },
+      "elapsed_s": 116.1506687000001
+    },
+    {
+      "case": "P6_32768",
+      "index": 26,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8460771328,
+        "free_disk_bytes": 512638697472
+      },
+      "elapsed_s": 117.43310479999855
+    },
+    {
+      "case": "P6_32768",
+      "index": 27,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8795025408,
+        "free_disk_bytes": 512637923328
+      },
+      "elapsed_s": 118.27672670000175
+    },
+    {
+      "case": "P6_32768",
+      "index": 28,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8542773248,
+        "free_disk_bytes": 512637153280
+      },
+      "elapsed_s": 117.46651199999906
+    },
+    {
+      "case": "P6_32768",
+      "index": 29,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8573235200,
+        "free_disk_bytes": 512636383232
+      },
+      "elapsed_s": 117.16878929999802
+    },
+    {
+      "case": "P6_32768",
+      "index": 30,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8061038592,
+        "free_disk_bytes": 512635613184
+      },
+      "elapsed_s": 116.7215060999988
+    },
+    {
+      "case": "P6_32768",
+      "index": 31,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8389640192,
+        "free_disk_bytes": 512634777600
+      },
+      "elapsed_s": 116.66418550000162
+    },
+    {
+      "case": "P6_32768",
+      "index": 32,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8533544960,
+        "free_disk_bytes": 512633982976
+      },
+      "elapsed_s": 117.5107958999979
+    },
+    {
+      "case": "R5_65536",
+      "index": 1,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8495263744,
+        "free_disk_bytes": 512633208832
+      },
+      "elapsed_s": 116.92917859999943
+    },
+    {
+      "case": "R5_65536",
+      "index": 2,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8468459520,
+        "free_disk_bytes": 512632438784
+      },
+      "elapsed_s": 115.72801400000026
+    },
+    {
+      "case": "R5_65536",
+      "index": 3,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8693686272,
+        "free_disk_bytes": 512631668736
+      },
+      "elapsed_s": 117.94247840000025
+    },
+    {
+      "case": "R5_65536",
+      "index": 4,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8512278528,
+        "free_disk_bytes": 512630894592
+      },
+      "elapsed_s": 116.91176059999998
+    },
+    {
+      "case": "R5_65536",
+      "index": 5,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8560177152,
+        "free_disk_bytes": 512630124544
+      },
+      "elapsed_s": 116.25999990000128
+    },
+    {
+      "case": "R5_65536",
+      "index": 6,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7867289600,
+        "free_disk_bytes": 512629354496
+      },
+      "elapsed_s": 115.98434310000084
+    },
+    {
+      "case": "R5_65536",
+      "index": 7,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8543666176,
+        "free_disk_bytes": 512628584448
+      },
+      "elapsed_s": 116.01392769999802
+    },
+    {
+      "case": "R5_65536",
+      "index": 8,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8605728768,
+        "free_disk_bytes": 512627814400
+      },
+      "elapsed_s": 116.77356100000179
+    },
+    {
+      "case": "R5_65536",
+      "index": 9,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8183308288,
+        "free_disk_bytes": 512627044352
+      },
+      "elapsed_s": 115.78625830000237
+    },
+    {
+      "case": "R5_65536",
+      "index": 10,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8459157504,
+        "free_disk_bytes": 512626274304
+      },
+      "elapsed_s": 117.78813829999854
+    },
+    {
+      "case": "R5_65536",
+      "index": 11,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8467836928,
+        "free_disk_bytes": 512625504256
+      },
+      "elapsed_s": 118.17459039999812
+    },
+    {
+      "case": "R5_65536",
+      "index": 12,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8436699136,
+        "free_disk_bytes": 512624734208
+      },
+      "elapsed_s": 115.51421309999932
+    },
+    {
+      "case": "R5_65536",
+      "index": 13,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8418095104,
+        "free_disk_bytes": 512623964160
+      },
+      "elapsed_s": 117.56393150000076
+    },
+    {
+      "case": "R5_65536",
+      "index": 14,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7905210368,
+        "free_disk_bytes": 512623190016
+      },
+      "elapsed_s": 117.88371840000036
+    },
+    {
+      "case": "R5_65536",
+      "index": 15,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8303771648,
+        "free_disk_bytes": 512622419968
+      },
+      "elapsed_s": 116.0486138999986
+    },
+    {
+      "case": "R5_65536",
+      "index": 16,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8286220288,
+        "free_disk_bytes": 512621649920
+      },
+      "elapsed_s": 116.99416909999854
+    },
+    {
+      "case": "R5_65536",
+      "index": 17,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7989829632,
+        "free_disk_bytes": 512620879872
+      },
+      "elapsed_s": 118.12841000000117
+    },
+    {
+      "case": "R5_65536",
+      "index": 18,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8620113920,
+        "free_disk_bytes": 512620109824
+      },
+      "elapsed_s": 116.56347639999876
+    },
+    {
+      "case": "R5_65536",
+      "index": 19,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8574226432,
+        "free_disk_bytes": 512619339776
+      },
+      "elapsed_s": 118.45328150000205
+    },
+    {
+      "case": "R5_65536",
+      "index": 20,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8420081664,
+        "free_disk_bytes": 512618565632
+      },
+      "elapsed_s": 114.77541220000057
+    },
+    {
+      "case": "R5_65536",
+      "index": 21,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8423329792,
+        "free_disk_bytes": 512617795584
+      },
+      "elapsed_s": 118.7546653999998
+    },
+    {
+      "case": "R5_65536",
+      "index": 22,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7652007936,
+        "free_disk_bytes": 512617025536
+      },
+      "elapsed_s": 116.36750449999818
+    },
+    {
+      "case": "R5_65536",
+      "index": 23,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8229416960,
+        "free_disk_bytes": 512616255488
+      },
+      "elapsed_s": 117.30419149999943
+    },
+    {
+      "case": "R5_65536",
+      "index": 24,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8269570048,
+        "free_disk_bytes": 512615485440
+      },
+      "elapsed_s": 118.77241249999861
+    },
+    {
+      "case": "R5_65536",
+      "index": 25,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7736303616,
+        "free_disk_bytes": 512614715392
+      },
+      "elapsed_s": 117.67109390000041
+    },
+    {
+      "case": "R5_65536",
+      "index": 26,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8472809472,
+        "free_disk_bytes": 512613945344
+      },
+      "elapsed_s": 115.29421410000214
+    },
+    {
+      "case": "R5_65536",
+      "index": 27,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8486711296,
+        "free_disk_bytes": 512613171200
+      },
+      "elapsed_s": 118.54410579999967
+    },
+    {
+      "case": "R5_65536",
+      "index": 28,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8282501120,
+        "free_disk_bytes": 512612401152
+      },
+      "elapsed_s": 117.79030719999719
+    },
+    {
+      "case": "R5_65536",
+      "index": 29,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8304365568,
+        "free_disk_bytes": 512611561472
+      },
+      "elapsed_s": 117.17146599999978
+    },
+    {
+      "case": "R5_65536",
+      "index": 30,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8303153152,
+        "free_disk_bytes": 512610766848
+      },
+      "elapsed_s": 116.70626320000156
+    },
+    {
+      "case": "R5_65536",
+      "index": 31,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8365932544,
+        "free_disk_bytes": 512609996800
+      },
+      "elapsed_s": 115.13838749999923
+    },
+    {
+      "case": "R5_65536",
+      "index": 32,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8366055424,
+        "free_disk_bytes": 512609226752
+      },
+      "elapsed_s": 118.21664579999924
+    },
+    {
+      "case": "R5_65536",
+      "index": 33,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7665790976,
+        "free_disk_bytes": 512608452608
+      },
+      "elapsed_s": 116.11673760000122
+    },
+    {
+      "case": "R5_65536",
+      "index": 34,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8663732224,
+        "free_disk_bytes": 512607682560
+      },
+      "elapsed_s": 115.4529853999993
+    },
+    {
+      "case": "R5_65536",
+      "index": 35,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8739524608,
+        "free_disk_bytes": 512606912512
+      },
+      "elapsed_s": 116.57889630000136
+    },
+    {
+      "case": "R5_65536",
+      "index": 36,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8508710912,
+        "free_disk_bytes": 512606142464
+      },
+      "elapsed_s": 117.38578590000179
+    },
+    {
+      "case": "R5_65536",
+      "index": 37,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8503439360,
+        "free_disk_bytes": 512605372416
+      },
+      "elapsed_s": 117.32146250000005
+    },
+    {
+      "case": "R5_65536",
+      "index": 38,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8503164928,
+        "free_disk_bytes": 512604602368
+      },
+      "elapsed_s": 116.30342380000002
+    },
+    {
+      "case": "R5_65536",
+      "index": 39,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8428638208,
+        "free_disk_bytes": 512603824128
+      },
+      "elapsed_s": 116.10368019999805
+    },
+    {
+      "case": "R5_65536",
+      "index": 40,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8323289088,
+        "free_disk_bytes": 512603054080
+      },
+      "elapsed_s": 117.24492769999779
+    },
+    {
+      "case": "R5_65536",
+      "index": 41,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8228024320,
+        "free_disk_bytes": 512602284032
+      },
+      "elapsed_s": 118.79385850000108
+    },
+    {
+      "case": "R5_65536",
+      "index": 42,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8485437440,
+        "free_disk_bytes": 512601513984
+      },
+      "elapsed_s": 117.46555859999717
+    },
+    {
+      "case": "R5_65536",
+      "index": 43,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8516370432,
+        "free_disk_bytes": 512600743936
+      },
+      "elapsed_s": 118.9856267000032
+    },
+    {
+      "case": "R5_65536",
+      "index": 44,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8324026368,
+        "free_disk_bytes": 512599973888
+      },
+      "elapsed_s": 116.61707659999956
+    },
+    {
+      "case": "R5_65536",
+      "index": 45,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8256909312,
+        "free_disk_bytes": 512599203840
+      },
+      "elapsed_s": 117.27741329999844
+    },
+    {
+      "case": "R5_65536",
+      "index": 46,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8289361920,
+        "free_disk_bytes": 512598429696
+      },
+      "elapsed_s": 116.48525670000163
+    },
+    {
+      "case": "R5_65536",
+      "index": 47,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8273305600,
+        "free_disk_bytes": 512597397504
+      },
+      "elapsed_s": 116.05745000000024
+    },
+    {
+      "case": "R5_65536",
+      "index": 48,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8253710336,
+        "free_disk_bytes": 512596627456
+      },
+      "elapsed_s": 120.19242909999957
+    },
+    {
+      "case": "R5_65536",
+      "index": 49,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7717056512,
+        "free_disk_bytes": 512595853312
+      },
+      "elapsed_s": 120.35696710000047
+    },
+    {
+      "case": "R5_65536",
+      "index": 50,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6618652672,
+        "free_disk_bytes": 512595083264
+      },
+      "elapsed_s": 122.72440500000084
+    },
+    {
+      "case": "R5_65536",
+      "index": 51,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6729654272,
+        "free_disk_bytes": 512584859648
+      },
+      "elapsed_s": 122.28864969999995
+    },
+    {
+      "case": "R5_65536",
+      "index": 52,
+      "returncode": 0,
+      "elapsed_s": 170.892127502,
+      "reservation": {
+        "available_ram_bytes": 12411731968,
+        "free_disk_bytes": 93196591104
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 53,
+      "returncode": 0,
+      "elapsed_s": 177.20506413100009,
+      "reservation": {
+        "available_ram_bytes": 12370513920,
+        "free_disk_bytes": 93195816960
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 54,
+      "returncode": 0,
+      "elapsed_s": 188.24143358000015,
+      "reservation": {
+        "available_ram_bytes": 12357529600,
+        "free_disk_bytes": 93195046912
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 55,
+      "returncode": 0,
+      "elapsed_s": 184.87409867500014,
+      "reservation": {
+        "available_ram_bytes": 12352385024,
+        "free_disk_bytes": 93194276864
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 56,
+      "returncode": 0,
+      "elapsed_s": 187.41838295699995,
+      "reservation": {
+        "available_ram_bytes": 12364926976,
+        "free_disk_bytes": 93193506816
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 57,
+      "returncode": 0,
+      "elapsed_s": 182.26594918399996,
+      "reservation": {
+        "available_ram_bytes": 12371156992,
+        "free_disk_bytes": 93192736768
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 58,
+      "returncode": 0,
+      "elapsed_s": 184.37162983500002,
+      "reservation": {
+        "available_ram_bytes": 12379865088,
+        "free_disk_bytes": 93191966720
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 59,
+      "returncode": 0,
+      "elapsed_s": 185.49019901499992,
+      "reservation": {
+        "available_ram_bytes": 12385263616,
+        "free_disk_bytes": 93191196672
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 60,
+      "returncode": 0,
+      "elapsed_s": 192.85175071699996,
+      "reservation": {
+        "available_ram_bytes": 12379979776,
+        "free_disk_bytes": 93190426624
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 61,
+      "returncode": 0,
+      "elapsed_s": 189.5885764579998,
+      "reservation": {
+        "available_ram_bytes": 12386750464,
+        "free_disk_bytes": 93189656576
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 62,
+      "returncode": 0,
+      "elapsed_s": 187.44734359099994,
+      "reservation": {
+        "available_ram_bytes": 12372082688,
+        "free_disk_bytes": 93188886528
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 63,
+      "returncode": 0,
+      "elapsed_s": 184.0763934040001,
+      "reservation": {
+        "available_ram_bytes": 12373168128,
+        "free_disk_bytes": 93188116480
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 64,
+      "returncode": 0,
+      "elapsed_s": 180.7942086359999,
+      "reservation": {
+        "available_ram_bytes": 12389400576,
+        "free_disk_bytes": 93187346432
+      }
+    }
+  ],
+  "solutions": {
+    "P6_32768": {
+      "checkpoints": [
+        {
+          "path": "P6_32768/part001.json",
+          "sha256": "66f1d9efbbd0a597da3a56f32367cf7c21fe5fab5b9bdf0daaf23480a8c9674c"
+        },
+        {
+          "path": "P6_32768/part002.json",
+          "sha256": "974df1aba2a85ab58e88d01ab50671983ce1e9a2fcba30c2c9e0cec7cd9c4e8c"
+        },
+        {
+          "path": "P6_32768/part003.json",
+          "sha256": "90105486075b93f80af252164c224e8827f132a1a7b3a82d31a56bb9e3b5edc4"
+        },
+        {
+          "path": "P6_32768/part004.json",
+          "sha256": "4f9d18a0d2576063f1f7dcf9d463c69a9242c459ad03b80c1a77598ea92b5810"
+        },
+        {
+          "path": "P6_32768/part005.json",
+          "sha256": "2613f1b4603bde1d23ee47c95344bd136ded3f9b7ce94189d73fc1ec4ec9239f"
+        },
+        {
+          "path": "P6_32768/part006.json",
+          "sha256": "1fb49d47fe860d5e0a7a22ab8b59cd42e529c4370432fa76f0c2d64c405dfa30"
+        },
+        {
+          "path": "P6_32768/part007.json",
+          "sha256": "ea7902993cc90a16c1d86a1aa656b4d2199d97f3351737385c74a0310565695e"
+        },
+        {
+          "path": "P6_32768/part008.json",
+          "sha256": "4126f5a8fac745cb4d9a8d138ccf847e5c19c1197421a338737962c8b4b3191b"
+        },
+        {
+          "path": "P6_32768/part009.json",
+          "sha256": "d5a49ef69206fed9c5797dcd8f11708b66f3562b711142df976b4bceb895a229"
+        },
+        {
+          "path": "P6_32768/part010.json",
+          "sha256": "47027a97cb11c1a90427ed43abfe38af840decbe71e03bb911682b07e9d6e7e3"
+        },
+        {
+          "path": "P6_32768/part011.json",
+          "sha256": "68cb44dbbc3fb0cb2a53790221265e300e9f5f9f7f27720af0011f16868f5561"
+        },
+        {
+          "path": "P6_32768/part012.json",
+          "sha256": "4e97005f67b9144f33841e42dac1873a901e74fe62df6b5c222066e4783d349a"
+        },
+        {
+          "path": "P6_32768/part013.json",
+          "sha256": "99560e3d64139df266e299ae0d2654142a67aac8ab9f455fcdc31c002d050f9b"
+        },
+        {
+          "path": "P6_32768/part014.json",
+          "sha256": "00cc459960e08ae82d162fdc428e64bbbe9ad278cc9db01224c6488623d27990"
+        },
+        {
+          "path": "P6_32768/part015.json",
+          "sha256": "0facd74800d0729881866e0060cba03c2ed01e1e5e05020650faabc670ab9a3b"
+        },
+        {
+          "path": "P6_32768/part016.json",
+          "sha256": "0b6125937eeefd65701c4e91cd9f6b8e027bccbcf431d8d8f672d310f0b71d57"
+        },
+        {
+          "path": "P6_32768/part017.json",
+          "sha256": "128ec73613c53603a06fc0d4f273ab6469dda0cd22571d6c4a5d5db7675dd8c8"
+        },
+        {
+          "path": "P6_32768/part018.json",
+          "sha256": "5a5f590788a757775c924045482c147bdf5840958d3a8dfde51106b893c3c932"
+        },
+        {
+          "path": "P6_32768/part019.json",
+          "sha256": "ed6dd20caccdfad6180725dfc1d31491509c46d95f92b41a4dc722ce566d6951"
+        },
+        {
+          "path": "P6_32768/part020.json",
+          "sha256": "514655b06ce18e947a78b81d134902faa2c1096c8a80e20e22af0098d81c5a11"
+        },
+        {
+          "path": "P6_32768/part021.json",
+          "sha256": "adc1dfe154950380d15962f1f509849c40d8d17e512af5d1190f03dbd91081f3"
+        },
+        {
+          "path": "P6_32768/part022.json",
+          "sha256": "e2cc3175ae40a36e8e0710c33b872fa3d3bb16bc2d1b3768577c37d614c709a7"
+        },
+        {
+          "path": "P6_32768/part023.json",
+          "sha256": "1c184f18f246d3cd46179ec4430b3e1579be219a87f8d3623d4446b20e2f6b23"
+        },
+        {
+          "path": "P6_32768/part024.json",
+          "sha256": "c779f7e7b5cd38b96ecb2aa04f67ffe3850f255b45c4945bee3c10badc58bb8b"
+        },
+        {
+          "path": "P6_32768/part025.json",
+          "sha256": "f604614ba69b79a3b268c1981e20870a0582652a7c46319102b241ccf0fe7308"
+        },
+        {
+          "path": "P6_32768/part026.json",
+          "sha256": "f89c0fe32cba2806dfed824549be327872823b3ce57005d638550af5c3ae45e4"
+        },
+        {
+          "path": "P6_32768/part027.json",
+          "sha256": "661bc49dc22b96fa9b570179d096a5bc3c8105ba2c1ceab7e3f7ef703c6e114d"
+        },
+        {
+          "path": "P6_32768/part028.json",
+          "sha256": "101e50d7a55e18e52d929cdb250a94ef2c54c78f5368cee534612588ad6184f2"
+        },
+        {
+          "path": "P6_32768/part029.json",
+          "sha256": "18ff8052e2185382a40744fa8a9b03a434d8f498e86443f0660b1b1753f963cb"
+        },
+        {
+          "path": "P6_32768/part030.json",
+          "sha256": "a8ee4e2f705b21da54b352cb75dbd0ef1d29d2aa939afbc71bdf71a56c35ffc7"
+        },
+        {
+          "path": "P6_32768/part031.json",
+          "sha256": "b9d452566df999bcd14d4111a9e4084dfaa721d881cd86c862bf872ec6149c20"
+        },
+        {
+          "path": "P6_32768/part032.json",
+          "sha256": "0ac266c836a767e944b04d1e0bc94d5ec0bac14b5d4743847a59e55a57a68ca2"
+        }
+      ]
+    },
+    "R5_65536": {
+      "checkpoints": [
+        {
+          "path": "R5_65536/part001.json",
+          "sha256": "aaca32626d9dfb298900aa47f74ccce2d7039155486f816e4f2d86311e4d1356"
+        },
+        {
+          "path": "R5_65536/part002.json",
+          "sha256": "413899f50dbeffb5dee5ec20afa407554ea9e6fa265fcf0c42bf9a37b86dbf87"
+        },
+        {
+          "path": "R5_65536/part003.json",
+          "sha256": "3c293d3de38520b8956988da07a12c1b10182194825583f629008b3f2d68016a"
+        },
+        {
+          "path": "R5_65536/part004.json",
+          "sha256": "080d749490a4a22e8a3daac767ad4479ed6cf8b08bdeb30b0d58de1feba1268e"
+        },
+        {
+          "path": "R5_65536/part005.json",
+          "sha256": "c84a433926616195dff0932446ee85ca76c025ab7d85562f10cb377cf946dbb6"
+        },
+        {
+          "path": "R5_65536/part006.json",
+          "sha256": "aab2868dd667020f549bd0ae119101196816141e370210d9c0a497e502305b17"
+        },
+        {
+          "path": "R5_65536/part007.json",
+          "sha256": "3dbeb9617340731c95dfdf92314b5ee72fa04360564dcea0fc734763e1b6004a"
+        },
+        {
+          "path": "R5_65536/part008.json",
+          "sha256": "1c22750ac0478e544d68e2b3510f5c84fce65daccd73af5b1ea9fc5fb39a9543"
+        },
+        {
+          "path": "R5_65536/part009.json",
+          "sha256": "acfece00fcb07ed3b1c45befdb7d10d1b40c67c624851680515dedead378c6d3"
+        },
+        {
+          "path": "R5_65536/part010.json",
+          "sha256": "342661a43a15d74c23cb67fae70d0adf765275fcd137fb2bf7b362bf26a17296"
+        },
+        {
+          "path": "R5_65536/part011.json",
+          "sha256": "d185a0480dd4992cab042ad1f271ee8433208babefa60281ff040d4dbeebdfe0"
+        },
+        {
+          "path": "R5_65536/part012.json",
+          "sha256": "ed913ca4e88337f1a414dc82e6cad53ea00853481e6ec8e087a559de928a0365"
+        },
+        {
+          "path": "R5_65536/part013.json",
+          "sha256": "f5dc0fa9083345c640efbdc570b6b56aa3c3a04f96f2403e2ac18dd17ac0bc36"
+        },
+        {
+          "path": "R5_65536/part014.json",
+          "sha256": "ebd8254fe254f1d553f50f49bdb5dcdd809b4a3f8d4089e9439e8ddaf8d3c071"
+        },
+        {
+          "path": "R5_65536/part015.json",
+          "sha256": "f0eebf2dd4c2d73a4d8810d523b0df72d25d15aabbcc1e081ba6e04389edc0c6"
+        },
+        {
+          "path": "R5_65536/part016.json",
+          "sha256": "1cdb788cab7a352f90191adc73d2d90cea909858aaee9183bda473de5b4d4a42"
+        },
+        {
+          "path": "R5_65536/part017.json",
+          "sha256": "fdf209e3ce707e130eb56cc84b94e3e0f04e63219cf58fffb14d7df738ef7e0b"
+        },
+        {
+          "path": "R5_65536/part018.json",
+          "sha256": "54f6bfd067e3b29829e10b85b9b5e3ea27643c199d9ed94c43a70c18cd607709"
+        },
+        {
+          "path": "R5_65536/part019.json",
+          "sha256": "d9469267f9021c140d728a91d68703bda0c9863697c02e3d7ee33d419a0d0aea"
+        },
+        {
+          "path": "R5_65536/part020.json",
+          "sha256": "15f0e90fd80608049a2d545a2b96ba052000b07351f21b96957f7d8dd857d507"
+        },
+        {
+          "path": "R5_65536/part021.json",
+          "sha256": "4132dde63897c97067ca5e004752b96c6a22088e868b5be45890ccb7cfed5752"
+        },
+        {
+          "path": "R5_65536/part022.json",
+          "sha256": "5b39508b648f1c59ee92cbd7179c7cedc8dec29332a69c4874ddb3b4d4533e51"
+        },
+        {
+          "path": "R5_65536/part023.json",
+          "sha256": "010729331f9c929f24197096e990ba7b47881c297e74bd18a7110ec49e7568bb"
+        },
+        {
+          "path": "R5_65536/part024.json",
+          "sha256": "a6e76bf89c02c60b13e7323134e0b89a5e6783319f871f2b812d7119eb84f21d"
+        },
+        {
+          "path": "R5_65536/part025.json",
+          "sha256": "75a1395b4a1e79e143234cb026d040b6b2b6bd476d9f3b18b59751d8353feb90"
+        },
+        {
+          "path": "R5_65536/part026.json",
+          "sha256": "49a2b94cd2a90d15c09ca24548bc664cf7ba365f6b8cee575b2a8ec300a024b4"
+        },
+        {
+          "path": "R5_65536/part027.json",
+          "sha256": "2c7915899aec56dbb15d015c324fc8aad434ee81529e8b3546fd41801136aa12"
+        },
+        {
+          "path": "R5_65536/part028.json",
+          "sha256": "ffd06851765ed558552f36bc68336ed5253ebbe0f3ae6393f15e0c58dfa98662"
+        },
+        {
+          "path": "R5_65536/part029.json",
+          "sha256": "394b0e798a783e24e614dd5002cdda3b1c52fe17821aa1377e38557c22f0c7d6"
+        },
+        {
+          "path": "R5_65536/part030.json",
+          "sha256": "f5ba498f20860cd477d075d7eab0e901392c3bde2e6e5c37b0ec974f23ec0976"
+        },
+        {
+          "path": "R5_65536/part031.json",
+          "sha256": "87acd3647afe2dddab695cb08ee220a12a9f06e6f9a6df5701dd0eda5c5a8e72"
+        },
+        {
+          "path": "R5_65536/part032.json",
+          "sha256": "64b13f0d98f6bb5e15be6f02c3fa9ae9214682b335ac032f60c5f3a017469481"
+        },
+        {
+          "path": "R5_65536/part033.json",
+          "sha256": "76cc72cf464055f682ac86098ee3b539e3d8fad17904335a57bdc6c374569d99"
+        },
+        {
+          "path": "R5_65536/part034.json",
+          "sha256": "a15b33204ecae976a35d8c6c8c89c5ace88e6e40d6d723a91c21a613f5ceb6ae"
+        },
+        {
+          "path": "R5_65536/part035.json",
+          "sha256": "fa526032adfef5838858d3cdff962844abf5bde2b5d415ba0774e3cdd8d89c5a"
+        },
+        {
+          "path": "R5_65536/part036.json",
+          "sha256": "74a6062d8fb7464f7f690b8b09a9d4871e682359afe417482dac826dd94bf40f"
+        },
+        {
+          "path": "R5_65536/part037.json",
+          "sha256": "920accbf6e0a76aab01a40a9a2ccf27ff5fa373b3d17d8d176dd875a522424af"
+        },
+        {
+          "path": "R5_65536/part038.json",
+          "sha256": "52e86f449ba5f61d42f69a87a28908d02fb4c44d92fc5810f1bd27598f00a412"
+        },
+        {
+          "path": "R5_65536/part039.json",
+          "sha256": "7096ea79f21dfaba8ab0283a0f2f4e6da77058587d4fe07ebc41c36988973b05"
+        },
+        {
+          "path": "R5_65536/part040.json",
+          "sha256": "9289a37c043f436e45effbd6608d89dced3cb466e431973adf710c50963291e2"
+        },
+        {
+          "path": "R5_65536/part041.json",
+          "sha256": "799c5caecd31b92725940cb7fe83be617a21e149cd34225e755bdb50f36369e5"
+        },
+        {
+          "path": "R5_65536/part042.json",
+          "sha256": "877b5365b401f508a2e3e0fef1735fc11e6253935157c99a489b6f3a4e4bb906"
+        },
+        {
+          "path": "R5_65536/part043.json",
+          "sha256": "280bdfa7c650be90bbf4da60dac7cfd824269593e9b8bbaed7a4ec58b9f49762"
+        },
+        {
+          "path": "R5_65536/part044.json",
+          "sha256": "f86c98abdab8394b83f7297463b7141d38643bb5593b46fa5185884e3d55aa66"
+        },
+        {
+          "path": "R5_65536/part045.json",
+          "sha256": "53169823626322e88b75635973a583a1e1bea57b324d8e88d2f58d4ecb30cd0e"
+        },
+        {
+          "path": "R5_65536/part046.json",
+          "sha256": "2c1395ffe40e09cf7d6d264ad6460dc57ea5934b28c903ef6fc3990ea90d4f8c"
+        },
+        {
+          "path": "R5_65536/part047.json",
+          "sha256": "af82054cbccc2b6331d58da01e179365a15638bb67f923f2f235217e447bea22"
+        },
+        {
+          "path": "R5_65536/part048.json",
+          "sha256": "a925eed5db09a96cfdcfe6ce95a0d68daeee4463ae120b7c276e162a95165822"
+        },
+        {
+          "path": "R5_65536/part049.json",
+          "sha256": "e50d006125b7aa513164a5b23ffad696f1790b73cf9ec9d02ec82688d95be52a"
+        },
+        {
+          "path": "R5_65536/part050.json",
+          "sha256": "f14f202531339c71e2492852b61b09f04a8b8a78dbe3e3b7b41318cb2294d2cf"
+        },
+        {
+          "path": "R5_65536/part051.json",
+          "sha256": "fbbf589bed5f7f9eb4299a7ea9e4b665874f464f54eac3a0432c7b4413869cd2"
+        },
+        {
+          "path": "R5_65536/part052.json",
+          "sha256": "48651b76d823c853966ea018e1e4c730558f1386558303883c27c6fdb997d43f"
+        },
+        {
+          "path": "R5_65536/part053.json",
+          "sha256": "e4dd2bbb94c22c74e50e9c9a540cc771b4dccdfc182e70f6cf367d30832fcfa0"
+        },
+        {
+          "path": "R5_65536/part054.json",
+          "sha256": "545f069ac83daa38449f6ed4bf07a4cf993e4d28e3a8d029a454086deeb37052"
+        },
+        {
+          "path": "R5_65536/part055.json",
+          "sha256": "83bb1828691cc5f000fe0302d23fa7c68ab46351debacf8d57d921c39a3567ad"
+        },
+        {
+          "path": "R5_65536/part056.json",
+          "sha256": "0e3b057668388b40b7b25c5568a3e15d09425d03b06130ef4f576ee401a1caaa"
+        },
+        {
+          "path": "R5_65536/part057.json",
+          "sha256": "14799e2d48f5ab42afd46a4bac54e04ca1873003c60ba670124bdd33f5bea095"
+        },
+        {
+          "path": "R5_65536/part058.json",
+          "sha256": "4392be046b7eaf4bafa932a0ccc386d8216b89661e9491986a2c3a486c17baa1"
+        },
+        {
+          "path": "R5_65536/part059.json",
+          "sha256": "8198e99d502ac57bf8bf5d3aba46e893df0f0093301b2cb4f10ea403cb294f32"
+        },
+        {
+          "path": "R5_65536/part060.json",
+          "sha256": "24c55f16a139e8a1a283822457a62c0caffdc9775c1314391e58b579c8012218"
+        },
+        {
+          "path": "R5_65536/part061.json",
+          "sha256": "bb061a0688716e57b46c69438ab066c6af711f6cb442d9dfdb1aab2f6b9c4007"
+        },
+        {
+          "path": "R5_65536/part062.json",
+          "sha256": "ba5de53af39ea6efa5f1c67a93a5bc30be97dfea6ad023a3a4487287d1993155"
+        },
+        {
+          "path": "R5_65536/part063.json",
+          "sha256": "06149414be13fdf535fd4a3f8d012434e589743f65ba3213f2f927b0779a4ccb"
+        },
+        {
+          "path": "R5_65536/part064.json",
+          "sha256": "93ccb56db931a29d2350055e915557b949f8b9bc248a94c3249293d20b3952d4"
+        }
+      ]
+    }
+  },
+  "point03_closed": false,
+  "temporal_precision_pass": true,
+  "assessment_sha256": "2ffebe47c8ca06b94e02068545e7cbd3160628d5cfd9867ae1bb6d79b3398e85",
+  "elapsed_s": 13847.597305,
+  "finished_utc": "2026-10-09T02:46:20.259655+00:00"
+}

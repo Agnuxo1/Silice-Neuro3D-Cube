@@ -1,0 +1,8 @@
+{
+  "schema": "silice.point03-analytic.preflight.v1",
+  "status": "FAIL",
+  "out_dir": "D:\\PROJECTS\\Silice-Neuro3D-Cube-work-20261006\\resultados\\codex\\point03_analytic_preflight_20261007T003231277093Z",
+  "created_utc": "2026-10-07T00:32:31.277586+00:00",
+  "physical_propagations": 0,
+  "scope": "Frozen-assessor scalar/parser self-checks only; no propagation or geometry module import."
+}

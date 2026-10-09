@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-10-09T06:26:41.293990+00:00",
+  "head": "643034250cb4078f6e13a15b7d4a8844fec7816e",
+  "push_verified": true,
+  "pr1_head_verified": true,
+  "pr1_open": true,
+  "merged": false,
+  "reported_pade": 64,
+  "reported_radau": 2,
+  "full_F1_audit": false,
+  "worker_modified": false,
+  "point03_closed": false
+}
