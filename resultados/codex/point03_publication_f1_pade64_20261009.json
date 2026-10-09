@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-09T06:25:38.508638+00:00",
+  "prior_checked_head": "21d6329d4552fcc48b50afb42cbc18a2c204566a",
+  "publication_preflight_pass": true,
+  "checked_staged_files": [
+    {
+      "path": "coordinacion/CHECKPOINT.md",
+      "sha256": "6495f27ce2039fc21ee506b75291939afa07c722942a6f316c550ee4a2e5ff36",
+      "bytes": 121907
+    },
+    {
+      "path": "resultados/codex/point03_f1_monitor_20261009.jsonl",
+      "sha256": "4b194de5d97fef1180a2f27e3b44815dfb84e68dedc221e64a4290cd60174613",
+      "bytes": 3366
+    }
+  ],
+  "findings": [],
+  "scope": "Only two newly staged observation/checkpoint files; prior code publication preflight retained. Selected credential signatures and size, not a complete secret proof. No new scientific approval."
+}

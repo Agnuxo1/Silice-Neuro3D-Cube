@@ -1,3 +1,39 @@
+## F1: Padé completo y Radau iniciado — 2026-10-09T06:24:24.738058+00:00
+
+Lectura fresca Colab: R5_65536 index2/128, elapsed10795,164329518s. La ejecución secuencial ha terminado64/64Padé; total66/192campos reportados. Ensayo activo, sin dictamen temporal final ni auditoría completa. Ninguna celda relanzada; fuentes/matrices/criterios y límites32000s/espera900/deadline13:45UTC conservados. Colab marcada handoff. Registro completo de observaciones: point03_f1_monitor_20261009.jsonl. Siguiente: terminar Radau, exportar todosZIPs, SHA/CRC/importación y auditoría LOCAL; ante failed preservar/auditar prefijos antes de recuperación registrada. S16/h0,28 bloqueados hasta LOCALPASS. Tarea1 abierta; JEVfallbacklocal.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T06:08:36.296249+00:00
+
+F1 activa: lectura fresca Padé 60/64, elapsed 9813,80200447 s; 60/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. Sin celdas, controles o propagaciones adicionales; fuentes y límites conservados. Sin cambio accionable. Siguiente: final F1, transporte SHA/CRC y auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T05:53:54.047186+00:00
+
+F1 activa: lectura fresca Padé 55/64, elapsed 9002,186789839 s; 55/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. Sin celdas, controles o propagaciones adicionales; fuentes y límites conservados. Sin cambio accionable. Siguiente: final F1, transporte SHA/CRC y auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T05:38:36.201915+00:00
+
+F1 activa: lectura fresca Padé 49/64, elapsed 8030,310351706 s; 49/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. Sin celdas, controles o propagaciones adicionales; fuentes y límites conservados. Sin cambio accionable. Siguiente: final F1, transporte SHA/CRC y auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T05:23:33.787968+00:00
+
+F1 activa: lectura fresca Padé 44/64, elapsed 7214,138037258 s; 44/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. Sin celdas, controles o propagaciones adicionales; fuentes y límites conservados. Sin cambio accionable. Siguiente: final F1, transporte SHA/CRC y auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T05:08:55.734271+00:00
+
+F1 activa: lectura fresca Padé 38/64, elapsed 6228,151974628 s; 38/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. Sin celdas, controles o propagaciones adicionales; fuentes y límites conservados. Sin cambio accionable. Siguiente: final F1, transporte SHA/CRC y auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T04:53:34.871219+00:00
+
+F1 activa: lectura fresca Padé 33/64, elapsed 5398,810341453 s; 33/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. No se ejecutaron celdas, controles o nuevas propagaciones. Fuentes y límites conservados. Sin cambio accionable. Siguiente: final F1 y transporte/auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T04:38:46.409506+00:00
+
+F1 activa: lectura fresca Padé 27/64, elapsed 4406,726562064 s; 27/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. No se ejecutaron celdas, controles o nuevas propagaciones. Fuentes y límites conservados. Sin cambio accionable; no se publica un nuevo resultado científico. Siguiente: final F1 y transporte/auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
+## Seguimiento F1 sin cambio de etapa — 2026-10-09T04:23:59.123422+00:00
+
+F1 activa: lectura fresca Padé 22/64, elapsed 3599,364967296 s; 22/192 campos reportados, sin dictamen final ni inicio Radau. Colab marcada handoff. No se ejecutaron celdas, controles o nuevas propagaciones. Fuentes y límites conservados. HEAD 21d6329 publicado y PR abierta verificados en el hito anterior. Siguiente: final F1 y transporte/auditoría local; S16 bloqueado hasta aprobación local. Tarea 1 abierta; JEV fallback local.
+
 ## Auditor parcial F1 publicado; ensayo activo — 2026-10-09T04:19:19.098402+00:00
 
 Commit ff1fd4495ffda7ae651d867c35c295b7f97c5c72 publicado, push remoto y PR1 abiertos/no fusionados verificados. Preflight PASS sin hallazgos en point03_publication_f1_partial_20261009.json. Auditor parcial/control18grupos/documento preparados, sin ejecutar T96 ni alterar fuente F1 congelada. Última lectura fresca04:17UTC: P6_32768 index20/64 elapsed3276,522629841s,20/192campos, sin Radau/dictamen final. Colab791982998 marcado handoff, heartbeat actualizado. M2 no repetido; no recuperación F1 iniciada. Mantener32ks/espera900/deadline13:45UTC originales. Siguiente finalF1, transporte SHA/CRC y auditoría local, o conservar+auditar prefijos si falla. S16 sólo tras LOCALPASS. JEVfallbacklocal y tarea1 abierta.
