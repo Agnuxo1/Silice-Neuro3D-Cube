@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-09T03:08:05.996250+00:00",
+  "integrity_pass": true,
+  "temporal_precision_pass": true,
+  "point03_closed": false,
+  "checkpoints_checked": 96,
+  "retained_checkpoints": 83,
+  "new_checkpoints_checked": 13,
+  "original_execution_sha256": "b3e68b02488949a3851d363318092720a84541e274fc753a48403ba41e5fec5c",
+  "original_wait_budget_exhausted": true,
+  "recovery_wait_s": 0.0,
+  "max_power_residual": 0.0,
+  "powers": {
+    "P6_32768": {
+      "field": 0.332923454652748,
+      "intensity": 0.3325896943239196
+    },
+    "R5_65536": {
+      "field": 0.33292345430420467,
+      "intensity": 0.33258965271167307
+    }
+  },
+  "relative_field_difference": 1.1961462695901226e-05,
+  "power_differences": {
+    "field": 3.485433053285192e-10,
+    "intensity": 4.161224653742579e-08
+  },
+  "PSD_observable_bounds": {
+    "field": 4.4457901576060364e-06,
+    "intensity": 8.78467137612786e-06
+  },
+  "local_recalculation": true,
+  "remote_audit_preserved": true,
+  "remote_audit_sha256": "1c5fe6614c5f040bfb05d9fd50fc725fecdf7276ce2f96fe62746f46ca951c84",
+  "local_created_utc": "2026-10-09T03:08:05.997470+00:00",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "scipy": "1.15.1",
+  "psutil": "6.1.1",
+  "wrapper_sha256": "18deaac21e3351eea7664c006228c380db0199cde22453de156fc8490a50d6d2"
+}
