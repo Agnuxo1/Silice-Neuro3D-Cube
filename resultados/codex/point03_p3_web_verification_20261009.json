@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-09T12:34:21.741997+00:00",
+  "main_result_commit": "822a998f67491d1bf98a2391c5c46ede99ad7d83",
+  "web_readme_verified": true,
+  "visible_public_repository": true,
+  "visible_main_branch": true,
+  "visible_R3_168_fields_pass": true,
+  "visible_GIF_loaded": true,
+  "readme_stale_private_footer_corrected": true,
+  "no_visibility_setting_changed": true,
+  "F1_browser_id": "3",
+  "F1_tab": "791983522",
+  "F1_refreshed_file_panel": [
+    "..",
+    "sample_data"
+  ],
+  "F1_terminal_state": "unknown",
+  "F1_code_cells_reexecuted": false,
+  "F1_recovered": false
+}
