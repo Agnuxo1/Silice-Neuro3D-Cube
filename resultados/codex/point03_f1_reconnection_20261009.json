@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-10-09T10:47:26.442422+00:00",
+  "chrome_browser_id": "4",
+  "tab_id": "791983315",
+  "session_manager": "runtime disconnected; no active session shown",
+  "connection_action": "allocated runtime; no cells executed",
+  "file_panel_entries": [
+    "sample_data"
+  ],
+  "original_f1_terminal_status": "unknown",
+  "original_f1_result_available": false,
+  "original_f1_restarted": false,
+  "point03_closed": false
+}

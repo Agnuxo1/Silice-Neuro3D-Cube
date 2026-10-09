@@ -1,0 +1,69 @@
+{
+  "created_utc": "2026-10-09T10:48:36.550615+00:00",
+  "sources_compile_pass": true,
+  "controls_pass": true,
+  "review_pass": true,
+  "scope": "selected credential signatures, size, source/contract inspection; no GPU executed",
+  "files": [
+    {
+      "path": "Docs/POINT-03-RENDER-PIPELINE-CALIBRATION-CONTRACT.md",
+      "sha256": "5e984f5696e9140d2600a3aa7137c76aec3abb9e8376842a2efddc823c6bb72f",
+      "bytes": 3380
+    },
+    {
+      "path": "scripts/point03_render_pipeline_reference.py",
+      "sha256": "664604d962121e7eaf57b91464b18ef85c52237a4895201fce36440a2a73a9c5",
+      "bytes": 1807
+    },
+    {
+      "path": "scripts/check_point03_render_pipeline.py",
+      "sha256": "580406bab6ca4bb6f12234556d7500737ad282c46526759344453552b9903c33",
+      "bytes": 1857
+    },
+    {
+      "path": "scripts/run_point03_render_pipeline.py",
+      "sha256": "67cfabbacac3f842725d4539d26b1b18c269f8b33f8251b7b28530d54434a9c5",
+      "bytes": 6230
+    },
+    {
+      "path": "scripts/guard_point03_render_pipeline.py",
+      "sha256": "7ece9845c8c3f8486b6c95b2b1b58381d56a04b26171aa763e824f4f644615a6",
+      "bytes": 8682
+    },
+    {
+      "path": "scripts/audit_point03_render_pipeline.py",
+      "sha256": "92325fa1e2bf3e66be9f0fc3a9f78c50b14444bc376fb86165ace017a759f167",
+      "bytes": 3945
+    },
+    {
+      "path": "resultados/codex/point03_render_pipeline_controls_20261009.json",
+      "sha256": "6689addcc041b07785cc867abc866d72e03802c70e1eec465fece4be327cd73b",
+      "bytes": 442
+    },
+    {
+      "path": "resultados/codex/point03_render_pipeline_opengl_profile_20261009.json",
+      "sha256": "56fe7848b0622a6ed2addb9742dd9e0d79c710559efdbe40897811868e806cb6",
+      "bytes": 2931
+    },
+    {
+      "path": "resultados/codex/point03_render_pipeline_vulkan_profile_20261009.json",
+      "sha256": "3190e0c7a4899cd3d618109d6df3280d39d28114cf51f16247aa0de3e07a3feb",
+      "bytes": 2931
+    },
+    {
+      "path": "resultados/codex/point03_f1_reconnection_20261009.json",
+      "sha256": "bf26a899a84d30eafd1391c20ac04a8b16e538784c9c5c4fb60839068fc6d5e8",
+      "bytes": 450
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_main_publication_receipt_20261009.json",
+      "sha256": "61849fc99cc159f1e4d63fd55fc6fcf6733ad115591f927f4a73a389edf473f5",
+      "bytes": 434
+    },
+    {
+      "path": "coordinacion/CHECKPOINT.md",
+      "sha256": "a562e102da592b3d1095273a33b91ffe1a68c35ea8562930b8d0c0c097f7ac88",
+      "bytes": 140660
+    }
+  ]
+}
