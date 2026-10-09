@@ -1,0 +1,7 @@
+{
+  "pass_all": true,
+  "rejections": 17,
+  "full_negative_retained": true,
+  "gpu_execution": false,
+  "new_t96_field": false
+}

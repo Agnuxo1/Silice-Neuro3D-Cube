@@ -1,3 +1,7 @@
+## R3 preparado tras P1 publicada - 2026-10-09T11:02:38.731749+00:00
+
+Main y rama ba16528 verificados: 60 crudos OpenGL/Vulkan y GIF cuantitativo publicados; 21/30 marcas pasan por backend, nueve smooth negativas conservadas. R3 nuevo registra campos P2 con coordenadas analiticas, 84 nuevos por backend, mismos casos/primarias/gates/mascaras/fases/ref original por SHA. 17 rechazos de prerequisitos CPU PASS; exige ambas P1 integras con todas las marcas y rutas utilizadas aprobadas, no afirma P1 completa PASS. Preparacion aun sin publicar ni campos R3; siguiente revisar/publicar antes de GPU y auditar cada backend. F1 terminal desconocido; entorno reasignado solo sample_data, consulta por copia pendiente, no rerun ni presupuesto nuevo. Deadline13:45/JEV fallback local/tarea1 abierta.
+
 ## P1 OpenGL/Vulkan auditados: negativos smooth - 2026-10-09T10:54:29.445267+00:00
 
 Prerregistro 4ef9 precede a 60 crudos (30 por backend). Ambos completados y auditados: integridad, acuerdo 1e-14, recursos, duraciones y cierre PASS. Cada backend: 21 marcas aprobadas y nueve negativas; accuracy global False. Uniformes, atributos constantes, suma y coordenadas analiticas pasan; smooth y cuadrados fallan. No prueba causa unica de R2 ni valida sus campos. GIF cuantitativo de seis frames preparado; publicacion main pendiente de QA visual. F1: entorno asignado solo sample_data; final original desconocido, consulta por ZIP pendiente, ninguna celda repetida. S16 bloqueado. Tarea 1 abierta, deadline 13:45, JEV fallback local.

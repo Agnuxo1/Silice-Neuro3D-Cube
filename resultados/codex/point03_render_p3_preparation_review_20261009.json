@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-10-09T11:02:38.766164+00:00",
+  "review_pass": true,
+  "sources_compile_pass": true,
+  "controls_pass": true,
+  "prerequisites_pass": true,
+  "gpu_fields": 0,
+  "scientific_gates_unchanged": true,
+  "files": [
+    {
+      "path": "Docs/POINT-03-RENDER-P3-ANALYTIC-CONTRACT.md",
+      "sha256": "c72f13556087eaae9b2cc9f8de38040574914b3fb2d4ac2b1df16b703b91ac46",
+      "bytes": 2752
+    },
+    {
+      "path": "scripts/point03_render_p3_gate.py",
+      "sha256": "6acbe871e558a2ba3d9a0d690f49a54e3634f3fc42801620e093ff14223958b6",
+      "bytes": 2032
+    },
+    {
+      "path": "scripts/check_point03_render_p3_gate.py",
+      "sha256": "d9a9fcc2304d058765d9eb3027b033bed835db5835dcbd48b6d1c3d231c07a46",
+      "bytes": 2321
+    },
+    {
+      "path": "scripts/run_point03_render_p3_analytic.py",
+      "sha256": "887bf75fbd870872dbf48e9dc69b12f15c4866c47e86ba3fdfa4dda31621dc61",
+      "bytes": 8803
+    },
+    {
+      "path": "scripts/guard_point03_render_p3_analytic.py",
+      "sha256": "f7ca08c87ee783026a995934dba267a73d6daacab24b74e649ac1437e5b64784",
+      "bytes": 8891
+    },
+    {
+      "path": "scripts/audit_point03_render_p3_analytic.py",
+      "sha256": "bcf99b74c1d19882eff0fe5fea005be4dd7fce6b8dc554ffd590556e6dff8e28",
+      "bytes": 5212
+    },
+    {
+      "path": "resultados/codex/point03_render_p3_opengl_profile_20261009.json",
+      "sha256": "baa09f12df04e59b28f67c0da71eb71a9be93de388b1b7d60815a3799062241b",
+      "bytes": 3862
+    },
+    {
+      "path": "resultados/codex/point03_render_p3_vulkan_profile_20261009.json",
+      "sha256": "3deab4cd6a6796f5c4869d4a54fae4643d1dab9da09eb8d8f28c9d9524d14535",
+      "bytes": 3862
+    },
+    {
+      "path": "resultados/codex/point03_render_p3_gate_controls_20261009.json",
+      "sha256": "943447653bb952fa0da39eee087330138d255e058b545cdffe834ab60c90ce71",
+      "bytes": 134
+    },
+    {
+      "path": "coordinacion/CHECKPOINT.md",
+      "sha256": "4af804395e0421c01f0d41d14c813fbd418aab22189e4d3bbf551c3df10f7306",
+      "bytes": 142182
+    }
+  ]
+}

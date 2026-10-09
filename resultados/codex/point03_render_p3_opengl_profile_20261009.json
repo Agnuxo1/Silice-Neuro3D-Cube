@@ -1,0 +1,72 @@
+{
+  "status": "prepared_before_gpu",
+  "blender_executable": "D:/TOOLS/Blender/blender-4.5.14-windows-x64/blender.exe",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "guard_python": "C:\\Python313\\python.exe",
+  "guard_python_sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca",
+  "guard_psutil_version": "6.1.1",
+  "p0_local_audit_path": "resultados/codex/point03_render_p2_prerequisite_p0_portable_20261009.json",
+  "p0_local_audit_sha256": "9351af468d69b01665829bcd7c43bd147baf99fc820f8176e8a500726b3fd8f5",
+  "original_p0_local_sha256": "cdd52ace2c4f35c64b18aef4e1a576bc79909b1050bc5a81a0c8776c609f14d8",
+  "original_reference_sha256": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+  "original_reference_controls_path": "resultados/codex/point03_render_p2_original_controls_portable_20261009.json",
+  "original_reference_controls_sha256": "9a1f47d67ca3ad690d33328d509166bcbf624e8ad1b3139b20575130a56dd536",
+  "prior_p0_result_commit": "2edbba587b2d82ba04ff2cf82cab2eb76570d385",
+  "ram_preflight_gib": 8,
+  "ram_floor_gib": 6,
+  "vram_total_max_gib": 4,
+  "temperature_max_c": 80,
+  "owned_rss_max_gib": 1.5,
+  "child_seconds": 120,
+  "independent_timer_seconds": 115,
+  "worker_seconds": 110,
+  "queue_wait_minutes": 1,
+  "deadline_utc": "2026-10-09T13:45:00+00:00",
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "scientific_gates_unchanged": true,
+  "strict_metric_agreement_tolerance": 1e-14,
+  "fixed_cases": [
+    "single",
+    "constructive",
+    "destructive",
+    "quarter"
+  ],
+  "fixed_resolutions": [
+    64,
+    128,
+    256
+  ],
+  "repetitions": 7,
+  "created_utc": "2026-10-09T11:02:38.708938+00:00",
+  "backend": "OPENGL",
+  "controls_path": "resultados/codex/point03_render_p3_gate_controls_20261009.json",
+  "controls_sha256": "943447653bb952fa0da39eee087330138d255e058b545cdffe834ab60c90ce71",
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "Docs/POINT-03-RENDER-P3-ANALYTIC-CONTRACT.md": "c72f13556087eaae9b2cc9f8de38040574914b3fb2d4ac2b1df16b703b91ac46",
+    "scripts/point03_render_reference.py": "22ec9f503c35a41d2747e9612d5c1720e37c7ea87f445f960c6683d925aef6b2",
+    "scripts/check_point03_render_reference.py": "b4b00b2c78b7bfbc39bc49e04f5ad680dd0c5a45a5be277abd13e0423fb1c9d1",
+    "scripts/point03_render_p2_gate.py": "914d33718a5f6c325f20f9b5ec2632ef35da6796ca2b29113fe59376f0bf3c93",
+    "scripts/point03_render_pipeline_reference.py": "664604d962121e7eaf57b91464b18ef85c52237a4895201fce36440a2a73a9c5",
+    "scripts/point03_render_p3_gate.py": "6acbe871e558a2ba3d9a0d690f49a54e3634f3fc42801620e093ff14223958b6",
+    "scripts/check_point03_render_p3_gate.py": "d9a9fcc2304d058765d9eb3027b033bed835db5835dcbd48b6d1c3d231c07a46",
+    "scripts/run_point03_render_p3_analytic.py": "887bf75fbd870872dbf48e9dc69b12f15c4866c47e86ba3fdfa4dda31621dc61",
+    "scripts/guard_point03_render_p3_analytic.py": "f7ca08c87ee783026a995934dba267a73d6daacab24b74e649ac1437e5b64784",
+    "scripts/audit_point03_render_p3_analytic.py": "bcf99b74c1d19882eff0fe5fea005be4dd7fce6b8dc554ffd590556e6dff8e28"
+  },
+  "pipeline_audits": {
+    "OPENGL": {
+      "path": "resultados/codex/point03_render_pipeline_opengl_run01_20261009/local_integrity_audit.json",
+      "sha256": "729607a1f6eadc45b2dae9ccbee13bd667da28714f5cb78a8cb0302274b5a02d"
+    },
+    "VULKAN": {
+      "path": "resultados/codex/point03_render_pipeline_vulkan_run01_20261009/local_integrity_audit.json",
+      "sha256": "453d04c084241e2462358222aeff9468bbfe69f94ccd792b8a58b7d2d38382f7"
+    }
+  },
+  "prior_calibration_result_commit": "ba16528b016de1b7012e0a2a7feada44c5d4707f",
+  "coordinates_method": "analytic gl_FragCoord for fixed w=1 triangle",
+  "fields": 84
+}
