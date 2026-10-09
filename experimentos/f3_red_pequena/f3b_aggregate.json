@@ -1,0 +1,28 @@
+{
+ "H-F1": {
+  "test_acc_A": 0.6425,
+  "threshold": 0.7,
+  "passed": false
+ },
+ "H-F2": {
+  "test_acc_A": 0.6425,
+  "test_acc_B": 0.8455,
+  "margin": 0.02,
+  "paired_diff_AB": -0.20242900000000003,
+  "ci95_AB": [
+   -0.21999999999999997,
+   -0.18399999999999994
+  ],
+  "passed": false
+ },
+ "H-F3": {
+  "test_acc_A": 0.6425,
+  "test_acc_F3_M1": 0.5905,
+  "paired_diff_A_minus_M1": 0.0523535,
+  "ci95": [
+   0.019000000000000013,
+   0.08399999999999996
+  ],
+  "passed": true
+ }
+}
