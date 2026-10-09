@@ -1,0 +1,20 @@
+{
+  "pass_all": true,
+  "analytic_controls": 3,
+  "mark_groups": [
+    "uniform_none",
+    "uniform_add1",
+    "uniform_add2",
+    "attribute_none",
+    "bary_smooth_none",
+    "bary_smooth_add1",
+    "bary_analytic_none",
+    "bary_analytic_add1",
+    "quadratic_smooth_none",
+    "quadratic_analytic_none"
+  ],
+  "invalid_input_groups": 4,
+  "invalid_pixel_groups": 3,
+  "gpu_execution": false,
+  "new_t96_field": false
+}

@@ -1,3 +1,11 @@
+## F1 reconectada sin productos; P1 en preparacion - 2026-10-09T10:47:26.442627+00:00
+
+Chrome4 disponible; cuaderno existente abierto en791983315. Sesiones no mostraron ensayo activo y Colab asigno entorno: panel contiene solo sample_data; cero celdas reejecutadas. F1 original terminal desconocido/no recuperado, no se reinicia presupuesto ni propaga nuevos campos; S16 bloqueado. Se consulta al usuario por ZIP/copia ya descargada. P1 calibraje prospectivo de uniformes/atributos/barycentric/quadratic y suma, OpenGL/Vulkan, fuentes nuevas aun no publicadas/GPU. R2 negativo intacto; main e2bd verificado; JEV fallback local; deadline13:45 intacto.
+
+## R2negativo publicado/verificado enmain — 2026-10-09T10:35:07.213409+00:00
+
+Maine2bd442b989cb66294a731b72f2401e159ebf240 yramacodexscientificclosure push verificados; actualizaciónff desdeMainMerge99e tras revisión98archivos/84crudos/4,733MBsin hallazgosalcance. IntegridadR2PASS/precisión63FAIL,lector/tiempos/cierrecorregidos no resuelven5e-6; noadopción/speedup. Nuevospuntoscalibraje antesP2 debenaislarinterpolación/blending/atributos/eval,no causaasumida ni thresholdsajustados.3GIFprofesionales enmain; redpropuestaseetiqueta. F1SHA39bintacto/Chromedesconectado/96último07:45; sin datosnuevosafirmados. Heartbeatreescrito claro conestadoMain/R2done ypreserva13:45/32k/espera900 yordenS16. Próximo pruebasinstrumentalesregistradas; F1transport/auditlocal alreconectar. Tarea1/proyectoabiertos,JEVfallbacklocal.
+
 ## R2ejecutado/auditado: nuevo negativo, publicarmain — 2026-10-09T10:30:41.736460+00:00
 
 RAM8,1/FIFO permitióR2source3084/profile11bf.84rawnuevos;guardcompleted/exit0,child3,4420377s/guard4,0464471s;nspositivos. Auditlocalintegridad/recursos/84hashes/fuentes/P0/acuerdoestricto1e-14 PASS entreNumPy1.26.4motor/2.2.6Windows; precisión63/84FAIL,maxcomplex1,6208e-4/maxrel9,5482e-5/powerdiff1,7472e-5 vs5e-6;exterior0/dark0. Noadoptadoscomosuccess/nospeedup. Primerwritepublication se detuvo por codificación de lecturaREADME antes de stage/push; UTF8explícito corregido, datos/auditoríasintactos. Próximo publicarnegativomain antescalibrar interpolación/blending/eval;no causaúnica/gateajustado. F1unknownChrome/96a07:45;SHA39bpreservado;Tarea1abierta/deadline13:45/JEVfallbacklocal.
