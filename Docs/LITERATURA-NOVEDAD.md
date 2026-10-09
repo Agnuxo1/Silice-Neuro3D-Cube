@@ -56,3 +56,22 @@ Búsqueda [B]: ninguna herramienta abierta encontrada cubre a la vez BPM vectori
 - Texto completo del artículo de 2015 en Springer (longitud de onda, geometría).
 - Texto completo de Shen et al. (método de la no linealidad).
 - Licencias y estado de mantenimiento de las herramientas de la tabla 3.
+
+## 6 · Actualización del 2026-10-10 (tarea 19)
+
+Competidores directos que cambian la evaluación de novedad:
+
+| Referencia | Qué afirma | Estado |
+|---|---|---|
+| Kondratyev et al., [arXiv:2308.13452](https://arxiv.org/abs/2308.13452) (2023) | Interferómetro **programable de 8 puertos** escrito con láser fs; funciona de 920 a 980 nm. Mismo grupo que [arXiv:2408.06688](https://arxiv.org/abs/2408.06688). | [V] resumen leído. No da pérdidas, número de MZI, vidrio ni fidelidad en el resumen |
+| Prensa, mayo de 2026 (HUST y SJTU, Nature Communications, «Programmable Three-dimensional Photonic Neural Network Chip») | Chip fotónico neuronal **tridimensional y programable**: 93 % en MNIST, 6554 TOPS teóricos | [B] solo noticia secundaria. **Hay que leer el artículo antes de citarlo.** Si el enfoque es 3D programable, es el competidor más directo del proyecto |
+| Shen et al., [arXiv:1610.02365](https://arxiv.org/abs/1610.02365) (2016/2017) | Red de interferómetros en silicio con etapa no lineal | [V] resumen |
+| Skryabin et al., [arXiv:2408.06688](https://arxiv.org/abs/2408.06688) (2024) | Guías multiscan en sílice con 0,07 dB/cm y 0,2 dB por faceta | [V] resumen; longitud de onda no indicada en el resumen |
+| Kondratyev et al. (arXiv:2308.13452) y Skryabin et al. (arXiv:2408.06688) | Mismo grupo, dos trabajos seguidos | — |
+
+**Conclusión de novedad (actualizada).**
+- **No es novedad:** una malla programable escrita con fs en vidrio (8 puertos, 2023), ni las guías multiscan de bajas pérdidas en sílice (2024).
+- **Posible novedad, no establecida:** (a) red **tridimensional** de múltiples capas escrita desde varias caras; (b) operación y medida a **1550 nm**; (c) guías con **camisa deprimida en trinchera** caracterizadas con cutback a 1550 nm. Ninguna está demostrada en la literatura consultada.
+- **Riesgo:** el trabajo de 2026 con chip neuronal 3D programable puede cubrir la idea de 3D antes que el proyecto. Hay que leer el artículo original.
+
+**Fuentes que no se han verificado en texto completo:** Amorim et al., JLT 2019 (pérdidas 350–1750 nm); Springer DOI 10.1007/s00339-015-8990-x (guía tubular, 0,3 dB/cm); sapphire arXiv:2405.08840 (1,9 dB/cm propagación y 4,3 dB de acoplamiento, según fragmento); arXiv:1912.08203 (interconexiones 3D para PNN, no verificado en detalle).
