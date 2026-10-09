@@ -32,3 +32,15 @@ En los diez casos a = 10 µm, la malla sola (N 500 → 700, dominio fijo) cambia
 - Un proceso por caso, por debajo de 30 s en un hilo.
 - No se reajusta ningún umbral. Los fallos se publican.
 - Este contrato no cierra Q4 ni reemplaza el veredicto original de GLASS-006a. Solo informa sobre la convergencia de los modos de a = 10 µm.
+
+## Enmienda E2 (registrada antes de la extensión)
+
+**Motivo.** Con N ∈ {500, 700, 900, 1100} la secuencia de Re γ **no es monótona** (p. ej. t = 6 µm, δn = −0,005: −3409 → −3317 → −3357 → −3382 m⁻¹). El orden de convergencia no es estimable con esas cuatro mallas. El modo seleccionado es el mismo en todas (núcleo 0,95 y 0,85, estable).
+
+**Cambio.** Se añaden N = 1400 y N = 1800 con dominio y θ nominales. El criterio G2 se aplica al par (1400, 1800). Los umbrales no cambian.
+
+**Predicciones fijadas.**
+- **P3.** Si Re γ converge, |Re(1400) − Re(1800)|/|Re| < 1 % y G2 se cumple en ese par.
+- **P4.** La oscilación persiste: al menos un cambio de signo en las diferencias sucesivas entre N = 500 y N = 1800. Si no hay cambio de signo, la no monotonía era transitoria.
+
+**Ejecución.** Un proceso por caso y malla (para cumplir el límite de 30 s), salida en `conv_n_a10_ext.json`.
