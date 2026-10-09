@@ -1,4 +1,15 @@
-# R3: reserva no obtenida; todavía sin campos nuevos
+# Actualización tras las reservas inmediatas: R3 completada
+
+El 9 de octubre, a las 12:00–12:01 UTC, FIFO libre y RAM suficiente permitieron
+las dos solicitudes inmediatas registradas. Cada backend ejecutó 84 campos,
+con cierre normal y auditoría local de integridad y precisión aprobadas.
+No se añadieron esperas de polling al presupuesto agotado; no repetir estos
+campos. [Resultado y costes](POINT-03-RENDER-P3-ANALYTIC-RESULTS.md).
+
+El registro previo siguiente conserva los dos bloqueos originales y la
+política de adquisición anterior a los campos. No se borra su historia.
+
+# Registro previo (11:09 UTC): reserva no obtenida; sin campos
 
 Las dos solicitudes FIFO de un minuto finalizaron por timeout con otro
 turno ocupado. No se crearon carpetas run01 ni se lanzó Blender en R3.

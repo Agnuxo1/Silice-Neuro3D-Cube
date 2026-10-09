@@ -33,7 +33,10 @@ difracción. No se adopta como prueba un resultado de otro proyecto.
 1. R2 terminó con lectura/reloj/cierre correctos, pero 63/84 campos fallan precisión.
 2. P1 ejecutó las mismas 30 marcas en OpenGL y Vulkan con prerregistro.
    Uniformes, suma y coordenadas analíticas pasan; smooth falla. Una nueva
-   tanda P2 con coordenadas analíticas requiere protocolo y publicación previos.
+   R3 posterior, preregistrada en ce183e71, aprobó 84/84 campos P2 por backend
+   con coordenadas analíticas; los 168 crudos se conservan. Es representación
+   manufacturada, sin propagación guiada, red funcional o ventaja general.
+   [Resultados y costes R3](POINT-03-RENDER-P3-ANALYTIC-RESULTS.md).
 3. Sólo tras F1localPASS puede registrarse lectura GPU de su malla y campos
    exactos, conservando ambos detectores. Nunca reemplazar primarias por GIF.
 4. BVH/RT y red completa siguen el orden de la tarea1 y requieren presupuestos

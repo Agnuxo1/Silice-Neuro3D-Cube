@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-09T12:27:31.463733+00:00",
+  "pass_all": true,
+  "raw_frames": 168,
+  "readme_local_links_checked": 38,
+  "directory_links": [
+    "Docs/",
+    "coordinacion/respuestas/",
+    "resultados/"
+  ],
+  "QA_initial_file_only_assertion_rejected_three_existing_directory_links": true,
+  "new_tools_compiled": [
+    "tools/report_p3_analytic_20261009.py",
+    "tools/gif_p3_analytic_20261009.py",
+    "tools/gif_p3_analytic_v2_20261009.py"
+  ],
+  "gif_frames_decoded": 8,
+  "visual_review_frames": [
+    0,
+    2,
+    7
+  ],
+  "fixed_scales": true,
+  "original_visual_version_retained": true,
+  "visual_v2_correction": "colorbar scientific scale label no longer overlaps panel title",
+  "scientific_fields_repeated": false,
+  "exclusive_auditors_repeated": false,
+  "baseline_tests_repeated": false,
+  "F1_worker_unchanged": true,
+  "point03_closed": false,
+  "JEV": "explicit local fallback"
+}
