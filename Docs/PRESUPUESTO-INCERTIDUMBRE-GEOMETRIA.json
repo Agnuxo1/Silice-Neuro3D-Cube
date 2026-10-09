@@ -1,0 +1,24 @@
+{
+ "reference_loss_t12_dn005_dBcm": 0.044253547510181804,
+ "sensitivity_dlnL_dt_per_um": {
+  "dn-0.005_t12-18": -0.7846281240323845,
+  "dn-0.003_t12-18": -0.5284785126367969,
+  "dn-0.005_t9-12": -0.7628879352166679
+ },
+ "sensitivity_dlnL_ddn_per_unit": 1410.5410550397946,
+ "assumed_tolerances": {
+  "t_um": 0.5,
+  "dn": 0.0005,
+  "a_um": 0.3
+ },
+ "propagated_u_lnL": {
+  "from_t": 0.39231406201619223,
+  "from_dn": 0.7052705275198974,
+  "total": 0.807042031274604
+ },
+ "loss_range_factor_1sigma": [
+  0.019744865970386407,
+  0.09918408512740048
+ ],
+ "note": "tolerances are assumptions to be replaced by measured values (tarea 5, laboratorio)"
+}
