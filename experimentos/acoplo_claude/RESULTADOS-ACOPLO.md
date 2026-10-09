@@ -49,3 +49,7 @@ Parámetros: V = 2,92016, U = 1,75688, W = 2,33254, β = 5,84617 µm⁻¹.
 - **Curvas:** modelo de pérdida por radiación no abordado. Protocolo: cutback con series de radios de curvatura, con el mismo modo de referencia que F2.
 - **Cruces:** la diafonía en un cruce requiere un cálculo de campo en la zona de cruce (BPM o solver de cruce). No se ha hecho.
 - **Conexiones 3D:** el acoplo vertical con escritura anisótropa requiere caracterizar el perfil de escritura. Pendiente.
+
+## Referencia para la pérdida de curva (pendiente, no verificada)
+
+Lee et al., *Scientific Reports* (2021), sobre sílice escrita con fs, da unos 1 dB/cm con radio de curvatura de 10 mm a 1550 nm (técnica de microgrietas). Es solo un fragmento de búsqueda y no se ha verificado en texto completo. Sirve como punto de partida para el protocolo de curvas. No es un resultado de este modelo.
