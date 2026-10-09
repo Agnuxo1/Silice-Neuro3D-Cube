@@ -1,0 +1,13 @@
+{
+  "status": "blocked_before_launch",
+  "samples": [],
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "point03_closed": false,
+  "child_pid": null,
+  "child_finished": true,
+  "error_type": "ValueError",
+  "reason": "P0 calibration did not pass all gates",
+  "elapsed_guard_s": 0.23559849999583093,
+  "finished_utc": "2026-10-09T09:14:19.766904+00:00"
+}

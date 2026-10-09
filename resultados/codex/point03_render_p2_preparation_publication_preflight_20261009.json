@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-10-09T09:16:26.288482+00:00",
+  "pass": true,
+  "scope": "Exact staged reviewed prospective R2 preparation; sources/prerequisites/controls SHA match; selected credential signatures, no universal absence claim",
+  "files": [
+    {
+      "path": "Docs/POINT-03-RENDER-P2-CORRECTED-CONTRACT.md",
+      "bytes": 3478,
+      "sha256": "9d76198c308f04ea56cf89d2f8556e7cb0ce81bb9aa92ac43ba2d81065c2853d"
+    },
+    {
+      "path": "coordinacion/CHECKPOINT.md",
+      "bytes": 135294,
+      "sha256": "6a1665354f7b003ccd8ae204a44aaa7298c4f2e6dabddc6ad678d7a6b2d8e139"
+    },
+    {
+      "path": "resultados/codex/point03_render_buffer_results_publication_receipt_20261009.json",
+      "bytes": 640,
+      "sha256": "5aeed4e054dc24641573b61ef05e1b643def9c4dc726f771113f51605ffa03dc"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_corrected_profile_20261009.json",
+      "bytes": 3010,
+      "sha256": "11bf0198b1b0cc3f91e3da40799a93aced3de91de09d420e4ed63ef2019c50e8"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_false_prerequisite_control_20261009/guard.json",
+      "bytes": 377,
+      "sha256": "6303f5d52efc68d98fd3825f85b598856208560c69d0903754b9bf95cf8db639"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_false_prerequisite_control_20261009/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_false_prerequisite_control_20261009/stdout.txt",
+      "bytes": 88,
+      "sha256": "a3dab32c738cab3ba72b9017be0a9d2b585bc74e9d1b23f722cefdaa72ecf3ed"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_false_prerequisite_fixture_20261009.json",
+      "bytes": 2181,
+      "sha256": "d3c38a2dabd85ce1968ee0947e08598f279a28e1db3db8383cd6d05fcb4077d9"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_false_profile_fixture_20261009.json",
+      "bytes": 3039,
+      "sha256": "bb09f18ca7b6fdfce5be7c9186a25650a7d11cf21c1c619d3ff062d945e685c8"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_gate_controls_20261009.json",
+      "bytes": 368,
+      "sha256": "9ac30330676b3eb16c8b1776ed1f7a5ab65dda54a94ee4d0363898733b180c20"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_original_controls_portable_20261009.json",
+      "bytes": 733,
+      "sha256": "9a1f47d67ca3ad690d33328d509166bcbf624e8ad1b3139b20575130a56dd536"
+    },
+    {
+      "path": "resultados/codex/point03_render_p2_prerequisite_p0_portable_20261009.json",
+      "bytes": 2153,
+      "sha256": "9351af468d69b01665829bcd7c43bd147baf99fc820f8176e8a500726b3fd8f5"
+    },
+    {
+      "path": "scripts/audit_point03_render_p2_corrected.py",
+      "bytes": 4990,
+      "sha256": "817217f919a5f32b86d4cdc7a2bab92588754f23b8b73fa3176708969724fb74"
+    },
+    {
+      "path": "scripts/check_point03_render_p2_gate.py",
+      "bytes": 2193,
+      "sha256": "1199387b3a62564b60b92277bf7131019f495250031167c9dd38076d868e9dff"
+    },
+    {
+      "path": "scripts/guard_point03_render_p2_corrected.py",
+      "bytes": 7965,
+      "sha256": "6b843879c85ea2a537b638420e3c8d604a43e2e19bea93704ec2c79acf289b91"
+    },
+    {
+      "path": "scripts/point03_render_p2_gate.py",
+      "bytes": 1228,
+      "sha256": "914d33718a5f6c325f20f9b5ec2632ef35da6796ca2b29113fe59376f0bf3c93"
+    },
+    {
+      "path": "scripts/run_point03_render_p2_corrected.py",
+      "bytes": 8546,
+      "sha256": "feaa9efa4e1a52c7058de4dad275f23effc5e26c1f2c213f92d46595e63a2b1c"
+    }
+  ],
+  "bytes": 176283,
+  "findings": [],
+  "f1_worker_unchanged": true,
+  "original_p2_reference_unchanged": true,
+  "p0_false_blocks_before_gpu": true,
+  "scientific_gates_unchanged": true,
+  "gpu_execution": false
+}
