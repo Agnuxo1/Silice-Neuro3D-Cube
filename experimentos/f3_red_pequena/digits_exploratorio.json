@@ -1,0 +1,16 @@
+{
+ "exploratory_not_preregistered": true,
+ "input": "PCA components divided by training std",
+ "results": {
+  "a": {
+   "best_seed": 4,
+   "train_acc": 0.6349206349206349,
+   "test_acc": 0.5787037037037037
+  },
+  "b": {
+   "best_seed": 1,
+   "train_acc": 0.8908730158730159,
+   "test_acc": 0.8888888888888888
+  }
+ }
+}
