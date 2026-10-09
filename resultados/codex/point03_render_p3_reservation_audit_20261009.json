@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-09T11:09:56.323203+00:00",
+  "preregistered_commit": "ce183e71df79371f3b3f66d4a8fc82dc2a88abf1",
+  "backends": {
+    "opengl": {
+      "queue_log_sha256": "c8f9143ff4d8dd51743bb8a038923225a0956f7659ec5cf26b009a7748d0bcfd",
+      "profile_sha256": "baa09f12df04e59b28f67c0da71eb71a9be93de388b1b7d60815a3799062241b",
+      "requested_wait_minutes": 1,
+      "reservation_granted": false,
+      "run_folder_created": false,
+      "new_GPU_fields": 0
+    },
+    "vulkan": {
+      "queue_log_sha256": "0d66d54028505bd585808e23332bf98aa4eae2557e5717da65ecd28747ec5431",
+      "profile_sha256": "3deab4cd6a6796f5c4869d4a54fae4643d1dab9da09eb8d8f28c9d9524d14535",
+      "requested_wait_minutes": 1,
+      "reservation_granted": false,
+      "run_folder_created": false,
+      "new_GPU_fields": 0
+    }
+  },
+  "source_hashes_pass": true,
+  "scientific_trial_started": false,
+  "point03_closed": false
+}

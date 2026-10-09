@@ -1,0 +1,3 @@
+[gpuq] 2026-10-09T13:04:43 en cola: Silice:R3-Vulkan
+[gpuq] 2026-10-09T13:04:43 esperando (posición 2 de 2)
+[gpuq] se agot� la espera de 1.0 min (posici�n 2 de 2)
