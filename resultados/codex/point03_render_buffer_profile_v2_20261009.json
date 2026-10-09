@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-10-09T08:44:10.233177+00:00",
+  "status": "prepared_before_gpu",
+  "marker_only": true,
+  "new_gpu_execution": false,
+  "new_t96_field": false,
+  "sources_sha256": {
+    "Docs/POINT-03-RENDER-GPU-CONTRACT.md": "4cf91f3d1ebd439849fd81ed7f68cb114feb3735b1a0d3137da629094eb3de9c",
+    "Docs/POINT-03-RENDER-BUFFER-CALIBRATION-CONTRACT.md": "af0c36cce293117e3635d4cd2baac95f007e6dd8352dc75125b6404e45adf1a0",
+    "scripts/point03_render_buffer_reference.py": "7b8fec7bf8b0094e77d008add79c2bd0a476bb290ce51c5b50d62523c4749100",
+    "scripts/check_point03_render_buffer.py": "ec65ce729f770a9ee901c351755e3e1fd186c5e08926533d754cca552cf8072f",
+    "scripts/run_point03_render_buffer_blender.py": "5b28dfd00b12ba5504ad67005c67ddf56aa3016e7a606e8b4ec77d96e7b21b3f",
+    "scripts/guard_point03_render_buffer.py": "cf201fd396f705d568722e98bae59d36d1c1b3be62d2d0005a2666757a00ffe1",
+    "scripts/audit_point03_render_buffer.py": "a13f588baab4835054d515d67c9e72d7e826345f75c4610fe954ebacfa7303fb"
+  },
+  "blender_executable": "D:/TOOLS/Blender/blender-4.5.14-windows-x64/blender.exe",
+  "blender_sha256": "57fa1d294ea76448c3bec84ca758caf4629611330abba7dcf55bb0c56a0a15ab",
+  "guard_python": "C:\\Python313\\python.exe",
+  "guard_python_sha256": "d932e5e2f324d57f392e8fd063dcf6d0185be8a664c57c6d24e7762ed02c28ca",
+  "guard_psutil_version": "6.1.1",
+  "deadline_utc": "2026-10-09T13:45:00+00:00",
+  "ram_preflight_gib": 8,
+  "ram_floor_gib": 6,
+  "child_seconds": 120,
+  "independent_timer_seconds": 115,
+  "worker_seconds": 110,
+  "queue_wait_minutes": 1,
+  "marker_sizes": [
+    [
+      8,
+      5
+    ],
+    [
+      13,
+      7
+    ],
+    [
+      32,
+      16
+    ]
+  ],
+  "marker_cases": [
+    "constant",
+    "coordinates"
+  ],
+  "absolute_marker_gate": 1e-06,
+  "cpu_controls_sha256": "c521a5031de9e7b6f60bf94845ce013995b3659bbcb51d68e3058040e258652a",
+  "prior_failed_result_commit": "2e6444f7b8d4aa5fc6fa75ab25fc01386c8af7f0",
+  "physical_validation": false,
+  "p2_field_validated": false,
+  "point03_closed": false,
+  "prepared_revision": 2,
+  "previous_profile_sha256": "ff1c6468388e4983ba664da26b138ac885deb0d5c7b7fc2f1d9c48b17203e65f",
+  "revision_reason": "LF source and portable control bytes before publication; same behavior/gates, no GPU between preparations",
+  "cpu_controls_path": "resultados/codex/point03_render_buffer_cpu_controls_portable_20261009.json",
+  "original_cpu_controls_local_sha256": "00009cae8d09c7c57635d63a93df168db2e720e1fa6e6cda0bdc312df275cd9e",
+  "original_guard_crlf_sha256": "89d47efada0363abfe2228045149ab5723a10199f468823be615867528e993b7",
+  "original_guard_preserved_as": "resultados/codex/point03_render_buffer_guard_prepublication_crlf_20261009.txt"
+}
