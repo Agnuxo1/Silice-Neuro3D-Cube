@@ -1,0 +1,32 @@
+[10:02:50Z] inicio bloque A (sigma=1.44219587036024)
+[10:03:36Z] i|L60|h0.25|K30: n_core=1.442189101534691 idx=15 P_in=0.538498356727384 ligado=True unk=229441 t=46.5s
+[10:05:28Z] i|L80|h0.25|K30: n_core=1.4421908377412704 idx=16 P_in=0.5901808393266028 ligado=True unk=408321 t=111.0s
+[10:08:23Z] i|L100|h0.25|K30: n_core=None idx=None P_in=None ligado=False unk=638401 t=174.6s
+[10:11:05Z] i|L120|h0.25|K30: n_core=1.4421895179260276 idx=19 P_in=0.7285695125494775 ligado=True unk=919681 t=160.6s
+[10:12:15Z] i|L60|h0.25|K60: n_core=1.442189101534691 idx=29 P_in=0.538498356727384 ligado=True unk=229441 t=69.3s
+[10:12:15Z] fin bloque A
+[10:12:15Z] CRIT F4-C1: pass=False evaluable=False value=None
+[10:12:15Z] CRIT F4-C2: pass=False evaluable=True value={'60': {'ligado': True, 'P_in_sel': 0.538498356727384, 'n_core': 1.442189101534691}, '80': {'ligado': True, 'P_in_sel': 0.5901808393266028, 'n_core': 1.4421908377412704}, '100': {'ligado': False, 'P_in_sel': None, 'n_core': None}, '120': {'ligado': True, 'P_in_sel': 0.7285695125494775, 'n_core': 1.4421895179260276}}
+[10:12:15Z] CRIT F4-C3: pass=True evaluable=True value=-6.352433972400817e-06
+[10:12:15Z] CRIT F4-C4: pass=None evaluable=True value={'60': {'n_h025': 1.442189101534691, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '80': {'n_h025': 1.4421908377412704, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '100': {'n_h025': None, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '120': {'n_h025': 1.4421895179260276, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}}
+[10:12:15Z] CRIT F4-C5: pass=True evaluable=True value=0.0
+[10:12:15Z] CRIT F4-C6: pass=None evaluable=False value=None
+[10:12:15Z] status=partial
+[10:12:19Z] inicio bloque D (sigma=1.44219587036024)
+[10:15:19Z] i|L100|h0.25|K60: n_core=None idx=None P_in=None ligado=False unk=638401 t=179.1s
+[10:15:19Z] fin bloque D
+[10:15:19Z] CRIT F4-C1: pass=False evaluable=False value=None
+[10:15:19Z] CRIT F4-C2: pass=False evaluable=True value={'60': {'ligado': True, 'P_in_sel': 0.538498356727384, 'n_core': 1.442189101534691}, '80': {'ligado': True, 'P_in_sel': 0.5901808393266028, 'n_core': 1.4421908377412704}, '100': {'ligado': False, 'P_in_sel': None, 'n_core': None}, '120': {'ligado': True, 'P_in_sel': 0.7285695125494775, 'n_core': 1.4421895179260276}}
+[10:15:19Z] CRIT F4-C3: pass=True evaluable=True value=-6.352433972400817e-06
+[10:15:19Z] CRIT F4-C4: pass=None evaluable=True value={'60': {'n_h025': 1.442189101534691, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '80': {'n_h025': 1.4421908377412704, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '100': {'n_h025': None, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '120': {'n_h025': 1.4421895179260276, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}}
+[10:15:19Z] CRIT F4-C5: pass=True evaluable=True value=0.0
+[10:15:19Z] CRIT F4-C6: pass=None evaluable=False value=None
+[10:15:19Z] status=partial
+[10:15:22Z] CRIT F4-C1: pass=False evaluable=False value=None
+[10:15:22Z] CRIT F4-C2: pass=False evaluable=True value={'60': {'ligado': True, 'P_in_sel': 0.538498356727384, 'n_core': 1.442189101534691}, '80': {'ligado': True, 'P_in_sel': 0.5901808393266028, 'n_core': 1.4421908377412704}, '100': {'ligado': False, 'P_in_sel': None, 'n_core': None}, '120': {'ligado': True, 'P_in_sel': 0.7285695125494775, 'n_core': 1.4421895179260276}}
+[10:15:22Z] CRIT F4-C3: pass=True evaluable=True value=-6.352433972400817e-06
+[10:15:22Z] CRIT F4-C4: pass=None evaluable=True value={'60': {'n_h025': 1.442189101534691, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '80': {'n_h025': 1.4421908377412704, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '100': {'n_h025': None, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}, '120': {'n_h025': 1.4421895179260276, 'n_h02': None, 'delta': None, 'nota': 'h=0,2 no calculada'}}
+[10:15:22Z] CRIT F4-C5: pass=True evaluable=True value=0.0
+[10:15:22Z] CRIT F4-C6: pass=None evaluable=False value=None
+[10:15:22Z] status=partial
+DONE_D

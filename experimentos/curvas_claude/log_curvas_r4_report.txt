@@ -1,0 +1,2 @@
+I4.0 pass=True | I4.1 pass=True | I4.2 pass=True | I4.3 null | estado=partial
+Escrito: D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\curvas_claude\resultados_curvas_r4.json

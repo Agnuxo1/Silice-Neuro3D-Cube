@@ -1,0 +1,502 @@
+{
+  "meta": {
+    "lam_um": 1.55,
+    "a_um": 6.0,
+    "n1": 1.444,
+    "n2": 1.439,
+    "s_sub": 8,
+    "h_um": 0.25,
+    "n_modes": 12,
+    "chain_mm": [
+      50.0,
+      20.0,
+      10.0,
+      7.0,
+      5.0,
+      4.0,
+      3.0,
+      2.5,
+      2.0
+    ],
+    "L_um_ejecutadas": [
+      40.0,
+      80.0,
+      100.0
+    ],
+    "S_min": 0.9,
+    "S_def": "(sum psi psi_ref h^2)^2",
+    "TOL_DN": 1e-06,
+    "modelo": "n_eq = n_xy (1 + X/R), X exterior; solver2d.cell_average; P = nabla^2 + k0^2 n^2",
+    "nota": "MODELO NUMERICO. Perdida por radiacion NO calculada."
+  },
+  "analitica_neff": 1.4421921654570122,
+  "por_L": {
+    "40.0": {
+      "L_um": 40.0,
+      "h_um": 0.25,
+      "N": 321,
+      "recto": {
+        "neff": 1.4421918718380073,
+        "dist_analitica": -2.936190048874465e-07,
+        "resid_rel": 6.207866310163279e-16,
+        "norm_err": 0.0
+      },
+      "pasos": {
+        "R50": {
+          "R_mm": 50.0,
+          "neff": 1.4421948195269902,
+          "dn": 2.947688982901653e-06,
+          "S_prev": 0.9987873077410645,
+          "S_rec": 0.9987873077410645,
+          "resid_rel": 7.464840866996818e-16,
+          "norm_err": 2.220446049250313e-16,
+          "x_t_um": 111.00832268902127,
+          "neff_prev": 1.4421918718380073,
+          "S_prev_12_max_otro": 0.0011893385477213894,
+          "N": 321,
+          "evaluado": true,
+          "t_s": 20.34914779663086
+        },
+        "R20": {
+          "R_mm": 20.0,
+          "neff": 1.4422103225250056,
+          "dn": 1.8450686998239263e-05,
+          "S_prev": 0.9972478541266234,
+          "S_rec": 0.9924059260272928,
+          "resid_rel": 7.347659120891148e-16,
+          "norm_err": 2.220446049250313e-16,
+          "x_t_um": 44.61879812377223,
+          "neff_prev": 1.4421948195269902,
+          "S_prev_12_max_otro": 0.0015797010325114748,
+          "N": 321,
+          "evaluado": true,
+          "t_s": 14.19344711303711
+        },
+        "R10": {
+          "R_mm": 10.0,
+          "neff": 1.4422662481147486,
+          "dn": 7.437627674122815e-05,
+          "S_prev": 0.9917364317358573,
+          "S_rec": 0.9689457372961535,
+          "resid_rel": 7.1225799474311615e-16,
+          "norm_err": 2.220446049250313e-16,
+          "x_t_um": 22.698041103186295,
+          "neff_prev": 1.4422103225250056,
+          "S_prev_12_max_otro": 0.00022336356469647905,
+          "N": 321,
+          "evaluado": true,
+          "t_s": 8.986589431762695
+        },
+        "R7": {
+          "R_mm": 7.0,
+          "neff": 1.442346321718456,
+          "dn": 0.00015444988044865937,
+          "S_prev": 0.9880180550845282,
+          "S_rec": 0.9294266815378912,
+          "resid_rel": 8.057680920845525e-16,
+          "norm_err": 2.220446049250313e-16,
+          "x_t_um": 16.278145954963463,
+          "neff_prev": 1.4422662481147486,
+          "S_prev_12_max_otro": 0.0030107202051072005,
+          "N": 321,
+          "evaluado": true,
+          "t_s": 9.647005796432495
+        },
+        "R5": {
+          "R_mm": 5.0,
+          "neff": 1.4425184491303205,
+          "dn": 0.0003265772923131127,
+          "S_prev": 0.8954545140220834,
+          "S_rec": 0.7656378372600328,
+          "resid_rel": 1.4300908017038332e-15,
+          "norm_err": 0.0,
+          "x_t_um": 12.225327068521308,
+          "neff_prev": 1.442346321718456,
+          "S_prev_12_max_otro": 0.06203251029617937,
+          "N": 321,
+          "evaluado": false,
+          "motivo": "S_prev <= 0,9: modo perdido por continuacion",
+          "t_s": 9.793139457702637
+        },
+        "R4": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R3": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R2.5": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R2": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        }
+      },
+      "pert": {
+        "mu0": 34.1776680583142,
+        "first_order_u_D1_u": -3.8104241968247003e-13,
+        "D2_term": 294.4794493834811,
+        "S2": 348891.52747560036,
+        "c2_um2": 7367.284685537165,
+        "residuo_bordeado_rel": 9.194283192398162e-14
+      },
+      "t_s": 108.49855852127075
+    },
+    "80.0": {
+      "L_um": 80.0,
+      "h_um": 0.25,
+      "N": 641,
+      "recto": {
+        "neff": 1.4421918718380087,
+        "dist_analitica": -2.936190035551789e-07,
+        "resid_rel": 6.59257552502093e-16,
+        "norm_err": 0.0
+      },
+      "pasos": {
+        "R50": {
+          "R_mm": 50.0,
+          "neff": 1.4421948195269985,
+          "dn": 2.9476889897850356e-06,
+          "S_prev": 0.998787307727376,
+          "S_rec": 0.998787307727376,
+          "resid_rel": 7.547535820602996e-16,
+          "norm_err": 0.0,
+          "x_t_um": 111.00832268930994,
+          "neff_prev": 1.4421918718380087,
+          "S_prev_12_max_otro": 2.1077952787703333e-09,
+          "N": 641,
+          "evaluado": true,
+          "t_s": 61.89361214637756
+        },
+        "R20": {
+          "R_mm": 20.0,
+          "neff": 1.4422103225278022,
+          "dn": 1.8450689793558794e-05,
+          "S_prev": 0.9972478348269044,
+          "S_rec": 0.9924059046002143,
+          "resid_rel": 6.977107579248847e-16,
+          "norm_err": 0.0,
+          "x_t_um": 44.61879816264336,
+          "neff_prev": 1.4421948195269985,
+          "S_prev_12_max_otro": 9.733205440731308e-09,
+          "N": 641,
+          "evaluado": true,
+          "t_s": 30.905519247055054
+        },
+        "R10": {
+          "R_mm": 10.0,
+          "neff": 1.4422663152120072,
+          "dn": 7.444337399853396e-05,
+          "S_prev": 0.9908558954837355,
+          "S_rec": 0.9680264045037942,
+          "resid_rel": 9.13424473838168e-16,
+          "norm_err": 0.0,
+          "x_t_um": 22.698507380174426,
+          "neff_prev": 1.4422103225278022,
+          "S_prev_12_max_otro": 0.000551685501100862,
+          "N": 641,
+          "evaluado": true,
+          "t_s": 36.64863896369934
+        },
+        "R7": {
+          "R_mm": 7.0,
+          "neff": 1.442348976107669,
+          "dn": 0.00015710426966042412,
+          "S_prev": 0.9507461195886722,
+          "S_rec": 0.8906886759991407,
+          "resid_rel": 2.188258523768308e-15,
+          "norm_err": 2.220446049250313e-16,
+          "x_t_um": 16.291058202698494,
+          "neff_prev": 1.4422663152120072,
+          "S_prev_12_max_otro": 0.030277022371101713,
+          "N": 641,
+          "evaluado": true,
+          "t_s": 33.68160605430603
+        },
+        "R5": {
+          "R_mm": 5.0,
+          "neff": 1.4424204777897354,
+          "dn": 0.0002286059517266903,
+          "S_prev": 0.15008290495782392,
+          "S_rec": 0.16278711869968523,
+          "resid_rel": 1.5437357995628171e-15,
+          "norm_err": 0.0,
+          "x_t_um": 11.88491240352807,
+          "neff_prev": 1.442348976107669,
+          "S_prev_12_max_otro": 0.007200681296792028,
+          "N": 641,
+          "evaluado": false,
+          "motivo": "S_prev <= 0,9: modo perdido por continuacion",
+          "t_s": 35.50955533981323
+        },
+        "R4": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R3": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R2.5": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R2": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        }
+      },
+      "t_s": 422.6027512550354
+    },
+    "100.0": {
+      "L_um": 100.0,
+      "h_um": 0.25,
+      "N": 801,
+      "recto": {
+        "neff": 1.4421918718380087,
+        "dist_analitica": -2.936190035551789e-07,
+        "resid_rel": 6.337286158028581e-16,
+        "norm_err": 0.0
+      },
+      "pasos": {
+        "R50": {
+          "R_mm": 50.0,
+          "neff": 1.4421948195269985,
+          "dn": 2.9476889897850356e-06,
+          "S_prev": 0.9987873077273758,
+          "S_rec": 0.9987873077273758,
+          "resid_rel": 7.111532917250669e-16,
+          "norm_err": 0.0,
+          "x_t_um": 111.00832268930994,
+          "neff_prev": 1.4421918718380087,
+          "S_prev_12_max_otro": 8.664421555568864e-14,
+          "N": 801,
+          "evaluado": true,
+          "t_s": 91.75029611587524
+        },
+        "R20": {
+          "R_mm": 20.0,
+          "neff": 1.442210322526985,
+          "dn": 1.8450688976212604e-05,
+          "S_prev": 0.997247841769874,
+          "S_rec": 0.9924059121595329,
+          "resid_rel": 8.004805265455891e-16,
+          "norm_err": 2.220446049250313e-16,
+          "x_t_um": 44.618798151283556,
+          "neff_prev": 1.4421948195269985,
+          "S_prev_12_max_otro": 1.3830476129498834e-09,
+          "N": 801,
+          "evaluado": true,
+          "t_s": 56.32354927062988
+        },
+        "R10": {
+          "R_mm": 10.0,
+          "neff": 1.442266302764378,
+          "dn": 7.443092636938431e-05,
+          "S_prev": 0.9837560807651262,
+          "S_rec": 0.961102018287668,
+          "resid_rel": 1.444540334175119e-15,
+          "norm_err": 0.0,
+          "x_t_um": 22.69842087823548,
+          "neff_prev": 1.442210322526985,
+          "S_prev_12_max_otro": 0.007319928530230582,
+          "N": 801,
+          "evaluado": true,
+          "t_s": 64.12427997589111
+        },
+        "R7": {
+          "R_mm": 7.0,
+          "neff": 1.44234895849988,
+          "dn": 0.0001570866618714195,
+          "S_prev": 0.6899406606053623,
+          "S_rec": 0.6515478417200045,
+          "resid_rel": 2.724184954859638e-15,
+          "norm_err": 1.1102230246251565e-16,
+          "x_t_um": 16.29097254979861,
+          "neff_prev": 1.442266302764378,
+          "S_prev_12_max_otro": 0.28409369350645514,
+          "N": 801,
+          "evaluado": false,
+          "motivo": "S_prev <= 0,9: modo perdido por continuacion",
+          "t_s": 57.617064237594604
+        },
+        "R5": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R4": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R3": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R2.5": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        },
+        "R2": {
+          "evaluado": false,
+          "motivo": "cadena detenida en un radio mayor"
+        }
+      },
+      "t_s": 673.9554417133331
+    }
+  },
+  "criterios": {
+    "I4.0": {
+      "descripcion": "verificacion: (a) contraste con r3 L=40 <= 1e-10; (b) c2 perturbativo vs numerico R=10 mm L=40 <= 2 %; (c) eigenpares",
+      "a": {
+        "abs_diff_por_radio": {
+          "50.0": 0.0,
+          "20.0": 0.0,
+          "10.0": 2.220446049250313e-16,
+          "recto": 0.0
+        },
+        "umbral": 1e-10,
+        "pass": true
+      },
+      "b": {
+        "c2_um2": 7367.284685537165,
+        "por_radio": {
+          "50.0": {
+            "dn_num": 2.947688982901653e-06,
+            "dn_pred": 2.9469138742148663e-06,
+            "cociente_num_pred": 1.0002630238683148,
+            "dif_rel": 0.0002630238683147823
+          },
+          "20.0": {
+            "dn_num": 1.8450686998239263e-05,
+            "dn_pred": 1.8418211713842914e-05,
+            "cociente_num_pred": 1.0017632159354506,
+            "dif_rel": 0.0017632159354505905
+          },
+          "10.0": {
+            "dn_num": 7.437627674122815e-05,
+            "dn_pred": 7.367284685537166e-05,
+            "cociente_num_pred": 1.0095480209586227,
+            "dif_rel": 0.009548020958622727
+          }
+        },
+        "umbral_dif_rel_R10": 0.02,
+        "pass": true
+      },
+      "c": {
+        "max_resid_rel": 2.188258523768308e-15,
+        "umbral_resid": 1e-08,
+        "max_norm_err": 2.220446049250313e-16,
+        "umbral_norm": 1e-10,
+        "pass": true
+      },
+      "pass": true
+    },
+    "I4.1": {
+      "descripcion": "signo: Delta n > 0 en toda la cadena; (ii) primer orden nulo, c2 > 0; (iii) pendiente log-log en [-2,05; -1,95] a L = 100",
+      "i_signo_por_L": {
+        "40.0": {
+          "n_puntos": 4,
+          "todos_positivos": true,
+          "dn_por_R": {
+            "R50": 2.947688982901653e-06,
+            "R20": 1.8450686998239263e-05,
+            "R10": 7.437627674122815e-05,
+            "R7": 0.00015444988044865937
+          }
+        },
+        "80.0": {
+          "n_puntos": 4,
+          "todos_positivos": true,
+          "dn_por_R": {
+            "R50": 2.9476889897850356e-06,
+            "R20": 1.8450689793558794e-05,
+            "R10": 7.444337399853396e-05,
+            "R7": 0.00015710426966042412
+          }
+        },
+        "100.0": {
+          "n_puntos": 3,
+          "todos_positivos": true,
+          "dn_por_R": {
+            "R50": 2.9476889897850356e-06,
+            "R20": 1.8450688976212604e-05,
+            "R10": 7.443092636938431e-05
+          }
+        }
+      },
+      "i_pass": true,
+      "ii": {
+        "first_order_u_D1_u": -3.8104241968247003e-13,
+        "D2_term": 294.4794493834811,
+        "S2": 348891.52747560036,
+        "c2_um2": 7367.284685537165,
+        "umbral_first_order": 1e-10,
+        "pass": true
+      },
+      "iii": {
+        "pendiente_log_log_L100_50_10": -2.0061973422436767,
+        "intervalo": [
+          -2.05,
+          -1.95
+        ],
+        "pass": true
+      },
+      "pass": true
+    },
+    "I4.2": {
+      "descripcion": "radio critico R_c(S) con S_rec = 0,9 (L = 100); convergencia |dn(100-80)| < 1e-6 y S_rec > 0,9 para R >= R_a",
+      "resultado": {
+        "R_a_mm": 10.0,
+        "R_b_mm": 7.0,
+        "R_c_mm": null,
+        "cota_mm": [
+          7.0,
+          10.0
+        ],
+        "tipo": "cota: paso fallido en R_b, sin interpolar; R_c en [R_b; R_a]",
+        "S_rec_R_a_L100": 0.961102018287668,
+        "S_rec_R_b_L100": 0.6515478417200045,
+        "motivo_paso_fallido": "S_prev <= 0,9: modo perdido por continuacion",
+        "convergencia_R_mayores_o_iguales_R_a": [
+          {
+            "R_mm": 50.0,
+            "abs_diff_L100_L80": 0.0,
+            "S_rec_L80": 0.998787307727376,
+            "S_rec_L100": 0.9987873077273758,
+            "pass": true
+          },
+          {
+            "R_mm": 20.0,
+            "abs_diff_L100_L80": 8.173461907290402e-13,
+            "S_rec_L80": 0.9924059046002143,
+            "S_rec_L100": 0.9924059121595329,
+            "pass": true
+          },
+          {
+            "R_mm": 10.0,
+            "abs_diff_L100_L80": 1.244762914964781e-08,
+            "S_rec_L80": 0.9680264045037942,
+            "S_rec_L100": 0.961102018287668,
+            "pass": true
+          }
+        ]
+      },
+      "pass": true
+    },
+    "I4.3": {
+      "descripcion": "perdida por radiacion: NO calculada en esta ronda",
+      "pass": null
+    }
+  },
+  "informativo": {
+    "R_cA_mm_ronda1": 2.704747017744284,
+    "pendiente_log_log_L100": -2.0061973422436767
+  },
+  "estado": "partial",
+  "n_pass": 3,
+  "n_criterios_evaluados": 3,
+  "n_criterios": 4
+}

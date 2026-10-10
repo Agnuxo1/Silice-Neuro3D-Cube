@@ -1,0 +1,87 @@
+{
+  "task": "B4 bpm r4 - origen de la perdida del modo guiado",
+  "fecha_utc": "2026-10-10T10:08:30+00:00",
+  "contrato": "CONTRATO-bpm-r4.md",
+  "umbral_B3": 1e-05,
+  "criterios": [
+    {
+      "id": "V0",
+      "description": "control: |P_perd(r4_W40_dz1) - 2,4600e-4| / 2,4600e-4 <= 1e-3",
+      "value": "1.121e-07 (P=2.460000e-04)",
+      "pass": true,
+      "nota": ""
+    },
+    {
+      "id": "V1",
+      "description": "P-EIG convergido: residuo ||U E - lambda E||/||E|| <= 1e-6 y ov2(LP01) >= 0,999",
+      "value": "residuo=8.412e-11, ov2_LP01=0.999992615",
+      "pass": true,
+      "nota": ""
+    },
+    {
+      "id": "V2",
+      "description": "consistencia P-EIG: |P_perd - (1 - |lambda|^2000)| <= 1e-6",
+      "value": "1.248e-11 (P=2.498538e-04, teorica=2.498539e-04)",
+      "pass": true,
+      "nota": ""
+    },
+    {
+      "id": "B3-r4",
+      "description": "alguna configuracion de C con P_perd(1 mm) <= 1e-5 (CAP activo)",
+      "value": "r4_W40_dz1=2.4600e-04, r4_W60_dz1=2.4497e-04, r4_W80_dz1=2.4143e-04, r4_W40_dz05=7.3692e-05, r4_PEIG_W40_dz1=2.4985e-04",
+      "pass": false,
+      "nota": "mejor configuracion: r4_W40_dz05"
+    },
+    {
+      "id": "D-W",
+      "description": "H-CONTORNO: max(|P60-P40|/P40, |P80-P60|/P60) <= 0,10 (pass = perdida independiente de W)",
+      "value": "0.0145 (P40=2.46000e-04, P60=2.44971e-04, P80=2.41428e-04)",
+      "pass": true,
+      "nota": ""
+    },
+    {
+      "id": "D-dz",
+      "description": "|P(dz05) - P(dz1)| / P(dz1) <= 0,10 (pass = perdida independiente de dz)",
+      "value": "0.7004 (P_dz05=7.36917e-05, P_dz1=2.46000e-04)",
+      "pass": false,
+      "nota": ""
+    },
+    {
+      "id": "D-PROP",
+      "description": "H-PROP: P_perd(r4_PEIG_W40_dz1) <= 1e-5 (pass = el modo del propio esquema no pierde potencia)",
+      "value": "2.498538e-04",
+      "pass": false,
+      "nota": ""
+    },
+    {
+      "id": "D-CONS",
+      "description": "|P_perd(PEIG) - (1 - |lambda|^2000)| / P_perd(PEIG) <= 0,10",
+      "value": "0.0000",
+      "pass": true,
+      "nota": ""
+    }
+  ],
+  "resumen": {
+    "B3_r4_pass": false,
+    "P_perd_1mm": {
+      "r4_W40_dz1": 0.0002459999724218065,
+      "r4_W60_dz1": 0.00024497087093067194,
+      "r4_W80_dz1": 0.00024142766258661297,
+      "r4_W40_dz05": 7.369174151272695e-05,
+      "r4_PEIG_W40_dz1": 0.0002498538437699649
+    },
+    "G3": "no ejecutado: condicion no cumplida",
+    "estado": "done",
+    "criterios_no_evaluados": [],
+    "runs_faltantes": [],
+    "citados_de_r2_no_reevaluados": {
+      "G0_R0_0.05": 0.00022791,
+      "s0_34_w6": 0.00024293,
+      "W60c_s0_28": 0.00024745,
+      "disc_Lanczos": 0.00024596,
+      "dz05_analitico_r2": 7.3692e-05
+    },
+    "nota_protocolo": "prueba (a) no aplica (el esquema ya es split-step de Strang); sustituida por P-EIG (declarado en el contrato)"
+  },
+  "texto": "B3-r4 NO PASA. P_perd(1 mm): r4_W40_dz1=2.4600e-04, r4_W60_dz1=2.4497e-04, r4_W80_dz1=2.4143e-04, r4_W40_dz05=7.3692e-05, r4_PEIG_W40_dz1=2.4985e-04. G3: no ejecutado: condicion no cumplida."
+}

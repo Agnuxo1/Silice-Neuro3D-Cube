@@ -1,0 +1,8 @@
+Tarea I4 (curvas, ronda 4) L=100 h=0.25 NMODES=12 OMP=1
+Analitica LP01 neff=1.442192165457
+[L=100] N=801 recto neff=1.442191871838 err_analitica=-2.936e-07 resid=6.34e-16 t=403.2s
+[L=100] R=50 mm neff=1.442194819527 dn=+2.9477e-06 S_prev=0.998787 S_rec=0.998787 x_t=111.01 resid=7.1e-16 t=91.8s 
+[L=100] R=20 mm neff=1.442210322527 dn=+1.8451e-05 S_prev=0.997248 S_rec=0.992406 x_t=44.62 resid=8.0e-16 t=56.3s 
+[L=100] R=10 mm neff=1.442266302764 dn=+7.4431e-05 S_prev=0.983756 S_rec=0.961102 x_t=22.70 resid=1.4e-15 t=64.1s 
+[L=100] R=7 mm neff=1.442348958500 dn=+1.5709e-04 S_prev=0.689941 S_rec=0.651548 x_t=16.29 resid=2.7e-15 t=57.6s FALLO: S_prev <= 0,9: modo perdido por continuacion
+[L=100] fin: 674.0 s
