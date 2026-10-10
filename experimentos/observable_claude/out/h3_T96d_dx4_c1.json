@@ -1,0 +1,17 @@
+{
+ "kind": "T96d",
+ "dx_um": 0.39999999999999997,
+ "N": 320,
+ "domain_um": 128.0,
+ "chunk": 1,
+ "steps_done": 800,
+ "final": true,
+ "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+ "observable_cobertura_sha256": "6d5fd53dfbfaff1805c803c897d87db049e4a6599e7474fc3f221c0fea47dd33",
+ "P16_009d_convention": 0.33267434735736884,
+ "P64_cobertura_H1": 0.33267219533068204,
+ "Pc_centro_original": 0.3325012628344374,
+ "int_abs_dn_over_abs_DN_dx2": 3.231074999999999e-10,
+ "P_total_remaining_sum_abs2_dx2": 0.7676480569670308,
+ "elapsed_s": 21.249
+}

@@ -1,0 +1,38 @@
+{
+ "tarea": "H3b",
+ "nota": "campo 009d leido, no reproducido en esta tarea; P16 debe igualar la cifra de 009d",
+ "P16_minus_009d_reserve": 0.0,
+ "state_sha256": "d90d1825236d1eacb0973eca7de2bb447a709bb39e1e0c174856adaa65588267",
+ "resultados": {
+  "P16": {
+   "P28": 0.3329871268545929,
+   "P05": 0.33223675582032003,
+   "P04": 0.33267434735736884,
+   "Q5_spread_rel": 0.0022558543898267523,
+   "Q5_pass": true,
+   "PR1_in_band": true,
+   "PR2_abs_diff_28_04": 0.0003127794972240805,
+   "PR2_pass": true
+  },
+  "P64": {
+   "P28": 0.3329793413388558,
+   "P05": 0.3322331730863075,
+   "P04": 0.33267219533068204,
+   "Q5_spread_rel": 0.002243249882236016,
+   "Q5_pass": true,
+   "PR1_in_band": true,
+   "PR2_abs_diff_28_04": 0.00030714600817377535,
+   "PR2_pass": true
+  },
+  "Pc": {
+   "P28": 0.3336552798588233,
+   "P05": 0.3280780833430851,
+   "P04": 0.3325012628344374,
+   "Q5_spread_rel": 0.016828612793257373,
+   "Q5_pass": false,
+   "PR1_in_band": false,
+   "PR2_abs_diff_28_04": 0.0011540170243858894,
+   "PR2_pass": false
+  }
+ }
+}

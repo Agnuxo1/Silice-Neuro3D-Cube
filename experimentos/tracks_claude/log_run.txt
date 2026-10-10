@@ -1,0 +1,75 @@
+[04:09:45Z] inicio
+[04:09:45Z] fracs N=8: f_formula=0.16667 f_union_grid=0.16666 overlap=False dmin=6.888
+[04:09:46Z] fracs N=16: f_formula=0.33333 f_union_grid=0.33335 overlap=False dmin=3.512
+[04:09:46Z] fracs N=24: f_formula=0.50000 f_union_grid=0.44142 overlap=True dmin=2.349
+[04:09:46Z] fracs N=32: f_formula=0.66667 f_union_grid=0.46872 overlap=True dmin=1.764
+[04:09:46Z] fracs N=48: f_formula=1.00000 f_union_grid=0.48651 overlap=True dmin=1.177
+[04:09:46Z] fracs N=64: f_formula=1.33333 f_union_grid=0.49248 overlap=True dmin=0.883
+[04:09:47Z] fracs N=96: f_formula=2.00000 f_union_grid=0.49667 overlap=True dmin=0.589
+[04:09:49Z] analitica i: n_ring=1.439000 raices=1 Re neff=1.44219587036024 Im neff=1.3041413023255438e-05
+[04:09:52Z] analitica iv: n_ring=1.439000 raices=1 Re neff=1.44273267702966 Im neff=6.857053465955409e-05
+[04:09:54Z] analitica iii_N8: n_ring=1.443168 raices=1 Re neff=1.443143804523525 Im neff=0.0002991113744279783
+[04:09:57Z] analitica iii_N16: n_ring=1.442335 raices=1 Re neff=1.4428109750342164 Im neff=0.00014530234385991576
+[04:09:59Z] analitica iii_N24: n_ring=1.441502 raices=1 Re neff=1.4425896365234863 Im neff=7.529901262142363e-05
+[04:10:02Z] analitica iii_N32: n_ring=1.440669 raices=1 Re neff=1.442425439045726 Im neff=4.0571219253653476e-05
+[04:10:04Z] analitica iii_N48: n_ring=1.439000 raices=1 Re neff=1.44219587036024 Im neff=1.3041413023255438e-05
+[04:10:06Z] analitica iii_N64: n_ring=1.437329 raices=1 Re neff=1.4420412520395178 Im neff=4.733405545350512e-06
+[04:10:09Z] analitica iii_N96: n_ring=1.433983 raices=2 Re neff=1.441840532256793 Im neff=8.261825737837858e-07
+[04:10:09Z] sigma_neff (raiz analitica del caso i) = 1.44219587036024
+[04:10:13Z] i|L40|h0.25: n_core=1.4421952407054077 idx=6 P_in=0.8181459009632874 top=1.4423525201 P_in_top=9.624e-03 unk=101761 t=3.9s
+[04:10:16Z] iv|L40|h0.25: n_core=None idx=None P_in=None top=1.4423658288 P_in_top=8.883e-03 unk=101761 t=3.3s
+[04:10:20Z] ii_N8|L40|h0.25: n_core=None idx=None P_in=None top=1.4424369397 P_in_top=1.773e-01 unk=101761 t=4.2s
+[04:10:25Z] ii_N16|L40|h0.25: n_core=None idx=None P_in=None top=1.4423685888 P_in_top=1.412e-02 unk=101761 t=5.2s
+[04:10:31Z] ii_N24|L40|h0.25: n_core=None idx=None P_in=None top=1.4423670625 P_in_top=1.116e-02 unk=101761 t=5.5s
+[04:10:38Z] ii_N32|L40|h0.25: n_core=None idx=None P_in=None top=1.4423665347 P_in_top=1.004e-02 unk=101761 t=6.8s
+[04:10:47Z] ii_N48|L40|h0.25: n_core=None idx=None P_in=None top=1.4423661545 P_in_top=9.383e-03 unk=101761 t=9.0s
+[04:10:56Z] ii_N64|L40|h0.25: n_core=None idx=None P_in=None top=1.4423660107 P_in_top=9.147e-03 unk=101761 t=9.7s
+[04:11:10Z] ii_N96|L40|h0.25: n_core=None idx=None P_in=None top=1.4423659212 P_in_top=9.049e-03 unk=101761 t=13.5s
+[04:11:13Z] iii_N8|L40|h0.25: n_core=None idx=None P_in=None top=1.4424286796 P_in_top=1.906e-01 unk=101761 t=3.1s
+[04:11:16Z] iii_N16|L40|h0.25: n_core=None idx=None P_in=None top=1.4423626988 P_in_top=6.168e-03 unk=101761 t=3.1s
+[04:11:19Z] iii_N24|L40|h0.25: n_core=None idx=None P_in=None top=1.4423587751 P_in_top=5.471e-03 unk=101761 t=3.0s
+[04:11:23Z] iii_N32|L40|h0.25: n_core=None idx=None P_in=None top=1.4423555123 P_in_top=6.388e-03 unk=101761 t=3.4s
+[04:11:26Z] iii_N48|L40|h0.25: n_core=1.4421952407054077 idx=6 P_in=0.818145900963285 top=1.4423525201 P_in_top=9.624e-03 unk=101761 t=3.5s
+[04:11:29Z] iii_N64|L40|h0.25: n_core=1.4420598804715135 idx=8 P_in=0.673848473038093 top=1.4423484098 P_in_top=1.942e-03 unk=101761 t=3.1s
+[04:11:33Z] iii_N96|L40|h0.25: n_core=None idx=None P_in=None top=1.4423436842 P_in_top=1.057e-03 unk=101761 t=3.4s
+[04:11:52Z] i|L40|h0.125: n_core=1.4421954525374654 idx=6 P_in=0.8178516943865929 top=1.4423522810 P_in_top=9.916e-03 unk=408321 t=19.1s
+[04:12:10Z] iv|L40|h0.125: n_core=None idx=None P_in=None top=1.4423655632 P_in_top=9.294e-03 unk=408321 t=17.9s
+[04:12:29Z] ii_N8|L40|h0.125: n_core=None idx=None P_in=None top=1.4424365457 P_in_top=1.776e-01 unk=408321 t=19.3s
+[04:12:52Z] ii_N16|L40|h0.125: n_core=None idx=None P_in=None top=1.4423683274 P_in_top=1.495e-02 unk=408321 t=23.0s
+[04:13:20Z] ii_N24|L40|h0.125: n_core=None idx=None P_in=None top=1.4423667993 P_in_top=1.173e-02 unk=408321 t=27.3s
+[04:13:52Z] ii_N32|L40|h0.125: n_core=None idx=None P_in=None top=1.4423662627 P_in_top=1.051e-02 unk=408321 t=32.3s
+[04:14:44Z] ii_N48|L40|h0.125: n_core=None idx=None P_in=None top=1.4423658792 P_in_top=9.802e-03 unk=408321 t=51.4s
+[04:16:21Z] ii_N64|L40|h0.125: n_core=None idx=None P_in=None top=1.4423657427 P_in_top=9.572e-03 unk=408321 t=97.2s
+[04:21:19Z] ii_N96|L40|h0.125: n_core=None idx=None P_in=None top=1.4423656421 P_in_top=9.411e-03 unk=408321 t=297.7s
+[04:23:08Z] iii_N8|L40|h0.125: n_core=None idx=None P_in=None top=1.4424284032 P_in_top=1.911e-01 unk=408321 t=108.6s
+[04:24:14Z] iii_N16|L40|h0.125: n_core=None idx=None P_in=None top=1.4423624107 P_in_top=6.347e-03 unk=408321 t=65.7s
+[04:25:00Z] iii_N24|L40|h0.125: n_core=None idx=None P_in=None top=1.4423584889 P_in_top=5.634e-03 unk=408321 t=45.2s
+[04:25:54Z] iii_N32|L40|h0.125: n_core=None idx=None P_in=None top=1.4423552242 P_in_top=6.583e-03 unk=408321 t=54.0s
+[04:26:48Z] iii_N48|L40|h0.125: n_core=1.4421954525374654 idx=6 P_in=0.8178516943866028 top=1.4423522810 P_in_top=9.916e-03 unk=408321 t=53.7s
+[04:27:40Z] iii_N64|L40|h0.125: n_core=1.4420600720651706 idx=8 P_in=0.6797010744186075 top=1.4423481527 P_in_top=2.006e-03 unk=408321 t=52.4s
+[04:28:06Z] iii_N96|L40|h0.125: n_core=None idx=None P_in=None top=1.4423434310 P_in_top=1.100e-03 unk=408321 t=25.4s
+[04:28:08Z] i|L40|h0.5: n_core=1.442195044812039 idx=6 P_in=0.8184858269046701 top=1.4423535152 P_in_top=8.845e-03 unk=25281 t=1.7s
+[04:28:10Z] ii_N8|L40|h0.5: n_core=None idx=None P_in=None top=1.4424380267 P_in_top=1.762e-01 unk=25281 t=2.4s
+[04:28:15Z] ii_N48|L40|h0.5: n_core=None idx=None P_in=None top=1.4423672104 P_in_top=7.897e-03 unk=25281 t=4.7s
+[04:28:27Z] i|L50|h0.25: n_core=1.4421934698951175 idx=8 P_in=0.7632067178002742 top=1.4423222848 P_in_top=1.311e-03 unk=159201 t=11.9s
+[04:28:51Z] ii_N48|L50|h0.25: n_core=None idx=None P_in=None top=1.4423306516 P_in_top=3.124e-03 unk=159201 t=24.5s
+[04:29:01Z] i|L60|h0.25: n_core=1.442189101534691 idx=5 P_in=0.5384983567273862 top=1.4422998377 P_in_top=2.681e-03 unk=229441 t=10.1s
+[04:29:08Z] ii_N8_phshift|L40|h0.25|ph0.3927: n_core=None idx=None P_in=None top=1.4424373662 P_in_top=1.772e-01 unk=101761 t=6.2s
+[04:29:15Z] ii_N16_phshift|L40|h0.25|ph0.1963: n_core=None idx=None P_in=None top=1.4423685935 P_in_top=1.419e-02 unk=101761 t=7.5s
+[04:29:15Z] CRIT C1_i: pass=True evaluable=True value=2.1183205767272284e-07
+[04:29:15Z] CRIT C1_ii_N8: pass=False evaluable=False value=None
+[04:29:15Z] CRIT C1_ii_N48: pass=False evaluable=False value=None
+[04:29:15Z] CRIT C1b_i: pass=False evaluable=True value=-0.11285237610629727
+[04:29:15Z] CRIT C2_i: pass=True evaluable=True value=1.7708102901803358e-06
+[04:29:15Z] CRIT C2_ii_N48: pass=False evaluable=False value=None
+[04:29:15Z] CRIT C3: pass=True evaluable=True value=4.178227746010066e-07
+[04:29:15Z] CRIT C3b: pass=False evaluable=True value={'err_L40': 6.296548322737294e-07, 'err_L60': 6.7688255489528615e-06}
+[04:29:15Z] CRIT C4: pass=False evaluable=True value={'n_runs': 40, 'fallos': ['iv|L40|h0.25', 'ii_N8|L40|h0.25', 'ii_N16|L40|h0.25', 'ii_N24|L40|h0.25', 'ii_N32|L40|h0.25', 'ii_N48|L40|h0.25', 'ii_N64|L40|h0.25', 'ii_N96|L40|h0.25', 'iii_N8|L40|h0.25', 'iii_N16|L40|h0.25', 'iii_N24|L40|h0.25', 'iii_N32|L40|h0.25', 'iii_N96|L40|h0.25', 'iv|L40|h0.125', 'ii_N8|L40|h0.125', 'ii_N16|L40|h0.125', 'ii_N24|L40|h0.125', 'ii_N32|L40|h0.125', 'ii_N48|L40|h0.125', 'ii_N64|L40|h0.125', 'ii_N96|L40|h0.125', 'iii_N8|L40|h0.125', 'iii_N16|L40|h0.125', 'iii_N24|L40|h0.125', 'iii_N32|L40|h0.125', 'iii_N96|L40|h0.125', 'ii_N8|L40|h0.5', 'ii_N48|L40|h0.5', 'ii_N48|L50|h0.25', 'ii_N8_phshift|L40|h0.25|ph0.3927', 'ii_N16_phshift|L40|h0.25|ph0.1963']}
+[04:29:15Z] CRIT C5a: pass=True evaluable=True value={8: 0.16666666666666669, 16: 0.33333333333333337}
+[04:29:15Z] CRIT C5b: pass=True evaluable=True value=5.4231181632724557e-05
+[04:29:15Z] CRIT C6_N48: pass=False evaluable=False value=None
+[04:29:15Z] CRIT C6_N64: pass=False evaluable=False value=None
+[04:29:15Z] CRIT C6_N96: pass=False evaluable=False value=None
+[04:29:15Z] CRIT C7: pass=False evaluable=False value=None
+[04:29:15Z] status=partial
+[04:29:15Z] fin

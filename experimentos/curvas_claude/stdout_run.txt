@@ -1,0 +1,45 @@
+Tarea I (curvas) - ejecucion; OMP_NUM_THREADS=1
+solver2d desde: D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\solver2d_claude
+Analitica LP01: V=2.920161 U=1.7568771017 W=2.3325353271 neff=1.4421921654570122 U<2.4048=True
+[recto] h=0.5 N=161 unknowns=25281 neff=1.442191174270 err=-9.912e-07 t=4.1s
+[R=5 mm] h=0.5 neff=1.445565909185 D=+3.374735e-03 <x>=+28.62780 um P_out=9.045e-01 P_core=0.0000 S=0.0000 modo=8 t=1.4s
+[R=10 mm] h=0.5 neff=1.442265595510 D=+7.442124e-05 <x>=+1.04861 um P_out=9.924e-05 P_core=0.8648 S=0.9689 modo=4 t=0.8s
+[R=20 mm] h=0.5 neff=1.442209635648 D=+1.846138e-05 <x>=+0.51257 um P_out=0.000e+00 P_core=0.8781 S=0.9924 modo=0 t=1.0s
+[R=50 mm] h=0.5 neff=1.442194123654 D=+2.949384e-06 <x>=+0.20437 um P_out=0.000e+00 P_core=0.8815 S=0.9988 modo=0 t=1.6s
+  espectro top (recto, h=0.5): 1.44219117, 1.43976956, 1.43976956, 1.43887393
+[recto] h=0.25 N=321 unknowns=101761 neff=1.442191871838 err=-2.936e-07 t=12.8s
+[R=5 mm] h=0.25 neff=1.445562299296 D=+3.370427e-03 <x>=+28.61106 um P_out=8.980e-01 P_core=0.0000 S=0.0000 modo=8 t=4.8s
+[R=10 mm] h=0.25 neff=1.442266248115 D=+7.437628e-05 <x>=+1.04788 um P_out=9.931e-05 P_core=0.8707 S=0.9689 modo=4 t=4.4s
+[R=20 mm] h=0.25 neff=1.442210322525 D=+1.845069e-05 <x>=+0.51226 um P_out=0.000e+00 P_core=0.8837 S=0.9924 modo=0 t=5.2s
+[R=50 mm] h=0.25 neff=1.442194819527 D=+2.947689e-06 <x>=+0.20426 um P_out=0.000e+00 P_core=0.8870 S=0.9988 modo=0 t=8.6s
+  espectro top (recto, h=0.25): 1.44219187, 1.43976646, 1.43976646, 1.43887379
+[recto] h=0.125 N=641 unknowns=408321 neff=1.442192239396 err=+7.394e-08 t=65.8s
+[R=5 mm] h=0.125 neff=1.445561398635 D=+3.369159e-03 <x>=+28.60689 um P_out=9.006e-01 P_core=0.0000 S=0.0000 modo=8 t=24.2s
+[R=10 mm] h=0.125 neff=1.442266617237 D=+7.437784e-05 <x>=+1.04786 um P_out=9.789e-05 P_core=0.8726 S=0.9690 modo=4 t=30.5s
+[R=20 mm] h=0.125 neff=1.442210690680 D=+1.845128e-05 <x>=+0.51228 um P_out=0.000e+00 P_core=0.8855 S=0.9924 modo=0 t=38.6s
+[R=50 mm] h=0.125 neff=1.442195187187 D=+2.947791e-06 <x>=+0.20426 um P_out=0.000e+00 P_core=0.8888 S=0.9988 modo=0 t=41.6s
+  espectro top (recto, h=0.125): 1.44219224, 1.43976608, 1.43976608, 1.43887376
+[dominio] recto L=80 h=0.5 neff=1.442191174270 ; R=10 L=80 h=0.5 neff=1.448733277015
+[scan] R=2.00 mm neff=1.4587219117 x_t=27.411 um P_out=9.0124e-01 P_core=0.0000 S=0.0000
+[scan] R=2.50 mm neff=1.4542042420 x_t=26.415 um P_out=9.0174e-01 P_core=0.0000 S=0.0000
+[scan] R=3.00 mm neff=1.4512527345 x_t=25.544 um P_out=8.9547e-01 P_core=0.0000 S=0.0000
+[scan] R=3.50 mm neff=1.4491823068 x_t=24.766 um P_out=8.9459e-01 P_core=0.0000 S=0.0000
+[scan] R=4.00 mm neff=1.4476549161 x_t=24.058 um P_out=8.9736e-01 P_core=0.0000 S=0.0000
+[scan] R=4.50 mm neff=1.4464849678 x_t=23.407 um P_out=9.0249e-01 P_core=0.0000 S=0.0000
+[scan] R=5.00 mm neff=1.4455622993 x_t=22.802 um P_out=8.9802e-01 P_core=0.0000 S=0.0000
+[scan] R=7.50 mm neff=1.4426266854 x_t=18.902 um P_out=9.4531e-01 P_core=0.0003 S=0.0004
+[scan] R=10.00 mm neff=1.4422662481 x_t=22.698 um P_out=9.9312e-05 P_core=0.8707 S=0.9689
+[scan] R=20.00 mm neff=1.4422103225 x_t=44.619 um P_out=0.0000e+00 P_core=0.8837 S=0.9924
+[scan] R=50.00 mm neff=1.4421948195 x_t=111.008 um P_out=0.0000e+00 P_core=0.8870 S=0.9988
+C0 pass=True  |neff_recto(h=0,125) - neff_analitica| <= 1e-6  value=7.3938986044908e-08
+C1 pass=False  |neff(R=50 mm,h=0,125) - neff_recto| <= 1e-6  value=2.9477908907171724e-06
+C2 pass=False  n_eff decrece al bajar R en h=0,125: n(50)>n(20)>n(10)>n(5)  value={"n50": 1.442195187186889, "n20": 1.4422106906801122, "n10": 1.4422666172373386, "n5": 1.4455613986354952}
+C3 pass=True  |D(h=0,25)-D(h=0,125)| <= 0,10 |D(h=0,125)| para R=5 y 10 mm  value={"R5": {"D_h025": 0.0033704274577015525, "D_h0125": 0.0033691592394968772, "rel_change": 0.00037641978740804476}, "R10": {"D_h025": 7.437627674100611e-05, "D_h0125": 7.437784134034509e-05, "rel_change": 2.1035826138289642e-05}}
+C4 pass=False  <x>(5 mm) > 0 y 1,8 <= <x>(5)/<x>(10) <= 2,2 (h=0,125)  value={"x5_um": 28.606889074357976, "x10_um": 1.0478586402086054, "ratio": 27.300332293545797}
+C5 pass=False  D(5 mm)>0, D(10 mm)>0 y 3,6 <= D(5)/D(10) <= 4,4 (h=0,125)  value={"D5": 0.0033691592394968772, "D10": 7.437784134034509e-05, "ratio": 45.297889516313916}
+C6 pass=False  |L40-L80| <= 1e-7 (recto) y <= 1e-6 (R=10 mm), h=0,5  value={"recto": 1.5543122344752192e-15, "R10": 0.006467681504684242}
+C7 pass=False  R_c,num/R_c,A en [0,67; 1,5] y ambos en [2; 5] mm  value={"R_cA_mm": 2.704684370108192, "R_cA_sens_mm": 3.864217938899991, "R_c_num_mm": 8.651671661170873, "all_crossings_mm": [8.651671661170873], "ratio": 3.1987731199943275}
+C8 pass=True  norma |sum|psi|^2 h^2 -1| <= 1e-10 y simetria y: max|psi(x,y)-psi(x,-y)|/max|psi| <= 1e-6 (curvas, h=0,125)  value={"R5_h0.125": {"norm_err": 2.220446049250313e-16, "y_mirror_rel": 1.439620241578815e-13}, "R10_h0.125": {"norm_err": 4.440892098500626e-16, "y_mirror_rel": 1.1109673083057483e-14}, "R20_h0.125": {"norm_err": 0.0, "y_mirror_rel": 4.27333283881583e-15}, "R50_h0.125": {"norm_err": 0.0, "y_mirror_rel": 7.823702891206635e-15}}
+C9 pass=False  solapamiento S >= 0,90 con el LP01 recto (h=0,125)  value={"R5_h0.125": 1.352499367299955e-06, "R10_h0.125": 0.9689560449998901, "R20_h0.125": 0.9924080968516009, "R50_h0.125": 0.9987876497373487, "recto": 1.0}
+Resumen: 3/10 criterios pass=true. Tiempo 317.4 s.
+Escrito: D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\curvas_claude\resultados.json

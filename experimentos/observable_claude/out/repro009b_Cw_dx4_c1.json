@@ -1,0 +1,12 @@
+{
+ "case": "Cw",
+ "dx_um": 0.39999999999999997,
+ "N": 320,
+ "chunk": 1,
+ "steps_done": 800,
+ "final": true,
+ "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+ "weighted_16x16": 0.3585038476226798,
+ "unweighted_center": 0.35837387020047806,
+ "elapsed_s": 18.805
+}

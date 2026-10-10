@@ -1,0 +1,12 @@
+{
+ "case": "T96w",
+ "dx_um": 0.39999999999999997,
+ "N": 320,
+ "chunk": 1,
+ "steps_done": 800,
+ "final": true,
+ "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+ "weighted_16x16": 0.32944026118952374,
+ "unweighted_center": 0.3292693776276569,
+ "elapsed_s": 20.146
+}
