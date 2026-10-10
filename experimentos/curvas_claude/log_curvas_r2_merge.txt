@@ -1,0 +1,8 @@
+Merge de partes: [{"archivo": "resultados_curvas_r2_P1.json", "estado": "parcial", "n_recto": 3, "n_casos": 9}, {"archivo": "resultados_curvas_r2_L100.json", "estado": "completo", "n_recto": 1, "n_casos": 3}]
+I2.0 evaluado=True pass=True  |n_recto(L,h=0,25) - n_analitica| <= 1e-6 para todo L y |sum psi^2 h^2 - 1| <= 1e-10 (nucleo)
+I2.1 evaluado=True pass=False  |n_eff(L=100) - n_eff(L=80)| < 1e-6 a h=0,25 con S>0,90 para R = 10, 20, 50 mm
+I2.2 evaluado=True pass=False  S > 0,90 y sin corte espectral para los 12 pares (R, L), h=0,25
+I2.3 evaluado=False pass=None  n(50)-n(20) > u y n(20)-n(10) > u a L=100, h=0,25 (solo si I2.1 pasa para R=10)
+I2.4 evaluado=False pass=None  radio critico (C7 ronda 1 citado, no evaluado en ronda 2)
+Resumen: {"n_criterios": 5, "n_evaluados": 3, "n_pass": 1, "pass_list": ["I2.0"], "fail_list": ["I2.1", "I2.2"], "no_evaluados": ["I2.3", "I2.4"]}
+Escrito D:/PROJECTS/.cognition/audit/silice-origin-main/experimentos/curvas_claude\resultados_curvas_r2.json

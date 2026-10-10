@@ -1,0 +1,12 @@
+Tarea I2 ronda 2 (curvas): NM=40 h=0.25 Ls=[40.0, 60.0, 80.0, 100.0] radios=[10.0, 20.0, 50.0]
+Analitica LP01: V=2.920161 U=1.7568771017 neff=1.4421921654570122
+OMP_NUM_THREADS=1 solver2d desde D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\solver2d_claude
+[recto] L=100 h=0.25 N=801 neff=1.442191871838 err=-2.936e-07 t=508.2s
+[R=10 L=100 h=0.25] neff=1.449204697052 S=0.000000 idx=35 corte=False x_t=70.92 P_out=9.130e-01 P_core=0.0000 <x>=+80.6363 D=+7.013e-03 t=193.6s
+   top-5 neff: 1.45161491, 1.45159939, 1.45157353, 1.45153733, 1.45149078
+[R=20 L=100 h=0.25] neff=1.443552572192 S=0.000000 idx=28 corte=False x_t=63.27 P_out=9.098e-01 P_core=0.0000 <x>=+75.5660 D=+1.361e-03 t=120.1s
+   top-5 neff: 1.44507306, 1.44505747, 1.44503149, 1.44499513, 1.44494837
+[R=50 L=100 h=0.25] neff=1.442194819527 S=0.998787 idx=0 corte=False x_t=111.01 P_out=0.000e+00 P_core=0.8870 <x>=+0.2043 D=+2.948e-06 t=158.3s
+   top-5 neff: 1.44219482, 1.44126596, 1.44125033, 1.44122428, 1.44118782
+Resumen fase 1: {"n_criterios": 0, "n_evaluados": 0, "n_pass": 0, "pass_list": [], "fail_list": [], "no_evaluados": []}
+Escrito D:/PROJECTS/.cognition/audit/silice-origin-main/experimentos/curvas_claude/resultados_curvas_r2_L100.json. Tiempo total 981.4 s.

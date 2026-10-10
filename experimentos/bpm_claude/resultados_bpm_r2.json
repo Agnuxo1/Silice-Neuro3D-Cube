@@ -1,0 +1,114 @@
+{
+  "fecha_utc": "2026-10-10T04:57:33+00:00",
+  "status": "partial",
+  "sin_evaluar": [
+    "D6",
+    "D1",
+    "D2",
+    "D4",
+    "D5",
+    "G3.d14",
+    "G3.d16",
+    "G3"
+  ],
+  "perdida_1mm_por_corrida": {
+    "base": 0.0002459999724218065,
+    "G0": null,
+    "s0": 0.00024292790057145464,
+    "disc": null,
+    "dz05": null,
+    "W60": null,
+    "W60c": null,
+    "W80": null
+  },
+  "regla_R_seleccion": "base",
+  "hipotesis_con_evidencia": [],
+  "B2_2_pass": false,
+  "G3_zmax_vs_Lc": {},
+  "criterios": [
+    {
+      "id": "C0",
+      "description": "n_eff analitico |dif| vs 1,4421922 <= 1e-6",
+      "value": "3.454e-08 (n_eff=1.4421921655)",
+      "threshold": "1e-6",
+      "pass": true
+    },
+    {
+      "id": "V0",
+      "description": "unitariedad sin CAP (200 um): max|P/P0-1| <= 1e-9",
+      "value": "1.029e-13",
+      "threshold": "1e-9",
+      "pass": true
+    },
+    {
+      "id": "D6",
+      "description": "autoestado discreto: |n_eff,disc - n_eff,analitico| <= 1e-5",
+      "value": "no evaluado",
+      "threshold": "1e-5",
+      "pass": null
+    },
+    {
+      "id": "D1",
+      "description": "contorno: |P_perd(W=80)-P_perd(W=60)|/P_perd(W=80) <= 0,10 (CAP relativo)",
+      "value": null,
+      "threshold": "0,10",
+      "pass": null
+    },
+    {
+      "id": "D2",
+      "description": "CAP amplitud: |P_perd(R0=0,05)-P_perd(R0=0,5)|/P_perd(R0=0,5) <= 0,10",
+      "value": null,
+      "threshold": "0,10",
+      "pass": null
+    },
+    {
+      "id": "D3",
+      "description": "CAP posicion/ancho: |P_perd(s0=34,w=6)-P_perd(base)|/P_perd(base) <= 0,10",
+      "value": "0.0125 (s0=2.4293e-04)",
+      "threshold": "0,10",
+      "pass": true
+    },
+    {
+      "id": "D4",
+      "description": "paso dz: |P_perd(dz=0,5)-P_perd(dz=1)|/P_perd(dz=1) <= 0,10",
+      "value": null,
+      "threshold": "0,10",
+      "pass": null
+    },
+    {
+      "id": "D5",
+      "description": "dato discreto: P_perd(1 mm) <= 1e-5 (W=40, CAP base)",
+      "value": null,
+      "threshold": "1e-5",
+      "pass": null
+    },
+    {
+      "id": "B2.2",
+      "description": "B3 repetido con umbral 1e-5 en la configuracion seleccionada (base)",
+      "value": "2.4600e-04",
+      "threshold": "1e-5",
+      "pass": false
+    },
+    {
+      "id": "G3.d14",
+      "description": "G3 d=14 um: |z_max(P2)-L_c|/L_c <= 0,10",
+      "value": "no evaluado",
+      "threshold": "0,10",
+      "pass": null
+    },
+    {
+      "id": "G3.d16",
+      "description": "G3 d=16 um: |z_max(P2)-L_c|/L_c <= 0,10",
+      "value": "no evaluado",
+      "threshold": "0,10",
+      "pass": null
+    },
+    {
+      "id": "G3",
+      "description": "G3 global: ambos d (14 y 16) cumplen el 10 %",
+      "value": "ver G3.d14 y G3.d16",
+      "threshold": "0,10",
+      "pass": null
+    }
+  ]
+}

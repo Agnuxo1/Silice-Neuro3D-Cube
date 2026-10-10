@@ -1,0 +1,2 @@
+[s0] perdida(1mm)=2.4293e-04 ov2=0.9999916752 neff_impl=1.4421924192 unit=2.43e-04 t=91.9s
+[disc] perdida(1mm)=2.4596e-04 ov2=0.9999926558 neff_impl=1.4421924195 unit=2.46e-04 t=201.7s
