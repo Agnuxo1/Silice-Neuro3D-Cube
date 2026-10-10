@@ -1,0 +1,2 @@
+[unit] max|P/P0-1| sin CAP (z<=100, dz=0,125) = 3.824e-13
+[dz1] dz=1.0 perdida(1mm)=2.460000e-04 ov2=0.999992613 t_prop=62.9s (62.86 ms/paso)
