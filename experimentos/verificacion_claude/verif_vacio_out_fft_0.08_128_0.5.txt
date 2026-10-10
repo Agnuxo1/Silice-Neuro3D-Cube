@@ -1,0 +1,1 @@
+fft_th0.08_dom128_dx0.500_dz2.50_f0.2_p4_s40000 z_arr=0.30 mm max|dP|/P0=9.2985e-03 @ z=1.10 mm Ptot(end)=0.042710 t=24.7s

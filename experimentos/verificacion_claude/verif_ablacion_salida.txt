@@ -1,0 +1,17 @@
+crosscheck {'unitary_diff': 0.0, 'logits_full_diff': 0.0, 'logits_real_diff': 0.0, 'logits_m1_diff': 0.0, 'task_Y_TR_equal': True, 'task_Y_TE_equal': True, 'X_equal': True, 'class_balance_test': [701, 242, 1050, 7], 'chance_majority_test': 0.525}
+M_full seed 5 train 0.653 test 0.6425 loss 0.962343314 succ True nit 131 29 s
+M_nonlin_off seed 2 train 0.849 test 0.862 loss 0.689713059 succ True nit 55 39 s
+M_det_off seed 7 train 0.5795 test 0.5905 loss 1.095343425 succ True nit 21 42 s
+M_real seed 7 train 0.847 test 0.8455 loss 0.390157917 succ False nit 300 82 s
+M1 seed 8 train 0.5795 test 0.5905 loss 1.095343425 succ True nit 40 84 s
+E0 {'test_acc': 0.6425, 'dif_vs_0_6425': 0.0, 'best_seed': 5, 'max_dif_loss_8_semillas': 0.0, 'max_dif_test_acc_8_semillas': 0.0, 'pred_mismatch_best': 0} 
+E1 {'test_acc': 0.5905, 'dif_vs_0_5905': 0.0, 'pred_mismatch': 0} 
+E2 {'test_acc': 0.8455, 'dif_vs_guardado': 0.0, 'pred_mismatch': 0}
+H-A1 (M_full - M_nonlin_off) {"punto": -0.21950000000000003, "n_a_ok_b_mal": 39, "n_a_mal_b_ok": 478, "ic_normal_pareado": [-0.239599307843804, -0.19940069215619605], "mcnemar_exacto_p": 3.831273397235884e-97, "boot_seed777": {"media": -0.21937555000000003, "ci95": [-0.24, -0.1995]}, "boot_seed4242": {"media": -0.21933030000000003, "ci95": [-0.2395, -0.1995]}, "boot_seed20261013": {"media": -0.2185375, "ci95": [-0.2385, -0.1979875]}}
+H-A2 (M_nonlin_off - M_det_off) {"punto": 0.27149999999999996, "n_a_ok_b_mal": 728, "n_a_mal_b_ok": 185, "ic_normal_pareado": [0.24438434566159242, 0.29861565433840753], "mcnemar_exacto_p": 9.018397304207664e-77, "boot_seed777": {"media": 0.2715369, "ci95": [0.245, 0.2985]}, "boot_seed4242": {"media": 0.2716649, "ci95": [0.245, 0.2985]}, "boot_seed20261013": {"media": 0.270891, "ci95": [0.244, 0.299]}}
+H-A3 (M_det_off - M1) {"punto": 0.0, "n_a_ok_b_mal": 0, "n_a_mal_b_ok": 0, "ic_normal_pareado": [0.0, 0.0], "mcnemar_exacto_p": 1.0, "boot_seed777": {"media": 0.0, "ci95": [0.0, 0.0]}, "boot_seed4242": {"media": 0.0, "ci95": [0.0, 0.0]}, "boot_seed20261013": {"media": 0.0, "ci95": [0.0, 0.0]}}
+diag_I1 {'frac_ge1': 0.315625, 'frac_ge2': 0.149, 'mediana': 0.49684569829762426, 'p95': 3.667641986033234, 'max': 15.090927181067986}
+analiticas {'unitariedad_max': 1.9984014443252818e-15, 'det_off_vs_cascada': 8.881784197001252e-15}
+sonda 4.0 {'best_seed': 6, 'train_acc': 0.675, 'test_acc': 0.669, 'nit': 61, 'succ': True, 'punto_vs_nonlin_off': -0.193, 'ci95': [-0.2115, -0.1745]}
+sonda 8.0 {'best_seed': 7, 'train_acc': 0.6045, 'test_acc': 0.6105, 'nit': 116, 'succ': True, 'punto_vs_nonlin_off': -0.2515, 'ci95': [-0.2705, -0.2315]}
+OK 142 s

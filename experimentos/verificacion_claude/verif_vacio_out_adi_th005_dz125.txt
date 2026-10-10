@@ -1,0 +1,1 @@
+adi_th0.05_dom128_dx0.500_dz1.25_f0.2_p4_s40000 z_arr=0.35 mm max|dP|/P0=6.0583e-03 @ z=0.50 mm Ptot(end)=0.188311 t=217.7s
