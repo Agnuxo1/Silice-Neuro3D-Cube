@@ -53,3 +53,7 @@ Parámetros: V = 2,92016, U = 1,75688, W = 2,33254, β = 5,84617 µm⁻¹.
 ## Referencia para la pérdida de curva (pendiente, no verificada)
 
 Lee et al., *Scientific Reports* (2021), sobre sílice escrita con fs, da unos 1 dB/cm con radio de curvatura de 10 mm a 1550 nm (técnica de microgrietas). Es solo un fragmento de búsqueda y no se ha verificado en texto completo. Sirve como punto de partida para el protocolo de curvas. No es un resultado de este modelo.
+
+## Actualización de la referencia de curvas (verificada)
+
+La referencia de Lee et al. (2021) pasa de fragmento a texto completo: 1 dB/cm con radio de 10 mm a 1550 nm (DOI 10.1038/s41598-021-03116-y; PMC8660921). Sigue siendo una referencia bibliográfica, no un resultado de este modelo.

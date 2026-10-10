@@ -54,3 +54,9 @@ Cada parte por separado tiene competidores (Kondratyev et al., arXiv:2308.13452,
 ## 6. Decisión que necesita Fran
 
 Un socio experimental con acceso a escritura fs y cutback a 1550 nm (ver `Docs/PROTOCOLOS-BLOQUEADOS-22-TAREAS.md`, bloque T14). Sin él, H1 queda como hipótesis preregistrada, sin test.
+
+## Actualización de novedad (2026-10-10, tras la verificación en texto completo)
+
+- H1 sigue siendo un test válido, pero la contribución ya no puede presentarse como «primera trinchera a 1550 nm»: el artículo de SK1310 en banda de telecomunicaciones (2025) ya la publica (`Docs/LITERATURA-NOVEDAD.md`, sección 8).
+- La parte 3D multicapa escrita con fs está cubierta por HUST/SJTU (2026). El proyecto no debe presentarla como novedad.
+- Queda pendiente la demostración propia: un cutback medido con pérdidas de acoplo y de propagación separadas, en el mismo lote de SK-1310, con contraste frente al modelo vectorial.

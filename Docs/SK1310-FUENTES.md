@@ -42,3 +42,9 @@ La ficha indica birrefringencia de deformación ≤ 20 nm/cm, es decir, Δn ≤ 
 - Un solo fabricante, datos a 25 °C en aire, sin incertidumbres de temperatura.
 - Malitson se obtiene a partir de la relación de Sellmeier citada en fuentes secundarias.
 - La extrapolación de un ajuste de Cauchy de tres términos a 365–656 nm dio 1,4503 a 1550 nm. Eso está fuera de su validez y **no se usa**.
+
+## Corrección (2026-10-10, verificación V5)
+
+- La línea que decía que la búsqueda no localiza el artículo «ni por título ni por SK1310» es **incorrecta**: la búsqueda sí lo localiza. Título: «Femtosecond laser writing of telecom-band depressed-cladding waveguides and mode modulation in SK1310 glass» (ScienceDirect, PII S0925346725000102; Crossref).
+- El PDF completo sigue sin obtenerse: ScienceDirect devuelve 403 y Crossref no indica licencia abierta. Pendiente: que el titular o un acceso institucional lo suba.
+- La ficha OHARA está confirmada: https://oharacorp.com/wp-content/uploads/2025/02/SK1310.pdf. Las tablas son imágenes y se leyeron visualmente. El supuesto del proyecto de n(1550 nm) = 1,44463 **no está verificado** (V5, P3f).
