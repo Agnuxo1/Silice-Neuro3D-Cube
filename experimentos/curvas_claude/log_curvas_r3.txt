@@ -1,0 +1,41 @@
+Tarea I3 (curvas, ronda 3) - OMP_NUM_THREADS=1 h=0.25 NMODES=12
+solver2d desde: D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\solver2d_claude (solo cell_average y verificacion; no modificado)
+Analitica LP01: V=2.920161 U=1.7568771017 neff=1.442192165457
+[I3.0a] |wrapper - solver2d| max sobre 12 autovalores (L=40,h=0.5,recto) = 0.000e+00
+[I3.0b] |nucleo por sigma en analitica - solver2d top| (L=40,h=0.5,recto) = 0.000e+00
+[L=40] N=321 incognitas=101761 recto neff=1.442191871838 err_analitica=-2.936e-07 resid=7.54e-16 t=29.5s
+[L=40] R=50 mm neff=1.442194819527 S_prev=0.998787 S_rec=0.998787 x_t=111.008 P_out=0.0000e+00 P_core=0.8870 <x>=+0.2043 rank=0 resid=7.0e-16 t=19.4s
+[L=40] R=30 mm neff=1.442200063830 S_prev=0.999458 S_rec=0.996630 x_t=66.714 P_out=0.0000e+00 P_core=0.8859 <x>=+0.3408 rank=0 resid=6.8e-16 t=17.4s
+[L=40] R=20 mm neff=1.442210322525 S_prev=0.999146 S_rec=0.992406 x_t=44.619 P_out=0.0000e+00 P_core=0.8837 <x>=+0.5123 rank=0 resid=8.1e-16 t=14.3s
+[L=40] R=15 mm neff=1.442224725637 S_prev=0.999129 S_rec=0.986460 x_t=33.614 P_out=8.5941e-08 P_core=0.8806 <x>=+0.6855 rank=0 resid=7.0e-16 t=14.0s
+[L=40] R=10 mm neff=1.442266248115 S_prev=0.996167 S_rec=0.968946 x_t=22.698 P_out=9.9312e-05 P_core=0.8707 <x>=+1.0479 rank=0 resid=7.1e-16 t=9.6s
+[L=40] fin: 104.2 s
+[I3.0c] |n_eff(L=40,h=0.25) - n_r2| por radio = {"50.0": 9.769962616701378e-15, "20.0": 5.551115123125783e-15, "10.0": 2.5157653738006047e-13}
+[L=60] N=481 incognitas=229441 recto neff=1.442191871838 err_analitica=-2.936e-07 resid=6.24e-16 t=94.9s
+[L=60] R=50 mm neff=1.442194819527 S_prev=0.998787 S_rec=0.998787 x_t=111.008 P_out=0.0000e+00 P_core=0.8870 <x>=+0.2043 rank=0 resid=8.0e-16 t=39.9s
+[L=60] R=30 mm neff=1.442200063831 S_prev=0.999458 S_rec=0.996630 x_t=66.714 P_out=0.0000e+00 P_core=0.8859 <x>=+0.3408 rank=0 resid=6.7e-16 t=28.6s
+[L=60] R=20 mm neff=1.442210322531 S_prev=0.999146 S_rec=0.992406 x_t=44.619 P_out=1.2337e-07 P_core=0.8837 <x>=+0.5123 rank=0 resid=7.6e-16 t=17.4s
+[L=60] R=15 mm neff=1.442224725257 S_prev=0.999121 S_rec=0.986454 x_t=33.614 P_out=7.7815e-06 P_core=0.8806 <x>=+0.6858 rank=0 resid=6.8e-16 t=14.7s
+[L=60] R=10 mm neff=1.442266188956 S_prev=0.995612 S_rec=0.968505 x_t=22.698 P_out=6.8688e-04 P_core=0.8704 <x>=+1.0681 rank=1 resid=7.5e-16 t=10.5s
+[L=60] fin: 205.9 s
+[L=80] N=641 incognitas=408321 recto neff=1.442191871838 err_analitica=-2.936e-07 resid=6.03e-16 t=79.1s
+[L=80] R=50 mm neff=1.442194819527 S_prev=0.998787 S_rec=0.998787 x_t=111.008 P_out=0.0000e+00 P_core=0.8870 <x>=+0.2043 rank=0 resid=7.4e-16 t=29.1s
+[L=80] R=30 mm neff=1.442200063831 S_prev=0.999458 S_rec=0.996630 x_t=66.714 P_out=1.7071e-14 P_core=0.8859 <x>=+0.3408 rank=0 resid=7.3e-16 t=19.2s
+[L=80] R=20 mm neff=1.442210322528 S_prev=0.999146 S_rec=0.992406 x_t=44.619 P_out=6.1069e-09 P_core=0.8837 <x>=+0.5123 rank=0 resid=6.3e-16 t=18.4s
+[L=80] R=15 mm neff=1.442224725759 S_prev=0.999128 S_rec=0.986459 x_t=33.614 P_out=1.0393e-06 P_core=0.8806 <x>=+0.6856 rank=0 resid=7.2e-16 t=19.3s
+[L=80] R=10 mm neff=1.442266315212 S_prev=0.995331 S_rec=0.968026 x_t=22.699 P_out=8.3324e-04 P_core=0.8698 <x>=+1.0835 rank=1 resid=8.9e-16 t=18.1s
+[L=80] fin: 183.3 s
+[L=100] N=801 incognitas=638401 recto neff=1.442191871838 err_analitica=-2.936e-07 resid=6.12e-16 t=146.5s
+[L=100] R=50 mm neff=1.442194819527 S_prev=0.998787 S_rec=0.998787 x_t=111.008 P_out=0.0000e+00 P_core=0.8870 <x>=+0.2043 rank=0 resid=7.1e-16 t=45.6s
+[L=100] R=30 mm neff=1.442200063831 S_prev=0.999458 S_rec=0.996630 x_t=66.714 P_out=1.3914e-13 P_core=0.8859 <x>=+0.3408 rank=1 resid=6.6e-16 t=30.1s
+[L=100] R=20 mm neff=1.442210322527 S_prev=0.999146 S_rec=0.992406 x_t=44.619 P_out=4.3746e-09 P_core=0.8837 <x>=+0.5123 rank=1 resid=8.4e-16 t=33.2s
+[L=100] R=15 mm neff=1.442224727362 S_prev=0.998881 S_rec=0.986211 x_t=33.614 P_out=2.2904e-04 P_core=0.8804 <x>=+0.6992 rank=3 resid=1.3e-15 t=28.3s
+[L=100] R=10 mm neff=1.442266302764 S_prev=0.987930 S_rec=0.961102 x_t=22.698 P_out=7.7484e-03 P_core=0.8636 <x>=+1.4329 rank=4 resid=8.9e-16 t=30.6s
+[L=100] fin: 314.3 s
+I3.0 pass=True
+I3.1 pass=True
+I3.3 pass=False
+I3.2 informativo (pass=null): {"40.0": "crece al bajar R", "60.0": "crece al bajar R", "80.0": "crece al bajar R", "100.0": "crece al bajar R"}
+I3.3 radio critico: {"R_c_mm": null, "metodo": "sin cruce P_out >= 1 % en la cadena evaluada a L = 100", "puntos_P_out_L100": [[50.0, 0.0], [30.0, 1.3914324534753803e-13], [20.0, 4.374635677744161e-09], [15.0, 0.00022904391995837652], [10.0, 0.00774843343252211]], "convergencia_hasta_Rc": null, "pass": false}
+estado=done n_pass=2 tiempo=826.8 s
+Escrito: D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\curvas_claude\resultados_curvas_r3.json
