@@ -91,3 +91,18 @@ Búsqueda web en modo estándar. Todo lo de esta sección viene de resúmenes o 
 - No se ha encontrado un cutback a 1550 nm en camisa deprimida de sílice escrita con fs. La brecha que describen los autores del niobato de litio sigue abierta, lo que mantiene la candidatura de (c), sin establecerla.
 - La contribución (a), «red 3D multicapa escrita desde varias caras», **queda en riesgo** por el trabajo de HUST/SJTU de 2026, que no hemos podido leer. Hasta leer el artículo original, no afirmamos novedad en 3D.
 - La fuente de 2026 se conoce solo por prensa. Su metodología, longitud de onda y medidas no están verificadas.
+
+## 8 · Verificación en texto completo (2026-10-10, informe V5)
+
+Fuente del informe: `experimentos/verificacion_claude/VERIFICACION-V5-literatura.md`. «Texto completo» indica que se leyó el artículo completo.
+
+| Referencia | Qué confirma el texto | Consecuencia |
+|---|---|---|
+| HUST/SJTU, «Programmable Three-dimensional Photonic Neural Network Chip», *Nature Communications*, DOI 10.1038/s41467-026-72316-9 (2026-04-21); texto en PMC13284361 | Chip fabricado por escritura directa con láser fs en **vidrio borosilicato**; red 3D de **8 capas**; microcalentadores para programar; entrenamiento con láser de 800 nm; **93 % en entrenamiento y 91,7 % en prueba** (48 imágenes); **no declara longitud de onda de operación**. | **La parte 3D multicapa escrita con fs en vidrio tiene antecedente publicado.** No se puede afirmar novedad en red 3D. |
+| Lee et al., *Scientific Reports* 11, 23770 (2021), DOI 10.1038/s41598-021-03116-y; texto en PMC8660921 | Guías con fs y microgrietas integradas: **1 dB/cm con radio de 10 mm a 1550 nm** (ambas polarizaciones); con 6 mm, 3 dB/cm (polarización x); a 1310 nm, 1 dB/cm con 8,5 mm. | Referencia de curvatura **verificada** para T8. |
+| Artículo SK1310: «Femtosecond laser writing of telecom-band depressed-cladding waveguides and mode modulation in SK1310 glass», *Optical Materials*, 2025 (PII S0925346725000102) | **Solo el título, verificado** (Crossref y búsqueda). El texto completo devuelve 403 y no hay licencia abierta. | **Las guías de camisa deprimida en banda de telecomunicaciones en SK1310 ya tienen publicación previa.** La contribución «trinchera a 1550 nm» no puede afirmarse como nueva sin leer ese artículo. La longitud de onda concreta no está verificada. |
+
+**Conclusión de novedad revisada.**
+- Riesgo alto en (a), red 3D multicapa escrita con fs en vidrio (HUST/SJTU), y en (c), guías de camisa deprimida en telecom en SK1310.
+- Lo que el texto leído no cubre: un cutback propio a 1550 nm en trinchera, con pérdidas de acoplo y de propagación separadas, y su contraste con el modelo vectorial. Esa es la candidata a contribución, y sigue sin medir.
+- Acción inmediata: leer el artículo de SK1310 (acceso institucional de Fran o de los autores) antes de cualquier afirmación de novedad.
