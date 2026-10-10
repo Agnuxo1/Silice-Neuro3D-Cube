@@ -1,0 +1,2 @@
+th050_dom128_dx050_f10_p4 trozo 0 fin False 78.23 s
+th050_dom128_dx050_f10_p4 trozo 1 fin True 71.18 s

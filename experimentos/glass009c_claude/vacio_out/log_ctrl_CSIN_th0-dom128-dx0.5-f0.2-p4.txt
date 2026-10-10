@@ -1,0 +1,2 @@
+th000_dom128_dx050_f20_p4_sin_esponja trozo 0 fin False 41.15 s
+th000_dom128_dx050_f20_p4_sin_esponja trozo 1 fin True 39.3 s
