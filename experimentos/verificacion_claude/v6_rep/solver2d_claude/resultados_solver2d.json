@@ -1,0 +1,540 @@
+{
+  "tarea": "A2 ronda 2",
+  "contrato": "CONTRATO-solver2d-r2.md",
+  "naturaleza": "modelo numerico escalar; no es dispositivo ni medida",
+  "estado": "done",
+  "inicio_utc": "2026-10-10T05:26:14.728938+00:00",
+  "fin_utc": "2026-10-10T05:26:59.563939+00:00",
+  "referencia_json": "D:\\PROJECTS\\.cognition\\audit\\silice-origin-main\\experimentos\\verificacion_claude\\v6_rep\\vectorial_claude\\fd_escalar_convergencia.json",
+  "analitico_lp01": {
+    "lam_um": 1.55,
+    "a_um": 6.0,
+    "n1": 1.444,
+    "n2": 1.439,
+    "k0_um": 4.053667940115862,
+    "V": 2.9201606467009626,
+    "U": 1.756877101709979,
+    "W": 2.332535327069695,
+    "neff": 1.4421921654570125,
+    "gamma_core_closed": 0.890419692206336,
+    "gamma_core_quad": 0.8904196922063359,
+    "C_clad_coef": 4.7960859032339895
+  },
+  "A1": {
+    "n_eff_sub_L40": {
+      "0.5": 1.442191174270039,
+      "0.25": 1.4421918718380073,
+      "0.125": 1.4421922393959983
+    },
+    "error_abs_sub_L40": {
+      "0.5": 9.911869733869594e-07,
+      "0.25": 2.9361900510949113e-07,
+      "0.125": 7.39389858228634e-08
+    },
+    "error_abs_stair_L40": {
+      "0.5": 2.8967482171626813e-05,
+      "0.25": 1.0803935196035397e-05,
+      "0.125": 4.216406422452579e-06
+    },
+    "error_abs_stair_L30": {
+      "0.5": 2.8967486405351295e-05,
+      "0.25": 1.0803939206160962e-05,
+      "0.125": 4.216410365520673e-06
+    },
+    "orden_sub_0.5_0.25": 1.7552118743901408,
+    "orden_sub_0.25_0.125": 1.9895381925004512,
+    "orden_stair_L40_0.5_0.25": 1.4228774008199883,
+    "orden_stair_L40_0.25_0.125": 1.3574710502340404,
+    "reproduccion_max_dif_vs_ref": 0.0,
+    "reproduccion_dif_por_h": {
+      "0.5": 0.0,
+      "0.25": 0.0,
+      "0.125": 0.0
+    },
+    "dominio_dif_L40_L50_h025": 1.3322676295501878e-15,
+    "ref_error_stair_125": 4.2164103664088515e-06
+  },
+  "A2": {
+    "norm_sum_psi2_h2": 1.0000000000000002,
+    "asim_x_rel": 9.544102509378756e-15,
+    "asim_y_rel": 1.4584246531185516e-14,
+    "borde_max_abs": 0.0,
+    "min_sobre_max": -0.0
+  },
+  "A3": {
+    "gamma_exacta_cerrada": 0.890419692206336,
+    "gamma_exacta_quad": 0.8904196922063359,
+    "err_rel_cerrada_vs_quad": 1.2468536290725766e-16,
+    "gamma_FD": {
+      "0.25": 0.8903318206964335,
+      "0.125": 0.890413214606443
+    },
+    "gamma_observable_psi_analitica_nodos": {
+      "0.25": 0.8902132085134488,
+      "0.125": 0.8903973713097793
+    },
+    "err_rel_FD": {
+      "0.25": 9.868549704330199e-05,
+      "0.125": 7.274771604588263e-06
+    },
+    "err_rel_observable_solo": {
+      "0.25": 0.0002318947960097213,
+      "0.125": 2.5067837955638406e-05
+    },
+    "orden_err_FD_0.25_0.125": 3.7618642201583987
+  },
+  "A4": {
+    "resultados": {
+      "0.5": {
+        "h_um": 0.5,
+        "neff_par": 1.442242653047981,
+        "neff_impar": 1.4421421629799358,
+        "delta_n": 0.00010049006804524474,
+        "kappa_FD_um_inv": 0.00020367668356753503,
+        "asim_par_x": 2.2368647708139824e-14,
+        "asim_impar_x": 2.117157785820457e-14,
+        "neff_lista": [
+          1.442242653047981,
+          1.4421421629799358
+        ],
+        "L_um": 80.0,
+        "s_sub": 8,
+        "incognitas": 101761
+      },
+      "0.25": {
+        "h_um": 0.25,
+        "neff_par": 1.4422431911380924,
+        "neff_impar": 1.4421429667597863,
+        "delta_n": 0.00010022437830614628,
+        "kappa_FD_um_inv": 0.00020313817457883447,
+        "asim_par_x": 8.511901564912591e-14,
+        "asim_impar_x": 8.914489812728644e-14,
+        "neff_lista": [
+          1.4422431911380924,
+          1.4421429667597863
+        ],
+        "L_um": 80.0,
+        "s_sub": 8,
+        "incognitas": 408321
+      }
+    },
+    "kappa_diff_0.25_menos_0.5_um_inv": -5.385089887005666e-07,
+    "h_0.125": {
+      "ejecutado": false,
+      "motivo": "no cumple la condicion de JEV (RAM libre >= 4 GB y hora < 05:20 UTC)",
+      "ram_libre_gb_inicio": 4.176060416,
+      "hora_inicio_utc": "2026-10-10T05:26:59.563826+00:00"
+    }
+  },
+  "supuestos": [
+    "Solver escalar, no vectorial; solve() de solver2d.py sin cambios.",
+    "Analitica LP01 escalar exacta para n por tramos; no es modo vectorial TE/TM.",
+    "Dirichlet en contorno de L = 40 um (A1-A3) y L = 80 um (A4); el error de dominio se controla con C1.6 (L=40 frente a L=50 a h=0,25), no se demuestra.",
+    "Subpixel s = 8 fijado; no se optimiza.",
+    "C1.1 usa el error escalonado del JSON de referencia de la ronda previa (no recalculado); C1.5 si recalcula el escalonado L=30.",
+    "No hay medidas: ninguna cifra es dato de laboratorio."
+  ],
+  "runs": [
+    {
+      "key": "A1_sub_L40_h0.5",
+      "L_um": 40.0,
+      "h_um": 0.5,
+      "s_sub": 8,
+      "N": 161,
+      "incognitas": 25281,
+      "neff": [
+        1.442191174270039
+      ],
+      "beta_um": [
+        5.846164126656506
+      ],
+      "wall_s": 0.29
+    },
+    {
+      "key": "A1_stair_L40_h0.5",
+      "L_um": 40.0,
+      "h_um": 0.5,
+      "s_sub": 1,
+      "N": 161,
+      "incognitas": 25281,
+      "neff": [
+        1.4421631979748408
+      ],
+      "beta_um": [
+        5.846050720045578
+      ],
+      "wall_s": 0.23
+    },
+    {
+      "key": "A1_stair_L30_h0.5",
+      "L_um": 30.0,
+      "h_um": 0.5,
+      "s_sub": 1,
+      "N": 121,
+      "incognitas": 14161,
+      "neff": [
+        1.442163197970607
+      ],
+      "beta_um": [
+        5.8460507200284155
+      ],
+      "wall_s": 0.11
+    },
+    {
+      "key": "A1_sub_L40_h0.25",
+      "L_um": 40.0,
+      "h_um": 0.25,
+      "s_sub": 8,
+      "N": 321,
+      "incognitas": 101761,
+      "neff": [
+        1.4421918718380073
+      ],
+      "beta_um": [
+        5.846166954365415
+      ],
+      "wall_s": 1.5
+    },
+    {
+      "key": "A1_stair_L40_h0.25",
+      "L_um": 40.0,
+      "h_um": 0.25,
+      "s_sub": 1,
+      "N": 321,
+      "incognitas": 101761,
+      "neff": [
+        1.4421813615218164
+      ],
+      "beta_um": [
+        5.846124349033631
+      ],
+      "wall_s": 1.38
+    },
+    {
+      "key": "A1_stair_L30_h0.25",
+      "L_um": 30.0,
+      "h_um": 0.25,
+      "s_sub": 1,
+      "N": 241,
+      "incognitas": 57121,
+      "neff": [
+        1.4421813615178063
+      ],
+      "beta_um": [
+        5.8461243490173755
+      ],
+      "wall_s": 0.63
+    },
+    {
+      "key": "A1_sub_L40_h0.125",
+      "L_um": 40.0,
+      "h_um": 0.125,
+      "s_sub": 8,
+      "N": 641,
+      "incognitas": 408321,
+      "neff": [
+        1.4421922393959983
+      ],
+      "beta_um": [
+        5.846168444323459
+      ],
+      "wall_s": 8.51
+    },
+    {
+      "key": "A1_stair_L40_h0.125",
+      "L_um": 40.0,
+      "h_um": 0.125,
+      "s_sub": 1,
+      "N": 641,
+      "incognitas": 408321,
+      "neff": [
+        1.44218794905059
+      ],
+      "beta_um": [
+        5.8461510526878255
+      ],
+      "wall_s": 7.6
+    },
+    {
+      "key": "A1_stair_L30_h0.125",
+      "L_um": 30.0,
+      "h_um": 0.125,
+      "s_sub": 1,
+      "N": 481,
+      "incognitas": 229441,
+      "neff": [
+        1.442187949046647
+      ],
+      "beta_um": [
+        5.846151052671842
+      ],
+      "wall_s": 4.01
+    },
+    {
+      "key": "A1_sub_L50_h0.25",
+      "L_um": 50.0,
+      "h_um": 0.25,
+      "s_sub": 8,
+      "N": 401,
+      "incognitas": 159201,
+      "neff": [
+        1.4421918718380087
+      ],
+      "beta_um": [
+        5.846166954365421
+      ],
+      "wall_s": 2.58
+    },
+    {
+      "key": "A4_sub_L80_h0.5",
+      "L_um": 80.0,
+      "h_um": 0.5,
+      "s_sub": 8,
+      "N": 321,
+      "incognitas": 101761,
+      "neff": [
+        1.442242653047981,
+        1.4421421629799358
+      ],
+      "beta_um": [
+        5.8463728045282455,
+        5.845965451161111
+      ],
+      "wall_s": 2.07
+    },
+    {
+      "key": "A4_sub_L80_h0.25",
+      "L_um": 80.0,
+      "h_um": 0.25,
+      "s_sub": 8,
+      "N": 641,
+      "incognitas": 408321,
+      "neff": [
+        1.4422431911380924,
+        1.4421429667597863
+      ],
+      "beta_um": [
+        5.846374985766879,
+        5.845968709417721
+      ],
+      "wall_s": 14.46
+    }
+  ],
+  "criterios": [
+    {
+      "id": "C1.1",
+      "descripcion": "e_sub(h=0.125) <= error escalonado de referencia (4.2164e-6) [r1]",
+      "rol": "vinculante",
+      "valor": 7.39389858228634e-08,
+      "umbral": 4.2164103664088515e-06,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C1.2",
+      "descripcion": "e_sub(h=0.125) <= 1.0e-6 (estricto) [r1]",
+      "rol": "vinculante",
+      "valor": 7.39389858228634e-08,
+      "umbral": 1e-06,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C1.3",
+      "descripcion": "orden subpixel (0.25->0.125) >= 1.8 [r1, VINCULANTE]",
+      "rol": "vinculante",
+      "valor": 1.9895381925004512,
+      "umbral": 1.8,
+      "operador": ">=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C1.3b",
+      "descripcion": "orden subpixel en [1.8, 2.2] en AMBOS pares (0.5->0.25 y 0.25->0.125) [brief, adicional]",
+      "rol": "adicional_brief",
+      "valor": [
+        1.7552118743901408,
+        1.9895381925004512
+      ],
+      "umbral": [
+        1.8,
+        2.2
+      ],
+      "operador": "banda_en_todos",
+      "evaluable": true,
+      "pass": false
+    },
+    {
+      "id": "C1.4",
+      "descripcion": "orden escalonado L=40 (0.25->0.125) en [1.2, 1.6] [r1]",
+      "rol": "vinculante",
+      "valor": 1.3574710502340404,
+      "umbral": [
+        1.2,
+        1.6
+      ],
+      "operador": "in",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C1.5",
+      "descripcion": "reproduccion escalonado L=30 frente a JSON de referencia, max|dif| <= 1e-9 [r1]",
+      "rol": "vinculante",
+      "valor": 0.0,
+      "umbral": 1e-09,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C1.6",
+      "descripcion": "dominio: |neff(L=40) - neff(L=50)| a h=0.25 <= 1e-7 [r1]",
+      "rol": "vinculante",
+      "valor": 1.3322676295501878e-15,
+      "umbral": 1e-07,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C1.7",
+      "descripcion": "analitica: |neff - 1.4421921654570133| <= 1e-12 [r1]",
+      "rol": "vinculante",
+      "valor": 8.881784197001252e-16,
+      "umbral": 1e-12,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C2.1",
+      "descripcion": "|sum |psi|^2 h^2 - 1| <= 1e-10 [r1]",
+      "rol": "vinculante",
+      "valor": 2.220446049250313e-16,
+      "umbral": 1e-10,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C2.2",
+      "descripcion": "asimetria en x relativa <= 1e-6 [r1]",
+      "rol": "vinculante",
+      "valor": 9.544102509378756e-15,
+      "umbral": 1e-06,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C2.3",
+      "descripcion": "asimetria en y relativa <= 1e-6 [r1]",
+      "rol": "vinculante",
+      "valor": 1.4584246531185516e-14,
+      "umbral": 1e-06,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C2.4",
+      "descripcion": "max |psi| en contorno = 0 [r1]",
+      "rol": "vinculante",
+      "valor": 0.0,
+      "umbral": 0.0,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C2.5",
+      "descripcion": "min(psi)/max(psi) >= -1e-9 (LP01 sin cambios de signo) [nuevo r2, diagnostico]",
+      "rol": "vinculante",
+      "valor": -0.0,
+      "umbral": -1e-09,
+      "operador": ">=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C3.1",
+      "descripcion": "|Gamma_cerrada - Gamma_quad| / Gamma_quad <= 1e-8 [r1]",
+      "rol": "vinculante",
+      "valor": 1.2468536290725766e-16,
+      "umbral": 1e-08,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C3.2",
+      "descripcion": "error relativo Gamma_FD(h=0.125) frente a Gamma exacta <= 1e-3 [r1, criterio principal]",
+      "rol": "vinculante",
+      "valor": 7.274771604588263e-06,
+      "umbral": 0.001,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C3.3",
+      "descripcion": "orden del error relativo (0.25->0.125) >= 1.5 (evaluable si ambos > 1e-9) [r1]",
+      "rol": "vinculante",
+      "valor": 3.7618642201583987,
+      "umbral": 1.5,
+      "operador": ">=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C4.1_h0.5",
+      "descripcion": "n_par - n_impar > 0 (h=0.5) [r1]",
+      "rol": "vinculante",
+      "valor": 0.00010049006804524474,
+      "umbral": 0.0,
+      "operador": ">",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C4.2_h0.5",
+      "descripcion": "paridad: asim par <= 1e-5 y asim impar <= 1e-5 (h=0.5) [r1]",
+      "rol": "vinculante",
+      "valor": 2.2368647708139824e-14,
+      "umbral": 1e-05,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C4.1_h0.25",
+      "descripcion": "n_par - n_impar > 0 (h=0.25) [r1]",
+      "rol": "vinculante",
+      "valor": 0.00010022437830614628,
+      "umbral": 0.0,
+      "operador": ">",
+      "evaluable": true,
+      "pass": true
+    },
+    {
+      "id": "C4.2_h0.25",
+      "descripcion": "paridad: asim par <= 1e-5 y asim impar <= 1e-5 (h=0.25) [r1]",
+      "rol": "vinculante",
+      "valor": 8.914489812728644e-14,
+      "umbral": 1e-05,
+      "operador": "<=",
+      "evaluable": true,
+      "pass": true
+    }
+  ],
+  "resumen": {
+    "n_criterios": 20,
+    "n_pass": 19,
+    "n_fail": 1,
+    "n_evaluables": 20
+  }
+}

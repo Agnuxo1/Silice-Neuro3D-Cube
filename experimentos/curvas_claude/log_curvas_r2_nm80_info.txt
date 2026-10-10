@@ -1,0 +1,3 @@
+[info NM=80] recto L=80 h=0.25 neff=1.442191871838 err=-2.936e-07 t=8.8
+[info NM=80] R=10 L=80: idx=66 S=0.000000 neff=1.444483422528 max_S_80_modos=0.000000
+Escrito informativo_NM80_R10_L80.json t=112.0 s

@@ -1,0 +1,61 @@
+[    0.0s] C1 inicio
+[   19.5s] C1 Delta=0.003: {'l0': (1, 1, 1), 'l1': (0, 0, 0)}
+[   55.4s] C1 Delta=0.005: {'l0': (1, 1, 1), 'l1': (1, 1, 1)}
+[   99.7s] C1 Delta=0.01: {'l0': (2, 2, 2), 'l1': (1, 1, 1)}
+[   99.6s] C1 criterios {"C1.1_E_maxroot_err_le_1e-8": true, "C1.2_P_maxroot_err_le_0.01_Delta": true, "C1.3_no_LP11_below_cutoff": true, "C1.4_root_count_matches_closed": true}
+[   99.6s] C2 inicio (rama t=6..12, dn=-0,003 y -0,005)
+[  143.8s]   dn=-0.003 t=7: g=-6143.3178+121.9193j valid=True rF=7.97e-15 loss=10.5899
+[  164.1s]   dn=-0.003 t=8: g=-6144.6907+71.5007j valid=True rF=5.56e-14 loss=6.2106
+[  183.7s]   dn=-0.003 t=9: g=-6144.9731+42.0301j valid=True rF=3.37e-14 loss=3.6507
+[  205.7s]   dn=-0.003 t=10: g=-6144.9416+24.7397j valid=True rF=1.25e-13 loss=2.1489
+[  231.7s]   dn=-0.003 t=11: g=-6144.8502+14.5728j valid=True rF=1.05e-13 loss=1.2658
+[  252.4s]   dn=-0.003 t=12: g=-6144.7705+8.5870j valid=True rF=3.87e-13 loss=0.7459
+[  252.4s] C2 t=6.0 dn=-0.003: sel=(-6138.636, 208.6982) ecs={'gamma_re': -6140.990163751838, 'gamma_im': 208.48114339495493, 'loss': 18.108672115285785, 'core_frac_ecs_def': 0.5204246789975004}
+[  252.4s] C2 t=12.0 dn=-0.003: sel=(-6144.77, 8.587) ecs={'gamma_re': -6138.101110228601, 'gamma_im': 8.556746369992991, 'loss': 0.7432389896975913, 'core_frac_ecs_def': 0.790583349213599}
+[  280.7s]   dn=-0.005 t=7: g=-7320.8146+24.1812j valid=True rF=8.17e-14 loss=2.1004
+[  298.1s]   dn=-0.005 t=8: g=-7324.4990+11.1343j valid=True rF=2.20e-13 loss=0.9671
+[  316.3s]   dn=-0.005 t=9: g=-7326.1815+5.1251j valid=True rF=4.58e-14 loss=0.4452
+[  335.5s]   dn=-0.005 t=10: g=-7326.9544+2.3584j valid=True rF=1.48e-12 loss=0.2048
+[  357.1s]   dn=-0.005 t=11: g=-7327.3103+1.0849j valid=True rF=1.59e-13 loss=0.0942
+[  378.9s]   dn=-0.005 t=12: g=-7327.4744+0.4990j valid=True rF=4.01e-13 loss=0.0433
+[  378.9s] C2 t=6.0 dn=-0.005: sel=(-7312.65, 52.5062) ecs={'gamma_re': -7299.703299852502, 'gamma_im': 51.661713256358055, 'loss': 4.487336413447261, 'core_frac_ecs_def': 0.804923921437232}
+[  378.9s] C2 t=12.0 dn=-0.005: sel=(-7327.474, 0.499) ecs={'gamma_re': -7315.7372993239715, 'gamma_im': 0.5094813206329933, 'loss': 0.044253547510181804, 'core_frac_ecs_def': 0.8904476545541282}
+[  378.9s] C2 criterios {"C2_1_all_primary": true, "C2_2_all_primary": true, "C2_3_all_primary_valid": true, "n_primary": 4}
+[  378.9s] C3 inicio
+[  393.4s]   dn=-0.003 t=7: g=-6143.3178+121.9193j valid=True rF=7.97e-15 loss=10.5899
+[  396.6s]   dn=-0.003 t=8: g=-6144.6907+71.5007j valid=True rF=5.56e-14 loss=6.2106
+[  399.8s]   dn=-0.003 t=9: g=-6144.9731+42.0301j valid=True rF=3.37e-14 loss=3.6507
+[  403.1s]   dn=-0.003 t=10: g=-6144.9416+24.7397j valid=True rF=1.25e-13 loss=2.1489
+[  406.4s]   dn=-0.003 t=11: g=-6144.8502+14.5728j valid=True rF=1.05e-13 loss=1.2658
+[  410.2s]   dn=-0.003 t=12: g=-6144.7705+8.5870j valid=True rF=3.87e-13 loss=0.7459
+[  413.5s]   dn=-0.003 t=7: g=-6143.3178+121.9193j valid=True rF=7.97e-15 loss=10.5899
+[  416.6s]   dn=-0.003 t=8: g=-6144.6907+71.5007j valid=True rF=5.56e-14 loss=6.2106
+[  419.5s]   dn=-0.003 t=9: g=-6144.9731+42.0301j valid=True rF=3.37e-14 loss=3.6507
+[  423.0s]   dn=-0.003 t=10: g=-6144.9416+24.7397j valid=True rF=1.25e-13 loss=2.1489
+[  426.5s]   dn=-0.003 t=11: g=-6144.8502+14.5728j valid=True rF=1.05e-13 loss=1.2658
+[  430.2s]   dn=-0.003 t=12: g=-6144.7705+8.5870j valid=True rF=3.87e-13 loss=0.7459
+[  430.2s]   C3 h=5.000e-09: g12=(-6144.77047839103+8.587011508749292j)
+[  436.1s]   dn=-0.003 t=7: g=-6143.3178+121.9193j valid=True rF=6.25e-14 loss=10.5899
+[  442.1s]   dn=-0.003 t=8: g=-6144.6907+71.5007j valid=True rF=4.34e-14 loss=6.2106
+[  448.4s]   dn=-0.003 t=9: g=-6144.9731+42.0301j valid=True rF=2.55e-13 loss=3.6507
+[  455.2s]   dn=-0.003 t=10: g=-6144.9416+24.7397j valid=True rF=1.52e-13 loss=2.1489
+[  462.4s]   dn=-0.003 t=11: g=-6144.8502+14.5728j valid=True rF=5.85e-13 loss=1.2658
+[  469.9s]   dn=-0.003 t=12: g=-6144.7705+8.5870j valid=True rF=9.13e-14 loss=0.7459
+[  469.9s]   C3 h=2.500e-09: g12=(-6144.770478391378+8.587011508742494j)
+[  482.3s]   dn=-0.003 t=7: g=-6143.3178+121.9193j valid=True rF=1.53e-14 loss=10.5899
+[  494.2s]   dn=-0.003 t=8: g=-6144.6907+71.5007j valid=True rF=3.24e-14 loss=6.2106
+[  506.7s]   dn=-0.003 t=9: g=-6144.9731+42.0301j valid=True rF=1.15e-14 loss=3.6507
+[  519.0s]   dn=-0.003 t=10: g=-6144.9416+24.7397j valid=True rF=9.30e-14 loss=2.1489
+[  534.2s]   dn=-0.003 t=11: g=-6144.8502+14.5728j valid=True rF=1.60e-13 loss=1.2658
+[  551.4s]   dn=-0.003 t=12: g=-6144.7705+8.5870j valid=True rF=3.58e-13 loss=0.7459
+[  551.4s]   C3 h=1.250e-09: g12=(-6144.770478391621+8.587011508719957j)
+[  554.8s]   dn=-0.003 t=7: g=-6143.3178+121.9193j valid=True rF=2.48e-14 loss=10.5899
+[  558.8s]   dn=-0.003 t=8: g=-6144.6907+71.5007j valid=True rF=5.51e-14 loss=6.2106
+[  562.7s]   dn=-0.003 t=9: g=-6144.9731+42.0301j valid=True rF=1.08e-13 loss=3.6507
+[  566.8s]   dn=-0.003 t=10: g=-6144.9416+24.7397j valid=True rF=7.32e-14 loss=2.1489
+[  570.9s]   dn=-0.003 t=11: g=-6144.8502+14.5728j valid=True rF=5.10e-14 loss=1.2658
+[  575.2s]   dn=-0.003 t=12: g=-6144.7705+8.5870j valid=True rF=6.83e-13 loss=0.7459
+[  575.2s] C3 trench {"rel_dRe_h2_h4": 3.9518983862344906e-14, "order_p": 0.5108226484270347, "pass_C3_1": true, "pass_C3_2": true, "pass_C3_3": true, "pass_C3_4": true}
+[  656.2s] C3 C1 Delta=0.010 modelo E: neff=[1.4518524476437942, 1.4518524476437942, 1.4518524476437937] orden=-inf
+[  737.2s] C3 C1 Delta=0.010 modelo P: neff=[1.4518407809628724, 1.4518407809628722, 1.4518407809628722] orden=None
+[  737.3s] escrito D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\radial2_claude\resultados_radial2.json status=done

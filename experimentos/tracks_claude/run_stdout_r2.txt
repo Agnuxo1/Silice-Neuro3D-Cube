@@ -1,0 +1,18 @@
+[04:57:34Z] inicio r2 bloques=['A', 'B', 'C', 'D']
+[04:57:42Z] analitica i: n_ring=1.439000 Re=1.44219587036024 Im=1.3041413023255438e-05
+[04:57:47Z] analitica iii_N8: n_ring=1.443168 Re=1.443143804523525 Im=0.0002991113744279783
+[04:57:55Z] analitica iii_N16: n_ring=1.442335 Re=1.4428109750342164 Im=0.00014530234385991576
+[04:58:01Z] analitica iii_N24: n_ring=1.441502 Re=1.4425896365234863 Im=7.529901262142363e-05
+[04:58:08Z] analitica iii_N32: n_ring=1.440669 Re=1.442425439045726 Im=4.0571219253653476e-05
+[04:58:13Z] analitica iii_N48: n_ring=1.439000 Re=1.44219587036024 Im=1.3041413023255438e-05
+[04:58:19Z] analitica iii_N64: n_ring=1.437329 Re=1.4420412520395178 Im=4.733405545350512e-06
+[04:58:25Z] analitica iii_N96: n_ring=1.433983 Re=1.441840532256793 Im=8.261825737837858e-07
+[04:58:25Z] sigma_neff (raiz analitica i) = 1.44219587036024
+[04:58:26Z] fracs N=8: f=0.16667 f_union_grid=0.16666 overlap=False
+[04:58:26Z] fracs N=16: f=0.33333 f_union_grid=0.33335 overlap=False
+[04:58:27Z] fracs N=24: f=0.50000 f_union_grid=0.44142 overlap=True
+[04:58:27Z] fracs N=32: f=0.66667 f_union_grid=0.46872 overlap=True
+[04:58:28Z] fracs N=48: f=1.00000 f_union_grid=0.48651 overlap=True
+[04:58:29Z] fracs N=64: f=1.33333 f_union_grid=0.49248 overlap=True
+[04:58:30Z] fracs N=96: f=2.00000 f_union_grid=0.49667 overlap=True
+[04:58:59Z] i|L40|h0.25: bound=True n_core=1.4421952407054077 P_in_core=0.8181459009632872 n_maxP=1.4421952407 P_maxP=8.181e-01 unk=101761 t=29.3s

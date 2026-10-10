@@ -1,0 +1,56 @@
+Inicio UTC 2026-10-10T04:56:47.691462+00:00
+Referencia: err_abs(0.125) escalonado = 4.2164103664e-06
+Analitico: V=2.9201606467 U=1.756877101710 W=2.332535327070 neff=1.4421921654570125 Gamma_closed=0.890419692206 Gamma_quad=0.890419692206
+== A1: LP01 frente a analitica ==
+[A1_sub_L40_h0.5] L=40.0 h=0.5 s=8 N=161 incognitas=25281 neff=['1.4421911742700'] t=1.1s
+[A1_stair_L40_h0.5] L=40.0 h=0.5 s=1 N=161 incognitas=25281 neff=['1.4421631979748'] t=0.9s
+[A1_stair_L30_h0.5] L=30.0 h=0.5 s=1 N=121 incognitas=14161 neff=['1.4421631979706'] t=0.4s
+[A1_sub_L40_h0.25] L=40.0 h=0.25 s=8 N=321 incognitas=101761 neff=['1.4421918718380'] t=6.8s
+[A1_stair_L40_h0.25] L=40.0 h=0.25 s=1 N=321 incognitas=101761 neff=['1.4421813615218'] t=5.6s
+[A1_stair_L30_h0.25] L=30.0 h=0.25 s=1 N=241 incognitas=57121 neff=['1.4421813615178'] t=2.9s
+[A1_sub_L40_h0.125] L=40.0 h=0.125 s=8 N=641 incognitas=408321 neff=['1.4421922393960'] t=41.4s
+[A1_stair_L40_h0.125] L=40.0 h=0.125 s=1 N=641 incognitas=408321 neff=['1.4421879490506'] t=41.9s
+[A1_stair_L30_h0.125] L=30.0 h=0.125 s=1 N=481 incognitas=229441 neff=['1.4421879490466'] t=22.8s
+[A1_sub_L50_h0.25] L=50.0 h=0.25 s=8 N=401 incognitas=159201 neff=['1.4421918718380'] t=14.7s
+  e_sub={0.5: 9.911869733869594e-07, 0.25: 2.9361900510949113e-07, 0.125: 7.39389858228634e-08}
+  e_stair_L40={0.5: 2.8967482171626813e-05, 0.25: 1.0803935196035397e-05, 0.125: 4.216406422452579e-06}
+  e_stair_L30={0.5: 2.8967486405351295e-05, 0.25: 1.0803939206160962e-05, 0.125: 4.216410365520673e-06}
+  ordenes subpixel: p(0.5->0.25)=1.755212 p(0.25->0.125)=1.989538
+  ordenes escalonado L40: p(0.5->0.25)=1.422877 p(0.25->0.125)=1.357471
+  reproduccion referencia max|dif|=0.000e+00; dominio |L40-L50|(h=0.25)=1.332e-15
+  C1.1 [vinculante]: valor=7.39389858228634e-08 umbral=4.2164103664088515e-06 op=<= evaluable=True -> pass=True
+  C1.2 [vinculante]: valor=7.39389858228634e-08 umbral=1e-06 op=<= evaluable=True -> pass=True
+  C1.3 [vinculante]: valor=1.9895381925004512 umbral=1.8 op=>= evaluable=True -> pass=True
+  C1.3b [adicional_brief]: valores=[1.7552118743901408, 1.9895381925004512] banda=[1.8, 2.2] -> pass=False
+  C1.4 [vinculante]: valor=1.3574710502340404 umbral=[1.2, 1.6] op=in evaluable=True -> pass=True
+  C1.5 [vinculante]: valor=0.0 umbral=1e-09 op=<= evaluable=True -> pass=True
+  C1.6 [vinculante]: valor=1.3322676295501878e-15 umbral=1e-07 op=<= evaluable=True -> pass=True
+  C1.7 [vinculante]: valor=8.881784197001252e-16 umbral=1e-12 op=<= evaluable=True -> pass=True
+== A2: normalizacion, simetria y forma del modo (L=40, h=0.125, subpixel) ==
+  sum|psi|^2 h^2 = 1.0000000000000002; asim_x=9.544e-15; asim_y=1.458e-14; borde=0.000e+00; min/max=-0.000e+00
+  C2.1 [vinculante]: valor=2.220446049250313e-16 umbral=1e-10 op=<= evaluable=True -> pass=True
+  C2.2 [vinculante]: valor=9.544102509378756e-15 umbral=1e-06 op=<= evaluable=True -> pass=True
+  C2.3 [vinculante]: valor=1.4584246531185516e-14 umbral=1e-06 op=<= evaluable=True -> pass=True
+  C2.4 [vinculante]: valor=0.0 umbral=0.0 op=<= evaluable=True -> pass=True
+  C2.5 [vinculante]: valor=-0.0 umbral=-1e-09 op=>= evaluable=True -> pass=True
+== A3: observable de potencia en el nucleo ==
+  C3.1 [vinculante]: valor=1.2468536290725766e-16 umbral=1e-08 op=<= evaluable=True -> pass=True
+  h=0.25: Gamma_FD=0.890331820696 Gamma_obs(psi_analitica)=0.890213208513 err_rel_FD=9.869e-05 err_rel_observable=2.319e-04
+  h=0.125: Gamma_FD=0.890413214606 Gamma_obs(psi_analitica)=0.890397371310 err_rel_FD=7.275e-06 err_rel_observable=2.507e-05
+  Gamma_exacta=0.890419692206
+  C3.2 [vinculante]: valor=7.274771604588263e-06 umbral=0.001 op=<= evaluable=True -> pass=True
+  C3.3 [vinculante]: valor=3.7618642201583987 umbral=1.5 op=>= evaluable=True -> pass=True
+== A4: dos nucleos a +-8 um (h=0.5 y 0.25 vinculantes) ==
+[A4_sub_L80_h0.5] L=80.0 h=0.5 s=8 N=321 incognitas=101761 neff=['1.4422426530480', '1.4421421629799'] t=11.1s
+  h=0.5: n_par=1.4422426530 n_impar=1.4421421630 dn=1.004901e-04 kappa_FD=2.036767e-04 1/um asim_par=2.24e-14 asim_impar=2.12e-14
+  C4.1_h0.5 [vinculante]: valor=0.00010049006804524474 umbral=0.0 op=> evaluable=True -> pass=True
+  C4.2_h0.5 [vinculante]: valor=2.2368647708139824e-14 umbral=1e-05 op=<= evaluable=True -> pass=True
+[A4_sub_L80_h0.25] L=80.0 h=0.25 s=8 N=641 incognitas=408321 neff=['1.4422431911381', '1.4421429667598'] t=46.2s
+  h=0.25: n_par=1.4422431911 n_impar=1.4421429668 dn=1.002244e-04 kappa_FD=2.031382e-04 1/um asim_par=8.51e-14 asim_impar=8.91e-14
+  C4.1_h0.25 [vinculante]: valor=0.00010022437830614628 umbral=0.0 op=> evaluable=True -> pass=True
+  C4.2_h0.25 [vinculante]: valor=8.914489812728644e-14 umbral=1e-05 op=<= evaluable=True -> pass=True
+  kappa(0.25)-kappa(0.5) = -5.385090e-07 1/um (solo informativo)
+Salida intermedia escrita: D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\solver2d_claude\resultados_solver2d.json
+== A4 opcional h=0.125: RAM libre=2.445049856 GB (min 4.0); hora UTC 05:00 (limite 05:20); condicion=False ==
+Criterios: 19/20 pass; evaluables 20; estado=done. Salida: D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\solver2d_claude\resultados_solver2d.json
+Fin UTC 2026-10-10T05:00:08.490821+00:00
