@@ -1,0 +1,157 @@
+{
+  "fecha_utc": "2026-10-10T03:38:00.370421Z",
+  "bloques": {
+    "B1": {
+      "h_um": 0.2,
+      "N": 401,
+      "dz_um": 1.0,
+      "z_um": 1000.0,
+      "overlap2_1mm": 0.9999926127612025,
+      "neff_impl_1mm": 1.4421924195095095,
+      "delta_neff_vs_analitico": 2.5405249681753617e-07,
+      "perdida_1mm": 0.0002459999724198081,
+      "curva": {
+        "100": {
+          "neff_impl": 1.442192417052422,
+          "overlap2": 0.9999925796447003
+        },
+        "200": {
+          "neff_impl": 1.4421924184133659,
+          "overlap2": 0.9999926020733834
+        },
+        "400": {
+          "neff_impl": 1.4421924190985784,
+          "overlap2": 0.9999926074550513
+        },
+        "600": {
+          "neff_impl": 1.4421924193267968,
+          "overlap2": 0.9999926122516013
+        },
+        "800": {
+          "neff_impl": 1.4421924194412055,
+          "overlap2": 0.9999926133233398
+        },
+        "1000": {
+          "neff_impl": 1.4421924195095095,
+          "overlap2": 0.9999926127612025
+        }
+      }
+    },
+    "I1_nodal": {
+      "neff_impl_1mm": 1.4421866040067806,
+      "delta_vs_analitico": -5.561450232116627e-06,
+      "overlap2_1mm": 0.999973862888704
+    },
+    "B2_dz": {
+      "neff_dz1": 1.4421924195095095,
+      "neff_dz05": 1.4421924997265594,
+      "cambio": 8.021704989147338e-08,
+      "overlap2_dz05": 0.9999983435772668
+    },
+    "B2_h": {
+      "neff_h02": 1.4421924195095095,
+      "neff_h01": 1.4421929879533029,
+      "cambio": 5.684437933695108e-07,
+      "overlap2_h01": 0.999988496804763,
+      "perdida_h01": 0.0004916683934720334,
+      "delta_h01_vs_analitico": 8.22496290187047e-07
+    },
+    "B3": {
+      "perdida_1mm_h02": 0.0002459999724198081,
+      "perdida_1mm_h01": 0.0004916683934720334
+    },
+    "B4": {
+      "separacion_um": 16.0,
+      "z_max_propagado_um": 10000.0,
+      "primer_max_P2m": {
+        "z_um": 7671.007753967954,
+        "value": 0.9970195084452493,
+        "index_step": 7671
+      },
+      "primer_max_P2_disco": {
+        "z_um": 7598.811076943524,
+        "value": 0.8865960350683716,
+        "index_step": 7599
+      },
+      "P2m_inicial": 0.0013692696935224584,
+      "P2m_final": 0.8029344700029813,
+      "perdida_final": 0.002655409043698098
+    }
+  },
+  "analitico": {
+    "V": 2.9201606467009626,
+    "u": 1.7568771017098384,
+    "w": 2.332535327069801,
+    "neff_analitico": 1.4421921654570127,
+    "neff_dado_enunciado": 1.4421922,
+    "neff_paraxial_prediccion": 1.4421932971279734,
+    "k0_um^-1": 4.053667940115862,
+    "n_ref": 1.444
+  },
+  "criterios": [
+    {
+      "id": "V0",
+      "description": "Unitariedad sin CAP (200 um): max|P/P0-1| <= 1e-9",
+      "value": "1.033e-13",
+      "threshold": "1e-9",
+      "pass": true
+    },
+    {
+      "id": "C0",
+      "description": "n_eff analitico propio vs 1.4421922: |dif| <= 1e-6",
+      "value": "3.454e-08 (n_eff=1.4421921655)",
+      "threshold": "1e-6",
+      "pass": true
+    },
+    {
+      "id": "C1",
+      "description": "B1 overlap2 a 1 mm >= 0.999 (h=0.2, dz=1)",
+      "value": "0.9999926128",
+      "threshold": ">=0.999",
+      "pass": true
+    },
+    {
+      "id": "C2",
+      "description": "B1 |neff_impl(1mm) - neff_analitico| <= 1e-5",
+      "value": "2.541e-07 (neff_impl=1.4421924195)",
+      "threshold": "1e-5",
+      "pass": true
+    },
+    {
+      "id": "C3",
+      "description": "B2 |neff(dz=0.5) - neff(dz=1)| <= 1e-6 (h=0.2)",
+      "value": "8.022e-08",
+      "threshold": "1e-6",
+      "pass": true
+    },
+    {
+      "id": "C4",
+      "description": "B2 |neff(h=0.1) - neff(h=0.2)| <= 1e-5 (dz=1)",
+      "value": "5.684e-07",
+      "threshold": "1e-5",
+      "pass": true
+    },
+    {
+      "id": "C5",
+      "description": "B3 perdida del modo guiado a 1 mm (con CAP) <= 1e-5",
+      "value": "2.460e-04",
+      "threshold": "1e-5",
+      "pass": false
+    },
+    {
+      "id": "C6",
+      "description": "B4 primer maximo de P2m hallado en 0<z<=10 mm (solo informa)",
+      "value": "z=7671.01 um, P2m=0.997020",
+      "threshold": "informativo",
+      "pass": true
+    },
+    {
+      "id": "I1",
+      "description": "Sensibilidad: muestreo nodal vs celda (informativo)",
+      "value": "nodal neff=1.4421866040, dif analitico=-5.561e-06",
+      "threshold": "sin umbral",
+      "pass": true
+    }
+  ],
+  "tiempo_total_s": 894.1118197441101
+}

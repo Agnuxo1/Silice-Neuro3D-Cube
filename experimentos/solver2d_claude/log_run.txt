@@ -1,0 +1,10 @@
+Inicio UTC 2026-10-10T03:34:01.032896+00:00
+Analitico: V=2.9201606467 U=1.756877101710 W=2.332535327070 neff=1.4421921654570125 Gamma_closed=0.890419692206 Gamma_quad=0.890419692206
+== A1: LP01 frente a analitica ==
+[A1_sub_L40_h0.5] L=40.0 h=0.5 s=8 N=161 incognitas=25281 neff=['1.4421911742700'] t=0.3s
+[A1_stair_L40_h0.5] L=40.0 h=0.5 s=1 N=161 incognitas=25281 neff=['1.4421631979748'] t=0.2s
+[A1_stair_L30_h0.5] L=30.0 h=0.5 s=1 N=121 incognitas=14161 neff=['1.4421631979706'] t=0.1s
+[A1_sub_L40_h0.25] L=40.0 h=0.25 s=8 N=321 incognitas=101761 neff=['1.4421918718380'] t=1.6s
+[A1_stair_L40_h0.25] L=40.0 h=0.25 s=1 N=321 incognitas=101761 neff=['1.4421813615218'] t=1.3s
+[A1_stair_L30_h0.25] L=30.0 h=0.25 s=1 N=241 incognitas=57121 neff=['1.4421813615178'] t=0.8s
+[A1_sub_L40_h0.125] L=40.0 h=0.125 s=8 N=641 incognitas=408321 neff=['1.4421922393960'] t=11.8s
