@@ -1,0 +1,76 @@
+== K0 ==
+a_reproduccion_009c True {}
+b_sigma_vs_adi2d True {'max_rel_diff': 0.0}
+c_analitico_z0 True {'max_rel': 2.446900711102904e-16}
+d_energia_monotona_nuevas True {'n': 28, 'max_violation': 1.2212453270876722e-14}
+e_estado_vs_json_2mm True {}
+== D1 dx0.5 ==
+dom  128 th0.0   z_arr=0.5 nW=16 max|dP|/P0=6.038e-03 @z=2.0 rho=6.038e-03 lam=0.000e+00 E_pre=7.253e-03 E_2mm=1.000e-01 K1=False
+dom  256 th0.0   z_arr=0.9 nW=12 max|dP|/P0=1.544e-03 @z=0.9 rho=1.544e-03 lam=0.000e+00 E_pre=7.253e-03 E_2mm=7.406e-04 K1=False
+dom  128 th0.02  z_arr=0.4 nW=17 max|dP|/P0=5.551e-03 @z=2.0 rho=5.551e-03 lam=0.000e+00 E_pre=9.424e-03 E_2mm=1.110e-01 K1=False
+dom  256 th0.02  z_arr=0.9 nW=12 max|dP|/P0=1.608e-03 @z=0.9 rho=1.608e-03 lam=0.000e+00 E_pre=9.853e-03 E_2mm=1.579e-03 K1=False
+dom  128 th0.05  z_arr=0.4 nW=17 max|dP|/P0=6.306e-03 @z=0.5 rho=6.306e-03 lam=0.000e+00 E_pre=2.635e-02 E_2mm=1.976e-01 K1=False
+dom  256 th0.05  z_arr=0.7 nW=14 max|dP|/P0=3.245e-03 @z=0.7 rho=3.245e-03 lam=0.000e+00 E_pre=2.635e-02 E_2mm=1.318e-02 K1=False
+dom  128 th0.08  z_arr=0.3 nW=18 max|dP|/P0=1.629e-02 @z=0.4 rho=1.629e-02 lam=0.000e+00 E_pre=5.610e-02 E_2mm=4.425e-01 K1=False
+dom  256 th0.08  z_arr=0.6 nW=15 max|dP|/P0=4.377e-03 @z=0.6 rho=4.377e-03 lam=0.000e+00 E_pre=6.078e-02 E_2mm=1.205e-01 K1=False
+== D1 dx1.0 (diag) ==
+dom  128 th0.0   z_arr=0.5 max|dP|/P0=7.543e-03 E_pre=2.859e-02 K1=False
+dom  256 th0.0   z_arr=0.9 max|dP|/P0=6.188e-03 E_pre=2.859e-02 K1=False
+dom  128 th0.02  z_arr=0.4 max|dP|/P0=9.558e-03 E_pre=3.629e-02 K1=False
+dom  256 th0.02  z_arr=0.9 max|dP|/P0=6.455e-03 E_pre=3.903e-02 K1=False
+dom  128 th0.05  z_arr=0.4 max|dP|/P0=2.517e-02 E_pre=1.016e-01 K1=False
+dom  256 th0.05  z_arr=0.7 max|dP|/P0=1.314e-02 E_pre=1.016e-01 K1=False
+dom  128 th0.08  z_arr=0.3 max|dP|/P0=6.544e-02 E_pre=2.013e-01 K1=False
+dom  256 th0.08  z_arr=0.6 max|dP|/P0=1.809e-02 E_pre=2.399e-01 K1=False
+== D2 ==
+th0.0   f0.2 p4 A_int=0.102 z_arr=0.5 max|dP|=6.038e-03 rho=6.038e-03 lam=0.000e+00 E_pre=7.253e-03 K1=False
+th0.0   f0.2 p2 A_int=0.171 z_arr=0.5 max|dP|=5.673e-03 rho=5.673e-03 lam=0.000e+00 E_pre=7.253e-03 K1=False
+th0.0   f0.2 p6 A_int=0.073 z_arr=0.5 max|dP|=6.738e-03 rho=6.738e-03 lam=2.486e-04 E_pre=7.253e-03 K1=False
+th0.0   f0.1 p4 A_int=0.051 z_arr=0.5 max|dP|=2.226e-02 rho=2.226e-02 lam=0.000e+00 E_pre=7.253e-03 K1=False
+th0.0   f0.3 p4 A_int=0.154 z_arr=0.4 max|dP|=2.162e-03 rho=2.162e-03 lam=0.000e+00 E_pre=6.379e-03 K1=False
+th0.02  f0.2 p4 A_int=0.102 z_arr=0.4 max|dP|=5.551e-03 rho=5.551e-03 lam=0.000e+00 E_pre=9.424e-03 K1=False
+th0.02  f0.2 p2 A_int=0.171 z_arr=0.4 max|dP|=5.901e-03 rho=5.901e-03 lam=0.000e+00 E_pre=9.424e-03 K1=False
+th0.02  f0.2 p6 A_int=0.073 z_arr=0.4 max|dP|=8.395e-03 rho=8.395e-03 lam=0.000e+00 E_pre=9.424e-03 K1=False
+th0.02  f0.1 p4 A_int=0.051 z_arr=0.5 max|dP|=3.372e-02 rho=3.372e-02 lam=0.000e+00 E_pre=9.853e-03 K1=False
+th0.02  f0.3 p4 A_int=0.154 z_arr=0.4 max|dP|=2.413e-03 rho=2.413e-03 lam=0.000e+00 E_pre=9.424e-03 K1=False
+th0.05  f0.2 p4 A_int=0.102 z_arr=0.4 max|dP|=6.306e-03 rho=6.306e-03 lam=0.000e+00 E_pre=2.635e-02 K1=False
+th0.05  f0.2 p2 A_int=0.171 z_arr=0.4 max|dP|=6.311e-03 rho=6.311e-03 lam=0.000e+00 E_pre=2.635e-02 K1=False
+th0.05  f0.2 p6 A_int=0.073 z_arr=0.4 max|dP|=1.279e-02 rho=1.279e-02 lam=0.000e+00 E_pre=2.635e-02 K1=False
+th0.05  f0.1 p4 A_int=0.051 z_arr=0.4 max|dP|=6.485e-02 rho=6.485e-02 lam=0.000e+00 E_pre=2.635e-02 K1=False
+th0.05  f0.3 p4 A_int=0.154 z_arr=0.3 max|dP|=6.312e-03 rho=6.312e-03 lam=0.000e+00 E_pre=1.994e-02 K1=False
+th0.08  f0.2 p4 A_int=0.102 z_arr=0.3 max|dP|=1.629e-02 rho=1.629e-02 lam=0.000e+00 E_pre=5.610e-02 K1=False
+th0.08  f0.2 p2 A_int=0.171 z_arr=0.3 max|dP|=1.629e-02 rho=1.629e-02 lam=0.000e+00 E_pre=5.610e-02 K1=False
+th0.08  f0.2 p6 A_int=0.073 z_arr=0.3 max|dP|=2.707e-02 rho=2.707e-02 lam=0.000e+00 E_pre=5.610e-02 K1=False
+th0.08  f0.1 p4 A_int=0.051 z_arr=0.4 max|dP|=9.615e-02 rho=9.615e-02 lam=0.000e+00 E_pre=6.078e-02 K1=False
+th0.08  f0.3 p4 A_int=0.154 z_arr=0.3 max|dP|=1.629e-02 rho=1.629e-02 lam=0.000e+00 E_pre=5.610e-02 K1=False
+spread {'0.0': {'max': 0.02225562710808029, 'min': 0.0021618234629466877, 'spread': 10.294840207601695, 'depends': True}, '0.02': {'max': 0.03372061410578619, 'min': 0.002412986579442555, 'spread': 13.974638065983891, 'depends': True}, '0.05': {'max': 0.06484565116784526, 'min': 0.006306211889980928, 'spread': 10.282821493973202, 'depends': True}, '0.08': {'max': 0.09614507219636992, 'min': 0.0162929874152794, 'spread': 5.9010094187028, 'depends': True}}
+== D4 ==
+th0.0 q=1.0734439400354416 retorno del absorbente, independiente de la malla K1_05=False K1_025=False E_pre05=0.007253202621022356 E_pre025=0.001994898194539091 max05=6.038e-03 max025=5.625e-03
+th0.02 q=1.0470229266483628 retorno del absorbente, independiente de la malla K1_05=False K1_025=False E_pre05=0.009424075974467863 E_pre025=0.0026942726147400706 max05=5.551e-03 max025=5.302e-03
+th0.05 q=1.6498755926082045 indeterminado K1_05=False K1_025=False E_pre05=0.026351235181580165 E_pre025=0.007803488771403546 max05=6.306e-03 max025=3.822e-03
+th0.08 q=1.9490335834507178 indeterminado K1_05=False K1_025=False E_pre05=0.056096521932873615 E_pre025=0.018315942431493374 max05=1.629e-02 max025=8.360e-03
+== CONTROLES (enmienda 1) ==
+SIN ESPONJA dom128 th0.0 z_arr=0.5 max|dP|/P0=9.241e-02 rho=9.241e-02 lam=0.000e+00 E_pre=7.253e-03 E_2mm=6.791e-01 P_abs_2mm=-9.148e-14
+SIN ESPONJA dom128 th0.02 z_arr=0.4 max|dP|/P0=1.262e-01 rho=1.262e-01 lam=0.000e+00 E_pre=9.424e-03 E_2mm=8.724e-01 P_abs_2mm=-9.126e-14
+SIN ESPONJA dom128 th0.05 z_arr=0.4 max|dP|/P0=2.516e-01 rho=2.516e-01 lam=0.000e+00 E_pre=2.635e-02 E_2mm=2.141e+00 P_abs_2mm=-9.259e-14
+SIN ESPONJA dom128 th0.08 z_arr=0.3 max|dP|/P0=3.949e-01 rho=3.949e-01 lam=0.000e+00 E_pre=5.610e-02 E_2mm=6.741e+00 P_abs_2mm=-9.481e-14
+REF512 th0.05 max|dP_512|/P0=2.283e-04 E_pre=2.635e-02 E_2mm=5.656e-04 | base128 max|dP|=6.306e-03 E_2mm=1.976e-01
+REF512 th0.08 max|dP_512|/P0=1.690e-04 E_pre=6.078e-02 E_2mm=6.769e-04 | base128 max|dP|=1.629e-02 E_2mm=4.425e-01
+DESCOMP th0.05 max|delta_frontera|/P0=3.832e-03 max|dP_512|/P0=6.317e-03 E2mm_128=1.976e-01 E2mm_512=5.656e-04
+DESCOMP th0.08 max|delta_frontera|/P0=7.870e-03 max|dP_512|/P0=1.629e-02 E2mm_128=4.425e-01 E2mm_512=6.769e-04
+== D3 ==
+009c-2 dz2,5                     th0.02  dom 128 dx0.5 psi_ov=-0.0009 coh=0.994057 psi_err=-0.0885 1D=-0.8003501414970157 diff=0.7994993317624777
+009c-2 dz2,5                     th0.05  dom 128 dx0.5 psi_ov=+0.0007 coh=0.981686 psi_err=+0.0436 1D=None diff=None
+009c-2 dz2,5                     th0.08  dom 128 dx0.5 psi_ov=+0.0058 coh=0.919005 psi_err=+0.2036 1D=-0.06917032302064428 diff=0.07500027871206996
+009c-2 dz2,5                     th0.0   dom 256 dx0.5 psi_ov=+0.0000 coh=1.000000 psi_err=+0.0727 1D=None diff=None
+009c-2 dz2,5                     th0.05  dom 256 dx0.5 psi_ov=-0.0001 coh=0.999913 psi_err=-0.2525 1D=None diff=None
+vacio dz2,5 f0,2 p4              th0.0   dom 128 dx0.5 psi_ov=-0.0012 coh=0.995161 psi_err=-0.1339 1D=None diff=None
+vacio dz2,5 f0,2 p4              th0.0   dom 128 dx0.25 psi_ov=-0.0012 coh=0.995560 psi_err=-0.1425 1D=None diff=None
+vacio dz2,5 f0,2 p4              th0.02  dom 128 dx0.5 psi_ov=-0.0009 coh=0.994057 psi_err=-0.0885 1D=-0.8003501414970157 diff=0.7994993317624777
+vacio dz2,5 f0,2 p4              th0.02  dom 128 dx0.25 psi_ov=-0.0009 coh=0.994297 psi_err=-0.1004 1D=-0.8003501414970157 diff=0.7994304672114041
+vacio dz2,5 f0,2 p4 (ampliado)   th0.02  dom 256 dx0.5 psi_ov=+0.0000 coh=0.999999 psi_err=+0.0453 1D=-0.8003501414970157 diff=0.8003673228328081
+vacio dz2,5 f0,2 p4              th0.05  dom 128 dx0.5 psi_ov=+0.0007 coh=0.981686 psi_err=+0.0436 1D=None diff=None
+vacio dz2,5 f0,2 p4              th0.05  dom 128 dx0.25 psi_ov=+0.0004 coh=0.981842 psi_err=+0.0278 1D=None diff=None
+vacio dz2,5 f0,2 p4              th0.08  dom 128 dx0.5 psi_ov=+0.0058 coh=0.919005 psi_err=+0.2036 1D=-0.06917032302064428 diff=0.07500027871206996
+vacio dz2,5 f0,2 p4              th0.08  dom 128 dx0.25 psi_ov=+0.0043 coh=0.917940 psi_err=+0.1506 1D=-0.06917032302064428 diff=0.07347786752701493
+vacio dz2,5 f0,2 p4 (ampliado)   th0.08  dom 256 dx0.5 psi_ov=-0.0006 coh=0.992803 psi_err=-2.5010 1D=-0.06917032302064428 diff=0.06855996629968558
