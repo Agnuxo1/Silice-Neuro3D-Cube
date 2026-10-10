@@ -1,0 +1,31 @@
+{
+  "h_um": 0.25,
+  "L_um": 40.0,
+  "n_eff0": 1.4421918718380073,
+  "casos": {
+    "R50": {
+      "B_um0_bound": 7.168340737807399e-09,
+      "cota_inferior_D": 2.4852242486161913e-09,
+      "D_top_del_solver_h0.25": 2.947688982901653e-06,
+      "cota_cumple_top": true
+    },
+    "R20": {
+      "B_um0_bound": 4.48021298037393e-08,
+      "cota_inferior_D": 1.553265227549616e-08,
+      "D_top_del_solver_h0.25": 1.8450686998239263e-05,
+      "cota_cumple_top": true
+    },
+    "R10": {
+      "B_um0_bound": 1.7920851944475149e-07,
+      "cota_inferior_D": 6.213060799176162e-08,
+      "D_top_del_solver_h0.25": 0.0007581652299000208,
+      "cota_cumple_top": true
+    },
+    "R5": {
+      "B_um0_bound": 7.168340779681793e-07,
+      "cota_inferior_D": 2.4852241575779033e-07,
+      "D_top_del_solver_h0.25": 0.005475954436474639,
+      "cota_cumple_top": true
+    }
+  }
+}

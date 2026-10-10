@@ -1,0 +1,1 @@
+{"kind": "T96d", "dx_um": 0.39999999999999997, "N": 320, "domain_um": 128.0, "chunk": 0, "steps_done": 400, "final": false, "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb", "observable_cobertura_sha256": "6d5fd53dfbfaff1805c803c897d87db049e4a6599e7474fc3f221c0fea47dd33", "elapsed_s": 17.015}

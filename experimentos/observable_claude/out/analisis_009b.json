@@ -1,0 +1,46 @@
+{
+ "nota": "Reproducciones propias (repro_009b.py) de los campos finales de 009b; criterios de 009b sin cambios.",
+ "observable_cobertura_sha256": "6d5fd53dfbfaff1805c803c897d87db049e4a6599e7474fc3f221c0fea47dd33",
+ "resultados": {
+  "P2_continuo": {
+   "weighted_16x16": {
+    "P05": 0.3553823230667678,
+    "P04": 0.3585038476226798,
+    "diff": 0.0031215245559119698,
+    "rel": 0.008783567311324908,
+    "PASS": true
+   },
+   "center_original": {
+    "P05": 0.3511853507959665,
+    "P04": 0.35837387020047806,
+    "diff": 0.00718851940451154,
+    "rel": 0.02046930314211188,
+    "PASS": false
+   },
+   "recorded_009b_weighted": true,
+   "recorded_009b_weighted_diff": 0.0031215245559119698,
+   "recorded_009b_center_diff": 0.00718851940451154,
+   "recorded_009b_center_PASS": false
+  },
+  "P3_96trazos": {
+   "weighted_16x16": {
+    "P05": 0.33874797902340453,
+    "P04": 0.32944026118952374,
+    "diff": 0.009307717833880791,
+    "rel": 0.027476821738433778,
+    "PASS": false
+   },
+   "center_original": {
+    "P05": 0.33457384396186646,
+    "P04": 0.3292693776276569,
+    "diff": 0.005304466334209557,
+    "rel": 0.015854396361044115,
+    "PASS": false
+   },
+   "recorded_009b_weighted": false,
+   "recorded_009b_weighted_diff": 0.009307717833880791,
+   "recorded_009b_center_diff": 0.005304466334209446,
+   "recorded_009b_center_PASS": false
+  }
+ }
+}

@@ -1,0 +1,1 @@
+{"case": "T96w", "dx_um": 0.39999999999999997, "N": 320, "chunk": 0, "steps_done": 400, "final": false, "adi2d_sha256": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb", "elapsed_s": 21.199}
