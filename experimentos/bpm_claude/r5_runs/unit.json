@@ -1,0 +1,19 @@
+{
+  "nombre": "unit",
+  "W_um": 40.0,
+  "h_um": 0.2,
+  "N": 401,
+  "cap": {
+    "s0_um": 28.0,
+    "w_um": 12.0,
+    "R0_um^-1": 0.5
+  },
+  "fecha_utc": "2026-10-10T10:22:56+00:00",
+  "sha256_bpm_r2": "ef512713af6e001fe35cdffa1a5663562f09d5a710d362690fcf34a023f0e638",
+  "sha256_run_bpm_r5": "8e9c3aa983b9c5eddcf0a71e0167549034a2cc8bc72ec42d666a2c68eaea5870",
+  "dz_um": 0.125,
+  "z_end_um": 100.0,
+  "tiempo_propagacion_s": 35.025965452194214,
+  "max_abs_P_over_P0_minus_1": 3.823608096809039e-13,
+  "n_registros": 801
+}

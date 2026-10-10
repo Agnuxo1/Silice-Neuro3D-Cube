@@ -1,0 +1,346 @@
+{
+ "task": "GLASS-009c D5: validacion de vacio con haces de cola espectral controlada (cambio de protocolo de haz)",
+ "contrato": "CONTRATO-HAZ-COLA-D5-r5.md",
+ "status": "partial",
+ "faltan": {
+  "criterios": [
+   "K3",
+   "K4"
+  ],
+  "celdas": [
+   "G12a_w12_d256_dx025",
+   "G12b_w12_d256_dz125"
+  ]
+ },
+ "protocolo": {
+  "ventana_comun_mm": [
+   0.2,
+   2.0
+  ],
+  "muestras": "cada 0,1 mm (19)",
+  "dominio_um": 256,
+  "dx_um": 0.5,
+  "dz_um": 2.5,
+  "pasos": 800,
+  "absorbente": {
+   "f": 0.2,
+   "p": 4
+  },
+  "w0_um_nuevos": [
+   6,
+   8,
+   12
+  ],
+  "K1_umbral": 0.0001,
+  "cambio_de_protocolo_haz": false,
+  "cambio_declarado": "w0 en {6,8,12} um en lugar de {2,4} um; ventana D4; K1 sin cambio",
+  "banda_fourier_primaria": "cuadrado max(|kx|,|ky|) <= k_c, k_c = b0(1-f)(L/2)/z_max",
+  "banda_fourier_sensibilidad": "disco |k| <= k_c (descriptivo)",
+  "k_c_1_por_m": 299699.02108299796,
+  "b0_1_por_m": 5853496.5055273045
+ },
+ "veredicto": "NINGUN HAZ PROBADO CUMPLE K1 = 1e-4: ni w0 = 2, 4 (D3/D4), ni w0 = 6, 8, 12 um (D5), con absorbente base y dominio 256 um. La validacion de vacio con K1 no se cumple con ningun haz probado.",
+ "haces_que_cumplen_K1": [],
+ "cells": [
+  {
+   "tag": "W6_d256_base",
+   "w0_um": 6.0,
+   "dominio_um": 256.0,
+   "dx_um": 0.5,
+   "dz_um": 2.5,
+   "absorbente": "base",
+   "M": 0.0018967326153233044,
+   "z_M_mm": 0.6999999999999998,
+   "nW": 19,
+   "rho_max": 0.0018967326153233044,
+   "lam_max": 0.0,
+   "pass_K1_cell": false,
+   "descriptivo_P_total_fin": 0.9272138710870972,
+   "descriptivo_P_band_an_fin": 0.09162633140568766
+  },
+  {
+   "tag": "W8_d256_base",
+   "w0_um": 8.0,
+   "dominio_um": 256.0,
+   "dx_um": 0.5,
+   "dz_um": 2.5,
+   "absorbente": "base",
+   "M": 0.0010284241693805374,
+   "z_M_mm": 0.9,
+   "nW": 19,
+   "rho_max": 0.0010284241693805374,
+   "lam_max": 0.0,
+   "pass_K1_cell": false,
+   "descriptivo_P_total_fin": 0.9886508935964379,
+   "descriptivo_P_band_an_fin": 0.028304889178879286
+  },
+  {
+   "tag": "W12_d256_base",
+   "w0_um": 12.0,
+   "dominio_um": 256.0,
+   "dx_um": 0.5,
+   "dz_um": 2.5,
+   "absorbente": "base",
+   "M": 0.0004378847581251176,
+   "z_M_mm": 1.3999999999999997,
+   "nW": 19,
+   "rho_max": 0.0004378847581251176,
+   "lam_max": 4.06416234000062e-09,
+   "pass_K1_cell": false,
+   "descriptivo_P_total_fin": 0.999897023078527,
+   "descriptivo_P_band_an_fin": 0.0008608856405279635
+  }
+ ],
+ "K0": {
+  "K0a_val": {
+   "max_dDP_rel": 0.0,
+   "max_dE": 0.0
+  },
+  "K0a_pass": true,
+  "K0b_max": 0.0,
+  "K0b_pass": true,
+  "K0c_max": 2.188574529687467e-16,
+  "K0c_pass": true,
+  "K0d_max_increase": 4.884981308350689e-15,
+  "K0d_pass": true,
+  "K0e_max_P0dev": 2.220446049250313e-16,
+  "K0e_pass": true,
+  "K0f_pass": true
+ },
+ "K2_cola_espectral": [
+  {
+   "w0_um": 2.0,
+   "kc_1_por_m": 299699.02108299796,
+   "F_fuera_cuadrado_analitico": 0.7965155404317976,
+   "F_fuera_cuadrado_FFT": 0.7878882048053573,
+   "F_fuera_radial_analitico": 0.8355717929794239,
+   "F_fuera_radial_FFT": 0.8315498473025149,
+   "erf_1D_num_err_rel": 3.4616594660692776e-12,
+   "parseval_err_rel": 1.2207031249999997e-16
+  },
+  {
+   "w0_um": 4.0,
+   "kc_1_por_m": 299699.02108299796,
+   "F_fuera_cuadrado_analitico": 0.4080347893355095,
+   "F_fuera_cuadrado_FFT": 0.39092579433168456,
+   "F_fuera_radial_analitico": 0.48745562130678655,
+   "F_fuera_radial_FFT": 0.47812254350447103,
+   "erf_1D_num_err_rel": 2.3097877971196977e-12,
+   "parseval_err_rel": 2.4414062499999995e-16
+  },
+  {
+   "w0_um": 6.0,
+   "kc_1_por_m": 299699.02108299796,
+   "F_fuera_cuadrado_analitico": 0.13908741864406893,
+   "F_fuera_cuadrado_FFT": 0.12654240314096946,
+   "F_fuera_radial_analitico": 0.19854270602624646,
+   "F_fuera_radial_FFT": 0.19007181850396213,
+   "erf_1D_num_err_rel": 2.0568687461438475e-12,
+   "parseval_err_rel": 4.8828125e-16
+  },
+  {
+   "w0_um": 8.0,
+   "kc_1_por_m": 299699.02108299796,
+   "F_fuera_cuadrado_analitico": 0.03273410036033442,
+   "F_fuera_cuadrado_FFT": 0.027723084477337283,
+   "F_fuera_radial_analitico": 0.056459929568303376,
+   "F_fuera_radial_FFT": 0.05223817819372434,
+   "erf_1D_num_err_rel": 2.8094886975034033e-12,
+   "parseval_err_rel": 4.8828125e-16
+  },
+  {
+   "w0_um": 12.0,
+   "kc_1_por_m": 299699.02108299796,
+   "F_fuera_cuadrado_analitico": 0.0006452280885851369,
+   "F_fuera_cuadrado_FFT": 0.0004400203899174067,
+   "F_fuera_radial_analitico": 0.0015538738108333932,
+   "F_fuera_radial_FFT": 0.0013039875059832247,
+   "erf_1D_num_err_rel": 4.004423251528247e-12,
+   "parseval_err_rel": 2.4414062499999995e-16
+  }
+ ],
+ "K3_malla": {
+  "evaluable": false
+ },
+ "K4_paso": {
+  "evaluable": false
+ },
+ "descriptivo": {
+  "nota": "NO pre-declarado como criterio; solo lectura, sin pass.",
+  "M_256_base_por_w0": {
+   "2.0": 0.020596848923448374,
+   "4.0": 0.004384240249269866,
+   "6.0": 0.0018967326153233044,
+   "8.0": 0.0010284241693805374,
+   "12.0": 0.0004378847581251176
+  },
+  "pendiente_log_M_vs_log_w0_256_base": -2.1450704953847035,
+  "F_fuera_por_w0": [
+   {
+    "w0_um": 2.0,
+    "kc_1_por_m": 299699.02108299796,
+    "F_fuera_cuadrado_analitico": 0.7965155404317976,
+    "F_fuera_cuadrado_FFT": 0.7878882048053573,
+    "F_fuera_radial_analitico": 0.8355717929794239,
+    "F_fuera_radial_FFT": 0.8315498473025149,
+    "erf_1D_num_err_rel": 3.4616594660692776e-12,
+    "parseval_err_rel": 1.2207031249999997e-16
+   },
+   {
+    "w0_um": 4.0,
+    "kc_1_por_m": 299699.02108299796,
+    "F_fuera_cuadrado_analitico": 0.4080347893355095,
+    "F_fuera_cuadrado_FFT": 0.39092579433168456,
+    "F_fuera_radial_analitico": 0.48745562130678655,
+    "F_fuera_radial_FFT": 0.47812254350447103,
+    "erf_1D_num_err_rel": 2.3097877971196977e-12,
+    "parseval_err_rel": 2.4414062499999995e-16
+   },
+   {
+    "w0_um": 6.0,
+    "kc_1_por_m": 299699.02108299796,
+    "F_fuera_cuadrado_analitico": 0.13908741864406893,
+    "F_fuera_cuadrado_FFT": 0.12654240314096946,
+    "F_fuera_radial_analitico": 0.19854270602624646,
+    "F_fuera_radial_FFT": 0.19007181850396213,
+    "erf_1D_num_err_rel": 2.0568687461438475e-12,
+    "parseval_err_rel": 4.8828125e-16
+   },
+   {
+    "w0_um": 8.0,
+    "kc_1_por_m": 299699.02108299796,
+    "F_fuera_cuadrado_analitico": 0.03273410036033442,
+    "F_fuera_cuadrado_FFT": 0.027723084477337283,
+    "F_fuera_radial_analitico": 0.056459929568303376,
+    "F_fuera_radial_FFT": 0.05223817819372434,
+    "erf_1D_num_err_rel": 2.8094886975034033e-12,
+    "parseval_err_rel": 4.8828125e-16
+   },
+   {
+    "w0_um": 12.0,
+    "kc_1_por_m": 299699.02108299796,
+    "F_fuera_cuadrado_analitico": 0.0006452280885851369,
+    "F_fuera_cuadrado_FFT": 0.0004400203899174067,
+    "F_fuera_radial_analitico": 0.0015538738108333932,
+    "F_fuera_radial_FFT": 0.0013039875059832247,
+    "erf_1D_num_err_rel": 4.004423251528247e-12,
+    "parseval_err_rel": 2.4414062499999995e-16
+   }
+  ],
+  "efecto_dominio_w0_6": {
+   "M_128um": 0.006038092435977525,
+   "M_256um": 0.0018967326153233044
+  },
+  "K0a_repro": {
+   "tag": "K0a_repro_w6_d128_base",
+   "w0_um": 6.0,
+   "dominio_um": 128.0,
+   "dx_um": 0.5,
+   "dz_um": 2.5,
+   "absorbente": "base",
+   "M": 0.006038092435977525,
+   "z_M_mm": 2.0,
+   "nW": 19,
+   "rho_max": 0.006038092435977525,
+   "lam_max": 0.0,
+   "pass_K1_cell": false,
+   "descriptivo_P_total_fin": 0.526169970412068,
+   "descriptivo_P_band_an_fin": 0.14662124897640438
+  },
+  "celdas_referencia_256_base": [
+   {
+    "tag": "w2_d256_base",
+    "w0_um": 2.0,
+    "dominio_um": 256.0,
+    "dx_um": 0.5,
+    "dz_um": 2.5,
+    "absorbente": "base",
+    "M": 0.020596848923448374,
+    "z_M_mm": 0.19999999999999998,
+    "nW": 19,
+    "rho_max": 0.020596848923448374,
+    "lam_max": 0.0,
+    "pass_K1_cell": false,
+    "descriptivo_P_total_fin": 0.26556548134878927,
+    "descriptivo_P_band_an_fin": 0.09547561485531866
+   },
+   {
+    "tag": "w4_d256_base",
+    "w0_um": 4.0,
+    "dominio_um": 256.0,
+    "dx_um": 0.5,
+    "dz_um": 2.5,
+    "absorbente": "base",
+    "M": 0.004384240249269866,
+    "z_M_mm": 0.5,
+    "nW": 19,
+    "rho_max": 0.004384240249269866,
+    "lam_max": 0.0,
+    "pass_K1_cell": false,
+    "descriptivo_P_total_fin": 0.6999935405701619,
+    "descriptivo_P_band_an_fin": 0.15904326036845803
+   }
+  ],
+  "diagnosticos_w12": {
+   "G12a_dx025": null,
+   "G12b_dz125": null
+  }
+ },
+ "criteria": [
+  {
+   "id": "K0",
+   "description": "herramienta: K0a reproduccion de V1 (1e-9); K0b sigma (1e-12); K0c analitico en z=0 (1e-9); K0d P_total no crece (1e-9); K0e P0=1 (1e-12); K0f 19 muestras en W",
+   "value": "K0a={'max_dDP_rel': 0.0, 'max_dE': 0.0}; K0b max=0.0; K0c max=2.188574529687467e-16; K0d max_inc=4.884981308350689e-15; K0e max|P0-1|=2.220446049250313e-16; K0f=True",
+   "pass_": false
+  },
+  {
+   "id": "K1",
+   "description": "retorno: alguna corrida principal (w0 in {6,8,12} um, 256 um, base, ventana z>=0,2 mm) con M < 1e-4",
+   "value": "w0=6 um: M=1.8967e-03 (z=0.7 mm); w0=8 um: M=1.0284e-03 (z=0.9 mm); w0=12 um: M=4.3788e-04 (z=1.4 mm); celdas que cumplen: ninguna",
+   "pass_": false
+  },
+  {
+   "id": "K2",
+   "description": "cola espectral (verificacion): K2a erf 1D frente a integral numerica (1e-6); K2b |F_fuera FFT - analitico| <= 0,02 (cuadrado) para w0 in {2,4,6,8,12}; K2c Parseval (1e-10)",
+   "value": "K2a max_err_rel=4.00e-12; K2b max_abs=1.711e-02; K2c max_parseval=4.88e-16; k_c=2.9970e+05 1/m",
+   "pass_": true
+  },
+  {
+   "id": "K3",
+   "description": "malla (w0=12): q = M(dx0,5)/M(dx0,25) no indeterminado (bandas de 009c)",
+   "value": "no evaluable (falta G12a o la principal de w0=12)",
+   "pass_": false
+  },
+  {
+   "id": "K4",
+   "description": "paso temporal (w0=12): |M(dz2,5)-M(dz1,25)|/M(dz1,25) < 0,10",
+   "value": "no evaluable (falta G12b o la principal de w0=12)",
+   "pass_": false
+  }
+ ],
+ "n_pass": 1,
+ "n_criteria": 5,
+ "hashes_sha256": {
+  "script": "6a0f98c8e10dcc7559a15f73b1b34a456440a794844ee78d603f3895bbf951a7",
+  "runner": "04c91e31ff1bc04a410cdb91d2cf3abcced16fa41a639997145decc263454830",
+  "adi2d.py": "e4f729bf40a64c545b81f93ab45b282c580349e47612ff20421dea82f1e600fb",
+  "W6_d256_base.json": "3250b8fa8f8a214486286d20564425ed4b0d94c5d10e06be18259ff24f6759f4",
+  "W8_d256_base.json": "8f9448b568461e4aee54b8b43e3dc20d8c2f48e51dd3679bf5581ab233c5f9bc",
+  "W12_d256_base.json": "a8ff08d57e3e58d3cc00337570b71472a9b4d0c957683968481ff0df8930b09d",
+  "K0a_repro_w6_d128_base.json": "15f70758ec1a265676be19b496991fc5f1d248d02fd6311272383f49e2f1d792",
+  "w2_d256_base.json": "234891a7b14be42fac0fe66797d7882fccb7905c13b99cec7a8df0c7227472e8",
+  "w4_d256_base.json": "2f0090c8e2a06247e8b04fd85aa23e0d810acbf40d0a8c9ef474082891e04dcd",
+  "V1_w6_d128_base.json": "cd30ca26e350bbeaf08013fb50ed55f35153b6f5c1d7da613181a461558bce30"
+ },
+ "limites": [
+  "Solo theta=0, paraxial, delta n=0. Modelo numerico, sin medida ni dispositivo.",
+  "Muestreo cada 0,1 mm: el maximo entre muestras no se ve.",
+  "K1 vale para el absorbente base (f=0,2, p=4) y dominio 256 um. No se probo f=0,3 ni p distinto de 4 a 256 um en D5.",
+  "La banda de Fourier es una definicion cinematica fijada en el contrato, no una medida del absorbente.",
+  "La referencia analitica no incluye absorcion: para w0 = 6 y 8 um el haz libre alcanza el borde absorbente en la ventana.",
+  "K2b usa tolerancia absoluta 0,02. Para F_fuera pequeno (w0 >= 8 um) es poco exigente.",
+  "Diagnosticos de malla y paso solo para w0 = 12 um.",
+  "Router JEV: router.py plan (deterministic_tool, effort high) y router.py jev con provenance=jev (band: disco, confianza 0,14; no_extend: 0,77). La banda primaria se mantiene por contrato fijado antes de la consulta."
+ ],
+ "scipy_disponible": true
+}
