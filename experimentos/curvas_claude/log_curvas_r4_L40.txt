@@ -1,0 +1,11 @@
+Tarea I4 (curvas, ronda 4) L=40 h=0.25 NMODES=12 OMP=1
+Analitica LP01 neff=1.442192165457
+[L=40] N=321 recto neff=1.442191871838 err_analitica=-2.936e-07 resid=6.21e-16 t=33.1s
+[L=40] perturbacion: {"mu0": 34.1776680583142, "first_order_u_D1_u": -3.8104241968247003e-13, "D2_term": 294.4794493834811, "S2": 348891.52747560036, "c2_um2": 7367.284685537165, "residuo_bordeado_rel": 9.194283192398162e-14}
+[L=40] prediccion c2/R^2 en R=50,20,10 mm: {"50.0": 2.9469138742148663e-06, "20.0": 1.8418211713842914e-05, "10.0": 7.367284685537166e-05}
+[L=40] R=50 mm neff=1.442194819527 dn=+2.9477e-06 S_prev=0.998787 S_rec=0.998787 x_t=111.01 resid=7.5e-16 t=20.3s 
+[L=40] R=20 mm neff=1.442210322525 dn=+1.8451e-05 S_prev=0.997248 S_rec=0.992406 x_t=44.62 resid=7.3e-16 t=14.2s 
+[L=40] R=10 mm neff=1.442266248115 dn=+7.4376e-05 S_prev=0.991736 S_rec=0.968946 x_t=22.70 resid=7.1e-16 t=9.0s 
+[L=40] R=7 mm neff=1.442346321718 dn=+1.5445e-04 S_prev=0.988018 S_rec=0.929427 x_t=16.28 resid=8.1e-16 t=9.6s 
+[L=40] R=5 mm neff=1.442518449130 dn=+3.2658e-04 S_prev=0.895455 S_rec=0.765638 x_t=12.23 resid=1.4e-15 t=9.8s FALLO: S_prev <= 0,9: modo perdido por continuacion
+[L=40] fin: 108.5 s

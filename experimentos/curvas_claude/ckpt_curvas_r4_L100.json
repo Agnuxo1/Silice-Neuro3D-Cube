@@ -1,0 +1,95 @@
+{
+ "L_um": 100.0,
+ "h_um": 0.25,
+ "N": 801,
+ "recto": {
+  "neff": 1.4421918718380087,
+  "dist_analitica": -2.936190035551789e-07,
+  "resid_rel": 6.337286158028581e-16,
+  "norm_err": 0.0
+ },
+ "pasos": {
+  "R50": {
+   "R_mm": 50.0,
+   "neff": 1.4421948195269985,
+   "dn": 2.9476889897850356e-06,
+   "S_prev": 0.9987873077273758,
+   "S_rec": 0.9987873077273758,
+   "resid_rel": 7.111532917250669e-16,
+   "norm_err": 0.0,
+   "x_t_um": 111.00832268930994,
+   "neff_prev": 1.4421918718380087,
+   "S_prev_12_max_otro": 8.664421555568864e-14,
+   "N": 801,
+   "evaluado": true,
+   "t_s": 91.75029611587524
+  },
+  "R20": {
+   "R_mm": 20.0,
+   "neff": 1.442210322526985,
+   "dn": 1.8450688976212604e-05,
+   "S_prev": 0.997247841769874,
+   "S_rec": 0.9924059121595329,
+   "resid_rel": 8.004805265455891e-16,
+   "norm_err": 2.220446049250313e-16,
+   "x_t_um": 44.618798151283556,
+   "neff_prev": 1.4421948195269985,
+   "S_prev_12_max_otro": 1.3830476129498834e-09,
+   "N": 801,
+   "evaluado": true,
+   "t_s": 56.32354927062988
+  },
+  "R10": {
+   "R_mm": 10.0,
+   "neff": 1.442266302764378,
+   "dn": 7.443092636938431e-05,
+   "S_prev": 0.9837560807651262,
+   "S_rec": 0.961102018287668,
+   "resid_rel": 1.444540334175119e-15,
+   "norm_err": 0.0,
+   "x_t_um": 22.69842087823548,
+   "neff_prev": 1.442210322526985,
+   "S_prev_12_max_otro": 0.007319928530230582,
+   "N": 801,
+   "evaluado": true,
+   "t_s": 64.12427997589111
+  },
+  "R7": {
+   "R_mm": 7.0,
+   "neff": 1.44234895849988,
+   "dn": 0.0001570866618714195,
+   "S_prev": 0.6899406606053623,
+   "S_rec": 0.6515478417200045,
+   "resid_rel": 2.724184954859638e-15,
+   "norm_err": 1.1102230246251565e-16,
+   "x_t_um": 16.29097254979861,
+   "neff_prev": 1.442266302764378,
+   "S_prev_12_max_otro": 0.28409369350645514,
+   "N": 801,
+   "evaluado": false,
+   "motivo": "S_prev <= 0,9: modo perdido por continuacion",
+   "t_s": 57.617064237594604
+  },
+  "R5": {
+   "evaluado": false,
+   "motivo": "cadena detenida en un radio mayor"
+  },
+  "R4": {
+   "evaluado": false,
+   "motivo": "cadena detenida en un radio mayor"
+  },
+  "R3": {
+   "evaluado": false,
+   "motivo": "cadena detenida en un radio mayor"
+  },
+  "R2.5": {
+   "evaluado": false,
+   "motivo": "cadena detenida en un radio mayor"
+  },
+  "R2": {
+   "evaluado": false,
+   "motivo": "cadena detenida en un radio mayor"
+  }
+ },
+ "t_s": 673.9554417133331
+}
