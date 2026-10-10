@@ -1,0 +1,24 @@
+D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\bpm_claude\verificar_bpm.py:157: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  out = {"fecha_utc": datetime.datetime.utcnow().isoformat() + "Z", "bloques": {}}
+[ref] V=2.920161 u=1.756877 w=2.332535 neff_analitico=1.4421921655 neff_par_pred=1.4421932971
+[C0] |neff_analitico - 1.4421922| = 3.454e-08  (umbral 1e-06)
+[V0] sin CAP, 200 um: max|P/P0-1| = 1.033e-13  (umbral 1e-09)
+[B1] h=0.2 dz=1: overlap2(1mm)=0.9999926128  neff_impl(1mm)=1.4421924195  perdida(1mm)=2.460e-04  (40.6 s)
+[I1] muestreo nodal: neff_impl(1mm)=1.4421866040 (dif vs analitico -5.561e-06), overlap2=0.99997386
+[B2a] dz=0.5: neff_impl(1mm)=1.4421924997  cambio vs dz=1: +8.022e-08  overlap2=0.9999983436 (93.9 s)
+[B2b] h=0.1: neff_impl(1mm)=1.4421929880  cambio vs h=0.2: +5.684e-07  overlap2=0.9999884968 perdida=4.917e-04 (254.9 s)
+[B3] perdida del modo guiado (1 mm, h=0.2): 2.460e-04  (umbral 1e-05)
+[B4] P2m primer maximo: {'z_um': 7671.007753967954, 'value': 0.9970195084452493, 'index_step': 7671} ; P2 disco primer maximo: {'z_um': 7598.811076943524, 'value': 0.8865960350683716, 'index_step': 7599} ; P2m final=8.0293e-01 (454.5 s)
+
+ V0 | pass=True | 1.033e-13 | umbral 1e-9
+ C0 | pass=True | 3.454e-08 (n_eff=1.4421921655) | umbral 1e-6
+ C1 | pass=True | 0.9999926128 | umbral >=0.999
+ C2 | pass=True | 2.541e-07 (neff_impl=1.4421924195) | umbral 1e-5
+ C3 | pass=True | 8.022e-08 | umbral 1e-6
+ C4 | pass=True | 5.684e-07 | umbral 1e-5
+ C5 | pass=False | 2.460e-04 | umbral 1e-5
+ C6 | pass=True | z=7671.01 um, P2m=0.997020 | umbral informativo
+ I1 | pass=True | nodal neff=1.4421866040, dif analitico=-5.561e-06 | umbral sin umbral
+tiempo total: 894.1 s
+EXIT 0
+Sat Oct 10 03:52:54 UTC 2026

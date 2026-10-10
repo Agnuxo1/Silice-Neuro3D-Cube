@@ -1,0 +1,32 @@
+[    0.0s] C1 inicio
+[   14.0s] C1 Delta=0.003: {'l0': (1, 1, 1), 'l1': (0, 0, 0)}
+[   39.8s] C1 Delta=0.005: {'l0': (1, 1, 1), 'l1': (1, 1, 1)}
+[   71.6s] C1 Delta=0.01: {'l0': (2, 2, 2), 'l1': (1, 1, 1)}
+[   71.7s] C1 criterios {"C1.1_E_maxroot_err_le_1e-8": true, "C1.2_P_maxroot_err_le_0.01_Delta": true, "C1.3_no_LP11_below_cutoff": true, "C1.4_root_count_matches_closed": true}
+[   71.7s] C2 inicio
+[   80.4s] C2 a=6 t=3 dn=-0.003: nroots=1 sel=(-5967.498, 1106.6121) ecs={'note': 'sin modo cuasi-ligado'}
+[   88.7s] C2 a=6 t=6 dn=-0.003: nroots=1 sel=(-6138.636, 208.6982) ecs=-6140.990163751838
+[  114.0s] C2 a=6 t=9 dn=-0.003: nroots=1 sel=(-6144.973, 42.0301) ecs=-6138.525136703128
+[  152.8s] C2 a=6 t=12 dn=-0.003: nroots=0 sel=None ecs=-6138.101110228601
+[  194.6s] C2 a=6 t=18 dn=-0.003: nroots=0 sel=None ecs=-6138.175653531241
+[  208.4s] C2 a=6 t=3 dn=-0.005: nroots=1 sel=(-7141.356, 543.5771) ecs={'note': 'sin modo cuasi-ligado'}
+[  224.2s] C2 a=6 t=6 dn=-0.005: nroots=1 sel=(-7312.65, 52.5062) ecs=-7299.703299852502
+[  244.5s] C2 a=6 t=9 dn=-0.005: nroots=0 sel=None ecs=-7314.529226606345
+[  271.3s] C2 a=6 t=12 dn=-0.005: nroots=0 sel=None ecs=-7315.7372993239715
+[  299.5s] C2 a=6 t=18 dn=-0.005: nroots=0 sel=None ecs=-7315.867421692698
+[  319.9s] C2 a=10 t=3 dn=-0.003: nroots=1 sel=(-2858.177, 268.2528) ecs=-2896.1559652528595
+[  342.5s] C2 a=10 t=6 dn=-0.003: nroots=1 sel=(-3002.625, 37.3287) ecs=-3046.637232501699
+[  362.4s] C2 a=10 t=9 dn=-0.003: nroots=1 sel=(-3021.118, 5.2755) ecs=-3065.3708121753384
+[  381.9s] C2 a=10 t=12 dn=-0.003: nroots=0 sel=None ecs=-3067.922971654204
+[  405.3s] C2 a=10 t=18 dn=-0.003: nroots=0 sel=None ecs=-3068.3402562051597
+[  419.9s] C2 a=10 t=3 dn=-0.005: nroots=2 sel=(-3266.798, 110.266) ecs=-3313.6292648590875
+[  434.2s] C2 a=10 t=6 dn=-0.005: nroots=1 sel=(-16684.882, 300.9361) ecs=-3409.165005035928
+[  456.5s] C2 a=10 t=9 dn=-0.005: nroots=0 sel=None ecs=-3415.6306148460208
+[  478.3s] C2 a=10 t=12 dn=-0.005: nroots=0 sel=None ecs=-3416.0739874491014
+[  507.7s] C2 a=10 t=18 dn=-0.005: nroots=0 sel=None ecs=-3416.106757145326
+[  507.7s] C2 criterios {"C2_1_all_primary": false, "C2_2_all_primary": false, "C2_3_all_primary_valid": false, "n_primary": 4}
+[  507.7s] C3 inicio
+[  600.2s] C3 trench {"order_p": -0.2694829453250858, "rel_dRe_h2_h4": 4.711458981474887e-14, "r0_test_rel_dRe": 8.889545248066758e-16}
+[  659.8s] C3 C1 Delta=0.010 modelo E: neff=[1.4518524476437942, 1.4518524476437942, 1.4518524476437937] orden=-inf
+[  715.9s] C3 C1 Delta=0.010 modelo P: neff=[1.4518407809628724, 1.4518407809628722, 1.4518407809628722] orden=None
+[  715.9s] escrito D:\PROJECTS\.cognition\audit\silice-origin-main\experimentos\radial2_claude\resultados_radial2.json
