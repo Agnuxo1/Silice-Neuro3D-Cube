@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "utc_last_start": "2026-10-10T07:16:54Z",
+    "contrato": "CONTRATO-tracks-r3.md",
+    "modulo_base": "run_tracks.py (ronda 1): geometria, solve_near, select_core, n_eq_of_f",
+    "solver": "experimentos/solver2d_claude/solver2d.py (Tarea A), via solve_near",
+    "K": 30,
+    "win": 0.002,
+    "p_thr": 0.5,
+    "s_thr": 0.9,
+    "s_sub": 8,
+    "h_um": 0.25,
+    "box_convention": "L = semilado; caja [-L,L]^2 (lado 2L)",
+    "sigma_neff": 1.44219587036024,
+    "f_real_fuente": "resultados_tracks_r2.json, fracs.N*.f_union_grid (precision completa)",
+    "python": "3.13.7",
+    "omp_num_threads": "1",
+    "nota": "Modelo escalar ideal. No es dispositivo ni medida."
+  },
+  "runs": {},
+  "fracs": {
+    "N8": 0.16666362107494453,
+    "N16": 0.33335141039387756,
+    "N24": 0.44141823971479116,
+    "N32": 0.4687201028506149,
+    "N48": 0.4865132356503999,
+    "N64": 0.49248456032364224,
+    "N96": 0.49666802441110536
+  },
+  "criteria": [
+    {
+      "id": "F31-C1",
+      "description": "|n(i;L=80)-n(i;L=60)| < 1e-6 (h=0,25)",
+      "value": null,
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": "falta una corrida de caso i"
+    },
+    {
+      "id": "F31-C2",
+      "description": "caso i ligado (P>=0,5 y |n-sigma|<=0,002) en L=60 y L=80 (h=0,25)",
+      "value": {
+        "60.0": null,
+        "80.0": null
+      },
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": ""
+    },
+    {
+      "id": "F31-C3",
+      "description": "|Re n(i;L=80,h=0,25) - Re n_an(i)| <= 1e-4",
+      "value": null,
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": "falta la corrida de caso i a L=80"
+    },
+    {
+      "id": "F32-C1",
+      "description": "14 casos (ii_N, iii_N) con resultado del solver, L=80, h=0,25",
+      "value": {
+        "faltan_o_fallan": [
+          "ii_N8|L80|h0.25",
+          "ii_N16|L80|h0.25",
+          "ii_N24|L80|h0.25",
+          "ii_N32|L80|h0.25",
+          "ii_N48|L80|h0.25",
+          "ii_N64|L80|h0.25",
+          "ii_N96|L80|h0.25",
+          "iii_N8|L80|h0.25",
+          "iii_N16|L80|h0.25",
+          "iii_N24|L80|h0.25",
+          "iii_N32|L80|h0.25",
+          "iii_N48|L80|h0.25",
+          "iii_N64|L80|h0.25",
+          "iii_N96|L80|h0.25"
+        ]
+      },
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": ""
+    },
+    {
+      "id": "F32-C2",
+      "description": "7 trazos ii_N cuentan (ligados y S>0,9), L=80, h=0,25",
+      "value": {
+        "8": false,
+        "16": false,
+        "24": false,
+        "32": false,
+        "48": false,
+        "64": false,
+        "96": false
+      },
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": ""
+    },
+    {
+      "id": "F32-C3",
+      "description": "7 continuas equivalentes iii_N cuentan (ligadas y S>0,9), L=80, h=0,25",
+      "value": {
+        "8": false,
+        "16": false,
+        "24": false,
+        "32": false,
+        "48": false,
+        "64": false,
+        "96": false
+      },
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": ""
+    },
+    {
+      "id": "F33-C1",
+      "description": "|Delta(N)| < 1e-5 para N=48, 64 y 96, L=80, h=0,25 (ambos casos contados)",
+      "value": {
+        "48": {
+          "delta": null,
+          "abs": null,
+          "nota": "par no contado (no ligado o S<=0,9)"
+        },
+        "64": {
+          "delta": null,
+          "abs": null,
+          "nota": "par no contado (no ligado o S<=0,9)"
+        },
+        "96": {
+          "delta": null,
+          "abs": null,
+          "nota": "par no contado (no ligado o S<=0,9)"
+        }
+      },
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": "faltan corridas"
+    },
+    {
+      "id": "F33-C2",
+      "description": "|Delta(48)| < 1e-5, L=80, h=0,25",
+      "value": null,
+      "pass": false,
+      "evaluable": false,
+      "informative": false,
+      "note": "faltan corridas N=48"
+    },
+    {
+      "id": "INF-solape",
+      "description": "S = |<psi_N, psi_i>|^2 y cuenta por caso (informativo)",
+      "value": {},
+      "pass": null,
+      "evaluable": true,
+      "informative": true,
+      "note": ""
+    },
+    {
+      "id": "INF-delta",
+      "description": "Delta(N) frente a N y pendiente sobre pares contados (informativo)",
+      "value": {
+        "filas": {
+          "8": {
+            "n_ii": null,
+            "n_iii": null,
+            "delta": null
+          },
+          "16": {
+            "n_ii": null,
+            "n_iii": null,
+            "delta": null
+          },
+          "24": {
+            "n_ii": null,
+            "n_iii": null,
+            "delta": null
+          },
+          "32": {
+            "n_ii": null,
+            "n_iii": null,
+            "delta": null
+          },
+          "48": {
+            "n_ii": null,
+            "n_iii": null,
+            "delta": null
+          },
+          "64": {
+            "n_ii": null,
+            "n_iii": null,
+            "delta": null
+          },
+          "96": {
+            "n_ii": null,
+            "n_iii": null,
+            "delta": null
+          }
+        },
+        "pendiente_delta_por_N": null,
+        "n_pares": 0
+      },
+      "pass": null,
+      "evaluable": true,
+      "informative": true,
+      "note": ""
+    },
+    {
+      "id": "INF-caja",
+      "description": "caso i: n y P(r<=12) frente a L (informativo)",
+      "value": {},
+      "pass": null,
+      "evaluable": true,
+      "informative": true,
+      "note": ""
+    }
+  ],
+  "status": "blocked",
+  "summary": {
+    "sigma_neff": 1.44219587036024,
+    "n_runs_ok": 0,
+    "n_runs_error": 0,
+    "n_runs_counted": 0,
+    "criterios_evaluados": 0,
+    "criterios_totales": 8,
+    "criterios_pass": 0
+  }
+}

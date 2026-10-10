@@ -1,0 +1,14 @@
+[07:16:54Z] CRIT F31-C1: pass=False evaluable=False value=None
+[07:16:54Z] CRIT F31-C2: pass=False evaluable=False value={'60.0': None, '80.0': None}
+[07:16:54Z] CRIT F31-C3: pass=False evaluable=False value=None
+[07:16:54Z] CRIT F32-C1: pass=False evaluable=False value={'faltan_o_fallan': ['ii_N8|L80|h0.25', 'ii_N16|L80|h0.25', 'ii_N24|L80|h0.25', 'ii_N32|L80|h0.25', 'ii_N48|L80|h0.25', 'ii_N64|L80|h0.25', 'ii_N96|L80|h0.25', 'iii_N8|L80|h0.25', 'iii_N16|L80|h0.25', 'iii_N24|L80|h0.25', 'iii_N32|L80|h0.25', 'iii_N48|L80|h0.25', 'iii_N64|L80|h0.25', 'iii_N96|L80|h0.25']}
+[07:16:54Z] CRIT F32-C2: pass=False evaluable=False value={'8': False, '16': False, '24': False, '32': False, '48': False, '64': False, '96': False}
+[07:16:54Z] CRIT F32-C3: pass=False evaluable=False value={'8': False, '16': False, '24': False, '32': False, '48': False, '64': False, '96': False}
+[07:16:54Z] CRIT F33-C1: pass=False evaluable=False value={'48': {'delta': None, 'abs': None, 'nota': 'par no contado (no ligado o S<=0,9)'}, '64': {'delta': None, 'abs': None, 'nota': 'par no contado (no ligado o S<=0,9)'}, '96': {'delta': None, 'abs': None, 'nota': 'par no contado (no ligado o S<=0,9)'}}
+[07:16:54Z] CRIT F33-C2: pass=False evaluable=False value=None
+[07:16:54Z] CRIT INF-solape: pass=None evaluable=True value={}
+[07:16:54Z] CRIT INF-delta: pass=None evaluable=True value={'filas': {'8': {'n_ii': None, 'n_iii': None, 'delta': None}, '16': {'n_ii': None, 'n_iii': None, 'delta': None}, '24': {'n_ii': None, 'n_iii': None, 'delta': None}, '32': {'n_ii': None, 'n_iii': None, 'delta': None}, '48': {'n_ii': None, 'n_iii': None, 'delta': None}, '64': {'n_ii': None, 'n_iii': None, 'delta': None}, '96': {'n_ii': None, 'n_iii': None, 'delta': None}}, 'pendiente_delta_por_N': None, 'n_pares': 0}
+[07:16:54Z] CRIT INF-caja: pass=None evaluable=True value={}
+[07:16:54Z] status=blocked
+[07:16:54Z] md escrito
+[07:17:02Z] inicio bloque F31 (sigma=1.44219587036024)
