@@ -1,0 +1,1 @@
+fft_th0.05_dom512_dx0.500_dz2.50_f0.2_p4_s40000 z_arr=1.40 mm max|dP|/P0=3.6598e-10 @ z=1.90 mm Ptot(end)=0.991249 t=402.7s
