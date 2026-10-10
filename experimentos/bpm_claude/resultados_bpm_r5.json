@@ -1,0 +1,147 @@
+{
+  "task": "B5 bpm r5 - convergencia en dz de la perdida del BPM",
+  "fecha_utc": "2026-10-10T10:56:02+00:00",
+  "contrato": "CONTRATO-bpm-r5.md",
+  "umbral_B3": 1e-05,
+  "criterios": [
+    {
+      "id": "V0",
+      "description": "control dz=1.0: |P - r4| / r4 <= 1e-3",
+      "value": "P=2.460000e-04, rel=1.121e-07",
+      "pass": true,
+      "nota": ""
+    },
+    {
+      "id": "V1",
+      "description": "control dz=0.5: |P - r4| / r4 <= 1e-3",
+      "value": "P=7.369174e-05, rel=3.508e-06",
+      "pass": true,
+      "nota": ""
+    },
+    {
+      "id": "V2",
+      "description": "unitariedad sin CAP (dz=0,125, z<=100 um): max|P/P0-1| <= 1e-9",
+      "value": "3.824e-13",
+      "pass": true,
+      "nota": ""
+    },
+    {
+      "id": "B3-r5",
+      "description": "existe dz en {1,0,5,0,25,0,125} con P_perd(1 mm) <= 1e-5 (W=40, h=0,2, CAP base)",
+      "value": "dz=1.0: 2.460000e-04, dz=0.5: 7.369174e-05, dz=0.25: 3.718646e-05, dz=0.125: 2.758144e-08",
+      "pass": true,
+      "nota": "dz* (la mayor que cumple) = 0.125"
+    },
+    {
+      "id": "D-ORD",
+      "description": "|p_last - 2| <= 0,25 (orden de Strang observado en 0,5/0,25/0,125)",
+      "value": "p_last=-0.0256; pares={'1.0->0.5': 1.7391, '0.5->0.25': 0.9867, '0.25->0.125': 10.3969}",
+      "pass": false,
+      "nota": ""
+    },
+    {
+      "id": "D-CONV",
+      "description": "|P(0,125) - P(0,25)| / P(0,125) <= 0,10",
+      "value": "1347.2424",
+      "pass": false,
+      "nota": ""
+    },
+    {
+      "id": "D-EXT",
+      "description": "P_ext (Richardson, p_last) <= 1e-5",
+      "value": "P_ext=2.112619e-03; P_ext(p=2)=-1.235871e-05",
+      "pass": false,
+      "nota": ""
+    },
+    {
+      "id": "D-PERT",
+      "description": "|P_ext - P_pert| / P_pert <= 0,10",
+      "value": "P_ext=2.112619e-03, P_pert=3.167229e-08, rel=6.6701e+04",
+      "pass": false,
+      "nota": ""
+    },
+    {
+      "id": "G3.d14",
+      "description": "G3 d=14.0 um: |z_max(P2m) - L_c| / L_c <= 0,10",
+      "value": "pendiente: no ejecutado",
+      "pass": null,
+      "nota": ""
+    },
+    {
+      "id": "G3.d16",
+      "description": "G3 d=16.0 um: |z_max(P2m) - L_c| / L_c <= 0,10",
+      "value": "pendiente: no ejecutado",
+      "pass": null,
+      "nota": ""
+    },
+    {
+      "id": "G3",
+      "description": "G3 global: d=14 y d=16 cumplen el 10 %",
+      "value": "pendiente: no ejecutado",
+      "pass": null,
+      "nota": ""
+    }
+  ],
+  "resumen": {
+    "B3_r5_pass": true,
+    "dz_star_um": 0.125,
+    "P_perd_1mm": {
+      "dz=1.0": 0.0002459999724218065,
+      "dz=0.5": 7.369174151272695e-05,
+      "dz=0.25": 3.71864597624727e-05,
+      "dz=0.125": 2.7581435246837316e-08
+    },
+    "tiempo_propagacion_s": {
+      "dz1": 62.855791330337524,
+      "dz05": 136.02652049064636,
+      "dz025": 423.3841531276703,
+      "dz0125": 908.9609541893005
+    },
+    "tiempo_por_paso_ms": {
+      "dz1": 62.855791330337524,
+      "dz05": 68.01326024532318,
+      "dz025": 105.84603828191757,
+      "dz0125": 113.62011927366257
+    },
+    "corridas_mas_de_15_min": [
+      "dz0125"
+    ],
+    "ordenes_pares": {
+      "1.0->0.5": 1.7390833003082096,
+      "0.5->0.25": 0.9867255418468073,
+      "0.25->0.125": 10.396864159330995
+    },
+    "p_last": -0.0256017386074167,
+    "P_ext_richardson_p_last": 0.0021126185698019735,
+    "P_ext_richardson_p2": -1.2358711340495118e-05,
+    "P_pert_1mm_h0.2": 3.167229423173268e-08,
+    "referencias_pert": {
+      "h0.2": {
+        "h_um": 0.2,
+        "t2_medio_P_E0": 3.167229470073849e-11,
+        "P_pert_1mm": 3.167229423173268e-08
+      },
+      "h0.1": {
+        "h_um": 0.1,
+        "t2_medio_P_E0": 3.166822834731977e-11,
+        "P_pert_1mm": 3.1668227817860384e-08
+      }
+    },
+    "r4_citados": {
+      "1.0": 0.000246,
+      "0.5": 7.3692e-05
+    },
+    "G3": "pendiente: no ejecutado",
+    "G3_detalle": {
+      "d14": null,
+      "d16": null
+    },
+    "criterios_no_evaluados": [
+      "G3.d14",
+      "G3.d16",
+      "G3"
+    ],
+    "estado": "partial"
+  },
+  "texto": "B3-r5: PASA (dz* = 0.125). P_perd(1 mm): dz=1.0: 2.460000e-04, dz=0.5: 7.369174e-05, dz=0.25: 3.718646e-05, dz=0.125: 2.758144e-08. p_last=-0.0256. P_ext=2.112619e-03. P_pert=3.167229e-08. G3: pendiente: no ejecutado."
+}
