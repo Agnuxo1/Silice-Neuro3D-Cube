@@ -1,0 +1,21 @@
+{
+  "experiment_id": "T20D_trench_width_design_20261013",
+  "task_id": "T20",
+  "scope": "numerical_model",
+  "model": "Exact vector leaky modes of a three-layer cylindrical trench guide (experimentos/vectorial_claude/vector_layers.py via trinchera_vectorial.solve), HE11 only. Ideal step profile; no scattering, absorption, bend or fabrication roughness.",
+  "units": {"width": "um", "leakage": "dB/cm", "wavelength": "m"},
+  "question": "How wide must the trench be for the ideal leakage floor of HE11 to stay at or below 10 % of the verified state of the art (0.06 dB/cm at 1550 nm, T26 rule R1)?",
+  "grid": {"t_um": [12, 13, 14, 15, 16, 18, 20], "dn": -0.005, "a_um": 6, "n0": 1.444, "wavelength_nm": 1550},
+  "pre_commit_checks": "One solve at t = 12 um reproduced the registered value (n_eff 1.442189333, leakage 0.0440442 dB/cm) to check the solver and its run time (2.4 min). No other width was computed before this commitment.",
+  "criteria": [
+    {"id": "all_solves_valid", "operator": "eq", "threshold": true},
+    {"id": "leakage_decreases_with_width", "operator": "eq", "threshold": true},
+    {"id": "reproduces_registered_t12_value", "operator": "eq", "threshold": true}
+  ],
+  "decision_rule": "t_min = smallest width (log-linear interpolation) with leakage <= 0.006 dB/cm. The H1-SOTA coupon uses the next whole micrometre above t_min plus 1 um of margin; if t_min is not reached within 20 um, H1-SOTA is declared infeasible for this index contrast.",
+  "resource_limits": {"cpu_threads": 1, "seconds": 2400, "gpu": false},
+  "heldout_policy": "Deterministic prediction registered before any fabrication or measurement; the prediction itself is what the blind cutback (T14) will test.",
+  "planned_artifacts": [
+    "resultados/agent/t20_trench_width_20261013/results.json"
+  ]
+}
