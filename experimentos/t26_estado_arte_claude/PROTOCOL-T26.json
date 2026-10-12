@@ -1,0 +1,57 @@
+{
+  "experiment_id": "T26_state_of_the_art_20261012",
+  "task_id": "T26",
+  "scope": "novelty",
+  "model": "Structured literature review with identifier-verified metadata; no new physical data.",
+  "units": {
+    "propagation_loss": "dB/cm",
+    "bend_loss": "dB/cm or dB/90deg as reported",
+    "crossing_loss": "dB per crossing",
+    "wavelength": "nm"
+  },
+  "question": "What are the best verified results that the H1 threshold (total propagation loss <= 0.3 dB/cm at 1550 nm) and the H-B crossing argument must be compared against?",
+  "search_strategy": {
+    "date_window": "2010-01-01 to 2026-10-12 (search date 2026-10-12)",
+    "sources": ["Crossref API", "arXiv API", "publisher pages and abstracts found by web search", "reference lists of included records (one level of snowballing)"],
+    "queries": [
+      "femtosecond laser written waveguide propagation loss 1550 nm fused silica",
+      "depressed cladding waveguide femtosecond fused silica 1550 nm loss",
+      "multiscan femtosecond waveguide low loss fused silica",
+      "femtosecond laser written waveguide bend loss radius 1550",
+      "femtosecond laser written waveguide crossing insertion loss crosstalk",
+      "three-dimensional photonic neural network femtosecond laser glass",
+      "femtosecond laser written programmable photonic processor 1550 nm",
+      "tubular depressed cladding waveguide fused silica heat accumulation 0.3 dB/cm"
+    ],
+    "inclusion": [
+      "Waveguides written by femtosecond laser in a glass (fused silica, borosilicate, aluminoborosilicate, SK-1310 or other silicate glass).",
+      "A quantitative loss figure (propagation, bend or crossing) with its wavelength, or a fs-written programmable or 3D photonic network.",
+      "Peer-reviewed article, conference paper with DOI, or arXiv preprint."
+    ],
+    "exclusion": [
+      "Records whose identifier cannot be verified by verify_refs.py.",
+      "Press releases and secondary summaries without the primary record."
+    ],
+    "extraction_fields": ["material", "writing_regime", "waveguide_type", "wavelength_nm", "propagation_loss_db_per_cm", "loss_method", "bend_radius_mm_and_loss", "crossing_loss_db", "mode_or_polarization", "where_in_text"],
+    "value_verification": "Each extracted number records where it appears (abstract, section, table or figure). Numbers taken only from an abstract are labeled abstract_only."
+  },
+  "decision_rules": {
+    "R1": "S1550 = lowest verified propagation loss of a single-mode fs-written waveguide in fused silica measured at 1530-1565 nm with a stated method. If S1550 < 0.3 dB/cm, the 0.3 dB/cm threshold of H1 is labeled a feasibility threshold, not a state-of-the-art claim, and a secondary hypothesis H1-SOTA with threshold S1550 is registered under the same three-zone rule.",
+    "R2": "If no verified record satisfies R1, the lowest verified value at any near-infrared wavelength is reported as wavelength-mismatched and no H1-SOTA threshold is set.",
+    "R3": "The lowest verified depressed-cladding (type III) loss at 1530-1565 nm in any glass is reported separately as the closest-geometry comparator.",
+    "R4": "XC = lowest verified insertion loss per crossing for fs-written glass waveguides (any wavelength, flagged). It is the input for the T25 break-even comparison; if none is verified, the crossing loss is declared the decisive unknown for H-B.",
+    "R5": "Every 3D or programmable fs-written photonic network found is added to the novelty table with what it does and does not cover relative to claims (a)-(e) of Docs/NOVEDAD-ESTADO-20261011.md."
+  },
+  "criteria": [
+    {"id": "all_identifiers_verified", "operator": "eq", "threshold": true},
+    {"id": "n_verified_records", "operator": "ge", "threshold": 8},
+    {"id": "every_value_has_location", "operator": "eq", "threshold": true}
+  ],
+  "resource_limits": {"cpu_threads": 1, "gpu": false, "network": "public bibliographic APIs and web pages only"},
+  "heldout_policy": "Not applicable: literature review. Records are collected before any H1 measurement exists; no project data are used.",
+  "planned_artifacts": [
+    "resultados/agent/t26_sota_20261012/records.json",
+    "resultados/agent/t26_sota_20261012/verification.json",
+    "Docs/CIERRE-20261012/T26-STATE-OF-THE-ART.md"
+  ]
+}
