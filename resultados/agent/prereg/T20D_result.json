@@ -1,0 +1,1 @@
+{"artifacts":["resultados/agent/t20_trench_width_20261013/results.json"],"experiment_id":"T20D_trench_width_design_20261013","metrics":{"all_solves_valid":true,"leakage_decreases_with_width":true,"reproduces_registered_t12_value":true},"protocol_sha256":"31e842cce369bfc06553f6a090ac9db67201c8876e48342c7eedc82977438684","scope":"numerical_model","status":"completed"}
