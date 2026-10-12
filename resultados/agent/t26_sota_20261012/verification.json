@@ -1,0 +1,892 @@
+{
+ "records": [
+  {
+   "id": "tan2022_ol",
+   "doi": "10.1364/OL.470670",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Effectively writing low propagation and bend loss waveguides in the silica glass by using a femtosecond laser",
+     "year": 2022,
+     "container": "Optics Letters",
+     "volume": "47",
+     "page": "4766",
+     "authors": [
+      "Tan",
+      "Sun",
+      "Li",
+      "Qiu"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "tan2021_ome",
+   "doi": "10.1364/OME.419945",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Femtosecond laser writing low-loss waveguides in silica glass: highly symmetrical mode field and mechanism of refractive index change",
+     "year": 2021,
+     "container": "Optical Materials Express",
+     "volume": "11",
+     "page": "848",
+     "authors": [
+      "Tan",
+      "Sun",
+      "Qiu"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "skryabin2024_pra",
+   "doi": "10.1103/PhysRevApplied.22.064079",
+   "arxiv": "2408.06688",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Femtosecond-laser-written low-loss multiscan waveguides in fused silica",
+     "year": 2024,
+     "container": "Physical Review Applied",
+     "volume": "22",
+     "page": null,
+     "authors": [
+      "Skryabin",
+      "Zhuravitskii",
+      "Dyakonov",
+      "Straupe",
+      "Kalinkin",
+      "Kulik"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Femtosecond laser written low-loss multiscan waveguides in fused silica",
+     "year": 2024,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "ackermann2025_ol",
+   "doi": "10.1364/OL.557978",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High-speed femtosecond UV laser writing of low-loss waveguides in fused silica",
+     "year": 2025,
+     "container": "Optics Letters",
+     "volume": "50",
+     "page": "2506",
+     "authors": [
+      "Ackermann",
+      "Hermann",
+      "Talán Echarri",
+      "Gribaudo",
+      "Bellouard"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "bukharin2015_apa",
+   "doi": "10.1007/s00339-015-8990-x",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Heat accumulation regime of femtosecond laser writing in fused silica and Nd:phosphate glass",
+     "year": 2015,
+     "container": "Applied Physics A",
+     "volume": "119",
+     "page": "397-403",
+     "authors": [
+      "Bukharin",
+      "Khudyakov",
+      "Vartapetov"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "lee2021_scirep",
+   "doi": "10.1038/s41598-021-03116-y",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Low bend loss femtosecond laser written waveguides exploiting integrated microcrack",
+     "year": 2021,
+     "container": "Scientific Reports",
+     "volume": "11",
+     "page": null,
+     "authors": [
+      "Lee",
+      "Sun",
+      "Beresna",
+      "Brambilla"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "rossadams2024_lam",
+   "doi": "10.37188/lam.2024.009",
+   "arxiv": "2401.03382",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Low bend loss, high index, composite morphology ultra-fast laser written waveguides for photonic integrated circuits",
+     "year": 2024,
+     "container": "Light: Advanced Manufacturing",
+     "volume": "5",
+     "page": "52",
+     "authors": [
+      "Ross-Adams",
+      "Fernandez",
+      "Withford",
+      "Gross"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Low Bend Loss, High Index, Composite Morphology Ultra-fast Laser Written Waveguides for Photonic Integrated Circuits",
+     "year": 2024,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "zhou2025_optmat",
+   "doi": "10.1016/j.optmat.2025.116651",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Femtosecond laser writing of telecom-band depressed-cladding waveguides and mode modulation in SK1310 glass",
+     "year": 2025,
+     "container": "Optical Materials",
+     "volume": "159",
+     "page": "116651",
+     "authors": [
+      "Zhou",
+      "Liu",
+      "Cheng",
+      "Du",
+      "Wu",
+      "Wang"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "likhov2025_k8",
+   "doi": "10.3103/S1068335625604716",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Directional Coupler Based on Waveguides with a Structured Depressed Cladding in K8 Glass",
+     "year": 2025,
+     "container": "Bulletin of the Lebedev Physics Institute",
+     "volume": "52",
+     "page": "S1224-S1230",
+     "authors": [
+      "Likhov",
+      "Alagashev",
+      "Okhrimchuk"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "chen2018_bk7",
+   "doi": "10.1038/s41598-018-28631-3",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Femtosecond-laser-written Microstructured Waveguides in BK7 Glass",
+     "year": 2018,
+     "container": "Scientific Reports",
+     "volume": "8",
+     "page": null,
+     "authors": [
+      "Chen",
+      "Piantedosi",
+      "Otten",
+      "Kang",
+      "Zhang",
+      "Zhou"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "lapointe2014_gorilla",
+   "doi": "10.1364/OE.22.015473",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Making smart phones smarter with photonics",
+     "year": 2014,
+     "container": "Optics Express",
+     "volume": "22",
+     "page": "15473",
+     "authors": [
+      "Lapointe",
+      "Gagné",
+      "Li",
+      "Kashyap"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "sun2022_spim_lsa",
+   "doi": "10.1038/s41377-022-00907-4",
+   "arxiv": "2112.02688",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "On-chip beam rotators, adiabatic mode converters, and waveplates through low-loss waveguides with variable cross-sections",
+     "year": 2022,
+     "container": "Light: Science &amp; Applications",
+     "volume": "11",
+     "page": null,
+     "authors": [
+      "Sun",
+      "Morozko",
+      "Salter",
+      "Moser",
+      "Pong",
+      "Patel"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "On-chip beam rotators, adiabatic mode converters, and waveplates through low-loss waveguides with variable cross-sections",
+     "year": 2021,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "liu2018_scichina",
+   "doi": "10.1007/s11433-018-9202-0",
+   "arxiv": "1802.03461",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Suppression of bend loss in writing of three-dimensional optical waveguides with femtosecond laser pulses",
+     "year": 2018,
+     "container": "Science China Physics, Mechanics &amp; Astronomy",
+     "volume": "61",
+     "page": null,
+     "authors": [
+      "Liu",
+      "Liao",
+      "Fang",
+      "Chu",
+      "Cheng"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Suppression of bend loss in writing of three-dimensional optical waveguides with femtosecond laser pulses",
+     "year": 2018,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "memeo2026_arxiv",
+   "doi": null,
+   "arxiv": "2603.25142",
+   "verified": true,
+   "checks": {
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Tailoring the birefringence of femtosecond-laser-written multi-scan waveguides in glass",
+     "year": 2026,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "djogo2019_ijem",
+   "doi": "10.1088/2631-7990/ab4d51",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Femtosecond laser additive and subtractive micro-processing: enabling a high-channel-density silica interposer for multicore fibre to silicon-photonic packaging",
+     "year": 2019,
+     "container": "International Journal of Extreme Manufacturing",
+     "volume": "1",
+     "page": "045002",
+     "authors": [
+      "Djogo",
+      "Li",
+      "Ho",
+      "Haque",
+      "Ertorer",
+      "Liu"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "djogo2026_jlt",
+   "doi": "10.1109/JLT.2026.3720907",
+   "arxiv": "2512.01972",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Laser Structured Optical Interposer for Ultra-Dense Surface Coupling of Multicore Fibers to Silicon Photonic Chip",
+     "year": 2026,
+     "container": "Journal of Lightwave Technology",
+     "volume": "44",
+     "page": "7978-7986",
+     "authors": [
+      "Djogo",
+      "Rahimnouri",
+      "Herman"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Laser Structured Optical Interposer for Ultra-dense Vertical Coupling of Multi-core Fibers to Silicon Photonic Chip",
+     "year": 2025,
+     "title_similarity": 0.9474,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "yu2026_adpr",
+   "doi": "10.1002/adpr.70241",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Ultra‐Compact Low‐Loss 3D Glass Waveguide Chip Using Femtosecond Laser Writing Technique",
+     "year": 2026,
+     "container": "Advanced Photonics Research",
+     "volume": "7",
+     "page": null,
+     "authors": [
+      "Yu",
+      "Ma",
+      "Xu",
+      "Chen",
+      "Wu",
+      "He"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "ceccarelli2019_jlt",
+   "doi": "10.1109/JLT.2019.2923126",
+   "arxiv": "2006.08707",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Thermal Phase Shifters for Femtosecond Laser Written Photonic Integrated Circuits",
+     "year": 2019,
+     "container": "Journal of Lightwave Technology",
+     "volume": "37",
+     "page": "4275-4281",
+     "authors": [
+      "Ceccarelli",
+      "Atzeni",
+      "Prencipe",
+      "Farinaro",
+      "Osellame"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Thermal phase shifters for femtosecond laser written photonic integrated circuits",
+     "year": 2020,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "ceccarelli2020_lpr",
+   "doi": "10.1002/lpor.202000024",
+   "arxiv": "2001.08144",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Low Power Reconfigurability and Reduced Crosstalk in Integrated Photonic Circuits Fabricated by Femtosecond Laser Micromachining",
+     "year": 2020,
+     "container": "Laser &amp; Photonics Reviews",
+     "volume": "14",
+     "page": null,
+     "authors": [
+      "Ceccarelli",
+      "Atzeni",
+      "Pentangelo",
+      "Pellegatta",
+      "Crespi",
+      "Osellame"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining",
+     "year": 2020,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "albiero2022_micromachines",
+   "doi": "10.3390/mi13071145",
+   "arxiv": "2303.05150",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Toward Higher Integration Density in Femtosecond-Laser-Written Programmable Photonic Circuits",
+     "year": 2022,
+     "container": "Micromachines",
+     "volume": "13",
+     "page": "1145",
+     "authors": [
+      "Albiero",
+      "Pentangelo",
+      "Gardina",
+      "Atzeni",
+      "Ceccarelli",
+      "Osellame"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Toward Higher Integration Density in Femtosecond-Laser-Written Programmable Photonic Circuits",
+     "year": 2023,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "ceccarelli2024_cryo_jpp",
+   "doi": "10.1088/2515-7647/ad82c2",
+   "arxiv": "2406.16770",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Integrated thermo-optic phase shifters for laser-written photonic circuits operating at cryogenic temperatures",
+     "year": 2024,
+     "container": "Journal of Physics: Photonics",
+     "volume": "6",
+     "page": "045023",
+     "authors": [
+      "Ceccarelli",
+      "Rakonjac",
+      "Grandi",
+      "Riedmatten",
+      "Osellame",
+      "Corrielli"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Integrated thermo-optic phase shifters for laser-written photonic circuits operating at cryogenic temperatures",
+     "year": 2024,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "flamini2015_lsa",
+   "doi": "10.1038/lsa.2015.127",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Thermally reconfigurable quantum photonic circuits at telecom wavelength by femtosecond laser micromachining",
+     "year": 2015,
+     "container": "Light: Science &amp; Applications",
+     "volume": "4",
+     "page": "e354-e354",
+     "authors": [
+      "Flamini",
+      "Magrini",
+      "Rab",
+      "Spagnolo",
+      "D'Ambrosio",
+      "Mataloni"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "pentangelo2024_nanophot",
+   "doi": "10.1515/nanoph-2023-0636",
+   "arxiv": "2310.19718",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High‐fidelity and polarization‐insensitive universal photonic processors fabricated by femtosecond laser writing",
+     "year": 2024,
+     "container": "Nanophotonics",
+     "volume": "13",
+     "page": "2259-2270",
+     "authors": [
+      "Pentangelo",
+      "Di Giano",
+      "Piacentini",
+      "Arpe",
+      "Ceccarelli",
+      "Crespi"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High-fidelity and polarization insensitive universal photonic processors fabricated by femtosecond laser writing",
+     "year": 2023,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "kondratyev2024_prj",
+   "doi": "10.1364/PRJ.504588",
+   "arxiv": "2308.13452",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Large-scale error-tolerant programmable interferometer fabricated by femtosecond laser writing",
+     "year": 2024,
+     "container": "Photonics Research",
+     "volume": "12",
+     "page": "A28",
+     "authors": [
+      "Kondratyev",
+      "Ivanova",
+      "Fldzhyan",
+      "Argenchiev",
+      "Kostyuchenko",
+      "Zhuravitskii"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Large-scale error-tolerant programmable interferometer fabricated by femtosecond laser writing",
+     "year": 2023,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "barzaghi2025_24mode",
+   "doi": null,
+   "arxiv": "2505.01609",
+   "verified": true,
+   "checks": {
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "A low-loss, 24-mode laser-written universal photonic processor in a glass-based platform",
+     "year": 2025,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "lichtenegger2026_photonics",
+   "doi": "10.3390/photonics13080731",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Reconfigurable Photonic Integrated Circuits in Glass by Femtosecond Laser Writing and Laser-Induced Chemical Etching",
+     "year": 2026,
+     "container": "Photonics",
+     "volume": "13",
+     "page": "731",
+     "authors": [
+      "Lichtenegger",
+      "Hurdax",
+      "Spernbauer",
+      "Lamprecht"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "cao2026_lamp",
+   "doi": "10.1038/s41467-026-72316-9",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Programmable Three-dimensional Photonic Neural Network Chip",
+     "year": 2026,
+     "container": "Nature Communications",
+     "volume": "17",
+     "page": null,
+     "authors": [
+      "Cao",
+      "Du",
+      "Yuan",
+      "Wu",
+      "Zhang",
+      "Fu"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "hoch2022_npjqi",
+   "doi": "10.1038/s41534-022-00568-6",
+   "arxiv": "2106.08260",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Reconfigurable continuously-coupled 3D photonic circuit for Boson Sampling experiments",
+     "year": 2022,
+     "container": "npj Quantum Information",
+     "volume": "8",
+     "page": null,
+     "authors": [
+      "Hoch",
+      "Piacentini",
+      "Giordani",
+      "Tian",
+      "Iuliano",
+      "Esposito"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Reconfigurable continuously-coupled 3D photonic circuit for Boson Sampling experiments",
+     "year": 2021,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "dimicco2026_128mode",
+   "doi": null,
+   "arxiv": "2605.04162",
+   "verified": true,
+   "checks": {
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Boson Sampling with a reconfigurable 128 modes 3D integrated photonic circuit",
+     "year": 2026,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "peri2026_advphoton",
+   "doi": "10.1117/1.AP.8.1.016009",
+   "arxiv": "2506.08924",
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High-performance heterodyne receiver for quantum information processing in a laser-written integrated photonic platform",
+     "year": 2026,
+     "container": "Advanced Photonics",
+     "volume": "8",
+     "page": "1-17",
+     "authors": [
+      "Peri",
+      "Gualandi",
+      "Bertapelle",
+      "Sabatini",
+      "Corrielli",
+      "Piétri"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    },
+    "arxiv": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High-Performance Heterodyne Receiver for Quantum Information Processing in a Laser Written Integrated Photonic Platform",
+     "year": 2025,
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "crespi2016_ncomms",
+   "doi": "10.1038/ncomms10469",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Suppression law of quantum states in a 3D photonic fast Fourier transform chip",
+     "year": 2016,
+     "container": "Nature Communications",
+     "volume": "7",
+     "page": null,
+     "authors": [
+      "Crespi",
+      "Osellame",
+      "Ramponi",
+      "Bentivegna",
+      "Flamini",
+      "Spagnolo"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  }
+ ],
+ "n_records": 31,
+ "n_verified": 31,
+ "all_identifiers_verified": true,
+ "numbers_checked_by_script": false,
+ "note": "Identifier, title and year only; extracted values need text verification."
+}
