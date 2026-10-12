@@ -1,0 +1,103 @@
+{
+  "experiment_id": "T25_scaling_3d_vs_planar_20261012_r2",
+  "task_id": "T25",
+  "scope": "numerical_model",
+  "model": "Ideal transfer algebra (agentkit.mesh, agentkit.mzi) plus an explicit planar crossing layout and a parametric worst-path loss model. No geometry, no measured device.",
+  "units": {
+    "depth": "MZI or coupler layers",
+    "loss": "dB",
+    "angle": "rad"
+  },
+  "hypothesis_under_test": "H-B (guide v2 section 39): for structured non-universal transforms (radix-2 butterfly, DFT), 3D routing removes the crossings a planar layout needs and reduces worst-path loss and error at equal N.",
+  "fixed_parameters": {
+    "seeds": "random unitaries 1000+N; error study 20261012+N+100*correlation",
+    "sigma_rad": 0.02,
+    "realizations": 200,
+    "correlations": [
+      0.0,
+      0.8
+    ],
+    "U_db": 0.2,
+    "U_db_label": "ASSUMPTION: planning value for the repeatability of an insertion-loss difference between two fiber-coupled chips",
+    "stage_loss_grid_db": [
+      0.05,
+      0.1,
+      0.2,
+      0.5
+    ],
+    "crossing_loss_grid_db": [
+      0.01,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      0.5
+    ],
+    "vertical_loss_grid_db": [
+      0.0,
+      0.05,
+      0.1
+    ]
+  },
+  "interpretation_rules": {
+    "I1": "XC = lowest verified per-crossing insertion loss for fs-written glass waveguides from T26 rule R4. If XC >= breakeven(N = 16) = 2 U / worst-path crossings(16), the crossing advantage of 3D is predicted to be measurable at N = 16 and H-B is retained as a candidate. If XC < breakeven(16), H-B is retained only for the smallest N with worst-path crossings x XC >= 2 U, and withdrawn as a headline if that N exceeds 64. If T26 verifies no XC, the crossing loss is declared the decisive unknown and H-B stays open.",
+    "I2": "Error accumulation (Clements versus butterfly DFT) is reported descriptively; no threshold.",
+    "I3": "Against a planar Clements mesh (no crossings, universal), the 3D butterfly saves N - log2 N stages; reported on the loss grid. Universality is lost and this is stated."
+  },
+  "pre_commit_checks": "Software smoke test only: crossing counts and DP versus brute force for N = 4 and 8, FFT factorization for N = 4. No other output was computed before this commitment.",
+  "criteria": [
+    {
+      "id": "clements_depth_equals_n",
+      "operator": "eq",
+      "threshold": true
+    },
+    {
+      "id": "triangular_depth_equals_2n_minus_3",
+      "operator": "eq",
+      "threshold": true
+    },
+    {
+      "id": "max_reconstruction_error",
+      "operator": "le",
+      "threshold": 1e-10
+    },
+    {
+      "id": "crossing_total_matches_closed_form",
+      "operator": "eq",
+      "threshold": true
+    },
+    {
+      "id": "worst_path_dp_matches_bruteforce",
+      "operator": "eq",
+      "threshold": true
+    },
+    {
+      "id": "fft_factorization_error",
+      "operator": "le",
+      "threshold": 1e-12
+    },
+    {
+      "id": "depth_lower_bound_respected",
+      "operator": "eq",
+      "threshold": true
+    }
+  ],
+  "resource_limits": {
+    "cpu_threads": 1,
+    "seconds": 300,
+    "gpu": false
+  },
+  "heldout_policy": "Deterministic model; no data split. Seeds fixed above.",
+  "planned_artifacts": [
+    "resultados/agent/t25_scaling_20261012/results.json",
+    "resultados/agent/t25_scaling_20261012/fig_t25_scaling.png",
+    "resultados/agent/t25_scaling_20261012/fig_t25_scaling.pdf",
+    "Docs/CIERRE-20261012/T25-SCALING-3D-VS-PLANAR.md"
+  ],
+  "amendment": {
+    "date_utc": "2026-10-12",
+    "replaces": "T25_scaling_3d_vs_planar_20261012 (commitment e640f9f)",
+    "reason": "Attempt 1 crashed when writing results.json: numpy int64 from the brute-force path count is not JSON serializable. No metric was printed or read; the two figure files written before the crash were not opened and are kept unchanged in resultados/agent/t25_scaling_20261012_attempt1_failed/.",
+    "change": "run_t25.py casts the brute-force counts to int (two lines). Analysis, parameters, seeds, criteria and interpretation rules are unchanged."
+  }
+}
