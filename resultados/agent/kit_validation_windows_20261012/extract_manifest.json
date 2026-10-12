@@ -1,0 +1,33 @@
+{
+  "guide_sha256": "8c887a9934230d1f1ddc49328ecfa8735d1326b46df85fe7c3afd3e3af0dbdf8",
+  "files": {
+    "extract_agentkit.py": "02010967d2ad3e229bc92365ad877fca9f85f6f37bce1aaa27a4d726a378da71",
+    "agentkit/__init__.py": "5b5f3b5c6d9344b0f56398fb4a983b0421b6c4093b95ad11b8efa4c933a76cc8",
+    "agentkit/requirements.txt": "4867bcb7e93c7d0fbc053103bdd812a12f3c39cc9bd7c6093b451aa12632afcf",
+    "agentkit/tasks.json": "d21fedfb9843fab7630efc19a9bb57cb86a51ac897a47e2793b5089520c9ff9f",
+    "agentkit/example_protocol.json": "18f841bc6578ffe2102e91ad42cbd97524a24000d2d489b3e014f05db93f6b00",
+    "agentkit/analyze.py": "c746b8beaba4c3d96c944a74e0a8441f54d33ddd3f7ccefddc5d1ca1d190243b",
+    "agentkit/checkpoint.py": "25230451d523ed507ed36ec15978aae162d67e2b6759403bc37fc36636a7ac37",
+    "agentkit/demo.py": "861227e6dac9b608593f62432b97d7e25e674556686c47e6faa74fe071e2494e",
+    "agentkit/evidence.py": "f614fb83ed025168931b96c4c4a92a8bd65373c788182cbf7457924ca4622004",
+    "agentkit/learning.py": "94475c07d01ff3d71d70399c74d84ab8a700d797aad1511f7f27141ac78bd5ee",
+    "agentkit/mesh.py": "f2560345e966ec1fc30d11a78f681f05a587831bc61b4c7b02af5bf5baf01205",
+    "agentkit/metrology.py": "ceba16448c70f335507d8c60db600fa6e34b30dd4b81c59057f4cdd2e83f04b7",
+    "agentkit/numerics.py": "f236fab2c3223bc1c36692f6afbd82f063b1c6be920a507428b602722742a828",
+    "agentkit/paraxial.py": "0e17587c3e64aeed906c1a375762f17bcee56d770336002d251d8c10622a9bab",
+    "agentkit/report.py": "1ae7039dda257150ce8c9a8f485616eee41d80667b92036daf575e6c394d043d",
+    "agentkit/supervisor.py": "2ecfef628653198c82a83da329ab76d46afe28ab4f527c5a6f7939a66925b77d",
+    "tests/test_agentkit.py": "fd77f9b9b5a519e033230e3c99ad6899712feb95023e89a07f713894f2df71fa",
+    "agentkit/prereg.py": "b108698e309a560bac882eec023b94c6a4a625c406acd8df5dc43aa7952cdbfa",
+    "agentkit/blind.py": "1ee25f81777e4719b24bcd2ec2216a3185cc05519b5dd257f876a0b605cac9c8",
+    "agentkit/claims.py": "fadf5cac76c2b12545814f7684e090b642b39b727d965b7b68f9cccf7cd7ea77",
+    "agentkit/stats.py": "1ea4061d51014544249ed2fea23b603d0e34c7056ae75522407f96be23af34a9",
+    "agentkit/limits.py": "bd9375ade617ed8179ef5626e79910c6bd92910f25f7970a92888706d4577e70",
+    "agentkit/mzi.py": "873b0cd33831c19259896d2eafa164b4ee8afe7521089609778fb9d36f9eca45",
+    "agentkit/learning_v2.py": "121fca35f6ca2586befabd85a05e53ca3d1634b0b3c6ef2edac40da33177b6ab",
+    "agentkit/test_v2.py": "b85fbc186e1d01c2a170c5a9bda128cab09a6d3212e14513ac21d2b489f025db",
+    "agentkit/tasks_v2.json": "e99c96427adf5ad79da5a23a957b981102ad1349f0d22e8169e273e52721e131",
+    "agentkit/claims_example.json": "d92a1b0932219200b253a1a15a1aeedd0bd8f0a096177bf80453b62fdf74bdac",
+    "agentkit/limits_example_params.json": "4e0f57eaf16e848564c8d3c41756f67424645690a9a501f3d7d761a1fc2d231a"
+  }
+}

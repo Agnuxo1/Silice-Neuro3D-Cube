@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "project_agents": [
+    "Claude",
+    "Codex",
+    "JEV"
+  ],
+  "claims": [
+    {
+      "id": "C-KIT-MZI",
+      "scope": "software",
+      "status": "OPEN",
+      "statement": "Kit v2 rectangular MZI synthesis reconstructs random unitaries for N = 2 to 9 with spectral error below 1e-12.",
+      "falsifier": "Any N from 2 to 9 with reconstruction error of at least 1e-12 in agentkit.test_v2.MeshTests.",
+      "evidence": [],
+      "limitations": "Ideal transfer algebra only; no geometry, loss or fabrication error.",
+      "next_action": "Run agentkit.test_v2 in the project environment, keep the run log and attach it as software_test evidence."
+    },
+    {
+      "id": "C-T19-a",
+      "scope": "novelty",
+      "status": "WITHDRAWN",
+      "statement": "A multilayer 3D network written by fs laser in glass is new.",
+      "falsifier": "A published prior fs-written multilayer 3D photonic network in glass.",
+      "withdrawal_reason": "Cao et al., Nat. Commun. 17, 5476 (2026), DOI 10.1038/s41467-026-72316-9: 8-layer fs-written network in borosilicate glass.",
+      "evidence": [],
+      "references": [
+        "Docs/NOVEDAD-ESTADO-20261011.md (audit branch)"
+      ],
+      "next_action": "Evaluate the narrower variant: silica, multi-face writing with measured registration (T09, T19)."
+    },
+    {
+      "id": "C-T20-H1",
+      "scope": "physical_component",
+      "status": "OPEN",
+      "statement": "A trench waveguide (core n = 1.444, trench delta n = -0.005, t = 12 um, a = 6 um), written by fs laser in silica, has a total propagation loss <= 0.3 dB/cm at 1550 nm.",
+      "falsifier": "Lower bound of the 95% CI above 0.3 dB/cm (registered F1). Separately, an upper bound below the leakage recomputed for the measured profile signals a model or measurement error.",
+      "evidence": [],
+      "references": [
+        "Docs/CONTRIBUCION-CENTRAL-T20.md (audit branch)"
+      ],
+      "limitations": "Mode, excitation and the single decision rule are not yet declared; the 0.3 dB/cm threshold is far above the 0.07 dB/cm reported at 1550 nm in fused silica (Tan et al., Opt. Lett. 47, 4766, 2022).",
+      "next_action": "Dated amendment before measuring (NOVEDAD-ESTADO section 5, points i to v), then T26 threshold review."
+    },
+    {
+      "id": "C-T11-C3",
+      "scope": "numerical_model",
+      "status": "PARTIAL",
+      "statement": "8-bit recalibration meets C3 in the preregistered realization and in 28 of 36 realizations (78 %, exact 95% CI 0.61 to 0.90).",
+      "falsifier": "Recomputation from the retained realizations disagrees, or C2 remains failed.",
+      "evidence": [],
+      "references": [
+        "experimentos/compilador_claude/RESULTADOS-COMPILADOR.md (audit branch)",
+        "Docs/CORRECCION-ESTADOS-20261011.md (audit branch)"
+      ],
+      "limitations": "C2 fails (1.3e-2 to 1.7e-2 against 5e-3); delta is a model value, not measured (T14).",
+      "next_action": "Keep the C2 failure visible; measure delta (T14) before any yield claim."
+    },
+    {
+      "id": "C-T12-F3b",
+      "scope": "numerical_neural_model",
+      "status": "FAIL",
+      "statement": "Network F3-b meets H-F1 and H-F2.",
+      "falsifier": "Registered criteria H-F1 or H-F2 not met.",
+      "evidence": [],
+      "references": [
+        "Docs/T12-CIERRE-Y-BLOQUEADOS-20261011.md (audit branch)"
+      ],
+      "limitations": "Majority-class baseline is 52.5 % on the imbalanced test set; the electronic reference did not converge.",
+      "next_action": "New registered experiment with converged, gain-matched baselines and balanced metrics (T12, T16)."
+    },
+    {
+      "id": "C-T24-energy",
+      "scope": "numerical_model",
+      "status": "OPEN",
+      "statement": "With sourced parameters, the full optoelectronic layer needs less energy per MAC than a cited digital reference at equal output precision.",
+      "falsifier": "agentkit.limits budget with sourced inputs gives an advantage factor <= 1 for every plausible parameter set.",
+      "evidence": [],
+      "next_action": "Collect cited values for every parameter, then run the kill test before any energy claim."
+    },
+    {
+      "id": "C-T21-repro",
+      "scope": "external_replication",
+      "status": "OPEN",
+      "statement": "An independent team reproduces the central numerical result from the archived inputs.",
+      "falsifier": "The independent rerun disagrees beyond the declared uncertainty.",
+      "evidence": [],
+      "next_action": "Prepare the reproduction package; agreement among AI agents does not count."
+    }
+  ]
+}

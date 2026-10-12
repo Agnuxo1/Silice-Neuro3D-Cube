@@ -1,0 +1,23 @@
+{
+  "experiment_id": "manufactured_controls_v1",
+  "task_id": "T01",
+  "scope": "manufactured_control",
+  "model": "analytic_fixture",
+  "units": {
+    "length": "m",
+    "power": "relative_to_input"
+  },
+  "criteria": [
+    {
+      "id": "holdout_passed",
+      "operator": "eq",
+      "threshold": true
+    }
+  ],
+  "resource_limits": {
+    "cpu_threads": 1,
+    "seconds": 40,
+    "gpu": false
+  },
+  "heldout_policy": "Known analytic law; never used as a T96 result"
+}

@@ -1,0 +1,34 @@
+test_signed_model_converges_on_synthetic_task (agentkit.test_v2.LearningV2Tests.test_signed_model_converges_on_synthetic_task) ... ok
+test_signed_models_gradient (agentkit.test_v2.LearningV2Tests.test_signed_models_gradient) ... ok
+test_blinding_is_reversible_and_rounded (agentkit.test_v2.LedgerAndBlindTests.test_blinding_is_reversible_and_rounded) ... ok
+test_dependencies_must_pass_and_cycles_fail (agentkit.test_v2.LedgerAndBlindTests.test_dependencies_must_pass_and_cycles_fail) ... ok
+test_every_task_scope_is_known_to_the_ledger (agentkit.test_v2.LedgerAndBlindTests.test_every_task_scope_is_known_to_the_ledger) ... ok
+test_ledger_rejects_simulation_for_physical_claim (agentkit.test_v2.LedgerAndBlindTests.test_ledger_rejects_simulation_for_physical_claim) ... ok
+test_project_agents_cannot_replicate (agentkit.test_v2.LedgerAndBlindTests.test_project_agents_cannot_replicate) ... ok
+test_max_depth_boundary (agentkit.test_v2.LimitsTests.test_max_depth_boundary) ... ok
+test_optical_energy_per_mac_amortizes_with_fan_in (agentkit.test_v2.LimitsTests.test_optical_energy_per_mac_amortizes_with_fan_in) ... ok
+test_photon_energy_and_shot_limit (agentkit.test_v2.LimitsTests.test_photon_energy_and_shot_limit) ... ok
+test_clements_reconstruction_and_depth (agentkit.test_v2.MeshTests.test_clements_reconstruction_and_depth) ... ok
+test_passive_contraction_and_gain_rejection (agentkit.test_v2.MeshTests.test_passive_contraction_and_gain_rejection) ... ok
+test_permutation_and_identity (agentkit.test_v2.MeshTests.test_permutation_and_identity) ... ok
+test_splitter_errors_reduce_fidelity_and_correlation_widens_tail (agentkit.test_v2.MeshTests.test_splitter_errors_reduce_fidelity_and_correlation_widens_tail) ... ok
+test_triangular_v1_is_deeper_than_rectangular (agentkit.test_v2.MeshTests.test_triangular_v1_is_deeper_than_rectangular) ... ok
+test_honest_flow_passes_and_failure_is_kept (agentkit.test_v2.PreregTests.test_honest_flow_passes_and_failure_is_kept) ... ok
+test_later_relaxed_protocol_is_flagged_by_history (agentkit.test_v2.PreregTests.test_later_relaxed_protocol_is_flagged_by_history) ... ok
+test_planned_artifact_existing_before_commitment_is_rejected (agentkit.test_v2.PreregTests.test_planned_artifact_existing_before_commitment_is_rejected) ... ok
+test_planned_artifacts_are_mandatory (agentkit.test_v2.PreregTests.test_planned_artifacts_are_mandatory) ... ok
+test_publication_on_remote_ref (agentkit.test_v2.PreregTests.test_publication_on_remote_ref) ... ok
+test_relaxed_threshold_in_record_is_detected (agentkit.test_v2.PreregTests.test_relaxed_threshold_in_record_is_detected) ... ok
+test_source_changed_after_commitment_is_rejected (agentkit.test_v2.PreregTests.test_source_changed_after_commitment_is_rejected) ... ok
+test_uncommitted_protocol_is_rejected (agentkit.test_v2.PreregTests.test_uncommitted_protocol_is_rejected) ... ok
+test_windows_separators_are_normalized (agentkit.test_v2.PreregTests.test_windows_separators_are_normalized) ... ok
+test_clopper_pearson_matches_scipy_exact (agentkit.test_v2.StatsTests.test_clopper_pearson_matches_scipy_exact) ... ok
+test_sample_size_matches_monte_carlo_power (agentkit.test_v2.StatsTests.test_sample_size_matches_monte_carlo_power) ... ok
+test_three_zone_rule_covers_every_case (agentkit.test_v2.StatsTests.test_three_zone_rule_covers_every_case) ... ok
+test_tost_and_holm (agentkit.test_v2.StatsTests.test_tost_and_holm) ... ok
+test_wilks_classic_59 (agentkit.test_v2.StatsTests.test_wilks_classic_59) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 13.759s
+
+OK

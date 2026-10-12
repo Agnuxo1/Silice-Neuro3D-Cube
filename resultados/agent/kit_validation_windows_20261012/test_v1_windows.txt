@@ -1,0 +1,37 @@
+test_amplification_is_rejected (test_agentkit.CompilerTests.test_amplification_is_rejected) ... ok
+test_complex_unitary_reconstruction (test_agentkit.CompilerTests.test_complex_unitary_reconstruction) ... ok
+test_passive_nondiagonal_target (test_agentkit.CompilerTests.test_passive_nondiagonal_target) ... ok
+test_analytic_gradients_for_all_models (test_agentkit.LearningAndMeasurementTests.test_analytic_gradients_for_all_models) ... ok
+test_bootstrap_reports_observed_difference_exactly (test_agentkit.LearningAndMeasurementTests.test_bootstrap_reports_observed_difference_exactly) ... ok
+test_cascaded_unitaries_preserve_linear_function_class (test_agentkit.LearningAndMeasurementTests.test_cascaded_unitaries_preserve_linear_function_class) ... ok
+test_data_preprocessing_uses_training_only (test_agentkit.LearningAndMeasurementTests.test_data_preprocessing_uses_training_only) ... ok
+test_manufactured_cutback_recovers_known_slope (test_agentkit.LearningAndMeasurementTests.test_manufactured_cutback_recovers_known_slope) ... ok
+test_split_step_does_not_renormalize_loss (test_agentkit.LearningAndMeasurementTests.test_split_step_does_not_renormalize_loss) ... ok
+test_whole_system_energy_includes_all_components (test_agentkit.LearningAndMeasurementTests.test_whole_system_energy_includes_all_components) ... ok
+test_absolute_phase_error_is_retained (test_agentkit.NumericalTests.test_absolute_phase_error_is_retained) ... ok
+test_coherent_cross_term_cannot_be_discarded (test_agentkit.NumericalTests.test_coherent_cross_term_cannot_be_discarded) ... ok
+test_commuting_split_is_exact (test_agentkit.NumericalTests.test_commuting_split_is_exact) ... ok
+test_dark_field_does_not_divide_by_zero (test_agentkit.NumericalTests.test_dark_field_does_not_divide_by_zero) ... ok
+test_dissipative_mass_generator_growth (test_agentkit.NumericalTests.test_dissipative_mass_generator_growth) ... ok
+test_frechet_derivative_matches_finite_difference (test_agentkit.NumericalTests.test_frechet_derivative_matches_finite_difference) ... ok
+test_mass_orthogonal_projection (test_agentkit.NumericalTests.test_mass_orthogonal_projection) ... ok
+test_nonnormal_eigenpair_condition (test_agentkit.NumericalTests.test_nonnormal_eigenpair_condition) ... ok
+test_nonpositive_mass_rejected (test_agentkit.NumericalTests.test_nonpositive_mass_rejected) ... ok
+test_psd_detector_error_bound (test_agentkit.NumericalTests.test_psd_detector_error_bound) ... ok
+test_residual_bound_recovers_exact_constant_forcing (test_agentkit.NumericalTests.test_residual_bound_recovers_exact_constant_forcing) ... ok
+test_s16_exact_law_and_heldout (test_agentkit.NumericalTests.test_s16_exact_law_and_heldout) ... ok
+test_s16_oscillation_and_temporal_noise_rejected (test_agentkit.NumericalTests.test_s16_oscillation_and_temporal_noise_rejected) ... ok
+test_strang_second_order_on_fixed_smooth_matrices (test_agentkit.NumericalTests.test_strang_second_order_on_fixed_smooth_matrices) ... ok
+test_transport_translation_and_mass_rejection (test_agentkit.NumericalTests.test_transport_translation_and_mass_rejection) ... ok
+test_wavelength_interval_must_exclude_zero (test_agentkit.NumericalTests.test_wavelength_interval_must_exclude_zero) ... ok
+test_atomic_checkpoint_and_tamper_detection (test_agentkit.PersistenceTests.test_atomic_checkpoint_and_tamper_detection) ... ok
+test_numerical_audit_does_not_close_physical_task (test_agentkit.PersistenceTests.test_numerical_audit_does_not_close_physical_task) ... ok
+test_receipt_cannot_turn_partial_execution_into_pass (test_agentkit.PersistenceTests.test_receipt_cannot_turn_partial_execution_into_pass) ... ok
+test_resume_matches_uninterrupted_trajectory (test_agentkit.PersistenceTests.test_resume_matches_uninterrupted_trajectory) ... ok
+test_snapshot_rejects_mutation_and_traversal (test_agentkit.PersistenceTests.test_snapshot_rejects_mutation_and_traversal) ... ok
+test_supervisor_timeout (test_agentkit.PersistenceTests.test_supervisor_timeout) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 1.868s
+
+OK
