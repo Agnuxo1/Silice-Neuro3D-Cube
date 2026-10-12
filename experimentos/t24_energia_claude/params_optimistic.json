@@ -1,0 +1,39 @@
+{
+ "case": "optimistic",
+ "primary_n": 64,
+ "transmission_db": 46.339999999999996,
+ "layer": {
+  "wavelength_m": 1.55e-06,
+  "quantum_efficiency": 0.92,
+  "optical_transmission": 2.3227367963571098e-05,
+  "laser_wall_plug_efficiency": 0.3,
+  "modulator_energy_j": 3.3e-13,
+  "dac_energy_j": 3.143e-12,
+  "adc_energy_j": 1.111e-12,
+  "static_power_w": 0.0,
+  "current_noise_a_rthz": 2e-12
+ },
+ "depth": {
+  "available_laser_optical_w": 2.0,
+  "fixed_loss_db": 1.4,
+  "loss_per_stage_db": 0.35
+ },
+ "programmable": {
+  "mean_heater_power_w_per_shifter": 0.00036
+ },
+ "provenance": {
+  "wavelength_m": "Project operating wavelength (design choice), 1550 nm.",
+  "quantum_efficiency": "Near-infrared germanium PIN-photodiodes with >1A/W responsivity (Liu et al., Light Sci. Appl. 14, 9); 2025; DOI 10.1038/s41377-024-01670-4; where: abstract",
+  "optical_transmission": "Computed: 2 facets x 0.200 dB [Thermally reconfigurable quantum photonic circuits at telecom wavelength by femtosecond laser micromachining (Flamini et al., Light Sci. Appl. 4, e354); 2015; DOI 10.1038/lsa.2015.127; https://www.nature.com/articles/lsa2015127; where: Methods, 'Femtosecond laser microfabrication' paragraph] + 2.0 cm x 0.070 dB/cm access propagation [Effectively writing low propagation and bend loss waveguides in the silica glass by using a femtosecond laser (Tan, Sun, Li, Qiu, Opt. Lett. 47, 4766); 2022; DOI 10.1364/OL.470670; https://opg.optica.org/abstract.cfm?URI=ol-47-18-4766; where: abstract] + modulator insertion loss 1.000 dB [Breaking voltage-bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes (Kharel et al., Optica 8, 357); 2021; DOI 10.1364/OPTICA.416155; https://arxiv.org/abs/2011.13422; where: Introduction (summary of results), arXiv v1] + mesh 2N x 0.35 dB = 44.80 dB for N = 64 (SVD realization, two Clements meshes; per-stage loss already includes the MZI propagation length) [Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024); 2020; DOI 10.1002/lpor.202000024; https://arxiv.org/abs/2001.08144; where: Discussion]. Total 46.340 dB, transmission 2.323e-05.",
+  "laser_wall_plug_efficiency": "Single-mode 1550 nm laser: 'peak efficiencies over 30%', Labrecque et al., ISLC 2024, DOI 10.1109/ISLC57752.2024.10717351 (abstract, read by a search sub-agent); cross-check 28.49 % PCE, Liu et al., Opt. Lett. 50, 3018 (2025), DOI 10.1364/OL.561530 (abstract). The search's 0.50 (Garrod et al., Appl. Phys. Lett. 2014, DOI 10.1063/1.4893576) is a multimode broad-area laser and is not usable for a single-mode coherent mesh.",
+  "modulator_energy_j": "Driver included. A 40Gb/s Optical NRZ Transmitter Based on Monolithic Microring Modulators in 45nm SOI CMOS (Lin, Moazeni, Stojanovic, VLSI Circuits 2018); 2018; DOI 10.1109/VLSIC.2018.8502396; where: abstract",
+  "dac_energy_j": "Power / sample rate. A 2x Time-Interleaved 28-GS/s 8-Bit 0.03-mm2 Switched-Capacitor DAC in 16-nm FinFET CMOS (Caragiulo, Mattia, Arbabian, Murmann, IEEE JSSC 56, 2335); 2021; DOI 10.1109/JSSC.2021.3057608; where: abstract (also Chapter 4 of P. Caragiulo, Stanford PhD thesis 2022, purl.stanford.edu/rz812rb9519, power breakdown)",
+  "adc_energy_j": "Power / sample rate. A 3-mW 2.7-GS/s 8b Subranging ADC with Multiple-Reference-Embedded Comparators (Wang and Kuo, ISSCC 2023, paper 17.7); 2023; DOI 10.1109/ISSCC42615.2023.10067498; https://github.com/bmurmann/ADC-survey (xls/ADCsurvey_rev20260801.xlsx, sheets ISSCC and VLSI); where: ISSCC 2023 paper 17.7 abstract (as logged in the Murmann ADC survey, ISSCC sheet)",
+  "static_power_w": "ASSUMPTION: athermal passive operation (protocol rule for the optimistic static power).",
+  "current_noise_a_rthz": "A Low-Noise Hybrid-Integrated Balanced Homodyne Receiver with 2.5 GHz Bandwidth and 15 dB Quantum Shot Noise Clearance (Yang et al., Micromachines 16, 1416); 2025; DOI 10.3390/mi16121416; https://pmc.ncbi.nlm.nih.gov/articles/PMC12735249/; where: Section on TIA characterization (Figs. 11-13, Table 2), open access; abstract also states 'an input-referred noise current of only 2 pA/sqrt(Hz)'",
+  "available_laser_optical_w": "Single-mode: '>2 W single spatial/spectral mode' monolithic DFB-tapered laser, Labrecque et al., ISLC 2024, DOI 10.1109/ISLC57752.2024.10717351 (abstract, read by a search sub-agent). The 4.9 W multimode value (Kanold et al., SPIE 2024, DOI 10.1117/12.3001390) is not used.",
+  "fixed_loss_db": "Computed: 2 x facet loss + modulator insertion loss (sources as in optical_transmission).",
+  "loss_per_stage_db": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024); 2020; DOI 10.1002/lpor.202000024; https://arxiv.org/abs/2001.08144; where: Discussion",
+  "mean_heater_power_w_per_shifter": "Mean = P_2pi / 2. Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024); 2020; DOI 10.1002/lpor.202000024; https://arxiv.org/abs/2001.08144; where: Section 3.5 / Fig. 6a (bridge waveguide vs pressure)"
+ }
+}

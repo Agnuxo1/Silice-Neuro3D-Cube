@@ -1,0 +1,136 @@
+{
+ "records": [
+  {
+   "id": "adc_energy_j_nominal",
+   "doi": "10.1109/ISSCC42615.2023.10067822",
+   "title": "10.2 A Single-Channel 2.6GS/s 10b Dynamic Pipelined ADC with Time-Assisted Residue Generation Scheme Achieving Intrinsic PVT Robustness",
+   "year": 2023
+  },
+  {
+   "id": "adc_energy_j_optimistic",
+   "doi": "10.1109/ISSCC42615.2023.10067498",
+   "title": "A 3-mW 2.7-GS/s 8b Subranging ADC with Multiple-Reference-Embedded Comparators",
+   "year": 2023
+  },
+  {
+   "id": "dac_energy_j_nominal",
+   "doi": "10.1109/ISSCC.2015.7062924",
+   "title": "3.4 A 36Gb/s PAM4 transmitter using an 8b 18GS/S DAC in 28nm CMOS",
+   "year": 2015
+  },
+  {
+   "id": "dac_energy_j_optimistic",
+   "doi": "10.1109/JSSC.2021.3057608",
+   "title": "A 2x Time-Interleaved 28-GS/s 8-Bit 0.03-mm2 Switched-Capacitor DAC in 16-nm FinFET CMOS",
+   "year": 2021
+  },
+  {
+   "id": "modulator_energy_j_nominal",
+   "doi": "10.1109/JSSC.2023.3344072",
+   "title": "8-lambda x 50 Gbps/lambda Heterogeneously Integrated Si-Ph DWDM Transmitter",
+   "year": 2024
+  },
+  {
+   "id": "modulator_energy_j_optimistic",
+   "doi": "10.1109/VLSIC.2018.8502396",
+   "title": "A 40Gb/s Optical NRZ Transmitter Based on Monolithic Microring Modulators in 45nm SOI CMOS",
+   "year": 2018
+  },
+  {
+   "id": "fs_propagation_loss_db_per_cm_nominal",
+   "doi": "10.1364/OME.419945",
+   "title": "Femtosecond laser writing low-loss waveguides in silica glass: highly symmetrical mode field and mechanism of refractive index change (Tan, Sun, Qiu, Opt. Mater. Express 11, 848)",
+   "year": 2021
+  },
+  {
+   "id": "fs_propagation_loss_db_per_cm_optimistic",
+   "doi": "10.1364/OL.470670",
+   "title": "Effectively writing low propagation and bend loss waveguides in the silica glass by using a femtosecond laser (Tan, Sun, Li, Qiu, Opt. Lett. 47, 4766)",
+   "year": 2022
+  },
+  {
+   "id": "fs_coupling_loss_db_per_facet_nominal",
+   "doi": "10.1002/lpor.202000024",
+   "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining",
+   "year": 2020
+  },
+  {
+   "id": "fs_coupling_loss_db_per_facet_optimistic",
+   "doi": "10.1038/lsa.2015.127",
+   "title": "Thermally reconfigurable quantum photonic circuits at telecom wavelength by femtosecond laser micromachining",
+   "year": 2015
+  },
+  {
+   "id": "modulator_insertion_loss_db_nominal",
+   "doi": "10.1038/s41467-020-17806-0",
+   "title": "High-performance coherent optical modulators based on thin-film lithium niobate platform",
+   "year": 2020
+  },
+  {
+   "id": "modulator_insertion_loss_db_optimistic",
+   "doi": "10.1364/OPTICA.416155",
+   "title": "Breaking voltage-bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes",
+   "year": 2021
+  },
+  {
+   "id": "heater_mean_power_w_nominal",
+   "doi": "10.1515/nanoph-2023-0636",
+   "title": "High-fidelity and polarization-insensitive universal photonic processors fabricated by femtosecond laser writing",
+   "year": 2024
+  },
+  {
+   "id": "quantum_efficiency_optimistic",
+   "doi": "10.1038/s41377-024-01670-4",
+   "title": "Near-infrared germanium PIN-photodiodes with >1A/W responsivity",
+   "year": 2025
+  },
+  {
+   "id": "current_noise_a_rthz_optimistic",
+   "doi": "10.3390/mi16121416",
+   "title": "A Low-Noise Hybrid-Integrated Balanced Homodyne Receiver with 2.5 GHz Bandwidth and 15 dB Quantum Shot Noise Clearance",
+   "year": 2025
+  },
+  {
+   "id": "laser_wall_plug_efficiency_optimistic",
+   "doi": "10.1063/1.4893576",
+   "title": "50% continuous-wave wallplug efficiency from 1.53 um-emitting broad-area diode lasers",
+   "year": 2014
+  },
+  {
+   "id": "available_laser_optical_w_optimistic",
+   "doi": "10.1117/12.3001390",
+   "title": "1550 nm broad area large optical cavity laser with 4.9 W CW output power",
+   "year": 2024
+  },
+  {
+   "id": "static_power_w_nominal",
+   "doi": "10.3390/microelectronics2030014",
+   "title": "Packaging Design and Characterization of a 16-Channel Silicon Photonic Transmitter Module for a 1.6 Tb/s-Class Optical Engine",
+   "year": 2026
+  },
+  {
+   "id": "digital_modern",
+   "doi": "10.1109/JSSC.2025.3646072",
+   "title": "A 3 nm FinFET 125 TOPS/W-29 TFLOPS/W, 90 TOPS/mm2-17 TFLOPS/mm2 SRAM-Based INT8, and FP16 Digital-CIM Compiler With Support for Multi-Weight Update/Cycle",
+   "year": 2026
+  },
+  {
+   "id": "extra_10.1109/ISSCC.2014.6757323",
+   "doi": "10.1109/ISSCC.2014.6757323",
+   "title": "1.1 Computing's energy problem (and what we can do about it)",
+   "year": 2014
+  },
+  {
+   "id": "extra_10.1109/ISLC57752.2024.10717351",
+   "doi": "10.1109/ISLC57752.2024.10717351",
+   "title": "Watt-Class High Brightness Tapered Laser with Integrated Distributed Feedback Grating at 1550 nm",
+   "year": 2024
+  },
+  {
+   "id": "extra_10.1364/OL.561530",
+   "doi": "10.1364/OL.561530",
+   "title": "High-efficiency 1.55-um DFB laser with a 600-um short cavity and sub-20-kHz linewidth",
+   "year": 2025
+  }
+ ]
+}
