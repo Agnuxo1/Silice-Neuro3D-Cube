@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "task": "T24 energy kill test parameter sheet",
+    "created": "2026-10-13",
+    "conventions": "nominal/optimistic follow the frozen selection rules; derived numbers are marked 'derived'; unit conversions: eta = R x 1.24/1.55; J/MAC = 2/(TOPS/W) x 1e-12; heater mean power = P_2pi/2; modulator energy per symbol = per bit for NRZ. Gathering was done by the lead agent plus three delegated sub-agents (PD/TIA, lasers/TEC, digital INT8); the lead re-opened and re-checked: Horowitz table image, Tan/Ceccarelli/Flamini/Pentangelo/Skryabin texts, converter surveys, modulator papers, Excelitas row, Semtech GN1052WA2 page, Micromachines TIA quote, Liu 2025 Ge PD abstract, G&H and Thorlabs datasheet lines and plots, Garrod/Liu/Hsu/Intel/TSMC abstracts. Items read only by a sub-agent are tagged in the notes.",
+    "downloads": "D:/tmp/t24_dl/ (papers and datasheets used)"
+  },
+  "parameters": {
+    "adc_energy_j": {
+      "nominal": 5.346e-12,
+      "optimistic": 1.111e-12,
+      "unit": "J per sample (8-bit class, 1-10 GS/s)",
+      "nominal_source": {
+        "title": "10.2 A Single-Channel 2.6GS/s 10b Dynamic Pipelined ADC with Time-Assisted Residue Generation Scheme Achieving Intrinsic PVT Robustness (Hao et al., ISSCC 2023)",
+        "year": 2023,
+        "doi": "10.1109/ISSCC42615.2023.10067822",
+        "url": "https://github.com/bmurmann/ADC-survey (xls/ADCsurvey_rev20260801.xlsx, sheets ISSCC and VLSI)",
+        "where": "ISSCC 2023 paper 10.2; power, fs and SNDR as tabulated in Murmann ADC survey rev20260801 (sheet ISSCC) and in the ISSCC program abstract",
+        "quote": "this ADC achieves 51.4dB SNDR with 13.9mW power consumption",
+        "conditions": "28 nm CMOS, 0.9 V, single channel, fs = 2.6 GS/s, P = 13.9 mW, SNDR(hf) 51.4 dB at fin = 1.3 GHz, ENOB = 8.25. Method: energy per sample = reported power / sample rate = 13.9 mW / 2.6 GS/s = 5.346 pJ. Chosen because it is the median design of the 15 ISSCC/VLSI ADCs 2018-2026 with 1-10 GS/s and ENOB 7-9 in the survey (median P/fs = 5.35 pJ; quartiles 2.55 / 5.35 / 7.63 pJ). Walden alternative: FoMW 17.6 fJ/conv-step x 2^8 = 4.51 pJ."
+      },
+      "optimistic_source": {
+        "title": "A 3-mW 2.7-GS/s 8b Subranging ADC with Multiple-Reference-Embedded Comparators (Wang and Kuo, ISSCC 2023, paper 17.7)",
+        "year": 2023,
+        "doi": "10.1109/ISSCC42615.2023.10067498",
+        "url": "https://github.com/bmurmann/ADC-survey (xls/ADCsurvey_rev20260801.xlsx, sheets ISSCC and VLSI)",
+        "where": "ISSCC 2023 paper 17.7 abstract (as logged in the Murmann ADC survey, ISSCC sheet)",
+        "quote": "It achieves 45.9dB SNDR in 3mW resulting in a 6.9fJ/conv.-step Walden FoM.",
+        "conditions": "28 nm CMOS, 1 V, 8b subranging, fs = 2.7 GS/s, P = 3.0 mW, SNDR 45.9 dB at fin = 1.25 GHz (ENOB 7.33). Method: reported power / sample rate = 3.0 mW / 2.7 GS/s = 1.111 pJ. Lowest P/fs of all 15 survey designs in the 1-10 GS/s, ENOB 7-9 window. Walden-normalised to 8 bit: 6.895 fJ/conv-step x 256 = 1.77 pJ (use this if ENOB < 8 matters)."
+      },
+      "notes": "Method stated: P/fs (reported power / sample rate) for both values; the 8-bit Walden-normalised equivalents are 4.51 pJ (nominal) and 1.77 pJ (optimistic). Survey filter: ISSCC+VLSI sheets, year >= 2018, 1 <= fs <= 10 GS/s, 7 <= ENOB(SNDR_hf) <= 9, n = 15. Commercial parts are far higher: TI ADC12DJ3200 (12-bit, 6.4 GSPS single channel) lists 'Power consumption (typ) (mW) 3000' on ti.com/product/ADC12DJ3200, i.e. about 470 pJ/sample. The survey covers ISSCC and VLSI papers only (peer-reviewed conference papers)."
+    },
+    "dac_energy_j": {
+      "nominal": 4.667e-12,
+      "optimistic": 3.143e-12,
+      "unit": "J per sample (8-bit, GS/s class)",
+      "nominal_source": {
+        "title": "3.4 A 36Gb/s PAM4 transmitter using an 8b 18GS/S DAC in 28nm CMOS (Nazemi et al., ISSCC 2015)",
+        "year": 2015,
+        "doi": "10.1109/ISSCC.2015.7062924",
+        "url": "https://github.com/pietro-caragiulo/survey-DAC (data/data.csv)",
+        "where": "Power value from DAC Performance Survey 1996-2020 (Caragiulo, Daigle, Murmann), data.csv row Ref=84 (M=8, Fs=18000 MS/s, Power 84 mW); the ISSCC abstract itself gives only the 8b 18GS/s DAC, not the power",
+        "quote": "A 36Gb/s PAM4 transmitter using an 8b 18GS/S DAC in 28nm CMOS",
+        "conditions": "28 nm CMOS, current-steering, 8 bit, fs = 18 GS/s, P = 84 mW (survey value), supplies 1/1.5 V. Method: reported power / sample rate = 84 mW / 18 GS/s = 4.667 pJ. Chosen as the median of the nine 8-bit entries (fs >= 1 GS/s, 2015-2021) in the survey: 3.08, 3.14, 3.18, 3.57, 4.67, 5.11, 9.33, 14.84, 25.0 pJ."
+      },
+      "optimistic_source": {
+        "title": "A 2x Time-Interleaved 28-GS/s 8-Bit 0.03-mm2 Switched-Capacitor DAC in 16-nm FinFET CMOS (Caragiulo, Mattia, Arbabian, Murmann, IEEE JSSC 56, 2335)",
+        "year": 2021,
+        "doi": "10.1109/JSSC.2021.3057608",
+        "url": null,
+        "where": "abstract (also Chapter 4 of P. Caragiulo, Stanford PhD thesis 2022, purl.stanford.edu/rz812rb9519, power breakdown)",
+        "quote": "consuming 88 mW from a single 0.8-V supply",
+        "conditions": "16 nm FinFET, 8 bit, fs = 28 GS/s, P = 88 mW incl. digital MUX 12 mW, SC DAC cores 24 mW, clock RX 14 mW, clock distribution 30 mW, analog MUX+buffer 8 mW (thesis Sec. 4.4); drives 100 ohm differential load, 0.32 Vpp swing, SFDR >= 37 dB, IM3 <= -45.6 dBc. Method: reported power / sample rate = 88 mW / 28 GS/s = 3.143 pJ."
+      },
+      "notes": "No 8-bit DAC in the survey is below about 3.1 pJ/sample (Tan VLSI 2018 3.08 pJ at 112 GS/s is a 112-GS/s SST DAC-TX, 345 mW). Same-group 14 GS/s 8-bit DAC: 50 mW -> 3.57 pJ (VLSI 2020, DOI 10.1109/VLSICircuits18222.2020.9162776, abstract: 'consuming 50 mW from a single 0.8 V supply'). IBM 72-GS/s 8-bit DAC-based TX in 4 nm: 288 mW -> 4.0 pJ (JSSC 58, 1074, DOI 10.1109/JSSC.2022.3228632, abstract 'The TX consumes 288 mW from a 0.95-V power supply'). These are research converters at 14-100 GS/s; no 8-bit DAC in the 1-10 GS/s window was found in the survey. Commercial DACs are far higher: TI DAC38RF86 (14-bit, 9 GSPS) lists 'Power Dissipation: 1.4 to 2.2 W/ch' on ti.com/product/DAC38RF86, i.e. 156-244 pJ/sample per channel."
+    },
+    "modulator_energy_j": {
+      "nominal": 1.17e-12,
+      "optimistic": 3.3e-13,
+      "unit": "J per symbol (NRZ/OOK, 1 bit = 1 symbol), driver INCLUDED, laser excluded",
+      "nominal_source": {
+        "title": "8-lambda x 50 Gbps/lambda Heterogeneously Integrated Si-Ph DWDM Transmitter (Levy et al., IEEE JSSC 59, 690)",
+        "year": 2024,
+        "doi": "10.1109/JSSC.2023.3344072",
+        "url": null,
+        "where": "abstract",
+        "quote": "energy efficiency at 50 Gb/s of the high-speed electronics, including serializer overhead, is 1.17 pJ/bit",
+        "conditions": "Silicon microring modulators + 28 nm CMOS drivers (2 Vpp), NRZ 50 Gb/s per wavelength, driver INCLUDED (also includes serializer overhead); laser excluded; ring thermal tuning not in this figure (Kawahara et al. Table 1 lists the same transmitter as 1.3 pJ/bit with driver + MRM + tuning). 1 symbol = 1 bit (NRZ)."
+      },
+      "optimistic_source": {
+        "title": "A 40Gb/s Optical NRZ Transmitter Based on Monolithic Microring Modulators in 45nm SOI CMOS (Lin, Moazeni, Stojanovic, VLSI Circuits 2018)",
+        "year": 2018,
+        "doi": "10.1109/VLSIC.2018.8502396",
+        "url": null,
+        "where": "abstract",
+        "quote": "It achieves 330fJ/b complete transmitter energy (including clock distribution and serializer sub-systems)",
+        "conditions": "Monolithic 45 nm SOI CMOS microring modulator, NRZ 40 Gb/s, differential driver + AC coupler INCLUDED, also includes clock distribution and serializer; 3 dB extinction ratio and 4.7 dB insertion loss at 40 Gb/s; ring thermal tuning not stated in the figure. 1 symbol = 1 bit (NRZ)."
+      },
+      "notes": "Driver included in both values. Best Si Mach-Zehnder driver+modulator results: 0.70 pJ/bit at 112 GBd NRZ (78 mW; Li et al., Nature Electronics 6, 910 (2023), DOI 10.1038/s41928-023-01048-1, number read in the Research Square preprint Table 1, DOI 10.21203/rs.3.rs-1980286/v1, and quoted in Kawahara et al. Table 1; abstract of the published paper says 'energy efficiencies below picojoules per bit') and 0.78 pJ/bit at 64 GBd NRZ (50 mW incl. 5-tap Rx FFE; Kawahara et al., IEEE JSTQE 32 (2026), DOI 10.1109/JSTQE.2025.3640645, abstract). Rows of Kawahara Table 1 (driver + modulator, Si, NRZ unless noted): 0.7, 0.78, 0.88, 1.3, 1.5 (SiGe EAM, PAM4), 5.35, 5.5 (PAM4), 11.4, 22 pJ/bit. THIN-FILM LiNbO3: NO peer-reviewed TFLN modulator-plus-driver energy per symbol was found; modulator-only (driverless) TFLN: 4.49 fJ/bit at 100 GBd PAM4 (Optics Express 30, 25308 (2022), DOI 10.1364/OE.458431, abstract 'power consumption of 4.49fj/bit', V_pi 0.7 V, driver excluded); TFLN IQ modulator estimated 120 fJ/bit (Xu et al., Nat. Commun. 11, 3911, DOI 10.1038/s41467-020-17806-0, computed from V_rms; driver excluded). The TFLN numbers exclude the 2-4 Vpp-class driver that dominates real transmitters, so they are NOT used for nominal/optimistic. For multi-level (analog) drive a linear driver is needed and the per-symbol energy is higher than NRZ values; PAM4 per-symbol = 2x the per-bit values quoted by the cited papers."
+    },
+    "fs_propagation_loss_db_per_cm": {
+      "nominal": 0.15,
+      "optimistic": 0.07,
+      "unit": "dB/cm at 1550 nm (fused silica)",
+      "nominal_source": {
+        "title": "Femtosecond laser writing low-loss waveguides in silica glass: highly symmetrical mode field and mechanism of refractive index change (Tan, Sun, Qiu, Opt. Mater. Express 11, 848)",
+        "year": 2021,
+        "doi": "10.1364/OME.419945",
+        "url": null,
+        "where": "abstract (Crossref); wavelength 1550 nm is stated by the secondary source Skryabin et al. arXiv:2408.06688 Introduction ('optimized to 0.15 dB/cm at the wavelength of 1550 nm [58, 59]'); full text of the OME paper could not be opened (publisher bot wall)",
+        "quote": "The waveguides exhibit a low propagation loss of 0.15 dB/cm and a symmetrical mode field.",
+        "conditions": "single-mode waveguides in silica glass, fs laser; measurement wavelength not stated in the abstract (1550 nm per Skryabin et al.). Borosilicate (EAGLE XG) alternative at 1550 nm: 0.29 dB/cm (Ceccarelli et al. 2020, Laser Photonics Rev. 14, 2000024) and ~0.6 dB/cm (Flamini et al. 2015)."
+      },
+      "optimistic_source": {
+        "title": "Effectively writing low propagation and bend loss waveguides in the silica glass by using a femtosecond laser (Tan, Sun, Li, Qiu, Opt. Lett. 47, 4766)",
+        "year": 2022,
+        "doi": "10.1364/OL.470670",
+        "url": "https://opg.optica.org/abstract.cfm?URI=ol-47-18-4766",
+        "where": "abstract",
+        "quote": "A record low propagation loss of 0.07 dB/cm is achieved",
+        "conditions": "silica glass, fs laser, writing speed 125 um/s, bend loss 0.001 dB/mm at 30 mm radius. The abstract does not state the wavelength; Skryabin et al. (arXiv:2408.06688, Introduction) cite it as 'a record low PL of 0.07 dB/cm has been demonstrated at 1550 nm with a total chip IL of 1.07 dB [60]' (ref. [60] = this paper). Full text not opened (paywall / bot wall)."
+      },
+      "notes": "CHECK RESULT: the project's 0.07 dB/cm for Tan et al. OL 47, 4766 is correct as the abstract value (DOI 10.1364/OL.470670 resolves; title/volume/page verified via Crossref) but the 1550-nm wavelength is confirmed only through the Skryabin et al. citation. Not to be confused with Skryabin et al. 2024 (Phys. Rev. Applied; arXiv:2408.06688), who also report 0.07 dB/cm but measured at 920 nm."
+    },
+    "fs_coupling_loss_db_per_facet": {
+      "nominal": 0.27,
+      "optimistic": 0.2,
+      "unit": "dB per facet, fiber (SMF-28) to fs-written waveguide at 1550 nm",
+      "nominal_source": {
+        "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024)",
+        "year": 2020,
+        "doi": "10.1002/lpor.202000024",
+        "url": "https://arxiv.org/abs/2001.08144",
+        "where": "Section 2 (Device structure) and Discussion (coupling losses 'only 0.54 dB' for two facets)",
+        "quote": "with losses as low as 0.27 dB/facet",
+        "conditions": "Corning EAGLE XG boro-aluminosilicate, waveguides optimized for 1550 nm, mode diameter 9 um (1/e^2), propagation loss 0.29 dB/cm. 'as low as' indicates a best case for this platform."
+      },
+      "optimistic_source": {
+        "title": "Thermally reconfigurable quantum photonic circuits at telecom wavelength by femtosecond laser micromachining (Flamini et al., Light Sci. Appl. 4, e354)",
+        "year": 2015,
+        "doi": "10.1038/lsa.2015.127",
+        "url": "https://www.nature.com/articles/lsa2015127",
+        "where": "Methods, 'Femtosecond laser microfabrication' paragraph",
+        "quote": "coupling losses to standard single-mode telecom fibers of 0.2 dB per facet",
+        "conditions": "borosilicate glass, 1550 nm, mode diameter about 13.5 um; the 0.2 dB is retrieved from the overlap integral of measured mode profiles (calculated mode-matching loss, not a measured insertion loss)."
+      },
+      "notes": "Skryabin et al. 2024 (arXiv:2408.06688) measure 0.2 dB/facet on average in fused silica (mode overlap > 98.8%) but at 920 nm, so it is NOT used for 1550 nm. Pentangelo et al. (Nanophotonics 13, 2259 (2024), DOI 10.1515/nanoph-2023-0636, arXiv:2310.19718) report total insertion loss of 2.5 dB at 1550 nm for a 6-mode, 90-mm-long, 15-MZI processor including both fiber couplings; realistic fiber-array chips with long fan-in/out will not reach the best-case facet loss."
+    },
+    "loss_per_stage_db": {
+      "nominal": 0.35,
+      "optimistic": 0.35,
+      "unit": "dB per MZI stage (ALL-INCLUSIVE on-chip loss of one interferometer incl. its propagation length), 1550 nm, fs-written",
+      "nominal_source": {
+        "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024)",
+        "year": 2020,
+        "doi": "10.1002/lpor.202000024",
+        "url": "https://arxiv.org/abs/2001.08144",
+        "where": "Discussion (comparison with silicon PIC of Harris et al.)",
+        "quote": "on-chip losses (about 0.35 dB/interferometer)",
+        "conditions": "1550 nm, EAGLE XG; MZI = two 3 dB directional couplers (1.2 mm interaction length, 9 um spacing) + S-bends (radius 45 mm) + 3 mm arms, propagation loss 0.29 dB/cm; the 0.35 dB is the on-chip total per interferometer, i.e. it INCLUDES waveguide propagation along the MZI. Text: 'Our technology shows comparable results in terms of on-chip losses (about 0.35 dB/interferometer)'."
+      },
+      "optimistic_source": {
+        "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024)",
+        "year": 2020,
+        "doi": "10.1002/lpor.202000024",
+        "url": "https://arxiv.org/abs/2001.08144",
+        "where": "Discussion",
+        "quote": "on-chip losses (about 0.35 dB/interferometer)",
+        "conditions": "No better measured per-MZI value at 1550 nm in fs-written glass was found, so optimistic = nominal."
+      },
+      "notes": "AVOID DOUBLE COUNTING: the 0.35 dB already contains the propagation loss of the MZI footprint; no source isolating the pure directional-coupler excess loss at 1550 nm was opened. Cross-check (derived, assumptions flagged): Pentangelo et al. 2024 (DOI 10.1515/nanoph-2023-0636) UPP B at 1550 nm: total IL 2.5 dB, 15 MZIs in a 6-mode rectangular mesh (cell length 13.2 mm, chip 90 mm); if the light crosses up to 6 stages and 2 facets cost 2 x 0.27 dB, the per-stage on-chip loss is <= (2.5 - 0.54)/6 = 0.33 dB. Quote: 'insertion losses at 785 nm (1550 nm) lower than 3 dB (2.5 dB)'. Silicon PIC reference in the same paper: 0.1 dB/interferometer."
+    },
+    "modulator_insertion_loss_db": {
+      "nominal": 1.625,
+      "optimistic": 1.0,
+      "unit": "dB on-chip insertion loss of a TFLN Mach-Zehnder-type modulator, fiber coupling excluded",
+      "nominal_source": {
+        "title": "High-performance coherent optical modulators based on thin-film lithium niobate platform (Xu et al., Nat. Commun. 11, 3911)",
+        "year": 2020,
+        "doi": "10.1038/s41467-020-17806-0",
+        "url": "https://arxiv.org/abs/2006.15536",
+        "where": "Results (optical loss), arXiv text: fibre-to-fibre 8.6 dB and 8.25 dB, grating couplers 3.4 dB/facet -> on-chip 1.8 dB and 1.45 dB for the 13 mm and 7.5 mm devices",
+        "quote": "the on-chip losses are 1.8 dB and 1.45 dB for 13mm and 7.5mm device",
+        "conditions": "TFLN IQ (nested Mach-Zehnder) modulators, 1550 nm; nominal = midpoint of the two reported device lengths ((1.8 + 1.45)/2 = 1.625 dB)."
+      },
+      "optimistic_source": {
+        "title": "Breaking voltage-bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes (Kharel et al., Optica 8, 357)",
+        "year": 2021,
+        "doi": "10.1364/OPTICA.416155",
+        "url": "https://arxiv.org/abs/2011.13422",
+        "where": "Introduction (summary of results), arXiv v1",
+        "quote": "we maintain a on-chip loss of < 1 dB",
+        "conditions": "HyperLight TFLN MZM, 1550 nm, 20 mm electrode, V_pi 1.3 V; the value is an upper bound ('< 1 dB'); an Optica erratum exists (DOI 10.1364/OPTICA.440484) and the corrected text was not opened."
+      },
+      "notes": "Other points: hybrid Si-LiNbO3 MZM insertion loss 2.5 dB (He et al., Nature Photonics 13, 359 (2019), DOI 10.1038/s41566-019-0378-6, arXiv:1807.10362 abstract: 'insertion loss of 2.5 dB'); silicon microring modulator in the 330 fJ/b transmitter above: 4.7 dB insertion loss at 40 Gb/s (VLSI 2018 abstract). A lower TFLN on-chip loss than 1 dB may exist (e.g. Wang et al. Nature 562, 101 (2018)) but could not be verified here (abstract not available)."
+    },
+    "heater_mean_power_w": {
+      "nominal": 0.0315,
+      "optimistic": 0.00036,
+      "unit": "W mean electrical power per thermo-optic phase shifter for a phase uniformly distributed in [0, 2pi) = P_2pi / 2; 1550 nm, fs-written borosilicate with thermal isolation",
+      "nominal_source": {
+        "title": "High-fidelity and polarization-insensitive universal photonic processors fabricated by femtosecond laser writing (Pentangelo et al., Nanophotonics 13, 2259)",
+        "year": 2024,
+        "doi": "10.1515/nanoph-2023-0636",
+        "url": "https://arxiv.org/abs/2310.19718",
+        "where": "Section III (calibration) and abstract/introduction: average 2pi power per phase shifter",
+        "quote": "39 mW for UPP A and 63 mW for UPP B",
+        "conditions": "UPP B = 6-mode, 15-MZI, 30-heater processor at 1550 nm, EAGLE XG, gold microheaters with 300 um deep, 60 um wide, 3 mm long isolation trenches; P_2pi = 63 mW average over the 30 shifters; mean for uniform phase = 63/2 = 31.5 mW. (UPP A at 785 nm: 39 mW.) Phase-power relation is quadratic-in-voltage / linear in power, so mean over [0, 2pi) = P_2pi/2."
+      },
+      "optimistic_source": {
+        "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024)",
+        "year": 2020,
+        "doi": "10.1002/lpor.202000024",
+        "url": "https://arxiv.org/abs/2001.08144",
+        "where": "Section 3.5 / Fig. 6a (bridge waveguide vs pressure)",
+        "quote": "with a power dissipation as low as 0.72 mW",
+        "conditions": "1550 nm, EAGLE XG, bridge waveguide (ablated under the MZI arm) operated in HIGH VACUUM: P_2pi = 0.72 mW -> mean 0.36 mW; switching time ~960 ms. THIS REQUIRES A VACUUM PACKAGE. In ambient air the same bridge needs P_2pi = 37 mW -> mean 18.5 mW; with 450 um deep trenches only: 57 mW -> 28.5 mW; with no isolation: 611 mW -> 305.5 mW."
+      },
+      "notes": "Optimistic follows the frozen rule literally (best demonstrated, vacuum). If the requester prefers an air-ambient optimistic value use P_2pi = 37 mW (Ceccarelli 2020, 'a complete reconfiguration is achieved with a power dissipation as low as 37 mW') -> mean 0.0185 W. Medium-vacuum point: P_2pi = 1.04 mW (0.52 mW mean). Older/other points: 204 mW per 2pi at 785 nm without trenches (Ceccarelli et al., J. Lightwave Technol. 37, 4275 (2019), DOI 10.1109/JLT.2019.2923126, text 'P2pi = 204 mW'); 38 mW per 2pi with curved trenches at 940 nm (Albiero et al., Micromachines 13, 1145, DOI 10.3390/mi13071145); about 17 mW per 2pi for FLICE-suspended microbridges in borosilicate (Lichtenegger et al., Photonics 13, 731 (2026), DOI 10.3390/photonics13080731, abstract only; wavelength not verified, full text blocked); Flamini 2015 (no isolation, 1550 nm): 0.5 W per 2pi. Total on-chip dissipation of UPP B for random unitaries: 'always lower than 1.9 W'."
+    },
+    "quantum_efficiency": {
+      "nominal": 0.76,
+      "optimistic": 0.92,
+      "unit": "external quantum efficiency at 1550 nm (eta = R x 1.24/1.55 = 0.8 R)",
+      "nominal_source": {
+        "title": "High Speed InGaAs PIN Photodiodes C30617, C30618 datasheet (Excelitas), Rev. 2016.11.08",
+        "year": 2016,
+        "doi": null,
+        "url": "https://shop.amstechnologies.com/media/4c/ab/1f/1720717735/C30617_C30618-High-speed-InGaAs-PIN-Photodiodes-Excelitas-Datasheet.pdf",
+        "where": "datasheet p.3, 'Electro-Optical Characteristics (C30617, C30618)': Responsivity at 1550 nm, TO-18 ceramic, min 0.85 / typ 0.95 A/W; Bandwidth (-3dB, RL = 50 ohm) 3.5 GHz",
+        "quote": "Responsivity at 1550 nm 0.85 0.95 A/W",
+        "conditions": "C30617: 100 um diameter InGaAs PIN, TA = 22 C, VR = 5 V, bare TO-18 (external QE without fibre-coupling loss), 3.5 GHz bandwidth. R(typ) = 0.95 A/W -> eta = 0.95 x 1.24/1.55 = 0.760. Fibre-receptacle version (multimode fibre coupled): 0.70 min / 0.80 typ A/W -> eta = 0.64."
+      },
+      "optimistic_source": {
+        "title": "Near-infrared germanium PIN-photodiodes with >1A/W responsivity (Liu et al., Light Sci. Appl. 14, 9)",
+        "year": 2025,
+        "doi": "10.1038/s41377-024-01670-4",
+        "url": null,
+        "where": "abstract",
+        "quote": "at 1.55 µm, this corresponds to a responsivity of 1.15 A/W",
+        "conditions": "nanostructured Ge PIN photodiode, zero bias, room temperature, verified EQE above 90% over 1.2-1.6 um (abstract); R = 1.15 A/W -> eta = 1.15 x 1.24/1.55 = 0.92. Large-area free-space device (5 mm diameter per sub-agent reading of the paper), NOT a GHz-class detector."
+      },
+      "notes": "If the optimistic value must be a high-speed detector: Ge-on-Si waveguide PD, responsivity 1.09 A/W at 1550 nm (eta 0.87), 42.5 GHz at 2 V reverse bias (Fard et al., Opt. Express 24, 27738 (2016), DOI 10.1364/OE.24.027738; abstract only was readable; whether fibre-to-chip coupling loss is excluded is unverified). Other high-speed points: Ge WPD > 1.0 A/W at -1 V, 20-27 GHz (Chen et al., J. Lightwave Technol. 33, 820 (2015), DOI 10.1109/JLT.2014.2367134); InGaAs/InP UTC-PD EQE 86% (Chin. Phys. B 24, 108506 (2015), DOI 10.1088/1674-1056/24/10/108506); Hamamatsu G12180 series typ 1.1 A/W (cutoff only ~0.6 GHz for the 0.3 mm type). Fibre-pigtailed 50 GHz Coherent XPDV21x0R: 0.5-0.65 A/W (eta ~0.52)."
+    },
+    "current_noise_a_rthz": {
+      "nominal": 1e-11,
+      "optimistic": 2e-12,
+      "unit": "A/sqrt(Hz) (input-referred current noise density; nominal = 10 pA/sqrt(Hz), optimistic = 2 pA/sqrt(Hz))",
+      "nominal_source": {
+        "title": "GN1052WA2 SiGe BiCMOS transimpedance amplifier, product page (Semtech)",
+        "year": 2026,
+        "doi": null,
+        "url": "https://www.semtech.com/products/signal-integrity/transimpedance-amplifiers/gn1052wa2",
+        "where": "product page, Features list (page retrieved by the lead on 2026-10-13, 'year' = retrieval/copyright year of the current product page; the datasheet PDF is login-gated and its own date/revision, and the vintage of this long-lived part, are unknown)",
+        "quote": "Input Noise Density 10pA/√Hz",
+        "conditions": "single +3.3 V supply, 180 mW typ, transimpedance 4 kohm into 100 ohm differential load, upper -3 dB bandwidth 13 GHz, 'input noise current = 1 uA rms with a 0.2 pF detector and 1 nH bond wire' (derived flat density 1 uA/sqrt(13 GHz) = 8.8 pA/sqrt(Hz)). Page does not say whether 10 pA/sqrt(Hz) is a spot or band-average value."
+      },
+      "optimistic_source": {
+        "title": "A Low-Noise Hybrid-Integrated Balanced Homodyne Receiver with 2.5 GHz Bandwidth and 15 dB Quantum Shot Noise Clearance (Yang et al., Micromachines 16, 1416)",
+        "year": 2025,
+        "doi": "10.3390/mi16121416",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12735249/",
+        "where": "Section on TIA characterization (Figs. 11-13, Table 2), open access; abstract also states 'an input-referred noise current of only 2 pA/sqrt(Hz)'",
+        "quote": "The average input-referred noise current of the proposed TIA is approximately 2 pA/√Hz.",
+        "conditions": "180 nm CMOS TIA, 2.5 GHz -3 dB bandwidth, measured average over 0-4 GHz from the output noise PSD divided by sqrt(RBW) and by the gain (98 dBohm, RF = 80 kohm), 300 fF input capacitance, 70 mW at 2 V; integrated noise 104.5 nA rms (104.5 nA/sqrt(2.5 GHz) = 2.09 pA/sqrt(Hz)). Same group, circuit letter: IEEE Solid-State Circuits Lett. 8, 189 (2025), DOI 10.1109/LSSC.2025.3584266 ('A 2 pA/sqrt(Hz) Input-Referred Noise TIA in 180-nm CMOS With 2.5 GHz Bandwidth')."
+      },
+      "notes": "Caveat: the very high transimpedance (80 kohm) is what makes the density low; the feedback-resistor thermal limit is sqrt(4kT/R) = 0.45 pA/sqrt(Hz). For a 10 GHz-class receiver the 2 pA/sqrt(Hz) value is optimistic; 10 GHz-class optimistic candidate: InP DHBT TIA DC-10 GHz, 3 pA/sqrt(Hz) measured (Shivan et al., MIKON 2022, DOI 10.23919/MIKON54314.2022.9924881; abstract only, average-vs-spot unverified). Other commercial points (derived from rms specs, flat-noise assumption): Semtech selector guide 2021 GN1069 8.0, GN7069 9.0, GN1068 10.9 pA/sqrt(Hz); Hittite/ADI HMC690 (obsolete, v04.0709) 'Noise Density @ 1 GHz 11.2 (typ)' and '@ 5 GHz 13.4 (typ)' pA/sqrt(Hz); Maxim PHY1090 1100 nA rms max over 7.5 GHz -> 12.7 pA/sqrt(Hz) max. Simulation-only claims (0.9-2 pA/sqrt(Hz)) were excluded."
+    },
+    "laser_wall_plug_efficiency": {
+      "nominal": 0.1,
+      "optimistic": 0.5,
+      "unit": "electrical-to-optical efficiency of the laser diode (fraction); nominal EXCLUDES TEC and driver electronics",
+      "nominal_source": {
+        "title": "High Power DFB Lasers LM-1530-1570-100 / -080, datasheet DS-7076 Rev 1 (Gooch & Housego)",
+        "year": 2023,
+        "doi": null,
+        "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5561/HIGH%20POWER%20DFB%20LASERS.pdf",
+        "where": "datasheet p.2 electrical table (Iop typ 375 mA, VF max 3 V) and p.3 plots (80 mW unit: output power and voltage vs current); WPE DERIVED by the lead from the plots",
+        "quote": "Laser drive current Iop 80-100 mW models 375 500 mA",
+        "conditions": "14-pin butterfly DFB with internal isolator and PM fibre, Tcase = 25 C, CW. At Iop = 375 mA the plots give about 75 mW ex-fibre at about 2.0 V -> WPE = 75 mW/(0.375 A x 2.0 V) = 10 % (plot-read, +/-10 %). Including the TEC at this point (about 0.05 W, plot-read) gives about 9 %. Thorlabs DFB1550LP (24 mW) is ~17 % and the QPC 500 mW butterfly module <= 4.8 % on the same derivation."
+      },
+      "optimistic_source": {
+        "title": "50% continuous-wave wallplug efficiency from 1.53 um-emitting broad-area diode lasers (Garrod et al., Appl. Phys. Lett. 105, 071101)",
+        "year": 2014,
+        "doi": "10.1063/1.4893576",
+        "url": null,
+        "where": "abstract",
+        "quote": "a maximum CW WPE value of 50% is achieved at room temperature",
+        "conditions": "InP-based single-quantum-well broad-area chip, 100 um aperture (multimode), ~1 W output, conductively cooled, 1.53 um; chip-level (no TEC, no driver). Outside the 2015-2026 window by one year; multimode, so not directly usable for a single-mode waveguide layer."
+      },
+      "notes": "Single-mode alternatives for optimistic: 28.49 % PCE at 61.54 mW, 1.55 um DFB, room temperature (Liu et al., Opt. Lett. 50, 3018 (2025), DOI 10.1364/OL.561530, abstract); ISLC 2024 monolithic DFB tapered laser 'peak efficiencies over 30%' (Labrecque et al., DOI 10.1109/ISLC57752.2024.10717351, abstract as read by a sub-agent); SPIE 2024 broad-area 1550 nm laser 'maximum wall plug efficiency of 40%' (Kanold et al., DOI 10.1117/12.3001390). Whole-module efficiency including TEC and driver is far lower: RIO ORION 1550 nm module 0.25-0.5 % (datasheet power dissipation 4-6 W for 10-20 mW out; sub-agent reading). Kawahara et al. (JSTQE 2026) assume 20 % wall-plug efficiency for the laser (an assumption, not a measurement)."
+    },
+    "available_laser_optical_w": {
+      "nominal": 0.09,
+      "optimistic": 4.9,
+      "unit": "W optical, CW, 1550 nm. nominal = single-frequency DFB butterfly ex-fibre; optimistic = highest chip-level CW power (MULTIMODE broad-area)",
+      "nominal_source": {
+        "title": "High Power DFB Lasers LM-1530-1570-100 / -080, datasheet DS-7076 Rev 1 (Gooch & Housego)",
+        "year": 2023,
+        "doi": null,
+        "url": "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5561/HIGH%20POWER%20DFB%20LASERS.pdf",
+        "where": "datasheet p.1 (features): 80 mW and 100 mW ex-fibre models; nominal = midpoint 90 mW",
+        "quote": "1530-1570 nm 100mW ex-fiber",
+        "conditions": "single-frequency DFB, 14-pin butterfly, PM250 fibre, Tcase = 25 C, CW. Entry-level alternative: Thorlabs DFB1550LP 20 mW min (DOC-102831 Rev A, mirror copy); QPC BrightLock 7115-0000 (DFB + semiconductor amplifier, no EDFA) > 500 mW from PM fibre."
+      },
+      "optimistic_source": {
+        "title": "1550 nm broad area large optical cavity laser with 4.9 W CW output power (Kanold et al., Proc. SPIE 12867, High-Power Diode Laser Technology XXII)",
+        "year": 2024,
+        "doi": "10.1117/12.3001390",
+        "url": null,
+        "where": "title (DOI resolves; abstract details as read by a sub-agent: 100 um stripe, 20 C operation)",
+        "quote": "1550 nm broad area large optical cavity laser with 4.9 W CW output power",
+        "conditions": "chip-level, broad-area MULTIMODE InGaAsP MQW laser, CW, no EDFA, no fibre coupling. NOT single-mode."
+      },
+      "notes": "W-class SINGLE-MODE semiconductor power also exists without an EDFA: >3.0 W near-diffraction-limited (M2 ~1.2) tapered amplifier, seeded (Leisher et al., SPIE 12119 (2022), DOI 10.1117/12.2611181, title); 2.7 W CW tapered amplifier (Campbell et al., ISLC 2021, DOI 10.1109/ISLC51662.2021.9615754); >2 W single spatial/spectral mode from a monolithic DFB-tapered laser (Labrecque et al., ISLC 2024, DOI 10.1109/ISLC57752.2024.10717351). For a single-mode waveguide layer use 2-3 W as the realistic upper bound; 4.9 W is the literal highest CW 1550 nm semiconductor power found. Vendor-only claims (10-20 W modules) were not verified."
+    },
+    "static_power_w": {
+      "nominal": 1.2,
+      "optimistic": 0.012,
+      "unit": "W electrical power of a thermoelectric cooler stabilising a small photonic module",
+      "nominal_source": {
+        "title": "Packaging Design and Characterization of a 16-Channel Silicon Photonic Transmitter Module for a 1.6 Tb/s-Class Optical Engine (Hsu et al., Microelectronics 2, 14)",
+        "year": 2026,
+        "doi": "10.3390/microelectronics2030014",
+        "url": null,
+        "where": "abstract",
+        "quote": "The measured module-level TEC power was 1.2 W.",
+        "conditions": "measured module-level TEC power of a packaged 16-channel imec silicon-photonic transmitter module (PAM4 drivers and MZM heaters inside the module, fibre arrays, 1310 nm); the TEC also removes driver/heater heat, so this is an upper-end 'module' value rather than a passive-chip value. Set-point/ambient not stated in the abstract."
+      },
+      "optimistic_source": {
+        "title": "DFB1550LP 1550 nm, 20 mW DFB butterfly laser datasheet DOC-102831 Rev A (Thorlabs), 14 Jul 2025 (mirror copy)",
+        "year": 2025,
+        "doi": null,
+        "url": "https://macrogroup.ru/upload/iblock/ba0/m061uo7nn3iu1xcpx074f03632h2vfup/DFB1550LP_SpecSheet.pdf",
+        "where": "datasheet p.1, 'TEC Operation (Typical / Max @ TCASE = 25 C / 75 C)': TEC current 0.06 A typ, TEC voltage 0.20 V typ -> 0.012 W (derived I x V)",
+        "quote": "TEC Current ITEC 0.06 A",
+        "conditions": "typical TEC electrical power at Tcase = 25 C with the chip setpoint near ambient (almost no heat lift); the same datasheet's maximum (75 C case) is 2.0 A x 4.0 V = 8 W. Gooch & Housego DS-7076: typ 0.1 A x 0.1 V = 0.010 W at Tamb = 25 C, max 4 A x 4 V = 16 W at 70 C."
+      },
+      "notes": "The 0.012 W value only holds when ambient equals the chip set-point; it is a best case, not a measured stabilisation power for a passive chip. Mid/high points: Marlow NL1011T single-stage TEC Qmax 1.0 W, Imax 1.0 A, Vmax 2.0 V (max 2 W electrical; sub-agent reading); QPC 7115-0000 butterfly typ 3 V x 2.2 A = 6.6 W; RIO ORION module 4 W at 50 C case (whole module incl. driver); AeroDIODE 1550LD-3 TEC max 1 A x 1.5 V = 1.5 W. Hsu et al. also give 3.95 pJ/bit for the transmitter electronics excluding lasers and TEC, 7.83 pJ/bit including laser and TEC (1.6 Tb/s denominator). No peer-reviewed TEC power for a purely passive (non-dissipating) chip was found."
+    },
+    "mzi_excess_loss_db": {
+      "nominal": 0.35,
+      "optimistic": 0.35,
+      "unit": "dB per MZI stage (ALL-INCLUSIVE on-chip loss of one interferometer incl. its propagation length), 1550 nm, fs-written",
+      "nominal_source": {
+        "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024)",
+        "year": 2020,
+        "doi": "10.1002/lpor.202000024",
+        "url": "https://arxiv.org/abs/2001.08144",
+        "where": "Discussion (comparison with silicon PIC of Harris et al.)",
+        "quote": "on-chip losses (about 0.35 dB/interferometer)",
+        "conditions": "1550 nm, EAGLE XG; MZI = two 3 dB directional couplers (1.2 mm interaction length, 9 um spacing) + S-bends (radius 45 mm) + 3 mm arms, propagation loss 0.29 dB/cm; the 0.35 dB is the on-chip total per interferometer, i.e. it INCLUDES waveguide propagation along the MZI. Text: 'Our technology shows comparable results in terms of on-chip losses (about 0.35 dB/interferometer)'."
+      },
+      "optimistic_source": {
+        "title": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024)",
+        "year": 2020,
+        "doi": "10.1002/lpor.202000024",
+        "url": "https://arxiv.org/abs/2001.08144",
+        "where": "Discussion",
+        "quote": "on-chip losses (about 0.35 dB/interferometer)",
+        "conditions": "No better measured per-MZI value at 1550 nm in fs-written glass was found, so optimistic = nominal."
+      },
+      "notes": "ALIAS of loss_per_stage_db (identical values and sources). AVOID DOUBLE COUNTING: the 0.35 dB already contains the propagation loss of the MZI footprint; no source isolating the pure directional-coupler excess loss at 1550 nm was opened. Cross-check (derived, assumptions flagged): Pentangelo et al. 2024 (DOI 10.1515/nanoph-2023-0636) UPP B at 1550 nm: total IL 2.5 dB, 15 MZIs in a 6-mode rectangular mesh (cell length 13.2 mm, chip 90 mm); if the light crosses up to 6 stages and 2 facets cost 2 x 0.27 dB, the per-stage on-chip loss is <= (2.5 - 0.54)/6 = 0.33 dB. Quote: 'insertion losses at 785 nm (1550 nm) lower than 3 dB (2.5 dB)'. Silicon PIC reference in the same paper: 0.1 dB/interferometer."
+    },
+    "fixed_loss_db": {
+      "nominal": 2.165,
+      "optimistic": 1.4,
+      "unit": "dB, COMPUTED = 2 x fs_coupling_loss_db_per_facet + modulator_insertion_loss_db (propagation and per-stage losses NOT included)",
+      "nominal_source": {
+        "title": "computed from fs_coupling_loss_db_per_facet (nominal) and modulator_insertion_loss_db (nominal)",
+        "year": 2026,
+        "doi": null,
+        "url": null,
+        "where": "arithmetic on the two parameters above",
+        "quote": "2 x 0.27 dB + 1.625 dB = 2.165 dB",
+        "conditions": "two fibre-chip facets of the fs-written chip; modulator on-chip loss only (no fibre coupling of the modulator chip, none for the photodetector)"
+      },
+      "optimistic_source": {
+        "title": "computed from fs_coupling_loss_db_per_facet (optimistic) and modulator_insertion_loss_db (optimistic)",
+        "year": 2026,
+        "doi": null,
+        "url": null,
+        "where": "arithmetic on the two parameters above",
+        "quote": "2 x 0.2 dB + 1.0 dB = 1.4 dB",
+        "conditions": "same formula with the optimistic values (modulator loss is an upper bound '< 1 dB')"
+      },
+      "notes": "Formula and facet count are assumptions made by the researcher (input and output facet of the fs-written chip + one modulator); change the facet count if the optical layer is fibre-coupled differently. The final energy budget was not computed."
+    }
+  },
+  "digital_references": {
+    "old": {
+      "j_per_mac": 2.3e-13,
+      "title": "1.1 Computing's energy problem (and what we can do about it) (Horowitz, ISSCC 2014)",
+      "year": 2014,
+      "doi": "10.1109/ISSCC.2014.6757323",
+      "url": "https://www.gwern.net/doc/cs/hardware/2014-horowitz-2.pdf (copy of the IEEE paper; table read by rendering page 14, Figure 1.1.9)",
+      "where": "Figure 1.1.9, page 14 of the ISSCC 2014 digest (table: Integer Add 8 bit 0.03pJ, 32 bit 0.1pJ; Mult 8 bit 0.2pJ, 32 bit 3.1pJ)",
+      "quote": "Rough energy costs for various operations in 45nm 0.9V.",
+      "conditions": "45 nm, 0.9 V. 8-bit integer multiply 0.2 pJ + 8-bit integer add 0.03 pJ = 0.23 pJ/MAC = 2.3e-13 J. Table values CONFIRMED by viewing the figure image (text layer of the PDF is garbled): Integer Add 8 bit 0.03pJ / 32 bit 0.1pJ; Mult 8 bit 0.2pJ / 32 bit 3.1pJ; FP FAdd 16 bit 0.4pJ / 32 bit 0.9pJ; FMult 16 bit 1.1pJ / 32 bit 3.7pJ. These are 'rough' arithmetic-only costs (no data movement)."
+    },
+    "modern": {
+      "j_per_mac": 1.6051364365971108e-14,
+      "tops_per_w": 124.6,
+      "node": "TSMC 3 nm HKMG FinFET (N3-class), INT8 SRAM-based digital CIM macro/compiler test chip",
+      "year": 2026,
+      "title": "A 3 nm FinFET 125 TOPS/W-29 TFLOPS/W, 90 TOPS/mm2-17 TFLOPS/mm2 SRAM-Based INT8, and FP16 Digital-CIM Compiler With Support for Multi-Weight Update/Cycle (Mori et al., IEEE JSSC 61, 1502-1512; earlier version VLSI 2025, DOI 10.23919/VLSITechnologyandCir65189.2025.11074897)",
+      "doi": "10.1109/JSSC.2025.3646072",
+      "url": null,
+      "where": "abstract (OpenAlex/IEEE abstract text; full paper is closed-access and was not opened)",
+      "quote": "124.6 TOPS/W at 0.5 V and 90.2 TOPS/mm2at 1.1 V for INT8 DCIM",
+      "conditions": "INT8 weights x INT8 activations, digital compute-in-memory MACRO (arithmetic + SRAM weights, no off-macro data movement), measured test chip, 124.6 TOPS/W at 0.5 V (low-voltage best case; 90.2 TOPS/mm2 is at 1.1 V). 1 MAC = 2 ops -> J/MAC = 2/124.6 x 1e-12 = 1.605e-14 J. The abstract states no sparsity or toggle-rate assumption (not stated != none; TSMC's ISSCC 2024 3 nm paper used 25 % input toggle / 50 % weight=1, so a similar convention is possible but unverified).",
+      "alternatives": [
+        {
+          "label": "highest verified INT8 headline, node nominally 1.8 nm-class, but states 25% input activity",
+          "j_per_mac": 1.3605442176870748e-14,
+          "tops_per_w": 147,
+          "node": "Intel 18A",
+          "year": 2026,
+          "title": "30.9 A 147TOPS/W, 250TOPS/mm2, Fully Synthesizable, Digital Compute-in-Memory Accelerator Supporting INT8xINT8 with Zero-Point Quantization in Intel 18A Technology (ISSCC 2026)",
+          "doi": "10.1109/ISSCC49663.2026.11409207",
+          "where": "abstract (OpenAlex/IEEE text)",
+          "quote": "delivers a peak energy-efficiency of 147TOPS/W at 25% input activity",
+          "conditions": "peak at 0.4 V, 25 C, 25% input activity, 6.1 mW; 1.1 V / 2.62 GHz gives 250 TOPS/mm2; 0.0856 mm2 on-die accelerator, 128 input x 32 output channels (area x density = 21.4 TOPS = 4096 MACs x 2.62 GHz x 2 ops, so 2 ops/MAC); dense (100% activity) figure not given and would be lower."
+        },
+        {
+          "label": "possibly better but INT8 NOT verified",
+          "j_per_mac_if_int8": 8.532423208191126e-15,
+          "tops_per_w": 234.4,
+          "node": "TSMC 2 nm",
+          "year": 2026,
+          "title": "A 2nm 234.4 TOPS/W and 511.9 TOPS/mm2 Digital Computing-in-Memory Compiler with Multiple MAC Units per Weight and Multiple Data Format Support (VLSI 2026)",
+          "doi": "10.1109/VLSITechnologyandCir65830.2026.11577204",
+          "where": "title only (no abstract available)",
+          "quote": "A 2nm 234.4 TOPS/W and 511.9 TOPS/mm2 Digital Computing-in-Memory Compiler",
+          "conditions": "data format/precision, voltage and activity behind the 234.4 TOPS/W figure are not stated in any source opened; do not use unless confirmed as INT8."
+        },
+        {
+          "label": "excluded: per-bit-normalised only",
+          "tops_per_w_per_bit": 6163,
+          "node": "TSMC 4 nm",
+          "year": 2023,
+          "doi": "10.1109/ISSCC42615.2023.10067555",
+          "title": "A 4nm 6163-TOPS/W/b 4790-TOPS/mm2/b SRAM Based Digital-Computing-in-Memory Macro (ISSCC 2023)",
+          "conditions": "only a TOPS/W/b figure; INT8 equivalent would need the bit-product normalisation (6163/64 = 96 TOPS/W if normalised by 8x8 bits) which is unverified; not used."
+        },
+        {
+          "label": "excluded: INT4 / sparsity / other precision",
+          "conditions": "TSMC 5 nm ISSCC 2022 254 TOPS/W is 4b/4b; NVIDIA 5 nm JSSC 2023 95.6 TOPS/W is 4-bit; TSMC 3 nm ISSCC 2024 32.5 TOPS/W is INT12; IBM 7 nm AI chip 16.9 TOPS/W is INT4; Samsung 5 nm SRAM IMC macro 274 TOPS/W only at 90% input-bit sparsity (precision not stated); Samsung NPUs (ISCA 2021 13.6 TOPS/W, JSSC 2023 4 nm 11.59 TOPS/W) are workload-level numbers."
+        }
+      ]
+    }
+  },
+  "unresolved": [
+    "Tan et al. Opt. Lett. 47, 4766 (2022): 0.07 dB/cm is confirmed from the abstract, but the measurement wavelength (1550 nm) is confirmed only via the Skryabin et al. arXiv:2408.06688 citation; the OL full text and the OME 2021 (0.15 dB/cm) full text could not be opened (publisher bot wall). Skryabin's own 0.07 dB/cm and 0.2 dB/facet were measured at 920 nm, not 1550 nm.",
+    "No peer-reviewed thin-film LiNbO3 modulator energy per symbol INCLUDING a driver was found; modulator_energy_j uses silicon (microring / MZM) transmitters with integrated drivers. TFLN modulator-only numbers (4.49 fJ/bit driverless, 61-120 fJ/bit estimated from V_rms) are in the notes.",
+    "No source isolating the directional-coupler/MZI EXCESS loss (excluding propagation) of fs-written circuits at 1550 nm was opened; loss_per_stage_db is an all-inclusive per-interferometer figure (0.35 dB) that already contains propagation along the MZI. optimistic = nominal for that item.",
+    "Heater optimistic (0.72 mW P_2pi) requires a high-vacuum package; the in-air bridge value is 37 mW (mean 18.5 mW). The 17 mW FLICE microbridge result (Photonics 13, 731) was seen only as an abstract (wavelength unverified, full text blocked).",
+    "Fibre coupling optimistic (0.2 dB/facet at 1550 nm) is a computed mode-overlap loss (Flamini 2015), not a measured insertion loss; modulator insertion-loss optimistic (< 1 dB) is an upper bound from Kharel et al., which has an Optica erratum (DOI 10.1364/OPTICA.440484) that was not opened. Lower TFLN on-chip loss (e.g. Wang et al. Nature 2018) not verified.",
+    "static_power_w: the 12 mW datasheet 'typical' holds only with no heat lift; the 1.2 W measured value belongs to a driver-populated 16-channel module. No measured TEC power for a passive chip found.",
+    "Laser optimistic values (50 % WPE, 4.9 W) are multimode broad-area chips; single-mode alternatives (28.5-30 % WPE, 2-3 W) are in the notes. Nominal WPE is derived from datasheet plot readings (+/-10 %). The Thorlabs DFB1550LP and Digi-Key G&H datasheets were read from mirror copies (official thorlabs.com page is JavaScript-only).",
+    "Digital modern reference: conditions for TSMC 124.6 TOPS/W (toggle rate/sparsity) are not in the abstract; Intel 18A 147 TOPS/W states 25 % input activity; TSMC 2 nm 234.4 TOPS/W could not be confirmed as INT8. Full papers are closed-access and were not opened.",
+    "DAC: the 8-bit DAC values are for 14-28 GS/s research DACs (no 8-bit DAC in the 1-10 GS/s window exists in the Caragiulo-Daigle-Murmann survey, which covers 1996-2020 plus additions); the nominal DAC power (84 mW, Nazemi 2015) comes from the survey, not the paper abstract. ADC values come from the Murmann survey (ISSCC/VLSI only), power numbers match the ISSCC program abstracts.",
+    "PD optimistic QE (0.92) is a large-area free-space Ge photodiode, not GHz-class; the high-speed Ge waveguide PD alternative (eta 0.87) was read from the abstract only and its coupling-loss accounting is unverified. TIA optimistic (2 pA/sqrt(Hz)) is a 2.5 GHz, 80 kohm-gain 180 nm CMOS TIA; the IEEE SSC-L letter was read as abstract only.",
+    "Horowitz table: values confirmed by viewing the figure image on page 14 of the PDF (the text layer is garbled); the PDF came from a Gwern.net mirror of the IEEE paper, DOI 10.1109/ISSCC.2014.6757323 resolves to the IEEE record."
+  ]
+}

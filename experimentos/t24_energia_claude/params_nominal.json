@@ -1,0 +1,39 @@
+{
+ "case": "nominal",
+ "primary_n": 64,
+ "transmission_db": 47.265,
+ "layer": {
+  "wavelength_m": 1.55e-06,
+  "quantum_efficiency": 0.76,
+  "optical_transmission": 1.8771544183750244e-05,
+  "laser_wall_plug_efficiency": 0.1,
+  "modulator_energy_j": 1.17e-12,
+  "dac_energy_j": 4.667e-12,
+  "adc_energy_j": 5.346e-12,
+  "static_power_w": 1.2,
+  "current_noise_a_rthz": 1e-11
+ },
+ "depth": {
+  "available_laser_optical_w": 0.09,
+  "fixed_loss_db": 2.165,
+  "loss_per_stage_db": 0.35
+ },
+ "programmable": {
+  "mean_heater_power_w_per_shifter": 0.0315
+ },
+ "provenance": {
+  "wavelength_m": "Project operating wavelength (design choice), 1550 nm.",
+  "quantum_efficiency": "High Speed InGaAs PIN Photodiodes C30617, C30618 datasheet (Excelitas), Rev. 2016.11.08; 2016; https://shop.amstechnologies.com/media/4c/ab/1f/1720717735/C30617_C30618-High-speed-InGaAs-PIN-Photodiodes-Excelitas-Datasheet.pdf; where: datasheet p.3, 'Electro-Optical Characteristics (C30617, C30618)': Responsivity at 1550 nm, TO-18 ceramic, min 0.85 / typ 0.95 A/W; Bandwidth (-3dB, RL = 50 ohm) 3.5 GHz",
+  "optical_transmission": "Computed: 2 facets x 0.270 dB [Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024); 2020; DOI 10.1002/lpor.202000024; https://arxiv.org/abs/2001.08144; where: Section 2 (Device structure) and Discussion (coupling losses 'only 0.54 dB' for two facets)] + 2.0 cm x 0.150 dB/cm access propagation [Femtosecond laser writing low-loss waveguides in silica glass: highly symmetrical mode field and mechanism of refractive index change (Tan, Sun, Qiu, Opt. Mater. Express 11, 848); 2021; DOI 10.1364/OME.419945; where: abstract (Crossref); wavelength 1550 nm is stated by the secondary source Skryabin et al. arXiv:2408.06688 Introduction ('optimized to 0.15 dB/cm at the wavelength of 1550 nm [58, 59]'); full text of the OME paper could not be opened (publisher bot wall)] + modulator insertion loss 1.625 dB [High-performance coherent optical modulators based on thin-film lithium niobate platform (Xu et al., Nat. Commun. 11, 3911); 2020; DOI 10.1038/s41467-020-17806-0; https://arxiv.org/abs/2006.15536; where: Results (optical loss), arXiv text: fibre-to-fibre 8.6 dB and 8.25 dB, grating couplers 3.4 dB/facet -> on-chip 1.8 dB and 1.45 dB for the 13 mm and 7.5 mm devices] + mesh 2N x 0.35 dB = 44.80 dB for N = 64 (SVD realization, two Clements meshes; per-stage loss already includes the MZI propagation length) [Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024); 2020; DOI 10.1002/lpor.202000024; https://arxiv.org/abs/2001.08144; where: Discussion (comparison with silicon PIC of Harris et al.)]. Total 47.265 dB, transmission 1.877e-05.",
+  "laser_wall_plug_efficiency": "High Power DFB Lasers LM-1530-1570-100 / -080, datasheet DS-7076 Rev 1 (Gooch & Housego); 2023; https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5561/HIGH%20POWER%20DFB%20LASERS.pdf; where: datasheet p.2 electrical table (Iop typ 375 mA, VF max 3 V) and p.3 plots (80 mW unit: output power and voltage vs current); WPE DERIVED by the lead from the plots",
+  "modulator_energy_j": "Driver included. 8-lambda x 50 Gbps/lambda Heterogeneously Integrated Si-Ph DWDM Transmitter (Levy et al., IEEE JSSC 59, 690); 2024; DOI 10.1109/JSSC.2023.3344072; where: abstract",
+  "dac_energy_j": "Power / sample rate. 3.4 A 36Gb/s PAM4 transmitter using an 8b 18GS/S DAC in 28nm CMOS (Nazemi et al., ISSCC 2015); 2015; DOI 10.1109/ISSCC.2015.7062924; https://github.com/pietro-caragiulo/survey-DAC (data/data.csv); where: Power value from DAC Performance Survey 1996-2020 (Caragiulo, Daigle, Murmann), data.csv row Ref=84 (M=8, Fs=18000 MS/s, Power 84 mW); the ISSCC abstract itself gives only the 8b 18GS/s DAC, not the power",
+  "adc_energy_j": "Power / sample rate. 10.2 A Single-Channel 2.6GS/s 10b Dynamic Pipelined ADC with Time-Assisted Residue Generation Scheme Achieving Intrinsic PVT Robustness (Hao et al., ISSCC 2023); 2023; DOI 10.1109/ISSCC42615.2023.10067822; https://github.com/bmurmann/ADC-survey (xls/ADCsurvey_rev20260801.xlsx, sheets ISSCC and VLSI); where: ISSCC 2023 paper 10.2; power, fs and SNDR as tabulated in Murmann ADC survey rev20260801 (sheet ISSCC) and in the ISSCC program abstract",
+  "static_power_w": "Measured module-level TEC power. Packaging Design and Characterization of a 16-Channel Silicon Photonic Transmitter Module for a 1.6 Tb/s-Class Optical Engine (Hsu et al., Microelectronics 2, 14); 2026; DOI 10.3390/microelectronics2030014; where: abstract",
+  "current_noise_a_rthz": "GN1052WA2 SiGe BiCMOS transimpedance amplifier, product page (Semtech); 2026; https://www.semtech.com/products/signal-integrity/transimpedance-amplifiers/gn1052wa2; where: product page, Features list (page retrieved by the lead on 2026-10-13, 'year' = retrieval/copyright year of the current product page; the datasheet PDF is login-gated and its own date/revision, and the vintage of this long-lived part, are unknown)",
+  "available_laser_optical_w": "High Power DFB Lasers LM-1530-1570-100 / -080, datasheet DS-7076 Rev 1 (Gooch & Housego); 2023; https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5561/HIGH%20POWER%20DFB%20LASERS.pdf; where: datasheet p.1 (features): 80 mW and 100 mW ex-fibre models; nominal = midpoint 90 mW",
+  "fixed_loss_db": "Computed: 2 x facet loss + modulator insertion loss (sources as in optical_transmission).",
+  "loss_per_stage_db": "Low power reconfigurability and reduced crosstalk in integrated photonic circuits fabricated by femtosecond laser micromachining (Ceccarelli et al., Laser Photonics Rev. 14, 2000024); 2020; DOI 10.1002/lpor.202000024; https://arxiv.org/abs/2001.08144; where: Discussion (comparison with silicon PIC of Harris et al.)",
+  "mean_heater_power_w_per_shifter": "Mean = P_2pi / 2. High-fidelity and polarization-insensitive universal photonic processors fabricated by femtosecond laser writing (Pentangelo et al., Nanophotonics 13, 2259); 2024; DOI 10.1515/nanoph-2023-0636; https://arxiv.org/abs/2310.19718; where: Section III (calibration) and abstract/introduction: average 2pi power per phase shifter"
+ }
+}

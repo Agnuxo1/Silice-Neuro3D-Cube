@@ -1,0 +1,19 @@
+{
+ "references": {
+  "old": {
+   "j_per_mac": 2.3e-13,
+   "source": "Horowitz, ISSCC 2014, DOI 10.1109/ISSCC.2014.6757323, Fig. 1.1.9: 8-bit add 0.03 pJ + 8-bit multiply 0.2 pJ, 45 nm, 0.9 V; arithmetic only.",
+   "node": "45 nm",
+   "year": 2014
+  },
+  "modern": {
+   "j_per_mac": 1.6051364365971108e-14,
+   "tops_per_w": 124.6,
+   "node": "TSMC 3 nm HKMG FinFET (N3-class), INT8 SRAM-based digital CIM macro/compiler test chip",
+   "year": 2026,
+   "source": "A 3 nm FinFET 125 TOPS/W-29 TFLOPS/W, 90 TOPS/mm2-17 TFLOPS/mm2 SRAM-Based INT8, and FP16 Digital-CIM Compiler With Support for Multi-Weight Update/Cycle (Mori et al., IEEE JSSC 61, 1502-1512; earlier version VLSI 2025, DOI 10.23919/VLSITechnologyandCir65189.2025.11074897); 2026; DOI 10.1109/JSSC.2025.3646072; where: abstract (OpenAlex/IEEE abstract text; full paper is closed-access and was not opened)",
+   "conditions": "INT8 weights x INT8 activations, digital compute-in-memory MACRO (arithmetic + SRAM weights, no off-macro data movement), measured test chip, 124.6 TOPS/W at 0.5 V (low-voltage best case; 90.2 TOPS/mm2 is at 1.1 V). 1 MAC = 2 ops -> J/MAC = 2/124.6 x 1e-12 = 1.605e-14 J. The abstract states no sparsity or toggle-rate assumption (not stated != none; TSMC's ISSCC 2024 3 nm paper used 25 % input toggle / 50 % weight=1, so a similar convention is possible but unverified).",
+   "conversion": "J/MAC = 2 / (TOPS/W) x 1e-12 (1 MAC = 2 operations)"
+  }
+ }
+}
