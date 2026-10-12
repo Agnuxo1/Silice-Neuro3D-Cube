@@ -1,0 +1,29 @@
+{
+  "experiment_id": "T27_insitu_calibration_model_20261012",
+  "task_id": "T27",
+  "scope": "numerical_model",
+  "model": "Clements mesh in the agentkit.mzi convention with Gaussian splitter-angle errors (shared plus local component). Exact analytic gradient of the global-phase-insensitive infidelity; L-BFGS-B. No geometry, no measured device, no thermal crosstalk, no loss.",
+  "units": {"angle": "rad", "infidelity": "1 - |Tr(U^H V)|/N, dimensionless"},
+  "hypothesis_under_test": "H-C (guide v2 section 39), model part only: in-situ recalibration absorbs correlated fabrication errors of a fs-written mesh down to a fixed transfer error.",
+  "primary_point": {"n": 8, "sigma_rad": 0.02, "correlation": 0.8, "realizations": 60, "targets": "Haar-random unitaries, one per realization"},
+  "secondary_grid": {"n": [4, 8], "sigma_rad": [0.02, 0.05], "correlation": [0.0, 0.8], "realizations": 60},
+  "strategies": {
+    "A_ideal_programming": "Phases computed for an error-free mesh, applied to the erroneous device.",
+    "B_in_situ": "All phases re-optimized on the erroneous device itself (hardware in the loop with exact transfer access), starting from A.",
+    "B_8bit": "Phases of B quantized to an 8-bit DAC over 2 pi.",
+    "C_model_based": "Phases optimized on a model whose splitter errors were characterized with error of std 0.1 sigma, then applied to the true device."
+  },
+  "criteria": [
+    {"id": "gradient_check_relative_error", "operator": "le", "threshold": 1e-6},
+    {"id": "wilks_95_95_after_primary", "operator": "le", "threshold": 1e-3},
+    {"id": "median_improvement_factor_primary", "operator": "ge", "threshold": 10}
+  ],
+  "decision_rule": "If the last two criteria pass, H-C is supported in the model at the primary point and remains a candidate headline whose decisive test is physical (T10, T14, T15: measured splitter errors, a measured calibration loop, drift). If either fails, H-C is withdrawn as headline for this error level. Secondary settings, B_8bit and C_model_based are descriptive.",
+  "pre_commit_checks": "Software smoke test only: analytic gradient versus central differences (N = 5, one random point) and timing of one objective evaluation at N = 8; the ideal device reproduces its target (infidelity below 1e-15). No setting statistic was computed before this commitment.",
+  "resource_limits": {"cpu_threads": 1, "seconds": 1800, "gpu": false},
+  "heldout_policy": "Each realization draws a new Haar target and new errors from fixed seeds; nothing is tuned on outcomes.",
+  "planned_artifacts": [
+    "resultados/agent/t27_calibration_20261012/results.json",
+    "Docs/CIERRE-20261012/T27-INSITU-CALIBRATION.md"
+  ]
+}
