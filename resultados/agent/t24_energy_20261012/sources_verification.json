@@ -1,0 +1,579 @@
+{
+ "records": [
+  {
+   "id": "adc_energy_j_nominal",
+   "doi": "10.1109/ISSCC42615.2023.10067822",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "10.2 A Single-Channel 2.6GS/s 10b Dynamic Pipelined ADC with Time-Assisted Residue Generation Scheme Achieving Intrinsic PVT Robustness",
+     "year": 2023,
+     "container": "2023 IEEE International Solid- State Circuits Conference (ISSCC)",
+     "volume": null,
+     "page": "168-170",
+     "authors": [
+      "Hao",
+      "Zhang",
+      "Zhang",
+      "Liu",
+      "Zhu",
+      "Zhu"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "adc_energy_j_optimistic",
+   "doi": "10.1109/ISSCC42615.2023.10067498",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "A 3mW 2.7GS/s 8b Subranging ADC with Multiple-Reference-Reference-Embedded Comparators",
+     "year": 2023,
+     "container": "2023 IEEE International Solid- State Circuits Conference (ISSCC)",
+     "volume": null,
+     "page": "276-278",
+     "authors": [
+      "Wang",
+      "Kuo"
+     ],
+     "title_similarity": 0.9268,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "dac_energy_j_nominal",
+   "doi": "10.1109/ISSCC.2015.7062924",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "3.4 A 36Gb/s PAM4 transmitter using an 8b 18GS/S DAC in 28nm CMOS",
+     "year": 2015,
+     "container": "2015 IEEE International Solid-State Circuits Conference - (ISSCC) Digest of Technical Papers",
+     "volume": null,
+     "page": "1-3",
+     "authors": [
+      "Nazemi",
+      "Hu",
+      "Catli",
+      "Cui",
+      "Singh",
+      "He"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "dac_energy_j_optimistic",
+   "doi": "10.1109/JSSC.2021.3057608",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "A 2✖ Time-Interleaved 28-GS/s 8-Bit 0.03-mm<sup>2</sup> Switched-Capacitor DAC in 16-nm FinFET CMOS",
+     "year": 2021,
+     "container": "IEEE Journal of Solid-State Circuits",
+     "volume": "56",
+     "page": "2335-2346",
+     "authors": [
+      "Caragiulo",
+      "Mattia",
+      "Arbabian",
+      "Murmann"
+     ],
+     "title_similarity": 0.9886,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "modulator_energy_j_nominal",
+   "doi": "10.1109/JSSC.2023.3344072",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "8-\n                    <i>λ</i>\n                    × 50 Gbps/\n                    <i>λ</i>\n                    Heterogeneously Integrated Si-Ph DWDM Transmitter",
+     "year": 2024,
+     "container": "IEEE Journal of Solid-State Circuits",
+     "volume": "59",
+     "page": "690-701",
+     "authors": [
+      "Levy",
+      "Xuan",
+      "Sharma",
+      "Huang",
+      "Kumar",
+      "Ma"
+     ],
+     "title_similarity": 0.8806,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "modulator_energy_j_optimistic",
+   "doi": "10.1109/VLSIC.2018.8502396",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "A 40GB/S Optical NRZ Transmitter Based on Monolithic Microring Modulators in 45NM SOI CMOS",
+     "year": 2018,
+     "container": "2018 IEEE Symposium on VLSI Circuits",
+     "volume": null,
+     "page": "273-274",
+     "authors": [
+      "Lin",
+      "Moazeni",
+      "Stojanovic"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "fs_propagation_loss_db_per_cm_nominal",
+   "doi": "10.1364/OME.419945",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Femtosecond laser writing low-loss waveguides in silica glass: highly symmetrical mode field and mechanism of refractive index change",
+     "year": 2021,
+     "container": "Optical Materials Express",
+     "volume": "11",
+     "page": "848",
+     "authors": [
+      "Tan",
+      "Sun",
+      "Qiu"
+     ],
+     "title_similarity": 0.8771,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "fs_propagation_loss_db_per_cm_optimistic",
+   "doi": "10.1364/OL.470670",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Effectively writing low propagation and bend loss waveguides in the silica glass by using a femtosecond laser",
+     "year": 2022,
+     "container": "Optics Letters",
+     "volume": "47",
+     "page": "4766",
+     "authors": [
+      "Tan",
+      "Sun",
+      "Li",
+      "Qiu"
+     ],
+     "title_similarity": 0.872,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "fs_coupling_loss_db_per_facet_nominal",
+   "doi": "10.1002/lpor.202000024",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Low Power Reconfigurability and Reduced Crosstalk in Integrated Photonic Circuits Fabricated by Femtosecond Laser Micromachining",
+     "year": 2020,
+     "container": "Laser &amp; Photonics Reviews",
+     "volume": "14",
+     "page": null,
+     "authors": [
+      "Ceccarelli",
+      "Atzeni",
+      "Pentangelo",
+      "Pellegatta",
+      "Crespi",
+      "Osellame"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "fs_coupling_loss_db_per_facet_optimistic",
+   "doi": "10.1038/lsa.2015.127",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Thermally reconfigurable quantum photonic circuits at telecom wavelength by femtosecond laser micromachining",
+     "year": 2015,
+     "container": "Light: Science &amp; Applications",
+     "volume": "4",
+     "page": "e354-e354",
+     "authors": [
+      "Flamini",
+      "Magrini",
+      "Rab",
+      "Spagnolo",
+      "D'Ambrosio",
+      "Mataloni"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "modulator_insertion_loss_db_nominal",
+   "doi": "10.1038/s41467-020-17806-0",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High-performance coherent optical modulators based on thin-film lithium niobate platform",
+     "year": 2020,
+     "container": "Nature Communications",
+     "volume": "11",
+     "page": null,
+     "authors": [
+      "Xu",
+      "He",
+      "Zhang",
+      "Jian",
+      "Pan",
+      "Liu"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "modulator_insertion_loss_db_optimistic",
+   "doi": "10.1364/OPTICA.416155",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Breaking voltage–bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes",
+     "year": 2021,
+     "container": "Optica",
+     "volume": "8",
+     "page": "357",
+     "authors": [
+      "Kharel",
+      "Reimer",
+      "Luke",
+      "He",
+      "Zhang"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "heater_mean_power_w_nominal",
+   "doi": "10.1515/nanoph-2023-0636",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High‐fidelity and polarization‐insensitive universal photonic processors fabricated by femtosecond laser writing",
+     "year": 2024,
+     "container": "Nanophotonics",
+     "volume": "13",
+     "page": "2259-2270",
+     "authors": [
+      "Pentangelo",
+      "Di Giano",
+      "Piacentini",
+      "Arpe",
+      "Ceccarelli",
+      "Crespi"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "quantum_efficiency_optimistic",
+   "doi": "10.1038/s41377-024-01670-4",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Near-infrared germanium PIN-photodiodes with &gt;1A/W responsivity",
+     "year": 2025,
+     "container": "Light: Science &amp; Applications",
+     "volume": "14",
+     "page": null,
+     "authors": [
+      "Liu",
+      "Pasanen",
+      "Fung",
+      "Isometsä",
+      "Haarahiltunen",
+      "Hesse"
+     ],
+     "title_similarity": 0.9764,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "current_noise_a_rthz_optimistic",
+   "doi": "10.3390/mi16121416",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "A Low-Noise Hybrid-Integrated Balanced Homodyne Receiver with 2.5 GHz Bandwidth and 15 dB Quantum Shot Noise Clearance",
+     "year": 2025,
+     "container": "Micromachines",
+     "volume": "16",
+     "page": "1416",
+     "authors": [
+      "Yang",
+      "Cheng",
+      "Yang",
+      "Ren",
+      "Bao",
+      "Xue"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "laser_wall_plug_efficiency_optimistic",
+   "doi": "10.1063/1.4893576",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "50% continuous-wave wallplug efficiency from 1.53<i>μ</i>m-emitting broad-area diode lasers",
+     "year": 2014,
+     "container": "Applied Physics Letters",
+     "volume": "105",
+     "page": null,
+     "authors": [
+      "Garrod",
+      "Olson",
+      "Klaus",
+      "Zenner",
+      "Galstad",
+      "Mawst"
+     ],
+     "title_similarity": 0.994,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "available_laser_optical_w_optimistic",
+   "doi": "10.1117/12.3001390",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "1550 nm broad area large optical cavity laser with 4.9 W CW output power",
+     "year": 2024,
+     "container": "High-Power Diode Laser Technology XXII",
+     "volume": null,
+     "page": "5",
+     "authors": [
+      "Kanold",
+      "Möhrle",
+      "Ehrensack",
+      "Schell"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "static_power_w_nominal",
+   "doi": "10.3390/microelectronics2030014",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Packaging Design and Characterization of a 16-Channel Silicon Photonic Transmitter Module for a 1.6 Tb/s-Class Optical Engine",
+     "year": 2026,
+     "container": "Microelectronics",
+     "volume": "2",
+     "page": "14",
+     "authors": [
+      "Hsu",
+      "Cheng",
+      "Huang",
+      "Huang",
+      "Chiang",
+      "Liu"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "digital_modern",
+   "doi": "10.1109/JSSC.2025.3646072",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "A 3 nm FinFET 125 TOPS/W-29 TFLOPS/W, 90 TOPS/mm\n                    <sup>2</sup>\n                    -17 TFLOPS/mm\n                    <sup>2</sup>\n                    SRAM-Based INT8, and FP16 Digital-CIM Compiler With Support for Multi-Weight Update/Cycle",
+     "year": 2026,
+     "container": "IEEE Journal of Solid-State Circuits",
+     "volume": "61",
+     "page": "1502-1512",
+     "authors": [
+      "Mori",
+      "Hung",
+      "Zhao",
+      "Khare",
+      "Crafton",
+      "Ishii"
+     ],
+     "title_similarity": 0.9934,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "extra_10.1109/ISSCC.2014.6757323",
+   "doi": "10.1109/ISSCC.2014.6757323",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "1.1 Computing's energy problem (and what we can do about it)",
+     "year": 2014,
+     "container": "2014 IEEE International Solid-State Circuits Conference Digest of Technical Papers (ISSCC)",
+     "volume": null,
+     "page": "10-14",
+     "authors": [
+      "Horowitz"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "extra_10.1109/ISLC57752.2024.10717351",
+   "doi": "10.1109/ISLC57752.2024.10717351",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "Watt-Class High Brightness Tapered Laser with Integrated Distributed Feedback Grating at 1550 nm",
+     "year": 2024,
+     "container": "2024 IEEE 29th International Semiconductor Laser Conference (ISLC)",
+     "volume": null,
+     "page": "1-2",
+     "authors": [
+      "Labrecque",
+      "Campbell",
+      "Grant",
+      "McClune",
+      "Larkins",
+      "Kinney"
+     ],
+     "title_similarity": 1.0,
+     "year_matches": true
+    }
+   }
+  },
+  {
+   "id": "extra_10.1364/OL.561530",
+   "doi": "10.1364/OL.561530",
+   "arxiv": null,
+   "verified": true,
+   "checks": {
+    "crossref": {
+     "resolved": true,
+     "http_status": 200,
+     "title": "High-efficiency 1.55-µm DFB laser with a 600-µm short cavity and sub-20-kHz linewidth",
+     "year": 2025,
+     "container": "Optics Letters",
+     "volume": "50",
+     "page": "3018",
+     "authors": [
+      "Liu",
+      "Tu",
+      "Lu",
+      "Wu"
+     ],
+     "title_similarity": 0.9881,
+     "year_matches": true
+    }
+   }
+  }
+ ],
+ "n_records": 22,
+ "n_verified": 22,
+ "all_identifiers_verified": true,
+ "numbers_checked_by_script": false,
+ "note": "Identifier, title and year only; extracted values need text verification."
+}
