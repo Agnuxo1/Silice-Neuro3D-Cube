@@ -1,0 +1,19 @@
+GitHub Actions run 38312740345 (workflow agentkit.yml), head 48566e409d7ca8e3105d28b2954e153523e00125
+https://github.com/Agnuxo1/Silice-Neuro3D-Cube/actions/runs/38312740345
+Retrieved 2026-10-12 with: gh run view 38312740345 --log (filtered lines)
+
+Kit v1 and v2 on windows-2022	success
+Kit v1 and v2 on ubuntu-24.04	success
+
+Kit v1 and v2 on windows-2022	Set up CPython 3.13.7	2026-10-12T21:47:44.5669045Z Successfully installed pip-26.2.1
+Kit v1 and v2 on windows-2022	Install pinned kit dependencies (hash-checked)	2026-10-12T21:48:14.1257404Z Successfully installed cloudpickle-3.1.2 contourpy-1.4.0 cycler-0.12.1 fonttools-4.66.1 joblib-1.6.0 kiwisolver-1.5.1 matplotlib-3.10.0 numpy-2.2.6 packaging-26.3 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 scikit-learn-1.6.1 scipy-1.15.1 six-1.17.0 threadpoolctl-3.7.0
+Kit v1 and v2 on windows-2022	Verify the kit matches the guide byte for byte	2026-10-12T21:48:14.5526208Z  "guide_sha256": "8c887a9934230d1f1ddc49328ecfa8735d1326b46df85fe7c3afd3e3af0dbdf8",
+Kit v1 and v2 on windows-2022	Verify the kit matches the guide byte for byte	2026-10-12T21:48:14.5526933Z  "mismatches": []
+Kit v1 and v2 on windows-2022	Run kit v1 tests (32)	2026-10-12T21:48:18.0212921Z Ran 32 tests in 2.353s
+Kit v1 and v2 on windows-2022	Run kit v2 tests (29)	2026-10-12T21:48:31.5166762Z Ran 29 tests in 12.578s
+Kit v1 and v2 on ubuntu-24.04	Set up CPython 3.13.7	2026-10-12T21:47:20.8564670Z Successfully installed pip-26.2.1
+Kit v1 and v2 on ubuntu-24.04	Install pinned kit dependencies (hash-checked)	2026-10-12T21:47:35.7596052Z Successfully installed cloudpickle-3.1.2 contourpy-1.4.0 cycler-0.12.1 fonttools-4.66.1 joblib-1.6.0 kiwisolver-1.5.1 matplotlib-3.10.0 numpy-2.2.6 packaging-26.3 pillow-12.3.0 pyparsing-3.3.3 python-dateutil-2.9.0.post0 scikit-learn-1.6.1 scipy-1.15.1 six-1.17.0 threadpoolctl-3.7.0
+Kit v1 and v2 on ubuntu-24.04	Verify the kit matches the guide byte for byte	2026-10-12T21:47:35.8956394Z  "guide_sha256": "8c887a9934230d1f1ddc49328ecfa8735d1326b46df85fe7c3afd3e3af0dbdf8",
+Kit v1 and v2 on ubuntu-24.04	Verify the kit matches the guide byte for byte	2026-10-12T21:47:35.8957279Z  "mismatches": []
+Kit v1 and v2 on ubuntu-24.04	Run kit v1 tests (32)	2026-10-12T21:47:36.9940510Z Ran 32 tests in 0.525s
+Kit v1 and v2 on ubuntu-24.04	Run kit v2 tests (29)	2026-10-12T21:47:40.5592817Z Ran 29 tests in 2.910s
