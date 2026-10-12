@@ -123,7 +123,7 @@ def worst_path_bruteforce(n: int, per_stage: list[np.ndarray]) -> int:
             label, total = start, 0
             for s, flip in enumerate(switches):
                 out = label ^ (2 ** s) if flip else label
-                total += per_stage[s][label] + per_stage[s][out]
+                total += int(per_stage[s][label]) + int(per_stage[s][out])
                 label = out
             top = max(top, total)
     return top
@@ -140,7 +140,7 @@ def part_crossings() -> dict:
         worst = worst_path(n, per_stage)
         brute = worst_path_bruteforce(n, per_stage) if n <= 32 else None
         if brute is not None:
-            brute_ok &= brute == worst
+            brute_ok = brute_ok and int(brute) == worst
         rows.append({"n": n, "stages": k, "couplers": n * k // 2, "crossings_total": total,
                      "crossings_closed_form": closed, "worst_path_crossings": worst,
                      "worst_path_bruteforce": brute,
