@@ -76,3 +76,10 @@ With fewer couplers the butterfly accumulates less splitter error. A shared erro
 - The crossing count is for one explicit planar layout and is an upper bound, not a minimum.
 - The 3D vertical-transition loss is a parameter grid. Whether 3D fs routing can realize butterfly stages without its own excess loss is untested (T08 and T14).
 - U = 0.2 dB is a planning assumption, not a measured repeatability.
+
+## Errata after the adversarial review (T30), 2026-10-13
+
+1. **Depth bound.** With the output phase screen and the redundancy of general U(2) elements, the bound is N − 1 for even N and N for odd N. A cylindrical (3D-only) brick wall reaches local full rank at N − 1, for example 64/64 at depth 7 for N = 8 (`resultados/agent/t30_redteam_20261013/depth_rank.py`). The sentence "three-dimensional writing cannot reduce the logical depth of a universal mesh" is therefore corrected to: **three-dimensional connectivity can save at most one layer.**
+2. **Crossing layout.** The layout here is optimal within its family for fixed input and output order. Freeing the output order (the DFT output is permuted anyway) halves the total crossings and gives worst paths of 4, 11, 26 and 57 for N = 8, 16, 32 and 64 (`butterfly_crossings.py`). Any planar layout still needs Θ(N²) crossings.
+3. **Vertical transitions.** The grid of 0–0.1 dB per stage is optimistic. The source of the crossing value reports 0.4–0.5 dB per S-bend at R = 50 mm.
+4. **Nature of the criteria.** The seven registered criteria are verification gates on the computation. They could not fail on the physics.

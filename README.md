@@ -10,9 +10,44 @@
 ![tests](https://img.shields.io/badge/tests_CPU-51_pasan-34d399)
 ![evidencia](https://img.shields.io/badge/fallos-retenidos-fbbf24)
 
-[Idea](#la-idea) · [Laboratorio actual](#laboratorio-20261009) · [Cómo funciona](#cómo-funciona-en-8-gifs) · [Resultados](#resultados-hasta-hoy) · [Reproducir](#reproducir) · [Método](#método-y-colaboración) · [Hoja de ruta](#hoja-de-ruta)
+[Closure 2026-10-13 (EN)](#scientific-closure-20261013) · [Idea](#la-idea) · [Laboratorio actual](#laboratorio-20261009) · [Cómo funciona](#cómo-funciona-en-8-gifs) · [Resultados](#resultados-hasta-hoy) · [Reproducir](#reproducir) · [Método](#método-y-colaboración) · [Hoja de ruta](#hoja-de-ruta)
 
 </div>
+
+---
+
+<a id="scientific-closure-20261013"></a>
+## Scientific closure · 13 October 2026 (English)
+
+**Status: numerical study with preregistered kill tests. No device has been fabricated or measured.** Every statement below comes from the claims ledger [`Docs/CIERRE-20261012/CLAIMS-TABLE-20261013-final.md`](Docs/CIERRE-20261012/CLAIMS-TABLE-20261013-final.md), whose evidence files are hashed. Manuscript: [`paper/manuscript.pdf`](paper/manuscript.pdf).
+
+**Central claim (a delimitation, not a novelty claim; revised after an adversarial review).** For femtosecond-laser-written waveguide meshes in glass with the component values found:
+(a) 3D connectivity can save **at most one layer** of a universal mesh of two-mode elements (bound N − 1 for even N, N for odd N; planar rectangular meshes need N);
+(b) at N = 64 and 8 bits, the **converters and modulators alone** cost about 72 fJ per multiply–accumulate, 1.4–4.5× a 3 nm INT8 digital macro, independently of the optical core; with the single published loss per fs-written interferometer stage, a dense passive layer needs 0.10 nJ per MAC;
+(c) **crossings alone do not decide** a 3D advantage: at the only verified crossing loss (≤ 0.01 dB at 80°) the 11 worst-path crossings of a planar butterfly at N = 16 cost about 0.11 dB, less than one 3D S-bend (0.4–0.5 dB in the same source).
+
+| Test (registered before running) | Result | Status |
+|---|---|---|
+| T25 · depth and crossings, 3D vs planar | Clements depth N, triangular 2N − 3; 3D saves at most one layer; planar butterfly Θ(N²) crossings | PASS (verification gates, 7/7) |
+| T27 · in-situ calibration of splitter errors | 95/95 infidelity bound 1.5·10⁻² → 1.3·10⁻⁴ (N = 8, σ = 0.02 rad); not reached at σ = 0.05 rad | PASS (model, 3/3) |
+| T24 · energy per MAC | fails vs 3 nm INT8 even with a lossless optical core (converter floor); full SVD mesh 0.10 nJ/MAC | **FAIL → energy hypothesis withdrawn** |
+| T26 · state of the art (31 verified records) | lowest verified loss found at 1550 nm in fused silica 0.06 ± 0.02 dB/cm; 3D fs Fourier circuits (2016) and a 3D photonic neural network in glass (2026) exist | PASS (review gates) |
+| T30 · adversarial review | independent recomputation; corrected the first wording of claims (a)–(c) | internal AI review done; external human review pending |
+| T20D · trench-width design | ideal HE₁₁ leakage 0.044 dB/cm (t = 12 µm) → 0.0020 dB/cm (t = 16 µm) | PASS (model) |
+
+**Measurements that would falsify the central claim:** per-stage loss of a cascaded fs-written MZI mesh in silica (≤ 0.13 dB would reverse the 2014 comparison) and loss of series crossings and 3D transitions. **Next test of the waveguide programme (registered, not run):** blind cut-back of HE₁₁ at 1550 nm on trench guides with t = 12 µm (feasibility, ≤ 0.3 dB/cm) and t = 16 µm (state of the art, ≤ 0.06 dB/cm). It needs a fabrication partner: see the [fabrication dossier](Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md).
+
+**How it was done.** Protocols, inputs and planned outputs were committed and verified on GitHub before computing ([`agentkit.prereg`](agentkit/prereg.py)); one crashed run was kept and repeated under a dated amendment; two earlier novelty claims were withdrawn. The closure kit (`agentkit/`) is byte-identical to the [guide](Docs/GUIA-CIERRE-CIENTIFICO-v2-20261012.md) and passes 61 tests on Windows and Linux ([CI](.github/workflows/agentkit.yml)).
+
+**Reproduce (CPU, one thread):**
+
+```bash
+python -m pip install --require-hashes -r requirements/agentkit-linux-py313.lock
+python -B -m unittest agentkit.test_v1 agentkit.test_v2
+python -B experimentos/t25_escalado_claude/run_t25.py --outdir <new folder>
+```
+
+**Open decisions for the owner:** license (none yet, so reuse needs permission), archive with DOI, fabrication partner. Reports: [`Docs/CIERRE-20261012/`](Docs/CIERRE-20261012/). Spanish summary: [`RESUMEN-PARA-FRAN.md`](Docs/CIERRE-20261012/RESUMEN-PARA-FRAN.md).
 
 ---
 

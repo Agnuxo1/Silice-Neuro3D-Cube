@@ -35,3 +35,18 @@ Blind cut-back of HE₁₁ at 1550 nm on trench guides with t = 12 µm (H1-A) an
 ## Effect on the task matrix
 
 T20 becomes **PARTIAL**: the central claim is chosen and supported numerically, while the physical decisive test of the next phase (H1-SOTA) awaits samples. T19 stays without an established original contribution: C-T20-DELIMIT is a delimitation, not a claim of priority.
+
+## Revision after the adversarial review (T30), 2026-10-13
+
+The internal review (`T30-REDTEAM-REPORT.md`; response in `T30-REDTEAM-RESPONSE.md`) showed that parts (a)–(c) were worded beyond their evidence. The direction holds; the wording above is superseded by v2. The JEV confidences quoted at the top are routing advice, not evidence.
+
+> **C-T20-DELIMIT v2.** For femtosecond-laser-written waveguide meshes in glass with the component values found:
+> (a) three-dimensional connectivity can save **at most one layer** of a universal mesh of two-mode elements: the dimension count with phase redundancy gives at least N − 1 layers for even N and N for odd N; planar rectangular meshes need N, and a cylindrical (3D-only) arrangement reaches local full rank at N − 1;
+> (b) at N = 64 and 8 bits, the **converters and modulators alone** cost about 72 fJ per multiply–accumulate with the best values found, 1.4–4.5 times a 3 nm INT8 digital macro, **independently of the optical core**; with the single cited fs-written MZI stage loss (0.35 dB, borosilicate, 2020) in a 2N-stage SVD mesh, the full layer needs 0.10 nJ per MAC, and it would beat a 45 nm (2014) MAC only with a stage loss of at most 0.13 dB;
+> (c) **crossings alone do not decide a 3D advantage**: the worst planar butterfly path at N = 16 has 11 crossings (free output order), which at the only verified crossing loss (≤ 0.01 dB at 80°) is at most about 0.11 dB, while the same source reports 0.4–0.5 dB per S-bend; the net 3D gain at N ≤ 32 is not established and may be negative.
+
+- **Falsifiers (v2).** (a) A mesh of two-mode elements that is dense in U(N) with fewer layers than stated. (b) Verified 8-bit converter and modulator energies whose sum per MAC at N = 64 is below the digital reference, or a measured fs-written MZI stage loss low enough to make the full layer competitive. (c) A measured net worst-path advantage of a 3D over a planar butterfly of at least 0.4 dB at N = 16.
+- **Decisive measurements for the claim itself.** For (b), per-stage loss of a fabricated fs-written MZI mesh in silica (T28 coupon F). For (c), loss versus number of series crossings and of 3D transitions (T28 coupon B). The trench cut-back (H1) stays the next test of the waveguide programme. It is a separate claim that tests none of (a)–(c).
+- **Rule I1 with the better layout.** With free output order the worst-path crossings are 4, 11, 26 and 57 for N = 8, 16, 32 and 64. At XC = 0.01 dB the smallest N with crossings × XC ≥ 0.4 dB is 64. H-B is retained only for N ≥ 64, at the edge of the rule, before counting S-bends. It is not a headline.
+- **H-A.** The registered verdict text of T24 ("discarded") stands as recorded. Its robust part: it fails against the modern reference even with a lossless optical core. Its fragile part: the kill against the 2014 reference depends on the stage loss and on the SVD realization, both chosen after the commitment. The ledger records H-A as withdrawn for the robust reason.
+- **H-C** is scoped to N ≤ 8, σ ≤ 0.02 rad and ideal transfer-matrix access.

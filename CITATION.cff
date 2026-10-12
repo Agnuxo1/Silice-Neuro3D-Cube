@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software or its results, please cite it as below."
 title: "Silice-Neuro3D-Cube: CPU research models for laser-written optical silica networks"
 type: software
-version: 0.1.0
-date-released: "2026-10-09"
+version: 0.2.0
+date-released: "2026-10-13"
 authors:
   - family-names: "Angulo de Lafuente"
     given-names: "Francisco"
@@ -21,3 +21,8 @@ abstract: >-
   laser inside fused silica. The repository contains CPU models, bounded
   CUDA tests, retained negative results and their audits. No fabricated
   device, measured optical system or validated neural network is claimed.
+  Version 0.2.0 adds the scientific closure of 2026-10-13: preregistered
+  kill tests (depth and crossings of 3D versus planar meshes, energy per
+  multiply-accumulate, in-situ calibration, state of the art), a claims
+  ledger, the closure kit (agentkit/) and an English manuscript. The energy
+  advantage hypothesis was discarded by its registered test.

@@ -53,3 +53,12 @@ Cada punto se cerró con un commit propio o con un contrato publicado antes de c
 ## Actualización 2026-10-10
 
 Estado por tarea en `coordinacion/tareas/PLAN-22-TAREAS-20261010.md` (tabla de cierre de sesión). Novedades de hoy: compilador (T11, C2 no cumple; C3 cumple en 78 % de realizaciones), acoplo entre guías paralelas (T8, parcial), contribución central preregistrada (T20) y protocolos de las tareas bloqueadas (`Docs/PROTOCOLOS-BLOQUEADOS-22-TAREAS.md`). Ninguna tarea de laboratorio está medida. El estado anterior de esta página se mantiene como historial.
+
+## Actualización 2026-10-13 · cierre científico con la guía v2 (anexada)
+
+Entrada vigente del cierre: [`Docs/CIERRE-20261012/`](CIERRE-20261012/) y la sección inglesa del README. Resumen en español: [`RESUMEN-PARA-FRAN.md`](CIERRE-20261012/RESUMEN-PARA-FRAN.md).
+
+- Kit de la guía en `agentkit/` (idéntico a la guía; 61 pruebas en Windows y Linux).
+- Cuatro pruebas de descarte prerregistradas y publicadas antes de calcular: T25 (profundidad y cruces, PASS), T27 (calibración in situ, PASS en modelo), T24 (energía: **la hipótesis de ventaja energética queda descartada**), T26 (estado del arte, 31 referencias verificadas).
+- Afirmación central: una delimitación numérica (C-T20-DELIMIT), no una novedad. Siguiente prueba física registrada: cutback ciego de guías de trinchera de 12 y 16 µm.
+- Sigue sin hacerse: fabricación, medidas, reproducción externa y revisión humana externa. La licencia sigue pendiente de decisión del titular.
