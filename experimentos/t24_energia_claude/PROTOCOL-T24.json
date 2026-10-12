@@ -1,0 +1,45 @@
+{
+  "experiment_id": "T24_energy_kill_test_20261012",
+  "task_id": "T24",
+  "scope": "numerical_model",
+  "model": "agentkit.limits.layer_budget: shot plus thermal noise detection at k = 1 sigma per half LSB, dense passive N x N layer, laser, modulators, DACs, ADCs and static power, per MAC. Parametric budget only.",
+  "units": {"energy": "J", "power": "W", "wavelength": "m", "noise_current": "A/sqrt(Hz)", "rate": "samples/s"},
+  "hypothesis_under_test": "H-A (guide v2 section 39): a passive optical layer in silica with its complete electronics needs less energy per useful MAC than a cited digital reference at equal output precision.",
+  "primary_point": {"n_inputs": 64, "n_outputs": 64, "bits": 8, "sample_rate_hz": 1e9, "sigma_multiple": 1},
+  "sensitivity_grid": {"n": [16, 64, 256], "bits": [4, 6, 8], "sample_rate_hz": [1e9, 1e10]},
+  "parameter_selection_rules": {
+    "nominal": "Typical value from a primary source for commercially available or routinely demonstrated components at 1550 nm (2015-2026). When a source gives a range, use its midpoint.",
+    "optimistic": "Best peer-reviewed demonstrated value for the same quantity (not a projection or roadmap). When a source gives a range, use its favorable end.",
+    "converter_energy": "Energy per sample from a cited converter: reported power divided by sample rate, or Walden figure of merit times 2^ENOB with ENOB equal to the comparison precision (8 bits).",
+    "optical_transmission": "Product of two fiber-to-chip facets, on-chip propagation over 2 cm, modulator insertion loss and mesh excess loss, each cited; stated in the provenance string.",
+    "static_power_passive": "Nominal: cited temperature-stabilization power for a passive glass chip. Optimistic: 0 W labeled ASSUMPTION (athermal passive operation).",
+    "programmable_variant": "Informational only: mean heater power per thermo-optic shifter in fs-written glass (cited), two shifters per MZI, N(N-1)/2 MZIs.",
+    "every_value": "Each parameter carries a provenance string with DOI or URL and location, or the label ASSUMPTION with its reason."
+  },
+  "digital_references": {
+    "old": "Horowitz, ISSCC 2014, DOI 10.1109/ISSCC.2014.6757323, 45 nm: 8-bit integer multiply (0.2 pJ) plus 8-bit add (0.03 pJ) = 0.23 pJ per MAC, arithmetic only. Lenient to optics.",
+    "modern": "Most energy-efficient peer-reviewed (2021-2026) digital INT8 MAC array or accelerator macro at <= 7 nm, arithmetic or macro level, converted with 1 MAC = 2 operations: J/MAC = 2 / (TOPS/W) x 1e-12. Strict for optics."
+  },
+  "decision_rule": {
+    "kill": "If the optimistic advantage factor versus the old reference is <= 1 at the primary point, H-A is discarded.",
+    "withdraw_headline": "If the optimistic advantage factor versus the modern reference is < 1, H-A is withdrawn as headline hypothesis and kept as a registered negative.",
+    "conditional": "If optimistic >= 1 but nominal < 1 versus the modern reference, H-A survives only as a conditional candidate that requires demonstrating the optimistic parameters.",
+    "survive": "If both parameter sets give >= 1 versus the modern reference, H-A survives as a candidate (not confirmed: no measurement)."
+  },
+  "criteria": [
+    {"id": "all_parameters_sourced", "operator": "eq", "threshold": true},
+    {"id": "all_dois_verified", "operator": "eq", "threshold": true},
+    {"id": "optimistic_advantage_vs_modern", "operator": "ge", "threshold": 1.0}
+  ],
+  "resource_limits": {"cpu_threads": 1, "seconds": 60, "gpu": false},
+  "heldout_policy": "No data split: deterministic budget. Parameter values are gathered after this commitment under the rules above and committed before the computation runs.",
+  "planned_artifacts": [
+    "experimentos/t24_energia_claude/params_nominal.json",
+    "experimentos/t24_energia_claude/params_optimistic.json",
+    "experimentos/t24_energia_claude/digital_references.json",
+    "experimentos/t24_energia_claude/sources.json",
+    "resultados/agent/t24_energy_20261012/sources_verification.json",
+    "resultados/agent/t24_energy_20261012/budget.json",
+    "Docs/CIERRE-20261012/T24-ENERGY-KILL-TEST.md"
+  ]
+}
