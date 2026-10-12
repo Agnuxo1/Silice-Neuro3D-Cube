@@ -50,3 +50,10 @@ Registered criteria: `all_parameters_sourced` met; `all_dois_verified` met (22/2
 - The registered fan-in sweep keeps the N = 64 mesh transmission for every N. It is therefore optimistic for N > 64 and pessimistic for N < 64.
 - Several parameter values were read from abstracts or datasheets by search agents (flagged in the raw search file). None of them changes the verdict by orders of magnitude.
 - Other architectures (free-space or photoelectric multiplication with fan-out instead of a mesh, wavelength multiplexing) are outside H-A as registered. They would need their own protocol.
+
+## Addendum after the adversarial review (T30), 2026-10-13
+
+- **Researcher degrees of freedom, disclosed.** Three choices were made after the commitment, all against H-A: the SVD realization (2N MZI layers), the optimistic stage loss equal to the nominal one (the only fs-written value found, 0.35 dB, EAGLE XG borosilicate, 2020), and single-mode laser values. The optimistic set is lenient on electronics (k = 1 at half an LSB, NRZ modulator energy, ADC with ENOB about 7.3, 0 W static power).
+- **Robust result.** The converters and modulator alone cost 71.6 fJ per MAC at N = 64 (optimistic): 4.5× the 3 nm macro at 0.5 V, and about 1.4× at nominal voltage. The registered criterion against the modern reference therefore fails **for any optical core, lossless included** (advantage 0.21).
+- **Fragile result.** The kill against the 2014 reference reverses for a stage loss ≤ 0.131 dB (mesh ≤ 16.7 dB). At 0.07 dB per stage the optimistic layer gives 98 fJ per MAC (2.3× better than 2014, 6× worse than 3 nm). An illustrative fan-out realization with about 12 stages gives about 80 fJ per MAC. Recomputation: `resultados/agent/t30_redteam_20261013/t24_recompute.py`.
+- **Stage counts.** 128 MZI layers carry loss. The depth check counts 129 layers, including the attenuator column.

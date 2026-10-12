@@ -53,3 +53,7 @@ Registered criteria: gradient check 2.7·10⁻⁹ ≤ 10⁻⁶ (met); 95/95 uppe
 - σ = 0.02 rad is a model value. The real splitter-error distribution of fs-written couplers is unmeasured (T14).
 - Exact access to the device transfer matrix is assumed. A real loop measures intensities or interferograms with noise and drift.
 - Fixed-phase (written, non-programmable) meshes cannot be recalibrated at all; for them only strategy C applies, with characterization before writing the phases.
+
+## Scope after the adversarial review (T30), 2026-10-13
+
+The support for H-C is limited to N ≤ 8, σ ≤ 0.02 rad and ideal transfer-matrix access. Clements error tolerance degrades with N for Haar targets, and σ = 0.05 rad already fails at N = 8. Next model tests: N = 16 and 32, and an intensity-only, noisy calibration loop.
