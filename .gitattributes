@@ -20,3 +20,8 @@ scripts/diagnose_point03_p4b_generated.py -text whitespace=cr-at-eol
 scripts/check_point03_p4h_generated.py -text whitespace=cr-at-eol
 resultados/codex/point03_render_pipeline_queue_*.txt -text whitespace=cr-at-eol
 resultados/codex/point03_render_p3_queue_*.txt -text whitespace=cr-at-eol
+# Closure kit (guide v2, 2026-10-12): byte-identical to the guide on every platform.
+agentkit/*.txt text eol=lf
+requirements/agentkit-*.lock text eol=lf
+# Closure evidence (agent, 2026-10-12+) is hashed byte-for-byte; keep it raw.
+resultados/agent/** -text whitespace=cr-at-eol

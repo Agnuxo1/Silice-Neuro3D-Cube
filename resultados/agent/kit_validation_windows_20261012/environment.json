@@ -1,0 +1,35 @@
+{
+ "date_utc": "2026-10-12",
+ "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+ "platform": "Windows-10-10.0.19045-SP0",
+ "processor": "Intel64 Family 6 Model 85 Stepping 4, GenuineIntel",
+ "packages": {
+  "numpy": "2.2.6",
+  "scipy": "1.15.1",
+  "scikit-learn": "1.6.1",
+  "matplotlib": "3.10.0"
+ },
+ "numpy_blas": {
+  "name": "scipy-openblas",
+  "found": true,
+  "version": "0.3.29",
+  "detection method": "pkgconfig",
+  "include directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/include",
+  "lib directory": "C:/Users/runneradmin/AppData/Local/Temp/cibw-run-gnu2g9dg/cp313-win_amd64/build/venv/Lib/site-packages/scipy_openblas64/lib",
+  "openblas configuration": "OpenBLAS 0.3.29  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=24",
+  "pc file directory": "C:/a/numpy/numpy/.openblas"
+ },
+ "threads": {
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1",
+  "NUMEXPR_NUM_THREADS": "1"
+ },
+ "install": "pip install -r agentkit/requirements.txt into a new venv on D:; same set later verified with --require-hashes from requirements/agentkit-win-py313.lock",
+ "results": {
+  "kit_v1": "32/32 OK",
+  "kit_v2": "29/29 OK",
+  "project_cpu_suite_scripts_check": "51/51 OK"
+ },
+ "scope": "software tests only; no scientific claim"
+}

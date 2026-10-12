@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "review_date": "2026-10-12",
+  "note": "Baseline planning registry. It does not itself close tasks or replace their protocols. Development may proceed independently; PASS respects its declared scope and prerequisites.",
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "Track convergence and F1 recovery",
+      "scope": "numerical_wave_model",
+      "requires": [],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T02",
+      "title": "Complete modal sweep",
+      "scope": "numerical_wave_model",
+      "requires": [
+        "T01"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T03",
+      "title": "Boundary domain complex field and phase",
+      "scope": "numerical_wave_model",
+      "requires": [
+        "T01"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T04",
+      "title": "Coherent modal decomposition",
+      "scope": "numerical_wave_model",
+      "requires": [
+        "T02",
+        "T03"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T05",
+      "title": "Measured material and geometry",
+      "scope": "measured_material",
+      "requires": [],
+      "status": "BLOCKED",
+      "baseline_only": true
+    },
+    {
+      "id": "T06",
+      "title": "Independent vectorial comparison",
+      "scope": "numerical_wave_model",
+      "requires": [
+        "T02",
+        "T03"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T07",
+      "title": "Coherent two-guide coupler",
+      "scope": "numerical_wave_model",
+      "requires": [
+        "T01",
+        "T03",
+        "T04",
+        "T06"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T08",
+      "title": "Bends crossings and 3D routing",
+      "scope": "numerical_wave_model",
+      "requires": [
+        "T03",
+        "T06",
+        "T07"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T09",
+      "title": "Deep writing and face registration",
+      "scope": "physical_component",
+      "requires": [
+        "T05"
+      ],
+      "status": "BLOCKED",
+      "baseline_only": true
+    },
+    {
+      "id": "T10",
+      "title": "Phase stability and control",
+      "scope": "physical_component",
+      "requires": [
+        "T05",
+        "T07"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T11",
+      "title": "Fabricable network compiler",
+      "scope": "fabricable_design",
+      "requires": [
+        "T05",
+        "T07",
+        "T08",
+        "T09",
+        "T10"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T12",
+      "title": "Complete neural function",
+      "scope": "numerical_neural_model",
+      "requires": [
+        "T07",
+        "T10"
+      ],
+      "status": "FAIL",
+      "baseline_only": true
+    },
+    {
+      "id": "T13",
+      "title": "Manufactured calibration samples and network",
+      "scope": "physical_device",
+      "requires": [
+        "T05",
+        "T09",
+        "T11"
+      ],
+      "status": "BLOCKED",
+      "baseline_only": true
+    },
+    {
+      "id": "T14",
+      "title": "Calibrated optical measurements",
+      "scope": "physical_component",
+      "requires": [
+        "T13"
+      ],
+      "status": "BLOCKED",
+      "baseline_only": true
+    },
+    {
+      "id": "T15",
+      "title": "Integrated optical electronic and control system",
+      "scope": "physical_system",
+      "requires": [
+        "T12",
+        "T13",
+        "T14"
+      ],
+      "status": "BLOCKED",
+      "baseline_only": true
+    },
+    {
+      "id": "T16",
+      "title": "Independent reserved task and baselines",
+      "scope": "independent_evaluation",
+      "requires": [
+        "T12"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T17",
+      "title": "Whole-system performance and energy",
+      "scope": "physical_system_measurement",
+      "requires": [
+        "T15",
+        "T16"
+      ],
+      "status": "BLOCKED",
+      "baseline_only": true
+    },
+    {
+      "id": "T18",
+      "title": "Scaling and between-device reproducibility",
+      "scope": "physical_system_measurement",
+      "requires": [
+        "T14",
+        "T15",
+        "T17"
+      ],
+      "status": "PARTIAL",
+      "baseline_only": true
+    },
+    {
+      "id": "T19",
+      "title": "Verified original contribution versus literature",
+      "scope": "scientific_claim",
+      "requires": [],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T20",
+      "title": "Central contribution and decisive evidence",
+      "scope": "scientific_claim",
+      "requires": [
+        "T19"
+      ],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T21",
+      "title": "External reproduction and review",
+      "scope": "external_replication",
+      "requires": [
+        "T20"
+      ],
+      "status": "BLOCKED",
+      "baseline_only": true
+    },
+    {
+      "id": "T22",
+      "title": "Sustained observed impact",
+      "scope": "observed_impact",
+      "requires": [
+        "T21"
+      ],
+      "status": "OPEN",
+      "baseline_only": true
+    }
+  ]
+}

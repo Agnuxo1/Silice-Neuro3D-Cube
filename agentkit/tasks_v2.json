@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "review_date": "2026-10-12",
+  "extends": "agentkit/tasks.json",
+  "note": "Guide v2 additions. Planning registry only; it closes nothing. T01-T22 keep their v1 entries unchanged.",
+  "tasks": [
+    {
+      "id": "T23",
+      "title": "Integrity infrastructure: git-anchored preregistration, blind analysis, claims ledger",
+      "scope": "software",
+      "requires": [],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T24",
+      "title": "Fundamental-limit kill test: sourced energy and precision budget per MAC",
+      "scope": "numerical_model",
+      "requires": [],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T25",
+      "title": "3D versus planar mesh scaling: depth, crossings, loss and error accumulation",
+      "scope": "numerical_model",
+      "requires": [],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T26",
+      "title": "State-of-the-art benchmark and threshold revision for H1",
+      "scope": "novelty",
+      "requires": [
+        "T19"
+      ],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T27",
+      "title": "Hardware-in-the-loop and physics-aware training plan with measured error models",
+      "scope": "numerical_model",
+      "requires": [
+        "T12"
+      ],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T28",
+      "title": "Fabrication access and collaboration dossier",
+      "scope": "fabricable_design",
+      "requires": [
+        "T11"
+      ],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T29",
+      "title": "Intellectual property and disclosure decision before new public results",
+      "scope": "decision",
+      "requires": [],
+      "status": "OPEN",
+      "baseline_only": true
+    },
+    {
+      "id": "T30",
+      "title": "Adversarial red-team review and pre-mortem of the central claim",
+      "scope": "review",
+      "requires": [
+        "T20"
+      ],
+      "status": "OPEN",
+      "baseline_only": true
+    }
+  ]
+}
