@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-10-13T09:45:08.680266+00:00",
+  "integrity_pass": true,
+  "temporal_precision_pass": true,
+  "point03_closed": false,
+  "checkpoints_checked": 192,
+  "max_power_residual": 0.0,
+  "powers": {
+    "P6_32768": {
+      "field": 0.3329241143830333,
+      "intensity": 0.33269895497939045
+    },
+    "R5_65536": {
+      "field": 0.332924118223913,
+      "intensity": 0.33269908831106837
+    }
+  },
+  "relative_field_difference": 1.3457746213539748e-05,
+  "power_differences": {
+    "field": 3.840879669869679e-09,
+    "intensity": 1.3333167792062284e-07
+  },
+  "PSD_observable_bounds": {
+    "field": 4.667670254641764e-06,
+    "intensity": 8.515337668486307e-06
+  },
+  "f1r2_retries": [
+    {
+      "case": "P6_32768",
+      "index": 1,
+      "attempt": 1,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part001.attempt1.json",
+        ".log": "part001.attempt1.log",
+        ".npz": "part001.attempt1.npz"
+      },
+      "failed_utc": "2026-10-13T03:18:29.857705+00:00",
+      "wait_s": 30.022869599983096,
+      "retry_reservation": {
+        "available_ram_bytes": 4051214336,
+        "free_disk_bytes": 309108068352
+      }
+    },
+    {
+      "case": "P6_32768",
+      "index": 1,
+      "attempt": 2,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part001.attempt2.json",
+        ".log": "part001.attempt2.log",
+        ".npz": "part001.attempt2.npz"
+      },
+      "failed_utc": "2026-10-13T03:20:54.961831+00:00",
+      "wait_s": 30.022640999988653,
+      "retry_reservation": {
+        "available_ram_bytes": 3546341376,
+        "free_disk_bytes": 309106466816
+      }
+    },
+    {
+      "case": "P6_32768",
+      "index": 3,
+      "attempt": 1,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part003.attempt1.json",
+        ".log": "part003.attempt1.log",
+        ".npz": "part003.attempt1.npz"
+      },
+      "failed_utc": "2026-10-13T03:27:48.217353+00:00",
+      "wait_s": 30.023229199985508,
+      "retry_reservation": {
+        "available_ram_bytes": 4106321920,
+        "free_disk_bytes": 309093044224
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 41,
+      "attempt": 1,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part041.attempt1.json",
+        ".log": "part041.attempt1.log",
+        ".npz": "part041.attempt1.npz"
+      },
+      "failed_utc": "2026-10-13T06:41:57.221147+00:00",
+      "wait_s": 30.025401599996258,
+      "retry_reservation": {
+        "available_ram_bytes": 7295856640,
+        "free_disk_bytes": 308862464000
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 43,
+      "attempt": 1,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part043.attempt1.json",
+        ".log": "part043.attempt1.log",
+        ".npz": "part043.attempt1.npz"
+      },
+      "failed_utc": "2026-10-13T06:48:18.285912+00:00",
+      "wait_s": 30.02613569999812,
+      "retry_reservation": {
+        "available_ram_bytes": 2354765824,
+        "free_disk_bytes": 308574965760
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 43,
+      "attempt": 2,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part043.attempt2.json",
+        ".log": "part043.attempt2.log"
+      },
+      "failed_utc": "2026-10-13T06:48:50.352305+00:00",
+      "wait_s": 35.53012429998489,
+      "retry_reservation": {
+        "available_ram_bytes": 4770123776,
+        "free_disk_bytes": 307821637632
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 53,
+      "attempt": 1,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part053.attempt1.json",
+        ".log": "part053.attempt1.log",
+        ".npz": "part053.attempt1.npz"
+      },
+      "failed_utc": "2026-10-13T07:10:44.604298+00:00",
+      "wait_s": 40.05114489997504,
+      "retry_reservation": {
+        "available_ram_bytes": 5285679104,
+        "free_disk_bytes": 305964253184
+      }
+    },
+    {
+      "case": "R5_65536",
+      "index": 109,
+      "attempt": 1,
+      "error_type": "AssertionError",
+      "moved": {
+        ".json": "part109.attempt1.json",
+        ".log": "part109.attempt1.log",
+        ".npz": "part109.attempt1.npz"
+      },
+      "failed_utc": "2026-10-13T09:03:43.893749+00:00",
+      "wait_s": 30.02596330002416,
+      "retry_reservation": {
+        "available_ram_bytes": 6151757824,
+        "free_disk_bytes": 305789579264
+      }
+    }
+  ],
+  "f1r_substitutions": {
+    "run": [
+      [
+        "out.is_relative_to(ROOT/'resultados/codex')",
+        "out.is_relative_to(ROOT/'resultados/agent')"
+      ],
+      [
+        "reservation['available_ram_bytes'] > 6*1024**3",
+        "reservation['available_ram_bytes'] > 3*1024**3"
+      ],
+      [
+        "                before = time.monotonic()\n                with Path(str(prefix)+'.log').open('xb') as log:\n                    child = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT, timeout=min(370., 32000-(time.monotonic()-start), deadline_remaining()))\n                cp = Path(str(prefix)+'.json')\n",
+        "                child, cp, before, reservation = _f1r2_run_chunk(command, prefix, reservation, start, e, case, index)\n"
+      ]
+    ],
+    "audit": [
+      [
+        "datetime(2026, 10, 9, 13, 45, tzinfo=timezone.utc)",
+        "datetime(2026, 10, 16, 0, 0, tzinfo=timezone.utc)"
+      ],
+      [
+        "event['reservation']['available_ram_bytes'] > 6*1024**3",
+        "event['reservation']['available_ram_bytes'] > 3*1024**3"
+      ]
+    ]
+  }
+}

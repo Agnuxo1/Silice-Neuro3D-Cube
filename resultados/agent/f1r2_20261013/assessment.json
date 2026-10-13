@@ -1,0 +1,23 @@
+{
+  "powers": {
+    "P6_32768": {
+      "field": 0.3329241143830333,
+      "intensity": 0.33269895497939045
+    },
+    "R5_65536": {
+      "field": 0.332924118223913,
+      "intensity": 0.33269908831106837
+    }
+  },
+  "relative_field_difference": 1.3457746213539748e-05,
+  "power_differences": {
+    "field": 3.840879669869679e-09,
+    "intensity": 1.3333167792062284e-07
+  },
+  "PSD_observable_bounds": {
+    "field": 4.667670254641764e-06,
+    "intensity": 8.515337668486307e-06
+  },
+  "temporal_precision_pass": true,
+  "point03_closed": false
+}

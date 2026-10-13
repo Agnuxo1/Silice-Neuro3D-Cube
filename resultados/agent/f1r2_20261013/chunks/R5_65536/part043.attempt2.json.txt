@@ -1,0 +1,11 @@
+{
+  "status": "failed",
+  "case": "R5_65536",
+  "index": 43,
+  "started_utc": "2026-10-13T06:48:49.565760+00:00",
+  "previous_report_path": null,
+  "previous_report_sha256": null,
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\.cognition\\silice-closure-20261012\\f1r2_root\\scripts\\run_point03_d16_fine_time.py\", line 92, in worker\n    record['resource_start'] = guard(args.prefix.parent)\n                               ~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\PROJECTS\\.cognition\\silice-closure-20261012\\f1r2_root\\scripts\\run_point03_d16_fine_time.py\", line 53, in guard\n    assert ram > minimum*1024**3 and disk > 2*1024**3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "elapsed_s": 0.014219400007277727
+}
