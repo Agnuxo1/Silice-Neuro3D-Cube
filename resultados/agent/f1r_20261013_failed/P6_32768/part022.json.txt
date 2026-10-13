@@ -1,0 +1,18 @@
+{
+  "status": "failed",
+  "case": "P6_32768",
+  "index": 22,
+  "started_utc": "2026-10-13T03:10:58.234246+00:00",
+  "previous_report_path": "P6_32768/part021.json",
+  "previous_report_sha256": "09c0ec86d536ad9039d9a4870181a54d9df8ce6aaf45c08530214b5e00652ec8",
+  "resource_start": {
+    "utc": "2026-10-13T03:10:58.246474+00:00",
+    "available_ram_bytes": 6228209664,
+    "free_disk_bytes": 309128724480
+  },
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\.cognition\\silice-closure-20261012\\f1r_root\\scripts\\run_point03_d16_fine_time.py\", line 117, in worker\n    steps_done=args.index*CHUNK_STEPS, dt_m=.002/STEPS[args.case], resource_end=guard(args.prefix.parent))\n                                                                                ~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\PROJECTS\\.cognition\\silice-closure-20261012\\f1r_root\\scripts\\run_point03_d16_fine_time.py\", line 53, in guard\n    assert ram > minimum*1024**3 and disk > 2*1024**3\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "field_path": "P6_32768/part022.npz",
+  "field_sha256": "f2a0a761c7d506ae1c41103aa2a9dcff2e71583d66d96db40bcedb411cbceb16",
+  "elapsed_s": 119.9602687000297
+}

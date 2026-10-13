@@ -1,0 +1,234 @@
+{
+  "status": "failed",
+  "started_utc": "2026-10-13T02:26:20.984651+00:00",
+  "children": [
+    {
+      "case": "P6_32768",
+      "index": 1,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5411102720,
+        "free_disk_bytes": 317155332096
+      },
+      "elapsed_s": 118.63385159999598
+    },
+    {
+      "case": "P6_32768",
+      "index": 2,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5584252928,
+        "free_disk_bytes": 316974292992
+      },
+      "elapsed_s": 127.84765640000114
+    },
+    {
+      "case": "P6_32768",
+      "index": 3,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6025326592,
+        "free_disk_bytes": 316879822848
+      },
+      "elapsed_s": 116.23004510003375
+    },
+    {
+      "case": "P6_32768",
+      "index": 4,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6708699136,
+        "free_disk_bytes": 316851232768
+      },
+      "elapsed_s": 122.37597130000358
+    },
+    {
+      "case": "P6_32768",
+      "index": 5,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6814781440,
+        "free_disk_bytes": 316828557312
+      },
+      "elapsed_s": 147.56247820000863
+    },
+    {
+      "case": "P6_32768",
+      "index": 6,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6565429248,
+        "free_disk_bytes": 314741030912
+      },
+      "elapsed_s": 175.35368370002834
+    },
+    {
+      "case": "P6_32768",
+      "index": 7,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5283373056,
+        "free_disk_bytes": 310854066176
+      },
+      "elapsed_s": 140.78061229997547
+    },
+    {
+      "case": "P6_32768",
+      "index": 8,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5905125376,
+        "free_disk_bytes": 309259390976
+      },
+      "elapsed_s": 129.5151307999622
+    },
+    {
+      "case": "P6_32768",
+      "index": 9,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5828661248,
+        "free_disk_bytes": 309194985472
+      },
+      "elapsed_s": 132.12453049997566
+    },
+    {
+      "case": "P6_32768",
+      "index": 10,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 4588400640,
+        "free_disk_bytes": 309118439424
+      },
+      "elapsed_s": 127.66077339998446
+    },
+    {
+      "case": "P6_32768",
+      "index": 11,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7334641664,
+        "free_disk_bytes": 309115043840
+      },
+      "elapsed_s": 131.74265459994785
+    },
+    {
+      "case": "P6_32768",
+      "index": 12,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7727357952,
+        "free_disk_bytes": 309137354752
+      },
+      "elapsed_s": 136.57501610001782
+    },
+    {
+      "case": "P6_32768",
+      "index": 13,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 8029818880,
+        "free_disk_bytes": 309135798272
+      },
+      "elapsed_s": 119.76229189999867
+    },
+    {
+      "case": "P6_32768",
+      "index": 14,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7791980544,
+        "free_disk_bytes": 309134548992
+      },
+      "elapsed_s": 121.08422959997552
+    },
+    {
+      "case": "P6_32768",
+      "index": 15,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5087744000,
+        "free_disk_bytes": 309132775424
+      },
+      "elapsed_s": 116.21061000000918
+    },
+    {
+      "case": "P6_32768",
+      "index": 16,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6650216448,
+        "free_disk_bytes": 309131182080
+      },
+      "elapsed_s": 117.2270184000372
+    },
+    {
+      "case": "P6_32768",
+      "index": 17,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7335092224,
+        "free_disk_bytes": 309129519104
+      },
+      "elapsed_s": 121.45137209998211
+    },
+    {
+      "case": "P6_32768",
+      "index": 18,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 7642890240,
+        "free_disk_bytes": 309138915328
+      },
+      "elapsed_s": 112.2761443000054
+    },
+    {
+      "case": "P6_32768",
+      "index": 19,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5680025600,
+        "free_disk_bytes": 309137784832
+      },
+      "elapsed_s": 114.46921939996537
+    },
+    {
+      "case": "P6_32768",
+      "index": 20,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 6109233152,
+        "free_disk_bytes": 309136928768
+      },
+      "elapsed_s": 124.03899390000151
+    },
+    {
+      "case": "P6_32768",
+      "index": 21,
+      "returncode": 0,
+      "reservation": {
+        "available_ram_bytes": 5821394944,
+        "free_disk_bytes": 309133012992
+      },
+      "elapsed_s": 119.87996009999188
+    },
+    {
+      "case": "P6_32768",
+      "index": 22,
+      "returncode": 1,
+      "reservation": {
+        "available_ram_bytes": 6275387392,
+        "free_disk_bytes": 309128724480
+      },
+      "elapsed_s": 120.9364311999525
+    }
+  ],
+  "solutions": {},
+  "point03_closed": false,
+  "manifest_sha256": "b1f3677d91dbde44fd67e77196b0be924d0564995f253910b70c55711519db11",
+  "wait_s": 0.40769819990964606,
+  "error_type": "AssertionError",
+  "diagnostic": "Traceback (most recent call last):\n  File \"D:\\PROJECTS\\.cognition\\silice-closure-20261012\\f1r_root\\scripts\\run_point03_d16_fine_time.py:run[F1R]\", line 73, in run\n    errors, bounds = {}, {}\n                       ^^^^\nAssertionError\n",
+  "elapsed_s": 2797.4078082999913,
+  "finished_utc": "2026-10-13T03:12:58.392462+00:00"
+}

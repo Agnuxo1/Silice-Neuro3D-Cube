@@ -1,0 +1,52 @@
+{
+  "experiment_id": "T01_F1R2_d16_fine_time_replacement_20261013",
+  "task_id": "T01",
+  "scope": "numerical_wave_model",
+  "model": "D16 fine-mesh time convergence of the T96 waveguide FEM model (h = 0.35 um, 2 mm, +-64 um, 1550 nm, n0 = 1.444, contrast 0.003): Pade[3/3] with 32768 steps against Radau[2/3] with 65536 steps, 512-step chunks (64 + 128), K16 stiffness SHA f251ae68...; worker = Codex's scripts/run_point03_d16_fine_time.py unchanged.",
+  "replaces": "F1 of 2026-10-09 (outputs lost) and F1R of 2026-10-13 (failed operationally at chunk 22/192 in the worker's resource guard; records in resultados/agent/f1r_20261013_failed/).",
+  "deviations_from_F1": [
+    "New identifier and deadline: run must finish before 2026-10-16T00:00:00Z (F1: 2026-10-09T13:45Z).",
+    "RAM gate before each chunk: > 3 GiB available (F1: > 6 GiB on a 12 GB Colab VM); this machine has 24 GB shared with other workloads; one worker measured 1.1 GB RSS; the worker's own guard (> 3 GiB) is unchanged.",
+    "Output folder under the package root's resultados/agent instead of resultados/codex.",
+    "Implemented by exact text substitutions of the original run() and audit() (each asserted to occur once); the numerical worker file is unchanged and SHA-checked against the package's worker-controls report.",
+    "Retry rule (new in F1R2): a chunk whose child failed inside the worker's resource guard is recomputed after available RAM exceeds 3 GiB plus 30 s, at most 5 attempts; failed attempts are kept as part###.attemptK.* and listed in execution.json['retries']; every other failure stops the run. Chunks are deterministic."
+  ],
+  "units": {
+    "length": "m",
+    "field_error": "relative mass norm",
+    "power": "relative to input"
+  },
+  "unchanged_criteria": "Docs/POINT-03-D16-FINE-TIME-CONTRACT.md: relative field difference <= 1e-4 (mass norm), both power-observable differences <= 1e-6, both PSD discrepancy indicators <= 1e-5; child budget 360 s, global budget 32000 s, wait budget 900 s.",
+  "pre_commit_checks": "Resource probe on this machine (fields discarded, not saved): matrices load 0.8 s, Pade6 setup 15.4 s + 512 steps 113.9 s, Radau5 setup 12.8 s + 512 steps 106.4 s, RSS 1.1 GB; dry derivation of run() and audit() with the substitutions (not executed). F1R2: dry derivation of run() with the retry substitution (not executed).",
+  "criteria": [
+    {
+      "id": "execution_completed",
+      "operator": "eq",
+      "threshold": true
+    },
+    {
+      "id": "integrity_pass",
+      "operator": "eq",
+      "threshold": true
+    },
+    {
+      "id": "temporal_precision_pass",
+      "operator": "eq",
+      "threshold": true
+    }
+  ],
+  "resource_limits": {
+    "cpu_threads": 1,
+    "seconds": 32000,
+    "gpu": false
+  },
+  "heldout_policy": "Deterministic numerical run; no tuning. A failure of any criterion is retained as the F1R result; a new attempt would need a new identifier.",
+  "planned_artifacts": [
+    "resultados/agent/f1r2_20261013/execution.json",
+    "resultados/agent/f1r2_20261013/manifest.json",
+    "resultados/agent/f1r2_20261013/assessment.json",
+    "resultados/agent/f1r2_20261013/integrity_audit.json",
+    "resultados/agent/f1r2_20261013/checkpoint_index.json",
+    "Docs/CIERRE-20261012/T01-F1R2-RESULTS.md"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+ "note": "Fields kept outside the repository (D:/PROJECTS/.cognition/silice-closure-20261012/f1r_root); hashes here.",
+ "fields": {
+  "P6_32768/part001.npz": {
+   "sha256": "d273a4060fd11ff0beb7da35706f9b21e00b3dedefc800e0cdc2ad7cdb5cbd7e",
+   "bytes": 1185048
+  },
+  "P6_32768/part002.npz": {
+   "sha256": "0a4b055bfbd3b13475a88079136d6cc74933830ec41bcecd65ca334e47f2cb87",
+   "bytes": 1185048
+  },
+  "P6_32768/part003.npz": {
+   "sha256": "ec158e6d5bec18696ca196713bffc24fb0c4fbf458c7441f641711d44dacf66c",
+   "bytes": 1185048
+  },
+  "P6_32768/part004.npz": {
+   "sha256": "fb5ee92b48f1e4d53014c6d263b5a82fa4078d213da7261e29003b74f7554567",
+   "bytes": 1185048
+  },
+  "P6_32768/part005.npz": {
+   "sha256": "f5c45277569c97350a908af32aacdab0c85d0d6c014ea9cbad1b84cd8ac3295f",
+   "bytes": 1185048
+  },
+  "P6_32768/part006.npz": {
+   "sha256": "be8443769e56ca526d550ac98e285ef307106f2c5446e29b27a2f6dbc378e884",
+   "bytes": 1185048
+  },
+  "P6_32768/part007.npz": {
+   "sha256": "d3b9ae414f68c643ae445b1af8e15fa24834e6b3aeccbb34ebfa0400248f39ea",
+   "bytes": 1185048
+  },
+  "P6_32768/part008.npz": {
+   "sha256": "31a06908d3eb49b2377940b60827954636f615b6f41792b8bfe742333978b4aa",
+   "bytes": 1185048
+  },
+  "P6_32768/part009.npz": {
+   "sha256": "ce347faa5721c1df19142a23e97025d1d37fc6c414539c102781cc247d889479",
+   "bytes": 1185048
+  },
+  "P6_32768/part010.npz": {
+   "sha256": "67bd4614b4ef292b3419aa7504618a41822f06a074c1c12940d2d1a56567fd04",
+   "bytes": 1185048
+  },
+  "P6_32768/part011.npz": {
+   "sha256": "36739f536e45c9a29e2fd18ad40af0878f341e644b04b37bf9414a45d0ee2873",
+   "bytes": 1185048
+  },
+  "P6_32768/part012.npz": {
+   "sha256": "48e8dbd225b6356480637d5e4f900963470b4971ba61fd466013cd843fd475b2",
+   "bytes": 1185048
+  },
+  "P6_32768/part013.npz": {
+   "sha256": "a107ee1ebf4219a2f400279ee6e5eddfe7e08f37b859e36f0db6628ff81b0618",
+   "bytes": 1185048
+  },
+  "P6_32768/part014.npz": {
+   "sha256": "83abb1469ab26973f023e9da56fc88e1979637f3ed61f2acea30f6baea94a20c",
+   "bytes": 1185048
+  },
+  "P6_32768/part015.npz": {
+   "sha256": "d7b62513b16ed8bc30aa69a3c447af0d783e60ae2a87b3a84df4d06b4cfe202c",
+   "bytes": 1185048
+  },
+  "P6_32768/part016.npz": {
+   "sha256": "f86971b8173d31999936cdc4b979b2d49166a24e71d0d2409de50b92a9c5094d",
+   "bytes": 1185048
+  },
+  "P6_32768/part017.npz": {
+   "sha256": "8e7b7a02f6ab5f6d77a2b5bc4269c8e9a5896646bd82dd87d9e1ea2f87ba881f",
+   "bytes": 1185048
+  },
+  "P6_32768/part018.npz": {
+   "sha256": "acd5181827d77adef60d505507c75e37a95ffebd0e0a24208bb578b67d489ec6",
+   "bytes": 1185048
+  },
+  "P6_32768/part019.npz": {
+   "sha256": "63177f0f0ab18cf70243971925dc2a4995f2b9ef0c756bf0faa5f865a2c2a415",
+   "bytes": 1185048
+  },
+  "P6_32768/part020.npz": {
+   "sha256": "941664281b16235be3ec78b2b70dc4340dd9be8255e5fd609b414e740c4ae091",
+   "bytes": 1185048
+  },
+  "P6_32768/part021.npz": {
+   "sha256": "f34ee5f914dafab94018492fcb5dd8f8573ad8413bddbfb1c511ddd4b5c23738",
+   "bytes": 1185048
+  },
+  "P6_32768/part022.npz": {
+   "sha256": "f2a0a761c7d506ae1c41103aa2a9dcff2e71583d66d96db40bcedb411cbceb16",
+   "bytes": 1185048
+  }
+ }
+}
