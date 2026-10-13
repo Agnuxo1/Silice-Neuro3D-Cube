@@ -308,9 +308,7 @@ Estado a 13 de octubre de 2026. Detalle y evidencia de cada punto en el [registr
 - [x] Licencia [Apache-2.0](LICENSE)
 - [x] [Dossier de fabricación](Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md) y [laboratorios candidatos](Docs/CIERRE-20261012/LAB-PARTNERS-20261013.md) (nadie contactado todavía)
 
-**En curso**
-
-- [ ] F1R2: repetición registrada de F1 (convergencia temporal D16, h = 0,35 µm) en CPU local. Los resultados de Colab se perdieron y el primer intento (F1R) falló por memoria; ambos están documentados.
+- [x] **F1 recuperada (F1R2):** repetición registrada de la convergencia temporal D16 (h = 0,35 µm) en CPU local. Cumple los cinco criterios del contrato (diferencia de campo 1,35·10⁻⁵ ≤ 10⁻⁴) y la auditoría; [informe](Docs/CIERRE-20261012/T01-F1R2-RESULTS.md). Los resultados de Colab se perdieron y el primer intento (F1R) falló por memoria; ambos quedan documentados.
 
 **Pendiente: trabajo numérico**
 
