@@ -1,0 +1,40 @@
+{
+  "task": "mnist03",
+  "seed": 20261013,
+  "sealed_at_utc": "2026-10-13T10:07:58.466657+00:00",
+  "source_files": {
+    "train-images-idx3-ubyte.gz": {
+      "md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+      "sha256": "440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609",
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/train-images-idx3-ubyte.gz"
+    },
+    "train-labels-idx1-ubyte.gz": {
+      "md5": "d53e105ee54ea40749a09fcbcd1e9432",
+      "sha256": "3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c",
+      "url": "https://ossci-datasets.s3.amazonaws.com/mnist/train-labels-idx1-ubyte.gz"
+    }
+  },
+  "classes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "preprocessing": "28x28 -> mean of each disjoint 7x7 block /255; 16 intensities [0,1]; no learned transform",
+  "history_limit": "MNIST used in prior exploratory model fitting/evaluation. New seeded split, not a historically unseen dataset.",
+  "custody_limit": "Procedural same-host seal; source labels public and recoverable; no independent custodian claim.",
+  "counts": {
+    "fit": 11882,
+    "calibration": 2968,
+    "validation": 4949,
+    "test": 4955
+  },
+  "files": {
+    "fit.npz": "aa171f489473e904b4943752f6e25a9e056d158e6dc4ebebd9c4d22a242ffa5b",
+    "calibration.npz": "fb21071f85416f2893541295e428a05e291193850e3d92c3bfd1177bb4653718",
+    "validation.npz": "9ac98b37f572c8e54691dac425c6250edd0e3f4f0068efbe28647024ec8b0823",
+    "test_X.npz": "d213e9bbe59f4df4c49feebb3cae75dce89380cf8cb845b5fcabfb5901d24898"
+  },
+  "test_label_commitment_sha256": "10923f276b9a93e7c9802580d79169387c9864c19eff03f713266f67808421c2",
+  "commitment_rule": "sha256(salt_utf8 || little-endian int64 labels || little-endian int64 raw indices)"
+}
