@@ -1,0 +1,106 @@
+{
+  "experiment_id": "FEMTO1-LAYOUT-NOISE-20261013-v1",
+  "task_id": "F3_provisional_and_F6_noise_requirements",
+  "model": "SI circular-arc centerlines; provisional step-index coupling and conditional TIA noise sensitivity",
+  "units": {
+    "geometry": "m SI",
+    "noise": "fraction of input full-scale power",
+    "power": "W",
+    "NEP": "W/sqrt(Hz)"
+  },
+  "scope": "Engineering validation under provisional assumptions, never supplier-certified fabrication clearance",
+  "criteria": [
+    {
+      "id": "weight_max_abs_error",
+      "operator": "le",
+      "threshold": 1e-10
+    },
+    {
+      "id": "drc_error_count",
+      "operator": "le",
+      "threshold": 0
+    },
+    {
+      "id": "supplier_rules_confirmed",
+      "operator": "eq",
+      "threshold": true
+    }
+  ],
+  "resource_limits": {
+    "threads": 1,
+    "ram_GiB": 1.5,
+    "geometry_sample_m": 0.00001,
+    "wall_s": 1200,
+    "gpu": "no GPU use"
+  },
+  "heldout_policy": "No sealed test access/reveal. Only training-calibration and validation files. Source MNIST prior exploration retained in primary protocol.",
+  "layout": {
+    "chip_size_m": [
+      0.045,
+      0.025,
+      0.002
+    ],
+    "min_radius_m": 0.025,
+    "interbundle_spacing_m": 0.00003,
+    "core_radius_m": 0.000006,
+    "input_pitch_m": 0.00025,
+    "output_radius_m": 0.0001,
+    "coherence_stagger_m": 0.0001,
+    "access_outer_separation_m": 0.0001,
+    "kappa_range_um": [
+      14,
+      20
+    ],
+    "tail": "Zero approximation outside known range; no physical certification",
+    "networks": [
+      "N1",
+      "N2 assuming kappa+10%",
+      "N3 prototypes with common column shift",
+      "N4 uniform split"
+    ],
+    "retain_impossible_routes": true
+  },
+  "noise": {
+    "levels": [
+      0,
+      0.001,
+      0.002,
+      0.005,
+      0.01,
+      0.02,
+      0.05
+    ],
+    "chips": 200,
+    "kappa_sigma": 0.1,
+    "correlation": 0.8,
+    "seed": 20261016,
+    "target_mean": 0.85,
+    "calibration": "Eight positive gains/offsets; noisy dedicated training subset; no validation fit"
+  },
+  "power": {
+    "conditional_NEP_W_sqrtHz": [
+      1e-12,
+      1e-11,
+      1e-10
+    ],
+    "source_W": [
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01
+    ],
+    "bandwidth_Hz": 500000000,
+    "path_m": 0.055,
+    "in_eff": 0.5,
+    "out_eff": 0.5,
+    "propagation_dB_cm": 0.2,
+    "discard_already_in_weights": true,
+    "physical_claims": false
+  },
+  "planned_artifacts": [
+    "resultados/codex/femto1_layout_20261013/DRC.json",
+    "resultados/codex/femto1_noise_20261013/NOISE-POWER.json",
+    "resultados/codex/femto1_noise_20261013/MC_noise.npz"
+  ]
+}
