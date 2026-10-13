@@ -1,0 +1,4 @@
+from pathlib import Path
+import json,collections,numpy as np
+p=Path('resultados/codex/femto1_layout_20261013_v2/DRC.json');r=json.loads(p.read_text());g=json.loads(Path(r['geometry_path']).read_text());byid={x['id']:x for x in g['guides']};allpairs=r['separation_failures'];proven=[p for p in allpairs if p['sample_distance_m']<p['required_m']];uncertain=[p for p in allpairs if p['sample_distance_m']>=p['required_m']]
+print(json.dumps({'sampled_point_rule_violations':len(proven),'conservative_only_pairs_need_exact_segment_distance':len(uncertain),'zone_pairs_proven':dict(collections.Counter('/'.join(sorted([byid[p['first']]['zone'],byid[p['second']]['zone']])) for p in proven)),'proven_below_12um':sum(p['sample_distance_m']<12e-6 for p in proven),'tightest_pairs':sorted(proven,key=lambda p:p['sample_distance_m'])[:5],'uncertain_examples':uncertain[:5],'nonspacing_errors':r['errors']}))

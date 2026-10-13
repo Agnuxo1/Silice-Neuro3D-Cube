@@ -1,0 +1,15 @@
+# Cubos 3D Silice — draft joint development proposal
+
+Prepared for Francisco Angulo de Lafuente, 13 October 2026. Internal draft, not sent; commercial and IP terms are open.
+
+We propose discussing a joint development programme with FEMTOPRINT for optical computing structures written inside fused silica. A paid feasibility study or coupon run could establish the process baseline; the intended next step is a collaboration proposal for Cubos 3D Silice, subject to mutual technical interest and agreed terms.
+
+The first milestone would be FEMTO-1: a fixed 16-input, four-output intensity classifier with trained nonnegative weights, a prototype control, process coupons and alignment features. Its readout includes eight electronic calibration parameters. Our new prospective numerical experiment gives 87.31% nominal MNIST validation accuracy, with 88.12% mean after electronic calibration under an assumed 10% coupling error. These are validation results under a numerical model, not fabricated-chip measurements. The source dataset had prior exploratory use; the new 4,955-image test remains sealed.
+
+Current engineering blockers are substantial: the provisional router fails spacing/coherence checks; discard terminations and coupon ports need redesign; the coupling model must be replaced by process data; and SNR, modal content and polarization need physical validation. This is why a coupon-first collaboration is technically appropriate. The existing noise study indicates that 0.5% normalized input-referred reading noise achieves 86.85%, whereas 1% yields 83.51%, with an assumed 10% coupling error and eight-parameter calibration. A 3.7 mW conditional power estimate assumes a specific NEP and insertion efficiencies; it is not a component specification or verified source budget.
+
+We would contribute reproducible design and compilation software, a source geometry with hashes, data custody, preregistered protocols, solver comparison, error analysis and measurement analysis. FEMTOPRINT would contribute process-aware design review, measured waveguide/coupler characteristics, fabrication and characterization expertise. Acceptance would be based on measured transfer, sealed paired classification, latency at the required SNR and a matched full-chain energy model.
+
+Proposed stages: (1) format/DFM and profile exchange; (2) accessible K1–K3 coupon design and pilot; (3) calibrated, independently reviewed FEMTO-1 layout; (4) fabrication and bench acceptance; (5) jointly agreed report and next research milestone. Future larger networks and attention remain research questions; no inference speed, energy advantage, parameter density or manufacturing scale is promised.
+
+Before any agreement, Francisco and FEMTOPRINT would settle scope, budget, confidentiality, background/foreground IP, data access, publication and authorship. The repository's existing code license is Apache-2.0; that does not predetermine rights to new joint results. The final technical package will be released only after confirmed manufacturing formats/rules, completed gates and Francisco's explicit approval.

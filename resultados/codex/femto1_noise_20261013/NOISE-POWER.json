@@ -1,0 +1,263 @@
+{
+  "scope": "conditional numerical noise/power design; NOT F6 fabrication validation",
+  "weight_sha256": "8853ba39ad669c120f1639889896e10551c32d4c02f933fa57849a51a0fdb323",
+  "test_used": false,
+  "kappa_sigma": 0.1,
+  "calibration": "eight positive gains/offsets fit on noisy training-calibration records",
+  "noise_sweep": [
+    {
+      "TIA_sigma_input_fullscale": 0,
+      "mean": 0.8818246110325317,
+      "std_between_chips": 0.009093360858731407,
+      "p05": 0.8619923216811477,
+      "minimum": 0.842998585572843,
+      "optimizer_successes": 200,
+      "realizations": 200,
+      "fixed_target_mean": 0.85,
+      "mean_gate_passed": true
+    },
+    {
+      "TIA_sigma_input_fullscale": 0.001,
+      "mean": 0.881412406546777,
+      "std_between_chips": 0.009095076350879836,
+      "p05": 0.8621943827035765,
+      "minimum": 0.8423924025055567,
+      "optimizer_successes": 200,
+      "realizations": 200,
+      "fixed_target_mean": 0.85,
+      "mean_gate_passed": true
+    },
+    {
+      "TIA_sigma_input_fullscale": 0.002,
+      "mean": 0.879767629824207,
+      "std_between_chips": 0.00949078266991647,
+      "p05": 0.8599515053546172,
+      "minimum": 0.8365326328551222,
+      "optimizer_successes": 200,
+      "realizations": 200,
+      "fixed_target_mean": 0.85,
+      "mean_gate_passed": true
+    },
+    {
+      "TIA_sigma_input_fullscale": 0.005,
+      "mean": 0.8684976762982421,
+      "std_between_chips": 0.011892259215764344,
+      "p05": 0.8425742574257427,
+      "minimum": 0.8086482117599515,
+      "optimizer_successes": 200,
+      "realizations": 200,
+      "fixed_target_mean": 0.85,
+      "mean_gate_passed": true
+    },
+    {
+      "TIA_sigma_input_fullscale": 0.01,
+      "mean": 0.8350757728834108,
+      "std_between_chips": 0.0200329647493115,
+      "p05": 0.791664982824813,
+      "minimum": 0.7474237219640332,
+      "optimizer_successes": 200,
+      "realizations": 200,
+      "fixed_target_mean": 0.85,
+      "mean_gate_passed": false
+    },
+    {
+      "TIA_sigma_input_fullscale": 0.02,
+      "mean": 0.7554354415033342,
+      "std_between_chips": 0.03312388064123291,
+      "p05": 0.6907860173772479,
+      "minimum": 0.6435643564356436,
+      "optimizer_successes": 200,
+      "realizations": 200,
+      "fixed_target_mean": 0.85,
+      "mean_gate_passed": false
+    },
+    {
+      "TIA_sigma_input_fullscale": 0.05,
+      "mean": 0.5984562537886442,
+      "std_between_chips": 0.03807477705695207,
+      "p05": 0.5234087694483734,
+      "minimum": 0.48575469791877146,
+      "optimizer_successes": 200,
+      "realizations": 200,
+      "fixed_target_mean": 0.85,
+      "mean_gate_passed": false
+    }
+  ],
+  "maximum_passing_tested_noise_sigma": 0.005,
+  "power_budget_assumptions": {
+    "maximum_path_m": 0.055,
+    "input_efficiency": 0.5,
+    "output_efficiency": 0.5,
+    "propagation_dB_per_cm": 0.2,
+    "propagation_loss_dB": 1.1,
+    "propagation_efficiency": 0.7762471166286917,
+    "discard": "already included in W; do not count twice"
+  },
+  "budgets": [
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-12,
+      "source_power_W": 0.0001,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.01843592684524465,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 9464.005670325034,
+      "required_source_W_from_noise_grid": 0.0003687185369048931,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-12,
+      "source_power_W": 0.0003,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.006145308948414885,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 28392.017010975098,
+      "required_source_W_from_noise_grid": 0.0003687185369048931,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-12,
+      "source_power_W": 0.001,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.0018435926845244653,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 94640.05670325033,
+      "required_source_W_from_noise_grid": 0.0003687185369048931,
+      "conditional_noise_gate": true,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-12,
+      "source_power_W": 0.003,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.0006145308948414885,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 283920.170109751,
+      "required_source_W_from_noise_grid": 0.0003687185369048931,
+      "conditional_noise_gate": true,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-12,
+      "source_power_W": 0.01,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.00018435926845244654,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 946400.5670325032,
+      "required_source_W_from_noise_grid": 0.0003687185369048931,
+      "conditional_noise_gate": true,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-11,
+      "source_power_W": 0.0001,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.1843592684524465,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 9464.005670325034,
+      "required_source_W_from_noise_grid": 0.0036871853690489302,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-11,
+      "source_power_W": 0.0003,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.06145308948414884,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 28392.017010975098,
+      "required_source_W_from_noise_grid": 0.0036871853690489302,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-11,
+      "source_power_W": 0.001,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.01843592684524465,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 94640.05670325033,
+      "required_source_W_from_noise_grid": 0.0036871853690489302,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-11,
+      "source_power_W": 0.003,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.006145308948414884,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 283920.170109751,
+      "required_source_W_from_noise_grid": 0.0036871853690489302,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-11,
+      "source_power_W": 0.01,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.0018435926845244651,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 946400.5670325032,
+      "required_source_W_from_noise_grid": 0.0036871853690489302,
+      "conditional_noise_gate": true,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-10,
+      "source_power_W": 0.0001,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 1.8435926845244652,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 9464.005670325034,
+      "required_source_W_from_noise_grid": 0.03687185369048931,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-10,
+      "source_power_W": 0.0003,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.6145308948414885,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 28392.017010975098,
+      "required_source_W_from_noise_grid": 0.03687185369048931,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-10,
+      "source_power_W": 0.001,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.18435926845244655,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 94640.05670325033,
+      "required_source_W_from_noise_grid": 0.03687185369048931,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-10,
+      "source_power_W": 0.003,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.06145308948414885,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 283920.170109751,
+      "required_source_W_from_noise_grid": 0.03687185369048931,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    },
+    {
+      "assumed_NEP_W_per_sqrtHz": 1e-10,
+      "source_power_W": 0.01,
+      "assumed_bandwidth_Hz": 500000000.0,
+      "TIA_sigma_input_fullscale": 0.018435926845244654,
+      "fullscale_photons_per_input_after_common_losses_per_ns": 946400.5670325032,
+      "required_source_W_from_noise_grid": 0.03687185369048931,
+      "conditional_noise_gate": false,
+      "shot_noise_and_other_errors_included": false
+    }
+  ],
+  "latency_model": {
+    "propagation_s": 2.69136190210629e-10,
+    "assumed_analog_rise_s": 7e-10,
+    "sum_s": 9.69136190210629e-10,
+    "measured": false,
+    "ADC_decision_and_calibration_latency_included": false
+  },
+  "missing": [
+    "supplier profile/tolerances, polarization/depth/anisotropy and physical solver",
+    "actual TIA NEP and impulse response, source spectrum, detector area/bandwidth trade-off",
+    "shot noise combined with fabrication/fiber losses and input nonuniformity",
+    "full power/energy accounting of source, detector, TIA, ADC and logic"
+  ],
+  "F6_passed": false,
+  "sealed_test_ready": false
+}

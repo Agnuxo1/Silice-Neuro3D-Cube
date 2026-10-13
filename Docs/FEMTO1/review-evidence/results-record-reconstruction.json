@@ -1,0 +1,108 @@
+{
+  "record_kind": "reconstruction_from_prior_tool_output_NOT_a_new_distance_execution",
+  "retained_at_utc": "2026-10-13T10:42:02.522828+00:00",
+  "original_execution_date": "2026-10-13",
+  "provenance": "Prior commentary functions.exec outputs in the femto1_review task; code had been ephemeral stdin. Numeric results copied from those outputs; original elapsed preserved.",
+  "distance_work_repeated_during_retention": false,
+  "input_hash_capture": "Input SHA256 values were captured during evidence retention, not by the original distance script. Geometry hash had been checked against DRC in the original review. They anchor the retained input files now; they are not external timestamps.",
+  "inputs": {
+    "DRC": {
+      "path": "D:\\PROJECTS\\Silice-FEMTO1-20261013\\resultados\\codex\\femto1_layout_20261013_v2\\DRC.json",
+      "sha256": "fe8a6bb7d99abe22a7828ad4a8da074e967d7a5d72625fc697f72937e7115436"
+    },
+    "geometry": {
+      "path": "D:\\PROJECTS\\.cognition\\femto1\\geometry_FEMTO1_candidate_v2.json",
+      "sha256": "256beb164e5de411e728c111746c02694d4de7b8f852432eca7ee10aee17143d"
+    }
+  },
+  "repository_snapshot_observed_in_original_review": "ac05f670c1f428f750fe4d259ede6accae3dd97b",
+  "initial_classification_from_original_output": {
+    "total_preregistered_spacing_flags": 506,
+    "sampled_point_rule_violations": 314,
+    "conservative_only_pairs": 192,
+    "zone_pairs_proven": {
+      "N1/N1": 71,
+      "N2/N2": 75,
+      "N3/N3": 69,
+      "N4/N4": 99
+    },
+    "proven_below_12um": 152,
+    "tightest_sampled_example": {
+      "first": "N3-I11-leaf0",
+      "second": "N3-I11-leaf2",
+      "sample_distance_m": 5.960031307408607e-07,
+      "required_m": 3e-05
+    }
+  },
+  "original_segment_audit_output": {
+    "scope": "Exact distance of saved polylines after same endpoint exclusions as DRC; not physical coupling solver",
+    "conservative_pairs_checked": 192,
+    "additional_true_polyline_rule_violations": 2,
+    "conservative_false_positives_at_polyline_rule": 190,
+    "false_positive_examples": [
+      {
+        "first": "N1-I0-leaf2",
+        "second": "N1-I1-leaf2",
+        "required_m": 1.2e-05,
+        "exact_polyline_distance_m": 1.3388122699062932e-05
+      },
+      {
+        "first": "N1-I1-leaf0",
+        "second": "N1-I1-leaf1",
+        "required_m": 3e-05,
+        "exact_polyline_distance_m": 3.920644204500562e-05
+      },
+      {
+        "first": "N1-I1-leaf0",
+        "second": "N1-I1-leaf2",
+        "required_m": 3e-05,
+        "exact_polyline_distance_m": 3.7527398782735974e-05
+      },
+      {
+        "first": "N1-I1-leaf0",
+        "second": "N1-I4-leaf0",
+        "required_m": 1.2e-05,
+        "exact_polyline_distance_m": 1.896336685949822e-05
+      }
+    ],
+    "additional_true_violation_examples": [
+      {
+        "first": "N3-I5-leaf0",
+        "second": "N3-I7-leaf0",
+        "required_m": 1.2e-05,
+        "exact_polyline_distance_m": 1.1247298282268393e-05
+      },
+      {
+        "first": "N4-I8-leaf1",
+        "second": "N4-I8-leaf2",
+        "required_m": 3e-05,
+        "exact_polyline_distance_m": 2.9615735808389577e-05
+      }
+    ],
+    "elapsed_s": 0.7472836999804713
+  },
+  "derived_counts_from_prior_outputs": {
+    "true_polyline_rule_violations": 316,
+    "calculation": "314 sampled violations + 2 additional segment violations",
+    "conservative_false_positives_at_polyline_rule": 190,
+    "sum": 506
+  },
+  "exclusions": {
+    "shared_endpoint_tolerance_m": 1e-12,
+    "remove_points_at_or_within_m": 6e-05,
+    "procedure": "For equal endpoints, remove from both point arrays nodes whose Euclidean distance from that endpoint is <=60um, exactly as original DRC; then compute segments of retained arrays. No new beam/coupler exemptions are added; audit only the existing 192 flagged pairs whose sample_distance >= required.",
+    "thresholds_m": [
+      1.2e-05,
+      3e-05
+    ],
+    "equality": "distance strictly below required_m is violation"
+  },
+  "candidate_filter": "Midpoint KD-tree query radius = rule threshold + half maximum segment length of each retained array; triangle inequality excludes all pairs outside radius.",
+  "distance_method": "Minimum of four endpoint-to-segment projections plus feasible interior stationary point; determinant cutoff 1e-30 as in original code.",
+  "limits": [
+    "Distance of saved piecewise-linear centerlines, not physical coupling solver or exact continuous circular-arc geometry.",
+    "Original DRC remains 506 spacing flags / FAIL, unchanged.",
+    "No retraining, sealed/test access, source edit or publication.",
+    "Record retains examples and aggregates from original output; complete per-pair distance list was not emitted by the ephemeral original script."
+  ]
+}

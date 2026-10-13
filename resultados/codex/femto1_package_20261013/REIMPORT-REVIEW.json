@@ -1,0 +1,27 @@
+{
+  "source_geometry_sha256": "256beb164e5de411e728c111746c02694d4de7b8f852432eca7ee10aee17143d",
+  "source_DRC_sha256": "fe8a6bb7d99abe22a7828ad4a8da074e967d7a5d72625fc697f72937e7115436",
+  "CSV_rows": 896446,
+  "CSV_max_abs_error_um": 6.938893903907228e-12,
+  "CSV_transfer_errors": {
+    "N1": 3.147482274812319e-14,
+    "N2": 4.85722573273506e-14,
+    "N3": 1.582067810090848e-14,
+    "N4": 1.8041124150158794e-14
+  },
+  "CSV_reimport_passed": true,
+  "DXF_units": "um by package convention; confirm CAD import explicitly",
+  "DXF_independent_reimport_passed": false,
+  "STEP_available": false,
+  "STL_full_geometry_available": false,
+  "Blender_authority_roundtrip_completed": false,
+  "manifest_signed_by_owner": false,
+  "F7_passed": false,
+  "fabrication_ready": false,
+  "pending": [
+    "STEP and full STL after valid Blender/CAD geometry",
+    "independent STEP/DXF reimport and CAM format confirmation",
+    "source geometry from verified Blender objects",
+    "resolved DRC/physical gates"
+  ]
+}
