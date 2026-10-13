@@ -1,0 +1,1367 @@
+{
+  "title": "Candidate laboratory partners for fs-written waveguides in silica (project Silice-Neuro3D-Cube)",
+  "retrieved": "2026-10-13",
+  "constraints_respected": "Public information only. Nobody was contacted, no form was submitted, no message was sent. No personal email addresses or phone numbers were collected; only institutional or company pages.",
+  "project_repo": "https://github.com/Agnuxo1/Silice-Neuro3D-Cube",
+  "fit_rubric": {
+    "5": "Documents fs-writing in silica or borosilicate near 1550 nm AND trench/depressed-cladding or equivalent AND a stated route for external users AND cut-back/near-field metrology AND no major barrier. No candidate reached 5.",
+    "4": "Strong documented capability for most of the ask plus either a stated external-user/contract route or an obvious academic fit; at most one important gap.",
+    "3": "Relevant capability but a material gap: other glass or wavelength, no stated external route, or unclear whether the group fabricates in-house.",
+    "2": "Weak or indirect evidence, the official page does not state the capability, or a significant practical barrier.",
+    "1": "Not suitable now."
+  },
+  "counts": {
+    "total": 23,
+    "category_A": 11,
+    "category_B": 4,
+    "category_C": 8
+  },
+  "repository_licence_check": {
+    "finding": "The public repository's default branch has no LICENSE file: the GitHub API returns license = null and /contents/LICENSE on main gives 404. An Apache-2.0 LICENSE exists on the branch agent/scientific-closure-20261012, which is 3 commits ahead of main (compare API, 2026-10-13). Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md exists on both branches.",
+    "action_for_owner": "Merge the licence commit to main (or point partners to the branch) before sending any email; otherwise 'open code' cannot be reused legally by the partner."
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "id": "B1",
+      "name": "Grupo de Investigación en Aplicaciones del Láser y Fotónica (ALF-USAL)",
+      "short_name": "ALF-USAL (Univ. de Salamanca)",
+      "category": "B",
+      "institution": "Universidad de Salamanca (recognised research group; consolidated research unit UIC016)",
+      "country": "Spain",
+      "leads_public": [
+        "Carolina Romero and Javier Rodríguez Vázquez de Aldana (authors of the cited papers)",
+        "Luis Plaja Rustein (group leader per the Junta de Castilla y León science portal; the group's own site does not name a leader, so check)"
+      ],
+      "why_fit": "Most Spanish fs-writing output in the OpenAlex search of 2026-10-13 (44 works since 2019 for 'femtosecond laser written waveguide' with a USAL author). Official site lists the research line 'Device manufacturing for integrated photonics', two Ti:sapphire CPA systems (800 nm; 1 kHz/120 fs and, since 2019, 5 kHz/60 fs) and a 3-axis workstation 'for manufacturing photonic devices and precision microprocessing' (its laser parameters are not stated). Verified glass work: 2D and 3D Y-splitters and single-mode guides in Er/Yb oxyfluoride nano-glass ceramics (1.6 dB/cm, visible/NIR). Depressed-cladding writing is documented, in crystals (tapered circular cladding in Nd:YAG).",
+      "evidence": [
+        {
+          "doi": "10.1364/ome.402271",
+          "cite": "Vázquez de Aldana, Romero et al.",
+          "shows": "fs inscription of 2D/3D Y-splitters in Er/Yb nano-glass ceramics; 1.6 dB/cm; abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Femtosecond laser direct inscription of 3D photonic devices in Er/Yb-doped oxyfluoride nano-glass ceramics",
+          "biblio": "Optical Materials Express 10(10), 2695 (2020)",
+          "doi_url": "https://doi.org/10.1364/ome.402271"
+        },
+        {
+          "doi": "10.3390/mi11010010",
+          "cite": "Romero, García Ajates, Vázquez de Aldana",
+          "shows": "tapered circular depressed-cladding waveguides in Nd:YAG (crystal); title and authors only.",
+          "crossref_ok": true,
+          "crossref_title": "Fabrication of Tapered Circular Depressed-Cladding Waveguides in Nd:YAG Crystal by Femtosecond-Laser Direct Inscription",
+          "biblio": "Micromachines 11(1), 10 (2019)",
+          "doi_url": "https://doi.org/10.3390/mi11010010"
+        },
+        {
+          "doi": "10.1016/j.rinp.2021.104897",
+          "cite": "Sun, ..., Romero, Vázquez de Aldana, Chen",
+          "shows": "tapered depressed-cladding waveguide lasers with Ag nanoparticles embedded in SiO2; collaboration with the Shandong group; abstract not read, host material of the guides not verified.",
+          "crossref_ok": true,
+          "crossref_title": "Tapered depressed-cladding waveguide lasers modulated by Ag nanoparticles embedded in SiO2",
+          "biblio": "Results in Physics 30, 104897 (2021)",
+          "doi_url": "https://doi.org/10.1016/j.rinp.2021.104897"
+        },
+        {
+          "doi": "10.1063/5.0221394",
+          "cite": "Bonduelle, ..., Vázquez de Aldana, Arroyo Heras, Romero",
+          "shows": "all-DLW building blocks at 3.39-4.1 um (ALF-USAL affiliation confirmed in Crossref); not 1550 nm.",
+          "crossref_ok": true,
+          "crossref_title": "A route to an all direct laser written integrated FTS (SWIFTS) in the 3.39–4.1 μm range",
+          "biblio": "APL Photonics 9(10), 101302 (2024)",
+          "doi_url": "https://doi.org/10.1063/5.0221394"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://laser.usal.es/alf/en/home/",
+        "contact_page": "https://laser.usal.es/alf/en/contact/",
+        "other": [
+          "https://laser.usal.es/alf/en/who-we-are/experimental-equipment/",
+          "https://laser.usal.es/alf/en/research/collaborations/",
+          "https://laser.usal.es/alf/en/rdcontracts/"
+        ],
+        "http_status_checked": {
+          "https://laser.usal.es/alf/en/home/": 200,
+          "https://laser.usal.es/alf/en/contact/": 200,
+          "https://laser.usal.es/alf/en/who-we-are/experimental-equipment/": 200,
+          "https://laser.usal.es/alf/en/research/collaborations/": 200,
+          "https://laser.usal.es/alf/en/rdcontracts/": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration",
+        "R&D contract (services under a research contract, per its collaborations page)"
+      ],
+      "barrier": "Its collaborations page says it collaborates with other groups 'only with those with joined publications or patents' and serves companies and institutions under research contracts, so a first contact from an independent researcher may be routed to a paid contract. No low-loss silica or borosilicate recipe at 1550 nm and no cut-back set-up are documented on the site (listed instruments: spectrometers, M2, beam profiler, LIBS). Sources are 1-5 kHz class, not the high-repetition-rate regime of the best published silica results.",
+      "barrier_short": "Collaborates 'only with those with joined publications or patents'; outside parties are served under paid research contracts; no 1550 nm silica data.",
+      "fit_score": 4,
+      "fit_reason": "Spanish, documented depressed-cladding experience and a stated contract route; silica/borosilicate loss at 1550 nm is not yet shown by them.",
+      "not_verified": [
+        "current group leader",
+        "whether workstation 2 can write fused silica or borosilicate at 1550 nm quality",
+        "any fee"
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "A3",
+      "name": "Femtosecond laser micromachining and integrated photonics group, Politecnico di Milano (Physics) and CNR-IFN Milan",
+      "short_name": "Politecnico di Milano / CNR-IFN fs-photonics group",
+      "category": "A",
+      "institution": "Politecnico di Milano (Dipartimento di Fisica) and Istituto di Fotonica e Nanotecnologie, CNR (IFN-CNR), Milan",
+      "country": "Italy",
+      "leads_public": [
+        "Roberto Osellame (IFN-CNR Director of Research; Politecnico di Milano profile)",
+        "Andrea Crespi (Politecnico di Milano); Francesco Ceccarelli, Giacomo Corrielli (IFN-CNR); Ciro Pentangelo (authors of the cited papers)"
+      ],
+      "why_fit": "Universal photonic processors written by fs laser and calibrated at 785 nm and 1550 nm; thermal phase shifters with isolation trenches; borosilicate PICs. Closest match to coupons C and F and also the benchmark for claim (b). Founders of the company Ephos (entry C6) come from this group (press, 2024).",
+      "evidence": [
+        {
+          "doi": "10.1515/nanoph-2023-0636",
+          "cite": "Pentangelo, ..., Crespi, Osellame",
+          "shows": "universal photonic processors at 785 nm and 1550 nm, average amplitude fidelity 0.9970 at 1550 nm; abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "High‐fidelity and polarization‐insensitive universal photonic processors fabricated by femtosecond laser writing",
+          "biblio": "Nanophotonics 13(12), 2259-2270 (2024)",
+          "doi_url": "https://doi.org/10.1515/nanoph-2023-0636"
+        },
+        {
+          "doi": "10.1109/JLT.2019.2923126",
+          "cite": "Ceccarelli, ..., Osellame",
+          "shows": "thermal phase shifters for fs-written circuits.",
+          "crossref_ok": true,
+          "crossref_title": "Thermal Phase Shifters for Femtosecond Laser Written Photonic Integrated Circuits",
+          "biblio": "Journal of Lightwave Technology 37(17), 4275-4281 (2019)",
+          "doi_url": "https://doi.org/10.1109/JLT.2019.2923126"
+        },
+        {
+          "doi": "10.1002/lpor.202000024",
+          "cite": "Ceccarelli, ..., Crespi, Osellame",
+          "shows": "low-power reconfigurability and reduced crosstalk with trenches (power values per T26, not re-read here).",
+          "crossref_ok": true,
+          "crossref_title": "Low Power Reconfigurability and Reduced Crosstalk in Integrated Photonic Circuits Fabricated by Femtosecond Laser Micromachining",
+          "biblio": "Laser & Photonics Reviews 14(10), 2000024 (2020)",
+          "doi_url": "https://doi.org/10.1002/lpor.202000024"
+        },
+        {
+          "doi": "10.1088/2515-7647/ad82c2",
+          "cite": "Ceccarelli, ..., Corrielli",
+          "shows": "programmable glass PIC with thermo-optic phase shifters at room and cryogenic temperature; abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Integrated thermo-optic phase shifters for laser-written photonic circuits operating at cryogenic temperatures",
+          "biblio": "Journal of Physics: Photonics 6(4), 045023 (2024)",
+          "doi_url": "https://doi.org/10.1088/2515-7647/ad82c2"
+        },
+        {
+          "doi": "10.1117/1.AP.8.1.016009",
+          "cite": "Peri, ..., Corrielli, Vallone",
+          "shows": "fs micromachining on borosilicate glass as a PIC platform (Politecnico/CNR-IFN co-authors); abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "High-performance heterodyne receiver for quantum information processing in a laser-written integrated photonic platform",
+          "biblio": "Advanced Photonics 8(01), 1-17 (2026)",
+          "doi_url": "https://doi.org/10.1117/1.AP.8.1.016009"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.fisi.polimi.it/en/staff/roberto.osellame",
+        "contact_page": "https://www.ifn.cnr.it/where-we-are/milano/",
+        "other": [
+          "https://www.ifn.cnr.it/"
+        ],
+        "http_status_checked": {
+          "https://www.fisi.polimi.it/en/staff/roberto.osellame": 200,
+          "https://www.ifn.cnr.it/where-we-are/milano/": 200,
+          "https://www.ifn.cnr.it/": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration (route not stated on the pages read)"
+      ],
+      "barrier": "Direct competitor on claim (b) (programmable fs-written meshes), so the conversation would be about complementarity. No external-user policy found. Part of the group's effort now goes to the spin-off Ephos, whose current website states only 'Glass Advanced Packaging'.",
+      "barrier_short": "Competitor on claim (b); no external-user policy found; effort partly in the spin-off Ephos.",
+      "fit_score": 4,
+      "fit_reason": "Only group with published thermal-shifter meshes at 1550 nm in this glass family; access route unknown.",
+      "not_verified": [
+        "external-user policy",
+        "whether trench (depressed-cladding) guides in silica are in their current portfolio"
+      ]
+    },
+    {
+      "rank": 3,
+      "id": "A1",
+      "name": "Galatea Laboratory, EPFL",
+      "short_name": "Galatea Lab, EPFL",
+      "category": "A",
+      "institution": "École polytechnique fédérale de Lausanne (EPFL), Neuchâtel (per the IEEE metadata of the CLEO/Europe 2025 record)",
+      "country": "Switzerland",
+      "leads_public": [
+        "Yves Bellouard (leads the Galatea lab; Richemont chair)",
+        "Lisa Ackermann (first author)"
+      ],
+      "why_fit": "Best verified propagation loss at 1550 nm in fused silica: 0.06 +/- 0.02 dB/cm by cut-back (13 cm to 2.5 cm, SMF-28 butt coupling), written with 450 fs UV (343 nm) pulses at two orders of magnitude higher speed than IR practice. Value read in the open full text by the T26 second reader; the Crossref abstract says 'below 0.1 dB/cm'.",
+      "evidence": [
+        {
+          "doi": "10.1364/OL.557978",
+          "cite": "Ackermann, Hermann, Echarri, Gribaudo, Bellouard",
+          "shows": "UV fs writing of low-loss waveguides in fused silica; affiliation not in Crossref, Galatea confirmed through the same first author's CLEO record below.",
+          "crossref_ok": true,
+          "crossref_title": "High-speed femtosecond UV laser writing of low-loss waveguides in fused silica",
+          "biblio": "Optics Letters 50(8), 2506 (2025)",
+          "doi_url": "https://doi.org/10.1364/OL.557978"
+        },
+        {
+          "doi": "10.1109/cleo/europe-eqec65582.2025.11109929",
+          "cite": "Ackermann, Bellouard",
+          "shows": "Crossref affiliation: EPFL, Galatea Laboratory, Neuchâtel.",
+          "crossref_ok": true,
+          "crossref_title": "On the Use of UV Femtosecond Pulses to Write Waveguides in Fused Silica",
+          "biblio": "2025 Conference on Lasers and Electro-Optics Europe & European Quantum Electronics Conference (CLEO/Europe-EQEC), 1-1 (2025)",
+          "doi_url": "https://doi.org/10.1109/cleo/europe-eqec65582.2025.11109929"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.epfl.ch/labs/galatea/",
+        "contact_page": "https://www.epfl.ch/labs/galatea/contact-us/",
+        "other": [
+          "https://people.epfl.ch/Yves.Bellouard"
+        ],
+        "http_status_checked": {
+          "https://www.epfl.ch/labs/galatea/": 200,
+          "https://www.epfl.ch/labs/galatea/contact-us/": 200,
+          "https://people.epfl.ch/Yves.Bellouard": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "Lab page makes no statement on external users or industry access. Their record is for single guides written with a UV recipe; depressed-cladding guides are not documented.",
+      "barrier_short": "No stated external-user route; UV recipe, no trench guides documented.",
+      "fit_score": 4,
+      "fit_reason": "Reference-quality silica loss and cut-back practice at 1550 nm; a trench-guide pilot would be a new request to them.",
+      "not_verified": [
+        "trench guides",
+        "willingness to host an external pilot"
+      ]
+    },
+    {
+      "rank": 4,
+      "id": "A2",
+      "name": "Herman Group, University of Toronto",
+      "short_name": "Herman Group, Univ. of Toronto",
+      "category": "A",
+      "institution": "University of Toronto, Department of Electrical and Computer Engineering",
+      "country": "Canada",
+      "leads_public": [
+        "Peter R. Herman (leads the group)",
+        "Gligor Djogo, Amir Rahimnouri (authors)"
+      ],
+      "why_fit": "Fused silica at 1550 nm: waveguide crossings with at most 0.01 dB per intersection up to 16 crossings at 80 degrees, crosstalk below the 40 dB noise floor (arXiv:2512.01972v1, read by T26); 0.2 dB/cm insertion loss minus coupling in the interposer waveguides. Directly relevant to coupon B.",
+      "evidence": [
+        {
+          "doi": "10.1109/JLT.2026.3720907",
+          "cite": "Djogo, Rahimnouri, Herman",
+          "shows": "silica interposer for multicore fibre to silicon photonics; affiliation University of Toronto (Crossref).",
+          "crossref_ok": true,
+          "crossref_title": "Laser Structured Optical Interposer for Ultra-Dense Surface Coupling of Multicore Fibers to Silicon Photonic Chip",
+          "biblio": "Journal of Lightwave Technology 44(18), 7978-7986 (2026)",
+          "doi_url": "https://doi.org/10.1109/JLT.2026.3720907"
+        },
+        {
+          "doi": "10.1088/2631-7990/ab4d51",
+          "cite": "Djogo, Li, Ho, ..., Herman",
+          "shows": "84-channel fused-silica interposer by fs additive and subtractive processing; 0.3 dB/cm per T26.",
+          "crossref_ok": true,
+          "crossref_title": "Femtosecond laser additive and subtractive micro-processing: enabling a high-channel-density silica interposer for multicore fibre to silicon-photonic packaging",
+          "biblio": "International Journal of Extreme Manufacturing 1(4), 045002 (2019)",
+          "doi_url": "https://doi.org/10.1088/2631-7990/ab4d51"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://photonics.light.utoronto.ca/laserphotonics",
+        "contact_page": "https://photonics.light.utoronto.ca/laserphotonics/contact.html",
+        "other": [],
+        "http_status_checked": {
+          "https://photonics.light.utoronto.ca/laserphotonics": 200,
+          "https://photonics.light.utoronto.ca/laserphotonics/contact.html": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "Group page states no external-user or industry policy and does not describe equipment. Crossing data are at 80 degrees only; shallow angles and 3D overpasses are not documented.",
+      "barrier_short": "No stated external-user route; crossing data only at 80 degrees.",
+      "fit_score": 4,
+      "fit_reason": "Closest published data for crossing loss in fused silica at 1550 nm; a crossings coupon fits their work better than trench guides.",
+      "not_verified": [
+        "trench guides",
+        "external-user policy"
+      ]
+    },
+    {
+      "rank": 5,
+      "id": "C4",
+      "name": "JOANNEUM RESEARCH, MATERIALS: Light and Optical Technologies (Weiz)",
+      "short_name": "JOANNEUM RESEARCH MATERIALS, Weiz",
+      "category": "C",
+      "institution": "JOANNEUM RESEARCH Forschungsgesellschaft mbH, Institute MATERIALS, Weiz",
+      "country": "Austria",
+      "leads_public": [
+        "Wolfgang Nemitz (head of Light and Optical Technologies per the institute page)",
+        "Philip Lichtenegger, Bernhard Lamprecht (authors)"
+      ],
+      "why_fit": "Borosilicate glass, single-scan waveguides, directional couplers and Mach-Zehnder interferometers at 30 mm/s; fs-laser-induced etching makes suspended microbridges with microheaters giving a full 2 pi shift at about 17 mW. That matches coupons C and F (thermal shifters with isolation). The institute publishes a feasibility-check route for external partners and calls its Light and Integration Laboratory 'open to industrial partners'.",
+      "evidence": [
+        {
+          "doi": "10.3390/photonics13080731",
+          "cite": "Lichtenegger, Hurdax, Spernbauer, Lamprecht",
+          "shows": "reconfigurable PICs in borosilicate by FLW + FLICE; abstract read (open access). Test wavelength and propagation loss are not in the abstract.",
+          "crossref_ok": true,
+          "crossref_title": "Reconfigurable Photonic Integrated Circuits in Glass by Femtosecond Laser Writing and Laser-Induced Chemical Etching",
+          "biblio": "Photonics 13(8), 731 (2026)",
+          "doi_url": "https://doi.org/10.3390/photonics13080731"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.joanneum.at/en/materials/",
+        "contact_page": "https://www.joanneum.at/en/kontakt/",
+        "other": [
+          "https://www.joanneum.at/materials/en/technical-project-and-feasibility-check/"
+        ],
+        "http_status_checked": {
+          "https://www.joanneum.at/en/materials/": 200,
+          "https://www.joanneum.at/en/kontakt/": 200,
+          "https://www.joanneum.at/materials/en/technical-project-and-feasibility-check/": 200
+        }
+      },
+      "collaboration_mode": [
+        "commercial service / contract research (feasibility check first)"
+      ],
+      "barrier": "Contract research organisation: fees and lead time are not stated; academic co-authorship terms would have to be negotiated. 1550 nm operation and fused silica are not documented in the abstract.",
+      "barrier_short": "Contract research (fees not stated); test wavelength and fused silica not documented.",
+      "fit_score": 4,
+      "fit_reason": "EU partner with borosilicate guides, couplers, MZIs and integrated heaters plus a published request route; wavelength still to be confirmed.",
+      "not_verified": [
+        "operating wavelength",
+        "propagation loss",
+        "price",
+        "fused silica capability"
+      ]
+    },
+    {
+      "rank": 6,
+      "id": "C3",
+      "name": "ANFF OptoFab node (Macquarie University headquarters)",
+      "short_name": "ANFF OptoFab node (Macquarie)",
+      "category": "C",
+      "institution": "Australian National Fabrication Facility, OptoFab node (Macquarie University, with Adelaide, ANU and Sydney centres as listed)",
+      "country": "Australia",
+      "leads_public": [
+        "Simon Gross (named as node director on the ANFF node page; other pages name Michael Withford as director)",
+        "Benjamin Johnston (facility manager)"
+      ],
+      "why_fit": "The only user facility found with 'laser inscription of photonic devices' as a listed speciality and a published access route (short project proposal to the facility manager, assisted or unassisted use). ANFF equipment page lists a custom femtosecond micromachining facility and a tuneable (I-OPA) ultrafast laser inscription facility at the Macquarie node (specifications not on the page read).",
+      "evidence": [
+        {
+          "doi": "10.37188/lam.2024.009",
+          "cite": "Ross-Adams, Fernandez, Withford, Gross",
+          "shows": "Macquarie authors; boro-aluminosilicate guides with the 1 dB/cm bend-loss radius reduced from 10 mm to 4 mm at 1550 nm (arXiv:2401.03382 abstract read).",
+          "crossref_ok": true,
+          "crossref_title": "Low bend loss, high index, composite morphology ultra-fast laser written waveguides for photonic integrated circuits",
+          "biblio": "Light: Advanced Manufacturing 5(1), 52 (2024)",
+          "doi_url": "https://doi.org/10.37188/lam.2024.009"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://anff.org.au/locations/optofab-node",
+        "contact_page": "https://anff.org.au/get-in-touch/",
+        "other": [
+          "https://anff.org.au/access-to-facilities/",
+          "https://anff.org.au/equipment/laser-engraving-and-cutting"
+        ],
+        "http_status_checked": {
+          "https://anff.org.au/locations/optofab-node": 200,
+          "https://anff.org.au/get-in-touch/": 200,
+          "https://anff.org.au/access-to-facilities/": 200,
+          "https://anff.org.au/equipment/laser-engraving-and-cutting": 200
+        }
+      },
+      "collaboration_mode": [
+        "user facility"
+      ],
+      "barrier": "The access-and-pricing policy PDF could not be read (image-only), so fees and international-user terms are unknown. Time zone and sample shipping. Fabrication would be by node staff or the owner's own visit; 1550 nm metrology is not listed on the pages read.",
+      "barrier_short": "Fees and international-user terms unknown (policy PDF unreadable); distance.",
+      "fit_score": 4,
+      "fit_reason": "Explicit external-user route and fs-inscription speciality; cost, metrology and international terms to confirm.",
+      "not_verified": [
+        "fees",
+        "international user terms",
+        "laser specifications",
+        "who would run the cut-back"
+      ]
+    },
+    {
+      "rank": 7,
+      "id": "C1",
+      "name": "FEMTOprint (glass waveguides, prototyping and contract manufacturing)",
+      "short_name": "FEMTOprint",
+      "category": "C",
+      "institution": "FEMTOprint SA",
+      "country": "Switzerland (per the .ch company site)",
+      "leads_public": [
+        "not stated on the pages read"
+      ],
+      "why_fit": "Own page 'Glass waveguides': materials fused silica, Borofloat 33 and Eagle XG; wavelength range 650-1550 nm; propagation losses '<0.2dB/cm'; minimum bend radius 20-25 mm at 1000-1550 nm; directional couplers, MMIs, spot-size converters, fan-in/fan-out, multi-layer routing within one wafer. Services listed: contract development, contract manufacturing, rapid prototyping.",
+      "evidence": [
+        {
+          "url": "https://www.femtoprint.ch/applications/photonics/glass-waveguides.html",
+          "cite": "FEMTOprint website, read 2026-10-13",
+          "shows": "specifications quoted above, as stated by the company; waveguide crossings and depressed-cladding are not stated."
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.femtoprint.ch/applications/photonics.asp",
+        "contact_page": "https://www.femtoprint.ch/contacts.php",
+        "other": [
+          "https://www.femtoprint.ch/applications/photonics/glass-waveguides.html"
+        ],
+        "http_status_checked": {
+          "https://www.femtoprint.ch/applications/photonics.asp": 200,
+          "https://www.femtoprint.ch/contacts.php": 200,
+          "https://www.femtoprint.ch/applications/photonics/glass-waveguides.html": 200
+        }
+      },
+      "collaboration_mode": [
+        "commercial service"
+      ],
+      "barrier": "Pricing, minimum order, lead times and waveguide-specific prototyping terms are not stated. Trench (type III) guides and a customer-run blind cut-back are not mentioned; co-authorship is not part of a normal commercial order.",
+      "barrier_short": "Prices and terms not stated; trench guides and an external blind protocol not mentioned.",
+      "fit_score": 4,
+      "fit_reason": "Official page matches material, wavelength and component list; cost and willingness to follow an external preregistered protocol unknown.",
+      "not_verified": [
+        "price",
+        "lead time",
+        "crossings",
+        "trench guides"
+      ]
+    },
+    {
+      "rank": 8,
+      "id": "C2",
+      "name": "Modular Photonics (Macquarie University spin-out)",
+      "short_name": "Modular Photonics",
+      "category": "C",
+      "institution": "Modular Photonics Pty Ltd, Sydney",
+      "country": "Australia",
+      "leads_public": [
+        "Michael Withford (CEO)",
+        "Simon Gross (CTO)",
+        "Nicolas Riesen (co-founder)"
+      ],
+      "why_fit": "Offers custom design, fabrication, testing and packaging of 3D photonic circuits (turnaround 'a few weeks' on its product page); says it 'caters to the photonics research community'; licensed SCHOTT 'Aldente Glass', described as purpose-engineered for ultra-low-loss photonic chips and ultrafast laser inscription. A mode multiplexer product is listed at 1550 nm.",
+      "evidence": [
+        {
+          "url": "https://modularphotonics.com/",
+          "cite": "Modular Photonics website, read 2026-10-13",
+          "shows": "products OMPlex, LPMUX (1550 nm), MCMUX, custom PICs; Aldente glass licence."
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://modularphotonics.com/",
+        "contact_page": "https://www.modularphotonics.com/contact-us/",
+        "other": [
+          "https://www.modularphotonics.com/about-us/"
+        ],
+        "http_status_checked": {
+          "https://modularphotonics.com/": 403,
+          "https://www.modularphotonics.com/contact-us/": 403,
+          "https://www.modularphotonics.com/about-us/": 403
+        }
+      },
+      "collaboration_mode": [
+        "commercial service"
+      ],
+      "barrier": "No academic pricing or formal research-collaboration programme described. Its own glass (SCHOTT Aldente) is a different material from the dossier's n = 1.444 silica design, and whether fused silica is accepted is not stated.",
+      "barrier_short": "No academic programme described; its own glass (Aldente) differs from the silica design.",
+      "fit_score": 4,
+      "fit_reason": "Fast custom fs-written chips from a team that publishes low-bend-loss work; material and cost differ from the dossier.",
+      "not_verified": [
+        "price",
+        "fused silica availability",
+        "1550 nm propagation-loss data"
+      ]
+    },
+    {
+      "rank": 9,
+      "id": "B2",
+      "name": "Laser Processing Group (LPG), Instituto de Óptica 'Daza de Valdés', CSIC (with collaborators at Universidad de Zaragoza, Universidad Complutense de Madrid and ICV-CSIC)",
+      "short_name": "IO-CSIC Laser Processing Group (+ Zaragoza, UCM, ICV)",
+      "category": "B",
+      "institution": "Instituto de Óptica (IO-CSIC), Madrid",
+      "country": "Spain",
+      "leads_public": [
+        "Javier Solís, Jan Siegel, Rosalía Serna (Research Professors on the group's people page)",
+        "Antonio Dias-Ponte (IO-CSIC); Juan A. Vallés, David Benedicto (Universidad de Zaragoza, I3A); Belén Sotillo, Jesús del Hoyo (Universidad Complutense de Madrid); Francisco Muñoz (ICV-CSIC), as authors"
+      ],
+      "why_fit": "fs-written guides in glass with a 1534 nm device: twin-core directional coupler in Er/Yb phosphate glass, coupling ratio tuned 100/0 to 50/50 by pumping; multicore active guides; tapers by element redistribution; thermophoretic writing in compositionally designed silicate glass with index contrast up to 2.5e-2. The group's facilities page lists an Ultrafast Materials Processing Laboratory with a Ti:sapphire amplifier (about 100 fs, 800 nm, 1 kHz).",
+      "evidence": [
+        {
+          "doi": "10.3390/mi14071370",
+          "cite": "Benedicto, Martín, Dias-Ponte, Solís, Vallés",
+          "shows": "integrated pump-controlled coupler at 1534 nm in Er3+/Yb3+ phosphate glass; Crossref affiliations: Universidad de Zaragoza (I3A) and IO-CSIC Laser Processing Group.",
+          "crossref_ok": true,
+          "crossref_title": "An Integrated Pump-Controlled Variable Coupler Fabricated by Ultrafast Laser Writing",
+          "biblio": "Micromachines 14(7), 1370 (2023)",
+          "doi_url": "https://doi.org/10.3390/mi14071370"
+        },
+        {
+          "doi": "10.1109/jlt.2021.3082620",
+          "cite": "Benedicto, Dias, Martín, Vallés, Solís",
+          "shows": "multicore integrated active waveguides in Er/Yb phosphate glass; authors and title only.",
+          "crossref_ok": true,
+          "crossref_title": "Characterization of Multicore Integrated Active Waveguides Written in an Er3+/Yb3+ Codoped Phosphate Glass",
+          "biblio": "Journal of Lightwave Technology 39(15), 5061-5068 (2021)",
+          "doi_url": "https://doi.org/10.1109/jlt.2021.3082620"
+        },
+        {
+          "doi": "10.1109/jlt.2020.3015013",
+          "cite": "Macias-Montero, Dias, Sotillo, ..., Solís",
+          "shows": "waveguide tapers by fs-induced element redistribution in glass; authors and title only.",
+          "crossref_ok": true,
+          "crossref_title": "Waveguide Tapers Fabrication by Femtosecond Laser Induced Element Redistribution in Glass",
+          "biblio": "Journal of Lightwave Technology 38(23), 6578-6583 (2020)",
+          "doi_url": "https://doi.org/10.1109/jlt.2020.3015013"
+        },
+        {
+          "doi": "10.1038/s41598-021-87765-z",
+          "cite": "Macias-Montero, Muñoz, Sotillo, del Hoyo, ..., Siegel, Solís",
+          "shows": "thermophoretic writing of IR waveguides in designed silicate glass; abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Femtosecond laser induced thermophoretic writing of waveguides in silicate glass",
+          "biblio": "Scientific Reports 11(1), 8390 (2021)",
+          "doi_url": "https://doi.org/10.1038/s41598-021-87765-z"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://lpg.io.csic.es/",
+        "contact_page": "https://www.io.csic.es/research/project-and-knowledge-management-office-contact-point/",
+        "other": [
+          "https://lpg.io.csic.es/people/",
+          "https://lpg.io.csic.es/facilities/"
+        ],
+        "http_status_checked": {
+          "https://lpg.io.csic.es/": 200,
+          "https://www.io.csic.es/research/project-and-knowledge-management-office-contact-point/": 200,
+          "https://lpg.io.csic.es/people/": 200,
+          "https://lpg.io.csic.es/facilities/": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "The group site does not mention waveguide writing or external users; its facilities list an 800 nm, 1 kHz amplifier. Their recent guides are in phosphate and designed silicate glasses, not fused silica or Eagle XG. Current affiliation of Macías-Montero not verified.",
+      "barrier_short": "Site mentions neither waveguides nor external users; glasses are phosphate/silicate, not fused silica.",
+      "fit_score": 3,
+      "fit_reason": "Spanish and active in fs-written passive and active guides in glass at 1534 nm, but not in fused silica and no stated external route.",
+      "not_verified": [
+        "fused silica or Eagle XG capability",
+        "cut-back set-up at 1550 nm",
+        "access terms"
+      ]
+    },
+    {
+      "rank": 10,
+      "id": "A9",
+      "name": "MQ Photonics, Macquarie University (Withford, Gross)",
+      "short_name": "MQ Photonics, Macquarie",
+      "category": "A",
+      "institution": "Macquarie University, School of Mathematical and Physical Sciences, Sydney",
+      "country": "Australia",
+      "leads_public": [
+        "Michael J. Withford",
+        "Simon Gross",
+        "Andrew Ross-Adams, Toney T. Fernandez (authors)"
+      ],
+      "why_fit": "Composite-morphology fs-written guides in boro-aluminosilicate glass: positive index change 1.12e-2 and the 1.0 dB/cm bend-loss radius reduced from 10 mm to 4 mm at 1550 nm (arXiv:2401.03382, abstract read). The same people run the OptoFab node (C3) and Modular Photonics (C2), so a request goes through one door.",
+      "evidence": [
+        {
+          "doi": "10.37188/lam.2024.009",
+          "cite": "Ross-Adams, Fernandez, Withford, Gross",
+          "shows": "affiliation MQ Photonics, Macquarie University (OpenAlex); abstract from arXiv:2401.03382.",
+          "crossref_ok": true,
+          "crossref_title": "Low bend loss, high index, composite morphology ultra-fast laser written waveguides for photonic integrated circuits",
+          "biblio": "Light: Advanced Manufacturing 5(1), 52 (2024)",
+          "doi_url": "https://doi.org/10.37188/lam.2024.009"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.mq.edu.au/faculty-of-science-and-engineering/departments-and-schools/school-of-mathematical-and-physical-sciences/our-research/mq-photonics/skills-and-capabilities",
+        "contact_page": "https://anff.org.au/get-in-touch/",
+        "other": [],
+        "http_status_checked": {
+          "https://www.mq.edu.au/faculty-of-science-and-engineering/departments-and-schools/school-of-mathematical-and-physical-sciences/our-research/mq-photonics/skills-and-capabilities": 403,
+          "https://anff.org.au/get-in-touch/": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration",
+        "via the ANFF OptoFab user facility"
+      ],
+      "barrier": "The Macquarie page returned HTTP 403 to the fetch tool, so its text was not read (URL taken from a search listing). Overlaps with C2 and C3.",
+      "barrier_short": "Page not readable (HTTP 403); same people as C2 and C3.",
+      "fit_score": 3,
+      "fit_reason": "Good 1550 nm glass-guide results; the practical door is the OptoFab node (C3), so scored below it.",
+      "not_verified": [
+        "page content",
+        "silica trench guides"
+      ]
+    },
+    {
+      "rank": 11,
+      "id": "A4",
+      "name": "PHotonic Instrumentation (PHI) Group, Institute of Photonics and Quantum Sciences, Heriot-Watt University",
+      "short_name": "PHI Group, Heriot-Watt",
+      "category": "A",
+      "institution": "Heriot-Watt University, Edinburgh",
+      "country": "United Kingdom",
+      "leads_public": [
+        "Robert R. Thomson (head of the group per the PHI site)"
+      ],
+      "why_fit": "Long-running ultrafast laser inscription (ULI) group for astrophotonics, clinical and quantum instruments: 3 dB asymmetric directional couplers in commercial Infrasil silica written with a 1030 nm laser (K-band, 2.0-2.4 um; straight-guide insertion loss about 1.2 +/- 0.5 dB) and fibre-connectorized beam combiners (about 1.1 dB insertion loss over 2-2.3 um).",
+      "evidence": [
+        {
+          "doi": "10.1364/josab.423727",
+          "cite": "Benoît, ..., Thomson",
+          "shows": "couplers in Infrasil silica, 1030 nm writing laser; Thomson affiliation Heriot-Watt (OpenAlex); abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Ultrafast laser inscription of asymmetric integrated waveguide 3 dB couplers for astronomical K-band interferometry at the CHARA array",
+          "biblio": "Journal of the Optical Society of America B 38(9), 2455 (2021)",
+          "doi_url": "https://doi.org/10.1364/josab.423727"
+        },
+        {
+          "doi": "10.1364/ao.510293",
+          "cite": "Siliprandi, MacLachlan, ...",
+          "shows": "fibre-connectorized K-band ULI beam combiner; abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Fiber-connectorized ultrafast-laser-inscribed K-band integrated optics beam combiner for the CHARA telescope array",
+          "biblio": "Applied Optics 63(1), 159 (2023)",
+          "doi_url": "https://doi.org/10.1364/ao.510293"
+        },
+        {
+          "doi": "10.1002/lpor.202300702",
+          "cite": "Sun, Moser, Jesacher, Salter, Thomson, Booth",
+          "shows": "fast, high-contrast writing scheme in optical glass (Thomson at Heriot-Watt); abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Fast, Precise, High Contrast Laser Writing for Photonic Chips with Phase Aberrations",
+          "biblio": "Laser & Photonics Reviews 18(9), 2300702 (2024)",
+          "doi_url": "https://doi.org/10.1002/lpor.202300702"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://phi.eps.hw.ac.uk/",
+        "contact_page": "https://phi.eps.hw.ac.uk/contacts.html",
+        "other": [
+          "https://phi.eps.hw.ac.uk/members.html"
+        ],
+        "http_status_checked": {
+          "https://phi.eps.hw.ac.uk/": 200,
+          "https://phi.eps.hw.ac.uk/contacts.html": 200,
+          "https://phi.eps.hw.ac.uk/members.html": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "Their silica results are at 2.0-2.4 um, not 1550 nm. The site states no collaboration or external-user policy.",
+      "barrier_short": "Silica results are at 2.0-2.4 um, not 1550 nm; no external-user policy.",
+      "fit_score": 3,
+      "fit_reason": "Strong silica ULI, coupler and 3D experience; wavelength and application focus differ.",
+      "not_verified": [
+        "1550 nm results",
+        "trench guides",
+        "external-user policy"
+      ]
+    },
+    {
+      "rank": 12,
+      "id": "A6",
+      "name": "Optoelectronics Research Centre (ORC), University of Southampton",
+      "short_name": "ORC, Univ. of Southampton",
+      "category": "A",
+      "institution": "University of Southampton",
+      "country": "United Kingdom",
+      "leads_public": [
+        "Martynas Beresna",
+        "Gilberto Brambilla",
+        "Timothy Lee, Qi Sun (authors)"
+      ],
+      "why_fit": "Fused-silica fs-written guides at 1550 nm with a microcrack to suppress bend loss: 1 dB/cm at 10 mm radius, stable after one year (abstract read via Europe PMC). T26 lists 0.15 dB/cm propagation loss at 1550 nm from the same paper. ORC states it supports industry with joint projects, consultancy and services, and that its cleanrooms and laser laboratories are available to academia and industry.",
+      "evidence": [
+        {
+          "doi": "10.1038/s41598-021-03116-y",
+          "cite": "Lee, Sun, Beresna, Brambilla",
+          "shows": "affiliation ORC, University of Southampton (Crossref/OpenAlex).",
+          "crossref_ok": true,
+          "crossref_title": "Low bend loss femtosecond laser written waveguides exploiting integrated microcrack",
+          "biblio": "Scientific Reports 11(1), 23770 (2021)",
+          "doi_url": "https://doi.org/10.1038/s41598-021-03116-y"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.southampton.ac.uk/about/faculties-schools-departments/optoelectronics-research-centre",
+        "contact_page": "https://www.southampton.ac.uk/about/contact",
+        "other": [],
+        "http_status_checked": {
+          "https://www.southampton.ac.uk/about/faculties-schools-departments/optoelectronics-research-centre": 200,
+          "https://www.southampton.ac.uk/about/contact": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration",
+        "services and consultancy (ORC statement)"
+      ],
+      "barrier": "The ORC page names a laser-direct-write sub-group but no femtosecond waveguide group; the most recent fs-waveguide output found is 2021. Post-Brexit contractual and funding mechanics.",
+      "barrier_short": "No current fs-waveguide group identified; latest output found is 2021.",
+      "fit_score": 3,
+      "fit_reason": "Verified 1550 nm silica work and an open-to-industry statement, but no current waveguide group identified.",
+      "not_verified": [
+        "current fs-waveguide group and equipment",
+        "output after 2021"
+      ]
+    },
+    {
+      "rank": 13,
+      "id": "B3",
+      "name": "LeapLab (Light-matter interactions and Extreme Application Photonics Laboratory), Universidad de La Laguna",
+      "short_name": "LeapLab, Univ. de La Laguna",
+      "category": "B",
+      "institution": "Universidad de La Laguna (Departamento de Física; IUDEA), Tenerife",
+      "country": "Spain",
+      "leads_public": [
+        "Airán Ródenas Seguí (leader per the ULL research portal)"
+      ],
+      "why_fit": "Ródenas is a co-author of a 2023 Optics Letters paper on chip-sized silica-glass 3D three-telescope beam combiners in the near-IR (3D routing avoids in-plane crossings) and works on 3D fs nanolithography; a search summary lists a 2025 master's thesis with him as advisor on optimising fs direct writing in fused silica (not opened). Earlier postdoc at Heriot-Watt; collaborates with Osellame's group.",
+      "evidence": [
+        {
+          "doi": "10.1364/ol.484270",
+          "cite": "Martin, Zhang, Bonduelle, ..., Rodenas, ..., Stoian, d'Amico",
+          "shows": "silica-glass 3D beam combiners; Ródenas affiliation Universidad de La Laguna (Crossref); fabrication site is not stated in the abstract.",
+          "crossref_ok": true,
+          "crossref_title": "Development of a 3D ultrafast laser written near-infrared spectro-interferometer",
+          "biblio": "Optics Letters 48(9), 2253 (2023)",
+          "doi_url": "https://doi.org/10.1364/ol.484270"
+        },
+        {
+          "doi": "10.1515/nanoph-2022-0665",
+          "cite": "Paz-Buclatin, ... (Universidad de La Laguna)",
+          "shows": "3D fs nanolithography in crystals; ULL affiliations in Crossref.",
+          "crossref_ok": true,
+          "crossref_title": "Circularly symmetric nanopores in 3D femtosecond laser nanolithography with burst control and the role of energy dose",
+          "biblio": "Nanophotonics 12(8), 1511-1525 (2023)",
+          "doi_url": "https://doi.org/10.1515/nanoph-2022-0665"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://portalciencia.ull.es/grupos/9234/detalle",
+        "contact_page": null,
+        "other": [
+          "https://extremelightblog.com/"
+        ],
+        "http_status_checked": {
+          "https://portalciencia.ull.es/grupos/9234/detalle": 200,
+          "https://extremelightblog.com/": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "The portal page does not list equipment, and the 2023 beam-combiner paper has Grenoble/Lyon co-authors, so it is not verified that LeapLab has its own fs-writing set-up for glass. No contact page verified (portal page and the lab blog only). Focus is crystals and extreme-environment photonics.",
+      "barrier_short": "Own glass-writing set-up unconfirmed; no contact page verified.",
+      "fit_score": 3,
+      "fit_reason": "Spanish, with silica 3D-routing and fs-writing expertise and links to Milan; own in-house glass-writing capacity unconfirmed.",
+      "not_verified": [
+        "in-house fs-writing system for glass",
+        "contact page"
+      ]
+    },
+    {
+      "rank": 14,
+      "id": "A7",
+      "name": "Institute of Applied Physics (Friedrich Schiller University Jena) with Fraunhofer IOF Jena, and University of Rostock (Szameit)",
+      "short_name": "Jena IAP / Fraunhofer IOF / Rostock",
+      "category": "A",
+      "institution": "Friedrich Schiller University Jena; Fraunhofer Institute for Applied Optics and Precision Engineering (IOF); University of Rostock",
+      "country": "Germany",
+      "leads_public": [
+        "Stefan Nolte (Fraunhofer IOF / Jena)",
+        "Alexander Szameit (Rostock)",
+        "Alessandro Alberucci, Chandroth P. Jisha (Jena IAP, authors)"
+      ],
+      "why_fit": "Fused-silica fs-written waveguide with an embedded liquid-crystal layer as a tunable waveplate, and single-shot segmented guides in glasses with controllable index contrast. Academic labs that routinely write waveguides in fused silica for photonic devices.",
+      "evidence": [
+        {
+          "doi": "10.1364/ome.507230",
+          "cite": "Lammers, Alberucci, Jisha, Szameit, Nolte",
+          "shows": "tunable waveplate in a fused-silica fs-written waveguide; abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Electro-optical control of polarization in femtosecond-laser written waveguides using an embedded liquid crystal cell",
+          "biblio": "Optical Materials Express 14(4), 836 (2024)",
+          "doi_url": "https://doi.org/10.1364/ome.507230"
+        },
+        {
+          "doi": "10.1063/5.0301051",
+          "cite": "Alasgarzade, Alberucci, Jisha, Nolte",
+          "shows": "single-shot segmented waveguides in glasses; abstract read; wavelength not stated.",
+          "crossref_ok": true,
+          "crossref_title": "Single-shot femtosecond-written segmented waveguides in amorphous materials",
+          "biblio": "APL Photonics 10(12), 121301 (2025)",
+          "doi_url": "https://doi.org/10.1063/5.0301051"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.iap.uni-jena.de/",
+        "contact_page": null,
+        "other": [
+          "https://www.iof.fraunhofer.de/en.html",
+          "https://www.physik.uni-rostock.de/en/"
+        ],
+        "http_status_checked": {
+          "https://www.iap.uni-jena.de/": 200,
+          "https://www.iof.fraunhofer.de/en.html": 200,
+          "https://www.physik.uni-rostock.de/en/": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "Neither paper reports 1550 nm loss; only institution home pages were verified (HTTP 200), no group contact page. No external-user policy found.",
+      "barrier_short": "No 1550 nm data; no group contact page verified.",
+      "fit_score": 3,
+      "fit_reason": "Active fs-writing in fused silica with a photonic-device focus; telecom loss data not found.",
+      "not_verified": [
+        "1550 nm loss data",
+        "group contact page",
+        "external-user policy"
+      ]
+    },
+    {
+      "rank": 15,
+      "id": "A8",
+      "name": "Femtosecond-laser group of Feng Chen, State Key Laboratory of Crystal Materials, Shandong University",
+      "short_name": "Feng Chen group, Shandong Univ.",
+      "category": "A",
+      "institution": "Shandong University, School of Physics, Jinan",
+      "country": "China",
+      "leads_public": [
+        "Feng Chen (last author)",
+        "Jiaxiang Zhou (first author)"
+      ],
+      "why_fit": "The only record found with 'telecom-band depressed-cladding waveguides' in a glass (SK1310) in the title, which is the geometry of the project's trench guides. Co-author with the Salamanca ALF group (for example Results in Physics 2021, entry B1).",
+      "evidence": [
+        {
+          "doi": "10.1016/j.optmat.2025.116651",
+          "cite": "Zhou, Liu, Cheng, Du, Wu, Wang, Lu, Zhang, Chen",
+          "shows": "telecom-band depressed-cladding waveguides and mode modulation in SK1310 glass; Shandong University affiliations (OpenAlex); no abstract in Crossref, so loss values were not read.",
+          "crossref_ok": true,
+          "crossref_title": "Femtosecond laser writing of telecom-band depressed-cladding waveguides and mode modulation in SK1310 glass",
+          "biblio": "Optical Materials 159, 116651 (2025)",
+          "doi_url": "https://doi.org/10.1016/j.optmat.2025.116651"
+        }
+      ],
+      "official_urls": {
+        "group_page": "http://www.en.phy.sdu.edu.cn/",
+        "contact_page": "https://www.phy.sdu.edu.cn/xygk/lxfs.htm",
+        "other": [],
+        "http_status_checked": {
+          "http://www.en.phy.sdu.edu.cn/": 200,
+          "https://www.phy.sdu.edu.cn/xygk/lxfs.htm": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "Paper not read (no abstract available); the School of Physics site has no page for the group's waveguide work. Practical: distance, language, shipping; export-control and institutional rules not checked.",
+      "barrier_short": "Paper unread (no abstract available); no group page; distance.",
+      "fit_score": 3,
+      "fit_reason": "Directly on-topic geometry at telecom wavelengths, reachable through an existing Salamanca collaboration; details unread.",
+      "not_verified": [
+        "loss values",
+        "operating-wavelength numbers",
+        "external-user policy"
+      ]
+    },
+    {
+      "rank": 16,
+      "id": "A5",
+      "name": "Jianrong Qiu's femtosecond-laser glass group, Zhejiang University / Zhejiang Lab",
+      "short_name": "Qiu group, Zhejiang Univ. / Zhejiang Lab",
+      "category": "A",
+      "institution": "Zhejiang University (State Key Laboratory of Modern Optical Instruments) and Zhejiang Lab, Hangzhou",
+      "country": "China",
+      "leads_public": [
+        "Jianrong Qiu (ZJU College of Optical Science and Engineering per a 2023 ZJU newsroom item)",
+        "Dezhi Tan (Zhejiang Lab / ZJU); Xiaoyu Sun, Zengling Li (authors)"
+      ],
+      "why_fit": "Record claim in silica glass: 0.07 dB/cm propagation loss, bend loss 0.001 dB/mm at 30 mm radius, effective writing speed 125 um/s, fan-out devices for 3D integration (abstract read). T26 notes that the 1550 nm attribution comes from citing papers, not from the abstract.",
+      "evidence": [
+        {
+          "doi": "10.1364/OL.470670",
+          "cite": "Tan, Sun, Li, Qiu",
+          "shows": "affiliations Zhejiang University / Zhejiang Lab (OpenAlex); abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Effectively writing low propagation and bend loss waveguides in the silica glass by using a femtosecond laser",
+          "biblio": "Optics Letters 47(18), 4766 (2022)",
+          "doi_url": "https://doi.org/10.1364/OL.470670"
+        },
+        {
+          "doi": "10.1364/OME.419945",
+          "cite": "Tan, Sun, Qiu",
+          "shows": "low-loss guides in silica glass, symmetric mode field.",
+          "crossref_ok": true,
+          "crossref_title": "Femtosecond laser writing low-loss waveguides in silica glass: highly symmetrical mode field and mechanism of refractive index change",
+          "biblio": "Optical Materials Express 11(3), 848 (2021)",
+          "doi_url": "https://doi.org/10.1364/OME.419945"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.zju.edu.cn/english/2023/0323/c19573a2731924/page.htm",
+        "contact_page": null,
+        "other": [],
+        "http_status_checked": {
+          "https://www.zju.edu.cn/english/2023/0323/c19573a2731924/page.htm": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "Test wavelength not in the abstract; Qiu's current affiliation is inconsistent across sources (ZJU in 2023; co-author Xiaoyu Sun is a PhD student in a Westlake University lab). No contact page verified. Practical: distance, language; export-control and institutional rules not checked.",
+      "barrier_short": "Test wavelength not stated; current affiliation unclear; distance.",
+      "fit_score": 3,
+      "fit_reason": "Strong silica results, but unconfirmed wavelength and no verified access route.",
+      "not_verified": [
+        "wavelength of the 0.07 dB/cm value",
+        "current affiliation",
+        "contact page"
+      ]
+    },
+    {
+      "rank": 17,
+      "id": "A10",
+      "name": "Programmable 3D photonic neural network chip (LAMP): Huazhong University of Science and Technology and Shanghai Jiao Tong University",
+      "short_name": "LAMP team: HUST + SJTU",
+      "category": "A",
+      "institution": "HUST Wuhan National Laboratory for Optoelectronics / Optics Valley Laboratory; Shanghai Jiao Tong University, Center for Integrated Quantum Information Technologies (IQIT)",
+      "country": "China",
+      "leads_public": [
+        "Xian-Min Jin (SJTU)",
+        "Jianji Dong, Xinliang Zhang (HUST)",
+        "Ziyu Cao (first author)"
+      ],
+      "why_fit": "8-layer 8x8 photonic-lantern cascade with heaters in glass, Nature Communications 17, 5476 (2026); T26 records 146 and 161 mW per pi. The SJTU side is an fs-writing group. Closest published match to coupon F in 3D.",
+      "evidence": [
+        {
+          "doi": "10.1038/s41467-026-72316-9",
+          "cite": "Cao, Du, Yuan, Wu, ..., Jin, Xu, Tang, Dong, Zhang",
+          "shows": "affiliations HUST and SJTU (OpenAlex); abstract not in Crossref; heater powers from the T26 records, not re-read.",
+          "crossref_ok": true,
+          "crossref_title": "Programmable Three-dimensional Photonic Neural Network Chip",
+          "biblio": "Nature Communications 17(1), 5476 (2026)",
+          "doi_url": "https://doi.org/10.1038/s41467-026-72316-9"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://doi.org/10.1038/s41467-026-72316-9",
+        "contact_page": null,
+        "other": [],
+        "http_status_checked": {
+          "https://doi.org/10.1038/s41467-026-72316-9": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "No group or contact page verified; paper not read here. Practical: distance, language; export-control and institutional rules not checked.",
+      "barrier_short": "No group or contact page verified; distance.",
+      "fit_score": 3,
+      "fit_reason": "High capability in programmable 3D glass circuits; access path unknown.",
+      "not_verified": [
+        "group page",
+        "fabrication glass and wavelength",
+        "external-user policy"
+      ]
+    },
+    {
+      "rank": 18,
+      "id": "C8",
+      "name": "Lasers4EU (successor of Laserlab-Europe transnational access)",
+      "short_name": "Lasers4EU",
+      "category": "C",
+      "institution": "Lasers4EU consortium; coordination office at the Max Born Institute, Berlin",
+      "country": "European Union (office in Germany)",
+      "leads_public": [
+        "not stated on the pages read"
+      ],
+      "why_fit": "Official page: central platform to 27 laser research infrastructures, three routes (single-instrument, multi-instrument, industry), proposals through the ARIA system, travel and accommodation covered per host practice, typical processing four to eight weeks, 20-month validity. A host could offer femtosecond micromachining, but the facility catalogue was not readable.",
+      "evidence": [
+        {
+          "url": "https://lasers4.eu/become-a-user/how-to-access/",
+          "cite": "Lasers4EU 'How to access', read 2026-10-13",
+          "shows": "access routes and eligibility as quoted; the majority of users must work in a different country from the host."
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://lasers4.eu",
+        "contact_page": "https://lasers4.eu/become-a-user/how-to-access/",
+        "other": [
+          "https://lasers4.eu/become-a-user/call-for-proposals/",
+          "https://lasers4.eu/find-a-lab/"
+        ],
+        "http_status_checked": {
+          "https://lasers4.eu": 200,
+          "https://lasers4.eu/become-a-user/how-to-access/": 200,
+          "https://lasers4.eu/become-a-user/call-for-proposals/": 200,
+          "https://lasers4.eu/find-a-lab/": 200
+        }
+      },
+      "collaboration_mode": [
+        "user facility network (transnational access)"
+      ],
+      "barrier": "No facility offering fs waveguide writing in glass was identified from the pages read. Access is for visits to a host abroad with scientific-merit review; eligibility of an independent researcher must be confirmed. A Politecnico di Milano project listing seen in search gives the programme dates as Oct 2024 - Sep 2028.",
+      "barrier_short": "No fs-waveguide facility identified; eligibility of an independent researcher unconfirmed.",
+      "fit_score": 2,
+      "fit_reason": "Real EU open-access route, but no waveguide-writing facility confirmed.",
+      "not_verified": [
+        "facility catalogue",
+        "eligibility of an independent researcher",
+        "any fs-waveguide facility"
+      ]
+    },
+    {
+      "rank": 19,
+      "id": "B4",
+      "name": "Photonics Team, CEIT-BRTA (Universidad de Navarra)",
+      "short_name": "CEIT-BRTA Photonics Team",
+      "category": "B",
+      "institution": "CEIT-BRTA, San Sebastián, associated with Universidad de Navarra",
+      "country": "Spain",
+      "leads_public": [
+        "Santiago M. Olaizola (leads the Photonics Team in the Microsystems unit since 2003 per a Warwick consortium page; principal investigator on the Universidad de Navarra portal)",
+        "Jorge Fantova, Ainara Rodríguez (authors)"
+      ],
+      "why_fit": "Fs processing of optical glasses with Bessel beams to generate embedded devices (Optics & Laser Technology 171, 2024); supervised theses on fs-inscribed volume gratings in glass. Applied and industry-facing (works with Basque and Spanish companies per the same Warwick page).",
+      "evidence": [
+        {
+          "doi": "10.1016/j.optlastec.2023.110475",
+          "cite": "Fantova, Rodríguez, del Hoyo, Mandayo, Olaizola",
+          "shows": "Bessel-beam embedded devices in optical glasses; abstract not in Crossref, content not read.",
+          "crossref_ok": true,
+          "crossref_title": "Bessel beams as a versatile tool to generate embedded devices in optical glasses",
+          "biblio": "Optics & Laser Technology 171, 110475 (2024)",
+          "doi_url": "https://doi.org/10.1016/j.optlastec.2023.110475"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.ceit.es/",
+        "contact_page": "https://www.ceit.es/acerca-de-ceit/contacto",
+        "other": [],
+        "http_status_checked": {
+          "https://www.ceit.es/": 200,
+          "https://www.ceit.es/acerca-de-ceit/contacto": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration",
+        "contract research (technology centre; not verified)"
+      ],
+      "barrier": "Evidence is for embedded gratings and Bessel-beam structures, not waveguides or 1550 nm; the lab page was not read.",
+      "barrier_short": "Evidence is for gratings and Bessel-beam structures, not waveguides or 1550 nm.",
+      "fit_score": 2,
+      "fit_reason": "Spanish glass fs-processing group, but waveguide and telecom evidence is missing.",
+      "not_verified": [
+        "waveguide writing",
+        "1550 nm",
+        "services offered"
+      ]
+    },
+    {
+      "rank": 20,
+      "id": "A11",
+      "name": "Quantum Optical Technologies Laboratory / Quantum Technology Centre, Lomonosov Moscow State University",
+      "short_name": "MSU Quantum Optical Technologies Lab",
+      "category": "A",
+      "institution": "Lomonosov Moscow State University, Moscow",
+      "country": "Russia",
+      "leads_public": [
+        "Sergei P. Kulik (head of the laboratory per its page)",
+        "Stanislav S. Straupe, Nikolay N. Skryabin, Sergey A. Zhuravitskii (authors)"
+      ],
+      "why_fit": "Fused-silica multiscan guides with 0.07 dB/cm propagation loss at 920 nm (per T26), mode overlap above 98.8 % with SMF, about 0.2 dB per facet, a fibre-coupled 25-channel interferometer under 1 dB insertion loss (arXiv:2408.06688 abstract read); programmable 8-port interferometer with 56 shifters (Photonics Research 2024, with the Russian Quantum Center). Not at 1550 nm.",
+      "evidence": [
+        {
+          "doi": "10.1103/PhysRevApplied.22.064079",
+          "cite": "Skryabin, Zhuravitskii, Dyakonov, Kalinkin, Straupe, Kulik",
+          "shows": "affiliations absent from Crossref; MSU Quantum Technology Centre per the lab page.",
+          "crossref_ok": true,
+          "crossref_title": "Femtosecond-laser-written low-loss multiscan waveguides in fused silica",
+          "biblio": "Physical Review Applied 22(6), 064079 (2024)",
+          "doi_url": "https://doi.org/10.1103/PhysRevApplied.22.064079"
+        },
+        {
+          "doi": "10.1364/PRJ.504588",
+          "cite": "Kondratyev, ..., Straupe, Kulik",
+          "shows": "8-port error-tolerant programmable interferometer at 920-980 nm (Russian Quantum Center, South Ural State University); abstract read.",
+          "crossref_ok": true,
+          "crossref_title": "Large-scale error-tolerant programmable interferometer fabricated by femtosecond laser writing",
+          "biblio": "Photonics Research 12(3), A28 (2024)",
+          "doi_url": "https://doi.org/10.1364/PRJ.504588"
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.qotlabs.org/en/",
+        "contact_page": "https://www.qotlabs.org/en/contacts",
+        "other": [
+          "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_1544"
+        ],
+        "http_status_checked": {
+          "https://www.qotlabs.org/en/": 200,
+          "https://www.qotlabs.org/en/contacts": 200,
+          "https://ec.europa.eu/commission/presscorner/detail/en/ip_22_1544": 200
+        }
+      },
+      "collaboration_mode": [
+        "academic collaboration"
+      ],
+      "barrier": "On 4 March 2022 the European Commission suspended cooperation with Russian entities in research, science and innovation (no new Horizon Europe contracts or agreements; payments suspended) and, with the fifth sanctions package of 8 April 2022, terminated participation of Russian public bodies in EU programmes. These are EU-programme measures; I did not verify whether they, or any other sanction or export rule, apply to a private collaboration between a Spanish independent researcher and MSU, nor their current status. Practical issues (payments, shipping, travel, institutional approval, reputation) need legal advice.",
+      "barrier_short": "EU suspended research cooperation with Russian entities in 2022 (applicability to a private collaboration unchecked); no 1550 nm data.",
+      "fit_score": 2,
+      "fit_reason": "Excellent capability, but a significant legal and practical barrier and no 1550 nm data.",
+      "not_verified": [
+        "current sanctions status for this institution",
+        "1550 nm capability"
+      ]
+    },
+    {
+      "rank": 21,
+      "id": "C6",
+      "name": "Ephos (glass photonic chips, Milan)",
+      "short_name": "Ephos",
+      "category": "C",
+      "institution": "Ephos (earlier named Faro Quantum Technologies, per press)",
+      "country": "Italy (Milan; a US entity is also mentioned in press)",
+      "leads_public": [
+        "Andrea Rocchetto (founder)",
+        "Francesco Ceccarelli, Giacomo Corrielli, Roberto Osellame (co-founders), per The Quantum Insider, 24 Sep 2024"
+      ],
+      "why_fit": "Press (24 Sep 2024): a Milan facility for glass-based quantum photonic circuits, 8.5 million USD seed. The founders come from the Politecnico/CNR-IFN group of entry A3.",
+      "evidence": [
+        {
+          "url": "https://thequantuminsider.com/2024/09/24/glass-based-photonic-chip-startup-ephos-secures-8-5m-to-innovate-quantum-computing-and-ai-infrastructure/",
+          "cite": "The Quantum Insider, 24 Sep 2024",
+          "shows": "company description and founders; the article does not mention femtosecond writing."
+        },
+        {
+          "url": "https://ephos.io/",
+          "cite": "Ephos website, read 2026-10-13",
+          "shows": "homepage text is only 'Glass Advanced Packaging' with Careers and Contact links; no product or service page, no statement on waveguide chips."
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://ephos.io/",
+        "contact_page": null,
+        "other": [
+          "https://ephos.io/careers"
+        ],
+        "http_status_checked": {
+          "https://ephos.io/": 200,
+          "https://ephos.io/careers": 200
+        }
+      },
+      "collaboration_mode": [
+        "commercial service (not stated by the company)"
+      ],
+      "barrier": "Its current website describes 'Glass Advanced Packaging' and offers no research service; the domain ephos.com is parked for sale. There is no contact page, only a mail link on the homepage (not copied here).",
+      "barrier_short": "Website now says only 'Glass Advanced Packaging'; no service offered.",
+      "fit_score": 2,
+      "fit_reason": "Strong team heritage, but nothing the company currently publishes offers external fabrication.",
+      "not_verified": [
+        "any current offer",
+        "pricing",
+        "access"
+      ]
+    },
+    {
+      "rank": 22,
+      "id": "C7",
+      "name": "LightFab (selective laser-induced etching of glass, Aachen)",
+      "short_name": "LightFab",
+      "category": "C",
+      "institution": "LightFab GmbH",
+      "country": "Germany",
+      "leads_public": [
+        "not stated on the pages read"
+      ],
+      "why_fit": "Official site: SLE process and 3D glass microfabrication for prototypes, small series and mass production, plus a job-shop; 'waveguide writing' is not stated on the pages read (a third-party profile lists it among the machine's uses).",
+      "evidence": [
+        {
+          "url": "https://lightfab.de/germany/",
+          "cite": "LightFab website, read 2026-10-13",
+          "shows": "SLE technology, prototyping and series, LightFab 3D printer; waveguide writing 'not stated'."
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://lightfab.de/germany/",
+        "contact_page": "https://lightfab.de/germany/",
+        "other": [],
+        "http_status_checked": {
+          "https://lightfab.de/germany/": 200
+        }
+      },
+      "collaboration_mode": [
+        "commercial service"
+      ],
+      "barrier": "Core offer is etched glass microstructures, not index-written guides; no waveguide service page or loss data found.",
+      "barrier_short": "Core offer is etched glass; no waveguide service advertised.",
+      "fit_score": 2,
+      "fit_reason": "Capability on paper (machine) but not advertised by the company.",
+      "not_verified": [
+        "waveguide writing service",
+        "loss data"
+      ]
+    },
+    {
+      "rank": 23,
+      "id": "C5",
+      "name": "Optoscribe (laser-written glass photonic components, Livingston)",
+      "short_name": "Optoscribe",
+      "category": "C",
+      "institution": "Optoscribe Ltd",
+      "country": "United Kingdom (Scotland)",
+      "leads_public": [
+        "Nick Psaila (CEO in March 2019 trade press)"
+      ],
+      "why_fit": "Trade press 2017-2020: laser direct-write glass-based integrated 3D photonic components for transceivers (multimode fan-outs, multicore-fibre fan-in/fan-out with Sumitomo Electric, OptoCplrLT glass coupling chip); third-generation inscription system in 2019.",
+      "evidence": [
+        {
+          "url": "https://www.laserfocusworld.com/articles/2019/03/optoscribe-expands-3d-component-manufacturing-capability-doubles-headcount.html",
+          "cite": "Laser Focus World, March 2019 (listed by search; not fetched)",
+          "shows": "expansion, cleanroom and third-generation inscription system."
+        }
+      ],
+      "official_urls": {
+        "group_page": "https://www.optoscribe.com/",
+        "contact_page": null,
+        "other": [],
+        "http_status_checked": {
+          "https://www.optoscribe.com/": "ERR:URLError"
+        }
+      },
+      "collaboration_mode": [
+        "commercial service (volume component supplier; custom service not verified)"
+      ],
+      "barrier": "Official site unreachable from this network on 2026-10-13 (connection refused or timeouts), so nothing was read from it; no 2025-2026 news found; business is high-volume transceiver parts.",
+      "barrier_short": "Official site unreachable; no recent news; volume transceiver business.",
+      "fit_score": 2,
+      "fit_reason": "Real fs-writing company, but no evidence of research-scale custom runs.",
+      "not_verified": [
+        "current status",
+        "custom prototyping offer",
+        "contact page"
+      ]
+    }
+  ],
+  "checked_not_ranked": [
+    {
+      "name": "Universidad de Zaragoza, I3A (Juan A. Vallés, David Benedicto)",
+      "country": "Spain",
+      "reason": "Co-author with IO-CSIC on the 1534 nm coupler (10.3390/mi14071370); fabrication affiliation is IO-CSIC, so folded into B2. No independent fs-writing equipment found."
+    },
+    {
+      "name": "Universidad Complutense de Madrid, Física de Materiales (Belén Sotillo, Jesús del Hoyo)",
+      "country": "Spain",
+      "reason": "Co-authors of the IO-CSIC thermophoretic-writing papers; folded into B2. No group page or equipment page found."
+    },
+    {
+      "name": "ICV-CSIC (Instituto de Cerámica y Vidrio; Francisco Muñoz)",
+      "country": "Spain",
+      "reason": "Glass-composition partner in the IO-CSIC papers (10.1038/s41598-021-87765-z); a possible supplier of designed glasses, not a writing lab."
+    },
+    {
+      "name": "ICFO (Hugues de Riedmatten, Samuele Grandi)",
+      "country": "Spain",
+      "reason": "User of laser-written circuits made in Milan (10.1088/2515-7647/ad82c2); no in-house fs-writing in glass found."
+    },
+    {
+      "name": "Universidad Politécnica de Madrid, Laser Micro- and Nano-manufacturing Laboratory (manager Carlos Molpeceres)",
+      "country": "Spain",
+      "reason": "Page lists a 1030 nm femtosecond source (EKSPLA Femtolux 30) and 'any type of material'; glass and waveguide writing not stated, no fs-waveguide publication found. Contact route: https://www.upm.es/recursosidi/solicitud"
+    },
+    {
+      "name": "Universitat Jaume I; Universitat de València; Universitat Politècnica de València",
+      "country": "Spain",
+      "reason": "OpenAlex hits are fibre Bragg gratings, fibre sensors and users of Heriot-Watt photonic lanterns, not planar fs-written guides in glass."
+    },
+    {
+      "name": "Universitat Rovira i Virgili (FiCMA; Xavier Mateos, Magdalena Aguiló, Francesc Díaz)",
+      "country": "Spain",
+      "reason": "Crystal waveguide lasers, written with the Salamanca group; no glass work found."
+    },
+    {
+      "name": "Universidad de Cantabria (Photonics Engineering Group)",
+      "country": "Spain",
+      "reason": "Ultrafast inscription in optical fibres, not planar glass."
+    },
+    {
+      "name": "Centro de Láseres Pulsados (CLPU), Salamanca (ICTS)",
+      "country": "Spain",
+      "reason": "Competitive open access through its FARO application (VEGA petawatt systems); ALF-USAL lists it as a collaborator and the CDTI catalogue names a ULAMP micro-processing service (not read). No waveguide capability verified. https://www.clpu.es/"
+    },
+    {
+      "name": "Leibniz-Institut für Astrophysik Potsdam (AIP), ultrafast laser inscription facility",
+      "country": "Germany",
+      "reason": "arXiv:2609.16419 (2026) commissions type-I waveguide writing in silica glass for the J-band (1300-1400 nm); propagation loss not reported; external access not stated."
+    },
+    {
+      "name": "Vilnius University Laser Research Center, femtosecond micromachining facility",
+      "country": "Lithuania",
+      "reason": "Four Yb:KGW sources (1030 nm with harmonics); waveguide writing not explicitly stated; the Center lists Laserlab-Europe open-access status. https://www.ff.vu.lt/en/lrc/expertise-and-services/femtosecond-micromachining-facility"
+    },
+    {
+      "name": "Translume (Ann Arbor)",
+      "country": "United States",
+      "reason": "Website advertises fused-silica micromachining, microfluidics and ion traps; waveguides and wavelengths not stated. Contact page https://translume.com/contact"
+    },
+    {
+      "name": "Shanghai Optoweave Technology (company co-author of 10.1002/adpr.70241)",
+      "country": "China",
+      "reason": "Paper reports 0.13 dB/cm waveguides and 0.06 dB coupling loss at 1310 nm in a 3D glass FI/FO chip; company services not assessed."
+    },
+    {
+      "name": "ACTPHAST 4.0",
+      "country": "European Union",
+      "reason": "SME-oriented photonics innovation hub; sources conflict on whether it still operates (end dates 2021-2023 listed); no fs-glass service confirmed."
+    }
+  ],
+  "could_not_verify": [
+    "Optoscribe: official site unreachable from this network (connection refused or timeouts); description is from 2017-2020 trade press only.",
+    "Ephos: current homepage says only 'Glass Advanced Packaging'; the 2024 press description (glass quantum photonic circuits, Milan) could not be matched to any current service. ephos.com is parked for sale; the company site is ephos.io.",
+    "Macquarie MQ Photonics page returned HTTP 403 to the fetch tool; the ANFF OptoFab access-and-pricing PDF is image-only and unreadable; no fee or international-user term was read for ANFF.",
+    "Modular Photonics contact page returns 403 to scripted requests (read with the fetch tool, which succeeded).",
+    "Test wavelength not in the abstract: Joanneum (borosilicate PICs), Tan/Qiu (0.07 dB/cm), Jena/Rostock papers; Zhou et al. (Shandong, telecom-band depressed cladding) has no abstract in Crossref or OpenAlex, so no loss value was read.",
+    "Affiliation of Ackermann et al. (Opt. Lett. 50, 2506) is empty in Crossref and OpenAlex; EPFL Galatea was confirmed through the same first author's CLEO/Europe 2025 record (DOI 10.1109/cleo/europe-eqec65582.2025.11109929).",
+    "ALF-USAL: the group site names no leader; the regional science portal names Luis Plaja Rustein and may be out of date.",
+    "LeapLab (ULL): no equipment page or confirmed in-house fs-writing system for glass; HUST/SJTU, Zhejiang and Jena/Rostock: no group contact page verified.",
+    "OptoFab node director: the ANFF node page names Simon Gross, other sources name Michael Withford.",
+    "No prices, lead times or availability were read for any commercial entity (FEMTOprint, Modular Photonics, Joanneum, LightFab, Optoscribe, Ephos).",
+    "MSU: the EU measures cited are from the Commission's March and April 2022 announcements; current status and applicability to a private collaboration were not checked.",
+    "Details from T26 (records.json) were not re-read: 0.15 dB/cm (Southampton), 0.07 dB/cm at 920 nm (MSU), heater powers (LAMP, Milan), 56 shifters (Kondratyev)."
+  ],
+  "email_drafts": {
+    "en": {
+      "words": 207,
+      "text": "Subject: Request for a small pilot: fs-written trench waveguides in silica, cut-back at 1550 nm\n\nDear [Prof./Dr. Name],\n\nI am Francisco Angulo de Lafuente, an independent researcher in Spain. I am looking for a laboratory to run one physical test for an open study of femtosecond-laser-written optical networks in glass.\n\nAlready public: a preregistered numerical study; four registered tests designed to refute its own claims (one withdrew an energy-advantage claim); a verified literature review; registered predictions of the 1550 nm loss of trench (depressed-cladding) guides, fixed before any measurement; and a fabrication dossier.\n\nThe request: a pilot run of about three chips with straight trench guides at four lengths (1-4 cm), written in the glass and with the laser recipe you judge best, plus a cut-back measurement at 1550 nm. Optionally, a coupon of waveguide crossings in series. I do not prescribe writing parameters.\n\nIn return: co-authorship under CRediT roles agreed beforehand, open raw data and code, and a registered prediction that your data can confirm or refute. Negative results are published on the same terms.\n\nRepository and dossier: https://github.com/Agnuxo1/Silice-Neuro3D-Cube (Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md)\n\nIf this fits your group, or you know who it would fit, I would be grateful for a short reply.\n\nKind regards,\nFrancisco Angulo de Lafuente\n"
+    },
+    "es": {
+      "words": 213,
+      "text": "Asunto: Propuesta de un piloto: guías de trinchera escritas con láser de femtosegundo en sílice, medida cut-back a 1550 nm\n\nEstimado/a [Prof./Dr./Dra. Nombre]:\n\nSoy Francisco Angulo de Lafuente, investigador independiente en España. Busco un laboratorio que haga una prueba física para un estudio abierto sobre redes ópticas escritas con láser de femtosegundo en vidrio.\n\nYa es público: un estudio numérico prerregistrado; cuatro pruebas registradas para refutar sus propias afirmaciones (una retiró una ventaja energética); una revisión bibliográfica verificada; predicciones registradas de la pérdida a 1550 nm de guías de trinchera (revestimiento deprimido), fijadas antes de medir; y un dossier de fabricación.\n\nLo que pido: un piloto de unos tres chips con guías de trinchera rectas en cuatro longitudes (1-4 cm), escritas en el vidrio y con la receta que ustedes consideren mejor, y una medida de cut-back a 1550 nm. Opcionalmente, un cupón de cruces de guías en serie. No impongo parámetros de escritura.\n\nA cambio: coautoría (roles CRediT acordados antes), datos en bruto y código abiertos, y una predicción registrada que sus datos pueden confirmar o refutar. Los resultados negativos se publican en las mismas condiciones.\n\nRepositorio y dossier: https://github.com/Agnuxo1/Silice-Neuro3D-Cube (Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md)\n\nSi encaja con su grupo, o sabe a quién, le agradecería una breve respuesta.\n\nUn saludo cordial,\nFrancisco Angulo de Lafuente\n"
+    }
+  }
+}
