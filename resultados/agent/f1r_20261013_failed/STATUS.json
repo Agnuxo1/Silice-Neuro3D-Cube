@@ -1,0 +1,12 @@
+{
+ "experiment_id": "T01_F1R_d16_fine_time_replacement_20261013",
+ "commitment_commit": "55450dc1a9b7065142693c664ee5def054fd51a0",
+ "status": "failed_operational",
+ "failed_chunk": "P6_32768 part022",
+ "cause": "worker resource guard at chunk end: available RAM below 3 GiB during a spike from other processes (numerical chunk completed, field saved, power check passed)",
+ "completed_chunks": 21,
+ "elapsed_s": 2797.4078082999913,
+ "finished_utc": "2026-10-13T03:12:58.392462+00:00",
+ "superseded_by": "T01_F1R2 (retry rule for resource-guard failures only)",
+ "note": "A failed execution cannot pass; chunk files renamed with .txt to keep them out of *.log ignore rules."
+}
