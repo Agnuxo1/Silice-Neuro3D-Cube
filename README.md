@@ -296,6 +296,45 @@ Autoría, roles y uso de IA: [CONTRIBUTORS.md](CONTRIBUTORS.md). Cómo citar el 
 
 ## Hoja de ruta
 
+Estado a 13 de octubre de 2026. Detalle y evidencia de cada punto en el [registro de afirmaciones](Docs/CIERRE-20261012/CLAIMS-TABLE-20261013-final.md) y en [`Docs/CIERRE-20261012/`](Docs/CIERRE-20261012/).
+
+**Hecho (cierre de la guía v2)**
+
+- [x] Kit de cierre [`agentkit/`](agentkit/), idéntico a la guía, con 61 pruebas en Windows y Linux (CI)
+- [x] Pruebas de descarte prerregistradas: profundidad y cruces 3D frente a plano (T25), calibración in situ en modelo (T27), energía por operación (T24, **resultado negativo**) y estado del arte con 31 referencias verificadas (T26)
+- [x] Diseño de la guía de trinchera (T20D) y enmienda A1 de H1, fechada antes de medir
+- [x] Revisión adversarial (T30) y afirmación central corregida (delimitación, no novedad)
+- [x] Registro de 41 afirmaciones, manuscrito corto y [paper completo para revisión](paper/full/paper.pdf)
+- [x] Licencia [Apache-2.0](LICENSE)
+- [x] [Dossier de fabricación](Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md) y [laboratorios candidatos](Docs/CIERRE-20261012/LAB-PARTNERS-20261013.md) (nadie contactado todavía)
+
+**En curso**
+
+- [ ] F1R2: repetición registrada de F1 (convergencia temporal D16, h = 0,35 µm) en CPU local. Los resultados de Colab se perdieron y el primer intento (F1R) falló por memoria; ambos están documentados.
+
+**Pendiente: trabajo numérico**
+
+- [ ] T01: convergencia espacial S16 y malla reservada de 0,28 µm (después de F1R2)
+- [ ] T03: frontera, campo y fase conjuntos en guías
+- [ ] T04: descomposición biortogonal con los modos con fuga de GLASS-010
+- [ ] T06: contraste vectorial independiente (FEM de Nédélec o método de disparo)
+- [ ] T07: acoplador con puertos modales (GLASS-006b)
+- [ ] T12 y T16: red con referencias de ganancia igualada y test reservado
+- [ ] H-C: calibración con N = 16 y 32 y bucle ruidoso de solo intensidades
+
+**Pendiente: laboratorio (necesita un socio)**
+
+- [ ] Cutback ciego a 1550 nm de guías de trinchera de 12 y 16 µm (H1-A ≤ 0,3 dB/cm; H1-SOTA ≤ 0,06 dB/cm)
+- [ ] Pérdida por etapa de una malla MZI escrita, que decide la parte (b) de la afirmación central, y cruces en serie y transiciones 3D, que deciden la parte (c)
+- [ ] Perfil de índice medido (T05) y registro entre caras (T09)
+
+**Pendiente: externo**
+
+- [ ] Revisión humana externa del paper, reproducción independiente (T21) y archivo con DOI
+
+<details>
+<summary>Hoja de ruta anterior (10 de octubre de 2026, conservada)</summary>
+
 - [x] BPM escalar paraxial + segundo solver radial + solver 2D independiente
 - [x] Camisa continua y de trazos discretos (modelo ideal)
 - [x] Observable con área parcial y perfil por cobertura (009b/d, réplica GLASS-007 V2)
@@ -306,4 +345,6 @@ Autoría, roles y uso de IA: [CONTRIBUTORS.md](CONTRIBUTORS.md). Cómo citar el 
 - [ ] Red 3D pequeña con tarea congelada, separando detección y no linealidad
 - [ ] Fabricación: fuera del alcance actual
 
-Repositorio remoto: [`Agnuxo1/Silice-Neuro3D-Cube`](https://github.com/Agnuxo1/Silice-Neuro3D-Cube) (repositorio público; los resultados revisados se publican en **main**. La **licencia** sigue pendiente).
+</details>
+
+Repositorio remoto: [`Agnuxo1/Silice-Neuro3D-Cube`](https://github.com/Agnuxo1/Silice-Neuro3D-Cube) (repositorio público; los resultados revisados se publican en **main**). Licencia: **Apache-2.0** ([LICENSE](LICENSE), [NOTICE](NOTICE)).
