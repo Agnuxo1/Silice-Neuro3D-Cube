@@ -1,0 +1,29 @@
+{
+  "scope": "review candidate, not fabrication-ready",
+  "files": {
+    "archive/pdf-v1/FEMTO1_candidate_drawing.pdf": "b4219b0e0f3a089eef0858c50a353ace11b36b0150f767e5430b3def895e4a15",
+    "archive/pdf-v1/SIMULATION-REVIEW.pdf": "a073064222a3416fafe3f1c25f1d62f485a1c249bd3920350f01a5f0a1584c84",
+    "COLLABORATION-PROPOSAL-DRAFT.md": "17505192614b365c222c7a0f104408edffc81abbaa8978bf3dab809a402c5a67",
+    "coupler_specification.csv": "94a616444378802df1bac76a892675e1536bf8f773e1cf05fd1d1e3c44a1a1d5",
+    "F5-SOLVER-AND-BENCH-PLAN.md": "88f609a2fcd88b5e600bc691b6fda561d5a225aa3007e0492c6651744c091c6d",
+    "FEMTO1_candidate_centerlines.dxf": "4a088cf914c0657c36bd4f7d95a9050b59c651bdbeb8af0836fcbb46a557e428",
+    "FEMTO1_candidate_drawing.pdf": "4d593379092a35c87d037711fc222e4cc81679cbd6d9d934660983ccdcd5c7b6",
+    "FEMTO1_candidate_geometry_um.json": "a9874bbed57727348731c0dee51eb209456d867e05aff813f63f217de561e2d7",
+    "FEMTO1_candidate_geometry_um.json.sha256": "cd87c0e36ef8ac076acff2653606e9c82751a609c63dcbfcd58b65a7b6cddb6d",
+    "FEMTO1_candidate_trajectories.csv": "3e1626162a6273d7820e882d74adc5ec24dfce4a507371caeb3b0a051f62a305",
+    "INDEPENDENT-REVIEW.md": "7489dc5f22d6a0ad9cdd9a94dca9d4f1cbaf7afef7f282e9f3017e64757f04e8",
+    "README.md": "d3ed8e0b4fde3d2ec72a8af77b6e3413ba02571f6a352a1691aa40df7e79a973",
+    "REIMPORT-REVIEW.json": "06209c2f3c129a0be3ecce85048ce2624f78809dff3e48329664f8d967a8c9e7",
+    "SIMULATION-REVIEW.pdf": "1316d927151843c1bdf892b88549f1d1a2d8f5843e2f5de7c513aaf7da753a73",
+    "SPEC-FEMTO1-PRELIMINARY.md": "3a31f41f5b955057729972311b95c62b9adf76b69c3178637a3ca093a89a87c8",
+    "STATUS.md": "717d3348ae613017c0f616bbc2ea6b47e4e24bdfb3725a655abb4d25fd9b7c73"
+  },
+  "manifest_sha256": "1cb6769698fba45309177c8eacf19453799eca630f72f9293b50cd6451b58103",
+  "total_bytes": 231673166,
+  "owner_signature": false,
+  "PDF_visual_review": "drawing and both final report pages inspected; no clipping/overlap",
+  "STEP_complete": false,
+  "DXF_independent_reimport": false,
+  "Blender_roundtrip_executed": false,
+  "sent_to_FEMTOPRINT": false
+}

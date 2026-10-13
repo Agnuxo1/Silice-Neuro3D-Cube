@@ -25,3 +25,6 @@ agentkit/*.txt text eol=lf
 requirements/agentkit-*.lock text eol=lf
 # Closure evidence (agent, 2026-10-12+) is hashed byte-for-byte; keep it raw.
 resultados/agent/** -text whitespace=cr-at-eol
+# FEMTO-1 reviewer evidence retains the exact bytes cited by its manifest.
+Docs/FEMTO1/review-evidence/** -text whitespace=cr-at-eol
+scripts/femto1/run_pipeline.sh text eol=lf

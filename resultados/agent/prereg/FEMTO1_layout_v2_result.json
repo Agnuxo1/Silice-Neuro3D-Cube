@@ -1,0 +1,15 @@
+{
+  "experiment_id": "FEMTO1-LAYOUT-REPAIR-20261013-v2",
+  "protocol_sha256": "252a0b9cd3fb34ca2d0b6618c88da0c1f76d19cfe3420ed95411d73ff08833a6",
+  "scope": "Provisional layout; retain failed DRC and unknown supplier constraints",
+  "status": "completed",
+  "artifacts": [
+    "resultados/codex/femto1_layout_20261013_v2/DRC.json"
+  ],
+  "metrics": {
+    "weight_max_abs_error": 1.1102230246251565e-16,
+    "drc_error_count": 18,
+    "supplier_rules_confirmed": false
+  },
+  "fabrication_ready": false
+}
