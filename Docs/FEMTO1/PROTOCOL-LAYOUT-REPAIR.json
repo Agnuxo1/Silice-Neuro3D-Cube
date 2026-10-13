@@ -1,0 +1,35 @@
+{
+  "experiment_id": "FEMTO1-LAYOUT-REPAIR-20261013-v2",
+  "task_id": "F3_serialization_repair",
+  "model": "Identical geometry and DRC; NumPy scalars converted to Python scalars",
+  "units": "m SI internally",
+  "scope": "Provisional layout; retain failed DRC and unknown supplier constraints",
+  "criteria": [
+    {
+      "id": "weight_max_abs_error",
+      "operator": "le",
+      "threshold": 1e-10
+    },
+    {
+      "id": "drc_error_count",
+      "operator": "le",
+      "threshold": 0
+    },
+    {
+      "id": "supplier_rules_confirmed",
+      "operator": "eq",
+      "threshold": true
+    }
+  ],
+  "resource_limits": {
+    "threads": 1,
+    "ram_GiB": 1.5,
+    "wall_s": 1200
+  },
+  "heldout_policy": "No test access. Same saved F2 matrices; no retraining.",
+  "repair_of": "FEMTO1-LAYOUT-NOISE-20261013-v1",
+  "changes": "Serialization only, no threshold/model change.",
+  "planned_artifacts": [
+    "resultados/codex/femto1_layout_20261013_v2/DRC.json"
+  ]
+}
