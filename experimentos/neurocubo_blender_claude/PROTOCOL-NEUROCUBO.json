@@ -1,0 +1,178 @@
+{
+  "experiment_id": "NEUROCUBO_blender_numerical_neural_model_20261013",
+  "task_id": "NEUROCUBO (T12/T16/T27 follow-up: functional numerical twin built and trained in Blender)",
+  "scope": "numerical_neural_model",
+  "model": "Digital twin of a silica optical-optoelectronic network. Geometry built in Blender 4.5.14 LTS (bpy); objects and their SI custom properties are the source of truth and are exported to JSON with SHA-256. Transfer derived from geometry: couplers by coupled-mode theory with kappa(g) interpolated from finite-difference supermode values of a scalar step-index analogue (core radius 6 um, i.e. 12 um diameter, n1 = 1.444, n2 = 1.439, V = 2.92, not strictly single-mode) giving 471.64 1/m at g = 14 um centre-to-centre (FD vs CMT within 0.08 %, model-to-model, not measured; no extrapolation outside 14-20 um); balanced coupler length pi/(4 kappa) = 1.665 mm; arm phases 2 pi n_eff L / lambda (n_eff = 1.44219, lambda = 1550 nm, n0 = 1.444) plus heater phase phi; path lengths ASSUMED matched (not true of the drawn S-bends, see limits); coupling in the S-bend access regions not modelled; loss 0.35 dB per MZI stage (nominal value cited in T24, Ceccarelli et al. 2020). MZI convention and Clements ordering of agentkit.mzi. Network: signed real amplitude-encoded input on n modes -> Clements mesh n x n -> detection and signed-field push-pull MZM re-emission a = cos(0.5 (pi I / V_pi + bias)) with V_pi = 1 (normalized intensity units) and bias = 0 (agentkit.learning_v2 convention; requires a phase-referenced carrier, T12 point 7) -> second mesh -> intensities -> logits = G * I[ports 0..3] -> softmax cross-entropy. Trainable parameters: all heater phases (2 n^2). Training: L-BFGS-B (learning_v2 options gtol 1e-8, ftol 1e-12) with exact analytic gradients through the meshes, run inside Blender background Python on one thread; phases written into the heater objects and keyframed at every iteration. This is a numerical model: no device, no measurement, no render-engine physics.",
+  "units": {
+    "length": "m",
+    "phase": "rad",
+    "intensity": "normalized (input features have unit training std)",
+    "accuracy": "fraction of test samples"
+  },
+  "data": {
+    "development_control": "dev03: sklearn digits classes 0-3 (720 images). Already used in this project (F3, T12, guide section 44); development control, not independent evidence.",
+    "reserved": "res47: sklearn digits classes 4-7 (723 images). Never used in this project. The dataset is public; independence is only from this project's past choices.",
+    "partitions": "stratified 60/20/20 per class, seed 20261013 (custodian.py seal); standardization, PCA (4 or 8 components) and per-component scaling fitted on the training partition only; N = 4 uses 4 components, N = 8 uses 8 components; 4 classes read on output ports 0-3.",
+    "custody": "test labels of both tasks are kept outside the repository (D:/PROJECTS/.cognition/neurocubo/sealed) with salted SHA-256 commitments in data/<task>/manifest.json (dev03 e614f97b4303ab48ec9ec405f9a641ff06defe1609342ab2f14549a971ca71fe, res47 b39c8354342a21526b8f98ddba6b4a6e0c75b5cc9d0648e750dca84fc4c6be66); custodian.py reveal releases them once per task, only after the frozen predictions file exists, and records the hash of that file. This is an ORDER-OF-EVENTS and integrity commitment, NOT secrecy: sklearn digits is public and the public test features and indices allow anyone to recover the labels. The custody documents the honest execution order."
+  },
+  "configurations": [
+    "dev03_N4",
+    "dev03_N8",
+    "res47_N4",
+    "res47_N8"
+  ],
+  "training_protocol": {
+    "optical": "readout gain grid G in {1, 4, 16}; seeds 1-8 per gain; phases initialized U(0, 2 pi); maxiter 5000; convergence = optimizer success and max |gradient| <= 1e-5. Per gain the selected start is the minimum training loss among converged starts (learning_v2 rule); across gains the minimum validation cross-entropy among converged selections. A configuration without a converged selection is reported as not converged.",
+    "references": {
+      "majority": "most frequent training class",
+      "logistic": "sklearn LogisticRegression C = 1, lbfgs, max_iter 10000; unconstrained gain counted as a resource (parameters and weight spectral norm reported)",
+      "mlp": "sklearn MLPClassifier, one tanh hidden layer of n units, lbfgs, alpha 1e-4, max_iter 5000, seeds 1-8, selected by validation log-loss; unconstrained gain counted as a resource",
+      "real_matched": "same topology and activation with real weights W = eta Q1 diag(cos t) Q2^T (spectral norm <= eta, the optical layer's transmission), same G grid, seeds, iterations, convergence and selection as the optical model (gain-matched reference, 2 n^2 parameters). Trained with the Python bundled with Blender (3.11.15, NumPy 1.26.4, SciPy 1.13.1), the same numerical stack as the optical training (without bpy), so the L-BFGS-B implementation is identical.",
+      "environment_note": "majority, logistic and MLP run in the venv (Python 3.13.7, NumPy 2.2.6, SciPy 1.15.1, scikit-learn 1.6.1); every reference file records its stack."
+    }
+  },
+  "benchmark": {
+    "test_access": "benchmark.py run evaluates every frozen model once on each sealed test set and refuses to run twice; nothing is refit after a reveal.",
+    "metrics": "accuracy (Clopper-Pearson 95 % interval), balanced accuracy and macro F1 (bootstrap 95 %, 2000 resamples, seed 20261013), confusion matrices; paired differences optical minus reference with agentkit.learning.paired_accuracy (2000 bootstrap resamples, seed 20261013).",
+    "equivalence": "Blender outputs (phases read from the objects) versus an independent CPU path outside Blender (agentkit.mzi.clements_reconstruct for each mesh): identical predictions and max |output difference| <= 1e-12 on logits and intensities.",
+    "robustness": "Gaussian coupler-angle errors with a shared device component (correlation 0.8, as T27), sigma in {0, 0.01, 0.02, 0.05} rad, 20 realizations per sigma with fixed seeds; without recalibration (frozen phases) and with recalibration as an ORACLE UPPER BOUND (all phases re-optimized on the training set on the erroneous device with exact knowledge of its transfer, start = frozen phases, maxiter 500, T27 strategy B; a real loop would only see measured outputs; recalibration runs in the venv stack). DAC quantization of the frozen phases to 8, 10 and 12 bits over 2 pi on the ideal device.",
+    "responses": "res47 with N = 8 (N = 4 also listed): first three test examples per class (12) with input image, the n output intensities, softmax, predicted and true class; all failed test examples listed.",
+    "cost": "CPU simulation time per inference on one thread inside and outside Blender; explicitly NOT optical latency or energy.",
+    "resume": "If metric computation fails after a reveal, `benchmark.py metrics` recomputes the report from the hashed frozen predictions and the revealed labels; no model is evaluated again."
+  },
+  "criteria": [
+    {
+      "id": "geometry_reconstruction_error_max",
+      "operator": "le",
+      "threshold": 1e-10,
+      "meaning": "transfer rebuilt from Blender-exported geometry vs target unitaries (3 Haar targets x 2 layers x N in {4, 8}), spectral norm"
+    },
+    {
+      "id": "gradient_check_relative_error_max",
+      "operator": "le",
+      "threshold": 1e-06,
+      "meaning": "analytic vs central-difference gradient, optical and real_matched, N = 4 and 8, with coupler errors"
+    },
+    {
+      "id": "blender_cpu_predictions_identical",
+      "operator": "eq",
+      "threshold": true
+    },
+    {
+      "id": "blender_cpu_max_abs_output_difference",
+      "operator": "le",
+      "threshold": 1e-12
+    },
+    {
+      "id": "optical_configs_converged_fraction",
+      "operator": "ge",
+      "threshold": 1.0,
+      "meaning": "fraction of the four configurations whose selected start meets max |gradient| <= 1e-5"
+    },
+    {
+      "id": "reserved_optical_cp_low_minus_majority_min",
+      "operator": "ge",
+      "threshold": 0.0,
+      "meaning": "min over N of (Clopper-Pearson 95 % lower bound of optical test accuracy on res47) minus (majority-class baseline test accuracy)"
+    },
+    {
+      "id": "reserved_recal_drop_sigma002_max",
+      "operator": "le",
+      "threshold": 0.02,
+      "meaning": "max over N of the mean res47 test-accuracy drop at sigma = 0.02 with recalibration"
+    },
+    {
+      "id": "reserved_dac10_drop_max",
+      "operator": "le",
+      "threshold": 0.01,
+      "meaning": "max over N of the res47 test-accuracy drop with a 10-bit phase DAC"
+    }
+  ],
+  "predictions_three_zone": {
+    "rule": "Non-inferiority with margin 0.05 on (reference - candidate) accuracy, paired bootstrap 95 % CI (agentkit.learning.paired_accuracy): CONFIRMED if the upper bound <= 0.05, FALSIFIED if the lower bound > 0.05, INCONCLUSIVE otherwise (agentkit.stats.three_zone_decision). Superiority of the candidate: lower bound of (candidate - reference) > 0. Descriptive predictions, not pass/fail criteria; no multiplicity correction is claimed; with n = 148 the power to CONFIRM non-inferiority is low.",
+    "predicted": {
+      "optical_vs_logistic": {
+        "dev03_N4": "FALSIFIED",
+        "res47_N4": "FALSIFIED",
+        "dev03_N8": "INCONCLUSIVE",
+        "res47_N8": "INCONCLUSIVE",
+        "basis": "prior development control: unitary_mzm_signed 73.2 % validation vs real-weight 84.5 % on dev03 with 4 features"
+      },
+      "optical_vs_real_matched": {
+        "all_four_configurations": "no optical superiority (first_superior = false)"
+      },
+      "mlp_vs_logistic": {
+        "all_four_configurations": "CONFIRMED or INCONCLUSIVE (MLP not inferior by more than 0.05)"
+      }
+    }
+  },
+  "pre_commit_checks": "Software only: core tests (analytic vs central-difference gradients <= 1.4e-9; geometry round trip 1.6e-15 in the core and 1.8e-15 through Blender objects; agreement with learning_v2.unitary_mzm_signed and agentkit.mzi.clements_reconstruct); Blender build of the nominal N = 4 and N = 8 geometries (geometry_N4.json, geometry_N8.json); full pipeline dry runs (training in Blender, references, Blender evaluation, benchmark, metrics resume, figures, a test render) on synthetic random data (task syn) in a scratch directory. Independent pre-registration review (subagent, synthetic checks only, no access to the sealed labels): no blocking finding; its should-fix items (custody wording, core radius, numerical stack of the gain-matched reference, S-bend limits, operational predictions, complete commitment sources) and minor items (oracle wording, resumable metrics, pipeline failure handling, task-independent robustness seeds) were applied before this commitment. No project data were used for training or evaluation before this commitment; sealing only partitioned the data and fitted the preprocessing on the training partitions.",
+  "resource_limits": {
+    "cpu_threads": 1,
+    "seconds": 14400,
+    "gpu": false,
+    "render": "Blender EEVEE/Cycles still images and a short video only through the GPU queue gpuq.py (presentation, not evidence)"
+  },
+  "heldout_policy": "Sealed labels, one reveal per task after frozen predictions are hashed, one benchmark run; failures retained; thresholds never changed after results.",
+  "limits_declared": [
+    "kappa(g) and n_eff come from a scalar step-index analogue (core radius 6 um, V = 2.92, not strictly single-mode), cross-validated model-to-model only; fs-written anisotropic profiles are not modelled.",
+    "Coupling inside the S-bend access regions is not modelled (estimated about 0.12 rad of extra coupler angle per coupler, systematic, larger than the largest tested random sigma of 0.05 rad).",
+    "Path-length matching is assumed: the drawn S-bends are about 0.24 um longer than a straight idle guide (about 5.5 rad per column); a real layout needs compensation sections.",
+    "0.35 dB per stage is one literature value for fs-written EAGLE XG borosilicate with about 45 mm bend radius; the drawn S-bends have a minimum radius of about 8 mm, whose bend loss is not modelled.",
+    "Thermal crosstalk between heaters, polarization, crossings and vertical coupling between depths are not modelled.",
+    "The optoelectronic stage (detectors, MZMs, phase-referenced carrier) is external electronics; its V_pi, bias stability and noise are assumptions; no detector noise is simulated.",
+    "Recalibration results are an oracle upper bound (exact transfer of the erroneous device).",
+    "The cube side follows from the component lengths (about 40 mm for N = 4 and 75 mm for N = 8); each layer is planar, at two depths.",
+    "No energy, speed or physical advantage is claimed; CPU time is simulation cost."
+  ],
+  "planned_artifacts": [
+    "resultados/agent/neurocubo_20261013/checks/geometry_roundtrip.json",
+    "resultados/agent/neurocubo_20261013/checks/core_tests.json",
+    "resultados/agent/neurocubo_20261013/training/candidates_dev03_N4.json",
+    "resultados/agent/neurocubo_20261013/training/candidates_dev03_N8.json",
+    "resultados/agent/neurocubo_20261013/training/candidates_res47_N4.json",
+    "resultados/agent/neurocubo_20261013/training/candidates_res47_N8.json",
+    "resultados/agent/neurocubo_20261013/training/trajectory_selected_dev03_N4.npz",
+    "resultados/agent/neurocubo_20261013/training/trajectory_selected_dev03_N8.npz",
+    "resultados/agent/neurocubo_20261013/training/trajectory_selected_res47_N4.npz",
+    "resultados/agent/neurocubo_20261013/training/trajectory_selected_res47_N8.npz",
+    "resultados/agent/neurocubo_20261013/models/model_dev03_N4.json",
+    "resultados/agent/neurocubo_20261013/models/model_dev03_N8.json",
+    "resultados/agent/neurocubo_20261013/models/model_res47_N4.json",
+    "resultados/agent/neurocubo_20261013/models/model_res47_N8.json",
+    "resultados/agent/neurocubo_20261013/references/references_dev03_N4.json",
+    "resultados/agent/neurocubo_20261013/references/references_dev03_N8.json",
+    "resultados/agent/neurocubo_20261013/references/references_res47_N4.json",
+    "resultados/agent/neurocubo_20261013/references/references_res47_N8.json",
+    "resultados/agent/neurocubo_20261013/references/real_matched_dev03_N4.json",
+    "resultados/agent/neurocubo_20261013/references/real_matched_dev03_N8.json",
+    "resultados/agent/neurocubo_20261013/references/real_matched_res47_N4.json",
+    "resultados/agent/neurocubo_20261013/references/real_matched_res47_N8.json",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_dev03_N4.npz",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_dev03_N8.npz",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_res47_N4.npz",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_res47_N8.npz",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_dev03_N4.json",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_dev03_N8.json",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_res47_N4.json",
+    "resultados/agent/neurocubo_20261013/blender_eval/outputs_res47_N8.json",
+    "resultados/agent/neurocubo_20261013/benchmark/phase_a_info.json",
+    "resultados/agent/neurocubo_20261013/benchmark/predictions_frozen_dev03.npz",
+    "resultados/agent/neurocubo_20261013/benchmark/predictions_frozen_res47.npz",
+    "resultados/agent/neurocubo_20261013/benchmark/revealed_test_labels_dev03.npz",
+    "resultados/agent/neurocubo_20261013/benchmark/revealed_test_labels_res47.npz",
+    "resultados/agent/neurocubo_20261013/benchmark/reveal_receipt_dev03.json",
+    "resultados/agent/neurocubo_20261013/benchmark/reveal_receipt_res47.json",
+    "resultados/agent/neurocubo_20261013/benchmark/benchmark.json",
+    "resultados/agent/neurocubo_20261013/figures/fig1_training.png",
+    "resultados/agent/neurocubo_20261013/figures/fig2_responses_res47_N8.png",
+    "resultados/agent/neurocubo_20261013/figures/fig3_robustness.png",
+    "resultados/agent/neurocubo_20261013/figures/fig4_confusion.png",
+    "resultados/agent/neurocubo_20261013/figures/fig5_phases.png",
+    "resultados/agent/neurocubo_20261013/render/neurocube_N4_still.png",
+    "resultados/agent/neurocubo_20261013/render/neurocube_N8_still.png",
+    "resultados/agent/neurocubo_20261013/render/neurocube_N8_training.mp4",
+    "Docs/CIERRE-20261012/NEUROCUBO-BLENDER.md",
+    "Docs/CIERRE-20261012/NEUROCUBO-RESUMEN-FRAN.md"
+  ]
+}
