@@ -1,0 +1,199 @@
+{
+  "experiment_id": "FEMTO1-F1F2-20261013-v1",
+  "task_id": "mnist03_new_procedural_split",
+  "model": "fixed nonnegative incoherent 16-to-4 intensity classifier; 48 directional couplers; exactly four positive gains plus four electronic offsets",
+  "units": {
+    "geometry": "m SI internally; um exports",
+    "wavelength": "m",
+    "power": "W",
+    "accuracy": "fraction"
+  },
+  "scope": "Prospective new split after exploratory MNIST use. Numerical engineering evidence; no independently unseen dataset or fabricated device claim. Stage-specific source commitments required before physical/layout validation.",
+  "target_accuracy": 0.88,
+  "target_basis": "Fixed before this run from guide's prior exploratory MNIST accuracy; not retrospectively chosen from validation",
+  "criteria": [
+    {
+      "id": "ideal_loss_pp",
+      "operator": "le",
+      "threshold": 0.03
+    },
+    {
+      "id": "kappa10_recalibrated_loss_pp",
+      "operator": "le",
+      "threshold": 0.02
+    },
+    {
+      "id": "sealed_labels_unrevealed",
+      "operator": "eq",
+      "threshold": true
+    }
+  ],
+  "resource_limits": {
+    "cpu_threads": 1,
+    "ram_requested_GiB": 1.2,
+    "wall_training_s": 1200,
+    "gpu": "queue only; no GPU required for F1/F2",
+    "data_storage": "D: only",
+    "no_dependency_installs": true
+  },
+  "heldout_policy": {
+    "prior_use": "MNIST was used for exploratory fitting and evaluation. Official test already explored; exclude it from this run.",
+    "source_pool": "Official 60000 training records only; classes 0-3",
+    "split": "stratified 60/20/20 train/validation/test; separate 20% of training as calibration",
+    "seed": 20261013,
+    "minimum_test": 2000,
+    "seal": "salted SHA256 outside repository; no test labels read outside custodian; public test features not accessed during training",
+    "custody_limit": "Same host and public source labels allow recovery; procedural seal, not independent security or independent external custody",
+    "one_shot": "Final Blender predictions before reveal, after F0/F3/F5 dependencies satisfied. Any later change after reveal requires a new dataset/protocol, never reuse test for selection."
+  },
+  "training": {
+    "logistic_C": [
+      0.1,
+      1,
+      10
+    ],
+    "logistic_maxiter": 1000,
+    "mlp_seeds": [
+      20261013,
+      20261014
+    ],
+    "mlp_hidden": 16,
+    "mlp_maxiter": 200,
+    "noise_fine_tune": {
+      "samples": 1024,
+      "realizations": 8,
+      "maxiter": 30,
+      "sigma_kappa": 0.1,
+      "correlation": 0.8,
+      "tia_sigma": 0.05,
+      "seed": 20261013,
+      "gradient": "analytic",
+      "nominal_tree": "keep structural zero per column; global scaling only"
+    },
+    "selection": {
+      "development_MC_realizations": 16,
+      "development_MC_seed": 20261014,
+      "eligibility": "uncalibrated ideal accuracy >= nominal logistic -0.03",
+      "objective": "mean calibrated accuracy at sigma_kappa=.1",
+      "tie": "nominal candidate"
+    },
+    "readout": {
+      "parameters": 8,
+      "positive_gains": true,
+      "offsets": true,
+      "maxiter": 120,
+      "regularizer": 0.00001,
+      "calibration_source": "dedicated subset of training only"
+    }
+  },
+  "tolerances": {
+    "sigma_kappa": [
+      0,
+      0.05,
+      0.1,
+      0.2,
+      0.4
+    ],
+    "realizations": 200,
+    "correlation": 0.8,
+    "seed": 20261015,
+    "distribution": "Gaussian relative kappa as exploratory model; clip negative multipliers to zero; not a supplier tolerance distribution",
+    "tia_sigma_fullscale_input": 0.05,
+    "leakage": {
+      "required_in_F6": true,
+      "levels": [
+        0,
+        0.01,
+        0.02
+      ]
+    },
+    "gap_error_um": [
+      0.25,
+      0.5,
+      1
+    ],
+    "source_power_max_W": 0.01
+  },
+  "stage_acceptance": {
+    "F0": "written supplier formats and rules",
+    "F2": {
+      "ideal_gap_max": 0.03,
+      "kappa10_calibrated_gap_max": 0.02
+    },
+    "F3": {
+      "weight_max_abs_error": 1e-10,
+      "drc_errors": 0,
+      "provisional_min_radius_m": 0.025,
+      "provisional_interbundle_spacing_m": 0.00003,
+      "curve_sample_spacing_m": 0.00001
+    },
+    "F4": {
+      "roundtrip_weight_abs_error": 1e-12,
+      "geometry_hash_identical": true,
+      "cpu_prediction_abs_error": 1e-12,
+      "sealed_evaluation_once": true
+    },
+    "F5": {
+      "split_absolute_difference": 0.02,
+      "spectral_nm": [
+        1530,
+        1550,
+        1570
+      ],
+      "polarizations": 2,
+      "coherent_interference_fraction_max": 0.01,
+      "profile": "supplier confirmed; modes and access-bend coupling included"
+    },
+    "F6": {
+      "mean_accuracy_min": 0.85,
+      "worst_polarization_min": 0.85,
+      "source_power_max_W": 0.01,
+      "unresolved_blockers": 0
+    },
+    "F7": {
+      "csv_abs_error_um": 0.01,
+      "cad_abs_error_um": 0.5,
+      "confirmed_format": true,
+      "manifest_sha256": true
+    },
+    "C1": {
+      "weight_relative_RMS_max": 0.05,
+      "zero_leakage_max": 0.01
+    },
+    "C2": {
+      "paired_noninferiority_margin": 0.03,
+      "confidence": 0.95,
+      "minimum_test": 2000
+    },
+    "C3": {
+      "bench_latency_max_s": 2e-9,
+      "measured_at_protocol_power": true
+    },
+    "C4": {
+      "matched_chain_modeled_energy_ratio_min": 3,
+      "include_source_and_boundary": true
+    }
+  },
+  "design_clarifications": [
+    "N3 normalized class prototypes shifted by common column minimum and one global scale preserves argmax and leaves at most three useful leaves; original means retained for presentation.",
+    "No per-column rescaling: it changes the classifier.",
+    "N4 uniform four detector leaves without discard uses a different leaf mapping.",
+    "F4 final sealed benchmark deferred until F5 corrections stop, resolving guide conflict between one-shot test and repeating F3/F4 after corrections.",
+    "F0 response must replace provisional kappa/profile and DRC before manufacturing readiness.",
+    "N2 may be provisional kappa precompensation only; not measured process correction."
+  ],
+  "planned_artifacts": [
+    "resultados/codex/femto1_20261013/F2_validation.json",
+    "resultados/codex/femto1_20261013/RUN.json",
+    "resultados/codex/femto1_20261013/W_main.npy",
+    "resultados/codex/femto1_20261013/W_nominal.npy",
+    "resultados/codex/femto1_20261013/W_noise_aware.npy",
+    "resultados/codex/femto1_20261013/W_signed.npy",
+    "resultados/codex/femto1_20261013/W_proto.npy",
+    "resultados/codex/femto1_20261013/prototype_means.npy",
+    "resultados/codex/femto1_20261013/prototype_normalized.npy",
+    "resultados/codex/femto1_20261013/validation_power.npz",
+    "resultados/codex/femto1_20261013/MC_validation.npz",
+    "resultados/codex/femto1_20261013/readout_nominal.npz"
+  ]
+}
