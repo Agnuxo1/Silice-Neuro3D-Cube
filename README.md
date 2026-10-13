@@ -9,6 +9,7 @@
 ![gpu](https://img.shields.io/badge/GPU-rasterizaci%C3%B3n_calibrada-34d399)
 ![tests](https://img.shields.io/badge/tests_CPU-51_pasan-34d399)
 ![evidencia](https://img.shields.io/badge/fallos-retenidos-fbbf24)
+![licencia](https://img.shields.io/badge/license-Apache--2.0-blue)
 
 [Closure 2026-10-13 (EN)](#scientific-closure-20261013) · [Idea](#la-idea) · [Laboratorio actual](#laboratorio-20261009) · [Cómo funciona](#cómo-funciona-en-8-gifs) · [Resultados](#resultados-hasta-hoy) · [Reproducir](#reproducir) · [Método](#método-y-colaboración) · [Hoja de ruta](#hoja-de-ruta)
 
@@ -47,7 +48,7 @@ python -B -m unittest agentkit.test_v1 agentkit.test_v2
 python -B experimentos/t25_escalado_claude/run_t25.py --outdir <new folder>
 ```
 
-**Open decisions for the owner:** license (none yet, so reuse needs permission), archive with DOI, fabrication partner. Reports: [`Docs/CIERRE-20261012/`](Docs/CIERRE-20261012/). Spanish summary: [`RESUMEN-PARA-FRAN.md`](Docs/CIERRE-20261012/RESUMEN-PARA-FRAN.md).
+**License:** [Apache License 2.0](LICENSE) for the whole repository (code, documents, figures and data; see [NOTICE](NOTICE)). **Open decisions for the owner:** archive with DOI, fabrication partner. Reports: [`Docs/CIERRE-20261012/`](Docs/CIERRE-20261012/). Spanish summary: [`RESUMEN-PARA-FRAN.md`](Docs/CIERRE-20261012/RESUMEN-PARA-FRAN.md).
 
 ---
 

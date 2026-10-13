@@ -7,6 +7,7 @@ date-released: "2026-10-13"
 authors:
   - family-names: "Angulo de Lafuente"
     given-names: "Francisco"
+license: Apache-2.0
 repository-code: "https://github.com/Agnuxo1/Silice-Neuro3D-Cube"
 url: "https://github.com/Agnuxo1/Silice-Neuro3D-Cube"
 keywords:
