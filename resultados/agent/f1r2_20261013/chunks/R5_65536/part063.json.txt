@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "case": "R5_65536",
+  "index": 63,
+  "started_utc": "2026-10-13T07:31:06.845712+00:00",
+  "previous_report_path": "R5_65536/part062.json",
+  "previous_report_sha256": "c5c6f92c19e9cceb9f5a50d52727f02c25c7453490e06a67d02e6bbc51508320",
+  "resource_start": {
+    "utc": "2026-10-13T07:31:06.859124+00:00",
+    "available_ram_bytes": 7896481792,
+    "free_disk_bytes": 305928863744
+  },
+  "physical_power": 0.9846330176326339,
+  "previous_power": 0.9858584218180395,
+  "steps_done": 32256,
+  "dt_m": 3.0517578125e-08,
+  "resource_end": {
+    "utc": "2026-10-13T07:33:07.881560+00:00",
+    "available_ram_bytes": 6050099200,
+    "free_disk_bytes": 305928658944
+  },
+  "field_path": "R5_65536/part063.npz",
+  "field_sha256": "1bb615791fdeddd89b020a8a8b5bbd8549576d906d040fc28fe8050897d9453d",
+  "elapsed_s": 121.13820139999734
+}
