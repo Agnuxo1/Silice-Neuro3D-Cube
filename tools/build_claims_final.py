@@ -1,7 +1,9 @@
 """Final-stage updates for tools/build_claims_ledger.py (closure of 2026-10-13).
 
 Each update replaces a baseline claim by its state after the registered tests
-T24-T27, T20D and the T30 review. Statements are scoped to their evidence.
+T24-T27, T20D, the T30 review and
+F1R2 (T01), plus the license decision, CI evidence (T23) and the partner
+list (T28) of 2026-10-13 (ledger 20261013b). Statements are scoped to their evidence.
 """
 from __future__ import annotations
 
@@ -43,13 +45,17 @@ def update(claims: list[dict], ev, task) -> list[dict]:
         ev(sim, "resultados/agent/t20_trench_width_20261013/results.json",
            how="python -B experimentos/t20_diseno_claude/run_trench_width.py (commitment ba039e0)")]
 
-    put(task("T01", "numerical_wave_model", "OPEN",
+    put(task("T01", "numerical_wave_model", "PARTIAL",
              "D16 (Q4) spatial convergence of the T96 waveguide model is established, including the F1 fine-grid run, the S16 reserved prediction and a domain study.",
              "F1 unrecoverable without a registered replacement run, or any registered temporal/spatial criterion fails.",
              [ev(sim, "experimentos/glass009d_claude/RESULTADOS-T96-Q4-AUDITORIA.md"),
-              ev("decision_record", "Docs/CIERRE-20261012/T01-F1-OPERATIONAL-RECORD.md", how="Search record of 2026-10-12")],
-             "F1 is an operational loss for this closure (last verified 96/192 fields); no prefix recovered.",
-             "Titular downloads F1 from Colab/Drive if it exists; otherwise a new registered run F1R with resumable checkpoints."))
+              ev("decision_record", "Docs/CIERRE-20261012/T01-F1-OPERATIONAL-RECORD.md", how="Search record of 2026-10-12"),
+              ev(sim, "resultados/agent/f1r2_20261013/integrity_audit.json",
+                 how="python -B run_f1r2.py run, then audit (commitment 1c068ec; Codex's worker unchanged, SHA-checked; one CPU thread, 23273 s of 32000 s)"),
+              ev(sim, "Docs/CIERRE-20261012/T01-F1R2-RESULTS.md", how="Result report of F1R2"),
+              ev("review_record", "resultados/agent/prereg/F1R2_audit.json", how="agentkit.prereg audit --query-server --require-published")],
+             "F1 recovered by F1R2: all five registered F1 criteria met at h = 0.35 um (relative field difference 1.35e-5 <= 1e-4; power differences 3.8e-9 and 1.3e-7 <= 1e-6; PSD bounds 4.7e-6 and 8.5e-6 <= 1e-5), integrity audit PASS, 8 resource-guard retries kept; F1R (failed at chunk 22) retained. Time discretization at one mesh only; not a continuous error bound; fields kept outside the repository (hashes committed).",
+             "Register the K16 spatial series and the S16 reserved prediction before generating h = 0.28 um; domain study."))
     put(task("T19", "scientific_claim", "OPEN",
              "The project has an original contribution verified against the literature.",
              "A verified prior record covers the claimed contribution.",
@@ -91,17 +97,33 @@ def update(claims: list[dict], ev, task) -> list[dict]:
              t27_evidence,
              "Registered model criteria met (audit PASS, see C-HC-model); the task asks for measured error models, which do not exist, and it depends on T12 (FAIL). Fails at sigma 0.05 rad with independent errors (2.3e-3); 8-bit DAC floor about 2e-4.",
              "Measured splitter errors and a measured calibration loop on a fabricated mesh."))
+    put(task("T23", "software", "PASS",
+             "The integrity tools of kit v2 (git-anchored preregistration, blind analysis, claims ledger, decision statistics) pass their 29 tests and the 32 kit v1 tests pass, on Windows 10 with the pinned environment and in CI on windows-2022 and ubuntu-24.04.",
+             "Any kit test fails on a supported platform, or a documented attack on prereg/blind/claims succeeds.",
+             [ev("software_test", "resultados/agent/kit_validation_windows_20261012/test_v2_windows.txt",
+                 how="python -B -m unittest agentkit.test_v2 -v; Windows 10, CPython 3.13.7, NumPy 2.2.6, SciPy 1.15.1, one BLAS thread"),
+              ev("software_test", "resultados/agent/kit_validation_windows_20261012/test_v1_windows.txt",
+                 how="python -B -m unittest discover -s tests -p test_agentkit.py -v (guide extraction layout)"),
+              ev("software_test", "resultados/agent/kit_validation_ci_20261012/ci_run_38312740345.txt",
+                 produced_by="GitHub Actions (workflow agentkit.yml), log retrieved by Claude",
+                 how="Run 38312740345 at 48566e4: kit byte-identical to the guide, 32 + 29 tests on windows-2022 and ubuntu-24.04, CPython 3.13.7, hash-checked pinned dependencies")],
+             "Software scope only; the residual prereg limit (a protocol first committed after the data) remains.",
+             "External timestamp for confirmatory commitments."))
     put(task("T28", "fabricable_design", "PARTIAL",
              "A fabrication and collaboration dossier specifies coupons, chips, measurements, blind analysis and data policy.",
              "The dossier omits a quantity needed by the decisive test.",
-             [ev("decision_record", "Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md", how="Dossier of 2026-10-12; no laboratory contacted")],
-             "Not reviewed by a laboratory; recipe left to the partner.", "Titular authorizes a contact; partner review."))
+             [ev("decision_record", "Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md", how="Dossier of 2026-10-12; no laboratory contacted"),
+              ev("decision_record", "Docs/CIERRE-20261012/LAB-PARTNERS-20261013.md",
+                 how="Candidate partner list of 2026-10-13: 23 candidates scored 1-5 from public sources, 34 DOIs re-fetched from Crossref; nobody contacted"),
+              ev("decision_record", "resultados/agent/partners_20261013/partners.json", how="Machine-readable candidate table behind LAB-PARTNERS-20261013.md")],
+             "Not reviewed by a laboratory; recipe left to the partner; no candidate scored 5/5.",
+             "Titular authorizes a contact (draft emails in LAB-PARTNERS-20261013.md); partner review."))
     put(task("T29", "decision", "PASS",
              "The titular decided on disclosure before new public results: open publication ordered on 2026-10-12, no patent protection requested.",
              "New results published without a recorded titular decision.",
              [ev("decision_record", "Docs/CIERRE-20261012/T29-DISCLOSURE-DECISION.md",
                  produced_by="Francisco Angulo de Lafuente (titular), recorded by Claude", how="Chat instruction of 2026-10-12, quoted verbatim")],
-             "Not legal advice; license still pending (separate claim C-LICENSE).", "License decision."))
+             "Not legal advice; license decided on 2026-10-13 (Apache-2.0, separate claim C-LICENSE).", "None."))
     put(task("T30", "review", "PARTIAL",
              "An adversarial review and pre-mortem of the central claim were performed and answered in writing.",
              "Objections left unanswered or the claim not revised where an objection holds.",
@@ -148,11 +170,14 @@ def update(claims: list[dict], ev, task) -> list[dict]:
          "evidence": t20d_evidence + [ev("decision_record", "Docs/CIERRE-20261012/H1-AMENDMENT-A1-20261013.md", how="Dated amendment before any measurement")],
          "limitations": "Needs a margin of hundredths of dB/cm: tens of chips if sigma between chips is 0.02-0.05 dB/cm (T28 table).",
          "next_action": "Pilot of 3 chips to estimate sigma; then the registered number of chips."})
-    put({"id": "C-LICENSE", "scope": "decision", "status": "OPEN",
-         "statement": "The repository has a license chosen by the titular.",
-         "falsifier": "No license file after the titular's decision.",
-         "evidence": [], "limitations": "Proposal in Docs/LICENCIA-PROPUESTA.md (Apache-2.0 code, CC-BY-4.0 documents) not applied.",
-         "next_action": "Titular decision."})
+    put({"id": "C-LICENSE", "scope": "decision", "status": "PASS",
+         "statement": "The repository has a license chosen by the titular: Apache License 2.0 for the whole repository (code, documents, figures, animations and data), with a NOTICE file.",
+         "falsifier": "No license file after the titular's decision, or a license file different from the recorded decision.",
+         "evidence": [ev("decision_record", "Docs/CIERRE-20261012/LICENSE-DECISION-20261013.md",
+                         produced_by="Francisco Angulo de Lafuente (titular), recorded by Claude",
+                         how="Chat instruction of 2026-10-13, quoted verbatim; LICENSE body hash checked against GitHub's Apache-2.0 text")],
+         "limitations": "Not legal advice; the earlier CC-BY-4.0 proposal for documents and data (Docs/LICENCIA-PROPUESTA.md) is not applied; cited third-party works are not covered.",
+         "next_action": "None."})
     for cid in ("C-T20-H1",):
         if cid in by_id:
             claims[by_id[cid]]["status"] = "WITHDRAWN"

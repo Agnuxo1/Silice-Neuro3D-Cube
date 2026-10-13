@@ -1,0 +1,1001 @@
+{
+ "schema": 1,
+ "project_agents": [
+  "Claude",
+  "Codex",
+  "JEV"
+ ],
+ "stage": "final",
+ "built": "2026-10-12",
+ "claims": [
+  {
+   "id": "T01",
+   "scope": "numerical_wave_model",
+   "status": "PARTIAL",
+   "statement": "D16 (Q4) spatial convergence of the T96 waveguide model is established, including the F1 fine-grid run, the S16 reserved prediction and a domain study.",
+   "falsifier": "F1 unrecoverable without a registered replacement run, or any registered temporal/spatial criterion fails.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/glass009d_claude/RESULTADOS-T96-Q4-AUDITORIA.md",
+     "sha256": "716df3467e410ca50f674ee5acd23e93a05f0992ad97d38da82091aad3fa3b2d",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    },
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/T01-F1-OPERATIONAL-RECORD.md",
+     "sha256": "1ad9bffce2e3f0d6438fc84d55849b5afedfe7c6c16b5040bd3c2100027638f5",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Search record of 2026-10-12"
+    },
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/f1r2_20261013/integrity_audit.json",
+     "sha256": "4fdbf57f62ba12116a1bfe3a1f4203a7e6c889ad37da0d1ae434171bceb591df",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B run_f1r2.py run, then audit (commitment 1c068ec; Codex's worker unchanged, SHA-checked; one CPU thread, 23273 s of 32000 s)"
+    },
+    {
+     "kind": "simulation",
+     "path": "Docs/CIERRE-20261012/T01-F1R2-RESULTS.md",
+     "sha256": "e218fccb8f4138d22b6f31a66a657ce1bfc859eceac1f4312d52349ddff8d3cc",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Result report of F1R2"
+    },
+    {
+     "kind": "review_record",
+     "path": "resultados/agent/prereg/F1R2_audit.json",
+     "sha256": "fb3554aabcf7e1522395908c054da863a006478dd3ec2797c094fe988358c2c4",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "agentkit.prereg audit --query-server --require-published"
+    }
+   ],
+   "limitations": "F1 recovered by F1R2: all five registered F1 criteria met at h = 0.35 um (relative field difference 1.35e-5 <= 1e-4; power differences 3.8e-9 and 1.3e-7 <= 1e-6; PSD bounds 4.7e-6 and 8.5e-6 <= 1e-5), integrity audit PASS, 8 resource-guard retries kept; F1R (failed at chunk 22) retained. Time discretization at one mesh only; not a continuous error bound; fields kept outside the repository (hashes committed).",
+   "next_action": "Register the K16 spatial series and the S16 reserved prediction before generating h = 0.28 um; domain study.",
+   "depends_on": []
+  },
+  {
+   "id": "T02",
+   "scope": "numerical_wave_model",
+   "status": "PARTIAL",
+   "statement": "The modal sweep of the 20 GLASS-006a geometries selects modes with justified residuals and tracked branches.",
+   "falsifier": "A selected mode fails its residual or branch tracking, or a 'no mode' case is presented as absence of a physical mode.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/glass006a_claude/RESULTADOS-BARRIDO-MODAL.md",
+     "sha256": "66eda46f379dd18262d0b65c96f4652cafef14ff40b21e561fd2a76c44bc84df",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "18 cases selected, 2 without selection; P-B4 judged with a declared relative criterion (the absolute one fails by units).",
+   "next_action": "Adjoint modes and eigenvalue condition for leaky cases; publish 'no candidate passed this rule' for the two cases.",
+   "depends_on": [
+    "T01"
+   ]
+  },
+  {
+   "id": "T03",
+   "scope": "numerical_wave_model",
+   "status": "PARTIAL",
+   "statement": "Field, phase, detector and boundary have a joint validity domain for the guide and coupler geometries of the network.",
+   "falsifier": "Registered field/phase/return thresholds fail in the common observation region.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/frontera_claude/RESULTADOS-ABSORBENTE.md",
+     "sha256": "26c2e5404c11be18e0c79ce09d871d63170dbc1a3f784483f39d835e91c8b807",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    },
+    {
+     "kind": "simulation",
+     "path": "experimentos/frontera_claude/RESULTADOS-ABSORBENTE-FASE.md",
+     "sha256": "a4b07f9a4713023cd687edb5d82a2a525f4fc3aff98ab8b99efdcfccfe40c745",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "1D PML law |r| = R0^sin(theta) holds; vacuum validation of the 009c absorber failed its threshold; guided joint field/phase pending.",
+   "next_action": "New registered study with fixed observation window (guide section 7 targets).",
+   "depends_on": [
+    "T01"
+   ]
+  },
+  {
+   "id": "T04",
+   "scope": "numerical_wave_model",
+   "status": "PARTIAL",
+   "statement": "Coherent modal decomposition with the cross term and a biorthogonal basis is applied to the leaky GLASS-010 modes.",
+   "falsifier": "Balance error or biorthogonality error above registered tolerance on solver data.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/glass010_claude/RESULTADOS-DESCOMPOSICION-V2.md",
+     "sha256": "81b38fec7a65edf3c6d0ff23025ab774200628ddf653ea41e0d3a4be0f3afb1e",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Exact in the orthonormal and synthetic nonnormal cases; eta > 1 diagnosed as bilinear projection without cross term.",
+   "next_action": "Apply agentkit.numerics.coherent_decomposition with adjoint modes to the retained GLASS-010 fields.",
+   "depends_on": [
+    "T02",
+    "T03"
+   ]
+  },
+  {
+   "id": "T05",
+   "scope": "measured_material",
+   "status": "BLOCKED",
+   "statement": "Index profile and geometry of written traces in the actual SK-1310/silica samples are measured with uncertainties.",
+   "falsifier": "Measured profile outside the modeled tolerance band.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "Docs/T5-ESTADO-20261011.md",
+     "sha256": "1b66e124d3f169fc8cf428af6a27f4b4fd47bb24331f61abab881265237613d6",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Ideal budget only; SK1310 article full text (DOI 10.1016/j.optmat.2025.116651) not obtained; no samples.",
+   "next_action": "Laboratory metrology after T13; obtain the article through an authorized route.",
+   "depends_on": []
+  },
+  {
+   "id": "T06",
+   "scope": "numerical_wave_model",
+   "status": "PARTIAL",
+   "statement": "An independent vectorial solver reproduces the HE11/TE01/TM01/HE21 indices and losses of the trench geometry with error below the TE/TM splitting.",
+   "falsifier": "Independent method disagrees beyond its error budget, or its error is not below 3e-6 in n_eff.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/vectorial_claude/RESULTADOS-VECTORIAL-GEOMETRIA.md",
+     "sha256": "768047d936847365e87eb54c4b84771b7a9269674723f9f83aea5caa5ce442b9",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Layer solver validated for step fibre n_eff; scalar FD error 4.2e-6 is of the order of the 3e-6 TE/TM splitting.",
+   "next_action": "Nedelec FEM or high-precision shooting method as independent contrast.",
+   "depends_on": [
+    "T02",
+    "T03"
+   ]
+  },
+  {
+   "id": "T07",
+   "scope": "numerical_wave_model",
+   "status": "PARTIAL",
+   "statement": "The two-guide coupler transfer (complex, with phase) is validated against an independent method on the same profiles.",
+   "falsifier": "Transfer mismatch beyond the registered tolerance without phase fitting.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/acoplador_claude/CONTRATO-acoplador.md",
+     "sha256": "c04081bb9af1b109531b7ac18c386e45d3521df232b59cea37ed5809d09a6d69",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "GLASS-006b pilot used Gaussian ports; dx and Gaussian-reduction failures retained; modal ports pending.",
+   "next_action": "Modal-port BPM versus CMT contrast at d = 14 and 16 um.",
+   "depends_on": [
+    "T01",
+    "T03",
+    "T04",
+    "T06"
+   ]
+  },
+  {
+   "id": "T08",
+   "scope": "numerical_wave_model",
+   "status": "PARTIAL",
+   "statement": "Bends, crossings and 3D routes have a design envelope (radius, gap, angle, loss, crosstalk, phase error).",
+   "falsifier": "Reserved radius or gap prediction outside the envelope.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/acoplo_claude/RESULTADOS-ACOPLO.md",
+     "sha256": "491aecefd824285cf02e1267bebf4a46628a31b2f257ffa05b1ecfded91950a1",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    },
+    {
+     "kind": "simulation",
+     "path": "experimentos/curvas_claude/RESULTADOS-curvas-r4.md",
+     "sha256": "04b88e9acf728b199a584ed45945a1898b957bd3e8f06de7daced50e28f1f759",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Parallel-guide coupling in model (H-T8-1 fails, H-T8-2 holds); crossing loss unknown (decisive for H-B, see T25).",
+   "next_action": "Simulate and then measure fs-written crossings (T14).",
+   "depends_on": [
+    "T03",
+    "T06",
+    "T07"
+   ]
+  },
+  {
+   "id": "T09",
+   "scope": "physical_component",
+   "status": "BLOCKED",
+   "statement": "Deep writing and face-to-face registration errors are measured on fabricated coupons.",
+   "falsifier": "Measured registration error above the T07/T10 phase and coupling budget.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "Docs/PROTOCOLOS-BLOQUEADOS-22-TAREAS.md",
+     "sha256": "545957c7cf6bf4d456f5aec363504d4f194bf19a597421168d0ea8bf5b08a1a6",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Protocol only; no machine or samples.",
+   "next_action": "Laboratory partner (T28 dossier).",
+   "depends_on": [
+    "T05"
+   ]
+  },
+  {
+   "id": "T10",
+   "scope": "physical_component",
+   "status": "PARTIAL",
+   "statement": "Phase stability and control meet the registered mean, tail and drift criteria.",
+   "falsifier": "H10b fails (95th-percentile ratio 1.68) or measured drift exceeds the control range.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/fase_claude/RESULTADOS-FASE.md",
+     "sha256": "e9e5fe811ecf55890ad46e1be024451356981567fc500612c32a22b144424990",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Model only: H10a and H10c hold, H10b fails. A 95th-percentile claim needs >= 59 independent realizations (Wilks 95/95).",
+   "next_action": "Measure phase drift and correlation on fabricated parts.",
+   "depends_on": [
+    "T05",
+    "T07"
+   ]
+  },
+  {
+   "id": "T11",
+   "scope": "fabricable_design",
+   "status": "PARTIAL",
+   "statement": "The compiler maps a trained function to a validated, fabricable geometry with reconstructed transfer.",
+   "falsifier": "C2 remains failed or the exported geometry fails re-simulation.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/compilador_claude/RESULTADOS-COMPILADOR.md",
+     "sha256": "cd4b437c4d41d6983498cadc36d505c2918a20b3396bd9744f03c88e80a51356",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "C1 holds; C2 fails (1.3e-2 to 1.7e-2 vs 5e-3); C3 in 28/36 realizations = 77.8 % (exact 95 % CI 60.8 % to 89.9 %). Geometry export not done.",
+   "next_action": "Geometry export with a calibrated component library; re-simulate.",
+   "depends_on": [
+    "T05",
+    "T07",
+    "T08",
+    "T09",
+    "T10"
+   ]
+  },
+  {
+   "id": "T12",
+   "scope": "numerical_neural_model",
+   "status": "FAIL",
+   "statement": "Network F3-b meets its registered hypotheses H-F1 and H-F2.",
+   "falsifier": "Registered criteria H-F1 or H-F2 not met.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "Docs/T12-CIERRE-Y-BLOQUEADOS-20261011.md",
+     "sha256": "f9448465352e8cd97c9d5b7071d170a4af8c7414f629359484982d80691ccf79",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Preregistered negative. Majority-class baseline is 52.5 % on the imbalanced test set; the electronic reference did not converge; kit v1 |cos| MZM did not converge (guide v2 section 44).",
+   "next_action": "New registered experiment with converged, gain-matched baselines and balanced metrics.",
+   "depends_on": [
+    "T07",
+    "T10"
+   ]
+  },
+  {
+   "id": "T13",
+   "scope": "physical_device",
+   "status": "BLOCKED",
+   "statement": "Calibration coupons and a small network are fabricated, identified and accepted for measurement.",
+   "falsifier": "Fabricated parts fail inspection.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "Docs/PROTOCOLOS-BLOQUEADOS-22-TAREAS.md",
+     "sha256": "545957c7cf6bf4d456f5aec363504d4f194bf19a597421168d0ea8bf5b08a1a6",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "No fabrication access.",
+   "next_action": "T28 fabrication dossier; titular decides on a partner.",
+   "depends_on": [
+    "T05",
+    "T09",
+    "T11"
+   ]
+  },
+  {
+   "id": "T14",
+   "scope": "physical_component",
+   "status": "BLOCKED",
+   "statement": "Calibrated optical measurements (cutback, transfer matrix, modes) exist for fabricated parts.",
+   "falsifier": "Not applicable until data exist.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "Docs/F2-PROTOCOLO-MEDIDA.md",
+     "sha256": "3a4c91fae1acd897516e3eec02066aba991e3fea74ee98e5d8b9d18bae26b7c7",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "Protocol frozen; no samples or instruments.",
+   "next_action": "Blind cutback with custodian (agentkit.blind) once samples exist.",
+   "depends_on": [
+    "T13"
+   ]
+  },
+  {
+   "id": "T15",
+   "scope": "physical_system",
+   "status": "BLOCKED",
+   "statement": "An integrated optical-electronic-control system runs repeatable end-to-end inference.",
+   "falsifier": "End-to-end runs fail or drift beyond specification.",
+   "evidence": [],
+   "limitations": "No hardware.",
+   "next_action": "After T13 and T14.",
+   "depends_on": [
+    "T12",
+    "T13",
+    "T14"
+   ]
+  },
+  {
+   "id": "T16",
+   "scope": "independent_evaluation",
+   "status": "PARTIAL",
+   "statement": "A reserved independent task is evaluated once against converged, comparable baselines.",
+   "falsifier": "H-D2 remains failed or baselines are not converged and gain-matched.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "experimentos/f3_red_pequena/RESULTADOS-DIGITS.md",
+     "sha256": "78af62f333923010df38721f34868b7756266a747c09bc0c4cf3602648417041",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Recorded result document; see the file for protocol, data and limits."
+    }
+   ],
+   "limitations": "H-D1 and H-D3 hold; H-D2 fails (B = 0.4074 vs 0.90). Digits 0-3 were already used: development control only.",
+   "next_action": "New reserved dataset with a custodian; gain-matched references.",
+   "depends_on": [
+    "T12"
+   ]
+  },
+  {
+   "id": "T17",
+   "scope": "physical_system_measurement",
+   "status": "BLOCKED",
+   "statement": "Whole-system energy and latency are measured against references at equal accuracy.",
+   "falsifier": "Measured energy per correct inference not better than the reference.",
+   "evidence": [],
+   "limitations": "No system. T24 provides only a parametric kill test.",
+   "next_action": "After T15.",
+   "depends_on": [
+    "T15",
+    "T16"
+   ]
+  },
+  {
+   "id": "T18",
+   "scope": "physical_system_measurement",
+   "status": "PARTIAL",
+   "statement": "Scaling law and between-device reproducibility are measured.",
+   "falsifier": "Between-device variation exceeds the registered tolerance.",
+   "evidence": [
+    {
+     "kind": "software_test",
+     "path": "resultados/agent/kit_validation_windows_20261012/project_check_windows.txt",
+     "sha256": "449ba2b3f50ea21b2579c052eb9a6179526c4dbebfa4b6d006d422fac32332dd",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B scripts/check.py on Windows 10, CPython 3.13.7 (51/51)"
+    }
+   ],
+   "limitations": "Software portability only (CI Windows + Linux); no physical repeatability.",
+   "next_action": "Multiple chips and lots after T13.",
+   "depends_on": [
+    "T14",
+    "T15",
+    "T17"
+   ]
+  },
+  {
+   "id": "T19",
+   "scope": "scientific_claim",
+   "status": "OPEN",
+   "statement": "The project has an original contribution verified against the literature.",
+   "falsifier": "A verified prior record covers the claimed contribution.",
+   "evidence": [
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/records.json",
+     "sha256": "376879d781fb49b3b30ade517a59d96bc42fc9be3015e24f55902a07c382abb5",
+     "produced_by": "Search agent (Claude, project agent) under the frozen T26 protocol; decisive values re-read by Claude",
+     "how": "Frozen search strategy (PROTOCOL-T26.json, commitment e640f9f); 41 queries, 31 records"
+    },
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/verification.json",
+     "sha256": "b6e9b543a816c14f7648f4216afcdfbbf2fcf37f7b5c51e6565ad25db878d39a",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "experimentos/t26_estado_arte_claude/verify_refs.py against Crossref and arXiv (31/31)"
+    },
+    {
+     "kind": "literature_search",
+     "path": "Docs/CIERRE-20261012/T26-STATE-OF-THE-ART.md",
+     "sha256": "625fde775bc768a810fda9f5cd3633dade7b655687e0eb88e93299ca7ccd070c",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Report with second-reader checks of R1 and R4"
+    }
+   ],
+   "limitations": "After T26 no original contribution is established: 3D multilayer fs networks (2026), crossing-free 3D Fourier circuits (2016), programmable fs meshes at 1550 nm (2024) exist. A depressed-cladding loss at 1550 nm was not verified in any record (Zhou 2025 unread).",
+   "next_action": "Read Zhou et al. 2025; the trench-loss test (H1-SOTA) is the only candidate for an original measured result.",
+   "depends_on": []
+  },
+  {
+   "id": "T20",
+   "scope": "scientific_claim",
+   "status": "PARTIAL",
+   "statement": "A single central claim with a decisive test is chosen and supported or refuted by evidence.",
+   "falsifier": "The decisive test refutes the chosen claim.",
+   "evidence": [
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/T20-DECISION.md",
+     "sha256": "d2b556cf3555cef508209b8c74ff8081baee009b833fad3a09c0c5f77e69ec48",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Decision after T24-T27 with JEV advice (provenance=jev)"
+    }
+   ],
+   "limitations": "Central claim C-T20-DELIMIT chosen and supported numerically (PASS in numerical scope); the next physical decisive test (H1-SOTA) needs samples.",
+   "next_action": "Fabrication partner (T28) and blind cut-back (T14).",
+   "depends_on": [
+    "T19"
+   ]
+  },
+  {
+   "id": "T21",
+   "scope": "external_replication",
+   "status": "BLOCKED",
+   "statement": "An independent team reproduces the central numerical result from the archived inputs.",
+   "falsifier": "The independent rerun disagrees beyond the declared uncertainty.",
+   "evidence": [],
+   "limitations": "Agreement among project AI agents does not count; no license yet (titular decision).",
+   "next_action": "Reproduction package; license decision by the titular.",
+   "depends_on": [
+    "T20"
+   ]
+  },
+  {
+   "id": "T22",
+   "scope": "observed_impact",
+   "status": "OPEN_OBSERVATION",
+   "statement": "Third parties use, reproduce or build on the results.",
+   "falsifier": "No third-party record after a stated observation period.",
+   "evidence": [],
+   "limitations": "Cannot be produced in a session.",
+   "next_action": "Keep a dated, verifiable impact log.",
+   "depends_on": [
+    "T21"
+   ]
+  },
+  {
+   "id": "T23",
+   "scope": "software",
+   "status": "PASS",
+   "statement": "The integrity tools of kit v2 (git-anchored preregistration, blind analysis, claims ledger, decision statistics) pass their 29 tests and the 32 kit v1 tests pass, on Windows 10 with the pinned environment and in CI on windows-2022 and ubuntu-24.04.",
+   "falsifier": "Any kit test fails on a supported platform, or a documented attack on prereg/blind/claims succeeds.",
+   "evidence": [
+    {
+     "kind": "software_test",
+     "path": "resultados/agent/kit_validation_windows_20261012/test_v2_windows.txt",
+     "sha256": "e6740911ae9d5242894c129f252b5370b8597d65415f0e4361c4c36e70d3697f",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B -m unittest agentkit.test_v2 -v; Windows 10, CPython 3.13.7, NumPy 2.2.6, SciPy 1.15.1, one BLAS thread"
+    },
+    {
+     "kind": "software_test",
+     "path": "resultados/agent/kit_validation_windows_20261012/test_v1_windows.txt",
+     "sha256": "d1a4555d3ad5fa6503e20f79e025cccaf3fec15c291391afb0e5ca5452b09d90",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B -m unittest discover -s tests -p test_agentkit.py -v (guide extraction layout)"
+    },
+    {
+     "kind": "software_test",
+     "path": "resultados/agent/kit_validation_ci_20261012/ci_run_38312740345.txt",
+     "sha256": "a4e6af1b18a9218c2c0f0532c35d3a9163f1ce46d19b0617b86e372109e9df2b",
+     "produced_by": "GitHub Actions (workflow agentkit.yml), log retrieved by Claude",
+     "how": "Run 38312740345 at 48566e4: kit byte-identical to the guide, 32 + 29 tests on windows-2022 and ubuntu-24.04, CPython 3.13.7, hash-checked pinned dependencies"
+    }
+   ],
+   "limitations": "Software scope only; the residual prereg limit (a protocol first committed after the data) remains.",
+   "next_action": "External timestamp for confirmatory commitments.",
+   "depends_on": []
+  },
+  {
+   "id": "T24",
+   "scope": "numerical_model",
+   "status": "FAIL",
+   "statement": "Kill test of H-A: with sourced parameters, the optimistic optoelectronic budget beats a modern digital INT8 reference per MAC at 8 bits (N = 64, 1 GS/s).",
+   "falsifier": "Optimistic advantage factor versus the modern reference < 1 at the registered point.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t24_energy_20261012/budget.json",
+     "sha256": "75508d7b947babb04ef65b679f0528bd48c82f5bdb0dc377646a793f79b819d2",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t24_energia_claude/run_t24.py after the parameter files were frozen (fb78678)"
+    },
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t24_energy_20261012/sources_verification.json",
+     "sha256": "50b8c016d89d3698c991c56e295199d0e5d8caa6f91aeccb27b1f0feff48de5a",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "verify_refs.py, 22/22 DOIs"
+    },
+    {
+     "kind": "review_record",
+     "path": "resultados/agent/prereg/T24_audit.json",
+     "sha256": "d51be4c746c878165b0e7a162831fb5c3176cfd49661b4b13a89a02f4da8d566",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "agentkit.prereg audit (criterion fails, integrity passes)"
+    }
+   ],
+   "limitations": "Registered negative: optimistic advantage 1.6e-4 (modern, 3 nm INT8) and 2.3e-3 (45 nm, 2014). Mesh realization of a dense layer only.",
+   "next_action": "None for H-A; other architectures need their own protocol.",
+   "depends_on": []
+  },
+  {
+   "id": "T25",
+   "scope": "numerical_model",
+   "status": "PASS",
+   "statement": "In the ideal-algebra model: Clements depth is N and triangular depth 2N - 3 for N = 3..16 (bound N - 1); a planar butterfly layout needs N(N - 1 - log2 N)/2 crossings with 18 on the worst path at N = 16; the butterfly DFT accumulates less splitter error than Clements.",
+   "falsifier": "Any of the 7 registered computational criteria fails on rerun.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t25_scaling_20261012/results.json",
+     "sha256": "f486f3d6c5673a9c358e6936bf9f1768448a21e62b050dda9269d6e9bfd0c7ae",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t25_escalado_claude/run_t25.py (protocol T25 r2, commitment ff1c449)"
+    },
+    {
+     "kind": "review_record",
+     "path": "resultados/agent/prereg/T25r2_audit.json",
+     "sha256": "adf37bef4aba58e8f1ad31f5dd20eda46659815d0e5a8e12fa3a0c8ac6cecf74",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "agentkit.prereg audit --query-server --require-published"
+    }
+   ],
+   "limitations": "Model only; planar crossing count is an upper-bound layout; attempt 1 crashed (retained).",
+   "next_action": "Measure crossing and 3D-transition losses (T08, T14).",
+   "depends_on": []
+  },
+  {
+   "id": "T26",
+   "scope": "novelty",
+   "status": "PARTIAL",
+   "statement": "State-of-the-art benchmark for H1 and H-B: 31 identifier-verified records; lowest verified loss at 1550 nm in fused silica 0.06 +/- 0.02 dB/cm (cut-back); lowest verified crossing loss <= 0.01 dB at 80 deg.",
+   "falsifier": "An unverifiable identifier in the table, fewer than 8 verified records, or a decisive value contradicted by its source.",
+   "evidence": [
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/records.json",
+     "sha256": "376879d781fb49b3b30ade517a59d96bc42fc9be3015e24f55902a07c382abb5",
+     "produced_by": "Search agent (Claude, project agent) under the frozen T26 protocol; decisive values re-read by Claude",
+     "how": "Frozen search strategy (PROTOCOL-T26.json, commitment e640f9f); 41 queries, 31 records"
+    },
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/verification.json",
+     "sha256": "b6e9b543a816c14f7648f4216afcdfbbf2fcf37f7b5c51e6565ad25db878d39a",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "experimentos/t26_estado_arte_claude/verify_refs.py against Crossref and arXiv (31/31)"
+    },
+    {
+     "kind": "literature_search",
+     "path": "Docs/CIERRE-20261012/T26-STATE-OF-THE-ART.md",
+     "sha256": "625fde775bc768a810fda9f5cd3633dade7b655687e0eb88e93299ca7ccd070c",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Report with second-reader checks of R1 and R4"
+    },
+    {
+     "kind": "review_record",
+     "path": "resultados/agent/prereg/T26_audit.json",
+     "sha256": "c2bb02995fd42e3b73839e8e80b4c4dbb2fafaaa040229cb7a4ed1ddb8fc3f95",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "agentkit.prereg audit --query-server --require-published"
+    }
+   ],
+   "limitations": "Registered review criteria met (audit PASS, see C-T26-SOTA); task closure is blocked by its declared dependency T19 (agentkit/tasks_v2.json). Search by one agent; only the two decisive values were re-read by a second reader.",
+   "next_action": "Re-read Zhou et al. 2025 and Tan et al. 2022 full texts.",
+   "depends_on": [
+    "T19"
+   ]
+  },
+  {
+   "id": "T27",
+   "scope": "numerical_model",
+   "status": "PARTIAL",
+   "statement": "Model part of H-C: in-situ recalibration brings the 95/95 upper bound of the infidelity of an N = 8 Clements mesh (sigma 0.02 rad, 80 % shared variance) from 1.5e-2 to 1.3e-4 (threshold 1e-3; median improvement >= 10).",
+   "falsifier": "Either registered criterion fails at the primary point on rerun.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t27_calibration_20261012/results.json",
+     "sha256": "e0778c11d5726d64282cd28b7f135052c47c75ae67f5c18d4cbccec751b249da",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t27_calibracion_claude/run_t27.py (commitment 1407c62)"
+    },
+    {
+     "kind": "review_record",
+     "path": "resultados/agent/prereg/T27_audit.json",
+     "sha256": "994bada082a2bcdc548acfb2cf2e33260c888b2161ed8a63dfc270c83b0668c7",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "agentkit.prereg audit --query-server --require-published"
+    }
+   ],
+   "limitations": "Registered model criteria met (audit PASS, see C-HC-model); the task asks for measured error models, which do not exist, and it depends on T12 (FAIL). Fails at sigma 0.05 rad with independent errors (2.3e-3); 8-bit DAC floor about 2e-4.",
+   "next_action": "Measured splitter errors and a measured calibration loop on a fabricated mesh.",
+   "depends_on": [
+    "T12"
+   ]
+  },
+  {
+   "id": "T28",
+   "scope": "fabricable_design",
+   "status": "PARTIAL",
+   "statement": "A fabrication and collaboration dossier specifies coupons, chips, measurements, blind analysis and data policy.",
+   "falsifier": "The dossier omits a quantity needed by the decisive test.",
+   "evidence": [
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/T28-FABRICATION-DOSSIER.md",
+     "sha256": "41defeafaf979d69c78e558ba6296e3b2439735140543188bf5dcb2b6084bcad",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Dossier of 2026-10-12; no laboratory contacted"
+    },
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/LAB-PARTNERS-20261013.md",
+     "sha256": "3209f50b6fd6b1c6122137e366107f6d5866e58fe2ff34b5b178d4448160db18",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Candidate partner list of 2026-10-13: 23 candidates scored 1-5 from public sources, 34 DOIs re-fetched from Crossref; nobody contacted"
+    },
+    {
+     "kind": "decision_record",
+     "path": "resultados/agent/partners_20261013/partners.json",
+     "sha256": "a9287029c124f44f813e3ea303f2b889f976279084492a2e8cf40a82d697daed",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Machine-readable candidate table behind LAB-PARTNERS-20261013.md"
+    }
+   ],
+   "limitations": "Not reviewed by a laboratory; recipe left to the partner; no candidate scored 5/5.",
+   "next_action": "Titular authorizes a contact (draft emails in LAB-PARTNERS-20261013.md); partner review.",
+   "depends_on": [
+    "T11"
+   ]
+  },
+  {
+   "id": "T29",
+   "scope": "decision",
+   "status": "PASS",
+   "statement": "The titular decided on disclosure before new public results: open publication ordered on 2026-10-12, no patent protection requested.",
+   "falsifier": "New results published without a recorded titular decision.",
+   "evidence": [
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/T29-DISCLOSURE-DECISION.md",
+     "sha256": "9433879fddcbdad0f197e14edf089e0660a848f68451f6519cec803316af3e44",
+     "produced_by": "Francisco Angulo de Lafuente (titular), recorded by Claude",
+     "how": "Chat instruction of 2026-10-12, quoted verbatim"
+    }
+   ],
+   "limitations": "Not legal advice; license decided on 2026-10-13 (Apache-2.0, separate claim C-LICENSE).",
+   "next_action": "None.",
+   "depends_on": []
+  },
+  {
+   "id": "T30",
+   "scope": "review",
+   "status": "PARTIAL",
+   "statement": "An adversarial review and pre-mortem of the central claim were performed and answered in writing.",
+   "falsifier": "Objections left unanswered or the claim not revised where an objection holds.",
+   "evidence": [
+    {
+     "kind": "review_record",
+     "path": "Docs/CIERRE-20261012/T30-REDTEAM-RESPONSE.md",
+     "sha256": "11f8587cfdc8aadba1e7a63d9d646cc305b7534bfc51a7d4fde888fc21b056aa",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Independent AI red-team report and point-by-point response"
+    }
+   ],
+   "limitations": "Internal AI review only; the guide requires external human reviewers as well.",
+   "next_action": "External human review of the manuscript (titular authorization).",
+   "depends_on": [
+    "T20"
+   ]
+  },
+  {
+   "id": "C-T19-a",
+   "scope": "novelty",
+   "status": "WITHDRAWN",
+   "statement": "A multilayer 3D network written by fs laser in glass is new.",
+   "falsifier": "A published prior fs-written multilayer 3D photonic network in glass.",
+   "withdrawal_reason": "Cao et al., Nat. Commun. 17, 5476 (2026), DOI 10.1038/s41467-026-72316-9 (LAMP), fs-written in borosilicate.",
+   "evidence": [],
+   "limitations": "",
+   "next_action": "Narrower variants only (silica, multi-face registration)."
+  },
+  {
+   "id": "C-T19-c",
+   "scope": "novelty",
+   "status": "WITHDRAWN",
+   "statement": "The project shows the first fs-written depressed-cladding trench waveguide at 1550 nm.",
+   "falsifier": "A prior telecom-band depressed-cladding fs waveguide.",
+   "withdrawal_reason": "Zhou et al., Optical Materials 159, 116651 (2025), DOI 10.1016/j.optmat.2025.116651 (SK1310, telecom band).",
+   "evidence": [],
+   "limitations": "",
+   "next_action": "Own blind cutback with coupling and propagation separated (H1)."
+  },
+  {
+   "id": "C-T20-H1",
+   "scope": "physical_component",
+   "status": "WITHDRAWN",
+   "statement": "A trench waveguide (core n = 1.444, trench delta n = -0.005, t = 12 um, a = 6 um), written by fs laser in silica, has a total propagation loss <= 0.3 dB/cm at 1550 nm.",
+   "falsifier": "Lower bound of the 95 % CI above 0.3 dB/cm (registered F1).",
+   "evidence": [
+    {
+     "kind": "decision_record",
+     "path": "Docs/CONTRIBUCION-CENTRAL-T20.md",
+     "sha256": "0a1cc06c57e747012a1ea18c3426ddfe0ecaa51d7617bd37a2bbc2e2db9414b1",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Registered 2026-10-10"
+    }
+   ],
+   "limitations": "Mode, excitation and a single decision rule not yet declared; threshold far above 0.07 dB/cm reported at 1550 nm (Tan et al. 2022).",
+   "next_action": "Dated amendment (T26) before any measurement.",
+   "withdrawal_reason": "Superseded by amendment A1 (C-T20-H1-A and C-T20-H1-SOTA), dated 2026-10-13 before any measurement."
+  },
+  {
+   "id": "C-T26-SOTA",
+   "scope": "novelty",
+   "status": "PASS",
+   "statement": "Verified state of the art (T26): lowest verified fs-written single-mode loss in fused silica at 1550 nm 0.06 +/- 0.02 dB/cm by cut-back (Ackermann et al. 2025); lowest verified crossing loss <= 0.01 dB at 80 deg (Djogo et al. 2026); 3D fs-written Fourier circuits (2016) and a 3D multilayer photonic neural network in glass (2026) exist.",
+   "falsifier": "A decisive value contradicted by its primary source, or an identifier that does not resolve.",
+   "evidence": [
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/records.json",
+     "sha256": "376879d781fb49b3b30ade517a59d96bc42fc9be3015e24f55902a07c382abb5",
+     "produced_by": "Search agent (Claude, project agent) under the frozen T26 protocol; decisive values re-read by Claude",
+     "how": "Frozen search strategy (PROTOCOL-T26.json, commitment e640f9f); 41 queries, 31 records"
+    },
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/verification.json",
+     "sha256": "b6e9b543a816c14f7648f4216afcdfbbf2fcf37f7b5c51e6565ad25db878d39a",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "experimentos/t26_estado_arte_claude/verify_refs.py against Crossref and arXiv (31/31)"
+    },
+    {
+     "kind": "literature_search",
+     "path": "Docs/CIERRE-20261012/T26-STATE-OF-THE-ART.md",
+     "sha256": "625fde775bc768a810fda9f5cd3633dade7b655687e0eb88e93299ca7ccd070c",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Report with second-reader checks of R1 and R4"
+    },
+    {
+     "kind": "review_record",
+     "path": "resultados/agent/prereg/T26_audit.json",
+     "sha256": "c2bb02995fd42e3b73839e8e80b4c4dbb2fafaaa040229cb7a4ed1ddb8fc3f95",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "agentkit.prereg audit --query-server --require-published"
+    }
+   ],
+   "limitations": "Absence of a record in this search does not prove absence in the literature.",
+   "next_action": "Keep the table current before any priority statement."
+  },
+  {
+   "id": "C-T20-DELIMIT",
+   "scope": "numerical_model",
+   "status": "PASS",
+   "statement": "C-T20-DELIMIT v2 (revised after T30). For fs-laser-written waveguide meshes in glass with the component values found: (a) 3D connectivity can save at most one layer of a universal mesh of two-mode elements (bound N - 1 for even N, N for odd N; planar rectangular N; cylindrical 3D N - 1); (b) at N = 64 and 8 bits the converters and modulators alone cost about 72 fJ per MAC, 1.4-4.5 times a 3 nm INT8 macro, independently of the optical core; with the single cited MZI stage loss (0.35 dB) in a 2N-stage SVD mesh the layer needs 0.10 nJ per MAC and would beat a 45 nm MAC only at <= 0.13 dB per stage; (c) crossings alone do not decide a 3D advantage: 11 worst-path crossings at N = 16 cost at most about 0.11 dB at the only verified crossing loss, while the same source reports 0.4-0.5 dB per S-bend.",
+   "falsifier": "(a) a mesh of two-mode elements dense in U(N) with fewer layers than stated; (b) verified 8-bit converter plus modulator energies per MAC below the digital reference at N = 64, or a measured fs MZI stage loss making the full layer competitive; (c) a measured net worst-path advantage of a 3D over a planar butterfly of at least 0.4 dB at N = 16.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t25_scaling_20261012/results.json",
+     "sha256": "f486f3d6c5673a9c358e6936bf9f1768448a21e62b050dda9269d6e9bfd0c7ae",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t25_escalado_claude/run_t25.py (protocol T25 r2, commitment ff1c449)"
+    },
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t24_energy_20261012/budget.json",
+     "sha256": "75508d7b947babb04ef65b679f0528bd48c82f5bdb0dc377646a793f79b819d2",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t24_energia_claude/run_t24.py after the parameter files were frozen (fb78678)"
+    },
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/records.json",
+     "sha256": "376879d781fb49b3b30ade517a59d96bc42fc9be3015e24f55902a07c382abb5",
+     "produced_by": "Search agent (Claude, project agent) under the frozen T26 protocol; decisive values re-read by Claude",
+     "how": "Frozen search strategy (PROTOCOL-T26.json, commitment e640f9f); 41 queries, 31 records"
+    },
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/verification.json",
+     "sha256": "b6e9b543a816c14f7648f4216afcdfbbf2fcf37f7b5c51e6565ad25db878d39a",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "experimentos/t26_estado_arte_claude/verify_refs.py against Crossref and arXiv (31/31)"
+    },
+    {
+     "kind": "review_record",
+     "path": "Docs/CIERRE-20261012/T30-REDTEAM-REPORT.md",
+     "sha256": "b9b5c6fbb122eefd739475e1cd08142b6cdcd736743e8598da4d54fc0f8d0617",
+     "produced_by": "Independent AI reviewer (Claude Opus subagent, read-only), 2026-10-13",
+     "how": "Adversarial review with independent recomputation; scripts in resultados/agent/t30_redteam_20261013/"
+    }
+   ],
+   "depends_on": [
+    "T25"
+   ],
+   "limitations": "Model and literature only; the 440x/6300x full-layer figures rest on one 2020 borosilicate stage-loss value and the SVD realization (chosen after the T24 commitment); crossing loss is an upper bound at 80 deg; first wording superseded (T20-DECISION.md).",
+   "next_action": "Measure per-stage MZI loss and series crossings / 3D transitions in fs-written silica (T28 coupons F and B); external human review."
+  },
+  {
+   "id": "C-HA-energy",
+   "scope": "numerical_model",
+   "status": "WITHDRAWN",
+   "statement": "A passive optical layer in silica with its electronics needs less energy per MAC than a cited digital reference at equal precision.",
+   "falsifier": "Optimistic advantage < 1 in the registered T24 budget.",
+   "withdrawal_reason": "T24 registered negative. Robust reason: it fails against the 3 nm INT8 reference even for a lossless optical core (converter floor 1.4-4.5x). The registered kill against the 45 nm reference depends on the mesh stage loss (<= 0.13 dB per stage would reverse it).",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t24_energy_20261012/budget.json",
+     "sha256": "75508d7b947babb04ef65b679f0528bd48c82f5bdb0dc377646a793f79b819d2",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t24_energia_claude/run_t24.py after the parameter files were frozen (fb78678)"
+    }
+   ],
+   "limitations": "",
+   "next_action": "None."
+  },
+  {
+   "id": "C-HB-crossings",
+   "scope": "scientific_claim",
+   "status": "OPEN",
+   "statement": "For structured transforms with N >= 64, 3D routing removes planar crossings and gives a measurable net loss advantage.",
+   "falsifier": "Measured per-crossing loss times worst-path crossings below 0.4 dB at the target N, or 3D transitions costing more than the crossings they remove.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t25_scaling_20261012/results.json",
+     "sha256": "f486f3d6c5673a9c358e6936bf9f1768448a21e62b050dda9269d6e9bfd0c7ae",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t25_escalado_claude/run_t25.py (protocol T25 r2, commitment ff1c449)"
+    },
+    {
+     "kind": "literature_search",
+     "path": "resultados/agent/t26_sota_20261012/records.json",
+     "sha256": "376879d781fb49b3b30ade517a59d96bc42fc9be3015e24f55902a07c382abb5",
+     "produced_by": "Search agent (Claude, project agent) under the frozen T26 protocol; decisive values re-read by Claude",
+     "how": "Frozen search strategy (PROTOCOL-T26.json, commitment e640f9f); 41 queries, 31 records"
+    }
+   ],
+   "limitations": "Secondary (rule I1 recomputed with free output order: N >= 64, at the edge of the rule); S-bends of 0.4-0.5 dB may cancel the gain; precedent of 3D FFT circuits (Crespi et al. 2016); crossing loss known only as an upper bound.",
+   "next_action": "Series-crossing and 3D-overpass coupons (T28 coupon B)."
+  },
+  {
+   "id": "C-HC-model",
+   "scope": "numerical_model",
+   "status": "PASS",
+   "statement": "In a model (N <= 8, sigma <= 0.02 rad, ideal transfer-matrix access), in-situ recalibration absorbs correlated splitter errors of 0.02 rad in an 8-mode Clements mesh to a 95/95 infidelity bound of 1.3e-4.",
+   "falsifier": "Rerun of T27 fails a registered criterion at the primary point.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t27_calibration_20261012/results.json",
+     "sha256": "e0778c11d5726d64282cd28b7f135052c47c75ae67f5c18d4cbccec751b249da",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t27_calibracion_claude/run_t27.py (commitment 1407c62)"
+    }
+   ],
+   "limitations": "Model only; established practice for fs meshes; not a novelty claim.",
+   "next_action": "Physical part in T10/T14/T15."
+  },
+  {
+   "id": "C-T20-H1-A",
+   "scope": "physical_component",
+   "status": "OPEN",
+   "statement": "Amended H1 (A1): the HE11 total propagation loss of the trench guide (t = 12 um) at 1550 nm is <= 0.3 dB/cm, judged by the three-zone rule with floor 0.044044 dB/cm (recomputed for the measured profile).",
+   "falsifier": "Lower bound of the 95 % CI above 0.3 dB/cm (FALSIFIED) or upper bound below the floor (MODEL_CONTROL_FAIL).",
+   "evidence": [
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/H1-AMENDMENT-A1-20261013.md",
+     "sha256": "35a96829d6d4e58e4f3b41b42d1e466d043556761d9798fff9e4924264bb0511",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Dated amendment before any measurement"
+    }
+   ],
+   "limitations": "Feasibility threshold, not state of the art.",
+   "next_action": "Blind cut-back (T14) after fabrication (T13)."
+  },
+  {
+   "id": "C-T20-H1-SOTA",
+   "scope": "physical_component",
+   "status": "OPEN",
+   "statement": "H1-SOTA: the HE11 total propagation loss at 1550 nm of a trench guide with t = 16 um (ideal leakage 0.0020 dB/cm) is <= 0.06 dB/cm, under the same rule.",
+   "falsifier": "Lower bound of the 95 % CI above 0.06 dB/cm.",
+   "evidence": [
+    {
+     "kind": "simulation",
+     "path": "resultados/agent/t20_trench_width_20261013/results.json",
+     "sha256": "ba5be89df3d9b944bfb6f8371190341651ccc70349e0a6bda0ba0f38d89c0237",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "python -B experimentos/t20_diseno_claude/run_trench_width.py (commitment ba039e0)"
+    },
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/H1-AMENDMENT-A1-20261013.md",
+     "sha256": "35a96829d6d4e58e4f3b41b42d1e466d043556761d9798fff9e4924264bb0511",
+     "produced_by": "Claude (project agent, Anthropic)",
+     "how": "Dated amendment before any measurement"
+    }
+   ],
+   "limitations": "Needs a margin of hundredths of dB/cm: tens of chips if sigma between chips is 0.02-0.05 dB/cm (T28 table).",
+   "next_action": "Pilot of 3 chips to estimate sigma; then the registered number of chips."
+  },
+  {
+   "id": "C-LICENSE",
+   "scope": "decision",
+   "status": "PASS",
+   "statement": "The repository has a license chosen by the titular: Apache License 2.0 for the whole repository (code, documents, figures, animations and data), with a NOTICE file.",
+   "falsifier": "No license file after the titular's decision, or a license file different from the recorded decision.",
+   "evidence": [
+    {
+     "kind": "decision_record",
+     "path": "Docs/CIERRE-20261012/LICENSE-DECISION-20261013.md",
+     "sha256": "beac213ff897431031c5a66e5f9d757b8b5ae4c62ec86fd366ffa75d52f8bfdf",
+     "produced_by": "Francisco Angulo de Lafuente (titular), recorded by Claude",
+     "how": "Chat instruction of 2026-10-13, quoted verbatim; LICENSE body hash checked against GitHub's Apache-2.0 text"
+    }
+   ],
+   "limitations": "Not legal advice; the earlier CC-BY-4.0 proposal for documents and data (Docs/LICENCIA-PROPUESTA.md) is not applied; cited third-party works are not covered.",
+   "next_action": "None."
+  }
+ ]
+}

@@ -19,12 +19,15 @@ El proyecto tiene ahora un resultado numérico sólido, prerregistrado y revisad
    - H1-A: umbral de 0,3 dB/cm, que es de viabilidad.
    - H1-SOTA: umbral de 0,06 dB/cm, que es de estado del arte.
 5. **Revisión adversarial (T30).** Un agente independiente intentó romper la afirmación central y encontró exageraciones reales en mis primeras cifras. Las he corregido todas y el registro conserva la versión anterior.
-6. **Registro de afirmaciones** con 41 afirmaciones de T01 a T30, cada una con su evidencia y su falsador. Tabla: `CLAIMS-TABLE-20261013-final.md`.
+6. **Registro de afirmaciones** con 41 afirmaciones de T01 a T30, cada una con su evidencia y su falsador. Tabla vigente: `CLAIMS-TABLE-20261013b.md` (16 parciales, 7 aprobadas, 2 fallidas, 4 retiradas). La versión anterior, `CLAIMS-TABLE-20261013-final.md`, se conserva.
 7. **Manuscrito en inglés**, de 7 páginas: `paper/manuscript.pdf`.
 8. **Registros:**
-   - pérdida operacional de F1 (T01);
+   - pérdida operacional de F1 (T01) y su recuperación con F1R2 (punto 9);
    - dossier de fabricación (T28);
    - tu decisión de publicar (T29).
+
+9. **F1 recuperada (F1R2, 13 de octubre).** Repetí en este PC, con el protocolo publicado antes de calcular, la prueba fina de convergencia temporal que se perdió en Colab. **Cumple los cinco criterios del contrato**: diferencia de campo 1,35·10⁻⁵, con umbral 10⁻⁴. Pasa la auditoría de integridad y la auditoría anclada al servidor. Tardó 23 273 s de 32 000 y hubo 8 reintentos por falta de memoria puntual, todos conservados. El primer intento (F1R), que falló por memoria, también se conserva. T01 sigue parcial: falta la convergencia espacial (S16, malla de 0,28 µm y dominio). Informe: `T01-F1R2-RESULTS.md`.
+10. **Otros cambios en el registro.** T23 incluye ya la CI en Windows y Linux, y T28 la lista de 23 laboratorios candidatos (no he contactado a ninguno).
 
 ## Qué se sostiene y qué no
 
@@ -37,10 +40,10 @@ El proyecto tiene ahora un resultado numérico sólido, prerregistrado y revisad
 
 ## Lo que solo puedes decidir tú
 
-1. **Licencia.** Sigue sin licencia; la propuesta es Apache-2.0 para el código y CC-BY-4.0 para documentos y datos (`Docs/LICENCIA-PROPUESTA.md`). Sin licencia nadie puede reutilizarlo legalmente, lo que impide una reproducción externa (T21).
+1. **Licencia: ya decidida.** Elegiste Apache-2.0 para todo el repositorio y está aplicada en `main` (`LICENSE`, `NOTICE`, `LICENSE-DECISION-20261013.md`). En el registro, C-LICENSE pasa a PASS.
 2. **Laboratorio.** Sin un socio con escritura fs y medida a 1550 nm, el proyecto no pasa de simulación. El dossier está listo, pero no he contactado a nadie.
 3. **Archivo con DOI** (Zenodo u otro). Daría una marca de tiempo externa y guardaría las evidencias grandes.
-4. **F1.** Si en tu Colab o Drive siguen los resultados finos del 9 de octubre, descárgalos a `D:\PROJECTS` y se auditan con las herramientas que ya existen.
+4. **F1: resuelto sin Colab.** La repetición registrada F1R2 sustituye a los resultados perdidos (punto 9). Si aun así aparecen los del 9 de octubre, servirían como comparación independiente.
 5. **Lecturas pendientes:** el artículo de SK1310 (Zhou, 2025), que no pudimos leer, y una **revisión humana externa** del manuscrito antes de enviarlo a una revista o a arXiv.
 
 ## Dónde mirar primero

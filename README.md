@@ -20,7 +20,7 @@
 <a id="scientific-closure-20261013"></a>
 ## Scientific closure · 13 October 2026 (English)
 
-**Status: numerical study with preregistered kill tests. No device has been fabricated or measured.** Every statement below comes from the claims ledger [`Docs/CIERRE-20261012/CLAIMS-TABLE-20261013-final.md`](Docs/CIERRE-20261012/CLAIMS-TABLE-20261013-final.md), whose evidence files are hashed. Manuscript: [`paper/manuscript.pdf`](paper/manuscript.pdf).
+**Status: numerical study with preregistered kill tests. No device has been fabricated or measured.** Every statement below comes from the claims ledger [`Docs/CIERRE-20261012/CLAIMS-TABLE-20261013b.md`](Docs/CIERRE-20261012/CLAIMS-TABLE-20261013b.md), whose evidence files are hashed. Manuscript: [`paper/manuscript.pdf`](paper/manuscript.pdf).
 
 **Central claim (a delimitation, not a novelty claim; revised after an adversarial review).** For femtosecond-laser-written waveguide meshes in glass with the component values found:
 (a) 3D connectivity can save **at most one layer** of a universal mesh of two-mode elements (bound N − 1 for even N, N for odd N; planar rectangular meshes need N);
@@ -71,7 +71,7 @@ comprobar ese significado; el aspecto de una imagen no valida la física.
 | Evidencia actual | Resultado | Alcance |
 |---|---|---|
 | D16 C2 / M2-R1 | Auditorías temporales aprobadas; M2 conserva 83 campos y calcula 13 nuevos | Consistencia de soluciones discretas; [M2 auditada](Docs/POINT-03-D16-M2-RESULTS.md) |
-| F1, h=0,35 µm | Última lectura confirmada: 96/192 campos a las 07:45 UTC | Reconexión: el almacenamiento actual no contiene F1; resultado final sin recuperar ni auditar |
+| F1, h=0,35 µm | Colab (9-oct): 96/192 campos y resultado perdido. F1R2 (13-oct, CPU local, registrada): 192/192 campos, los cinco criterios cumplidos (campo 1,35×10⁻⁵ ≤10⁻⁴) | Auditoría de integridad y auditoría anclada aprobadas; F1R fallida conservada. [Resultados F1R2](Docs/CIERRE-20261012/T01-F1R2-RESULTS.md) |
 | R1 P2 en Blender/RTX 3090 | 84 fotogramas conservados; 63 fallan precisión | Lectura defectuosa y tiempos insuficientes; [negativo retenido](Docs/POINT-03-RENDER-GPU-RUN02-RESULTS.md) |
 | P0, lectura gráfica calibrada | Seis marcas GPU auditadas, error máximo 6,68×10⁻⁸ | Coordenadas/canales y reloj/cierre aprobados; [calibración](Docs/POINT-03-RENDER-BUFFER-RESULTS.md) |
 | R2 P2 corregido | 84 fotogramas nuevos: integridad y tiempos aprobados; 63 fallan precisión | Error máximo 1,62×10⁻⁴ >5×10⁻⁶; [negativo auditado](Docs/POINT-03-RENDER-P2-CORRECTED-RESULTS.md) |
@@ -79,7 +79,7 @@ comprobar ese significado; el aspecto de una imagen no valida la física.
 | R3 P2 analítico | 168 campos nuevos: 84/84 aprobados en OpenGL y 84/84 en Vulkan | Error máximo 5,86×10⁻⁷ ≤5×10⁻⁶; representación y suma coherente P2. [Resultados auditados](Docs/POINT-03-RENDER-P3-ANALYTIC-RESULTS.md) |
 | Software CPU | 51 pruebas aprobadas en la publicación previa | Ninguna inicialización GPU; [registro](resultados/codex/point03_main_cpu_tests_20261009/report.json) |
 
-T96/Q4 permanece abierta: faltan F1 completa y auditada, convergencia espacial,
+T96/Q4 permanece abierta: F1 ya está completa y auditada (F1R2), pero faltan convergencia espacial,
 predicción prospectiva, malla reservada de 0,28 µm y dominio. Las etapas de
 fabricación, medidas, red completa y reproducción externa siguen pendientes.
 
@@ -296,7 +296,7 @@ Autoría, roles y uso de IA: [CONTRIBUTORS.md](CONTRIBUTORS.md). Cómo citar el 
 
 ## Hoja de ruta
 
-Estado a 13 de octubre de 2026. Detalle y evidencia de cada punto en el [registro de afirmaciones](Docs/CIERRE-20261012/CLAIMS-TABLE-20261013-final.md) y en [`Docs/CIERRE-20261012/`](Docs/CIERRE-20261012/).
+Estado a 13 de octubre de 2026. Detalle y evidencia de cada punto en el [registro de afirmaciones](Docs/CIERRE-20261012/CLAIMS-TABLE-20261013b.md) y en [`Docs/CIERRE-20261012/`](Docs/CIERRE-20261012/).
 
 **Hecho (cierre de la guía v2)**
 
