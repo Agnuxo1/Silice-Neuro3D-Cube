@@ -28,3 +28,4 @@ resultados/agent/** -text whitespace=cr-at-eol
 # FEMTO-1 reviewer evidence retains the exact bytes cited by its manifest.
 Docs/FEMTO1/review-evidence/** -text whitespace=cr-at-eol
 scripts/femto1/run_pipeline.sh text eol=lf
+resultados/codex/femto1*/** -text whitespace=cr-at-eol
