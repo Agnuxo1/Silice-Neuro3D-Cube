@@ -62,3 +62,7 @@ T05, T09, T13, T14, T15, T17 and the physical parts of T10, T18, H1, H-B and H-C
 ## Addendum after T30 (2026-10-13)
 
 Coupon F must report the **per-stage MZI loss** in silica (loss versus number of cascaded MZIs). A value of at most 0.13 dB would reverse the 2014 comparison of claim (b), so this is a decisive measurement for the central claim. Coupon B must report loss versus number of series crossings at the shallow angles a planar butterfly uses, and the loss of one 3D transition (vertical S-bend), as the decisive measurement for claim (c).
+
+## Addendum (2026-10-13): coupon A widths
+
+Coupon A must include **both** trench widths: t = 12 µm (H1-A, feasibility) and t = 16 µm (H1-SOTA, fixed by the registered design study T20D, ideal HE₁₁ leakage 0.0020 dB/cm). Each width needs 4 or more lengths and the number of chips in §3. Candidate partners are listed in `LAB-PARTNERS-20261013.md`.
