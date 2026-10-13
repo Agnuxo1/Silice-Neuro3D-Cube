@@ -1,0 +1,2261 @@
+{
+ "Clements2016": {
+  "type": "journal-article",
+  "doi": "10.1364/OPTICA.3.001460",
+  "authors": [
+   [
+    "William R.",
+    "Clements"
+   ],
+   [
+    "Peter C.",
+    "Humphreys"
+   ],
+   [
+    "Benjamin J.",
+    "Metcalf"
+   ],
+   [
+    "W. Steven",
+    "Kolthammer"
+   ],
+   [
+    "Ian A.",
+    "Walsmley"
+   ]
+  ],
+  "title": "Optimal design for universal multiport interferometers",
+  "container": "Optica",
+  "volume": "3",
+  "issue": "12",
+  "page": "1460",
+  "article_number": null,
+  "year": 2016,
+  "source": "api.crossref.org/works/10.1364/OPTICA.3.001460"
+ },
+ "Reck1994": {
+  "type": "journal-article",
+  "doi": "10.1103/PhysRevLett.73.58",
+  "authors": [
+   [
+    "Michael",
+    "Reck"
+   ],
+   [
+    "Anton",
+    "Zeilinger"
+   ],
+   [
+    "Herbert J.",
+    "Bernstein"
+   ],
+   [
+    "Philip",
+    "Bertani"
+   ]
+  ],
+  "title": "Experimental realization of any discrete unitary operator",
+  "container": "Physical Review Letters",
+  "volume": "73",
+  "issue": "1",
+  "page": "58-61",
+  "article_number": null,
+  "year": 1994,
+  "source": "api.crossref.org/works/10.1103/PhysRevLett.73.58"
+ },
+ "Saygin2020": {
+  "type": "journal-article",
+  "doi": "10.1103/PhysRevLett.124.010501",
+  "authors": [
+   [
+    "M. Yu.",
+    "Saygin"
+   ],
+   [
+    "I. V.",
+    "Kondratyev"
+   ],
+   [
+    "I. V.",
+    "Dyakonov"
+   ],
+   [
+    "S. A.",
+    "Mironov"
+   ],
+   [
+    "S. S.",
+    "Straupe"
+   ],
+   [
+    "S. P.",
+    "Kulik"
+   ]
+  ],
+  "title": "Robust Architecture for Programmable Universal Unitaries",
+  "container": "Physical Review Letters",
+  "volume": "124",
+  "issue": "1",
+  "page": null,
+  "article_number": "010501",
+  "year": 2020,
+  "source": "api.crossref.org/works/10.1103/PhysRevLett.124.010501"
+ },
+ "Hamerly2019": {
+  "type": "journal-article",
+  "doi": "10.1103/PhysRevX.9.021032",
+  "authors": [
+   [
+    "Ryan",
+    "Hamerly"
+   ],
+   [
+    "Liane",
+    "Bernstein"
+   ],
+   [
+    "Alexander",
+    "Sludds"
+   ],
+   [
+    "Marin",
+    "Soljačić"
+   ],
+   [
+    "Dirk",
+    "Englund"
+   ]
+  ],
+  "title": "Large-Scale Optical Neural Networks Based on Photoelectric Multiplication",
+  "container": "Physical Review X",
+  "volume": "9",
+  "issue": "2",
+  "page": null,
+  "article_number": "021032",
+  "year": 2019,
+  "source": "api.crossref.org/works/10.1103/PhysRevX.9.021032"
+ },
+ "McMahon2023": {
+  "type": "journal-article",
+  "doi": "10.1038/s42254-023-00645-5",
+  "authors": [
+   [
+    "Peter L.",
+    "McMahon"
+   ]
+  ],
+  "title": "The physics of optical computing",
+  "container": "Nature Reviews Physics",
+  "volume": "5",
+  "issue": "12",
+  "page": "717-734",
+  "article_number": null,
+  "year": 2023,
+  "source": "api.crossref.org/works/10.1038/s42254-023-00645-5"
+ },
+ "Horowitz2014": {
+  "type": "proceedings-article",
+  "doi": "10.1109/ISSCC.2014.6757323",
+  "authors": [
+   [
+    "Mark",
+    "Horowitz"
+   ]
+  ],
+  "title": "1.1 Computing's energy problem (and what we can do about it)",
+  "container": "2014 IEEE International Solid-State Circuits Conference Digest of Technical Papers (ISSCC)",
+  "volume": null,
+  "issue": null,
+  "page": "10-14",
+  "article_number": null,
+  "year": 2014,
+  "source": "api.crossref.org/works/10.1109/ISSCC.2014.6757323"
+ },
+ "Ackermann2025": {
+  "type": "journal-article",
+  "doi": "10.1364/OL.557978",
+  "authors": [
+   [
+    "Lisa",
+    "Ackermann"
+   ],
+   [
+    "Benedikt",
+    "Hermann"
+   ],
+   [
+    "Daniel",
+    "Talán Echarri"
+   ],
+   [
+    "Ernesto",
+    "Gribaudo"
+   ],
+   [
+    "Yves",
+    "Bellouard"
+   ]
+  ],
+  "title": "High-speed femtosecond UV laser writing of low-loss waveguides in fused silica",
+  "container": "Optics Letters",
+  "volume": "50",
+  "issue": "8",
+  "page": "2506",
+  "article_number": null,
+  "year": 2025,
+  "source": "api.crossref.org/works/10.1364/OL.557978"
+ },
+ "Tan2022": {
+  "type": "journal-article",
+  "doi": "10.1364/OL.470670",
+  "authors": [
+   [
+    "Dezhi",
+    "Tan"
+   ],
+   [
+    "Xiaoyu",
+    "Sun"
+   ],
+   [
+    "Zengling",
+    "Li"
+   ],
+   [
+    "Jianrong",
+    "Qiu"
+   ]
+  ],
+  "title": "Effectively writing low propagation and bend loss waveguides in the silica glass by using a femtosecond laser",
+  "container": "Optics Letters",
+  "volume": "47",
+  "issue": "18",
+  "page": "4766",
+  "article_number": null,
+  "year": 2022,
+  "source": "api.crossref.org/works/10.1364/OL.470670"
+ },
+ "Tan2021": {
+  "type": "journal-article",
+  "doi": "10.1364/OME.419945",
+  "authors": [
+   [
+    "Dezhi",
+    "Tan"
+   ],
+   [
+    "Xiaoyu",
+    "Sun"
+   ],
+   [
+    "Jianrong",
+    "Qiu"
+   ]
+  ],
+  "title": "Femtosecond laser writing low-loss waveguides in silica glass: highly symmetrical mode field and mechanism of refractive index change",
+  "container": "Optical Materials Express",
+  "volume": "11",
+  "issue": "3",
+  "page": "848",
+  "article_number": null,
+  "year": 2021,
+  "source": "api.crossref.org/works/10.1364/OME.419945"
+ },
+ "Skryabin2024": {
+  "type": "journal-article",
+  "doi": "10.1103/PhysRevApplied.22.064079",
+  "authors": [
+   [
+    "N.N.",
+    "Skryabin"
+   ],
+   [
+    "S.A.",
+    "Zhuravitskii"
+   ],
+   [
+    "I.V.",
+    "Dyakonov"
+   ],
+   [
+    "S.S.",
+    "Straupe"
+   ],
+   [
+    "A.A.",
+    "Kalinkin"
+   ],
+   [
+    "S.P.",
+    "Kulik"
+   ]
+  ],
+  "title": "Femtosecond-laser-written low-loss multiscan waveguides in fused silica",
+  "container": "Physical Review Applied",
+  "volume": "22",
+  "issue": "6",
+  "page": null,
+  "article_number": "064079",
+  "year": 2024,
+  "source": "api.crossref.org/works/10.1103/PhysRevApplied.22.064079"
+ },
+ "Bukharin2015": {
+  "type": "journal-article",
+  "doi": "10.1007/s00339-015-8990-x",
+  "authors": [
+   [
+    "M. A.",
+    "Bukharin"
+   ],
+   [
+    "D. V.",
+    "Khudyakov"
+   ],
+   [
+    "S. K.",
+    "Vartapetov"
+   ]
+  ],
+  "title": "Heat accumulation regime of femtosecond laser writing in fused silica and Nd:phosphate glass",
+  "container": "Applied Physics A",
+  "volume": "119",
+  "issue": "1",
+  "page": "397-403",
+  "article_number": null,
+  "year": 2015,
+  "source": "api.crossref.org/works/10.1007/s00339-015-8990-x"
+ },
+ "Lee2021": {
+  "type": "journal-article",
+  "doi": "10.1038/s41598-021-03116-y",
+  "authors": [
+   [
+    "Timothy",
+    "Lee"
+   ],
+   [
+    "Qi",
+    "Sun"
+   ],
+   [
+    "Martynas",
+    "Beresna"
+   ],
+   [
+    "Gilberto",
+    "Brambilla"
+   ]
+  ],
+  "title": "Low bend loss femtosecond laser written waveguides exploiting integrated microcrack",
+  "container": "Scientific Reports",
+  "volume": "11",
+  "issue": "1",
+  "page": null,
+  "article_number": "23770",
+  "year": 2021,
+  "source": "api.crossref.org/works/10.1038/s41598-021-03116-y"
+ },
+ "RossAdams2024": {
+  "type": "journal-article",
+  "doi": "10.37188/lam.2024.009",
+  "authors": [
+   [
+    "Andrew",
+    "Ross-Adams"
+   ],
+   [
+    "Toney Teddy",
+    "Fernandez"
+   ],
+   [
+    "Michael",
+    "Withford"
+   ],
+   [
+    "Simon",
+    "Gross"
+   ]
+  ],
+  "title": "Low bend loss, high index, composite morphology ultra-fast laser written waveguides for photonic integrated circuits",
+  "container": "Light: Advanced Manufacturing",
+  "volume": "5",
+  "issue": "1",
+  "page": "52",
+  "article_number": null,
+  "year": 2024,
+  "source": "api.crossref.org/works/10.37188/lam.2024.009"
+ },
+ "Zhou2025": {
+  "type": "journal-article",
+  "doi": "10.1016/j.optmat.2025.116651",
+  "authors": [
+   [
+    "Jiaxiang",
+    "Zhou"
+   ],
+   [
+    "Weijie",
+    "Liu"
+   ],
+   [
+    "Weizhao",
+    "Cheng"
+   ],
+   [
+    "Haoyang",
+    "Du"
+   ],
+   [
+    "Bo",
+    "Wu"
+   ],
+   [
+    "Lei",
+    "Wang"
+   ],
+   [
+    "Qingming",
+    "Lu"
+   ],
+   [
+    "Bin",
+    "Zhang"
+   ],
+   [
+    "Feng",
+    "Chen"
+   ]
+  ],
+  "title": "Femtosecond laser writing of telecom-band depressed-cladding waveguides and mode modulation in SK1310 glass",
+  "container": "Optical Materials",
+  "volume": "159",
+  "issue": null,
+  "page": "116651",
+  "article_number": "116651",
+  "year": 2025,
+  "source": "api.crossref.org/works/10.1016/j.optmat.2025.116651"
+ },
+ "Likhov2025": {
+  "type": "journal-article",
+  "doi": "10.3103/S1068335625604716",
+  "authors": [
+   [
+    "V. V.",
+    "Likhov"
+   ],
+   [
+    "G. K.",
+    "Alagashev"
+   ],
+   [
+    "A. G.",
+    "Okhrimchuk"
+   ]
+  ],
+  "title": "Directional Coupler Based on Waveguides with a Structured Depressed Cladding in K8 Glass",
+  "container": "Bulletin of the Lebedev Physics Institute",
+  "volume": "52",
+  "issue": "S11",
+  "page": "S1224-S1230",
+  "article_number": null,
+  "year": 2025,
+  "source": "api.crossref.org/works/10.3103/S1068335625604716"
+ },
+ "Chen2018": {
+  "type": "journal-article",
+  "doi": "10.1038/s41598-018-28631-3",
+  "authors": [
+   [
+    "George Y.",
+    "Chen"
+   ],
+   [
+    "Fiorina",
+    "Piantedosi"
+   ],
+   [
+    "Dale",
+    "Otten"
+   ],
+   [
+    "Yvonne Qiongyue",
+    "Kang"
+   ],
+   [
+    "Wen Qi",
+    "Zhang"
+   ],
+   [
+    "Xiaohong",
+    "Zhou"
+   ],
+   [
+    "Tanya M.",
+    "Monro"
+   ],
+   [
+    "David G.",
+    "Lancaster"
+   ]
+  ],
+  "title": "Femtosecond-laser-written Microstructured Waveguides in BK7 Glass",
+  "container": "Scientific Reports",
+  "volume": "8",
+  "issue": "1",
+  "page": null,
+  "article_number": "10377",
+  "year": 2018,
+  "source": "api.crossref.org/works/10.1038/s41598-018-28631-3"
+ },
+ "Lapointe2014": {
+  "type": "journal-article",
+  "doi": "10.1364/OE.22.015473",
+  "authors": [
+   [
+    "Jerome",
+    "Lapointe"
+   ],
+   [
+    "Mathieu",
+    "Gagné"
+   ],
+   [
+    "Ming-Jun",
+    "Li"
+   ],
+   [
+    "Raman",
+    "Kashyap"
+   ]
+  ],
+  "title": "Making smart phones smarter with photonics",
+  "container": "Optics Express",
+  "volume": "22",
+  "issue": "13",
+  "page": "15473",
+  "article_number": null,
+  "year": 2014,
+  "source": "api.crossref.org/works/10.1364/OE.22.015473"
+ },
+ "Sun2022": {
+  "type": "journal-article",
+  "doi": "10.1038/s41377-022-00907-4",
+  "authors": [
+   [
+    "Bangshan",
+    "Sun"
+   ],
+   [
+    "Fyodor",
+    "Morozko"
+   ],
+   [
+    "Patrick S.",
+    "Salter"
+   ],
+   [
+    "Simon",
+    "Moser"
+   ],
+   [
+    "Zhikai",
+    "Pong"
+   ],
+   [
+    "Raj B.",
+    "Patel"
+   ],
+   [
+    "Ian A.",
+    "Walmsley"
+   ],
+   [
+    "Mohan",
+    "Wang"
+   ],
+   [
+    "Adir",
+    "Hazan"
+   ],
+   [
+    "Nicolas",
+    "Barré"
+   ],
+   [
+    "Alexander",
+    "Jesacher"
+   ],
+   [
+    "Julian",
+    "Fells"
+   ],
+   [
+    "Chao",
+    "He"
+   ],
+   [
+    "Aviad",
+    "Katiyi"
+   ],
+   [
+    "Zhen-Nan",
+    "Tian"
+   ],
+   [
+    "Alina",
+    "Karabchevsky"
+   ],
+   [
+    "Martin J.",
+    "Booth"
+   ]
+  ],
+  "title": "On-chip beam rotators, adiabatic mode converters, and waveplates through low-loss waveguides with variable cross-sections",
+  "container": "Light: Science &amp; Applications",
+  "volume": "11",
+  "issue": "1",
+  "page": null,
+  "article_number": "214",
+  "year": 2022,
+  "source": "api.crossref.org/works/10.1038/s41377-022-00907-4"
+ },
+ "Liu2018": {
+  "type": "journal-article",
+  "doi": "10.1007/s11433-018-9202-0",
+  "authors": [
+   [
+    "ZhengMing",
+    "Liu"
+   ],
+   [
+    "Yang",
+    "Liao"
+   ],
+   [
+    "ZhiWei",
+    "Fang"
+   ],
+   [
+    "Wei",
+    "Chu"
+   ],
+   [
+    "Ya",
+    "Cheng"
+   ]
+  ],
+  "title": "Suppression of bend loss in writing of three-dimensional optical waveguides with femtosecond laser pulses",
+  "container": "Science China Physics, Mechanics &amp; Astronomy",
+  "volume": "61",
+  "issue": "7",
+  "page": null,
+  "article_number": "70322",
+  "year": 2018,
+  "source": "api.crossref.org/works/10.1007/s11433-018-9202-0"
+ },
+ "Djogo2019": {
+  "type": "journal-article",
+  "doi": "10.1088/2631-7990/ab4d51",
+  "authors": [
+   [
+    "Gligor",
+    "Djogo"
+   ],
+   [
+    "Jianzhao",
+    "Li"
+   ],
+   [
+    "Stephen",
+    "Ho"
+   ],
+   [
+    "Moez",
+    "Haque"
+   ],
+   [
+    "Erden",
+    "Ertorer"
+   ],
+   [
+    "Jun",
+    "Liu"
+   ],
+   [
+    "Xiaolu",
+    "Song"
+   ],
+   [
+    "Jing",
+    "Suo"
+   ],
+   [
+    "Peter R",
+    "Herman"
+   ]
+  ],
+  "title": "Femtosecond laser additive and subtractive micro-processing: enabling a high-channel-density silica interposer for multicore fibre to silicon-photonic packaging",
+  "container": "International Journal of Extreme Manufacturing",
+  "volume": "1",
+  "issue": "4",
+  "page": "045002",
+  "article_number": null,
+  "year": 2019,
+  "source": "api.crossref.org/works/10.1088/2631-7990/ab4d51"
+ },
+ "Djogo2026": {
+  "type": "journal-article",
+  "doi": "10.1109/JLT.2026.3720907",
+  "authors": [
+   [
+    "Gligor",
+    "Djogo"
+   ],
+   [
+    "Amir",
+    "Rahimnouri"
+   ],
+   [
+    "Peter R.",
+    "Herman"
+   ]
+  ],
+  "title": "Laser Structured Optical Interposer for Ultra-Dense Surface Coupling of Multicore Fibers to Silicon Photonic Chip",
+  "container": "Journal of Lightwave Technology",
+  "volume": "44",
+  "issue": "18",
+  "page": "7978-7986",
+  "article_number": null,
+  "year": 2026,
+  "source": "api.crossref.org/works/10.1109/JLT.2026.3720907"
+ },
+ "Yu2026": {
+  "type": "journal-article",
+  "doi": "10.1002/adpr.70241",
+  "authors": [
+   [
+    "Fengrui",
+    "Yu"
+   ],
+   [
+    "Lin",
+    "Ma"
+   ],
+   [
+    "Mingjing",
+    "Xu"
+   ],
+   [
+    "Xiaoke",
+    "Chen"
+   ],
+   [
+    "Jinhua",
+    "Wu"
+   ],
+   [
+    "Zuyuan",
+    "He"
+   ]
+  ],
+  "title": "Ultra‐Compact Low‐Loss 3D Glass Waveguide Chip Using Femtosecond Laser Writing Technique",
+  "container": "Advanced Photonics Research",
+  "volume": "7",
+  "issue": "6",
+  "page": null,
+  "article_number": "e70241",
+  "year": 2026,
+  "source": "api.crossref.org/works/10.1002/adpr.70241"
+ },
+ "Ceccarelli2019": {
+  "type": "journal-article",
+  "doi": "10.1109/JLT.2019.2923126",
+  "authors": [
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Simone",
+    "Atzeni"
+   ],
+   [
+    "Alessandro",
+    "Prencipe"
+   ],
+   [
+    "Raffaele",
+    "Farinaro"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ]
+  ],
+  "title": "Thermal Phase Shifters for Femtosecond Laser Written Photonic Integrated Circuits",
+  "container": "Journal of Lightwave Technology",
+  "volume": "37",
+  "issue": "17",
+  "page": "4275-4281",
+  "article_number": null,
+  "year": 2019,
+  "source": "api.crossref.org/works/10.1109/JLT.2019.2923126"
+ },
+ "Ceccarelli2020": {
+  "type": "journal-article",
+  "doi": "10.1002/lpor.202000024",
+  "authors": [
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Simone",
+    "Atzeni"
+   ],
+   [
+    "Ciro",
+    "Pentangelo"
+   ],
+   [
+    "Francesco",
+    "Pellegatta"
+   ],
+   [
+    "Andrea",
+    "Crespi"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ]
+  ],
+  "title": "Low Power Reconfigurability and Reduced Crosstalk in Integrated Photonic Circuits Fabricated by Femtosecond Laser Micromachining",
+  "container": "Laser &amp; Photonics Reviews",
+  "volume": "14",
+  "issue": "10",
+  "page": null,
+  "article_number": "2000024",
+  "year": 2020,
+  "source": "api.crossref.org/works/10.1002/lpor.202000024"
+ },
+ "Albiero2022": {
+  "type": "journal-article",
+  "doi": "10.3390/mi13071145",
+  "authors": [
+   [
+    "Riccardo",
+    "Albiero"
+   ],
+   [
+    "Ciro",
+    "Pentangelo"
+   ],
+   [
+    "Marco",
+    "Gardina"
+   ],
+   [
+    "Simone",
+    "Atzeni"
+   ],
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ]
+  ],
+  "title": "Toward Higher Integration Density in Femtosecond-Laser-Written Programmable Photonic Circuits",
+  "container": "Micromachines",
+  "volume": "13",
+  "issue": "7",
+  "page": "1145",
+  "article_number": null,
+  "year": 2022,
+  "source": "api.crossref.org/works/10.3390/mi13071145"
+ },
+ "Ceccarelli2024": {
+  "type": "journal-article",
+  "doi": "10.1088/2515-7647/ad82c2",
+  "authors": [
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Jelena V",
+    "Rakonjac"
+   ],
+   [
+    "Samuele",
+    "Grandi"
+   ],
+   [
+    "Hugues de",
+    "Riedmatten"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ],
+   [
+    "Giacomo",
+    "Corrielli"
+   ]
+  ],
+  "title": "Integrated thermo-optic phase shifters for laser-written photonic circuits operating at cryogenic temperatures",
+  "container": "Journal of Physics: Photonics",
+  "volume": "6",
+  "issue": "4",
+  "page": "045023",
+  "article_number": null,
+  "year": 2024,
+  "source": "api.crossref.org/works/10.1088/2515-7647/ad82c2"
+ },
+ "Flamini2015": {
+  "type": "journal-article",
+  "doi": "10.1038/lsa.2015.127",
+  "authors": [
+   [
+    "Fulvio",
+    "Flamini"
+   ],
+   [
+    "Lorenzo",
+    "Magrini"
+   ],
+   [
+    "Adil S",
+    "Rab"
+   ],
+   [
+    "Nicolò",
+    "Spagnolo"
+   ],
+   [
+    "Vincenzo",
+    "D'Ambrosio"
+   ],
+   [
+    "Paolo",
+    "Mataloni"
+   ],
+   [
+    "Fabio",
+    "Sciarrino"
+   ],
+   [
+    "Tommaso",
+    "Zandrini"
+   ],
+   [
+    "Andrea",
+    "Crespi"
+   ],
+   [
+    "Roberta",
+    "Ramponi"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ]
+  ],
+  "title": "Thermally reconfigurable quantum photonic circuits at telecom wavelength by femtosecond laser micromachining",
+  "container": "Light: Science &amp; Applications",
+  "volume": "4",
+  "issue": "11",
+  "page": "e354-e354",
+  "article_number": null,
+  "year": 2015,
+  "source": "api.crossref.org/works/10.1038/lsa.2015.127"
+ },
+ "Pentangelo2024": {
+  "type": "journal-article",
+  "doi": "10.1515/nanoph-2023-0636",
+  "authors": [
+   [
+    "Ciro",
+    "Pentangelo"
+   ],
+   [
+    "Niki",
+    "Di Giano"
+   ],
+   [
+    "Simone",
+    "Piacentini"
+   ],
+   [
+    "Riccardo",
+    "Arpe"
+   ],
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Andrea",
+    "Crespi"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ]
+  ],
+  "title": "High‐fidelity and polarization‐insensitive universal photonic processors fabricated by femtosecond laser writing",
+  "container": "Nanophotonics",
+  "volume": "13",
+  "issue": "12",
+  "page": "2259-2270",
+  "article_number": null,
+  "year": 2024,
+  "source": "api.crossref.org/works/10.1515/nanoph-2023-0636"
+ },
+ "Kondratyev2024": {
+  "type": "journal-article",
+  "doi": "10.1364/PRJ.504588",
+  "authors": [
+   [
+    "Ilya",
+    "Kondratyev"
+   ],
+   [
+    "Veronika",
+    "Ivanova"
+   ],
+   [
+    "Suren",
+    "Fldzhyan"
+   ],
+   [
+    "Artem",
+    "Argenchiev"
+   ],
+   [
+    "Nikita",
+    "Kostyuchenko"
+   ],
+   [
+    "Sergey",
+    "Zhuravitskii"
+   ],
+   [
+    "Nikolay",
+    "Skryabin"
+   ],
+   [
+    "Ivan",
+    "Dyakonov"
+   ],
+   [
+    "Mikhail",
+    "Saygin"
+   ],
+   [
+    "Stanislav",
+    "Straupe"
+   ],
+   [
+    "Alexander",
+    "Korneev"
+   ],
+   [
+    "Sergei",
+    "Kulik"
+   ]
+  ],
+  "title": "Large-scale error-tolerant programmable interferometer fabricated by femtosecond laser writing",
+  "container": "Photonics Research",
+  "volume": "12",
+  "issue": "3",
+  "page": "A28",
+  "article_number": null,
+  "year": 2024,
+  "source": "api.crossref.org/works/10.1364/PRJ.504588"
+ },
+ "Lichtenegger2026": {
+  "type": "journal-article",
+  "doi": "10.3390/photonics13080731",
+  "authors": [
+   [
+    "Philip",
+    "Lichtenegger"
+   ],
+   [
+    "Philipp",
+    "Hurdax"
+   ],
+   [
+    "Georg",
+    "Spernbauer"
+   ],
+   [
+    "Bernhard",
+    "Lamprecht"
+   ]
+  ],
+  "title": "Reconfigurable Photonic Integrated Circuits in Glass by Femtosecond Laser Writing and Laser-Induced Chemical Etching",
+  "container": "Photonics",
+  "volume": "13",
+  "issue": "8",
+  "page": "731",
+  "article_number": null,
+  "year": 2026,
+  "source": "api.crossref.org/works/10.3390/photonics13080731"
+ },
+ "Cao2026": {
+  "type": "journal-article",
+  "doi": "10.1038/s41467-026-72316-9",
+  "authors": [
+   [
+    "Ziyu",
+    "Cao"
+   ],
+   [
+    "Hong-Jing",
+    "Du"
+   ],
+   [
+    "Xi-Jun",
+    "Yuan"
+   ],
+   [
+    "Bo",
+    "Wu"
+   ],
+   [
+    "Jialong",
+    "Zhang"
+   ],
+   [
+    "Yu-Xuan",
+    "Fu"
+   ],
+   [
+    "Shiji",
+    "Zhang"
+   ],
+   [
+    "Wenkai",
+    "Zhang"
+   ],
+   [
+    "Hailong",
+    "Zhou"
+   ],
+   [
+    "Xian-Min",
+    "Jin"
+   ],
+   [
+    "Xiao-Yun",
+    "Xu"
+   ],
+   [
+    "Hao",
+    "Tang"
+   ],
+   [
+    "Jianji",
+    "Dong"
+   ],
+   [
+    "Xinliang",
+    "Zhang"
+   ]
+  ],
+  "title": "Programmable Three-dimensional Photonic Neural Network Chip",
+  "container": "Nature Communications",
+  "volume": "17",
+  "issue": "1",
+  "page": null,
+  "article_number": "5476",
+  "year": 2026,
+  "source": "api.crossref.org/works/10.1038/s41467-026-72316-9"
+ },
+ "Hoch2022": {
+  "type": "journal-article",
+  "doi": "10.1038/s41534-022-00568-6",
+  "authors": [
+   [
+    "Francesco",
+    "Hoch"
+   ],
+   [
+    "Simone",
+    "Piacentini"
+   ],
+   [
+    "Taira",
+    "Giordani"
+   ],
+   [
+    "Zhen-Nan",
+    "Tian"
+   ],
+   [
+    "Mariagrazia",
+    "Iuliano"
+   ],
+   [
+    "Chiara",
+    "Esposito"
+   ],
+   [
+    "Anita",
+    "Camillini"
+   ],
+   [
+    "Gonzalo",
+    "Carvacho"
+   ],
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Nicolò",
+    "Spagnolo"
+   ],
+   [
+    "Andrea",
+    "Crespi"
+   ],
+   [
+    "Fabio",
+    "Sciarrino"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ]
+  ],
+  "title": "Reconfigurable continuously-coupled 3D photonic circuit for Boson Sampling experiments",
+  "container": "npj Quantum Information",
+  "volume": "8",
+  "issue": "1",
+  "page": null,
+  "article_number": "55",
+  "year": 2022,
+  "source": "api.crossref.org/works/10.1038/s41534-022-00568-6"
+ },
+ "Peri2026": {
+  "type": "journal-article",
+  "doi": "10.1117/1.AP.8.1.016009",
+  "authors": [
+   [
+    "Andrea",
+    "Peri"
+   ],
+   [
+    "Giulio",
+    "Gualandi"
+   ],
+   [
+    "Tommaso",
+    "Bertapelle"
+   ],
+   [
+    "Mattia",
+    "Sabatini"
+   ],
+   [
+    "Giacomo",
+    "Corrielli"
+   ],
+   [
+    "Yoann",
+    "Piétri"
+   ],
+   [
+    "Davide Giacomo",
+    "Marangon"
+   ],
+   [
+    "Giuseppe",
+    "Vallone"
+   ],
+   [
+    "Paolo",
+    "Villoresi"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ],
+   [
+    "Marco",
+    "Avesani"
+   ]
+  ],
+  "title": "High-performance heterodyne receiver for quantum information processing in a laser-written integrated photonic platform",
+  "container": "Advanced Photonics",
+  "volume": "8",
+  "issue": "01",
+  "page": "1-17",
+  "article_number": null,
+  "year": 2026,
+  "source": "api.crossref.org/works/10.1117/1.AP.8.1.016009"
+ },
+ "Crespi2016": {
+  "type": "journal-article",
+  "doi": "10.1038/ncomms10469",
+  "authors": [
+   [
+    "Andrea",
+    "Crespi"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ],
+   [
+    "Roberta",
+    "Ramponi"
+   ],
+   [
+    "Marco",
+    "Bentivegna"
+   ],
+   [
+    "Fulvio",
+    "Flamini"
+   ],
+   [
+    "Nicolò",
+    "Spagnolo"
+   ],
+   [
+    "Niko",
+    "Viggianiello"
+   ],
+   [
+    "Luca",
+    "Innocenti"
+   ],
+   [
+    "Paolo",
+    "Mataloni"
+   ],
+   [
+    "Fabio",
+    "Sciarrino"
+   ]
+  ],
+  "title": "Suppression law of quantum states in a 3D photonic fast Fourier transform chip",
+  "container": "Nature Communications",
+  "volume": "7",
+  "issue": "1",
+  "page": null,
+  "article_number": "10469",
+  "year": 2016,
+  "source": "api.crossref.org/works/10.1038/ncomms10469"
+ },
+ "Hao2023": {
+  "type": "proceedings-article",
+  "doi": "10.1109/ISSCC42615.2023.10067822",
+  "authors": [
+   [
+    "Junyan",
+    "Hao"
+   ],
+   [
+    "Minglei",
+    "Zhang"
+   ],
+   [
+    "Yanbo",
+    "Zhang"
+   ],
+   [
+    "Shubin",
+    "Liu"
+   ],
+   [
+    "Zhangming",
+    "Zhu"
+   ],
+   [
+    "Yan",
+    "Zhu"
+   ],
+   [
+    "Chi-Hang",
+    "Chan"
+   ],
+   [
+    "R. P.",
+    "Martins"
+   ]
+  ],
+  "title": "10.2 A Single-Channel 2.6GS/s 10b Dynamic Pipelined ADC with Time-Assisted Residue Generation Scheme Achieving Intrinsic PVT Robustness",
+  "container": "2023 IEEE International Solid- State Circuits Conference (ISSCC)",
+  "volume": null,
+  "issue": null,
+  "page": "168-170",
+  "article_number": null,
+  "year": 2023,
+  "source": "api.crossref.org/works/10.1109/ISSCC42615.2023.10067822"
+ },
+ "WangKuo2023": {
+  "type": "proceedings-article",
+  "doi": "10.1109/ISSCC42615.2023.10067498",
+  "authors": [
+   [
+    "Jia-Ching",
+    "Wang"
+   ],
+   [
+    "Tai-Haur",
+    "Kuo"
+   ]
+  ],
+  "title": "A 3mW 2.7GS/s 8b Subranging ADC with Multiple-Reference-Reference-Embedded Comparators",
+  "container": "2023 IEEE International Solid- State Circuits Conference (ISSCC)",
+  "volume": null,
+  "issue": null,
+  "page": "276-278",
+  "article_number": null,
+  "year": 2023,
+  "source": "api.crossref.org/works/10.1109/ISSCC42615.2023.10067498"
+ },
+ "Nazemi2015": {
+  "type": "proceedings-article",
+  "doi": "10.1109/ISSCC.2015.7062924",
+  "authors": [
+   [
+    "Ali",
+    "Nazemi"
+   ],
+   [
+    "Kangmin",
+    "Hu"
+   ],
+   [
+    "Burak",
+    "Catli"
+   ],
+   [
+    "Delong",
+    "Cui"
+   ],
+   [
+    "Ullas",
+    "Singh"
+   ],
+   [
+    "Tim",
+    "He"
+   ],
+   [
+    "Zhi",
+    "Huang"
+   ],
+   [
+    "Bo",
+    "Zhang"
+   ],
+   [
+    "Afshin",
+    "Momtaz"
+   ],
+   [
+    "Jun",
+    "Cao"
+   ]
+  ],
+  "title": "3.4 A 36Gb/s PAM4 transmitter using an 8b 18GS/S DAC in 28nm CMOS",
+  "container": "2015 IEEE International Solid-State Circuits Conference - (ISSCC) Digest of Technical Papers",
+  "volume": null,
+  "issue": null,
+  "page": "1-3",
+  "article_number": null,
+  "year": 2015,
+  "source": "api.crossref.org/works/10.1109/ISSCC.2015.7062924"
+ },
+ "Caragiulo2021": {
+  "type": "journal-article",
+  "doi": "10.1109/JSSC.2021.3057608",
+  "authors": [
+   [
+    "Pietro",
+    "Caragiulo"
+   ],
+   [
+    "Oscar Elisio",
+    "Mattia"
+   ],
+   [
+    "Amin",
+    "Arbabian"
+   ],
+   [
+    "Boris",
+    "Murmann"
+   ]
+  ],
+  "title": "A 2✖ Time-Interleaved 28-GS/s 8-Bit 0.03-mm<sup>2</sup> Switched-Capacitor DAC in 16-nm FinFET CMOS",
+  "container": "IEEE Journal of Solid-State Circuits",
+  "volume": "56",
+  "issue": "8",
+  "page": "2335-2346",
+  "article_number": null,
+  "year": 2021,
+  "source": "api.crossref.org/works/10.1109/JSSC.2021.3057608"
+ },
+ "Levy2024": {
+  "type": "journal-article",
+  "doi": "10.1109/JSSC.2023.3344072",
+  "authors": [
+   [
+    "Cooper S.",
+    "Levy"
+   ],
+   [
+    "Zhe",
+    "Xuan"
+   ],
+   [
+    "Jahnavi",
+    "Sharma"
+   ],
+   [
+    "Duanni",
+    "Huang"
+   ],
+   [
+    "Ranjeet",
+    "Kumar"
+   ],
+   [
+    "Chaoxuan",
+    "Ma"
+   ],
+   [
+    "Guan-Lin",
+    "Su"
+   ],
+   [
+    "Songtao",
+    "Liu"
+   ],
+   [
+    "Jinyong",
+    "Kim"
+   ],
+   [
+    "Xinru",
+    "Wu"
+   ],
+   [
+    "Tolga",
+    "Acikalin"
+   ],
+   [
+    "Haisheng",
+    "Rong"
+   ],
+   [
+    "Ganesh",
+    "Balamurugan"
+   ],
+   [
+    "James E.",
+    "Jaussi"
+   ]
+  ],
+  "title": "8- <i>λ</i> × 50 Gbps/ <i>λ</i> Heterogeneously Integrated Si-Ph DWDM Transmitter",
+  "container": "IEEE Journal of Solid-State Circuits",
+  "volume": "59",
+  "issue": "3",
+  "page": "690-701",
+  "article_number": null,
+  "year": 2024,
+  "source": "api.crossref.org/works/10.1109/JSSC.2023.3344072"
+ },
+ "Lin2018": {
+  "type": "proceedings-article",
+  "doi": "10.1109/VLSIC.2018.8502396",
+  "authors": [
+   [
+    "Sen",
+    "Lin"
+   ],
+   [
+    "Sajjad",
+    "Moazeni"
+   ],
+   [
+    "Vladimir",
+    "Stojanovic"
+   ]
+  ],
+  "title": "A 40GB/S Optical NRZ Transmitter Based on Monolithic Microring Modulators in 45NM SOI CMOS",
+  "container": "2018 IEEE Symposium on VLSI Circuits",
+  "volume": null,
+  "issue": null,
+  "page": "273-274",
+  "article_number": null,
+  "year": 2018,
+  "source": "api.crossref.org/works/10.1109/VLSIC.2018.8502396"
+ },
+ "Xu2020": {
+  "type": "journal-article",
+  "doi": "10.1038/s41467-020-17806-0",
+  "authors": [
+   [
+    "Mengyue",
+    "Xu"
+   ],
+   [
+    "Mingbo",
+    "He"
+   ],
+   [
+    "Hongguang",
+    "Zhang"
+   ],
+   [
+    "Jian",
+    "Jian"
+   ],
+   [
+    "Ying",
+    "Pan"
+   ],
+   [
+    "Xiaoyue",
+    "Liu"
+   ],
+   [
+    "Lifeng",
+    "Chen"
+   ],
+   [
+    "Xiangyu",
+    "Meng"
+   ],
+   [
+    "Hui",
+    "Chen"
+   ],
+   [
+    "Zhaohui",
+    "Li"
+   ],
+   [
+    "Xi",
+    "Xiao"
+   ],
+   [
+    "Shaohua",
+    "Yu"
+   ],
+   [
+    "Siyuan",
+    "Yu"
+   ],
+   [
+    "Xinlun",
+    "Cai"
+   ]
+  ],
+  "title": "High-performance coherent optical modulators based on thin-film lithium niobate platform",
+  "container": "Nature Communications",
+  "volume": "11",
+  "issue": "1",
+  "page": null,
+  "article_number": "3911",
+  "year": 2020,
+  "source": "api.crossref.org/works/10.1038/s41467-020-17806-0"
+ },
+ "Kharel2021": {
+  "type": "journal-article",
+  "doi": "10.1364/OPTICA.416155",
+  "authors": [
+   [
+    "Prashanta",
+    "Kharel"
+   ],
+   [
+    "Christian",
+    "Reimer"
+   ],
+   [
+    "Kevin",
+    "Luke"
+   ],
+   [
+    "Lingyan",
+    "He"
+   ],
+   [
+    "Mian",
+    "Zhang"
+   ]
+  ],
+  "title": "Breaking voltage–bandwidth limits in integrated lithium niobate modulators using micro-structured electrodes",
+  "container": "Optica",
+  "volume": "8",
+  "issue": "3",
+  "page": "357",
+  "article_number": null,
+  "year": 2021,
+  "source": "api.crossref.org/works/10.1364/OPTICA.416155"
+ },
+ "LiuGe2025": {
+  "type": "journal-article",
+  "doi": "10.1038/s41377-024-01670-4",
+  "authors": [
+   [
+    "Hanchen",
+    "Liu"
+   ],
+   [
+    "Toni P.",
+    "Pasanen"
+   ],
+   [
+    "Tsun Hang",
+    "Fung"
+   ],
+   [
+    "Joonas",
+    "Isometsä"
+   ],
+   [
+    "Antti",
+    "Haarahiltunen"
+   ],
+   [
+    "Steven",
+    "Hesse"
+   ],
+   [
+    "Lutz",
+    "Werner"
+   ],
+   [
+    "Ville",
+    "Vähänissi"
+   ],
+   [
+    "Hele",
+    "Savin"
+   ]
+  ],
+  "title": "Near-infrared germanium PIN-photodiodes with &gt;1A/W responsivity",
+  "container": "Light: Science &amp; Applications",
+  "volume": "14",
+  "issue": "1",
+  "page": null,
+  "article_number": "9",
+  "year": 2025,
+  "source": "api.crossref.org/works/10.1038/s41377-024-01670-4"
+ },
+ "Yang2025": {
+  "type": "journal-article",
+  "doi": "10.3390/mi16121416",
+  "authors": [
+   [
+    "Yihao",
+    "Yang"
+   ],
+   [
+    "Chao",
+    "Cheng"
+   ],
+   [
+    "Ruixuan",
+    "Yang"
+   ],
+   [
+    "Yangming",
+    "Ren"
+   ],
+   [
+    "Shenlei",
+    "Bao"
+   ],
+   [
+    "Jintao",
+    "Xue"
+   ],
+   [
+    "Houyou",
+    "Lai"
+   ],
+   [
+    "Binhao",
+    "Wang"
+   ]
+  ],
+  "title": "A Low-Noise Hybrid-Integrated Balanced Homodyne Receiver with 2.5 GHz Bandwidth and 15 dB Quantum Shot Noise Clearance",
+  "container": "Micromachines",
+  "volume": "16",
+  "issue": "12",
+  "page": "1416",
+  "article_number": null,
+  "year": 2025,
+  "source": "api.crossref.org/works/10.3390/mi16121416"
+ },
+ "Garrod2014": {
+  "type": "journal-article",
+  "doi": "10.1063/1.4893576",
+  "authors": [
+   [
+    "T.",
+    "Garrod"
+   ],
+   [
+    "D.",
+    "Olson"
+   ],
+   [
+    "M.",
+    "Klaus"
+   ],
+   [
+    "C.",
+    "Zenner"
+   ],
+   [
+    "C.",
+    "Galstad"
+   ],
+   [
+    "L.",
+    "Mawst"
+   ],
+   [
+    "D.",
+    "Botez"
+   ]
+  ],
+  "title": "50% continuous-wave wallplug efficiency from 1.53<i>μ</i>m-emitting broad-area diode lasers",
+  "container": "Applied Physics Letters",
+  "volume": "105",
+  "issue": "7",
+  "page": null,
+  "article_number": "071101",
+  "year": 2014,
+  "source": "api.crossref.org/works/10.1063/1.4893576"
+ },
+ "Kanold2024": {
+  "type": "proceedings-article",
+  "doi": "10.1117/12.3001390",
+  "authors": [
+   [
+    "Niklas",
+    "Kanold"
+   ],
+   [
+    "Martin",
+    "Möhrle"
+   ],
+   [
+    "Falco",
+    "Ehrensack"
+   ],
+   [
+    "Martin",
+    "Schell"
+   ]
+  ],
+  "title": "1550 nm broad area large optical cavity laser with 4.9 W CW output power",
+  "container": "High-Power Diode Laser Technology XXII",
+  "volume": null,
+  "issue": null,
+  "page": "5",
+  "article_number": null,
+  "year": 2024,
+  "source": "api.crossref.org/works/10.1117/12.3001390"
+ },
+ "Hsu2026": {
+  "type": "journal-article",
+  "doi": "10.3390/microelectronics2030014",
+  "authors": [
+   [
+    "Fu-Hsiang",
+    "Hsu"
+   ],
+   [
+    "Wei-Chih",
+    "Cheng"
+   ],
+   [
+    "Chien-Wei",
+    "Huang"
+   ],
+   [
+    "Hong-Wei",
+    "Huang"
+   ],
+   [
+    "Chia-Chin",
+    "Chiang"
+   ],
+   [
+    "Chun-Nien",
+    "Liu"
+   ]
+  ],
+  "title": "Packaging Design and Characterization of a 16-Channel Silicon Photonic Transmitter Module for a 1.6 Tb/s-Class Optical Engine",
+  "container": "Microelectronics",
+  "volume": "2",
+  "issue": "3",
+  "page": "14",
+  "article_number": null,
+  "year": 2026,
+  "source": "api.crossref.org/works/10.3390/microelectronics2030014"
+ },
+ "Mori2026": {
+  "type": "journal-article",
+  "doi": "10.1109/JSSC.2025.3646072",
+  "authors": [
+   [
+    "Haruki",
+    "Mori"
+   ],
+   [
+    "Je-Min",
+    "Hung"
+   ],
+   [
+    "Wei-Chang",
+    "Zhao"
+   ],
+   [
+    "Kinshuk",
+    "Khare"
+   ],
+   [
+    "Brian",
+    "Crafton"
+   ],
+   [
+    "Hiroaki",
+    "Ishii"
+   ],
+   [
+    "Cheng-En",
+    "Lee"
+   ],
+   [
+    "Xiaochen",
+    "Peng"
+   ],
+   [
+    "Xiaoyu",
+    "Sun"
+   ],
+   [
+    "Yorinobu",
+    "Fujino"
+   ],
+   [
+    "Chia-Jung",
+    "Tsen"
+   ],
+   [
+    "Vineet",
+    "Joshi"
+   ],
+   [
+    "Chao-Kai",
+    "Chuang"
+   ],
+   [
+    "Takeshi",
+    "Hashizume"
+   ],
+   [
+    "Chia-Fu",
+    "Lee"
+   ],
+   [
+    "Tan-Li",
+    "Chou"
+   ],
+   [
+    "Kerem",
+    "Akarvardar"
+   ],
+   [
+    "Saman",
+    "Adham"
+   ],
+   [
+    "Yih",
+    "Wang"
+   ],
+   [
+    "Hidehiro",
+    "Fujiwara"
+   ],
+   [
+    "Yu-Der",
+    "Chih"
+   ],
+   [
+    "Yen-Huei",
+    "Chen"
+   ],
+   [
+    "Hung-Jen",
+    "Liao"
+   ],
+   [
+    "Tsung-Yung",
+    "Jonathan Chang"
+   ]
+  ],
+  "title": "A 3 nm FinFET 125 TOPS/W-29 TFLOPS/W, 90 TOPS/mm <sup>2</sup> -17 TFLOPS/mm <sup>2</sup> SRAM-Based INT8, and FP16 Digital-CIM Compiler With Support for Multi-Weight Update/Cycle",
+  "container": "IEEE Journal of Solid-State Circuits",
+  "volume": "61",
+  "issue": "4",
+  "page": "1502-1512",
+  "article_number": null,
+  "year": 2026,
+  "source": "api.crossref.org/works/10.1109/JSSC.2025.3646072"
+ },
+ "Labrecque2024": {
+  "type": "proceedings-article",
+  "doi": "10.1109/ISLC57752.2024.10717351",
+  "authors": [
+   [
+    "Michelle",
+    "Labrecque"
+   ],
+   [
+    "Jenna",
+    "Campbell"
+   ],
+   [
+    "Hannah",
+    "Grant"
+   ],
+   [
+    "Kevin",
+    "McClune"
+   ],
+   [
+    "Matt",
+    "Larkins"
+   ],
+   [
+    "Sarah",
+    "Kinney"
+   ],
+   [
+    "Leticia",
+    "Krambeck"
+   ],
+   [
+    "Gordon",
+    "Morrison"
+   ],
+   [
+    "Leif",
+    "Johansson"
+   ],
+   [
+    "Milan",
+    "Mashanovitch"
+   ],
+   [
+    "Paul O.",
+    "Leisher"
+   ]
+  ],
+  "title": "Watt-Class High Brightness Tapered Laser with Integrated Distributed Feedback Grating at 1550 nm",
+  "container": "2024 IEEE 29th International Semiconductor Laser Conference (ISLC)",
+  "volume": null,
+  "issue": null,
+  "page": "1-2",
+  "article_number": null,
+  "year": 2024,
+  "source": "api.crossref.org/works/10.1109/ISLC57752.2024.10717351"
+ },
+ "LiuDFB2025": {
+  "type": "journal-article",
+  "doi": "10.1364/OL.561530",
+  "authors": [
+   [
+    "Te-Hua",
+    "Liu"
+   ],
+   [
+    "You-Yu",
+    "Tu"
+   ],
+   [
+    "Yi-Hsuan",
+    "Lu"
+   ],
+   [
+    "Chao-Hsin",
+    "Wu"
+   ]
+  ],
+  "title": "High-efficiency 1.55-µm DFB laser with a 600-µm short cavity and sub-20-kHz linewidth",
+  "container": "Optics Letters",
+  "volume": "50",
+  "issue": "9",
+  "page": "3018",
+  "article_number": null,
+  "year": 2025,
+  "source": "api.crossref.org/works/10.1364/OL.561530"
+ },
+ "Memeo2026": {
+  "type": "arxiv",
+  "arxiv": "2603.25142",
+  "authors": [
+   [
+    "Roberto",
+    "Memeo"
+   ],
+   [
+    "Davide",
+    "Piras"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ],
+   [
+    "Andrea",
+    "Crespi"
+   ]
+  ],
+  "title": "Tailoring the birefringence of femtosecond-laser-written multi-scan waveguides in glass",
+  "year": 2026,
+  "source": "export.arxiv.org/api/query?id_list=2603.25142"
+ },
+ "Barzaghi2025": {
+  "type": "arxiv",
+  "arxiv": "2505.01609",
+  "authors": [
+   [
+    "Andrea",
+    "Barzaghi"
+   ],
+   [
+    "Maëlle",
+    "Bénéfice"
+   ],
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Giacomo",
+    "Corrielli"
+   ],
+   [
+    "Valerio",
+    "Galli"
+   ],
+   [
+    "Marco",
+    "Gardina"
+   ],
+   [
+    "Vittorio",
+    "Grimaldi"
+   ],
+   [
+    "Jakub",
+    "Kaczorowski"
+   ],
+   [
+    "Francesco",
+    "Malaspina"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ],
+   [
+    "Ciro",
+    "Pentangelo"
+   ],
+   [
+    "Andrea",
+    "Rocchetto"
+   ],
+   [
+    "Alessandro",
+    "Rudi"
+   ]
+  ],
+  "title": "A low-loss, 24-mode laser-written universal photonic processor in a glass-based platform",
+  "year": 2025,
+  "source": "export.arxiv.org/api/query?id_list=2505.01609"
+ },
+ "DiMicco2026": {
+  "type": "arxiv",
+  "arxiv": "2605.04162",
+  "authors": [
+   [
+    "Simone Di",
+    "Micco"
+   ],
+   [
+    "Francesco",
+    "Hoch"
+   ],
+   [
+    "Alessandro",
+    "Ciorra"
+   ],
+   [
+    "Daniel Carvalho de",
+    "Salles"
+   ],
+   [
+    "Nicolò",
+    "Spagnolo"
+   ],
+   [
+    "Taira",
+    "Giordani"
+   ],
+   [
+    "Gonzalo",
+    "Carvacho"
+   ],
+   [
+    "Niki Di",
+    "Giano"
+   ],
+   [
+    "Marco",
+    "Gardina"
+   ],
+   [
+    "Andrea",
+    "Crespi"
+   ],
+   [
+    "Francesco",
+    "Ceccarelli"
+   ],
+   [
+    "Roberto",
+    "Osellame"
+   ],
+   [
+    "Fabio",
+    "Sciarrino"
+   ]
+  ],
+  "title": "Boson Sampling with a reconfigurable 128 modes 3D integrated photonic circuit",
+  "year": 2026,
+  "source": "export.arxiv.org/api/query?id_list=2605.04162"
+ }
+}
