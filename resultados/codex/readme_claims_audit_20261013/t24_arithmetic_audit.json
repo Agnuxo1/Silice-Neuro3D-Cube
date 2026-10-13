@@ -1,0 +1,23 @@
+{
+  "scope": "Recomputed budget arithmetic; source values and physical transferability are not validated by this check",
+  "cases": [
+    {
+      "case": "nominal",
+      "recomputed_joules_per_mac": 1.2041660743093635e-09,
+      "matches_saved": true,
+      "modern_advantage": 1.3329859317932699e-05,
+      "electronic_io_joules_per_mac": 1.74734375e-13,
+      "electronic_io_over_modern": 10.8859515625,
+      "material_extrapolation_not_validated": true
+    },
+    {
+      "case": "optimistic",
+      "recomputed_joules_per_mac": 1.015856897098712e-10,
+      "matches_saved": true,
+      "modern_advantage": 0.000158008125079564,
+      "electronic_io_joules_per_mac": 7.1625e-14,
+      "electronic_io_over_modern": 4.4622375,
+      "material_extrapolation_not_validated": true
+    }
+  ]
+}

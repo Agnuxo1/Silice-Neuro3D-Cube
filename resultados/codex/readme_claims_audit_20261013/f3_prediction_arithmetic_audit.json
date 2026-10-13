@@ -1,0 +1,33 @@
+{
+  "scope": "Saved predictions versus independently regenerated seeded test labels; no retraining; saved fitted weights are absent from this original results file",
+  "raw_results_sha256": "7227a63bf8f85c4b2fda1c9a5072300a16918f3710b9f246432c8f342ff7154a",
+  "rows": [
+    {
+      "model": "m1",
+      "test_samples": 2000,
+      "correct": 1181,
+      "accuracy_recomputed": 0.5905,
+      "reported_accuracy": 0.5905
+    },
+    {
+      "model": "m2",
+      "test_samples": 2000,
+      "correct": 1696,
+      "accuracy_recomputed": 0.848,
+      "reported_accuracy": 0.848
+    },
+    {
+      "model": "m3",
+      "test_samples": 2000,
+      "correct": 1983,
+      "accuracy_recomputed": 0.9915,
+      "reported_accuracy": 0.9915
+    }
+  ],
+  "paired_ci95_recomputed": [
+    -0.2815,
+    -0.23548749999999993
+  ],
+  "H1_pass": false,
+  "H2_pass": false
+}
