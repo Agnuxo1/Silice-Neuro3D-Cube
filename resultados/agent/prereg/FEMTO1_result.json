@@ -1,0 +1,27 @@
+{
+  "experiment_id": "FEMTO1-F1F2-20261013-v1",
+  "protocol_sha256": "5530365f3bfccf4026d4a0852ddf77df06fd069427fcdbb4df735e72ac0f6a82",
+  "scope": "Prospective new split after exploratory MNIST use. Numerical engineering evidence; no independently unseen dataset or fabricated device claim. Stage-specific source commitments required before physical/layout validation.",
+  "status": "completed",
+  "artifacts": [
+    "resultados/codex/femto1_20261013/F2_validation.json",
+    "resultados/codex/femto1_20261013/RUN.json",
+    "resultados/codex/femto1_20261013/W_main.npy",
+    "resultados/codex/femto1_20261013/W_nominal.npy",
+    "resultados/codex/femto1_20261013/W_noise_aware.npy",
+    "resultados/codex/femto1_20261013/W_signed.npy",
+    "resultados/codex/femto1_20261013/W_proto.npy",
+    "resultados/codex/femto1_20261013/prototype_means.npy",
+    "resultados/codex/femto1_20261013/prototype_normalized.npy",
+    "resultados/codex/femto1_20261013/validation_power.npz",
+    "resultados/codex/femto1_20261013/MC_validation.npz",
+    "resultados/codex/femto1_20261013/readout_nominal.npz"
+  ],
+  "metrics": {
+    "ideal_loss_pp": 0.0,
+    "kappa10_recalibrated_loss_pp": -0.008127904627197369,
+    "sealed_labels_unrevealed": true
+  },
+  "extra_gate_failure": "TIA sigma .05 of full-scale input produces 50.12%; guide F2/F6 noise/power feasibility remains unresolved",
+  "limits": "Mechanical audit is neither independent replication nor fabrication clearance"
+}
