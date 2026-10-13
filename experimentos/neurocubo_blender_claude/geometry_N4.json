@@ -1,0 +1,615 @@
+{
+ "coupler_model": {
+  "balanced_length_m": 0.001665251318883096,
+  "gap_definition": "centre-to-centre separation; step-index analogue with core radius 6 um (12 um diameter), V = 2.92 (not strictly single-mode)",
+  "kappa_table_per_m": [
+   [
+    1.4e-05,
+    471.6394183216887
+   ],
+   [
+    1.6e-05,
+    203.05398235231223
+   ],
+   [
+    2e-05,
+    38.51257119356343
+   ]
+  ],
+  "nominal_gap_m": 1.4e-05,
+  "validation": "FD supermodes vs coupled-mode theory, within 0.08 % at 14 um (acoplador_claude G2); model-to-model, not measured"
+ },
+ "cube": {
+  "layer_length_m": 0.03592201055106477,
+  "margin_m": 0.002,
+  "side_m": 0.03992201055106477
+ },
+ "input_encoding": "signed real amplitudes on n input modes (phase-referenced carrier)",
+ "loss_source": "0.35 dB per stage nominal (Ceccarelli et al. 2020, cited in T24)",
+ "material": {
+  "n0": 1.444,
+  "n_cladding_model": 1.439,
+  "n_eff": 1.4421921654570125,
+  "n_eff_source": "analytic LP01 of the step-index analogue (acoplador_claude G1.5)",
+  "wavelength_m": 1.55e-06
+ },
+ "schema": "neurocubo-geometry/1",
+ "scope": "numerical_neural_model",
+ "units": "SI (m, rad)",
+ "layers": [
+  {
+   "name": "L1",
+   "n": 4,
+   "depth_m": 0.003,
+   "direction": 1,
+   "stages": 4,
+   "loss_db_per_stage": 0.35,
+   "mode_pitch_m": 5e-05,
+   "output_section_path_m": 0.001,
+   "column_path_m": [
+    0.008730502637766192,
+    0.008730502637766192,
+    0.008730502637766192,
+    0.008730502637766192
+   ],
+   "mzis": [
+    {
+     "index": 0,
+     "modes": [
+      0,
+      1
+     ],
+     "column": 1,
+     "x_start_m": 0.002,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.00385
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.008215251318883097
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.006365251318883096
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.002
+     }
+    },
+    {
+     "index": 1,
+     "modes": [
+      2,
+      3
+     ],
+     "column": 1,
+     "x_start_m": 0.002,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.00385
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.008215251318883097
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.006365251318883096
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.002
+     }
+    },
+    {
+     "index": 2,
+     "modes": [
+      1,
+      2
+     ],
+     "column": 2,
+     "x_start_m": 0.010730502637766192,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.012580502637766191
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.01694575395664929
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.015095753956649288
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.010730502637766192
+     }
+    },
+    {
+     "index": 3,
+     "modes": [
+      0,
+      1
+     ],
+     "column": 3,
+     "x_start_m": 0.019461005275532385,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.021311005275532386
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.025676256594415484
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.023826256594415483
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.019461005275532385
+     }
+    },
+    {
+     "index": 4,
+     "modes": [
+      2,
+      3
+     ],
+     "column": 3,
+     "x_start_m": 0.019461005275532385,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.021311005275532386
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.025676256594415484
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.023826256594415483
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.019461005275532385
+     }
+    },
+    {
+     "index": 5,
+     "modes": [
+      1,
+      2
+     ],
+     "column": 4,
+     "x_start_m": 0.028191507913298573,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.030041507913298574
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.034406759232181665
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.03255675923218167
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.028191507913298573
+     }
+    }
+   ],
+   "output_heaters": [
+    {
+     "mode": 0,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    },
+    {
+     "mode": 1,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    },
+    {
+     "mode": 2,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    },
+    {
+     "mode": 3,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    }
+   ]
+  },
+  {
+   "name": "L2",
+   "n": 4,
+   "depth_m": 0.006,
+   "direction": -1,
+   "stages": 4,
+   "loss_db_per_stage": 0.35,
+   "mode_pitch_m": 5e-05,
+   "output_section_path_m": 0.001,
+   "column_path_m": [
+    0.008730502637766192,
+    0.008730502637766192,
+    0.008730502637766192,
+    0.008730502637766192
+   ],
+   "mzis": [
+    {
+     "index": 0,
+     "modes": [
+      0,
+      1
+     ],
+     "column": 1,
+     "x_start_m": 0.002,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.00385
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.008215251318883097
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.006365251318883096
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.002
+     }
+    },
+    {
+     "index": 1,
+     "modes": [
+      2,
+      3
+     ],
+     "column": 1,
+     "x_start_m": 0.002,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.00385
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.008215251318883097
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.006365251318883096
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.002
+     }
+    },
+    {
+     "index": 2,
+     "modes": [
+      1,
+      2
+     ],
+     "column": 2,
+     "x_start_m": 0.010730502637766192,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.012580502637766191
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.01694575395664929
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.015095753956649288
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.010730502637766192
+     }
+    },
+    {
+     "index": 3,
+     "modes": [
+      0,
+      1
+     ],
+     "column": 3,
+     "x_start_m": 0.019461005275532385,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.021311005275532386
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.025676256594415484
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.023826256594415483
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.019461005275532385
+     }
+    },
+    {
+     "index": 4,
+     "modes": [
+      2,
+      3
+     ],
+     "column": 3,
+     "x_start_m": 0.019461005275532385,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.021311005275532386
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.025676256594415484
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.023826256594415483
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.019461005275532385
+     }
+    },
+    {
+     "index": 5,
+     "modes": [
+      1,
+      2
+     ],
+     "column": 4,
+     "x_start_m": 0.028191507913298573,
+     "arm_path_m": {
+      "outer": [
+       0.001,
+       0.001
+      ],
+      "inner": [
+       0.001,
+       0.001
+      ]
+     },
+     "coupler_in": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.030041507913298574
+     },
+     "coupler_out": {
+      "gap_m": 1.4e-05,
+      "length_m": 0.001665251318883096,
+      "x_m": 0.034406759232181665
+     },
+     "heater_theta": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.03255675923218167
+     },
+     "heater_phi": {
+      "phi": 0.0,
+      "length_m": 0.001,
+      "x_m": 0.028191507913298573
+     }
+    }
+   ],
+   "output_heaters": [
+    {
+     "mode": 0,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    },
+    {
+     "mode": 1,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    },
+    {
+     "mode": 2,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    },
+    {
+     "mode": 3,
+     "phi": 0.0,
+     "length_m": 0.001,
+     "x_m": 0.03692201055106477
+    }
+   ]
+  }
+ ],
+ "optoelectronic_stage": {
+  "type": "detect_and_reemit_signed_push_pull_MZM",
+  "v_pi": 1.0,
+  "bias": 0.0,
+  "note": "external optoelectronics at the folding face; phase-referenced carrier assumed (T12 point 7)"
+ },
+ "readout": {
+  "gain": 1.0,
+  "ports": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "note": "logits = gain * detected intensity; gain is an electronic resource"
+ },
+ "exported_from": "Blender 4.5.14 LTS object custom properties",
+ "sha256": "090f7ff1afe6454b5e814511a80cf28bc9b06daa50b0132551c3dfc6cb3332e0"
+}
