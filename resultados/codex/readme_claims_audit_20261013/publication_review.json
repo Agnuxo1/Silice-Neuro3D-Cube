@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-13T11:47:29.404938+00:00",
+  "base_main": "c4710f6afb4357cd9c2873bf129c9255c8252083",
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "sha256": "5bcd0a6f453dc416a252ac68c4307b775c0d8ee027b8d6e6205654e58a9126d8",
+      "bytes": 45719
+    },
+    {
+      "path": "Docs/README-EVIDENCE-AUDIT-20261013.md",
+      "sha256": "0b78334749d9645fe743be005be5d92bd8d453e09112e24d78fe5ced4a6e16b3",
+      "bytes": 7112
+    },
+    {
+      "path": "resultados/codex/readme_claims_audit_20261013/f3_prediction_arithmetic_audit.json",
+      "sha256": "2ef125b39255eccf388e9c9e96cb41a234a0230791f0d036877fffe360e730e1",
+      "bytes": 854
+    },
+    {
+      "path": "resultados/codex/readme_claims_audit_20261013/historical_gpu_raw_reaudit.json",
+      "sha256": "a3fec8a093ee8e495fc111ed157fa4ab8aec17df9eaea27e43ca79f8f7bec45f",
+      "bytes": 3583
+    },
+    {
+      "path": "resultados/codex/readme_claims_audit_20261013/retained_graphics_raw_reaudit.json",
+      "sha256": "a3b77d96d41f70c112d38e5368300c4acafe721660d39173deeee1f8b5640370",
+      "bytes": 2279
+    },
+    {
+      "path": "resultados/codex/readme_claims_audit_20261013/t24_arithmetic_audit.json",
+      "sha256": "540c84fe6a218ece39ac2c848cf77e63e2f6dbbd36d139dfe608336bc0412243",
+      "bytes": 793
+    },
+    {
+      "path": "resultados/codex/readme_claims_audit_20261013/tree_integrity_audit.json",
+      "sha256": "2a120a3d5d2e4a07c2cf4474fcae79dcfa97ef32f6e7d51b936a66b86dac5930",
+      "bytes": 96435
+    },
+    {
+      "path": "resultados/codex/readme_claims_audit_20261013/git_text_evidence.json",
+      "sha256": "8afd93d1a866f4111dd0a8d5a598b9c5e4545ddff6cd924f00cfb234863a6c41",
+      "bytes": 70980
+    }
+  ],
+  "all_prior_gif_links_unchanged": true,
+  "retained_img_tags": 18,
+  "checked_local_links": 61,
+  "scientific_sources_and_thresholds_modified": false,
+  "gpu_initialized": false,
+  "purpose": "Restore positive evidence visibility and qualify negative scopes",
+  "new_summary_navigation_anchor_verified": true,
+  "text_evidence_exactly_recoverable": true
+}

@@ -1,0 +1,71 @@
+{
+  "numpy": "2.2.6",
+  "results": [
+    {
+      "folder": "point03_render_gpu_run02_20261009",
+      "raw_files": 84,
+      "hashes_match": true,
+      "pass_frames": 21,
+      "fail_frames": 63,
+      "max_error": 2.566468251309254,
+      "strict_metric_discrepancies": [
+        {
+          "raw": "quarter_256_0.npz",
+          "metric": "relative_l2",
+          "delta": 1.3100631690576847e-14
+        }
+      ],
+      "scope": "CPU arithmetic on retained raw frames only; no GPU job or new optical field"
+    },
+    {
+      "folder": "point03_render_p2_corrected_run01_20261009",
+      "raw_files": 84,
+      "hashes_match": true,
+      "pass_frames": 21,
+      "fail_frames": 63,
+      "max_error": 0.0001620808784123121,
+      "strict_metric_discrepancies": [],
+      "scope": "CPU arithmetic on retained raw frames only; no GPU job or new optical field"
+    },
+    {
+      "folder": "point03_render_p3_opengl_run01_20261009",
+      "raw_files": 84,
+      "hashes_match": true,
+      "pass_frames": 84,
+      "fail_frames": 0,
+      "max_error": 5.136610514336838e-07,
+      "strict_metric_discrepancies": [],
+      "scope": "CPU arithmetic on retained raw frames only; no GPU job or new optical field"
+    },
+    {
+      "folder": "point03_render_p3_vulkan_run01_20261009",
+      "raw_files": 84,
+      "hashes_match": true,
+      "pass_frames": 84,
+      "fail_frames": 0,
+      "max_error": 5.851030335060273e-07,
+      "strict_metric_discrepancies": [],
+      "scope": "CPU arithmetic on retained raw frames only; no GPU job or new optical field"
+    },
+    {
+      "folder": "point03_render_pipeline_opengl_run01_20261009",
+      "raw_files": 30,
+      "hashes_match": true,
+      "pass_frames": 21,
+      "fail_frames": 9,
+      "max_error": 6.373034583195825e-05,
+      "strict_metric_discrepancies": [],
+      "scope": "CPU arithmetic on retained raw frames only; no GPU job or new optical field"
+    },
+    {
+      "folder": "point03_render_pipeline_vulkan_run01_20261009",
+      "raw_files": 30,
+      "hashes_match": true,
+      "pass_frames": 21,
+      "fail_frames": 9,
+      "max_error": 6.373034583195825e-05,
+      "strict_metric_discrepancies": [],
+      "scope": "CPU arithmetic on retained raw frames only; no GPU job or new optical field"
+    }
+  ]
+}

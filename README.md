@@ -12,7 +12,7 @@
 ![evidence](https://img.shields.io/badge/failures-retained-fbbf24)
 ![license](https://img.shields.io/badge/license-Apache--2.0-blue)
 
-[Overview](#overview) · [FEMTO-1 prototype plan](#femto1) · [Scientific closure](#scientific-closure-20261013) · [Graphics lab](#lab-20261009) · [How it works](#how-it-works-in-8-gifs) · [Results](#results-to-date) · [Reproduce](#reproduce) · [Method](#method-and-collaboration) · [Roadmap](#roadmap)
+[Overview](#overview) · [Verified results](#verified-positive-numerical-results) · [FEMTO-1 prototype plan](#femto1) · [Scientific closure](#scientific-closure-20261013) · [Graphics lab](#lab-20261009) · [How it works](#how-it-works-in-8-gifs) · [Results](#results-to-date) · [Reproduce](#reproduce) · [Method](#method-and-collaboration) · [Roadmap](#roadmap)
 
 </div>
 
@@ -31,6 +31,19 @@ This repository does **not** present a finished processor. It links geometry and
 | Next milestone | **FEMTO-1**, a first passive glass chip that classifies light patterns, designed to be fabricated by femtosecond laser writing. See the [prototype plan](#femto1). |
 | Fabricated or measured device | **None yet.** |
 
+### Verified positive numerical results
+
+The project has working numerical components and measured digital-simulation acceleration. These results remain approved within their stated scope; later negative experiments do not replace them.
+
+| Positive result | Verified evidence | Scope |
+|---|---|---|
+| CUDA128 acceleration | CPU median **2.4528 s** versus resident CUDA128 median **0.10982 s**: **22.33× faster**, with three recorded hot repetitions | One scalar SSFM propagation case, not complete-network inference or an energy measurement. [Original timings and retained arrays](Docs/GLASS-GPU-2026-10-05-RESULTS.md) |
+| CUDA numerical equivalence and local refinement | Four complex128 equivalence cases and eight further local cases pass their registered criteria | CPU/GPU wave-field parity and bounded stability; the four complex64 failures remain separate. [Results](Docs/GLASS-GPU-2026-10-05-RESULTS.md) |
+| Graphics-engine complex fields | **168/168** P2 fields pass in OpenGL and Vulkan, including constructive, destructive and quarter-phase superposition; maximum error **5.86×10⁻⁷ ≤ 5×10⁻⁶** | Actual Blender rasterization and coherent field representation. [Independent audit and costs](Docs/POINT-03-RENDER-P3-ANALYTIC-RESULTS.md) |
+| C2 / M2 temporal consistency | Both stages pass their five temporal criteria; M2's intensity indicator is **8.78×10⁻⁶ ≤ 10⁻⁵** | Audited discrete scalar solutions; spatial and domain closure remain separate. [M2 evidence](Docs/POINT-03-D16-M2-RESULTS.md) |
+
+Potential device-energy and latency advantages are evaluated separately in the [FEMTO-1 plan](#femto1). They are conditional model predictions, including the positive fan-out scenarios, and have not yet been measured on a fabricated optical processor.
+
 > **Historical context.** Microsoft's Project Silica ([official page](https://www.microsoft.com/en-us/research/project/project-silica/)) demonstrates volumetric **storage** in glass, not optical processing. It is neither a replica of this work nor evidence in its favour.
 
 ---
@@ -42,10 +55,10 @@ This repository does **not** present a finished processor. It links geometry and
 
 ### Why this demonstrator, and not a coherent mesh
 
-The project's own preregistered tests rule out the most obvious first chip, a coherent Clements mesh with fixed phases:
+The studies below identify constraints for a first coherent-mesh design. Their negative outcomes concern specified models and comparisons; they do not invalidate the project's approved CUDA, rasterization or temporal results:
 
-- **T24:** with electronic input and output, converters alone cost 1.4–4.5× a 3 nm INT8 digital MAC, whatever the optical core.
-- **T25:** 3D connectivity saves at most one layer of mesh depth.
+- **T24:** for the registered 64×64 layer, 8-bit target and 1 GS/s electronic input/output, the cited converters and modulator cost 1.4–4.5× the selected 3 nm digital macro reference before optical-core costs. This parametric result is not a measurement or a verdict on every optical architecture.
+- **T25:** for universal meshes built from two-mode elements under the dimension-count model, 3D connectivity saves at most one layer of logical depth. Structured transforms, routing and crossings are separate opportunities.
 - **F3:** a 4×4 unitary mesh reached 59 % accuracy against an 85 % baseline.
 
 Fixed phases would also need optical path control to about 30 nm, which laser-written glass cannot hold without heaters or trimming.
@@ -143,8 +156,8 @@ FEMTOprint does not publish its design-file format. A FEMTO-ST facility that ope
 | Zero static power in the glass | True for the passive core; source, amplifiers and converters are counted |
 | Energy versus a real GPU (64 × 64 layer, T24 model with a 3D fan-out at 0.35 dB per stage) | Optimistic 80 fJ/MAC, nominal 573 fJ/MAC, against ≈ 2.5 pJ/MAC (RTX 3090) and ≈ 0.7 pJ/MAC (H100). These are approximate board-level peak INT8 spec-sheet values, still to be verified. That is a **4–30× advantage over an RTX 3090 and 1.2–9× over an H100**, model only. The GPU figure includes memory and control; the optical model does not. |
 | Energy versus the best experimental digital macro (3 nm INT8, 16 fJ/MAC) | **Not reached** (≈ 5× worse) because of converters; break-even near a 300-wide layer |
-| Energy saving when the data start as electronic signals at small size | **Refuted (T24)** |
-| Depth advantage from 3D | **Refuted (T25)**; the 3D advantage is topological (2D I/O faces, crossing-free routing, volumetric weight density) |
+| Energy saving with electronic input/output in the registered 64×64, 8-bit, 1 GS/s case | **Not supported by T24 under its cited component assumptions**; other sizes, interfaces and architectures require their own comparisons. |
+| Universal-mesh depth advantage from 3D | T25 bounds the possible saving to at most one layer within its two-mode-element model. Structured transforms, crossings and routing are separate comparisons; this is not a general rejection of 3D advantages. |
 
 ### Long-term vision: the model is the geometry
 
@@ -363,6 +376,7 @@ Current status: [ESTADO-ACTUAL](Docs/ESTADO-ACTUAL.md). The [current inventory](
 | GLASS-009c | Run: complex field in vacuum, including phase | Partial validation by angle, domain and distance; isolated reflection pending |
 | GLASS-010 | Six cases and 24 M4 comparisons approved | Does not resolve the whole 006a sweep; mode/remainder interference needs correction |
 | GLASS-GPU-001 | Eight CUDA outputs compared with CPU | Four complex128 PASS and four complex64 FAIL |
+| GLASS-GPU-001 timing | CPU median 2.4528 s / resident CUDA128 median 0.10982 s = **22.33×** | Measured digital-simulation acceleration for one hot scalar propagation case; three repetitions, not full-network inference or an energy measurement. [Original report](Docs/GLASS-GPU-2026-10-05-RESULTS.md) |
 | GLASS-GPU-002 | Eight additional complex128 cases | Local criteria PASS; no global convergence or independent ADI contrast |
 | MEGA-001 | 24 affine hits and four analytic CPU criteria | Diagnostic PASS; Vulkan metadata is not RT execution |
 
