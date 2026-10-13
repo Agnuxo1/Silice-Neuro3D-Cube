@@ -7,6 +7,7 @@ name = "silice-neuro3d-cube"
 version = "0.1.0"
 description = "Reproducible research models for laser-written optical silica networks"
 requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
 dependencies = ["numpy>=2.0"]
 
 [project.optional-dependencies]

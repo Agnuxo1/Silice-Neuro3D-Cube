@@ -1,0 +1,16 @@
+Silice-Neuro3D-Cube
+Copyright 2026 Francisco Angulo de Lafuente
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+The license applies to the whole repository: code, documentation, figures,
+GIF animations and research data, unless a file states otherwise.
+
+Parts of the code, analyses and documents were produced with the assistance
+of AI agents (Claude by Anthropic, Codex by OpenAI) under the direction of
+the copyright holder, who is responsible for their content.
+
+Short quotations and bibliographic data of third-party publications cited in
+the documents remain the property of their authors and publishers; the
+license does not extend to those works. Third-party Python dependencies
+(NumPy, SciPy, psutil, scikit-learn, Matplotlib and their dependencies) are
+distributed under their own licenses and are not included in this repository.

@@ -42,3 +42,7 @@ mkdir -p LICENSES && gh api licenses/cc-by-4.0 --jq .body > LICENSES/CC-BY-4.0.t
 ```
 
 Además, añadir un fichero `NOTICE` con la línea de copyright y una sección de licencias en el `README.md` que apunte a este documento.
+
+## Decisión del titular (2026-10-13, anexada)
+
+El titular eligió **Apache-2.0 para todo el repositorio** («licencia opensource apache 2.0»). Se aplica a código, documentación, figuras, GIF y datos. El texto de `LICENSE` es el oficial de la API de GitHub y su SHA-256 coincide con el de la tabla anterior (`c95bae1d…`). La línea de copyright y las notas sobre contenido asistido por IA y obras de terceros citadas están en `NOTICE`. No se aplica CC-BY-4.0.
