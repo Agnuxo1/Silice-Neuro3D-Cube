@@ -18,6 +18,10 @@
 
 ---
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> Silice-Neuro3D-Cube links optical geometry to auditable simulations and potential fabrication designs. Its <a href="Docs/GLASS-GPU-2026-10-05-RESULTS.md">recorded CUDA128 trial</a> reports 22.33× acceleration over single-threaded NumPy128 for one resident scalar SSFM case, using three hot repetitions and numerical-equivalence checks. This reduces computation time for that simulation scope; full-network inference and physical optical-device energy savings remain separate, unmeasured objectives.</sub>
+<!-- impact-note:end -->
+
 ## Overview
 
 The idea is to write **waveguides, couplers and phase elements** inside a block of fused silica with a femtosecond laser, so that the geometry of the glass itself performs a linear optical transform of the light passing through it. The long-term goal is a neural network whose trained weights are compiled into fabricable geometry (gaps, lengths, depths) and "printed" into glass: **the model becomes the geometry**.
